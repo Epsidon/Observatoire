@@ -1,4 +1,4 @@
 Observatoire
 ============
 
-Observatoire de la santé dès francophones
+Observatoire de la santé des francophones

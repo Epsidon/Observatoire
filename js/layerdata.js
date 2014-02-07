@@ -537,13 +537,13 @@ var layerType = {
 	}
 
 var servicePointBuffers = [];
-servicePointBuffers[5] = [32,39];
-servicePointBuffers[6] = [18,25];
-servicePointBuffers[7] = [44,53];
-servicePointBuffers[8] = [60,67];
-servicePointBuffers[9] = [74,81];
-servicePointBuffers[10] = [88,95];
-servicePointBuffers[11] = [102,109];
+servicePointBuffers[5] = [36,43];
+servicePointBuffers[6] = [22,29];
+servicePointBuffers[7] = [50,57];
+servicePointBuffers[8] = [64,71];
+servicePointBuffers[9] = [78,85];
+servicePointBuffers[10] = [92,99];
+servicePointBuffers[11] = [106,113];
 
 var layerInfoWindow = new Array();
 var layerTemplate = new Array();

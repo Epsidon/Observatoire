@@ -211,7 +211,7 @@ function(
 							'<script>' +
 								'function myFunction()' +
 									'{' +
-									'alert("Select a data layer below and click on map to access detailed information.");' +
+									'window.showModalDialog("./info.html" , "height=255, width=1700");' +
 									'}' +
 							'</script>' +
 						'</p>' +

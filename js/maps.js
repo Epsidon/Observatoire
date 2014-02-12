@@ -28,14 +28,12 @@ function(
 	console.log('Creating Map');
 
 	map = new Map( "map" , {
-		//autoResize: false,
 		basemap: "gray",	
-    	center: [-85.416, 49.781],
-		zoom : 5,
+    	center: [-85.416, 49.000],
+		zoom : 6,
 		logo: false
 	});
-
-	 var imageParameters = new ImageParameters();
+	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 	
 	dojo.connect(map,"onLoad",function(){
@@ -53,7 +51,7 @@ function(
 	for (var i = 0; i < numLayers; i++) {
 		console.log('Creating Layer ' + i);
 
-		if (layerType[i] == 'FeatureLayer')
+	if (layerType[i] == 'FeatureLayer')
 		{
 		layerInfoWindow[i] = 
 			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
@@ -110,6 +108,7 @@ function(
 		}
 	}
 
+
 	for (var j in servicePointBuffers) {
 	
 		for (var i = 0; i < 2; i++) {
@@ -158,43 +157,36 @@ function(
 		fadeOutSpinner();
 	});	
 	
+	
 	function setupAccordion()
 	{
 		console.log('Setting up accordion');
 		$.get("server.php", function( data ) 
 		{
 			layers = data.layers;
-			var legendsArray = [];
+			
 			var accordionHtmlBody = '';
 
 			var i = 0;
 
 			for (var j = 0; j < accordion.length; j++)
 			{
-			
 				accordionHtmlBody += '<H3>' + accordion[j]['title'] + '</H3>';
 				accordionHtmlBody += '<div><ul class="nav nav-list">';
-				
+
 				for (var k = 0; k < accordion[j]['numLayers']; k++)
 				{
 					var layer = layers[i];
 							
 					accordionHtmlBody += getAccordionRowHtmlBody(layer, i, j);
 					
-					if (layer.drawingInfo && layer.drawingInfo.renderer)
-					{
-						if (layer.drawingInfo.renderer.classBreakInfos)
-							legendsArray[i] = layer.drawingInfo.renderer.classBreakInfos;
-						else if (layer.drawingInfo.renderer.uniqueValueInfos)
-							legendsArray[i] = layer.drawingInfo.renderer.uniqueValueInfos;
-						else
-							legendsArray[i] = null;
-							
-					}
+					if (layer.drawingInfo.renderer.classBreakInfos)
+						legendsArray[i] = layer.drawingInfo.renderer.classBreakInfos;
+					else if (layer.drawingInfo.renderer.uniqueValueInfos)
+						legendsArray[i] = layer.drawingInfo.renderer.uniqueValueInfos;
 					else
-					{
-						legendsArray[i] = null;					
-					}
+						legendsArray[i] = null;
+	
 					i++;
 				}
 
@@ -272,7 +264,7 @@ function(
 		 * 2. Remove old layers.
 		 * 3. Get the clicked layerId.
 		 * 4. Draw the new layer accordingly. 
-		 *    4.1. If nothing is clicked draw layer 4.
+		 *    4.1. If nothing is clicked draw layer 12.
 		 *	  4.2. If something clicked in the first tab and extend is more than 7 
 		 *		   draw layer 12 as well. 
 		 * 	  4.3. Draw the clicked layer. 
@@ -305,7 +297,7 @@ function(
 		// 4.
 		removeLegend(activeLayer);
 		var extent = map.getZoom();
-		
+
 		if ((clickedLayerId == -1) || 
 			((clickedLayerId == -1) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
@@ -319,7 +311,6 @@ function(
 		{
 			activeLayer = 12;
 		}
-		
 		else if ((clickedLayerId == -1) || 
 			((clickedLayerId == 1) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
@@ -341,9 +332,9 @@ function(
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			activeLayer = clickedLayerId;
 		}
-		
 		try
 		{
+			
 			if (layerInfoWindow[activeLayer])
 			{
 				layerInfoWindow[activeLayer].startup();
@@ -355,7 +346,7 @@ function(
 		}
 		catch(err)
 		{
-			console.log('ERROR: ' + err.message);
+		console.log('ERROR: ' + err.message);
 		}
 		
 		updateServicePoints();
@@ -508,11 +499,10 @@ function(
 							'<input type="checkbox" id="layerHyperLink' +layerCounter+ '"/>' + 
 						'</td>' + 
 						'<td>' + 
-							T(layer.name) + 
-						'</td>' +
-					'</tr>' + 
-				'</table>' 
-				;
+							T(layer.name) +
+						'</td>' + 
+					'</tr>' + 						
+				'</table>';
 		}
 		else
 		{
@@ -549,9 +539,10 @@ function(
 		}
 		
 		htmlBody = 
-			'<li class="first" id="region' + layerCounter + '">' +  
+			'<li id="region' + layerCounter + '">' +  
 				htmlBody + 
 			'</li>';
+
 		return htmlBody;
 	}
 	

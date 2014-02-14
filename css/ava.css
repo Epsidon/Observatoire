@@ -2,14 +2,7 @@ body {
 	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	font-size: 90%;		  
 	padding-top: 5px;
-	padding-bottom: 40px;
-}
-
-#tabs
-{
-	font-family: Verdana,Arial,sans-serif;
-	font-size: 1em;
-	height:920px;
+	padding-bottom:40px;
 }
 
 td.first{
@@ -42,34 +35,51 @@ text-shadow:2px 2px #FFFFFF;
 	padding: 9px 0;
 }
 
+#navbar
+{
+	margin-bottom: 0px;
+	overflow: visible;
+}
+
+#test
+{
+
+}
+
 #map
-{	
-	height:600px;
-	border:1px solid;
-	border-radius:10px;	
-	border-color:#888888;			
-}	
+{
+		position:relative;
+		top:40px;
+        border:1px solid;
+        border-radius:10px;
+        border-color:#888888;
+	
+}
+
+#panel
+{
+        height:600px;
+}
+	
 
 
 #tooltip {
     
     display: block;
     background: transparent url(http://i.stack.imgur.com/srdeI.png) no-repeat -5px -12px;
-	 background-color: #2b2b2b;
+	background-color: #2b2b2b;
     position: relative;
     padding: 0px;
     border: 1px solid gray;
 }
-#panel
-{
-	height:600px;
-}
 
-#navbar
-{
-	margin-bottom: 0px;
-	overflow: visible;
-}	
+
+#tabs {
+font-family: Verdana,Arial,sans-serif;
+font-size:90%;
+height: 100%
+
+}
 
 label {
     display: block;

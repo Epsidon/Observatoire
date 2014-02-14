@@ -4,8 +4,8 @@ console.log ('tab bar height is ' + $("#tabs").height());
 
 function resizeWebSite(){
 
-	$("#panel").height($(window).height() - (100+  $("#navbar").height() + $("#pageTitle").height()));
-   	$("#map").height($(window).height() - (100+ $("#navbar").height() + $("#pageTitle").height()));
+	$("#panel").height($(window).height() - (140+  $("#navbar").height() + $("#pageTitle").height()));
+   	$("#map").height($(window).height() - (140+ $("#navbar").height() + $("#pageTitle").height()));
         
      console.log($("#map").height() / 2);   
         
@@ -22,6 +22,8 @@ $('#initialClickMessage').html(T('Click on a region for details'));
 $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
+$('#P1').html(T('Select a data layer from the menu below and click on map for detailed information.'));
+$('#P2').html(T('Click on ') + '<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' + T('for data sources and methodology.'));
 
 
 $('#support').html(T('With the Support of:'));

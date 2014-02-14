@@ -60,11 +60,7 @@ Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
-
-
-
-
-
-
-
+Fr['Select a data layer from the menu below and click on map for detailed information.'] = 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus dinformations.';
+Fr['Click on ']  = 'Cliquez sur le ' ;
+Fr['for data sources and methodology.'] = ' pour accéder aux notes méthodologiques.';
 

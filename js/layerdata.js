@@ -19,22 +19,23 @@ layerData[0]['infoWindowTitle'] = "<b>" + T("Mother Tongue") + "</b>";
 layerData[0]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
 "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
-"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + 
-"</b>" + "${POPIN2011}"+ "</p>"+  
+"<p>"+
 "<table border=1>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
 "<th align='center'>French</th>"+
 "<th align='center'>English</th>"+
 "<th align='center'>Non Official</th>"+
+"<th>Total</th>"+
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>${DAUID_1}</td>"+
 "<td align='center'>${MTFrench}</td>"+
 "<td class=first align='center'>${MTongueEng}</td>"+
 "<td align='center'>${MTNonOFF}</td>"+
+"<td class=first>${Detailedmo}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+"</table>"+"</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[0]['outFields'] = new Array("POPIN2011", "GeoKey20_2", "GeoKey20_1","Detailedmo", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
 layerData[1] = [];
@@ -42,21 +43,23 @@ layerData[1]['infoWindowTitle'] = "<b>" + T("Knowledge of Official Language") + 
 layerData[1]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
 "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
-"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+"<p>" +  
 "<table border=1>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
 "<th align='center'>French</th>"+
 "<th align='center'>English & French</th>"+
 "<th align='center'>Neither</th>"+
+"<th>Total</th>"+
 "</tr>"+
 "<tr>"+
 "<td align='center'>${DAUID_1}</td>"+
 "<td class=first align='center'>${KnowledgFr}</td>"+
 "<td align='center'>${KnowlEngFr}</td>"+
 "<td class=first align='center'>${KEngNorFre}</td>"+
+"<td>${Knowledgeo}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[1]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 layerData[2] = [];
@@ -64,7 +67,7 @@ layerData[2]['infoWindowTitle'] = "<b>" + T("First Official Language Spoken") + 
 layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
 "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
-"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+"<p>" + 
 "<table border=1>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
@@ -72,6 +75,7 @@ layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<th align='center'>English</th>"+
 "<th align='center'>English & French</th>"+
 "<th align='center'>Neither</th>"+
+"<th>Total</th>"+
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>${DAUID_1}</td>"+
@@ -79,8 +83,9 @@ layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<td class=first align='center'>${FirstofEng}</td>"+
 "<td align='center'>${FirstoEngF}</td>"+
 "<td class=first align='center'>${FOFENorF}</td>"+
+"<td>${FirstoffTo}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
 layerData[3] = [];
@@ -88,21 +93,23 @@ layerData[3]['infoWindowTitle'] = "<b>" + T("Language Spoken Most Often at Home"
 layerData[3]['infoWindowBody'] =T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
 "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
-"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+"<p>" + 
 "<table border=1>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
 "<th align='center'>French</th>"+
 "<th align='center'>English</th>"+
 "<th align='center'>Non Official</th>"+
+"<th>Total</th>"+
 "</tr>"+
 "<tr>"+
 "<td align='center'>${DAUID_1}</td>"+
 "<td class=first align='center'>${DLSHFre}</td>"+
 "<td align='center'>${DLSHEn}</td>"+
 "<td class=first align='center'>${DLSHNON}</td>"+
+"<td>${DLAthomeTo}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+"</table>"+ "</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 layerData[4] = [];

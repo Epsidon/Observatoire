@@ -16,86 +16,91 @@ var layerData = [];
 
 layerData[0] = [];
 layerData[0]['infoWindowTitle'] = "<b>" + T("Mother Tongue") + "</b>";
-layerData[0]['infoWindowBody'] = "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+layerData[0]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
++ T(" is part of the ") + 
+"${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + 
+"</b>" + "${POPIN2011}"+ "</p>"+  
 "<table border=1>"+
 "<tr>"+
-"<th>DA</th>"+
-"<th>French</th>"+
-"<th>English</th>"+
-"<th>Non Official</th>"+
-"<th>Total</th>"+
+"<th align='center'>DA</th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English</th>"+
+"<th align='center'>Non Official</th>"+
 "</tr>"+
 "<tr>"+
-"<td class=first>${DAUID_1}</td>"+
-"<td>${MTFrench}</td>"+
-"<td class=first>${MTongueEng}</td>"+
-"<td>${MTNonOFF}</td>"+
-"<td class=first>${Detailedmo}</td>"+
+"<td class=first align='center'>${DAUID_1}</td>"+
+"<td align='center'>${MTFrench}</td>"+
+"<td class=first align='center'>${MTongueEng}</td>"+
+"<td align='center'>${MTNonOFF}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[0]['outFields'] = new Array("POPIN2011", "GeoKey20_2", "GeoKey20_1","Detailedmo", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
 layerData[1] = [];
 layerData[1]['infoWindowTitle'] = "<b>" + T("Knowledge of Official Language") + "</b>";
-layerData[1]['infoWindowBody'] = "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+layerData[1]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
++ T(" is part of the ") + 
+"${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
 "<table border=1>"+
 "<tr>"+
-"<th>DA</th>"+
-"<th>French</th>"+
-"<th>English & French</th>"+
-"<th>Neither</th>"+
-"<th>Total</th>"+
+"<th align='center'>DA</th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English & French</th>"+
+"<th align='center'>Neither</th>"+
 "</tr>"+
 "<tr>"+
-"<td>${DAUID_1}</td>"+
-"<td class=first>${KnowledgFr}</td>"+
-"<td>${KnowlEngFr}</td>"+
-"<td class=first>${KEngNorFre}</td>"+
-"<td>${Knowledgeo}</td>"+
+"<td align='center'>${DAUID_1}</td>"+
+"<td class=first align='center'>${KnowledgFr}</td>"+
+"<td align='center'>${KnowlEngFr}</td>"+
+"<td class=first align='center'>${KEngNorFre}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[1]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 layerData[2] = [];
 layerData[2]['infoWindowTitle'] = "<b>" + T("First Official Language Spoken") + "</b>";
-layerData[2]['infoWindowBody'] =  "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
++ T(" is part of the ") + 
+"${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
 "<table border=1>"+
 "<tr>"+
-"<th>DA</th>"+
-"<th>French</th>"+
-"<th>English</th>"+
-"<th>English & French</th>"+
-"<th>Neither</th>"+
-"<th>Total</th>"+
+"<th align='center'>DA</th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English</th>"+
+"<th align='center'>English & French</th>"+
+"<th align='center'>Neither</th>"+
 "</tr>"+
 "<tr>"+
-"<td class=first>${DAUID_1}</td>"+
-"<td>${FirstofFre}</td>"+
-"<td class=first>${FirstofEng}</td>"+
-"<td>${FirstoEngF}</td>"+
-"<td class=first>${FOFENorF}</td>"+
-"<td>${FirstoffTo}</td>"+
+"<td class=first align='center'>${DAUID_1}</td>"+
+"<td align='center'>${FirstofFre}</td>"+
+"<td class=first align='center'>${FirstofEng}</td>"+
+"<td align='center'>${FirstoEngF}</td>"+
+"<td class=first align='center'>${FOFENorF}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
 layerData[3] = [];
 layerData[3]['infoWindowTitle'] = "<b>" + T("Language Spoken Most Often at Home") + "</b>";
-layerData[3]['infoWindowBody'] = "${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
+layerData[3]['infoWindowBody'] =T("Dissemination Area(DA) #") + "${DAUID_1}" 
++ T(" is part of the ") + 
+"${GeoKey20_2}"+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${POPIN2011}"+ "</p>"+  
 "<table border=1>"+
 "<tr>"+
-"<th>DA</th>"+
-"<th>French</th>"+
-"<th>English</th>"+
-"<th>Non Official</th>"+
-"<th>Total</th>"+
+"<th align='center'>DA</th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English</th>"+
+"<th align='center'>Non Official</th>"+
 "</tr>"+
 "<tr>"+
-"<td>${DAUID_1}</td>"+
-"<td class=first>${DLSHFre}</td>"+
-"<td>${DLSHEn}</td>"+
-"<td class=first>${DLSHNON}</td>"+
-"<td>${DLAthomeTo}</td>"+
+"<td align='center'>${DAUID_1}</td>"+
+"<td class=first align='center'>${DLSHFre}</td>"+
+"<td align='center'>${DLSHEn}</td>"+
+"<td class=first align='center'>${DLSHNON}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");

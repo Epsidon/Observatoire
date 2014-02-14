@@ -4,10 +4,10 @@ $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
 
 $('#HOME').html(T('HOME'));
-$('#INTERACTIVE MAPS').html(T('INTERACTIVE MAPS'));
+$('#INTERACTIVEMAPS').html(T('INTERACTIVE MAPS'));
 $('#ANALYSIS').html(T('ANALYSIS'));
 $('#PARTNERS').html(T('PARTNERS'));
-$('#LONGTERMCARE').html(T('HEALTH AND LONG-TERM CARE'));
+
 $('#support').html(T('With the Support of:'));
 
 
@@ -15,15 +15,14 @@ $('#financialSupport').html(T('Financial Support:'));
 
 $('#MINISTRYOF').html(T('MINISTRY OF '));
 $('#LONGTERMCARE').html(T('HEALTH AND LONG-TERM CARE'));
-$('#MINISTRYOF2').html(T('MINISTRY OF '));
-$('#LONGTERMCARE2').html(T('HEALTH AND LONG-TERM CARE'));
+
 $('#dataProviders').html(T('Data Providers:'));
 $('#Health').html(T('Health'));
 $('#Force').html(T('Force'));
-
-
-
-
+$('#MINP1').html(T('MINISTRY OF '));
+$('#MINP2').html(T('MINISTRY OF '));
+$('#LONGTERMP1').html(T('HEALTH AND LONG-TERM CARE'));
+$('#LONGTERMP2').html(T('HEALTH AND LONG-TERM CARE'));
 
 
 if (location.hash != '#french')

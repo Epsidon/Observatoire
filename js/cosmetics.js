@@ -1,9 +1,11 @@
 $(window).resize( resizeWebSite);
+console.log ('navbar height is ' + $("#pageTitle").height());
+console.log ('tab bar height is ' + $("#tabs").height());
 
 function resizeWebSite(){
 
-	$("#panel").height($(window).height() - 100);
-   	$("#map").height($(window).height() - 100);
+	$("#panel").height($(window).height() - (100+  $("#navbar").height() + $("#pageTitle").height()));
+   	$("#map").height($(window).height() - (100+ $("#navbar").height() + $("#pageTitle").height()));
         
      console.log($("#map").height() / 2);   
         
@@ -21,20 +23,14 @@ $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
 
-$('#HOME').html(T('HOME'));
-$('#INTERACTIVE MAPS').html(T('INTERACTIVE MAPS'));
-$('#ANALYSIS').html(T('ANALYSIS'));
-$('#PARTNERS').html(T('PARTNERS'));
-$('#LONGTERMCARE').html(T('HEALTH AND LONG-TERM CARE'));
+
 $('#support').html(T('With the Support of:'));
+$('#INTERACTIVE MAPS').html(T('INTERACTIVE MAPS'));
 
-
-$('#financialSupport').html(T('Financial Support:'));
 
 $('#MINISTRYOF').html(T('MINISTRY OF '));
-$('#LONGTERMCARE').html(T('HEALTH AND LONG-TERM CARE'));
-$('#MINISTRYOF2').html(T('MINISTRY OF '));
-$('#LONGTERMCARE2').html(T('HEALTH AND LONG-TERM CARE'));
+
+
 $('#dataProviders').html(T('Data Providers:'));
 $('#Health').html(T('Health'));
 $('#Force').html(T('Force'));

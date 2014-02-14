@@ -42,7 +42,7 @@ Fr['The number of specialists who can provide care in English'] = 'SPECE';
 
 Fr['Minority Health Observatory'] = 'Observatoire de la santé des minorités';
 Fr['Notes'] = 'Notes';
-
+Fr['MINISTRY OF '] = 'Ministere de la ';
 Fr['HEALTH AND LONG-TERM CARE'] = 'SANTÉ ET SOINS DE LONGUE DURÉE';
 Fr['With the Support of:'] = 'Avec le soutien de:';
 
@@ -56,10 +56,10 @@ Fr['Financial Support:'] = 'Support Financier:';
 
 
 Fr['Data Providers:'] = 'Fournisseurs de données:';
-Fr['Health'] = 'Health';
+Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';
 
-Fr['MINISTRY OF '] = 'Ministere de la';
+Fr['MINISTRY OF'] = 'Ministere de la';
 
 
 

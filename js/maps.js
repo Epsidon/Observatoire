@@ -195,10 +195,10 @@ function(
 					'<ul class="nav nav-list" id="legendList' + 
 						j + '">' + 
 					'</ul>' + 
-						'<p>' +
-							'<button class="button1" onclick="myFunction()">' +
+						'<br>' +
+							'<href class="button1" onclick="myFunction()">' +
 							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
-							'</button>' +
+							'</href>' +
 							
 							'<script>' +
 								'function myFunction()' +
@@ -206,7 +206,7 @@ function(
 									'window.showModalDialog("./info.html" , "height=255, width=1700");' +
 									'}' +
 							'</script>' +
-						'</p>' +
+						'</br>' +
 					'</div>';
 			}
 														

@@ -5,6 +5,13 @@ body {
 	padding-bottom: 40px;
 }
 
+#tabs
+{
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+	height:920px;
+}
+
 td.first{
 color:#000000;
 background-color:#D8D8D8;
@@ -56,6 +63,12 @@ text-shadow:2px 2px #FFFFFF;
 #panel
 {
 	height:600px;
+}
+
+#navbar
+{
+	margin-bottom: 0px;
+	overflow: visible;
 }	
 
 label {

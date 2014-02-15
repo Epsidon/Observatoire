@@ -1,3 +1,14 @@
+$(function() {
+	$( "#tabs" ).tabs({
+		beforeLoad: function( event, ui ) {
+			ui.jqXHR.error(function() {
+				ui.panel.html("content will be added later" );
+			});
+		}
+	});
+});
+
+
 $('#initialClickMessage').html(T('Click on a region for details'));
 $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
@@ -40,7 +51,7 @@ else
 
 
 function T(str)
- {
+{
 	if (location.hash != '#french')
 		return str;
 	

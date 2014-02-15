@@ -1,4 +1,18 @@
-$( "#tabs" ).tabs();
+
+/**
+ * This function gets fired up everytime a tab is clicked.
+ */
+
+
+$('#tabs').tabs({
+select: function(event, ui) {
+
+alert(ui.index);
+
+}
+});
+
+
 
 $('#initialClickMessage').html(T('Click on a region for details'));
 $('#panel').html(T('Loading ...'));

@@ -1,3 +1,23 @@
+$(window).resize( resizeWebSite);
+console.log ('navbar height is ' + $("#pageTitle").height());
+console.log ('tab bar height is ' + $("#tabs").height());
+
+function resizeWebSite(){
+
+	$("#panel").height($(window).height() - (140+  $("#navbar").height() + $("#pageTitle").height()));
+   	$("#map").height($(window).height() - (140+ $("#navbar").height() + $("#pageTitle").height()));
+        
+     console.log($("#map").height() / 2);   
+        
+     var loaderTop = ($("#map").height() - $("#loadingIndicator").height()) / 2 + $("#map").position().top;
+     var loaderLeft = (($("#map").width() - $("#loadingIndicator").width()) / 2) + $("#map").position().left;
+    
+        
+	$("#loadingIndicator").css({'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});    
+}
+
+resizeWebSite();
+
 mapsAreLoaded = false;
 $('#tabs a').click(function (e) {
 	e.preventDefault();
@@ -15,7 +35,6 @@ $('#tabs a').click(function (e) {
   	}
 });
 
-$('#initialClickMessage').html(T('Click on a region for details'));
 $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));

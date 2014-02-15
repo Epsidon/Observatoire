@@ -71,18 +71,17 @@ $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
 
-$('#HOME').html(T('HOME'));
-$('#INTERACTIVEMAPS').html(T('INTERACTIVE MAPS'));
-$('#ANALYSIS').html(T('ANALYSIS'));
-$('#PARTNERS').html(T('PARTNERS'));
+$('#homeTab').html(T('HOME'));
+$('#mapsTab').html(T('INTERACTIVE MAPS'));
+$('#analysisTab').html(T('ANALYSIS'));
+$('#partnersTab').html(T('PARTNERS'));
 
-$('#support').html(T('With the Support of:'));
-
+$('#withSupportOfMsg').html(T('With the Support of:'));
 
 $('#financialSupport').html(T('Financial Support:'));
 
-$('#MINISTRYOF').html(T('MINISTRY OF '));
-$('#LONGTERMCARE').html(T('HEALTH AND LONG-TERM CARE'));
+$('#ministryOfMsg').html(T('MINISTRY OF '));
+$('#healthAndLongTermCreMsg').html(T('HEALTH AND LONG-TERM CARE'));
 
 $('#dataProviders').html(T('Data Providers:'));
 $('#Health').html(T('Health'));
@@ -92,6 +91,12 @@ $('#MINP2').html(T('MINISTRY OF '));
 $('#LONGTERMP1').html(T('HEALTH AND LONG-TERM CARE'));
 $('#LONGTERMP2').html(T('HEALTH AND LONG-TERM CARE'));
 
+$('#homeMainParagraph').html(T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations. The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+
+$('#homeSecondLine').html(T("The activity of the Observatory is organized around two priorities:"));
+
+$('#homeOptionOne').html(T("Activities of data collection, research and production of new knowledge"));
+$('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 
 if (location.hash != '#french')
 {

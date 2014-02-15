@@ -85,3 +85,25 @@ input
     top: -1px;
     *overflow: hidden;
 }
+
+#withSupportOfMsg
+{
+	font-size:90%;
+	color:gray;
+}
+
+
+.blueFont
+{
+	color:#A9BCF5;
+}
+
+.smallFont
+{
+	font-size: 0.5em;
+}
+
+.mediumFont
+{
+	font-size: 1em;
+}

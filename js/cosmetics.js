@@ -1,18 +1,14 @@
-
-/**
- * This function gets fired up everytime a tab is clicked.
- */
-
-
-$('#tabs').tabs({
-select: function(event, ui) {
-
-alert(ui.index);
-
-}
+mapsAreLoaded = false;
+$('#tabs a').click(function (e) {
+	e.preventDefault();
+	
+	// If this is the first time we are going to the maps tab, load the stuff!
+	if ($(this).attr('id') == 'mapsTab' && !mapsAreLoaded)
+	{
+		mapsAreLoaded = true;
+		// TODO		
+	}
 });
-
-
 
 $('#initialClickMessage').html(T('Click on a region for details'));
 $('#panel').html(T('Loading ...'));

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/ava.css">
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="http://js.arcgis.com/3.7/"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -27,15 +28,60 @@
 		</div>
 	</div>				 
 		
-	<ul class="nav nav-tabs">
-		<li class="active"><a href="#">HOME</a></li>
-		<li><a href="#">INTERACTIVE MAPS</a></li>
-		<li><a href="#">ANALYSIS</a></li>
-		<li><a href="#">PARTNERS</a></li>
-	</ul>		
+<div id="content">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active">
+        	<a href="#home" data-toggle="tab" id="homeTab">HOME</a>
+        </li>
+        <li>
+        	<a href="#maps" data-toggle="tab" id="mapsTab">INTERACTIVE MAPS</a>
+        </li>
+        <li>
+        	<a href="#analysis" data-toggle="tab" id="analysisTab">ANALYSIS</a>
+        </li>
+        <li>
+        	<a href="#partners" data-toggle="tab" id="partnersTab">PARTNERS</a>
+        </li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="home">
+
+			<p style="font-size:3;">
+				L'information sanitaire de qualité est essentielle à la décision politique et à la planification en santé. 
+				Toutefois, cette information est absente ou incomplète  pour certaines populations. 
+				L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur 
+				la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario. 
+
+				L’activité de l’Observatoire s’organise autour de deux pôles:
+				<br>
+				<br>1) activités de collecte de données, de recherche et de production de nouvelles connaissances</br>
+				<br>2) valorisation et transfert des connaissances</br>
+				</br>
+			</p>
+
+			<h2 style="font-size:90%; color:gray;" id="support">With the Support of:</h2>
+			<p><img border="0" src="images/ontario.jpg" alt="Pulpit rock" width="100" height="150">
+			<font size="2" color="#A9BCF5" id="MINISTRYOF">MINISTRY OF </font><font size="4" color="#A9BCF5" id="LONGTERMCARE">HEALTH AND LONG-TERM CARE</font>
+
+        </div>
+        <div class="tab-pane" id="maps">
+            <h1>Orange</h1>
+            <p>orange orange orange orange orange</p>
+        </div>
+        <div class="tab-pane" id="analysis">
+            <h1>Yellow</h1>
+            <p>yellow yellow yellow yellow yellow</p>
+        </div>
+        <div class="tab-pane" id="partners">
+            <h1>Green</h1>
+            <p>green green green green green</p>
+        </div>
+    </div>
+</div>
 		
 	<script type="text/javascript" src="js/cosmetics.js"></script>
 	<script type="text/javascript" src="js/layerdata.js"></script>
+	
 		
 </body>
 </html>

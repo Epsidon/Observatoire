@@ -6,8 +6,13 @@ $('#tabs a').click(function (e) {
 	if ($(this).attr('id') == 'mapsTab' && !mapsAreLoaded)
 	{
 		mapsAreLoaded = true;
-		// TODO		
-	}
+
+		var fileref=document.createElement('script');
+		fileref.setAttribute("type","text/javascript");
+		fileref.setAttribute("src", "js/maps.js");
+  
+		document.getElementsByTagName("head")[0].appendChild(fileref)
+  	}
 });
 
 $('#initialClickMessage').html(T('Click on a region for details'));

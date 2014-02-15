@@ -1,37 +1,69 @@
-$(window).resize( resizeWebSite);
-console.log ('navbar height is ' + $("#pageTitle").height());
-console.log ('tab bar height is ' + $("#tabs").height());
+window.addEventListener('resize', function(event){
+	reorganizeMapsPage()
+});
 
-function resizeWebSite(){
+function reorganizeMapsPage()
+{
+	if ($("#map").position().top == 0)
+	{
+		var mapTop = 200;
+		var mapLeft = 400;
+		var mapWidth = 600;
+		var mapHeight = 600;
 
-	$("#panel").height($(window).height() - (140+  $("#navbar").height() + $("#pageTitle").height()));
-   	$("#map").height($(window).height() - (140+ $("#navbar").height() + $("#pageTitle").height()));
+		var panelTop = 200;
+		var panelLeft = 400;
+		var panelWidth = 600;
+		var panelHeight = 600;		
+	}
+	else
+	{	
+		var mapTop = $("#map").position().top;
+		var mapLeft = $("#map").position().left;
+		var mapWidth = $("#map").width();
+		var mapHeight = $("#map").height();
+
+		var panelTop = $("#panel").position().top;
+		var panelLeft = $("#panel").position().left;
+		var panelWidth = $("#panel").width();
+		var panelHeight = $("#panel").height();		
+	}
+
+	var mapHeight = $(window).height() - mapTop;
+	var panelHeight = $(window).height() - panelTop;
+
+	$("#map").height(mapHeight);
+	$("#panel").height(panelHeight);
         
-     console.log($("#map").height() / 2);   
-        
-     var loaderTop = ($("#map").height() - $("#loadingIndicator").height()) / 2 + $("#map").position().top;
-     var loaderLeft = (($("#map").width() - $("#loadingIndicator").width()) / 2) + $("#map").position().left;
-    
-        
-	$("#loadingIndicator").css({'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});    
+	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
+	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
+	 
+	$("#loadingIndicator").css(
+		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 }
 
-resizeWebSite();
 
 mapsAreLoaded = false;
 $('#tabs a').click(function (e) {
 	e.preventDefault();
 	
 	// If this is the first time we are going to the maps tab, load the stuff!
-	if ($(this).attr('id') == 'mapsTab' && !mapsAreLoaded)
+	if ($(this).attr('id') == 'mapsTab')
 	{
-		mapsAreLoaded = true;
+		if (!mapsAreLoaded)
+		{
+			mapsAreLoaded = true;
 
-		var fileref=document.createElement('script');
-		fileref.setAttribute("type","text/javascript");
-		fileref.setAttribute("src", "js/maps.js");
+			var fileref=document.createElement('script');
+			fileref.setAttribute("type","text/javascript");
+			fileref.setAttribute("src", "js/maps.js");
   
-		document.getElementsByTagName("head")[0].appendChild(fileref)
+			document.getElementsByTagName("head")[0].appendChild(fileref)
+		
+			reorganizeMapsPage();
+		}
+		
+		
   	}
 });
 

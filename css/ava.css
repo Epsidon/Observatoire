@@ -1,12 +1,8 @@
-
-
-
-
 body {
 	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	font-size: 90%;		  
-	padding-top: 5px;
-	padding-bottom:40px;
+	padding-top: 0px;
+	padding-bottom:0px;
 }
 
 td.first{
@@ -45,27 +41,14 @@ text-shadow:2px 2px #FFFFFF;
 	overflow: visible;
 }
 
-#test
-{
-
-}
-
 #map
 {
 		position:relative;
-		top:40px;
+		top:0px;
         border:1px solid;
         border-radius:10px;
-        border-color:#888888;
-	
-}
-
-#panel
-{
-        height:600px;
-}
-	
-
+        border-color:#888888;	
+}	
 
 #tooltip {
     
@@ -77,21 +60,22 @@ text-shadow:2px 2px #FFFFFF;
     border: 1px solid gray;
 }
 
-
-#tabs {
-font-family: Verdana,Arial,sans-serif;
-font-size:90%;
-height: 100%
-
+#tabs 
+{
+	font-family: Verdana,Arial,sans-serif;
+	font-size:90%;
+	height: 100%
 }
 
-label {
+label 
+{
     display: block;
     padding-left: 15px;
     text-indent: -15px;
 }
 
-input {
+input 
+{
     width: 13px;
     height: 13px;
     padding: 0;

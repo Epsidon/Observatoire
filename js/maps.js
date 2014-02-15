@@ -24,6 +24,8 @@ function(
 	 * 3. Get the legends
 	 */
 	
+	reorganizeMapsPage();
+	
 	// 1.
 	console.log('Creating Map');
 
@@ -234,8 +236,8 @@ function(
 			
 			$('.servicePointBufferLayerCheckBox').click(updateServicePoints);
 			
-			drawLegend(activeLayer);	
-
+			drawLegend(activeLayer);
+						
 		}, "json" );
 	}
 

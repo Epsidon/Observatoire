@@ -42,6 +42,14 @@ function reorganizeMapsPage()
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 }
 
+function hideMapsInstructions()
+{
+	setTimeout(function()
+	{
+		reorganizeMapsPage();
+	}, 100);
+}
+
 if (location.hash != '#french')
 {
 	$('#alternativeLanguageContainer').html(
@@ -54,7 +62,6 @@ else
 		'<a href="javascript:window.location.hash=\'\'; window.location.reload(true);" '+ 
 			'class="navbar-link">English</a>');
 }
-
 
 function T(str)
 {
@@ -103,16 +110,13 @@ $('#withSupportOfMsg').html(T('With the Support of:'));
 
 $('#financialSupport').html(T('Financial Support:'));
 
-$('#ministryOfMsg').html(T('MINISTRY OF '));
-$('#healthAndLongTermCreMsg').html(T('HEALTH AND LONG-TERM CARE'));
+$('.ministryOfMsg').html(T('MINISTRY OF '));
+$('.healthAndLongTermCareMsg').html(T('HEALTH AND LONG-TERM CARE'));
 
-$('#dataProviders').html(T('Data Providers:'));
-$('#Health').html(T('Health'));
-$('#Force').html(T('Force'));
-$('#MINP1').html(T('MINISTRY OF '));
-$('#MINP2').html(T('MINISTRY OF '));
-$('#LONGTERMP1').html(T('HEALTH AND LONG-TERM CARE'));
-$('#LONGTERMP2').html(T('HEALTH AND LONG-TERM CARE'));
+$('#dataProvidersMsg').html(T('Data Providers:'));
+$('#healthMsg').html(T('Health'));
+$('#forceMsg').html(T('Force'));
+$('#ontarioMsg').html(T('Ontario'));
 
 $('#homeMainParagraph').html(T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations. The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
 

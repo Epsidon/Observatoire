@@ -1,37 +1,42 @@
 body {
 	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
-	font-size: 90%;		  
 	padding-top: 0px;
 	padding-bottom:0px;
 }
 
-td.first{
-color:#000000;
-background-color:#D8D8D8;
+td.first
+{
+	color:#000000;
+	background-color:#D8D8D8;
 }
 
-a.first{
-color: #8B0B1A; font-size:90%;
+a.first
+{
+	color: #8B0B1A; font-size:90%;
 }
 
-li.first{
-color: #424242; font-size:85%;
+li.first
+{
+	color: #424242; font-size:85%;
 }
 
-th{
- text-align: left;
-  font-weight: normal;
-  font-size:13px;
-  vertical-align: middle;
-  background-color: #0B0B3B;
-  color:#F2F2F2;
+th
+{
+	text-align: left;
+	font-weight: normal;
+	font-size:13px;
+	vertical-align: middle;
+	background-color: #0B0B3B;
+	color:#F2F2F2;
 }
 
-h2 {
-text-shadow:2px 2px #FFFFFF;
+h2 
+{
+	text-shadow:2px 2px #FFFFFF;
 }
 
-.sidebar-nav {
+.sidebar-nav 
+{
 	padding: 9px 0;
 }
 
@@ -50,8 +55,8 @@ text-shadow:2px 2px #FFFFFF;
         border-color:#888888;	
 }	
 
-#tooltip {
-    
+#tooltip 
+{    
     display: block;
     background: transparent url(http://i.stack.imgur.com/srdeI.png) no-repeat -5px -12px;
 	background-color: #2b2b2b;
@@ -63,7 +68,6 @@ text-shadow:2px 2px #FFFFFF;
 #tabs 
 {
 	font-family: Verdana,Arial,sans-serif;
-	font-size:90%;
 	height: 100%
 }
 
@@ -86,9 +90,8 @@ input
     *overflow: hidden;
 }
 
-#withSupportOfMsg
+.grayFont
 {
-	font-size:90%;
 	color:gray;
 }
 
@@ -98,9 +101,14 @@ input
 	color:#A9BCF5;
 }
 
+.redFont
+{
+	color:#FE642E;
+}
+
 .smallFont
 {
-	font-size: 0.5em;
+	font-size: 0.8em;
 }
 
 .mediumFont

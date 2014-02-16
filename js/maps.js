@@ -558,8 +558,9 @@ function(
 	{	
 		setTimeout(function()
 		{
+			numVisibleSpinners = 1;
 			fadeOutSpinner();
-		}, 30000);
+		}, 10000);
 	}
 	
 	function fadeOutSpinner()

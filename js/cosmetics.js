@@ -66,7 +66,7 @@ function mapUpDownButtonClickd()
 				$('#roleUpDownImg').attr('src', 'images/down.png');
 				upDownButtonState = 'down';
 				reorganizeMapsPage();
-				
+				$('#moreLessSpaceMsg').html(T("Less Space"));
 				window.map.resize();
 			});
 		});
@@ -78,7 +78,7 @@ function mapUpDownButtonClickd()
 				$('#roleUpDownImg').attr('src', 'images/up.png');
 				upDownButtonState = 'up';
 				reorganizeMapsPage();
-				
+				$('#moreLessSpaceMsg').html(T("More Space"));
 				window.map.resize();				
 			});
 		});
@@ -163,3 +163,4 @@ $('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 $('#mapsInstructionOne').html(T("Select a data layer from the menu below and click on map for detailed information. Click on "));
 $('#mapsInstructionTwo').html(T("for data sources and methodology."));
 
+$('#moreLessSpaceMsg').html(T("More Space"));

@@ -67,11 +67,7 @@
 				<div class="container-fluid" >
 					<div class="row-fluid">
 						 <div  class="span3"> 
-						 
-							<button type="button" class="btn" onclick="javascript:mapUpDownButtonClickd()">
-								<img class="smallIcon" id="roleUpDownImg" src="images/up.png">
-							</button>
-								
+						 								
 							<div class="mapsInstruction alert alert-success alert-dismissable">
 								<button type="button" 
 										class="close" data-dismiss="alert" aria-hidden="true" 
@@ -86,6 +82,10 @@
 							<div class="well sidebar-nav" id="panel">Loading ...</div>
 				
 						</div>
+						<button type="button" class="btn pull-right" onclick="javascript:mapUpDownButtonClickd()">
+							<span id="moreLessSpaceMsg">More Space</span><img class="smallIcon" id="roleUpDownImg" src="images/up.png">
+						</button>
+
 						<div id="map" class="span9" data-dojo-type="dijit.layout.ContentPane" region="center"></div>
 						<img src="images/loading2.gif" id="loadingIndicator"/>
 					</div>

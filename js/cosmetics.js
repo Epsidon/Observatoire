@@ -1,5 +1,6 @@
-if (window.location.hostname == "www.obs-santeminorites.ca" ||
-        window.location.hostname == "www.obs-santéminorités.ca")
+if ((window.location.hostname == "www.obs-santeminorites.ca" ||
+        window.location.hostname == "www.obs-santéminorités.ca") && 
+        location.hash != '#english')
 {
 	window.location.hash = '#french';
 }
@@ -65,7 +66,7 @@ if (location.hash != '#french')
 else
 {
 	$('#alternativeLanguageContainer').html(
-		'<a href="javascript:window.location.hash=\'\'; window.location.reload(true);" '+ 
+		'<a href="javascript:window.location.hash=\'#english\'; window.location.reload(true);" '+ 
 			'class="navbar-link">English</a>');
 }
 

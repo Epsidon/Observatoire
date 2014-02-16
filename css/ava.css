@@ -115,3 +115,9 @@ input
 {
 	font-size: 1em;
 }
+
+.smallIcon
+{
+	height:25px;
+	width:25px;
+}

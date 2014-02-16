@@ -10,12 +10,12 @@ window.addEventListener('resize', function(event){
 
 function reorganizeMapsPage()
 {
-	if ($("#map").position().top == 0)
+	if ($("#panel").position().top == 0)
 	{
 		var mapTop = 200;
 		var mapLeft = 400;
 		var mapWidth = 600;
-		var mapHeight = 600;
+		var mapHeight = 1600;
 
 		var panelTop = 200;
 		var panelLeft = 400;
@@ -54,6 +54,35 @@ function hideMapsInstructions()
 	{
 		reorganizeMapsPage();
 	}, 100);
+}
+
+var upDownButtonState = 'up';
+function mapUpDownButtonClickd()
+{
+	if (upDownButtonState == 'up')
+	{
+		$('#tabs').slideUp(400, function(){
+			$('.navbar').slideUp(400, function(){
+				$('#roleUpDownImg').attr('src', 'images/down.png');
+				upDownButtonState = 'down';
+				reorganizeMapsPage();
+				
+				window.map.resize();
+			});
+		});
+	}
+	else
+	{
+		$('.navbar').slideDown(400, function(){
+			$('#tabs').slideDown(400, function(){
+				$('#roleUpDownImg').attr('src', 'images/up.png');
+				upDownButtonState = 'up';
+				reorganizeMapsPage();
+				
+				window.map.resize();				
+			});
+		});
+	}
 }
 
 if (location.hash != '#french')
@@ -133,6 +162,4 @@ $('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 
 $('#mapsInstructionOne').html(T("Select a data layer from the menu below and click on map for detailed information. Click on "));
 $('#mapsInstructionTwo').html(T("for data sources and methodology."));
-
-
 

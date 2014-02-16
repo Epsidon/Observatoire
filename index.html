@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="js/zlibs/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/zlibs/bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="http://js.arcgis.com/3.7/"></script>
+	<script type="text/javascript" src="http://js.arcgis.com/3.8/"></script>
 	<script type="text/javascript" src="js/translations.js"></script>
 </head>
 
@@ -67,6 +67,11 @@
 				<div class="container-fluid" >
 					<div class="row-fluid">
 						 <div  class="span3"> 
+						 
+							<button type="button" class="btn" onclick="javascript:mapUpDownButtonClickd()">
+								<img class="smallIcon" id="roleUpDownImg" src="images/up.png">
+							</button>
+								
 							<div class="mapsInstruction alert alert-success alert-dismissable">
 								<button type="button" 
 										class="close" data-dismiss="alert" aria-hidden="true" 
@@ -74,9 +79,10 @@
 									&times;
 								</button>
 								<span id="mapsInstructionOne"></span>
-								<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>
+								<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>
 								<span id="mapsInstructionTwo"></span>
 							</div>
+
 							<div class="well sidebar-nav" id="panel">Loading ...</div>
 				
 						</div>

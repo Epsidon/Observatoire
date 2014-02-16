@@ -574,5 +574,11 @@ function(
 			$( "#map" ).fadeTo("fast" , 1);	
 		}
 	}
+
+window.map = map;
+	
+//	resizeMap = function(){
+//		map.resize();
+//	};
 		
 });

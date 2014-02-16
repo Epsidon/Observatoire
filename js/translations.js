@@ -54,7 +54,6 @@ Fr['PARTNERS'] = 'PARTENAIRES';
 
 Fr['Financial Support:'] = 'Support Financier:';
 
-
 Fr['Data Providers:'] = 'Fournisseurs de données:';
 Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';

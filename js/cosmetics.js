@@ -42,6 +42,30 @@ function reorganizeMapsPage()
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 }
 
+if (location.hash != '#french')
+{
+	$('#alternativeLanguageContainer').html(
+		'<a href="javascript:window.location.hash=\'#french\'; window.location.reload(true);" '+ 
+			'class="navbar-link">Français</a>');
+}
+else
+{
+	$('#alternativeLanguageContainer').html(
+		'<a href="javascript:window.location.hash=\'\'; window.location.reload(true);" '+ 
+			'class="navbar-link">English</a>');
+}
+
+
+function T(str)
+{
+	if (location.hash != '#french')
+		return str;
+	
+	if (str in Fr)
+		return Fr[str];
+
+	return str;	
+}
 
 mapsAreLoaded = false;
 $('#tabs a').click(function (e) {
@@ -70,7 +94,6 @@ $('#tabs a').click(function (e) {
 $('#panel').html(T('Loading ...'));
 $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
-
 $('#homeTab').html(T('HOME'));
 $('#mapsTab').html(T('INTERACTIVE MAPS'));
 $('#analysisTab').html(T('ANALYSIS'));
@@ -98,27 +121,8 @@ $('#homeSecondLine').html(T("The activity of the Observatory is organized around
 $('#homeOptionOne').html(T("Activities of data collection, research and production of new knowledge"));
 $('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 
-if (location.hash != '#french')
-{
-	$('#alternativeLanguageContainer').html(
-		'<a href="javascript:window.location.hash=\'#french\'; window.location.reload(true);" '+ 
-			'class="navbar-link">Français</a>');
-}
-else
-{
-	$('#alternativeLanguageContainer').html(
-		'<a href="javascript:window.location.hash=\'\'; window.location.reload(true);" '+ 
-			'class="navbar-link">English</a>');
-}
+$('#mapsInstructionOne').html(T("Select a data layer from the menu below and click on map for detailed information. Click on "));
+$('#mapsInstructionTwo').html(T("for data sources and methodology."));
 
 
-function T(str)
-{
-	if (location.hash != '#french')
-		return str;
-	
-	if (str in Fr)
-		return Fr[str];
 
-	return str;	
-}

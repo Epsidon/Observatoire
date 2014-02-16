@@ -1,8 +1,7 @@
-if ((window.location.hostname == "www.obs-santeminorites.ca" ||
-        window.location.hostname == "www.obs-santéminorités.ca") && 
-        location.hash != '#english')
+if ((window.location.hostname.search("minorityhealth") == -1)
+	&& (location.hash != '#english'))
 {
-	window.location.hash = '#french';
+        window.location.hash = '#french';
 }
 
 window.addEventListener('resize', function(event){

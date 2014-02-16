@@ -55,7 +55,7 @@ function hideMapsInstructions()
 		reorganizeMapsPage();
 	}, 100);
 }
-
+/* 
 var upDownButtonState = 'up';
 function mapUpDownButtonClickd()
 {
@@ -83,7 +83,7 @@ function mapUpDownButtonClickd()
 			});
 		});
 	}
-}
+} */
 
 if (location.hash != '#french')
 {

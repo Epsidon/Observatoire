@@ -137,11 +137,17 @@ function(
 
 	setupAccordion();
 
+	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
-		$("#loadingIndicator").fadeIn('fast');
-		$( "#map" ).fadeTo("slow" , 0.8);
-
-		setTimeout(function(){fadeOutSpinner();}, 30000);		
+		numVisibleSpinners++;
+		
+		if (numVisibleSpinners == 1)
+		{
+			$("#loadingIndicator").fadeIn('fast');
+			$( "#map" ).fadeTo("slow" , 0.8);
+		}
+		
+		fadeOutSpinnerEventually();
 	});	
 
 	map.on("zoom-end", function() {
@@ -152,7 +158,7 @@ function(
 		$("#loadingIndicator").fadeIn('fast');
 		$( "#map" ).fadeTo("slow" , 0.8);
 		
-		setTimeout(function(){fadeOutSpinner();}, 30000);
+		fadeOutSpinnerEventually();
 	});
 
 	map.on("update-end", function() {
@@ -548,10 +554,25 @@ function(
 		return htmlBody;
 	}
 	
+	function fadeOutSpinnerEventually()
+	{	
+		setTimeout(function()
+		{
+			fadeOutSpinner();
+		}, 30000);
+	}
+	
 	function fadeOutSpinner()
 	{
-		$("#loadingIndicator").fadeOut('fast');
-		$( "#map" ).fadeTo("fast" , 1);	
+		numVisibleSpinners--;
+		
+		if (numVisibleSpinners <= 0)
+		{
+			numVisibleSpinners = 0;
+			
+			$("#loadingIndicator").fadeOut('fast');
+			$( "#map" ).fadeTo("fast" , 1);	
+		}
 	}
 		
 });

@@ -1,3 +1,9 @@
+if (window.location.hostname == "www.obs-santeminorites.ca" ||
+        window.location.hostname == "www.obs-santéminorités.ca")
+{
+	window.location.hash = '#french';
+}
+
 window.addEventListener('resize', function(event){
 	reorganizeMapsPage()
 });

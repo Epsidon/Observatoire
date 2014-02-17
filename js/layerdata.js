@@ -500,11 +500,11 @@ layerData[11]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}"
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[11]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-layerData[16] = [];
-layerData[16]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
-layerData[16]['infoWindowBody'] ="${LHINProfile20112_csv_LHINNames}"+ "&nbsp" + "(" + "${LHINProfile20112_csv_LHINCode2013}" + ")" + 
+layerData[12] = [];
+layerData[12]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
+layerData[12]['infoWindowBody'] ="${LHINProfile20112_csv_LHINNames}"+ "&nbsp" + "(" + "${LHINProfile20112_csv_LHINCode2013}" + ")" + 
  "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[16]['outFields'] = new Array("LHINProfile20112_csv_LHINNames", "LHINProfile20112_csv_LHINCode2013" );
+layerData[12]['outFields'] = new Array("LHINProfile20112_csv_LHINNames", "LHINProfile20112_csv_LHINCode2013" );
 
 
 var layerToRegion = [];
@@ -560,11 +560,11 @@ var layerInfoWindow = new Array();
 var layerTemplate = new Array();
 var mapLayer = new Array();
 
-var defaultLayer = 16;
+var defaultLayer = 12;
 
 var activeLayer = defaultLayer;
 var inLayer = 0;
-var numLayers = 17;
+var numLayers = 13;
 
 var map;
 var symbol;
@@ -578,9 +578,9 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAMap3/MapServer/';
-var mapAddress2 = 'http://216.48.92.42/arcgis/rest/services/MotherTongueHeatMap/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/FrenchPopulationMaps/MapServer/';
+/* var mapAddress2 = 'http://216.48.92.42/arcgis/rest/services/MotherTongueHeatMap/MapServer/';
 var mapAddress3 = 'http://216.48.92.42/arcgis/rest/services/KnowledgeOfOfficialLanguageHeatMap/MapServer/';
 var mapAddress4 = 'http://216.48.92.42/arcgis/rest/services/FirstOfficialLanguageHeatMap/MapServer/';
-var mapAddress5 = 'http://216.48.92.42/arcgis/rest/services/LanguageSpokenMostOftenAtHomeHeatMap/MapServer/';
+var mapAddress5 = 'http://216.48.92.42/arcgis/rest/services/LanguageSpokenMostOftenAtHomeHeatMap/MapServer/'; */
 

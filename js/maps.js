@@ -53,8 +53,8 @@ function(
 	for (var i = 0; i < numLayers; i++) {
 		console.log('Creating Layer ' + i);
 
-	if (layerType[i] == 'FeatureLayer')
-		{
+	/* if (layerType[i] == 'FeatureLayer')
+		{ */
 		layerInfoWindow[i] = 
 			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
 
@@ -71,8 +71,8 @@ function(
 				mode: FeatureLayer.MODE_ONDEMAND,
 				infoTemplate:layerTemplate[i],
 				outFields: layerData[i]['outFields']});
-		}
-		else 
+		/* } */
+		/* else 
 		{
 			if (i ==12)
 			{
@@ -107,7 +107,7 @@ function(
 					});
 			}
 			
-		}
+		} */
 	}
 
 
@@ -307,14 +307,20 @@ function(
 		var extent = map.getZoom();
 
 		if ((clickedLayerId == -1) || 
-			((clickedLayerId == -1) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
+			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
 			// 4.1.
 			// 4.2.
 			console.log('4.1. 4.2.');
-			activeLayer = 16;
+			activeLayer = 12;
 		}
-		else if ((clickedLayerId == -1) || 
+		else
+		{
+			// 4.3.
+			console.log('4.3. clickedLayerId: ' + clickedLayerId);
+			activeLayer = clickedLayerId;
+		}
+		/* else if ((clickedLayerId == -1) || 
 			((clickedLayerId == 0) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
 			activeLayer = 12;
@@ -333,13 +339,7 @@ function(
 			((clickedLayerId == 3) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
 			activeLayer = 15;
-		}
-		else
-		{
-			// 4.3.
-			console.log('4.3. clickedLayerId: ' + clickedLayerId);
-			activeLayer = clickedLayerId;
-		}
+		} */
 		try
 		{
 			

@@ -2,23 +2,27 @@ var Fr = {};
 
 Fr['French Speaking Population (2011)'] = 'Population francophone (2011)';
 Fr['Profiles By LHIN (2011)'] = 'Profiles par RLISS (2011)';
+Fr['Profession by LHIN'] = 'Profiles par RLISS';
 Fr['Physician by LHIN'] = 'Par des Médecins du RLISS';
 Fr['Zoom in for more details on DA'] = 'Zoomer pour plus de détails sur DA';
 Fr['Health Professionals'] = 'Professionnels de la santé';
 Fr['Health Profiles'] = 'Profiles Santé';
 Fr['Socio-economic Profiles'] = 'Profiles socio-économique';
 
-Fr['Mother Tobgue'] = 'Langue maternelle';
+Fr['Mother Tongue'] = 'Langue maternelle';
 Fr['French='] = 'Français=';
 Fr['English='] = 'Anglais=';
 Fr['Non Official='] = 'Non officiel=';
 Fr['Total='] = 'Total=';
 Fr['Total Population in 2011='] = 'Population en 2011=';
 Fr['Knowledge of Official Language'] = 'Connaissance des langues officielles';
+
 Fr['English & French='] = 'Anglais et Français=';
 Fr['Neither='] = 'Ni=';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';
+Fr['First Official Language Spoken'] = 'Première langue officielle parlée';
 Fr['Language Spoken Most Often at Home='] = 'Langue parlée le plus souvent à la maison=';
+Fr['Language Spoken Most Often at Home'] = 'Langue parlée le plus souvent à la maison';
 
 Fr['Health Services (2011)'] = 'Services de santé (2011)';
 Fr['Health professionals'] = 'Professionels de la santé';

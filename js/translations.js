@@ -70,6 +70,33 @@ Fr['Activities of data collection, research and production of new knowledge'] = 
 
 Fr['Valorisation and transfer of knowledge'] = "valorisation et transfert des connaissances";
 
+Fr['Audiologists'] = 'Audiologistes';
+Fr['Chiropodists'] = 'Podologues';
+Fr['Chiropractors'] = 'Chiropraticiens';
+Fr['Dental Hygienists'] = 'Hygiénistes dentaires';
+Fr['Dental Technologists'] = 'Technologues dentaires';
+Fr['Dentists'] = 'Dentistes';
+Fr['Denturists'] = 'Denturologistes';
+Fr['Dietitians'] = 'Diététistes';
+Fr['Massage Therapists'] = 'Massothérapeutes';
+Fr['Medical Laboratory Technologists'] = 'Technologistes médicaux';
+Fr['Medical Radiation Technologists'] = 'Technologues en radiation médicale';
+Fr['Midwives'] = 'Sages-femmes';
+Fr['Nurse Practitioners'] = 'Infirmières praticiennes spécialisées';
+Fr['Occupational Therapists'] = 'Ergothérapeutes';
+Fr['Opticians'] = 'Opticiens d' + 'ordonnances';
+Fr['Optometrists'] = 'Optométristes';
+Fr['Pharmacists'] = 'Pharmaciens';
+Fr['Physicians GP'] = 'Médecins GP';
+Fr['Physicians Spec'] = 'Médecins Spec';
+Fr['Physiotherapists'] = 'Physiothérapeutes';
+Fr['Psychologists'] = 'Psychologues';
+Fr['Registered Nurses'] = 'Infirmiers autorisés';
+Fr['Registered Practical Nurses'] = 'Infirmiers auxiliaires';
+Fr['Respiratory Therapists'] = 'Inhalothérapeutes';
+Fr['Speech Language Pathologists'] = 'Orthophonistes';
+
+
 
 
 

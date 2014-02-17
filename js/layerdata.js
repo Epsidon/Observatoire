@@ -123,173 +123,173 @@ layerData[4]['infoWindowBody'] = "${LHINProfile20112_csv_LHINNames}" + "&nbsp" +
 "<th align='center'>Others</th>"+
 "</tr>"+
 "<tr>"+
-"<td class=first align='center'>Audiologists</td>"+
+"<td class=first align='center'>" + T("Audiologists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Audiologists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Audiologists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Audiologists_Others}</td>"+
 "</tr>"+
 "<tr>"+
-"<td align='center'>Chiropodists</td>"+
+"<td align='center'>" + T("Chiropodists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Chiropodists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Chiropodists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Chiropodists_Others}</td>"+
 "</tr>"+
 "<tr>"+
-"<td class=first align='center'>Chiropractor</td>"+
+"<td class=first align='center'>" + T("Chiropractors") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Chiropractor_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Chiropractor_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Chiropractor_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>DentalHygienists</td>"+
+"<td align='center'>" + T("Dental Hygienists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_DentalHygienists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_DentalHygienists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_DentalHygienists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>DentalTechnologists</td>"+
+"<td class=first align='center'>" + T("Dental Technologists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_DentalTechnologists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_DentalTechnologists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_DentalTechnologists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>Dentists</td>"+
+"<td align='center'>" + T("Dentists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Dentists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Dentists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Dentists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>Denturists</td>"+
+"<td class=first align='center'>" + T("Denturists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Denturists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Denturists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Denturists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>Dietitians</td>"+
+"<td align='center'>" + T("Dietitians") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Dietitians_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Dietitians_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Dietitians_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>MassageTherapists</td>"+
+"<td class=first align='center'>" + T("Massage Therapists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_MassageTherapists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_MassageTherapists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_MassageTherapists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>MedicalLaboratoryTechnologists</td>"+
+"<td align='center'>" + T("Medical Laboratory Technologists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_MedicalLaboratoryTechnologists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_MedicalLaboratoryTechnologists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_MedicalLaboratoryTechnologists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>MedicalRadiationTechnologists</td>"+
+"<td class=first align='center'>" + T("Medical Radiation Technologists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_MedicalRadiationTechnologists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_MedicalRadiationTechnologists_English}</td>"+
 "<td align='center' align='center'>${LHINProfile20112_csv_MedicalRadiationTechnologists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>Midwives</td>"+
+"<td align='center'>" + T("Midwives") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Midwives_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Midwives_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Midwives_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>NursePractitioners</td>"+
+"<td class=first align='center'>" + T("Nurse Practitioners") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_NursePractitioners_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_NursePractitioners_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_NursePractitioners_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>OccupationalTherapists</td>"+
+"<td align='center'>" + T("Occupational Therapists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_OccupationalTherapists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_OccupationalTherapists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_OccupationalTherapists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>Opticians</td>"+
+"<td class=first align='center'>" + T("Opticians") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Opticians_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Opticians_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Opticians_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>Optometrists</td>"+
+"<td align='center'>" + T("Optometrists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Optometrists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Optometrists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Optometrists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>Pharmacists</td>"+
+"<td class=first align='center'>" + T("Pharmacists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Pharmacists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Pharmacists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Pharmacists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>PhysiciansGP</td>"+
+"<td align='center'>" + T("Physicians GP") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_PhysiciansGP_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_PhysiciansGP_English}</td>"+
 "<td class=first align='center'></td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>PhysiciansSpec</td>"+
+"<td class=first align='center'>" + T("Physicians Spec") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_PhysiciansSpec_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_PhysiciansSpec_English}</td>"+
 "<td></td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>Physiotherapists</td>"+
+"<td align='center'>" + T("Physiotherapists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Physiotherapists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Physiotherapists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Physiotherapists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>Psychologists</td>"+
+"<td class=first align='center'>" + T("Psychologists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_Psychologists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_Psychologists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_Psychologists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>RegisteredNurses</td>"+
+"<td align='center'>" + T("Registered Nurses") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_RegisteredNurses_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_RegisteredNurses_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_RegisteredNurses_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>RegisteredPracticalNurses</td>"+
+"<td class=first align='center'>" + T("Registered Practical Nurses") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_RegisteredPracticalNurses_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_RegisteredPracticalNurses_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_RegisteredPracticalNurses_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>RespiratoryTherapists</td>"+
+"<td align='center'>" + T("Respiratory Therapists") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_RespiratoryTherapists_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_RespiratoryTherapists_English}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_RespiratoryTherapists_Others}</td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>SpeechLanguagePathologists</td>"+
+"<td class=first align='center'>" + T("Speech Language Pathologists") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_SpeechLanguagePathologists_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_SpeechLanguagePathologists_English}</td>"+
 "<td align='center'>${LHINProfile20112_csv_SpeechLanguagePathologists_Others}</td>"+

@@ -20,6 +20,16 @@
 
 	<script type="text/javascript" src="http://js.arcgis.com/3.8/"></script>
 	<script type="text/javascript" src="js/translations.js"></script>
+	<script>
+	  $(function() {
+		$( "#accordion" ).accordion({
+		event: "click",
+				active: false,
+				heightStyle: "content", 
+				collapsible:true,
+				autoHeight: false});
+	  });
+	</script>
 </head>
 
 <body> 
@@ -88,7 +98,32 @@
 
 			</div>
 			<div class="tab-pane container" id="analysis">
+				<div class="container-fluid" >
+					<div class="row-fluid smallFont">
+						<div  class="span3"> 
+							<div class="mapsInstruction alert alert-success alert-dismissable mediumFont">
+								<span id="analysisInstruction"></span>
+								<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>	
+							</div>
+							<div class="well sidebar-nav" id="accordion">	
+								<h3>Section 1</h3>
+									  <div>
+										<p>
+										Content1
+										</p>
+									  </div>
+								<h3>Section 2</h3>
+									  <div>
+										<p>
+										Content2
+										</p>
+									  </div>
 
+							</div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 			<div class="tab-pane container" id="partners">
 				<h2 class="grayFont smallFont" id="financialSupport"></h2>

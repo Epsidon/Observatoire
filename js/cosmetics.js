@@ -162,5 +162,7 @@ $('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 
 $('#mapsInstructionOne').html(T("Select a data layer from the menu below and click on map for detailed information. Click on "));
 $('#mapsInstructionTwo').html(T("for data sources and methodology."));
+$('#analysisInstruction').html(T("Instruction"));
+
 
 $('#moreLessSpaceMsg').html(T("More Space"));

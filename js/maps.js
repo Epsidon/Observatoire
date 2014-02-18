@@ -530,7 +530,7 @@ function(
 						'</td>' + 
 						'<td>' + 
 							'<input type="checkbox"  class="servicePointBufferLayerCheckBox" id="servicePointBuffer10k' +layerCounter+ '" >' + 
-								' 10K' +
+								T(' 25 km Driving Distance') +
 							'</input>' +
 						'</td>' + 
 					'</tr>' + 
@@ -539,7 +539,7 @@ function(
 						'</td>' + 
 						'<td>' + 
 							'<input type="checkbox" class="servicePointBufferLayerCheckBox" id="servicePointBuffer20k' +layerCounter+ '" >' + 
-								' 20K' +
+								T(' 50 km Driving Distance') +
 							'</input>' +
 						'</td>' + 
 					'</tr>' + 									

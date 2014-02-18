@@ -17,6 +17,14 @@ Fr['Total='] = 'Total=';
 Fr['Total Population in 2011='] = 'Population en 2011=';
 Fr['Knowledge of Official Language'] = 'Connaissance des langues officielles';
 
+Fr['All Hospitals and Health Units'] = 'Tous les hôpitaux et centres de santé';
+Fr['General Rehabilitation Hospital'] = 'Hôpital avec soins général en réadaptation';
+Fr['Mental Health Units'] = 'Unités de santé mentale';
+Fr['Special Rehabilitation Hospital'] = 'Hôpital avec soins spécialisés en réadaptation';
+Fr['Acute Care Treatment Hospital'] = 'Hôpital pour soins aigus';
+Fr['Ambulatory Care'] = 'Soins ambulatoires';
+Fr['Chronic Care Treatment Hospital'] = 'Hôpital pour malades chroniques';
+
 Fr['English & French='] = 'Anglais et Français=';
 Fr['Neither='] = 'Ni=';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';

@@ -240,14 +240,14 @@ layerData[4]['infoWindowBody'] = "${LHINProfile20112_csv_LHINNames}" + "&nbsp" +
 "</tr>"+
 
 "<tr>"+
-"<td align='center'>" + T("Physicians GP") + "</td>"+
+"<td align='center'>" + T("Family Physicians") + "</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_PhysiciansGP_French}</td>"+
 "<td align='center'>${LHINProfile20112_csv_PhysiciansGP_English}</td>"+
 "<td class=first align='center'></td>"+
 "</tr>"+
 
 "<tr>"+
-"<td class=first align='center'>" + T("Physicians Spec") + "</td>"+
+"<td class=first align='center'>" + T("Specialist Physicians") + "</td>"+
 "<td align='center'>${LHINProfile20112_csv_PhysiciansSpec_French}</td>"+
 "<td class=first align='center'>${LHINProfile20112_csv_PhysiciansSpec_English}</td>"+
 "<td></td>"+

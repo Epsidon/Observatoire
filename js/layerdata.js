@@ -578,7 +578,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAFrenchMap/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoMaps/MapServer/';
 /* var mapAddress2 = 'http://216.48.92.42/arcgis/rest/services/MotherTongueHeatMap/MapServer/';
 var mapAddress3 = 'http://216.48.92.42/arcgis/rest/services/KnowledgeOfOfficialLanguageHeatMap/MapServer/';
 var mapAddress4 = 'http://216.48.92.42/arcgis/rest/services/FirstOfficialLanguageHeatMap/MapServer/';

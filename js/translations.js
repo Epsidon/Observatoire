@@ -125,7 +125,6 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
-
-
+Fr['Health Professionals By LHIN'] = 'Professionels de la santé par RLISS';
 
 

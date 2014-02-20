@@ -380,7 +380,7 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "<b>" + "<p>" + T("Taux global de non-réponse (TNR) = ") + "</b>" + "${SociEcoProfile.csv.TGN}" + "</p>" +
 "<table border=1>"+
 "<tr>"+
-
+"<th align='center'></th>"+
 "<th align='center'>Francais seulement</th>"+
 "<th align='center'>Anglais seulement</th>"+
 "<th align='center'>Francais et anglais</th>"+

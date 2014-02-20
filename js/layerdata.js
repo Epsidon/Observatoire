@@ -395,10 +395,10 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
-"<td align='center'>${}</td>"+
-"<td class=first align='center'>${}</td>"+
-"<td align='center'>${}</td>"+
-"<td class=first align='center'>${}</td>"+
+"<td align='center'>${HR035b08.FrTotPerc}" + "%" + "</td>"+
+"<td class=first align='center'>${HR035b08.AngTotPerc}" + "%" + "</td>"+
+"<td align='center'>${HR035b08.FrAngTotPe}" + "%" + "</td>"+
+"<td class=first align='center'>${HR035b08.AucPerc}" + "%" + "</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
@@ -492,7 +492,9 @@ layerData[5]['outFields'] = new Array("HR035b08.FRE_LABEL", "HR035b08.HRUID2007"
 "SociEcoProfile.csv.AucuneUni","SociEcoProfile.csv.FranImm", "SociEcoProfile.csv.AngImm", "SociEcoProfile.csv.FranAngImm",
 "SociEcoProfile.csv.AucunegImm", "SociEcoProfile.csv.FranFaibleRev", "SociEcoProfile.csv.AngFaibleRev",
 "SociEcoProfile.csv.FranAngFaibleRev", "SociEcoProfile.csv.AucuneFaibleRev", "SociEcoProfile.csv.FranVivantSeul",
-"SociEcoProfile.csv.AngVivantSeul", "SociEcoProfile.csv.FranAngVivantSeul", "SociEcoProfile.csv.AucuneVivantSeul" );
+"SociEcoProfile.csv.AngVivantSeul", "HR035b08.FrTotPerc","HR035b08.AngTotPerc", "HR035b08.FrAngTotPe",
+"HR035b08.AucPerc",
+"SociEcoProfile.csv.FranAngVivantSeul", "SociEcoProfile.csv.AucuneVivantSeul" );
 
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";
@@ -673,6 +675,6 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportalFrenchMaps/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/PopulationMap/MapServer/';
  
 

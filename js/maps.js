@@ -271,10 +271,17 @@ function(
 		if ((clickedLayerId == -1) || 
 			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
+			if (clickedLayerId == 2)
+				{
+					activeLayer = 5;
+				}
+			else
+			{
 			// 4.1.
 			// 4.2.
 			console.log('4.1. 4.2.');
 			activeLayer = 13;
+			}
 		}
 		else
 		{

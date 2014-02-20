@@ -53,8 +53,6 @@ function(
 	for (var i = 0; i < numLayers; i++) {
 		console.log('Creating Layer ' + i);
 
-	/* if (layerType[i] == 'FeatureLayer')
-		{ */
 		layerInfoWindow[i] = 
 			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
 
@@ -71,43 +69,7 @@ function(
 				mode: FeatureLayer.MODE_ONDEMAND,
 				infoTemplate:layerTemplate[i],
 				outFields: layerData[i]['outFields']});
-		/* } */
-		/* else 
-		{
-			if (i ==12)
-			{
-				mapLayer[i] = new esri.layers.ArcGISDynamicMapServiceLayer(
-					mapAddress2   , {
-					"opacity"        :1.0,
-					"imageParameters":imageParameters
-					});
-			}	
-			else if (i ==13)
-			{
-				mapLayer[i] = new esri.layers.ArcGISDynamicMapServiceLayer(
-					mapAddress3  , {
-					"opacity"        :1.0,
-					"imageParameters":imageParameters
-					});
-			}
-			else if (i == 14)
-			{
-				mapLayer[i] = new esri.layers.ArcGISDynamicMapServiceLayer(
-					mapAddress4  , {
-					"opacity"        :1.0,
-					"imageParameters":imageParameters
-					});
-			}
-			else if ( i ==15)
-			{
-			mapLayer[i] = new esri.layers.ArcGISDynamicMapServiceLayer(
-					mapAddress5  , {
-					"opacity"        :1.0,
-					"imageParameters":imageParameters
-					});
-			}
-			
-		} */
+		
 	}
 
 
@@ -312,7 +274,7 @@ function(
 			// 4.1.
 			// 4.2.
 			console.log('4.1. 4.2.');
-			activeLayer = 12;
+			activeLayer = 13;
 		}
 		else
 		{
@@ -320,26 +282,7 @@ function(
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			activeLayer = clickedLayerId;
 		}
-		/* else if ((clickedLayerId == -1) || 
-			((clickedLayerId == 0) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
-		{
-			activeLayer = 12;
-		}
-		else if ((clickedLayerId == -1) || 
-			((clickedLayerId == 1) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
-		{
-			activeLayer = 13;
-		}
-		else if ((clickedLayerId == -1) || 
-			((clickedLayerId == 2) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
-		{
-			activeLayer = 14;
-		}
-		else if ((clickedLayerId == -1) || 
-			((clickedLayerId == 3) &&(layerToRegion[clickedLayerId] == 0) && (extent < 7)))
-		{
-			activeLayer = 15;
-		} */
+	
 		try
 		{
 			
@@ -578,8 +521,4 @@ function(
 
 window.map = map;
 	
-//	resizeMap = function(){
-//		map.resize();
-//	};
-		
 });

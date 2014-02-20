@@ -380,7 +380,7 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "<b>" + "<p>" + T("Taux global de non-réponse (TNR) = ") + "</b>" + "${SociEcoProfile.csv.TGN}" + "</p>" +
 "<table border=1>"+
 "<tr>"+
-"<th align='center'></th>"+
+
 "<th align='center'>Francais seulement</th>"+
 "<th align='center'>Anglais seulement</th>"+
 "<th align='center'>Francais et anglais</th>"+
@@ -389,13 +389,16 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "<tr>" +
 "<td class=first align='center'>" + T("Population") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.TotalFranSeul}</td>"+
-"<td align='center'>${SociEcoProfile.csv.TotalAngSeul}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.TotalFranAng}</td>"+
-"<td align='center'>${SociEcoProfile.csv.TotalAucune}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.TotalAngSeul}</td>"+
+"<td align='center'>${SociEcoProfile.csv.TotalFranAng}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.TotalAucune}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
-
+"<td align='center'>${}</td>"+
+"<td class=first align='center'>${}</td>"+
+"<td align='center'>${}</td>"+
+"<td class=first align='center'>${}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
@@ -403,23 +406,23 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "<tr>" +
 "<td class=first align='center'>" + T("0 à 19 ans") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranAge019}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngAge019}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngAge019}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneAge019}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngAge019}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngAge019}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge019}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("20 à 64 ans") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranAge2064}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngAge2064}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngAge2064}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneAge2064}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngAge2064}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngAge2064}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge2064}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("65 ans et plus") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranAge65plus}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngAge65plus}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngAge65plus}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneAge65plus}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngAge65plus}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngAge65plus}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge65plus}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Education") + "</td>" +
@@ -427,51 +430,51 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "<tr>" +
 "<td class=first align='center'>" + T("Aucun certificat, diplôme ou grade") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranAucunDip}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngAucunDip}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngAucunDip}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneAucunDip}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngAucunDip}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngAucunDip}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneAucunDip}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Diplôme d'études secondaires") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranDES}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngDES}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngDES}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneDES}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngDES}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngDES}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneDES}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Certificat/diplôme d'un collège") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranCollege}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngCollege}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngCollege}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneCollege}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngCollege}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngCollege}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneCollege}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Certificat/diplôme universitaire") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranUni}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngUni}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngUni}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneUni}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngUni}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngUni}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneUni}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Immigrants") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranImm}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngImm}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngImm}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucunegImm}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngImm}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngImm}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucunegImm}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Personne à faible revenu") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranFaibleRev}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngFaibleRev}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngFaibleRev}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneFaibleRev}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngFaibleRev}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngFaibleRev}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneFaibleRev}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Personne vivant seule") + "</td>"+
 "<td align='center'>${SociEcoProfile.csv.FranVivantSeul}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AngVivantSeul}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.FranAngVivantSeul}</td>"+
-"<td align='center'>${SociEcoProfile.csv.AucuneVivantSeul}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AngVivantSeul}</td>"+
+"<td align='center'>${SociEcoProfile.csv.FranAngVivantSeul}</td>"+
+"<td class=first align='center'>${SociEcoProfile.csv.AucuneVivantSeul}</td>"+
 "</tr>"+
 "</table>" + 
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";

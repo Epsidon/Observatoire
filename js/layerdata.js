@@ -682,13 +682,13 @@ layerToRegion[12] = 2;
 
 
 var servicePointBuffers = [];
-servicePointBuffers[6] = [32,39];
-servicePointBuffers[7] = [18,25];
-servicePointBuffers[8] = [46,53];
-servicePointBuffers[9] = [60,67];
-servicePointBuffers[10] = [74,81];
-servicePointBuffers[11] = [88,95];
-servicePointBuffers[12] = [109,102];
+servicePointBuffers[6] = [34,41];
+servicePointBuffers[7] = [20,27];
+servicePointBuffers[8] = [48,55];
+servicePointBuffers[9] = [62,69];
+servicePointBuffers[10] = [76,83];
+servicePointBuffers[11] = [90,97];
+servicePointBuffers[12] = [111,104];
 
 var layerInfoWindow = new Array();
 var layerTemplate = new Array();

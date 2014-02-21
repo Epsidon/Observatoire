@@ -77,8 +77,9 @@ Fr['HOME'] = 'ACCUEIL';
 Fr['INTERACTIVE MAPS'] = 'CARTES INTERACTIVES';
 Fr['ANALYSIS'] = 'ANALYSES';
 Fr['PARTNERS'] = 'PARTENAIRES';
-
-
+Fr['Methodological Notes'] = 'Notes Méthodologiques';
+Fr['LEGENDS'] = 'légende';
+Fr['Legends'] = 'légende';
 Fr['Financial Support:'] = 'Support Financier:';
 
 Fr['Data Providers:'] = 'Fournisseurs de données:';
@@ -126,5 +127,8 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
 Fr['Health Professionals By LHIN'] = 'Professionels de la santé par RLISS';
-
-
+Fr['Champlain Local Health Integration Network (LHIN)'] = 'Réseau local d’intégration des services de santé (RLISS) de Champlain';
+Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
+Fr['Champlain Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';
+Fr['Population Number'] = 'Population';
+Fr['Population Proportion'] = 'Proportion de la Population';

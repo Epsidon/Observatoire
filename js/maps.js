@@ -273,15 +273,18 @@ function(
 		{
 			if (clickedLayerId == 2)
 				{
-					activeLayer = 5;
+					activeLayer = 13;
 				}
 			else
 			{
 			// 4.1.
 			// 4.2.
+		
 			console.log('4.1. 4.2.');
-			activeLayer = 13;
+			activeLayer = 14;
+			
 			}
+			
 		}
 		else
 		{

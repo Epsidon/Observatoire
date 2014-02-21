@@ -606,7 +606,8 @@ layerData[11]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2",
 
 layerData[12] = [];
 layerData[12]['infoWindowTitle'] = "<b>" + T("Chronic Care Treatment Hospital") + "</b>";
-layerData[12]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+layerData[12]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + 
+"<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -622,11 +623,46 @@ layerData[12]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}"
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[12]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-layerData[13] = [];
-layerData[13]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
-layerData[13]['infoWindowBody'] ="${LHINProfile20112_csv_LHINNames}"+ "&nbsp" + "(" + "${LHINProfile20112_csv_LHINCode2013}" + ")" + 
+layerData[14] = [];
+layerData[14]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
+layerData[14]['infoWindowBody'] ="${LHINProfile20112_csv_LHINNames}"+ "&nbsp" + "(" + "${LHINProfile20112_csv_LHINCode2013}" + ")" + 
  "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[13]['outFields'] = new Array("LHINProfile20112_csv_LHINNames", "LHINProfile20112_csv_LHINCode2013" );
+layerData[14]['outFields'] = new Array("LHINProfile20112_csv_LHINNames", "LHINProfile20112_csv_LHINCode2013" );
+
+layerData[13] = [];
+layerData[13]['infoWindowTitle'] = "<b>" + T("Champlain Local Health Integration Network (LHIN)") + "</b>";
+layerData[13]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
+"<tr>"+
+"<th align='center'></th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English</th>"+
+"<th align='center'>English & French</th>"+
+"<th align='center'>Neither</th>"+
+"<th align='center'>Total</th>"+
+"</tr>"+
+"<tr>"+
+"<td class=first align='center'>" + T("Population Number") + "</td>"+
+"<td align='center'>${SociEcoP_2}</td>"+
+"<td class=first align='center'>${SociEcoP_3}</td>"+
+"<td align='center'>${SociEcoP_4}</td>"+
+"<td align='center'>${SociEcoP_5}</td>"+
+"<td align='center'>${Total}</td>"+
+"</tr>"+
+"<tr>"+
+"<td class=first align='center'>" + T("Population Proportion") + "</td>"+
+"<td align='center'>${FrTotPerc}</td>"+
+"<td class=first align='center'>${AngTotPerc}</td>"+
+"<td align='center'>${FrAngTotPe}</td>"+
+"<td align='center'>${AucPerc}</td>"+
+"<td align='center'>" + T("100%") + "</td>"+
+"</tr>"+
+"</table>" + T("Source: 2011 National Household Survey") +
+"<p>" + T("Champlain Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
+"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + 
+T("Methodological Notes") + "</a>" + "</p>";
+
+layerData[13]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
+"SociEcoP_4", "SociEcoP_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc");
 
 
 var layerToRegion = [];
@@ -644,6 +680,7 @@ layerToRegion[10] = 2;
 layerToRegion[11] = 2;
 layerToRegion[12] = 2;
 
+
 var servicePointBuffers = [];
 servicePointBuffers[6] = [32,39];
 servicePointBuffers[7] = [18,25];
@@ -657,11 +694,11 @@ var layerInfoWindow = new Array();
 var layerTemplate = new Array();
 var mapLayer = new Array();
 
-var defaultLayer = 13;
+var defaultLayer = 14;
 
 var activeLayer = defaultLayer;
 var inLayer = 0;
-var numLayers = 14;
+var numLayers = 15;
 
 var map;
 var symbol;
@@ -675,6 +712,6 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/PopulationMap/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAGeo/MapServer/';
  
 

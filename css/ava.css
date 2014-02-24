@@ -125,9 +125,16 @@ input
 #legendList 
 {
 	pointer-events:none;
-	padding: 10px;
+	padding: 20px;
 }
 
+.esriSimpleSliderHomeButton{
+      border-bottom: 2px solid #666666;
+      background-image: url(../dijit/images/home.png);
+      background-repeat:no-repeat;
+      background-position:center; 
+    }
+	
 .legendColorRect
 {
 	width:10px;

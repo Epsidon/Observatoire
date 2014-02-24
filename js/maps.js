@@ -72,14 +72,14 @@ function(
 		
 	}
 
-
 	for (var j in servicePointBuffers) {
 	
 		for (var i = 0; i < 2; i++) {
 
 			var bufferIndex = servicePointBuffers[j][i];
 		
-			console.log('Creating Buffers for Layer ' + j + ' buffer index: ' + bufferIndex);
+			console.log('Creating Buffers for Layer ' + j + 
+				' buffer index: ' + bufferIndex);
 
 			mapLayer[bufferIndex] = new FeatureLayer(
 				mapAddress + bufferIndex);
@@ -127,7 +127,6 @@ function(
 		fadeOutSpinner();
 	});	
 	
-	
 	function setupAccordion()
 	{
 		console.log('Setting up accordion');
@@ -161,9 +160,6 @@ function(
 				}
 
 				accordionHtmlBody += 
-					'</ul>' + 
-					'<ul class="nav nav-list" id="legendList' + 
-						j + '">' + 
 					'</ul>' + 
 						'<br>' +
 							'<href class="button1" onclick="myFunction()">' +
@@ -373,7 +369,7 @@ function(
 		var legendColour = [];
 		legendBody += [];
 		
-		$('#legendList' + layerToRegion[layerId]).html('');
+		$('#legendList').hide();
 	}
 	
 	function drawLegend(layerId)
@@ -381,11 +377,10 @@ function(
 		console.log('drawLegend was called layerId: ' + layerId);
 
 		var layerLegend = legendsArray[layerId];
-		
+
 		if (layerLegend)
-		{							
-			console.log("if(layerLegend)?");
-			var legendBody = '<li class="nav-header">' + T('Legends') + '</li>';
+		{										
+			var legendBody = '<table>';
 	
 			for (j = 0; j < layerLegend.length; j++)
 			{
@@ -395,26 +390,29 @@ function(
 					thisLayerLegend.symbol.color[1] + ',' +
 					thisLayerLegend.symbol.color[2];
 	
-				legendBody +=  '<li><table><tr>' + 
+				legendBody +=  
+					'<tr>' + 
 						'<td>' + 
-							'<div style="width:40px;height:20px;border:1px solid' + 
-							' #000;background-color:RGB('+legendColour+');"></div>' + 
-						'</td>' + 
-						'<td>' + 
-							'<div style="width:10px;height:20px;border:0px;"></div>' + 
+							'<div class="legendColorRect" style="background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
 						'<td>' + thisLayerLegend.label + '</td>' + 
-					'</tr></table></li>';
+					'</tr>';
 			}	
 	
-			$('#legendList' + layerToRegion[layerId]).html(legendBody);
+			legendBody += '</table>';
+	
+			$('#legendList').html(legendBody);
+			$('#legendList').show();
+			
 		}
 		else
 		{
 			removeLegend(layerId);
 			removeLegend(inLayer);
-			$('#legendList' + layerToRegion[layerId]).html('');			
-		}		
+			$('#legendList').hide();					
+		}	
+		
+		reorganizeMapsPage();	
 	}
 
 	function showResults(featureSet) 

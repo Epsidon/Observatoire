@@ -121,3 +121,23 @@ input
 	height:25px;
 	width:25px;
 }
+
+#legendList 
+{
+	padding: 10px;
+}
+
+.legendColorRect
+{
+	width:10px;
+	height:15px;
+	border:1px solid #000;
+}
+
+.legendCellText
+{
+	width:15px;
+	height:15px;
+	border:1px solid #000;
+}
+

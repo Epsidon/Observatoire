@@ -33,7 +33,11 @@ function reorganizeMapsPage()
 		var panelLeft = $("#panel").position().left;
 		var panelWidth = $("#panel").width();
 		var panelHeight = $("#panel").height();		
+
 	}
+
+	var legendHeight = $("#legendList").height();
+	var legendWidth = $("#legendList").width();		
 
 	var mapHeight = $(window).height() - mapTop;
 	var panelHeight = $(window).height() - panelTop;
@@ -46,6 +50,12 @@ function reorganizeMapsPage()
 	 
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
+		
+	var legendTop = mapTop + mapHeight - legendHeight - 20;
+	var legendLeft = mapLeft + 20;
+	 
+	$("#legendList").css(
+		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
 }
 
 function hideMapsInstructions()

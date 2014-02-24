@@ -131,14 +131,16 @@ input
 .legendColorRect
 {
 	width:10px;
-	height:15px;
+	height:10px;
 	border:1px solid #000;
 }
 
 .legendCellText
 {
-	width:15px;
-	height:15px;
 	border:1px solid #000;
 }
 
+.esriLargeSliderTicks 
+{ 
+	display: none; 
+}

@@ -33,7 +33,8 @@ function(
 		basemap: "gray",	
     	center: [-85.416, 49.000],
 		zoom : 6,
-		logo: false
+		logo: false,
+		sliderStyle: "small"
 	});
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";

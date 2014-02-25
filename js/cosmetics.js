@@ -4,23 +4,9 @@ if ((window.location.hostname.search("minorityhealth") == -1)
         window.location.hash = '#french';
 }
 
-if (window.addEventListener)
-{
-	window.addEventListener('resize', function(event){
-		reorganizeMapsPage()
-	});
-} 
-else if (window.attachEvent)
-{
-	window.attachEvent('resize', function(event){
-		reorganizeMapsPage()
-	});
-}
-else
-{
-	alert('Unsupported browser');
-}
-
+$( window ).resize(function() {
+	reorganizeMapsPage();
+});
 
 function reorganizeMapsPage()
 {

@@ -28,28 +28,29 @@ function reorganizeMapsPage()
 	{
 		var mapTop = 200;
 		var mapLeft = 400;
-		var mapWidth = 600;
-		var mapHeight = 1600;
-
+		var mapWidth = 400;
 		var panelTop = 200;
-		var panelLeft = 400;
-		var panelWidth = 600;
-		var panelHeight = 600;		
 	}
 	else
 	{	
-		var mapTop = $("#map").position().top;
-		var mapLeft = $("#map").position().left;
+		var mapTop = $("#map").offset().top;
+		var mapLeft = $("#map").offset().left;	
 		var mapWidth = $("#map").width();
-		var mapHeight = $("#map").height();
-
-		var panelTop = $("#panel").position().top;
-		var panelLeft = $("#panel").position().left;
-		var panelWidth = $("#panel").width();
-		var panelHeight = $("#panel").height();		
-
+		var panelTop = $("#panel").offset().top;
 	}
-
+	
+	if ($("#map_container").offset())
+	{
+		var mapContainerLeft = $("#map_container").offset().left;
+		var zoomButtonHeight = $(".esriSimpleSliderDecrementButton").height();
+	}
+	else
+	{
+		var mapContainerLeft = 400;
+		var zoomButtonHeight = 20;		
+	}
+		
+		
 	var legendHeight = $("#legendList").height();
 	var legendWidth = $("#legendList").width();		
 
@@ -65,8 +66,8 @@ function reorganizeMapsPage()
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
-	var legendTop = mapTop + mapHeight - legendHeight - 20;
-	var legendLeft = mapLeft + 20;
+	var legendTop = mapTop + mapHeight - legendHeight - zoomButtonHeight;
+	var legendLeft = mapContainerLeft;
 	 
 	$("#legendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			

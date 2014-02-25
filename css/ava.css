@@ -125,7 +125,7 @@ input
 #legendList 
 {
 	pointer-events:none;
-	padding: 30px;
+	padding: 1em;
 }
 
 .esriSimpleSliderHomeButton{

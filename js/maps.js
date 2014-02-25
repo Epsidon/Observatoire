@@ -36,6 +36,9 @@ function(
 		logo: false,
 		sliderStyle: "small"
 	});
+	
+	console.log('Map was created');
+	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 	
@@ -164,7 +167,7 @@ function(
 					'</ul>' + 
 						'<br>' +
 							'<href class="button1" onclick="myFunction()">' +
-							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
+							'<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>' +
 							'</href>' +
 							
 							'<script>' +

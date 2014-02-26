@@ -563,9 +563,9 @@ layerData[12]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2",
 
 layerData[14] = [];
 layerData[14]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
-layerData[14]['infoWindowBody'] ="${LHINProfile20112_csv_LHINNames}"+ "&nbsp" + "(" + "${LHINProfile20112_csv_LHINCode2013}" + ")" + 
+layerData[14]['infoWindowBody'] ="${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
  "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[14]['outFields'] = new Array("LHINProfile20112_csv_LHINNames", "LHINProfile20112_csv_LHINCode2013" );
+layerData[14]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 layerData[13] = [];
 layerData[13]['infoWindowTitle'] = "<b>" + T("Champlain Local Health Integration Network (LHIN)") + "</b>";
@@ -650,6 +650,6 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAMap/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportalMap/MapServer/';
  
 

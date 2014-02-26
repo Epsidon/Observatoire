@@ -36,9 +36,6 @@ function(
 		logo: false,
 		sliderStyle: "small"
 	});
-	
-	console.log('Map was created');
-	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 	
@@ -152,14 +149,6 @@ function(
 					var layer = layers[i];
 							
 					accordionHtmlBody += getAccordionRowHtmlBody(layer, i, j);
-					
-					if (layer.drawingInfo.renderer.classBreakInfos)
-						legendsArray[i] = layer.drawingInfo.renderer.classBreakInfos;
-					else if (layer.drawingInfo.renderer.uniqueValueInfos)
-						legendsArray[i] = layer.drawingInfo.renderer.uniqueValueInfos;
-					else
-						legendsArray[i] = null;
-	
 					i++;
 				}
 
@@ -167,7 +156,7 @@ function(
 					'</ul>' + 
 						'<br>' +
 							'<href class="button1" onclick="myFunction()">' +
-							'<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>' +
+							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
 							'</href>' +
 							
 							'<script>' +
@@ -274,15 +263,15 @@ function(
 			if (clickedLayerId == 2)
 				{
 					activeLayer = 13;
+					drawLegend(activeLayer);
 				}
 			else
 			{
 			// 4.1.
 			// 4.2.
-		
 			console.log('4.1. 4.2.');
 			activeLayer = 14;
-			
+			drawLegend(activeLayer);
 			}
 			
 		}
@@ -291,6 +280,7 @@ function(
 			// 4.3.
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			activeLayer = clickedLayerId;
+			drawLegend(activeLayer);	
 		}
 	
 		try
@@ -303,7 +293,7 @@ function(
 			}
 			
 			map.addLayer(mapLayer[activeLayer]);
-			drawLegend(activeLayer);		
+				
 		}
 		catch(err)
 		{
@@ -312,7 +302,7 @@ function(
 		
 		updateServicePoints();
 	}	
-
+	
 	function updateServicePoints()
 	{		
 		for(var i = 0; i < numLayers; i++)
@@ -376,17 +366,22 @@ function(
 		$('#legendList').hide();
 	}
 	
-	function drawLegend(layerId)
+	function drawLegend(activeLayer)
 	{
-		console.log('drawLegend was called layerId: ' + layerId);
-
-		var layerLegend = legendsArray[layerId];
-
-		if (layerLegend)
-		{										
+		var layer = layers[activeLayer];
+				
+			if (layer.drawingInfo.renderer.classBreakInfos)
+				legendsArray[activeLayer] = layer.drawingInfo.renderer.classBreakInfos;
+			else if (layer.drawingInfo.renderer.uniqueValueInfos)
+				legendsArray[activeLayer] = layer.drawingInfo.renderer.uniqueValueInfos;
+			else
+				legendsArray[activeLayer] = null;
+		
+		var layerLegend = legendsArray[activeLayer];
+			
 			var legendBody = '<table>';
-	
-			for (j = 0; j < layerLegend.length; j++)
+			
+				for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
 	
@@ -397,26 +392,22 @@ function(
 				legendBody +=  
 					'<tr>' + 
 						'<td>' + 
-							'<div class="legendColorRect" style="background-color:RGB('+legendColour+');"></div>' + 
+							'<div style="width:40px;height:20px;border:1px solid' + 
+							' #000;background-color:RGB('+legendColour+');"></div>' + 
+						'</td>' + 
+						'<td>' + 
+							'<div style="width:10px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
 						'<td>' + thisLayerLegend.label + '</td>' + 
 					'</tr>';
 			}	
-	
 			legendBody += '</table>';
-	
+
 			$('#legendList').html(legendBody);
 			$('#legendList').show();
 			
-		}
-		else
-		{
-			removeLegend(layerId);
-			removeLegend(inLayer);
-			$('#legendList').hide();					
-		}	
+			reorganizeMapsPage();
 		
-		reorganizeMapsPage();	
 	}
 
 	function showResults(featureSet) 

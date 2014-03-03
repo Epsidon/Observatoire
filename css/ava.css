@@ -1,5 +1,11 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
 body {
-	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+  	padding-top: 50px;
+  	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	padding-top: 0px;
 	padding-bottom:0px;
 }

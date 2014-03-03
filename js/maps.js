@@ -24,7 +24,7 @@ function(
 	 * 3. Get the legends
 	 */
 	
-	reorganizeMapsPage();
+	organizer.reorganizeMapsPage();
 	
 	// 1.
 	console.log('Creating Map');
@@ -98,7 +98,7 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
-	setupAccordion();
+// 	setupAccordion();
 
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
@@ -128,76 +128,6 @@ function(
 		fadeOutSpinner();
 	});	
 	
-	function setupAccordion()
-	{
-		console.log('Setting up accordion');
-		$.get("server.php", function( data ) 
-		{
-			layers = data.layers;
-			
-			var accordionHtmlBody = '';
-
-			var i = 0;
-
-			for (var j = 0; j < accordion.length; j++)
-			{
-				accordionHtmlBody += '<H3>' + accordion[j]['title'] + '</H3>';
-				accordionHtmlBody += '<div><ul class="nav nav-list">';
-
-				for (var k = 0; k < accordion[j]['numLayers']; k++)
-				{
-					var layer = layers[i];
-							
-					accordionHtmlBody += getAccordionRowHtmlBody(layer, i, j);
-					i++;
-				}
-
-				accordionHtmlBody += 
-					'</ul>' + 
-						'<br>' +
-							'<href class="button1" onclick="myFunction()">' +
-							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
-							'</href>' +
-							
-							'<script>' +
-								'function myFunction()' +
-									'{' +
-									'window.showModalDialog("./info.html" , "height=255, width=1700");' +
-									'}' +
-							'</script>' +
-						'</br>' +
-					'</div>';
-			}
-														
-			$( "#panel" ).html(accordionHtmlBody);
-		
-			$( "#panel" ).accordion({
-				event: "click",
-				active: false,
-				heightStyle: "content", 
-				collapsible:true,
-				autoHeight: false
-			});
-
-			for (var l = 0; l < numLayers; l++) {
-				if (layerToRegion[l] == 2)
-				{
-					$('.servicePointBufferRow' + l).hide();
-					$('#servicePointHyperLink' + l).click(updateLayerWrapper(l, true));
-				}
-				else
-				{
-					$('#layerHyperLink' + l).click(updateLayerWrapper(l, false));
-				}
-			}
-			
-			$('.servicePointBufferLayerCheckBox').click(updateServicePoints);
-			
-			drawLegend(activeLayer);
-						
-		}, "json" );
-	}
-
 	function updateLayerWrapper(layerId, isServicePoint)
 	{		
 		if (isServicePoint)
@@ -406,7 +336,7 @@ function(
 			$('#legendList').html(legendBody);
 			$('#legendList').show();
 			
-			reorganizeMapsPage();
+			organizer.reorganizeMapsPage();
 		
 	}
 
@@ -441,65 +371,7 @@ function(
 			map.infoWindow.show(evt.screenPoint,map.getInfoWindowAnchor(evt.screenPoint));
 		});
 	}
-	
-	function getAccordionRowHtmlBody(layer, layerCounter, accordionCounter) 
-	{
-		if (accordionCounter != (accordion.length-1)) 
-		{
-			htmlBody = 
-				'<table>' +
-					'<tr>' + 
-						'<td>' + 
-							'<input type="checkbox" id="layerHyperLink' +layerCounter+ '"/>' + 
-						'</td>' + 
-						'<td>' + 
-							T(layer.name) +
-						'</td>' + 
-					'</tr>' + 						
-				'</table>';
-		}
-		else
-		{
-			htmlBody = 
-				'<table>' +
-					'<tr>' + 
-						'<td>' + 
-							'<label>'+'<input type="checkbox" id="servicePointHyperLink' +layerCounter+ '" />' + 
-						'</td>' + 
-						'<td>' + 
-							T(layer.name) +
-						'</td>' + 
-							'</label>'+
-					'</tr>' + 
-					'<tr class="servicePointBufferRow' + layerCounter + '">' + 
-						'<td>' + 
-						'</td>' + 
-						'<td>' + 
-							'<input type="checkbox"  class="servicePointBufferLayerCheckBox" id="servicePointBuffer10k' +layerCounter+ '" >' + 
-								T(' 25 km Driving Distance') +
-							'</input>' +
-						'</td>' + 
-					'</tr>' + 
-					'<tr class="servicePointBufferRow' + layerCounter + '">' + 
-						'<td>' + 
-						'</td>' + 
-						'<td>' + 
-							'<input type="checkbox" class="servicePointBufferLayerCheckBox" id="servicePointBuffer20k' +layerCounter+ '" >' + 
-								T(' 50 km Driving Distance') +
-							'</input>' +
-						'</td>' + 
-					'</tr>' + 									
-				'</table>';
-		}
 		
-		htmlBody = 
-			'<li id="region' + layerCounter + '">' +  
-				htmlBody + 
-			'</li>';
-
-		return htmlBody;
-	}
-	
 	function fadeOutSpinnerEventually()
 	{	
 		setTimeout(function()

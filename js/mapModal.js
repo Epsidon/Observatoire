@@ -30,9 +30,11 @@ MapModal.prototype.fillModalBody = function()
 
 		for (var j = 0; j < self.accordion.length; j++)
 		{
+			var colspan = (j == self.accordion.length - 1)? 3 : 2;
+			
 			accordionHtmlBody += 
 				'<table class="table table-condensed table-hover table-bordered">' +
-					'<tr><td colspan="2"><strong>' + self.accordion[j]['title'] + '</strong></td></tr>';
+					'<tr><td colspan="' + colspan +'"><strong>' + self.accordion[j]['title'] + '</strong></td></tr>';
 
 			for (var k = 0; k < self.accordion[j]['numLayers']; k++)
 			{
@@ -90,35 +92,41 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	else
 	{
 		htmlBody = 
-			'<table>' +
-				'<tr>' + 
+				'<tr>' + 				
 					'<td>' + 
 						'<label>'+'<input type="checkbox" id="servicePointHyperLink' +layerCounter+ '" />' + 
-					'</td>' + 
-					'<td><small>' + 
+					'</td>' +
+
+					'<td colspan="2"><small>' + 
 						translator.T(layer.name) +
 					'</small></td>' + 
 						'</label>'+
 				'</tr>' + 
-				'<tr class="servicePointBufferRow' + layerCounter + '">' + 
+				'<tr class="servicePointBufferRow' + layerCounter + ' collapse out">' + 
 					'<td>' + 
 					'</td>' + 
 					'<td>' + 
 						'<input type="checkbox"  class="servicePointBufferLayerCheckBox" id="servicePointBuffer10k' +layerCounter+ '" >' + 
-							translator.T(' 25 km Driving Distance') +
 						'</input>' +
 					'</td>' + 
+					'<td><small>' + 
+							translator.T(' 25 km Driving Distance') +
+					'</small></td>' + 
 				'</tr>' + 
-				'<tr class="servicePointBufferRow' + layerCounter + '">' + 
+				'<tr class="servicePointBufferRow' + layerCounter + ' collapse out">' + 
+
 					'<td>' + 
 					'</td>' + 
+
 					'<td>' + 
 						'<input type="checkbox" class="servicePointBufferLayerCheckBox" id="servicePointBuffer20k' +layerCounter+ '" >' + 
-							translator.T(' 50 km Driving Distance') +
 						'</input>' +
 					'</td>' + 
-				'</tr>' + 									
-			'</table>';
+					'<td><small>' + 
+							translator.T(' 25 km Driving Distance') +
+					'</small></td>' + 
+					
+				'</tr>';
 	}
 
 /*	

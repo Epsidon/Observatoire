@@ -82,7 +82,9 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 		htmlBody = 
 			'<tr>' +
 				'<td>' + 
-					'<input type="checkbox" id="layerHyperLink' +layerCounter+ '"/>' + 
+					'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
+						'class="layerHyperLinkCheckBox"' +
+						'onClick="javascript:mapModal.layerCheckBoxClicked(' + layerCounter + ')"/>' + 
 				'</td>' + 
 				'<td><small>' + 
 					translator.T(layer.name) +
@@ -94,7 +96,10 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 		htmlBody = 
 				'<tr>' + 				
 					'<td>' + 
-						'<label>'+'<input type="checkbox" id="servicePointHyperLink' +layerCounter+ '" />' + 
+						'<input type="checkbox" id="servicePointHyperLink' + layerCounter + '" ' + 
+							'class="servicePointCheckBox"' +
+							'onClick="javascript:mapModal.servicePointCheckBoxClicked(' + layerCounter + ')"/>' + 
+
 					'</td>' +
 
 					'<td colspan="2"><small>' + 
@@ -102,7 +107,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 					'</small></td>' + 
 						'</label>'+
 				'</tr>' + 
-				'<tr class="servicePointBufferRow' + layerCounter + ' collapse out">' + 
+				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow collapse out">' + 
 					'<td>' + 
 					'</td>' + 
 					'<td>' + 
@@ -113,7 +118,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 							translator.T(' 25 km Driving Distance') +
 					'</small></td>' + 
 				'</tr>' + 
-				'<tr class="servicePointBufferRow' + layerCounter + ' collapse out">' + 
+				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow collapse out">' + 
 
 					'<td>' + 
 					'</td>' + 
@@ -138,3 +143,23 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 
 	return htmlBody;
 }
+
+MapModal.prototype.layerCheckBoxClicked = function (layerCounter)
+{
+	$('.layerHyperLinkCheckBox').prop('checked', false);
+	$('#layerHyperLink' + layerCounter).prop('checked', true);
+};
+
+MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
+{
+	$('.servicePointCheckBox').prop('checked', false);
+	$('#servicePointHyperLink' + layerCounter).prop('checked', true);
+
+	$('.servicePointBufferRow').removeClass('in');
+	$('.servicePointBufferRow').addClass('out');
+	
+	$('#servicePointBufferRowLayer' + layerCounter).removeClass('out');
+	$('#servicePointBufferRowLayer' + layerCounter).addClass('in');
+	
+};
+

@@ -174,10 +174,10 @@ function(
 			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
 			if (clickedLayerId == 2)
-				{
-					activeLayer = 13;
-					drawLegend(activeLayer);
-				}
+			{
+				activeLayer = 13;
+				drawLegend(activeLayer);
+			}
 			else
 			{
 				// 4.1.
@@ -210,59 +210,49 @@ function(
 			console.log('ERROR: ' + err.message);
 		}
 		
-//		updateServicePoints();
+		updateServicePoints();
 	}	
 	
 	function updateServicePoints()
-	{		
+	{
+		/**
+		 * 1. Remove all service point layers.
+		 * 2. Add the clicked service point. 
+		 */	
 		for(var i = 0; i < numLayers; i++)
 		{
 			if (layerToRegion[i] != 2)
 				continue;
 			
-			numServicePointLayers = 0;
-				
-			if ($('#servicePointHyperLink' + i).prop('checked') )
+			map.removeLayer(mapLayer[i]);	
+			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
+			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
+
+		}
+		
+		var clickedServicePoint = mapModal.getCheckedServicePoint();
+		var clickedServicePointBufferSmall = mapModal.getCheckedServicePointBufferSmall();							
+		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
+		
+		if (clickedServicePoint != -1 )
+		{
+			if (clickedServicePointBufferSmall != -1 )
 			{
-				if ($('#servicePointBuffer20k' + i).prop('checked') )
-				{
-					map.addLayer(mapLayer[servicePointBuffers[i][1]]);
-					numServicePointLayers++;	
-					map.reorderLayer(mapLayer[servicePointBuffers[i][1]], numServicePointLayers);
-				}
-				else
-				{
-					map.removeLayer(mapLayer[servicePointBuffers[i][1]]);
-				}
-				
-				if ($('#servicePointBuffer10k' + i).prop('checked') )
-				{
-					map.addLayer(mapLayer[servicePointBuffers[i][0]]);
-					numServicePointLayers++;	
-					map.reorderLayer(mapLayer[servicePointBuffers[i][0]], numServicePointLayers);
-				}
-				else
-				{
-					map.removeLayer(mapLayer[servicePointBuffers[i][0]]);
-				}
-
-				$('.servicePointBufferRow' + i).fadeIn();				
-
-				map.addLayer(mapLayer[i]);
-				numServicePointLayers++;				
-				map.reorderLayer(mapLayer[i], numServicePointLayers);
+				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][1]]);
+				numServicePointLayers++;	
+				map.reorderLayer(mapLayer[servicePointBuffers[clickedServicePoint][1]], numServicePointLayers);
 			}
-			else
+			
+			if (clickedServicePointBufferLarge != -1 )
 			{
-				map.removeLayer(mapLayer[i]);	
-				map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
-				map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
-
-				$('.servicePointBufferRow' + i).fadeOut();
-				$("#servicePointBuffer10k" + i).attr("checked", false);
-				$("#servicePointBuffer20k" + i).attr("checked", false);
-				
+				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]]);
+				numServicePointLayers++;	
+				map.reorderLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]], numServicePointLayers);
 			}
+
+			map.addLayer(mapLayer[clickedServicePoint]);
+			numServicePointLayers++;				
+			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
 	}
 	

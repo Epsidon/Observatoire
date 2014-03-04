@@ -185,12 +185,33 @@ MapModal.prototype.modalUpdateMapsClick = function()
 
 MapModal.prototype.storeClickedItems = function()
 {
+	this.clickedLayerId = -1;
+	this.clickedServicePoint = -1;
+	this.clickedServicePointBufferSmall = -1;
+	this.clickedServicePointBufferLarge = -1;
+
 	for(var i = 0; i < numLayers; i++)
 	{
 		if ($('#layerHyperLink' + i).prop('checked') )
 			this.clickedLayerId = i;	
 	}
 
+	for(var i = 0; i < numLayers; i++)
+	{
+		if (layerToRegion[i] != 2)
+			continue;
+
+		if ($('#servicePointHyperLink' + i).prop('checked') )
+		{
+			this.clickedServicePoint = i;
+			
+			if ($('#servicePointBuffer10k' + i).prop('checked'))
+				this.clickedServicePointBufferSmall = i;
+
+			if ($('#servicePointBuffer20k' + i).prop('checked'))
+				this.clickedServicePointBufferLarge = i;
+		}
+	}
 };
 
 MapModal.prototype.getCheckedLayerId = function()
@@ -198,8 +219,20 @@ MapModal.prototype.getCheckedLayerId = function()
 	return this.clickedLayerId;
 };
 
+MapModal.prototype.getCheckedServicePoint = function()
+{
+	return this.clickedServicePoint;
+};
 
+MapModal.prototype.getCheckedServicePointBufferSmall = function()
+{
+	return this.clickedServicePointBufferSmall;
+};
 
+MapModal.prototype.getCheckedServicePointBufferLarge = function()
+{
+	return this.clickedServicePointBufferLarge;
+};
 
 
 

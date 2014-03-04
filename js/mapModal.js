@@ -49,6 +49,8 @@ MapModal.prototype.fillModalBody = function()
 													
 		$( ".modal-body" ).html(accordionHtmlBody);
 
+		$('.servicePointBufferRow').hide();	
+
 console.log(accordionHtmlBody);
 
 
@@ -151,11 +153,19 @@ MapModal.prototype.layerCheckBoxClicked = function (layerCounter)
 
 MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 {
-	$('.servicePointCheckBox').prop('checked', false);
-	$('#servicePointHyperLink' + layerCounter).prop('checked', true);
+	if ($('#servicePointHyperLink' + layerCounter).prop('checked'))
+		var checked = true;
+	else 
+		var checked = false;
 
+	$('.servicePointCheckBox').prop('checked', false);	
 	$('.servicePointBufferRow').hide();	
-	$('.servicePointBufferRowLayer' + layerCounter).show();
-	
+	$('.servicePointBufferLayerCheckBox').prop('checked', false);	
+
+	if (checked)
+	{
+		$('#servicePointHyperLink' + layerCounter).prop('checked', true);	
+		$('.servicePointBufferRowLayer' + layerCounter).show();
+	}
 };
 

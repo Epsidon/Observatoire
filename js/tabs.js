@@ -25,7 +25,7 @@ Tabs.prototype.getHome = function ()
 
 Tabs.prototype.getMaps = function () 
 {
-	var body =	 
+	var body =	
 		'<div class="row" style="padding-left: 20px;">' +
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +

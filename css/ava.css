@@ -157,3 +157,13 @@ input
 { 
 	display: none; 
 }
+
+.hidden
+{
+	display: none;
+}
+
+.shown
+{
+	display: inline-block;
+}

@@ -37,14 +37,24 @@ Router.prototype.route = function()
 	
 	}
 	
-	$('#mainContainer').html(body);
 	
-	translator.translatePage();
-	
-	if (currentHashArray[1] == 'maps')
+	if (currentHashArray[1] != 'maps')
 	{
+		$('#mainContainer').show();
+		$('#mapContainer').hide();
+
+		$('#mainContainer').html(body);	
+	}
+	else
+	{
+		$('#mainContainer').hide();
+		$('#mapContainer').show();
+
+
 	 	if (this.mapsAreLoaded == false)
 		{
+			$('#mapContainer').html(body);	
+
 			this.mapsAreLoaded = true;
 			this.loadMapsJSFiles();
 	
@@ -60,6 +70,8 @@ Router.prototype.route = function()
 	$(".navbarItem").removeClass('active');
 
 	$("#" + currentHashArray[1] + 'TabContainer').addClass('active');
+	
+	translator.translatePage();
 }
 
 Router.prototype.getLanguage = function()

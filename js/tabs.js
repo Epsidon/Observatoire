@@ -1,5 +1,5 @@
 function Tabs() {}
-
+//method "getHome" of class "Tabs"
 Tabs.prototype.getHome = function () 
 {
 	var body = 
@@ -29,7 +29,7 @@ Tabs.prototype.getMaps = function ()
 		'<div class="row" style="padding-left: 20px;">' +
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
-			'<div id="legendList" class="mediumFont"></div>' + 
+			'<div id="legendList" class="transbox"></div>' + 
 		'</div>' +
 		
 		'<div class="modal fade" id="mapsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
@@ -85,5 +85,30 @@ Tabs.prototype.getPartners = function ()
 
 
 	return body;	
+};
+ 
+Tabs.prototype.getAnalysis = function ()
+{
+	var body = 
+		'<div class="container">' +
+			'<h2 class="grayFont mediumFont" id="headerOneResearchTab"></h2>' +
+			'<p>' +
+				'<font class="mediumFont" id="validationFirstContent"></font>' +
+			'</p>' +
+			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>PDF Link</b></a>' +
+			
+			'<h2 class="grayFont mediumFont" id="headerTwoResearchTab"></h2>' +
+			'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>PDF Link</b></a>' +
+			
+			'<h2 class="grayFont mediumFont" id="headerThreeResearchTab"></h2>' +
+			'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>PDF Link</b></a>' +
+			
+			'<h2 class="grayFont mediumFont" id="headerFourResearchTab"></h2>' +
+			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>PDF Link</b></a>' +
+			
+			
+		'</div>';
+		
+	return body;
 };
 

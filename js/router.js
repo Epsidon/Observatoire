@@ -16,7 +16,13 @@ Router.prototype.route = function()
 	this.normalizeHashLanguage();
 
 	var currentHashArray = location.hash.split('_');
-
+	
+	/**it gets element 1 of hashArray (which is "maps","analysis", ...)
+	*	and based on the result hash
+	*	it calls methods 
+	*	if hash ="maps" -->  tabs.getMaps
+	* getHome, getMaps, ...  are defined in "tas.js"
+	**/
 	switch(currentHashArray[1])
 	{
 		case 'home':
@@ -28,6 +34,7 @@ Router.prototype.route = function()
 			break;
 	
 		case 'analysis':
+			var body = tabs.getAnalysis();
 			break;
 	
 		case 'partners':

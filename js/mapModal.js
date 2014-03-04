@@ -57,8 +57,7 @@ MapModal.prototype.fillModalBody = function()
 
 		$('.servicePointBufferRow').hide();	
 
-console.log(accordionHtmlBody);
-
+		self.addSelectedItemsToModal();
 
 /*	
 		for (var l = 0; l < numLayers; l++) {
@@ -182,7 +181,18 @@ MapModal.prototype.modalUpdateMapsClick = function()
 	updateLayer();
 };
 
-
+/** 
+ * This method stores the clicked items internally. So when the modal is gone, we know 
+ * what are the clicked items. It: 
+ *
+ * 1. First loops through all layer checkboxes and if there is a layer that is clicked, 
+ *    it stores its id in this.clickedLayerId.
+ * 2. It will then loops through service points, and if it finds a clicked service point, 
+ *    it stores the service point id in this.clickedServicePoint.
+ *    2.1. After finding a service point that is clicked it looks for small and large 
+ *         buffers; and if it finds them it will store them in : 
+ *         this.clickedServicePointBufferSmall and this.clickedServicePointBufferLarge.
+ */
 MapModal.prototype.storeClickedItems = function()
 {
 	this.clickedLayerId = -1;
@@ -234,11 +244,28 @@ MapModal.prototype.getCheckedServicePointBufferLarge = function()
 	return this.clickedServicePointBufferLarge;
 };
 
+/**
+ * This me
+ */
+MapModal.prototype.addSelectedItemsToModal = function()
+{
+	if (this.clickedLayerId != -1)
+		$('#layerHyperLink' + this.clickedLayerId).prop('checked', true);
 
+	if (this.clickedServicePoint != -1)
+	{
+		$('#servicePointHyperLink' + this.clickedServicePoint).prop('checked', true);
 
+		if (this.clickedServicePointBufferSmall != -1)
+			$('#servicePointBuffer10k' + this.clickedServicePoint).prop('checked', true);
+		
+		if (this.clickedServicePointBufferLarge != -1)
+			$('#servicePointBuffer20k' + this.clickedServicePoint).prop('checked', true);
+		
+		$('.servicePointBufferRowLayer' + this.clickedServicePoint).show();
 
-
-
+	}
+}
 
 
 

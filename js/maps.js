@@ -227,7 +227,6 @@ function(
 			map.removeLayer(mapLayer[i]);	
 			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
 			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
-
 		}
 		
 		var clickedServicePoint = mapModal.getCheckedServicePoint();

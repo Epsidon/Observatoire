@@ -105,9 +105,8 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 					'<td colspan="2"><small>' + 
 						translator.T(layer.name) +
 					'</small></td>' + 
-						'</label>'+
 				'</tr>' + 
-				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow collapse out">' + 
+				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
 					'<td>' + 
 					'</td>' + 
 					'<td>' + 
@@ -118,7 +117,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 							translator.T(' 25 km Driving Distance') +
 					'</small></td>' + 
 				'</tr>' + 
-				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow collapse out">' + 
+				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
 
 					'<td>' + 
 					'</td>' + 
@@ -155,11 +154,8 @@ MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 	$('.servicePointCheckBox').prop('checked', false);
 	$('#servicePointHyperLink' + layerCounter).prop('checked', true);
 
-	$('.servicePointBufferRow').removeClass('in');
-	$('.servicePointBufferRow').addClass('out');
-	
-	$('#servicePointBufferRowLayer' + layerCounter).removeClass('out');
-	$('#servicePointBufferRowLayer' + layerCounter).addClass('in');
+	$('.servicePointBufferRow').hide();	
+	$('.servicePointBufferRowLayer' + layerCounter).show();
 	
 };
 

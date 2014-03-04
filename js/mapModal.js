@@ -169,3 +169,8 @@ MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 	}
 };
 
+
+MapModal.prototype.modalUpdateMapsClick = function()
+{
+	$('#mapsModal').modal('hide');
+}

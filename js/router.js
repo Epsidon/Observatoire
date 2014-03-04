@@ -59,6 +59,11 @@ Router.prototype.route = function()
 			this.loadMapsJSFiles();
 	
 			$('#mapsModal').modal();
+			
+			$('#modalUpdateMapButton').click(function() 
+			{
+				mapModal.modalUpdateMapsClick();
+			});
 		}
 		
 		$('#mapsModal').modal('show');

@@ -98,8 +98,6 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
-// 	setupAccordion();
-
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;
@@ -394,6 +392,8 @@ function(
 		}
 	}
 
-window.map = map;
-	
+	window.map = map;
+
+
+	window.updateLayer = updateLayer;	
 });

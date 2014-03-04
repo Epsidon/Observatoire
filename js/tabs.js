@@ -105,8 +105,6 @@ Tabs.prototype.getAnalysis = function ()
 			
 			'<h2 class="grayFont mediumFont" id="headerFourResearchTab"></h2>' +
 			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>PDF Link</b></a>' +
-			
-			
 		'</div>';
 		
 	return body;

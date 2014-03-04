@@ -13,6 +13,8 @@ Router.prototype.updateHashTab = function(tabName)
 
 Router.prototype.route = function()
 {
+	this.normalizeHashLanguage();
+
 	var currentHashArray = location.hash.split('_');
 
 	switch(currentHashArray[1])
@@ -102,12 +104,22 @@ Router.prototype.loadMapsJSFiles = function()
 	document.getElementsByTagName("head")[0].appendChild(mapsJsFileRef);	
 }
 
-
-
-/*
-if ((window.location.hostname.search("minorityhealth") == -1)
-	&& (location.hash != '#english'))
+Router.prototype.normalizeHashLanguage = function()
 {
-        window.location.hash = '#french';
+	var currentHashArray = location.hash.split('_');
+	
+	if (currentHashArray[0] != '#french' && currentHashArray[0] != '#english')
+	{
+		if (window.location.hostname.search("minorityhealth") == -1)
+		{
+        	currentHashArray[0] = '#french';
+		}
+		else
+		{
+        	currentHashArray[0] = '#english';	
+		}
+	}
+	
+	location.hash = currentHashArray.join('_');
+
 }
-*/

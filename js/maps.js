@@ -268,6 +268,7 @@ function(
 	function drawLegend(activeLayer)
 	{
 		var layer = layers[activeLayer];
+		
 				
 			if (layer.drawingInfo.renderer.classBreakInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.classBreakInfos;

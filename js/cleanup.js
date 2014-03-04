@@ -1,11 +1,4 @@
 
-if ((window.location.hostname.search("minorityhealth") == -1)
-	&& (location.hash != '#english'))
-{
-        window.location.hash = '#french';
-}
-
-
 function hideMapsInstructions()
 {
 	setTimeout(function()

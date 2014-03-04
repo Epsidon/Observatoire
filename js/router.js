@@ -121,5 +121,32 @@ Router.prototype.normalizeHashLanguage = function()
 	}
 	
 	location.hash = currentHashArray.join('_');
+	
+	if (currentHashArray[0] != '#french')
+	{
+		$('#alternativeLanguageContainer').html(
+			'<a href="javascript:router.setLanguage(\'#french\')" '+ 
+				'class="navbar-link">Français</a>');
+	}
+	else
+	{
+		$('#alternativeLanguageContainer').html(
+			'<a href="javascript:router.setLanguage(\'#english\')" '+ 
+				'class="navbar-link">English</a>');
+	}
+};
 
-}
+Router.prototype.setLanguage = function(lang)
+{
+	var currentHashArray = location.hash.split('_');
+
+	currentHashArray[0] = lang;
+
+	location.hash = currentHashArray.join('_');
+};
+
+
+
+
+
+

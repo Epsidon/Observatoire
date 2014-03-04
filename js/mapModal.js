@@ -13,6 +13,12 @@ function MapModal()
 	this.accordion[2] = []
 	this.accordion[2]['title'] = translator.T('Health Services (2011)');
 	this.accordion[2]['numLayers'] = 7;
+	
+	this.clickedLayerId = -1;
+	this.clickedServicePoint = -1;
+	this.clickedServicePointBufferSmall = -1;
+	this.clickedServicePointBufferLarge = -1;
+	
 };
 
 MapModal.prototype.fillModalBody = function()
@@ -73,9 +79,6 @@ console.log(accordionHtmlBody);
 */					
 	}, "json" );
 }
-
-
-
 
 MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accordionCounter) 
 {
@@ -172,5 +175,39 @@ MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 
 MapModal.prototype.modalUpdateMapsClick = function()
 {
+	this.storeClickedItems();
+
 	$('#mapsModal').modal('hide');
-}
+
+	updateLayer();
+};
+
+
+MapModal.prototype.storeClickedItems = function()
+{
+	for(var i = 0; i < numLayers; i++)
+	{
+		if ($('#layerHyperLink' + i).prop('checked') )
+			this.clickedLayerId = i;	
+	}
+
+};
+
+MapModal.prototype.getCheckedLayerId = function()
+{
+	return this.clickedLayerId;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+

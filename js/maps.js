@@ -147,7 +147,6 @@ function(
 	function updateLayer(clickedLayerId)
 	{
 		/**
-		 * 1. Remove all checkboxes except for the one just clicked. 
 		 * 2. Remove old layers.
 		 * 3. Get the clicked layerId.
 		 * 4. Draw the new layer accordingly. 
@@ -157,15 +156,6 @@ function(
 		 * 	  4.3. Draw the clicked layer. 
 		 */
 		
-		// 1.
-		for(var i = 0; i < numLayers; i++)
-		{	
-			if ((clickedLayerId == i) || (clickedLayerId == -1))
-				continue;
-		
-			$("#layerHyperLink" + i).attr("checked", false);
-		}
-
 		// 2.
 		map.graphics.clear();
 		map.infoWindow.hide();
@@ -174,15 +164,10 @@ function(
 			map.removeLayer(mapLayer[i]);
 		
 		// 3. 
-		var clickedLayerId = -1;
-		for(var i = 0; i < numLayers; i++)
-		{
-			if ($('#layerHyperLink' + i).prop('checked') )
-				clickedLayerId = i;	
-		}
+		var clickedLayerId = mapModal.getCheckedLayerId();
 
 		// 4.
-		removeLegend(activeLayer);
+		removeLegend();
 		var extent = map.getZoom();
 
 		if ((clickedLayerId == -1) || 
@@ -195,13 +180,12 @@ function(
 				}
 			else
 			{
-			// 4.1.
-			// 4.2.
-			console.log('4.1. 4.2.');
-			activeLayer = 14;
-			drawLegend(activeLayer);
+				// 4.1.
+				// 4.2.
+				console.log('4.1. 4.2.');
+				activeLayer = 14;
+				drawLegend(activeLayer);
 			}
-			
 		}
 		else
 		{
@@ -213,22 +197,20 @@ function(
 	
 		try
 		{
-			
 			if (layerInfoWindow[activeLayer])
 			{
 				layerInfoWindow[activeLayer].startup();
 				mapLayer[activeLayer].InfoTemplate = layerTemplate[activeLayer];
 			}
 			
-			map.addLayer(mapLayer[activeLayer]);
-				
+			map.addLayer(mapLayer[activeLayer]);	
 		}
 		catch(err)
 		{
-		console.log('ERROR: ' + err.message);
+			console.log('ERROR: ' + err.message);
 		}
 		
-		updateServicePoints();
+//		updateServicePoints();
 	}	
 	
 	function updateServicePoints()
@@ -284,7 +266,7 @@ function(
 		}
 	}
 	
-	function removeLegend(layerId)
+	function removeLegend()
 	{
 		var legendBody = [];
 		var thisLayerLegend = [];
@@ -393,7 +375,6 @@ function(
 	}
 
 	window.map = map;
-
 
 	window.updateLayer = updateLayer;	
 });

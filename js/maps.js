@@ -235,6 +235,7 @@ function(
 		
 		if (clickedServicePoint != -1 )
 		{
+			drawLegend(clickedServicePoint);
 			if (clickedServicePointBufferSmall != -1 )
 			{
 				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][1]]);
@@ -248,7 +249,8 @@ function(
 				numServicePointLayers++;	
 				map.reorderLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]], numServicePointLayers);
 			}
-
+			
+			drawLegend(clickedServicePoint);
 			map.addLayer(mapLayer[clickedServicePoint]);
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
@@ -274,9 +276,11 @@ function(
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.classBreakInfos;
 			else if (layer.drawingInfo.renderer.uniqueValueInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.uniqueValueInfos;
+			else if (layer.drawingInfo.renderer.symbol)
+				legendsArray[activeLayer] = layer.drawingInfo.renderer.symbol;
 			else
 				legendsArray[activeLayer] = null;
-		
+				
 		var layerLegend = legendsArray[activeLayer];
 			
 			var legendBody = '<table>';

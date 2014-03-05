@@ -477,9 +477,11 @@ function(
 	
 	function getAccordionRowHtmlBody(layer, layerCounter, accordionCounter) 
 	{
+		htmlBody = '';
+		
 		if (accordionCounter != (accordion.length-1)) 
 		{
-			htmlBody = 
+			htmlBody += 
 				'<table>' +
 					'<tr>' + 
 						'<td>' + 
@@ -493,7 +495,13 @@ function(
 		}
 		else
 		{
-			htmlBody = 
+			if (layerCounter == 6)
+				htmlBody = '<h4>my crazy title goes here</h4>';
+			else if (layerCounter == 10)
+				htmlBody = '<h4>my crazy title 2 goes here</h4>';
+			
+				
+			htmlBody += 
 				'<table>' +
 					'<tr>' + 
 						'<td>' + 

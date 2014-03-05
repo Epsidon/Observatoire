@@ -658,3 +658,6 @@ var layersLabels = ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9',
   
 var mapLayerLabel = 'a14';
 var mapServicePointLabel = '';
+
+
+var accordionHeaders = {6 : 'my crazy title', 10 : 'my crazy title 2'};

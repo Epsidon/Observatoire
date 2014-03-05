@@ -479,6 +479,9 @@ function(
 	{
 		htmlBody = '';
 		
+		if (accordionHeaders[layerCounter])
+				htmlBody = '<h4>' + accordionHeaders[layerCounter] + '</h4>';
+
 		if (accordionCounter != (accordion.length-1)) 
 		{
 			htmlBody += 
@@ -494,13 +497,7 @@ function(
 				'</table>';
 		}
 		else
-		{
-			if (layerCounter == 6)
-				htmlBody = '<h4>my crazy title goes here</h4>';
-			else if (layerCounter == 10)
-				htmlBody = '<h4>my crazy title 2 goes here</h4>';
-			
-				
+		{				
 			htmlBody += 
 				'<table>' +
 					'<tr>' + 

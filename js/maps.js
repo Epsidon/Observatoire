@@ -98,7 +98,9 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
+	updateMapLabel();
 	setupAccordion();
+
 
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
@@ -238,6 +240,7 @@ function(
 				continue;
 		
 			$("#layerHyperLink" + i).attr("checked", false);
+			
 		}
 
 		// 2.

@@ -297,7 +297,7 @@ function(
 		}
 		catch(err)
 		{
-		console.log('ERROR: ' + err.message);
+			console.log('ERROR: ' + err.message);
 		}
 		
 		updateServicePoints();

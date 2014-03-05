@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	
+	<title>Geoportal</title>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+	<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">	
+
+	<link rel="stylesheet" href="css/ava.css">
+
+	<!--[if !IE]><!--><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+	<!--[if IE]><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="http://js.arcgis.com/3.8/"></script>
+	<script type="text/javascript" src="js/translations.js"></script>
+	<script>
+	  $(function() {
+		$( "#accordion" ).accordion({
+		event: "click",
+				active: false,
+				heightStyle: "content", 
+				collapsible:true,
+				autoHeight: false});
+	  });
+	</script>
+</head>
+
+<body class="claro"> 
+		
+	<div class="navbar" id="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#" id="pageTitle">Loading ...</a>
+			<p class="navbar-text pull-right" id='alternativeLanguageContainer'>Loading ...</p> 
+		</div>
+	</div>				 
+		
+	<div id="content">
+		<ul id="tabs" class="nav nav-tabs smallFont" data-tabs="tabs">
+			<li class="active">
+				<a href="#home" data-toggle="tab" id="homeTab">Loading ...</a>
+			</li>
+			<li>
+				<a href="#maps" data-toggle="tab" id="mapsTab"></a>
+			</li>
+			<li>
+				<a href="#analysis" data-toggle="tab" id="analysisTab"></a>
+			</li>
+			<li>
+				<a href="#partners" data-toggle="tab" id="partnersTab"></a>
+			</li>
+		</ul>
+		<div id="my-tab-content" class="tab-content">
+			<div class="tab-pane active container" id="home">
+
+				<span id="homeMainParagraph">Loading ...</span>
+				<br>
+				<span id="homeSecondLine"></span>
+				<br>
+
+				<br>1) <span id="homeOptionOne"></span></br>
+				<br>2) <span id="homeOptionTwo"></span></br>
+				</br>
+
+				<h2 class="grayFont smallFont" id="withSupportOfMsg"></h2>
+				<img border="0" src="images/ontario.jpg" alt="I" width="80" height="80">
+				<font class="blueFont smallFont ministryOfMsg"></font>
+				<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>
+			</div>
+			<div class="tab-pane" id="maps">
+				<div class="container-fluid" >
+					<div class="row-fluid smallFont">
+						 <div  class="span3"> 
+						 								
+							<div class="mapsInstruction alert alert-success mediumFont">
+								<span id="mapsInstructionOne"></span>
+								<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>
+								<span id="mapsInstructionTwo"></span>
+							</div>
+
+							<div class="well sidebar-nav" id="panel">Loading ...</div>
+				
+						</div>
+						<!-- <button type="button" class="btn pull-right" onclick="javascript:mapUpDownButtonClickd()">
+							<span id="moreLessSpaceMsg">More Space</span><img class="smallIcon" id="roleUpDownImg" src="images/up.png">
+						</button> -->
+
+						<div id="map" class="span9" data-dojo-type="dijit.layout.ContentPane" region="center"></div>
+						<img src="images/loading2.gif" id="loadingIndicator"/>
+						<div id="legendList" class="mediumFont"></div>
+					</div>
+				</div>	
+
+			</div>
+			<div class="tab-pane container" id="analysis">
+				<div class="container-fluid" >
+					<div class="row-fluid smallFont">
+						<div  class="span3"> 
+							<div class="mapsInstruction alert alert-success alert-dismissable mediumFont">
+								<span id="analysisInstruction"></span>
+								<img src="images/Information.jpg" class="smallIcon" title="InformationImage"/>	
+							</div>
+							<div class="well sidebar-nav" id="accordion">	
+								<h3>Section 1</h3>
+									  <div>
+										<p>
+										Content1
+										</p>
+									  </div>
+								<h3>Section 2</h3>
+									  <div>
+										<p>
+										Content2
+										</p>
+									  </div>
+
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane container" id="partners">
+				<h2 class="grayFont smallFont" id="financialSupport"></h2>
+				<p>
+					<img border="0" src="images/ontario.jpg" width="100" height="150"> 
+					<font class="blueFont smallFont ministryOfMsg"></font>
+					<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>
+				</p>
+	
+				<h2 class="grayFont smallFont" id="dataProvidersMsg"></h2>
+	
+				<p>
+					<img border="0" src="images/ontario.jpg" width="100" height="150">
+					<font class="mediumFont" id="healthMsg"></font>
+					<font class="redFont" id="forceMsg"></font>
+					<font id="ontarioMsg"></font>
+				</p>
+
+				<p><img border="0" src="images/ontario.jpg"  width="100" height="150">
+				<font class="smallFont blueFont ministryOfMsg"></font>
+				<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>
+				</p>
+
+				<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="Pulpit rock" width="500" height="250"></p>
+				<p><img border="0" src="images/StatisticsCanada.jpg"  width="250" height="250"></p>
+			</div>
+		</div>
+	</div>
+		
+<script type="text/javascript" src="js/cosmetics.js"></script>
+<script type="text/javascript" src="js/layerdata.js"></script>
+	
+		
+</body>
+</html>

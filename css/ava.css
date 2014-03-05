@@ -1,0 +1,153 @@
+body {
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+td.first
+{
+	color:#000000;
+	background-color:#D8D8D8;
+}
+
+a.first
+{
+	color: #8B0B1A; font-size:90%;
+}
+
+li.first
+{
+	color: #424242; font-size:85%;
+}
+
+th
+{
+	text-align: left;
+	font-weight: normal;
+	font-size:13px;
+	vertical-align: middle;
+	background-color: #0B0B3B;
+	color:#F2F2F2;
+}
+
+h2 
+{
+	text-shadow:2px 2px #FFFFFF;
+}
+
+.sidebar-nav 
+{
+	padding: 9px 0;
+}
+
+#navbar
+{
+	margin-bottom: 0px;
+	overflow: visible;
+}
+
+#map
+{
+		position:relative;
+		top:0px;
+        border:1px solid;
+        border-radius:10px;
+        border-color:#888888;	
+}	
+
+#tooltip 
+{    
+    display: block;
+    background: transparent url(http://i.stack.imgur.com/srdeI.png) no-repeat -5px -12px;
+	background-color: #2b2b2b;
+    position: relative;
+    padding: 0px;
+    border: 1px solid gray;
+}
+
+#tabs 
+{
+	font-family: Verdana,Arial,sans-serif;
+	height: 100%
+}
+
+label 
+{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+input 
+{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+.grayFont
+{
+	color:gray;
+}
+
+
+.blueFont
+{
+	color:#A9BCF5;
+}
+
+.redFont
+{
+	color:#FE642E;
+}
+
+.smallFont
+{
+	font-size: 0.8em;
+}
+
+.mediumFont
+{
+	font-size: 1em;
+}
+
+.smallIcon
+{
+	height:25px;
+	width:25px;
+}
+
+#legendList 
+{
+	pointer-events:none;
+	padding: 1em;
+}
+
+.esriSimpleSliderHomeButton{
+      border-bottom: 2px solid #666666;
+      background-image: url(../dijit/images/home.png);
+      background-repeat:no-repeat;
+      background-position:center; 
+    }
+	
+.legendColorRect
+{
+	width:10px;
+	height:10px;
+	border:1px solid #000;
+}
+
+.legendCellText
+{
+	border:1px solid #000;
+}
+
+.esriLargeSliderTicks 
+{ 
+	display: none; 
+}

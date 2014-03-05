@@ -232,8 +232,7 @@ function(
 		 */
 
 		// 1.
-		mapLayerLabel = '';
-
+		
 		for(var i = 0; i < numLayers; i++)
 		{	
 			if ((clickedLayerId == i) || (clickedLayerId == -1))
@@ -305,7 +304,6 @@ function(
 			console.log('ERROR: ' + err.message);
 		}
 
-
 		mapLayerLabel = layersLabels[activeLayer];
 
 		updateServicePoints();
@@ -352,7 +350,7 @@ function(
 				numServicePointLayers++;				
 				map.reorderLayer(mapLayer[i], numServicePointLayers);
 
-				mapServicePointLabel += " " + layersLabels[i];
+				mapServicePointLabel += " & " + layersLabels[i];
 
 			}
 			else
@@ -383,7 +381,7 @@ function(
 			return;
 		}	
 
-		$('#mapLabel').html(mapLayerLabel + " " + mapServicePointLabel);
+		$('#mapLabel').html('<b>Selected layer: </b>' + mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
 
 		reorganizeMapsPage();

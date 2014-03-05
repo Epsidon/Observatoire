@@ -24,7 +24,8 @@ function reorganizeMapsPage()
 		var mapWidth = $("#map").width();
 		var panelTop = $("#panel").offset().top;
 		var mapLabelWidth = $("#mapLabel").width();	
-		var navbarBrandHeight = $(".navbar-brand").height();
+		var mapLabelHeight = $("#mapLabel").height();
+		var pageTitleHeight = $("#pageTitle").height();
 	}
 	
 	if ($("#map_container").offset())
@@ -57,7 +58,7 @@ function reorganizeMapsPage()
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
-	var legendTop = (mapHeight/2) + mapTop - (mapLabelWidth*2) ;
+	var legendTop = mapTop + (mapHeight/2) + (pageTitleHeight/2);
 	var legendLeft = mapContainerLeft;
 	 
 	$("#legendList").css(

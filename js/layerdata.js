@@ -653,10 +653,12 @@ var numServicePointLayers = 0;
 var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportalMap/MapServer/';
  
  
-var layersLabels = ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 
-	'a10', 'a11', 'a12', 'a13', 'a14', 'a15'];
+var layersLabels = ['Mother Tongue', 'Knowledge of Official Language', 'First Official Language Spoken', 'Language Spoken Most Often at Home', 'Health Professionals by LHIN', 
+'Socio-Economic Profiles', 'All Hospitals and Health Units', 'General Rehabilitation Hospital',
+ 'Mental Health Units' , 'Special Rehabilitation Hospital', 
+	'Acute Care Treatment Hospital', 'Ambulatory Care', 'Chronic Care Treatment Hospital', 'Ontario Layer', 'Ontario Layer'];
   
-var mapLayerLabel = 'a14';
+var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
 
 

@@ -160,6 +160,8 @@ div.transbox
    filter:alpha(opacity=60); /* For IE8 and earlier */
    font-size: 1em;
    color:blue;
+   width: 200px;
+   height: 350px;
    }
 
 .hidden

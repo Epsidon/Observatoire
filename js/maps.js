@@ -230,6 +230,8 @@ function(
 		 */
 		
 		// 1.
+		mapLayerLabel = '';
+		
 		for(var i = 0; i < numLayers; i++)
 		{	
 			if ((clickedLayerId == i) || (clickedLayerId == -1))
@@ -300,11 +302,16 @@ function(
 			console.log('ERROR: ' + err.message);
 		}
 		
+					
+		mapLayerLabel = layersLabels[activeLayer];
+
 		updateServicePoints();
 	}	
 	
 	function updateServicePoints()
 	{		
+		mapServicePointLabel = '';
+		
 		for(var i = 0; i < numLayers; i++)
 		{
 			if (layerToRegion[i] != 2)
@@ -341,6 +348,9 @@ function(
 				map.addLayer(mapLayer[i]);
 				numServicePointLayers++;				
 				map.reorderLayer(mapLayer[i], numServicePointLayers);
+
+				mapServicePointLabel += " " + layersLabels[i];
+
 			}
 			else
 			{
@@ -354,6 +364,26 @@ function(
 				
 			}
 		}
+		
+		updateMapLabel();
+	}
+	
+	function updateMapLabel()
+	{
+		console.log('updateMapLabel was called');
+		
+		if (mapLayerLabel == '' && mapServicePointLabel == '')
+		{
+			console.log('Labels are empty');
+
+			$('#mapLabel').hide();
+			return;
+		}	
+
+		$('#mapLabel').html(mapLayerLabel + " " + mapServicePointLabel);
+		$('#mapLabel').show();
+		
+		reorganizeMapsPage();
 	}
 	
 	function removeLegend(layerId)

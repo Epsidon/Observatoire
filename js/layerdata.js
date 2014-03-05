@@ -652,4 +652,9 @@ var numServicePointLayers = 0;
 
 var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportalMap/MapServer/';
  
-
+ 
+var layersLabels = ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 
+	'a10', 'a11', 'a12', 'a13', 'a14', 'a15'];
+  
+var mapLayerLabel = '';
+var mapServicePointLabel = '';

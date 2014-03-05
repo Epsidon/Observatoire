@@ -23,7 +23,8 @@ function reorganizeMapsPage()
 		var mapLeft = $("#map").offset().left;	
 		var mapWidth = $("#map").width();
 		var panelTop = $("#panel").offset().top;
-		var mapLabelWidth = $("#mapLabel").width();		
+		var mapLabelWidth = $("#mapLabel").width();	
+		var navbarBrandHeight = $(".navbar-brand").height();
 	}
 	
 	if ($("#map_container").offset())
@@ -56,7 +57,7 @@ function reorganizeMapsPage()
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
-	var legendTop = mapTop + mapHeight - legendHeight - zoomButtonHeight;
+	var legendTop = (mapHeight/2) + mapTop - (mapLabelWidth*2) ;
 	var legendLeft = mapContainerLeft;
 	 
 	$("#legendList").css(

@@ -23,9 +23,9 @@ function(
 	 * 2. Create info window, templates, and map layers. 
 	 * 3. Get the legends
 	 */
-	
+
 	reorganizeMapsPage();
-	
+
 	// 1.
 	console.log('Creating Map');
 
@@ -38,7 +38,7 @@ function(
 	});
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
-	
+
 	dojo.connect(map,"onLoad",function(){
         var initExtent = map.extent;
 
@@ -70,15 +70,15 @@ function(
 				mode: FeatureLayer.MODE_ONDEMAND,
 				infoTemplate:layerTemplate[i],
 				outFields: layerData[i]['outFields']});
-		
+
 	}
 
 	for (var j in servicePointBuffers) {
-	
+
 		for (var i = 0; i < 2; i++) {
 
 			var bufferIndex = servicePointBuffers[j][i];
-		
+
 			console.log('Creating Buffers for Layer ' + j + 
 				' buffer index: ' + bufferIndex);
 
@@ -89,7 +89,7 @@ function(
 
 	console.log('Adding Layer ' + activeLayer + ' to the map.');
 	map.addLayer(mapLayer[activeLayer]);
-		
+
 	console.log('Adding symbol to the map');
 	symbol = new esri.symbol.SimpleFillSymbol(
 		esri.symbol.SimpleFillSymbol.STYLE_SOLID, 
@@ -105,38 +105,38 @@ function(
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;
-		
+
 		if (numVisibleSpinners == 1)
 		{
 			$("#loadingIndicator").fadeIn('fast');
 			$( "#map" ).fadeTo("slow" , 0.8);
 		}
-		
+
 		fadeOutSpinnerEventually();
 	});	
 
 	map.on("zoom-end", function() {
 		updateLayer(-1);
 	});	
-	
+
 	map.on("update-start", function() {
 		$("#loadingIndicator").fadeIn('fast');
 		$( "#map" ).fadeTo("slow" , 0.8);
-		
+
 		fadeOutSpinnerEventually();
 	});
 
 	map.on("update-end", function() {
 		fadeOutSpinner();
 	});	
-	
+
 	function setupAccordion()
 	{
 		console.log('Setting up accordion');
 		$.get("server.php", function( data ) 
 		{
 			layers = data.layers;
-			
+
 			var accordionHtmlBody = '';
 
 			var i = 0;
@@ -149,7 +149,7 @@ function(
 				for (var k = 0; k < accordion[j]['numLayers']; k++)
 				{
 					var layer = layers[i];
-							
+
 					accordionHtmlBody += getAccordionRowHtmlBody(layer, i, j);
 					i++;
 				}
@@ -160,7 +160,7 @@ function(
 							'<href class="button1" onclick="myFunction()">' +
 							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
 							'</href>' +
-							
+
 							'<script>' +
 								'function myFunction()' +
 									'{' +
@@ -170,9 +170,9 @@ function(
 						'</br>' +
 					'</div>';
 			}
-														
+
 			$( "#panel" ).html(accordionHtmlBody);
-		
+
 			$( "#panel" ).accordion({
 				event: "click",
 				active: false,
@@ -192,11 +192,11 @@ function(
 					$('#layerHyperLink' + l).click(updateLayerWrapper(l, false));
 				}
 			}
-			
+
 			$('.servicePointBufferLayerCheckBox').click(updateServicePoints);
-			
+
 			drawLegend(activeLayer);
-						
+
 		}, "json" );
 	}
 
@@ -211,7 +211,7 @@ function(
 		else
 		{
 			var myId = layerId;
-		
+
 			return function(){
 				updateLayer(myId);
 			};
@@ -230,17 +230,17 @@ function(
 		 *		   draw layer 12 as well. 
 		 * 	  4.3. Draw the clicked layer. 
 		 */
-		
+
 		// 1.
 		mapLayerLabel = '';
-		
+
 		for(var i = 0; i < numLayers; i++)
 		{	
 			if ((clickedLayerId == i) || (clickedLayerId == -1))
 				continue;
-		
+
 			$("#layerHyperLink" + i).attr("checked", false);
-			
+
 		}
 
 		// 2.
@@ -249,7 +249,7 @@ function(
 
 		for(var i = 0; i < numLayers; i++)
 			map.removeLayer(mapLayer[i]);
-		
+
 		// 3. 
 		var clickedLayerId = -1;
 		for(var i = 0; i < numLayers; i++)
@@ -278,7 +278,7 @@ function(
 			activeLayer = 14;
 			drawLegend(activeLayer);
 			}
-			
+
 		}
 		else
 		{
@@ -287,58 +287,42 @@ function(
 			activeLayer = clickedLayerId;
 			drawLegend(activeLayer);	
 		}
-	
+
 		try
 		{
-			
+
 			if (layerInfoWindow[activeLayer])
 			{
 				layerInfoWindow[activeLayer].startup();
 				mapLayer[activeLayer].InfoTemplate = layerTemplate[activeLayer];
 			}
-			
+
 			map.addLayer(mapLayer[activeLayer]);
-				
+
 		}
 		catch(err)
 		{
 			console.log('ERROR: ' + err.message);
 		}
-		
-					
+
+
 		mapLayerLabel = layersLabels[activeLayer];
 
 		updateServicePoints();
 	}	
-	
+
 	function updateServicePoints()
 	{		
 		mapServicePointLabel = '';
-		
+
 		for(var i = 0; i < numLayers; i++)
 		{
 			if (layerToRegion[i] != 2)
 				continue;
-			
-<<<<<<< HEAD
-			map.removeLayer(mapLayer[i]);	
-			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
-			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
-		}
-		
-		var clickedServicePoint = mapModal.getCheckedServicePoint();
-		var clickedServicePointBufferSmall = mapModal.getCheckedServicePointBufferSmall();							
-		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
-		
-		if (clickedServicePoint != -1 )
-		{
-			drawLegend(clickedServicePoint);
-			if (clickedServicePointBufferSmall != -1 )
-=======
+
 			numServicePointLayers = 0;
-				
+
 			if ($('#servicePointHyperLink' + i).prop('checked') )
->>>>>>> ff6cdfb9d8d8993f8f9247c176eaeaa8825a5770
 			{
 				if ($('#servicePointBuffer20k' + i).prop('checked') )
 				{
@@ -350,7 +334,7 @@ function(
 				{
 					map.removeLayer(mapLayer[servicePointBuffers[i][1]]);
 				}
-				
+
 				if ($('#servicePointBuffer10k' + i).prop('checked') )
 				{
 					map.addLayer(mapLayer[servicePointBuffers[i][0]]);
@@ -373,17 +357,6 @@ function(
 			}
 			else
 			{
-<<<<<<< HEAD
-				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]]);
-				numServicePointLayers++;	
-				map.reorderLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]], numServicePointLayers);
-			}
-			
-			drawLegend(clickedServicePoint);
-			map.addLayer(mapLayer[clickedServicePoint]);
-			numServicePointLayers++;				
-			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
-=======
 				map.removeLayer(mapLayer[i]);	
 				map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
 				map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
@@ -391,18 +364,17 @@ function(
 				$('.servicePointBufferRow' + i).fadeOut();
 				$("#servicePointBuffer10k" + i).attr("checked", false);
 				$("#servicePointBuffer20k" + i).attr("checked", false);
-				
+
 			}
->>>>>>> ff6cdfb9d8d8993f8f9247c176eaeaa8825a5770
 		}
-		
+
 		updateMapLabel();
 	}
-	
+
 	function updateMapLabel()
 	{
 		console.log('updateMapLabel was called');
-		
+
 		if (mapLayerLabel == '' && mapServicePointLabel == '')
 		{
 			console.log('Labels are empty');
@@ -413,45 +385,43 @@ function(
 
 		$('#mapLabel').html(mapLayerLabel + " " + mapServicePointLabel);
 		$('#mapLabel').show();
-		
+
 		reorganizeMapsPage();
 	}
-	
+
 	function removeLegend(layerId)
 	{
 		var legendBody = [];
 		var thisLayerLegend = [];
 		var legendColour = [];
 		legendBody += [];
-		
+
 		$('#legendList').hide();
 	}
-	
+
 	function drawLegend(activeLayer)
 	{
 		var layer = layers[activeLayer];
-				
+
 			if (layer.drawingInfo.renderer.classBreakInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.classBreakInfos;
 			else if (layer.drawingInfo.renderer.uniqueValueInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.uniqueValueInfos;
-			else if (layer.drawingInfo.renderer.symbol)
-				legendsArray[activeLayer] = layer.drawingInfo.renderer.symbol;
 			else
 				legendsArray[activeLayer] = null;
-				
+
 		var layerLegend = legendsArray[activeLayer];
-			
+
 			var legendBody = '<table>';
-			
+
 				for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
-	
+
 				var legendColour = thisLayerLegend.symbol.color[0] + ',' +
 					thisLayerLegend.symbol.color[1] + ',' +
 					thisLayerLegend.symbol.color[2];
-	
+
 				legendBody +=  
 					'<tr>' + 
 						'<td>' + 
@@ -468,9 +438,9 @@ function(
 
 			$('#legendList').html(legendBody);
 			$('#legendList').show();
-			
+
 			reorganizeMapsPage();
-		
+
 	}
 
 	function showResults(featureSet) 
@@ -478,7 +448,7 @@ function(
 		console.log('showResults was called');
 
 		console.log('showResults');
-	
+
 		map.graphics.clear();
 
 		var features = featureSet.features;
@@ -494,7 +464,7 @@ function(
 			graphic.setInfoTemplate(infoTemplate);
 
 			map.graphics.add(graphic);
-		  
+
 		});
 
 		dojo.connect(map.graphics, "onMouseClick", function(evt) {
@@ -504,11 +474,11 @@ function(
 			map.infoWindow.show(evt.screenPoint,map.getInfoWindowAnchor(evt.screenPoint));
 		});
 	}
-	
+
 	function getAccordionRowHtmlBody(layer, layerCounter, accordionCounter) 
 	{
 		htmlBody = '';
-		
+
 		if (accordionHeaders[layerCounter])
 				htmlBody = '<h4>' + accordionHeaders[layerCounter] + '</h4>';
 
@@ -559,7 +529,7 @@ function(
 					'</tr>' + 									
 				'</table>';
 		}
-		
+
 		htmlBody = 
 			'<li id="region' + layerCounter + '">' +  
 				htmlBody + 
@@ -567,7 +537,7 @@ function(
 
 		return htmlBody;
 	}
-	
+
 	function fadeOutSpinnerEventually()
 	{	
 		setTimeout(function()
@@ -576,20 +546,20 @@ function(
 			fadeOutSpinner();
 		}, 10000);
 	}
-	
+
 	function fadeOutSpinner()
 	{
 		numVisibleSpinners--;
-		
+
 		if (numVisibleSpinners <= 0)
 		{
 			numVisibleSpinners = 0;
-			
+
 			$("#loadingIndicator").fadeOut('fast');
 			$( "#map" ).fadeTo("fast" , 1);	
 		}
 	}
 
 window.map = map;
-	
+
 });

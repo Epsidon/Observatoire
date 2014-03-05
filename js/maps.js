@@ -478,8 +478,9 @@ function(
 		htmlBody = '';
 
 		if (accordionHeaders[layerCounter])
-				htmlBody = '<h4>' + accordionHeaders[layerCounter] + '</h4>';
-
+				htmlBody = '<u><h3 style="font-size: 1em;">' + accordionHeaders[layerCounter] +
+							'</h3></u>';
+				
 		if (accordionCounter != (accordion.length-1)) 
 		{
 			htmlBody += 

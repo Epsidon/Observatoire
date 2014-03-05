@@ -662,4 +662,4 @@ var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
 
 
-var accordionHeaders = {6 : 'my crazy title', 10 : 'my crazy title 2'};
+var accordionHeaders = {6 : 'Hospitals By Services Offered', 10 : 'Hospitals By French Language Service (FLS) Designation'};

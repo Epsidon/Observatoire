@@ -1,5 +1,11 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
 body {
-	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+  	padding-top: 50px;
+  	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	padding-top: 0px;
 	padding-bottom:0px;
 }
@@ -154,5 +160,20 @@ input
 
 .hidden
 {
-	display: none; 
+	display: none;
 }
+
+.shown
+{
+	display: inline-block;
+}
+
+div.transbox
+  {
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  font-size: 1em;
+  color:blue;
+  }

@@ -23,21 +23,17 @@ function reorganizeMapsPage()
 		var mapLeft = $("#map").offset().left;	
 		var mapWidth = $("#map").width();
 		var panelTop = $("#panel").offset().top;
-		var mapLabelWidth = $("#mapLabel").width();		
 	}
 	
 	if ($("#map_container").offset())
 	{
 		var mapContainerLeft = $("#map_container").offset().left;
-		var mapContainerWidth = $("#map_container").width();
 		var zoomButtonHeight = $(".esriSimpleSliderDecrementButton").height();
 	}
 	else
 	{
 		var mapContainerLeft = 400;
-		var mapContainerWidth = 400;
-		var zoomButtonHeight = 20;	
-			
+		var zoomButtonHeight = 20;		
 	}
 		
 		
@@ -61,12 +57,6 @@ function reorganizeMapsPage()
 	 
 	$("#legendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
-
-	var mapLableTop = mapTop + zoomButtonHeight;
-	var mapLableLeft = mapContainerLeft + (mapContainerWidth / 2) - (mapLabelWidth / 2);
-	
-	$("#mapLabel").css(
-		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});			
 }
 
 function hideMapsInstructions()

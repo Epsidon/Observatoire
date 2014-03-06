@@ -58,7 +58,7 @@ function reorganizeMapsPage()
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
-	var legendTop = mapTop + (mapHeight/2) + (pageTitleHeight/2);
+	var legendTop = mapTop + (mapHeight/2) + (mapLabelHeight * 4);
 	var legendLeft = mapContainerLeft;
 	 
 	$("#legendList").css(

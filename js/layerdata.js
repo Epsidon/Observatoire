@@ -743,7 +743,7 @@ var layersLabels = [
 'Health Professionals by LHIN', 'Socio-Economic Profiles', 'All Hospitals and Health Units', 
 'General Rehabilitation Hospital', 'Mental Health Units' , 'Special Rehabilitation Hospital', 
 'Acute Care Treatment Hospital', 'Ambulatory Care', 'Chronic Care Treatment Hospital', 'No FLS Obligation', 'FLS Identified',
-'FLS Designated Partial', 'FLS Designated All'];
+'FLS Designated Partial', 'FLS Designated All', 'Ontario Layer', 'Ontario Layer', 'Ontario Layer'];
   
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';

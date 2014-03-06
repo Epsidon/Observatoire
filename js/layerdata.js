@@ -436,7 +436,7 @@ layerData[5]['outFields'] = new Array("HR035b08.FRE_LABEL", "HR035b08.HRUID2007"
 
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";
-layerData[6]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+layerData[6]['infoWindowBody'] ="${LHIN_NAME}"+  "<table border=1>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -728,6 +728,7 @@ var symbol;
 var infoTemplate;
 
 var legendsArray = [];
+var hospitalsLegendArray = [];
 
 var firstTimeUpdateLayerIsCalled = 1;
 
@@ -747,6 +748,4 @@ var layersLabels = [
   
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
-
-
 var accordionHeaders = {6 : 'Hospitals By Services Offered', 13 : 'Hospitals By French Language Service (FLS) Designation'};

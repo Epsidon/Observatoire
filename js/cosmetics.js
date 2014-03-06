@@ -161,7 +161,7 @@ $('#pageTitle').html(T('Minority Health Observatory'));
 $('#notesTitle').html(T('Methodological Notes'));
 $('#homeTab').html(T('HOME'));
 $('#mapsTab').html(T('INTERACTIVE MAPS'));
-$('#analysisTab').html(T('ANALYSIS'));
+$('#analysisTab').html(T('RESEARCH'));
 $('#partnersTab').html(T('PARTNERS'));
 
 $('#withSupportOfMsg').html(T('With the Support of:'));
@@ -186,6 +186,12 @@ $('#homeOptionTwo').html(T("Valorisation and transfer of knowledge"));
 $('#mapsInstructionOne').html(T("Select a data layer from the menu below and click on map for detailed information. Click on "));
 $('#mapsInstructionTwo').html(T("for data sources and methodology."));
 $('#analysisInstruction').html(T("Instruction"));
+$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada"));
+$('#validationFirstContent').html(this.T("This research uses a regional summary indicator (IHPOLM) to measure the capacity of the health system to provide equitable access to health professionals for 2 million Official Language Minority Community (OLMC) members dispersed across 104 health regions in Canada."));
+$('#headerTwoResearchTab').html(this.T("Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada"));
+$('#headerThreeResearchTab').html(this.T("Linguistic Minorities in Canada and Health"));
+$('#headerFourResearchTab').html(this.T("Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities"));
+
 
 
 $('#moreLessSpaceMsg').html(T("More Space"));

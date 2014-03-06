@@ -740,11 +740,11 @@ var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportMaps/MapServer
  
  
 var layersLabels = [
-'Mother Tongue', 'Knowledge of Official Language', 'First Official Language Spoken', 'Language Spoken Most Often at Home',
-'Health Professionals by LHIN', 'Socio-Economic Profiles', 'All Hospitals and Health Units', 
-'General Rehabilitation Hospital', 'Mental Health Units' , 'Special Rehabilitation Hospital', 
-'Acute Care Treatment Hospital', 'Ambulatory Care', 'Chronic Care Treatment Hospital', 'No FLS Obligation', 'FLS Identified',
-'FLS Designated Partial', 'FLS Designated All', 'Ontario Layer', 'Ontario Layer', 'Ontario Layer'];
+T('Mother Tongue'), T('Knowledge of Official Language'), T('First Official Language Spoken'), T('Language Spoken Most Often at Home'),
+T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('All Hospitals and Health Units'), 
+T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
+T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), 'FLS Identified',
+T('FLS Designated Partial'), T('FLS Designated All'), T('Ontario Layer'), T('Ontario Layer'), T('Ontario Layer')];
   
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';

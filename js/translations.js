@@ -143,3 +143,4 @@ Fr['No FLS Obligation'] = ' Aucune obligation';
 Fr['FLS Identified'] = 'Identifié - LSF';
 Fr['FLS Designated Partial'] = 'Désignation partielle - LSF';
 Fr['FLS Designated All'] = 'Désignation complète - LSF';
+Fr['Selected layer:'] = 'Selected layer:';

@@ -381,7 +381,7 @@ function(
 			return;
 		}	
 
-		$('#mapLabel').html('<b>Selected layer: </b>' + mapLayerLabel + "  " + mapServicePointLabel);
+		$('#mapLabel').html('<b>' + T('Selected layer:') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
 
 		reorganizeMapsPage();

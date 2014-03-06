@@ -266,7 +266,7 @@ function(
 		{
 			if (clickedLayerId == 2)
 				{
-					activeLayer = 13;
+					activeLayer = 17;
 					drawLegend(activeLayer);
 				}
 			else
@@ -274,7 +274,7 @@ function(
 			// 4.1.
 			// 4.2.
 			console.log('4.1. 4.2.');
-			activeLayer = 14;
+			activeLayer = 18;
 			drawLegend(activeLayer);
 			}
 

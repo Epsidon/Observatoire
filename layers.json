@@ -1,0 +1,1766 @@
+{
+ "currentVersion": 10.11,
+ "serviceDescription": "",
+ "mapName": "Layers",
+ "description": "",
+ "copyrightText": "",
+ "supportsDynamicLayers": false,
+ "layers": [
+  {
+   "id": 0,
+   "name": "Mother Tongue",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 5000000,
+   "maxScale": 0
+  },
+  {
+   "id": 1,
+   "name": "Knowledge of Official Language",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 5000000,
+   "maxScale": 0
+  },
+  {
+   "id": 2,
+   "name": "First Official Language Spoken",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 5000000,
+   "maxScale": 0
+  },
+  {
+   "id": 3,
+   "name": "Language Spoken Most Often at Home",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 5000000,
+   "maxScale": 0
+  },
+  {
+   "id": 4,
+   "name": "Health Professionals By LHIN",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 5,
+   "name": "Socio-Economic Profiles",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 6,
+   "name": "All Hospitals and Health Units",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 7,
+   "name": "General Rehabilitation Hospital",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 8,
+   "name": "Mental Health Units",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 9,
+   "name": "Special Rehabilitation Hospital",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 10,
+   "name": "Acute Care Treatment Hospital",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 11,
+   "name": "Ambulatory Care",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 12,
+   "name": "Chronic Care Treatment Hospital",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 13,
+   "name": "No FLS Obligation",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 14,
+   "name": "FLS Identified",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 15,
+   "name": "FLS Designated Partial",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 16,
+   "name": "FLS Designated All",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 17,
+   "name": "Champlain Local Health Integration Network (LHIN)",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 18,
+   "name": "Ontario",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 19,
+   "name": "GRRoad25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 20,
+   "name": "Facilities",
+   "parentLayerId": 19,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 21,
+   "name": "Point Barriers",
+   "parentLayerId": 19,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 22,
+   "name": "Lines",
+   "parentLayerId": 19,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 23,
+   "name": "Line Barriers",
+   "parentLayerId": 19,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 24,
+   "name": "Polygons",
+   "parentLayerId": 19,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 25,
+   "name": "Polygon Barriers",
+   "parentLayerId": 19,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 26,
+   "name": "GRRoad50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 27,
+   "name": "Facilities",
+   "parentLayerId": 26,
+   "defaultVisibility": false,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 28,
+   "name": "Point Barriers",
+   "parentLayerId": 26,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 29,
+   "name": "Lines",
+   "parentLayerId": 26,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 30,
+   "name": "Line Barriers",
+   "parentLayerId": 26,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 31,
+   "name": "Polygons",
+   "parentLayerId": 26,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 32,
+   "name": "Polygon Barriers",
+   "parentLayerId": 26,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 33,
+   "name": "AllHospitals25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 34,
+   "name": "Facilities",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 35,
+   "name": "Point Barriers",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 36,
+   "name": "Lines",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 37,
+   "name": "Line Barriers",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 38,
+   "name": "Polygons",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 39,
+   "name": "Polygon Barriers",
+   "parentLayerId": 33,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 40,
+   "name": "AllHospitals50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 41,
+   "name": "Facilities",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 42,
+   "name": "Point Barriers",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 43,
+   "name": "Lines",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 44,
+   "name": "Line Barriers",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 45,
+   "name": "Polygons",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 46,
+   "name": "Polygon Barriers",
+   "parentLayerId": 40,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 47,
+   "name": "MentalHealthRoad25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 48,
+   "name": "Facilities",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 49,
+   "name": "Point Barriers",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 50,
+   "name": "Lines",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 51,
+   "name": "Line Barriers",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 52,
+   "name": "Polygons",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 53,
+   "name": "Polygon Barriers",
+   "parentLayerId": 47,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 54,
+   "name": "MentalHealthRoad50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 55,
+   "name": "Facilities",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 56,
+   "name": "Point Barriers",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 57,
+   "name": "Lines",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 58,
+   "name": "Line Barriers",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 59,
+   "name": "Polygons",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 60,
+   "name": "Polygon Barriers",
+   "parentLayerId": 54,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 61,
+   "name": "SpecialRehabilitationRoad25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 62,
+   "name": "Facilities",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 63,
+   "name": "Point Barriers",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 64,
+   "name": "Lines",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 65,
+   "name": "Line Barriers",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 66,
+   "name": "Polygons",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 67,
+   "name": "Polygon Barriers",
+   "parentLayerId": 61,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 68,
+   "name": "SpecialRehabilitationRoad50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 69,
+   "name": "Facilities",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 70,
+   "name": "Point Barriers",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 71,
+   "name": "Lines",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 72,
+   "name": "Line Barriers",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 73,
+   "name": "Polygons",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 74,
+   "name": "Polygon Barriers",
+   "parentLayerId": 68,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 75,
+   "name": "AcuteCareTreatmentRoad25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 76,
+   "name": "Facilities",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 77,
+   "name": "Point Barriers",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 78,
+   "name": "Lines",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 79,
+   "name": "Line Barriers",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 80,
+   "name": "Polygons",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 81,
+   "name": "Polygon Barriers",
+   "parentLayerId": 75,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 82,
+   "name": "AcuteCareTreatmentRoad50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    83,
+    84,
+    85,
+    86,
+    87,
+    88
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 83,
+   "name": "Facilities",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 84,
+   "name": "Point Barriers",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 85,
+   "name": "Lines",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 86,
+   "name": "Line Barriers",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 87,
+   "name": "Polygons",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 88,
+   "name": "Polygon Barriers",
+   "parentLayerId": 82,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 89,
+   "name": "AmbulatoryCare25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 90,
+   "name": "Facilities",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 91,
+   "name": "Point Barriers",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 92,
+   "name": "Lines",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 93,
+   "name": "Line Barriers",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 94,
+   "name": "Polygons",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 95,
+   "name": "Polygon Barriers",
+   "parentLayerId": 89,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 96,
+   "name": "AmbulatoryCare50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 97,
+   "name": "Facilities",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 98,
+   "name": "Point Barriers",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 99,
+   "name": "Lines",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 100,
+   "name": "Line Barriers",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 101,
+   "name": "Polygons",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 102,
+   "name": "Polygon Barriers",
+   "parentLayerId": 96,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 103,
+   "name": "ChronicCareTreatment50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 104,
+   "name": "Facilities",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 105,
+   "name": "Point Barriers",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 106,
+   "name": "Lines",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 107,
+   "name": "Line Barriers",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 108,
+   "name": "Polygons",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 109,
+   "name": "Polygon Barriers",
+   "parentLayerId": 103,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 110,
+   "name": "ChronicCareTreatmentRoad25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 111,
+   "name": "Facilities",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 112,
+   "name": "Point Barriers",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 113,
+   "name": "Lines",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 114,
+   "name": "Line Barriers",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 115,
+   "name": "Polygons",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 116,
+   "name": "Polygon Barriers",
+   "parentLayerId": 110,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 117,
+   "name": "NoFLSObligation25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    118,
+    119,
+    120,
+    121,
+    122,
+    123
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 118,
+   "name": "Facilities",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 119,
+   "name": "Point Barriers",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 120,
+   "name": "Lines",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 121,
+   "name": "Line Barriers",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 122,
+   "name": "Polygons",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 123,
+   "name": "Polygon Barriers",
+   "parentLayerId": 117,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 124,
+   "name": "NoFLSObligation50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    125,
+    126,
+    127,
+    128,
+    129,
+    130
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 125,
+   "name": "Facilities",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 126,
+   "name": "Point Barriers",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 127,
+   "name": "Lines",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 128,
+   "name": "Line Barriers",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 129,
+   "name": "Polygons",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 130,
+   "name": "Polygon Barriers",
+   "parentLayerId": 124,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 131,
+   "name": "FLSIdentified25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    132,
+    133,
+    134,
+    135,
+    136,
+    137
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 132,
+   "name": "Facilities",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 133,
+   "name": "Point Barriers",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 134,
+   "name": "Lines",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 135,
+   "name": "Line Barriers",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 136,
+   "name": "Polygons",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 137,
+   "name": "Polygon Barriers",
+   "parentLayerId": 131,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 138,
+   "name": "FLSIdentified50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 139,
+   "name": "Facilities",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 140,
+   "name": "Point Barriers",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 141,
+   "name": "Lines",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 142,
+   "name": "Line Barriers",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 143,
+   "name": "Polygons",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 144,
+   "name": "Polygon Barriers",
+   "parentLayerId": 138,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 145,
+   "name": "FLSDesignatedPartial25k",
+   "parentLayerId": -1,
+   "defaultVisibility": true,
+   "subLayerIds": [
+    146,
+    147,
+    148,
+    149,
+    150,
+    151
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 146,
+   "name": "Facilities",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 147,
+   "name": "Point Barriers",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 148,
+   "name": "Lines",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 149,
+   "name": "Line Barriers",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 150,
+   "name": "Polygons",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 151,
+   "name": "Polygon Barriers",
+   "parentLayerId": 145,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 152,
+   "name": "FLSDesignatedPartial50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    153,
+    154,
+    155,
+    156,
+    157,
+    158
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 153,
+   "name": "Facilities",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 154,
+   "name": "Point Barriers",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 155,
+   "name": "Lines",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 156,
+   "name": "Line Barriers",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 157,
+   "name": "Polygons",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 158,
+   "name": "Polygon Barriers",
+   "parentLayerId": 152,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 159,
+   "name": "FLSDesignatedAll25k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    160,
+    161,
+    162,
+    163,
+    164,
+    165
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 160,
+   "name": "Facilities",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 161,
+   "name": "Point Barriers",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 162,
+   "name": "Lines",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 163,
+   "name": "Line Barriers",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 164,
+   "name": "Polygons",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 165,
+   "name": "Polygon Barriers",
+   "parentLayerId": 159,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 166,
+   "name": "FLSDesignationAll50k",
+   "parentLayerId": -1,
+   "defaultVisibility": false,
+   "subLayerIds": [
+    167,
+    168,
+    169,
+    170,
+    171,
+    172
+   ],
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 167,
+   "name": "Facilities",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 168,
+   "name": "Point Barriers",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 169,
+   "name": "Lines",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 170,
+   "name": "Line Barriers",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 171,
+   "name": "Polygons",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  },
+  {
+   "id": 172,
+   "name": "Polygon Barriers",
+   "parentLayerId": 166,
+   "defaultVisibility": true,
+   "subLayerIds": null,
+   "minScale": 0,
+   "maxScale": 0
+  }
+ ],
+ "tables": [],
+ "spatialReference": {
+  "wkid": 4269,
+  "latestWkid": 4269
+ },
+ "singleFusedMapCache": false,
+ "initialExtent": {
+  "xmin": -83.66992578906596,
+  "ymin": 44.51881723644086,
+  "xmax": -68.86587119519228,
+  "ymax": 50.8005942918328,
+  "spatialReference": {
+   "wkid": 4269,
+   "latestWkid": 4269
+  }
+ },
+ "fullExtent": {
+  "xmin": -180,
+  "ymin": -90,
+  "xmax": 180,
+  "ymax": 90,
+  "spatialReference": {
+   "wkid": 4269,
+   "latestWkid": 4269
+  }
+ },
+ "minScale": 0,
+ "maxScale": 0,
+ "units": "esriDecimalDegrees",
+ "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+ "documentInfo": {
+  "Title": "",
+  "Author": "",
+  "Comments": "",
+  "Subject": "",
+  "Category": "",
+  "AntialiasingMode": "None",
+  "TextAntialiasingMode": "Force",
+  "Keywords": ""
+ },
+ "capabilities": "Map,Query,Data",
+ "supportedQueryFormats": "JSON, AMF",
+ "maxRecordCount": 30000,
+ "maxImageHeight": 2048,
+ "maxImageWidth": 2048
+}

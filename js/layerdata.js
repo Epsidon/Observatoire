@@ -741,16 +741,16 @@ var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportMaps/MapServer
  
 var layersLabels = [
 T('Mother Tongue'), T('Knowledge of Official Language'), T('First Official Language Spoken'), T('Language Spoken Most Often at Home'),
-T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('All Hospitals and Health Units'), 
+T('Health Professionals by LHIN'), T('Socio-economic Profiles'), T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), 'FLS Identified',
 T('FLS Designated Partial'), T('FLS Designated All'), T('Ontario Layer'), T('Ontario Layer'), T('Ontario Layer')];
   
-var legendLabel = [T('Mother Tongue'), T('Knowledge of Official Language'), T('First Official Language Spoken'), T('Language Spoken Most Often at Home'),
-T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('All Hospitals and Health Units'), 
+var legendLabel = [T('Mother Tongue = French'), T('Knowledge of Official Language = French Only'), T('First Official Language Spoken = French'), T('Language Spoken Most Often at Home = French'),
+T('Health Professionals by LHIN'), T('Socio-economic Profiles'), T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
-T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), 'FLS Identified',
-T('FLS Designated Partial'), T('FLS Designated All'), T('Ontario Layer'), T('Ontario Layer'), T('Ontario Layer')];
+T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
+T('FLS Designated Partial'), T('FLS Designated All'), T('Champlain Local Health Integration Network (LHIN)'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
 var LayerLegend = 'Ontario LHIN Information';

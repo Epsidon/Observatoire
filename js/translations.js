@@ -146,3 +146,9 @@ Fr['FLS Designated All'] = 'Désignation complète - LSF';
 Fr['Selected layer:'] = 'Selected layer:';
 
 Fr['Legend: '] = 'légende: ';
+Fr['Mother Tongue = French'] = 'Langue maternelle = Français';
+Fr['Knowledge of Official Language = French Only'] = 'Connaissance des langues officielles = Français seulement';
+Fr['First Official Language Spoken = French'] = 'Première langue officielle parlée = Français';
+Fr['Language Spoken Most Often at Home = French'] = 'Langue parlée le plus souvent à la maison = Français';
+
+

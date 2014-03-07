@@ -746,6 +746,13 @@ T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Reha
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), 'FLS Identified',
 T('FLS Designated Partial'), T('FLS Designated All'), T('Ontario Layer'), T('Ontario Layer'), T('Ontario Layer')];
   
+var legendLabel = [T('Mother Tongue'), T('Knowledge of Official Language'), T('First Official Language Spoken'), T('Language Spoken Most Often at Home'),
+T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('All Hospitals and Health Units'), 
+T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
+T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), 'FLS Identified',
+T('FLS Designated Partial'), T('FLS Designated All'), T('Ontario Layer'), T('Ontario Layer'), T('Ontario Layer')];
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
+var LayerLegend = 'Ontario LHIN Information';
+var mapServicePointLegendLabel = '';
 var accordionHeaders = {6 : 'Hospitals By Services Offered', 13 : 'Hospitals By French Language Service (FLS) Designation'};

@@ -99,6 +99,7 @@ function(
 			new dojo.Color([0,255,0,0]));
 
 	updateMapLabel();
+	updateLegend();
 	setupAccordion();
 
 
@@ -268,6 +269,7 @@ function(
 				{
 					activeLayer = 17;
 					drawLegend(activeLayer);
+					LayerLegend = legendLabel[17];
 				}
 			else
 			{
@@ -276,6 +278,7 @@ function(
 			console.log('4.1. 4.2.');
 			activeLayer = 18;
 			drawLegend(activeLayer);
+			LayerLegend = legendLabel[18];
 			}
 
 		}
@@ -305,6 +308,7 @@ function(
 		}
 
 		mapLayerLabel = layersLabels[activeLayer];
+		LayerLegend = legendLabel[activeLayer];
 
 		updateServicePoints();
 	}	
@@ -312,6 +316,7 @@ function(
 	function updateServicePoints()
 	{		
 		mapServicePointLabel = '';
+		mapServicePointLegendLabel = '';
 
 		for(var i = 0; i < numLayers; i++)
 		{
@@ -351,10 +356,13 @@ function(
 				map.reorderLayer(mapLayer[i], numServicePointLayers);
 
 				mapServicePointLabel += " & " + layersLabels[i];
+				
+				mapServicePointLegendLabel += " & " +legendLabel[i];
 
 			}
 			else
 			{
+				$('#legendTitle').hide();
 				map.removeLayer(mapLayer[i]);	
 				map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
 				map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
@@ -367,6 +375,7 @@ function(
 		}
 
 		updateMapLabel();
+		updateLegend();
 	}
 
 	function updateMapLabel()
@@ -383,6 +392,22 @@ function(
 
 		$('#mapLabel').html('<b>' + T('Selected layer:') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
+
+		reorganizeMapsPage();
+	}
+	
+	function updateLegend()
+	{
+		console.log('updateLegend was called');
+
+		if (LayerLegend == '' && mapServicePointLegendLabel == '')
+		{
+			$('#legendTitle').hide();
+			return;
+		}	
+		
+		$('#legendTitle').html('<b>' + T('Legend: ') +  '</b>' + LayerLegend + "  " + mapServicePointLegendLabel );
+		$('#legendTitle').show();
 
 		reorganizeMapsPage();
 	}

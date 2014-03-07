@@ -60,12 +60,18 @@ function reorganizeMapsPage()
 		
 	var legendTop = mapTop + (mapHeight/2) + (mapLabelHeight * 4);
 	var legendLeft = mapContainerLeft;
-	 
+	
 	$("#legendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
 
 	var mapLableTop = mapTop + zoomButtonHeight;
 	var mapLableLeft = mapContainerLeft + (mapContainerWidth / 2) - (mapLabelWidth / 2);
+	
+	var legendLabelTop = mapTop + (mapHeight/2) + (mapLabelHeight);
+	var legendLabelLeft = mapContainerLeft;
+	
+	$("#legendTitle").css(
+		{'position' : 'absolute' , 'left' : legendLabelLeft + 'px', 'top' : legendLabelTop + 'px'});	
 	
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});			

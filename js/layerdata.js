@@ -314,8 +314,8 @@ layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2",
 
 layerData[5] = [];
 layerData[5]['infoWindowTitle'] = "<b>" + T("Socio-Economic Profiles") + "</b>";
-layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR035b08.HRUID2007}" + ")" +
-"<b>" + "<p>" + T("Taux global de non-réponse (TNR) = ") + "</b>" + "${SociEcoProfile.csv.TGN}" + "</p>" +
+layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" + ")" +
+"<b>" + "<p>" + T("Taux global de non-réponse (TNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" +
 "<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+
@@ -326,113 +326,114 @@ layerData[5]['infoWindowBody'] ="${HR035b08.FRE_LABEL}" + "&nbsp" + "(" + "${HR0
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Population") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.TotalFranSeul}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.TotalAngSeul}</td>"+
-"<td align='center'>${SociEcoProfile.csv.TotalFranAng}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.TotalAucune}</td>"+
+"<td align='center'>${SociEcoP_2}</td>"+
+"<td class=first align='center'>${SociEcoP_3}</td>"+
+"<td align='center'>${SociEcoP_4}</td>"+
+"<td class=first align='center'>${SociEcoP_5}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
-"<td align='center'>${HR035b08.FrTotPerc}" + "%" + "</td>"+
-"<td class=first align='center'>${HR035b08.AngTotPerc}" + "%" + "</td>"+
-"<td align='center'>${HR035b08.FrAngTotPe}" + "%" + "</td>"+
-"<td class=first align='center'>${HR035b08.AucPerc}" + "%" + "</td>"+
+"<td align='center'>${FrTotPerc }" + "%" + "</td>"+
+"<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
+"<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
+"<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("0 à 19 ans") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAge019}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngAge019}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngAge019}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge019}</td>"+
+"<td align='center'>${SociEcoP_6}</td>"+
+"<td class=first align='center'>${SociEcoP_9}</td>"+
+"<td align='center'>${SociEco_12}</td>"+
+"<td class=first align='center'>${SociEco_15}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("20 à 64 ans") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAge2064}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngAge2064}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngAge2064}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge2064}</td>"+
+"<td align='center'>${SociEcoP_7}</td>"+
+"<td class=first align='center'>${SociEco_10}</td>"+
+"<td align='center'>${SociEco_13}</td>"+
+"<td class=first align='center'>${SociEco_16}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("65 ans et plus") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAge65plus}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngAge65plus}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngAge65plus}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneAge65plus}</td>"+
+"<td align='center'>${SociEcoP_8}</td>"+
+"<td class=first align='center'>${SociEco_11}</td>"+
+"<td align='center'>${SociEco_14}</td>"+
+"<td class=first align='center'>${SociEco_17}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Education") + "</td>" +
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Aucun certificat, diplôme ou grade") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAucunDip}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngAucunDip}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngAucunDip}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneAucunDip}</td>"+
+"<td align='center'>${SociEco_18}</td>"+
+"<td class=first align='center'>${SociEco_23}</td>"+
+"<td align='center'>${SociEco_28}</td>"+
+"<td class=first align='center'>${SociEco_33}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Diplôme d'études secondaires") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranDES}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngDES}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngDES}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneDES}</td>"+
+"<td align='center'>${SociEco_19}</td>"+
+"<td class=first align='center'>${SociEco_24}</td>"+
+"<td align='center'>${SociEco_29}</td>"+
+"<td class=first align='center'>${SociEco_34}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Certificat/diplôme d'un collège") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranCollege}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngCollege}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngCollege}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneCollege}</td>"+
+"<td align='center'>${SociEco_21}</td>"+
+"<td class=first align='center'>${SociEco_26}</td>"+
+"<td align='center'>${SociEco_31}</td>"+
+"<td class=first align='center'>${SociEco_36}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Certificat/diplôme universitaire") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranUni}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngUni}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngUni}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneUni}</td>"+
+"<td align='center'>${SociEco_22}</td>"+
+"<td class=first align='center'>${SociEco_27}</td>"+
+"<td align='center'>${SociEco_32}</td>"+
+"<td class=first align='center'>${SociEco_37}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Immigrants") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranImm}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngImm}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngImm}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucunegImm}</td>"+
+"<td align='center'>${SociEco_38}</td>"+
+"<td class=first align='center'>${SociEco_39}</td>"+
+"<td align='center'>${SociEco_40}</td>"+
+"<td class=first align='center'>${SociEco_41}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Personne à faible revenu") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranFaibleRev}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngFaibleRev}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngFaibleRev}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneFaibleRev}</td>"+
+"<td align='center'>${SociEco_42}</td>"+
+"<td class=first align='center'>${SociEco_43}</td>"+
+"<td align='center'>${SociEco_44}</td>"+
+"<td class=first align='center'>${SociEco_45}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Personne vivant seule") + "</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranVivantSeul}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AngVivantSeul}</td>"+
-"<td align='center'>${SociEcoProfile.csv.FranAngVivantSeul}</td>"+
-"<td class=first align='center'>${SociEcoProfile.csv.AucuneVivantSeul}</td>"+
+"<td align='center'>${SociEco_46 }</td>"+
+"<td class=first align='center'>${SociEco_47}</td>"+
+"<td align='center'>${SociEco_48}</td>"+
+"<td class=first align='center'>${SociEco_49}</td>"+
 "</tr>"+
 "</table>" + 
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[5]['outFields'] = new Array("HR035b08.FRE_LABEL", "HR035b08.HRUID2007", "SociEcoProfile.csv.TGN",
-"SociEcoProfile.csv.TotalFranSeul", "SociEcoProfile.csv.TotalAngSeul", "SociEcoProfile.csv.TotalFranAng",
-"SociEcoProfile.csv.TotalAucune", "SociEcoProfile.csv.FranAge019", "SociEcoProfile.csv.AngAge019",
-"SociEcoProfile.csv.FranAngAge019", "SociEcoProfile.csv.AucuneAge019", "SociEcoProfile.csv.FranAge2064",
-"SociEcoProfile.csv.AngAge2064", "SociEcoProfile.csv.FranAngAge2064", "SociEcoProfile.csv.AucuneAge2064",
-"SociEcoProfile.csv.FranAge65plus", "SociEcoProfile.csv.AngAge65plus", "SociEcoProfile.csv.FranAngAge65plus",
-"SociEcoProfile.csv.AucuneAge65plus", "SociEcoProfile.csv.FranAucunDip", "SociEcoProfile.csv.AngAucunDip",
-"SociEcoProfile.csv.FranAngAucunDip", "SociEcoProfile.csv.AucuneAucunDip", "SociEcoProfile.csv.FranDES",
-"SociEcoProfile.csv.AngDES", "SociEcoProfile.csv.FranAngDES", "SociEcoProfile.csv.AucuneDES", 
-"SociEcoProfile.csv.FranCollege", "SociEcoProfile.csv.AngCollege", "SociEcoProfile.csv.FranAngCollege",
-"SociEcoProfile.csv.AucuneCollege", "SociEcoProfile.csv.FranUni", "SociEcoProfile.csv.AngUni", "SociEcoProfile.csv.FranAngUni",
-"SociEcoProfile.csv.AucuneUni","SociEcoProfile.csv.FranImm", "SociEcoProfile.csv.AngImm", "SociEcoProfile.csv.FranAngImm",
-"SociEcoProfile.csv.AucunegImm", "SociEcoProfile.csv.FranFaibleRev", "SociEcoProfile.csv.AngFaibleRev",
-"SociEcoProfile.csv.FranAngFaibleRev", "SociEcoProfile.csv.AucuneFaibleRev", "SociEcoProfile.csv.FranVivantSeul",
-"SociEcoProfile.csv.AngVivantSeul", "HR035b08.FrTotPerc","HR035b08.AngTotPerc", "HR035b08.FrAngTotPe",
-"HR035b08.AucPerc",
-"SociEcoProfile.csv.FranAngVivantSeul", "SociEcoProfile.csv.AucuneVivantSeul" );
+layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "SociEcoP_1",
+"SociEcoP_2", "SociEcoP_3", "SociEcoP_4", "SociEcoP_5", 
+"FrTotPerc", "AngTotPerc", "AucPerc",
+"SociEcoP_6", "SociEcoP_9", "SociEco_12",
+"SociEco_15", "SociEcoP_7", "SociEco_10",
+"SociEco_13", "SociEco_16", "SociEcoP_8",
+"SociEco_11", "SociEco_14", "SociEco_17",
+"SociEco_18", "SociEco_23", "SociEco_28",
+"SociEco_33", "SociEco_19", "SociEco_24",
+"SociEco_29", "SociEco_34", "SociEco_21",
+"SociEco_26", "SociEco_31", "SociEco_36",
+"SociEco_22", "SociEco_27", "SociEco_32",
+"SociEco_37", "SociEco_38", "SociEco_39",
+"SociEco_40", "SociEco_41", "SociEco_42",
+"SociEco_43", "SociEco_44", "SociEco_45",
+"SociEco_46", "SociEco_47", "SociEco_48",
+"SociEco_49"
+ );
 
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";

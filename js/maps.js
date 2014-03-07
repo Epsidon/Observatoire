@@ -361,7 +361,7 @@ function(
 
 				mapServicePointLabel += " & " + layersLabels[i];
 				
-				mapServicePointLegendLabel += " & " +legendLabel[i];
+				mapServicePointLegendLabel += " - " +legendLabel[i];
 
 			}
 			else
@@ -411,7 +411,7 @@ function(
 			return;
 		}	
 		
-		$('#legendTitle').html('<b>' + T('Legend: ') +  '</b>' + LayerLegend + "  " + mapServicePointLegendLabel );
+		$('#legendTitle').html('<b>' + T('Legend: ') +  '</b>' + LayerLegend + "  "  );
 		$('#legendTitle').show();
 
 		reorganizeMapsPage();
@@ -482,8 +482,8 @@ function(
 			console.log(hospitalId);
 				var layer = layers[hospitals[hospitalId]];
 
-				htmlBody += '<BR><BR>' + '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '" />';
-
+				htmlBody +=  '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />';
+				htmlBody += ' ' + mapServicePointLegendLabel;
 			}
 		
 				

@@ -484,7 +484,6 @@ function(
 
 				htmlBody += '<BR><BR>' + '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '" />';
 
-// 
 			}
 		
 				
@@ -557,7 +556,10 @@ function(
 				'<table>' +
 					'<tr>' + 
 						'<td>' + 
-							'<label>'+'<input type="checkbox" id="servicePointHyperLink' +layerCounter+ '" />' + 
+							'<label>'+
+							'<input type="checkbox" id="servicePointHyperLink' + layerCounter + '" ' + 
+							'class="servicePointCheckBox"' +
+							'onClick="javascript:servicePointCheckBoxClicked(' + layerCounter + ')"/>' + 
 						'</td>' + 
 						'<td>' + 
 							T(layer.name) +
@@ -614,7 +616,26 @@ function(
 			$( "#map" ).fadeTo("fast" , 1);	
 		}
 	}
+	
+	function servicePointCheckBoxClicked(layerCounter)
+	{
+		if ($('#servicePointHyperLink' + layerCounter).prop('checked'))
+			var checked = true;
+		else 
+			var checked = false;
 
-window.map = map;
+		$('.servicePointCheckBox').prop('checked', false);	
+		$('.servicePointBufferRow').hide();	
+		$('.servicePointBufferLayerCheckBox').prop('checked', false);	
+
+		if (checked)
+		{
+			$('#servicePointHyperLink' + layerCounter).prop('checked', true);	
+			$('.servicePointBufferRowLayer' + layerCounter).show();
+		}
+	}
+	
+	window.servicePointCheckBoxClicked = servicePointCheckBoxClicked;
+	window.map = map;
 
 });

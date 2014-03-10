@@ -68,6 +68,14 @@ Fr['The number of specialists who can provide care in French'] = 'SPECF';
 Fr['The number of specialists who can provide care in English'] = 'SPECE';
 
 Fr['Minority Health Observatory'] = 'Observatoire de la santé des minorités';
+
+Fr['French Only'] = 'Francais seulement';
+Fr['English Only'] = 'Anglais seulement';
+Fr['French & English'] = 'Francais et anglais';
+Fr['Neither Official Language'] = 'Aucune langue officielle';
+Fr['Proportion of the total population'] = 'Proportion de la population totale';
+Fr['Age groups'] = 'Groupes d’age';
+
 Fr['Notes'] = 'Notes';
 Fr['MINISTRY OF '] = 'Ministere de la ';
 Fr['HEALTH AND LONG-TERM CARE'] = 'SANTÉ ET SOINS DE LONGUE DURÉE';
@@ -155,5 +163,15 @@ Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
 Fr['Canadian Community Health Survey Combined Cycles 2001 to 2012'] = 'Cycles combinés de 2001 à 2012 de l’Enquête sur la santé dans les collectivités canadiennes';
 Fr['Local Health Integration Network (LHIN)'] = 'Réseaux locaux d’intégration des services de santé (RLISS)';
 
+Fr['0 to 19 years old'] = '0 à 19 ans';
+Fr['20 to 64 years old'] ='20 à 64 ans';
+Fr['65 years old and above'] '65 ans et plus';
+Fr['No certificate, diploma or degree'] = 'Aucun certificat, diplôme ou grade';
+Fr['High scholl diploma'] = 'Diplôme d’études secondaires';
+Fr['Apprenticeship or trades certificate or diploma'] = '';
+Fr['College certificate/diploma'] = 'Certificat/diplôme d’un collège';
+Fr['University certificate/diploma degree'] = 'Certificat/diplôme universitaire';
 
+Fr['Low income person'] = 'Personne à faible revenu';
+Fr['Person living alone'] = 'Personne vivant seule';
 

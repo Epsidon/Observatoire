@@ -319,10 +319,10 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+
-"<th align='center'>Francais seulement</th>"+
-"<th align='center'>Anglais seulement</th>"+
-"<th align='center'>Francais et anglais</th>"+
-"<th align='center'>Aucune langue officielle</th>"+
+"<th align='center'>French Only</th>"+
+"<th align='center'>English Only</th>"+
+"<th align='center'>French & English</th>"+
+"<th align='center'>Neither Official Language</th>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Population") + "</td>"+
@@ -332,31 +332,31 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<td class=first align='center'>${SociEcoP_5}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
+"<td class=first align='center'>" + T("Proportion of the total population") + "</td>"+
 "<td align='center'>${FrTotPerc }" + "%" + "</td>"+
 "<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
 "<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
 "<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
+"<td class=first align='center'>" + T("Age groups") + "</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("0 à 19 ans") + "</td>"+
+"<td class=first align='center'>" + T("0 to 19 years old") + "</td>"+
 "<td align='center'>${SociEcoP_6}</td>"+
 "<td class=first align='center'>${SociEcoP_9}</td>"+
 "<td align='center'>${SociEco_12}</td>"+
 "<td class=first align='center'>${SociEco_15}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("20 à 64 ans") + "</td>"+
+"<td class=first align='center'>" + T("20 to 64 years old") + "</td>"+
 "<td align='center'>${SociEcoP_7}</td>"+
 "<td class=first align='center'>${SociEco_10}</td>"+
 "<td align='center'>${SociEco_13}</td>"+
 "<td class=first align='center'>${SociEco_16}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("65 ans et plus") + "</td>"+
+"<td class=first align='center'>" + T("65 years old and above") + "</td>"+
 "<td align='center'>${SociEcoP_8}</td>"+
 "<td class=first align='center'>${SociEco_11}</td>"+
 "<td align='center'>${SociEco_14}</td>"+
@@ -366,7 +366,7 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<td class=first align='center'>" + T("Education") + "</td>" +
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Aucun certificat, diplôme ou grade") + "</td>"+
+"<td class=first align='center'>" + T("No certificate, diploma or degree") + "</td>"+
 "<td align='center'>${SociEco_18}</td>"+
 "<td class=first align='center'>${SociEco_23}</td>"+
 "<td align='center'>${SociEco_28}</td>"+
@@ -380,14 +380,14 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<td class=first align='center'>${SociEco_34}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Certificat/diplôme d'un collège") + "</td>"+
+"<td class=first align='center'>" + T("College certificate/diploma") + "</td>"+
 "<td align='center'>${SociEco_21}</td>"+
 "<td class=first align='center'>${SociEco_26}</td>"+
 "<td align='center'>${SociEco_31}</td>"+
 "<td class=first align='center'>${SociEco_36}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Certificat/diplôme universitaire") + "</td>"+
+"<td class=first align='center'>" + T("") + "</td>"+
 "<td align='center'>${SociEco_22}</td>"+
 "<td class=first align='center'>${SociEco_27}</td>"+
 "<td align='center'>${SociEco_32}</td>"+
@@ -401,14 +401,14 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<td class=first align='center'>${SociEco_41}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Personne à faible revenu") + "</td>"+
+"<td class=first align='center'>" + T("Low income person") + "</td>"+
 "<td align='center'>${SociEco_42}</td>"+
 "<td class=first align='center'>${SociEco_43}</td>"+
 "<td align='center'>${SociEco_44}</td>"+
 "<td class=first align='center'>${SociEco_45}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Personne vivant seule") + "</td>"+
+"<td class=first align='center'>" + T("Person living alone") + "</td>"+
 "<td align='center'>${SociEco_46 }</td>"+
 "<td class=first align='center'>${SociEco_47}</td>"+
 "<td align='center'>${SociEco_48}</td>"+

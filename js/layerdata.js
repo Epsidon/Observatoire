@@ -373,7 +373,7 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<td class=first align='center'>${SociEco_33}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Diplôme d'études secondaires") + "</td>"+
+"<td class=first align='center'>" + T("High school diploma") + "</td>"+
 "<td align='center'>${SociEco_19}</td>"+
 "<td class=first align='center'>${SociEco_24}</td>"+
 "<td align='center'>${SociEco_29}</td>"+

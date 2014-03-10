@@ -438,111 +438,122 @@ layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "S
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("Health Profiles") + "</b>";
 layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}" + ")" +
-/* "<table border=1>"+
+"<br>" + "<b>" + "Canadian Community Health Survey Combined Cycles 2001 to 2012" + "</b>" + "</br>" +
+"<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+
-"<th align='center'>Francais seulement</th>"+
-"<th align='center'>Anglais seulement</th>"+
-"<th align='center'>Francais et anglais</th>"+
-"<th align='center'>Aucune langue officielle</th>"+
+"<th align='center'>French</th>"+
+"<th align='center'>English</th>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Population") + "</td>"+
-"<td align='center'>${SociEcoP_2}</td>"+
-"<td class=first align='center'>${SociEcoP_3}</td>"+
-"<td align='center'>${SociEcoP_4}</td>"+
-"<td class=first align='center'>${SociEcoP_5}</td>"+
+"<td class=first align='center'>" + T("Perceived health, fair or poor (%)") + "</td>"+
+"<td align='center'>${Health__20}</td>"+
+"<td class=first align='center'>${Health_P_1}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
-"<td align='center'>${FrTotPerc }" + "%" + "</td>"+
-"<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
-"<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
-"<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
+"<td class=first align='center'>" + T("Perceived mental health, fair or poor (%)") + "</td>"+
+"<td align='center'>${Health__21}</td>"+
+"<td class=first align='center'>${Health_P_2}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
+"<td class=first align='center'>" + T("Perceived life stress, quite a bit or extremely stressful (%)") + "</td>"+
+"<td align='center'>${Health__22}</td>"+
+"<td class=first align='center'>${Health_P_3}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("0 à 19 ans") + "</td>"+
-"<td align='center'>${SociEcoP_6}</td>"+
-"<td class=first align='center'>${SociEcoP_9}</td>"+
-"<td align='center'>${SociEco_12}</td>"+
-"<td class=first align='center'>${SociEco_15}</td>"+
+"<td class=first align='center'>" + T("Participation and activity limitation, sometimes or often (%)") + "</td>"+
+"<td align='center'>${Health_P_4}</td>"+
+"<td class=first align='center'>${Health__14}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("20 à 64 ans") + "</td>"+
-"<td align='center'>${SociEcoP_7}</td>"+
-"<td class=first align='center'>${SociEco_10}</td>"+
-"<td align='center'>${SociEco_13}</td>"+
-"<td class=first align='center'>${SociEco_16}</td>"+
+"<td class=first align='center'>" + T("At least one chronic disease (%)") + "</td>"+
+"<td align='center'>${Health__24}</td>"+
+"<td class=first align='center'>${Health_P_5}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("65 ans et plus") + "</td>"+
-"<td align='center'>${SociEcoP_8}</td>"+
-"<td class=first align='center'>${SociEco_11}</td>"+
-"<td align='center'>${SociEco_14}</td>"+
-"<td class=first align='center'>${SociEco_17}</td>"+
+"<td class=first align='center'>" + T("Body mass index (BMI) (18 or older), overweight or obese (%)") + "</td>"+
+"<td align='center'>${Health__25}</td>"+
+"<td class=first align='center'>${Health_P_6}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Education") + "</td>" +
+"<td class=first align='center'>" + T("Fruit and vegetable consumption, less than 5 times per day (%)") + "</td>"+
+"<td align='center'>${Health__26}</td>"+
+"<td class=first align='center'>${Health_P_7}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Aucun certificat, diplôme ou grade") + "</td>"+
-"<td align='center'>${SociEco_18}</td>"+
-"<td class=first align='center'>${SociEco_23}</td>"+
-"<td align='center'>${SociEco_28}</td>"+
-"<td class=first align='center'>${SociEco_33}</td>"+
+"<td class=first align='center'>" + T("Current smoker, daily or occasional (%)") + "</td>"+
+"<td align='center'>${Health__29}</td>"+
+"<td class=first align='center'>${Health_P_8}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Diplôme d'études secondaires") + "</td>"+
-"<td align='center'>${SociEco_19}</td>"+
-"<td class=first align='center'>${SociEco_24}</td>"+
-"<td align='center'>${SociEco_29}</td>"+
-"<td class=first align='center'>${SociEco_34}</td>"+
+"<td class=first align='center'>" + T("Type of drinker, regular (%)") + "</td>"+
+"<td align='center'>${Health__30}</td>"+
+"<td class=first align='center'>${Health_P_9}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Certificat/diplôme d'un collège") + "</td>"+
-"<td align='center'>${SociEco_21}</td>"+
-"<td class=first align='center'>${SociEco_26}</td>"+
-"<td align='center'>${SociEco_31}</td>"+
-"<td class=first align='center'>${SociEco_36}</td>"+
+"<td class=first align='center'>" + T("Regular medical doctor (%)") + "</td>"+
+"<td align='center'>${Health__31}</td>"+
+"<td class=first align='center'>${Health__10}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Certificat/diplôme universitaire") + "</td>"+
-"<td align='center'>${SociEco_22}</td>"+
-"<td class=first align='center'>${SociEco_27}</td>"+
-"<td align='center'>${SociEco_32}</td>"+
-"<td class=first align='center'>${SociEco_37}</td>"+
+"<td class=first align='center'>" + T("Language spoken with medical doctor, English (%)") + "</td>"+
+"<td align='center'>${Health__32}</td>"+
+"<td class=first align='center'>${Health__11}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Immigrants") + "</td>"+
-"<td align='center'>${SociEco_38}</td>"+
-"<td class=first align='center'>${SociEco_39}</td>"+
-"<td align='center'>${SociEco_40}</td>"+
-"<td class=first align='center'>${SociEco_41}</td>"+
+"<td class=first align='center'>" + T("Contact with a family medicine physician or a nurse in the past 12 months (%)") + "</td>"+
+"<td align='center'>${Health__33}</td>"+
+"<td class=first align='center'>${Health__12}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Personne à faible revenu") + "</td>"+
-"<td align='center'>${SociEco_42}</td>"+
-"<td class=first align='center'>${SociEco_43}</td>"+
-"<td align='center'>${SociEco_44}</td>"+
-"<td class=first align='center'>${SociEco_45}</td>"+
+"<td class=first align='center'>" + T("Required health care in the past 12 months  (%)") + "</td>"+
+"<td align='center'>${Health__34}</td>"+
+"<td class=first align='center'>${Health__13}</td>"+
 "</tr>"+
 "<tr>" +
-"<td class=first align='center'>" + T("Personne vivant seule") + "</td>"+
-"<td align='center'>${SociEco_46 }</td>"+
-"<td class=first align='center'>${SociEco_47}</td>"+
-"<td align='center'>${SociEco_48}</td>"+
-"<td class=first align='center'>${SociEco_49}</td>"+
+"<td class=first align='center'>" + T("Difficulties obtaining health care in the past 12 months  (%)") + "</td>"+
+"<td align='center'>${Health__35}</td>"+
+"<td class=first align='center'>${Health__14}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Perceived access to health care in Ontario, good or excellent (%)") + "</td>"+
+"<td align='center'>${Health__36}</td>"+
+"<td class=first align='center'>${Health__15}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Perceived quality of health care in Ontario, good or excellent (%)") + "</td>"+
+"<td align='center'>${Health__37}</td>"+
+"<td class=first align='center'>${Health__16}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Perceived access to health care in community, good or excellent (%)") + "</td>"+
+"<td align='center'>${Health__38}</td>"+
+"<td class=first align='center'>${Health__17}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Perceived quality health care in community , good or excellent (%)") + "</td>"+
+"<td align='center'>${Health__39}</td>"+
+"<td class=first align='center'>${Health__18}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Sense of community belonging, very strong or somewhat strong (%)") + "</td>"+
+"<td align='center'>${Health__40}</td>"+
+"<td class=first align='center'>${Health__19}</td>"+
 "</tr>"+
 "</table>" + 
- */"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[6]['outFields'] = new Array( "EnglishL_1", "EnglishLab"
+"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+layerData[6]['outFields'] = new Array( "EnglishL_1", "EnglishLab", "Health__26",
+"Health__32", "Health__11", "Health_P_1", "Health__20",
+"Health__33", "Health__12", "Health__34", "Health__13",
+"Health__35", "Health__14", "Health__36", "Health__15", 
+"Health__25", "Health_P_6", "Fruits_F", "Health_P_7", 
+"Health__29", "Health_P_8", "Health__30", "Health_P_9",
+"Health__21", "Health_P_2", "Health__22", "Health_P_3", 
+"Health_P_4", "Health__14", "Health__24", "Health_P_5", 
+"Health__31", "Health__10", "Health__37", "Health__16",
+"Health__38", "Health__17", "Health__39", "Health__18", 
+"Health__40", "Health__19", "", ""
  );
- 
- 
- //////
 
 layerData[7] = [];
 layerData[7]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";

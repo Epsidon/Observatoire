@@ -767,7 +767,7 @@ layerData[17]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS
 
 
 layerData[18] = [];
-layerData[18]['infoWindowTitle'] = "<b>" + T("Champlain Local Health Integration Network (LHIN)") + "</b>";
+layerData[18]['infoWindowTitle'] = "<b>" + T("Local Health Integration Network (LHIN)") + "</b>";
 layerData[18]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'></th>"+
@@ -873,13 +873,13 @@ T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profi
 T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
-T('FLS Designated Partial'), T('FLS Designated All'), T('hamplain Local Health Integration Network (LHIN)'), T('Ontario Layer'), T('Ontario Layer')];
+T('FLS Designated Partial'), T('FLS Designated All'), T('Local Health Integration Network (LHIN)'), T('Ontario Layer'), T('Ontario Layer')];
   
 var legendLabel = [T('Mother Tongue = French'), T('Knowledge of Official Language = French Only'), T('First Official Language Spoken = French'), T('Language Spoken Most Often at Home = French'),
 T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profiles'), T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
-T('FLS Designated Partial'), T('FLS Designated All'), T('Champlain Local Health Integration Network (LHIN)'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];
+T('FLS Designated Partial'), T('FLS Designated All'), T('% for which First Official Language Spoken = French'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];
 var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
 var LayerLegend = 'Ontario LHIN Information';

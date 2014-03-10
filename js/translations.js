@@ -127,7 +127,7 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
 Fr['Health Professionals By LHIN'] = 'Professionels de la santé par RLISS';
-Fr['Champlain Local Health Integration Network (LHIN)'] = 'Réseau local d’intégration des services de santé (RLISS) de Champlain';
+Fr['% for which First Official Language Spoken = French'] = '% pour qui Première langue officielle parlée = Français';
 Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
 Fr['Champlain Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';
 Fr['Population Number'] = 'Population';
@@ -153,7 +153,7 @@ Fr['Language Spoken Most Often at Home = French'] = 'Langue parlée le plus souv
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
 Fr['Canadian Community Health Survey Combined Cycles 2001 to 2012'] = 'Cycles combinés de 2001 à 2012 de l’Enquête sur la santé dans les collectivités canadiennes';
-
+Fr['Local Health Integration Network (LHIN)'] = 'Réseaux locaux d’intégration des services de santé (RLISS)';
 
 
 

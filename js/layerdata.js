@@ -6,7 +6,7 @@ accordion[0]['numLayers'] = 4;
 
 accordion[1] = []
 accordion[1]['title'] = T('Profiles By LHIN (2011)');
-accordion[1]['numLayers'] = 2;
+accordion[1]['numLayers'] = 3;
 
 accordion[2] = []
 accordion[2]['title'] = T('Health Services (2011)');
@@ -434,10 +434,119 @@ layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "S
 "SociEco_46", "SociEco_47", "SociEco_48",
 "SociEco_49"
  );
-
+ 
 layerData[6] = [];
-layerData[6]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";
-layerData[6]['infoWindowBody'] ="${LHIN_NAME}"+  "<table border=1>" +
+layerData[6]['infoWindowTitle'] = "<b>" + T("Health Profiles") + "</b>";
+layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}" + ")" +
+/* "<table border=1>"+
+"<tr>"+
+"<th align='center'></th>"+
+"<th align='center'>Francais seulement</th>"+
+"<th align='center'>Anglais seulement</th>"+
+"<th align='center'>Francais et anglais</th>"+
+"<th align='center'>Aucune langue officielle</th>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Population") + "</td>"+
+"<td align='center'>${SociEcoP_2}</td>"+
+"<td class=first align='center'>${SociEcoP_3}</td>"+
+"<td align='center'>${SociEcoP_4}</td>"+
+"<td class=first align='center'>${SociEcoP_5}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Proportion de la population totale") + "</td>"+
+"<td align='center'>${FrTotPerc }" + "%" + "</td>"+
+"<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
+"<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
+"<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Groupes d'age") + "</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("0 à 19 ans") + "</td>"+
+"<td align='center'>${SociEcoP_6}</td>"+
+"<td class=first align='center'>${SociEcoP_9}</td>"+
+"<td align='center'>${SociEco_12}</td>"+
+"<td class=first align='center'>${SociEco_15}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("20 à 64 ans") + "</td>"+
+"<td align='center'>${SociEcoP_7}</td>"+
+"<td class=first align='center'>${SociEco_10}</td>"+
+"<td align='center'>${SociEco_13}</td>"+
+"<td class=first align='center'>${SociEco_16}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("65 ans et plus") + "</td>"+
+"<td align='center'>${SociEcoP_8}</td>"+
+"<td class=first align='center'>${SociEco_11}</td>"+
+"<td align='center'>${SociEco_14}</td>"+
+"<td class=first align='center'>${SociEco_17}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Education") + "</td>" +
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Aucun certificat, diplôme ou grade") + "</td>"+
+"<td align='center'>${SociEco_18}</td>"+
+"<td class=first align='center'>${SociEco_23}</td>"+
+"<td align='center'>${SociEco_28}</td>"+
+"<td class=first align='center'>${SociEco_33}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Diplôme d'études secondaires") + "</td>"+
+"<td align='center'>${SociEco_19}</td>"+
+"<td class=first align='center'>${SociEco_24}</td>"+
+"<td align='center'>${SociEco_29}</td>"+
+"<td class=first align='center'>${SociEco_34}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Certificat/diplôme d'un collège") + "</td>"+
+"<td align='center'>${SociEco_21}</td>"+
+"<td class=first align='center'>${SociEco_26}</td>"+
+"<td align='center'>${SociEco_31}</td>"+
+"<td class=first align='center'>${SociEco_36}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Certificat/diplôme universitaire") + "</td>"+
+"<td align='center'>${SociEco_22}</td>"+
+"<td class=first align='center'>${SociEco_27}</td>"+
+"<td align='center'>${SociEco_32}</td>"+
+"<td class=first align='center'>${SociEco_37}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Immigrants") + "</td>"+
+"<td align='center'>${SociEco_38}</td>"+
+"<td class=first align='center'>${SociEco_39}</td>"+
+"<td align='center'>${SociEco_40}</td>"+
+"<td class=first align='center'>${SociEco_41}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Personne à faible revenu") + "</td>"+
+"<td align='center'>${SociEco_42}</td>"+
+"<td class=first align='center'>${SociEco_43}</td>"+
+"<td align='center'>${SociEco_44}</td>"+
+"<td class=first align='center'>${SociEco_45}</td>"+
+"</tr>"+
+"<tr>" +
+"<td class=first align='center'>" + T("Personne vivant seule") + "</td>"+
+"<td align='center'>${SociEco_46 }</td>"+
+"<td class=first align='center'>${SociEco_47}</td>"+
+"<td align='center'>${SociEco_48}</td>"+
+"<td class=first align='center'>${SociEco_49}</td>"+
+"</tr>"+
+"</table>" + 
+ */"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+layerData[6]['outFields'] = new Array( "EnglishL_1", "EnglishLab"
+ );
+ 
+ 
+ //////
+
+layerData[7] = [];
+layerData[7]['infoWindowTitle'] = "<b>" + T("All Hospitals") + "</b>";
+layerData[7]['infoWindowBody'] ="${LHIN_NAME}"+  "<table border=1>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -451,11 +560,11 @@ layerData[6]['infoWindowBody'] ="${LHIN_NAME}"+  "<table border=1>" +
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[6]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+layerData[7]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-layerData[7] = [];
-layerData[7]['infoWindowTitle'] = "<b>" + T("General Rehabilitation Hospital") + "</b>";
-layerData[7]['infoWindowBody'] =  "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+layerData[8] = [];
+layerData[8]['infoWindowTitle'] = "<b>" + T("General Rehabilitation Hospital") + "</b>";
+layerData[8]['infoWindowBody'] =  "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -469,11 +578,11 @@ layerData[7]['infoWindowBody'] =  "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[7]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-layerData[8] = [];
-layerData[8]['infoWindowTitle'] = "<b>" + T("Mental Health Unit") + "</b>";
-layerData[8]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+layerData[9] = [];
+layerData[9]['infoWindowTitle'] = "<b>" + T("Mental Health Unit") + "</b>";
+layerData[9]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -485,49 +594,13 @@ layerData[8]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}"
 "<td align='center'>${CITY}</td>"+
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
-"</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
-
-layerData[9] = [];
-layerData[9]['infoWindowTitle'] = "<b>" + T("Special Rehabilitation Hospital") + "</b>";
-layerData[9]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
-"<tr>"+
-"<th align='center'>Health Unit Name</th>"+
-"<th align='center'>City</th>"+
-"<th align='center'>Address</th>"+
-"<th align='center'>Postal Code</th>"+
-"</tr>"+
-"<tr>"+
-"<td align='center'>${C_NAME_ENG}</td>"+
-"<td class=first align='center'>${CITY}</td>"+
-"<td align='center'>${ADDRESS_1}</td>"+
-"<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[9]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[10] = [];
-layerData[10]['infoWindowTitle'] = "<b>" + T("Acute Care Treatment Hospital") + "</b>";
-layerData[10]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
-"<tr>"+
-"<th align='center'>Health Unit Name</th>"+
-"<th align='center'>City</th>"+
-"<th align='center'>Address</th>"+
-"<th align='center'>Postal Code</th>"+
-"</tr>"+
-"<tr>"+
-"<td class=first align='center'>${C_NAME_ENG}</td>"+
-"<td align='center'>${CITY}</td>"+
-"<td class=first align='center'>${ADDRESS_1}</td>"+
-"<td align='center'>${POSTALCODE}</td>"+
-"</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[10]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
-
-layerData[11] = [];
-layerData[11]['infoWindowTitle'] = "<b>" + T("Ambulatory Care") + "</b>";
-layerData[11]['infoWindowBody']= "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+layerData[10]['infoWindowTitle'] = "<b>" + T("Special Rehabilitation Hospital") + "</b>";
+layerData[10]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
 "<th align='center'>City</th>"+
@@ -541,11 +614,47 @@ layerData[11]['infoWindowBody']= "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}"
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+layerData[10]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+
+layerData[11] = [];
+layerData[11]['infoWindowTitle'] = "<b>" + T("Acute Care Treatment Hospital") + "</b>";
+layerData[11]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+"<tr>"+
+"<th align='center'>Health Unit Name</th>"+
+"<th align='center'>City</th>"+
+"<th align='center'>Address</th>"+
+"<th align='center'>Postal Code</th>"+
+"</tr>"+
+"<tr>"+
+"<td class=first align='center'>${C_NAME_ENG}</td>"+
+"<td align='center'>${CITY}</td>"+
+"<td class=first align='center'>${ADDRESS_1}</td>"+
+"<td align='center'>${POSTALCODE}</td>"+
+"</tr>"+
+"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[11]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[12] = [];
-layerData[12]['infoWindowTitle'] = "<b>" + T("Chronic Care Treatment Hospital") + "</b>";
-layerData[12]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + 
+layerData[12]['infoWindowTitle'] = "<b>" + T("Ambulatory Care") + "</b>";
+layerData[12]['infoWindowBody']= "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
+"<tr>"+
+"<th align='center'>Health Unit Name</th>"+
+"<th align='center'>City</th>"+
+"<th align='center'>Address</th>"+
+"<th align='center'>Postal Code</th>"+
+"</tr>"+
+"<tr>"+
+"<td align='center'>${C_NAME_ENG}</td>"+
+"<td class=first align='center'>${CITY}</td>"+
+"<td align='center'>${ADDRESS_1}</td>"+
+"<td class=first align='center'>${POSTALCODE}</td>"+
+"</tr>"+
+"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+layerData[12]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+
+layerData[13] = [];
+layerData[13]['infoWindowTitle'] = "<b>" + T("Chronic Care Treatment Hospital") + "</b>";
+layerData[13]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + 
 "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>Health Unit Name</th>"+
@@ -560,29 +669,10 @@ layerData[12]['infoWindowBody'] ="${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINInfo_1}"
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[12]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
-
-layerData[13] = [];
-layerData[13]['infoWindowTitle'] = "<b>" + T("No FLS Obligation") + "</b>";
-layerData[13]['infoWindowBody'] ="${LHIN_NAME}"+ 
-"<table border=1>"+
-"<tr>"+
-"<th align='center'>Health Unit Name</th>"+
-"<th align='center'>City</th>"+
-"<th align='center'>Address</th>"+
-"<th align='center'>Postal Code</th>"+
-"</tr>"+
-"<tr>"+
-"<td class=first align='center'>${C_NAME_ENG}</td>"+
-"<td align='center'>${CITY}</td>"+
-"<td class=first align='center'>${ADDRESS_1}</td>"+
-"<td align='center'>${POSTALCODE}</td>"+
-"</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[13]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+layerData[13]['outFields'] = new Array("LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[14] = [];
-layerData[14]['infoWindowTitle'] = "<b>" + T("FLS Identified") + "</b>";
+layerData[14]['infoWindowTitle'] = "<b>" + T("No FLS Obligation") + "</b>";
 layerData[14]['infoWindowBody'] ="${LHIN_NAME}"+ 
 "<table border=1>"+
 "<tr>"+
@@ -601,7 +691,7 @@ layerData[14]['infoWindowBody'] ="${LHIN_NAME}"+
 layerData[14]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[15] = [];
-layerData[15]['infoWindowTitle'] = "<b>" + T("FLS Designated Partial") + "</b>";
+layerData[15]['infoWindowTitle'] = "<b>" + T("FLS Identified") + "</b>";
 layerData[15]['infoWindowBody'] ="${LHIN_NAME}"+ 
 "<table border=1>"+
 "<tr>"+
@@ -620,7 +710,7 @@ layerData[15]['infoWindowBody'] ="${LHIN_NAME}"+
 layerData[15]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[16] = [];
-layerData[16]['infoWindowTitle'] = "<b>" + T("FLS Designated All") + "</b>";
+layerData[16]['infoWindowTitle'] = "<b>" + T("FLS Designated Partial") + "</b>";
 layerData[16]['infoWindowBody'] ="${LHIN_NAME}"+ 
 "<table border=1>"+
 "<tr>"+
@@ -638,10 +728,29 @@ layerData[16]['infoWindowBody'] ="${LHIN_NAME}"+
 "</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[16]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-
 layerData[17] = [];
-layerData[17]['infoWindowTitle'] = "<b>" + T("Champlain Local Health Integration Network (LHIN)") + "</b>";
-layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
+layerData[17]['infoWindowTitle'] = "<b>" + T("FLS Designated All") + "</b>";
+layerData[17]['infoWindowBody'] ="${LHIN_NAME}"+ 
+"<table border=1>"+
+"<tr>"+
+"<th align='center'>Health Unit Name</th>"+
+"<th align='center'>City</th>"+
+"<th align='center'>Address</th>"+
+"<th align='center'>Postal Code</th>"+
+"</tr>"+
+"<tr>"+
+"<td class=first align='center'>${C_NAME_ENG}</td>"+
+"<td align='center'>${CITY}</td>"+
+"<td class=first align='center'>${ADDRESS_1}</td>"+
+"<td align='center'>${POSTALCODE}</td>"+
+"</tr>"+
+"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+layerData[17]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
+
+
+layerData[18] = [];
+layerData[18]['infoWindowTitle'] = "<b>" + T("Champlain Local Health Integration Network (LHIN)") + "</b>";
+layerData[18]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'></th>"+
 "<th align='center'>French</th>"+
@@ -671,14 +780,14 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 T("Methodological Notes") + "</a>" + "</p>";
 
-layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
+layerData[18]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
 "SociEcoP_4", "SociEcoP_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc");
 
-layerData[18] = [];
-layerData[18]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
-layerData[18]['infoWindowBody'] ="${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
+layerData[19] = [];
+layerData[19]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
+layerData[19]['infoWindowBody'] ="${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
  "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[18]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
+layerData[19]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 
 var layerToRegion = [];
@@ -688,7 +797,7 @@ layerToRegion[2] = 0;
 layerToRegion[3] = 0;
 layerToRegion[4] = 1;
 layerToRegion[5] = 1;
-layerToRegion[6] = 2;
+layerToRegion[6] = 1;
 layerToRegion[7] = 2;
 layerToRegion[8] = 2;
 layerToRegion[9] = 2;
@@ -699,30 +808,30 @@ layerToRegion[13] = 2;
 layerToRegion[14] = 2;
 layerToRegion[15] = 2;
 layerToRegion[16] = 2;
-
+layerToRegion[17] = 2;
 
 var servicePointBuffers = [];
-servicePointBuffers[6] = [38,45];
-servicePointBuffers[7] = [24,31];
-servicePointBuffers[8] = [52,59];
-servicePointBuffers[9] = [66,73];
-servicePointBuffers[10] = [80,87];
-servicePointBuffers[11] = [94,101];
-servicePointBuffers[12] = [115,108];
-servicePointBuffers[13] = [122,129];
-servicePointBuffers[14] = [136,143];
-servicePointBuffers[15] = [150,157];
-servicePointBuffers[16] = [164,171];
+servicePointBuffers[7] = [39,46];
+servicePointBuffers[8] = [25,32];
+servicePointBuffers[9] = [53,60];
+servicePointBuffers[10] = [67,74];
+servicePointBuffers[11] = [81,88];
+servicePointBuffers[12] = [95,102];
+servicePointBuffers[13] = [109,116];
+servicePointBuffers[14] = [123,130];
+servicePointBuffers[15] = [144,137];
+servicePointBuffers[16] = [151,158];
+servicePointBuffers[17] = [165,172];
 
 var layerInfoWindow = new Array();
 var layerTemplate = new Array();
 var mapLayer = new Array();
 
-var defaultLayer = 18;
+var defaultLayer = 19;
 
 var activeLayer = defaultLayer;
 var inLayer = 0;
-var numLayers = 19;
+var numLayers = 20;
 
 var map;
 var symbol;
@@ -737,7 +846,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoportMaps/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAMapGeoportalFLS/MapServer/';
  
  
 var layersLabels = [
@@ -756,4 +865,4 @@ var mapLayerLabel = 'Ontario Layer';
 var mapServicePointLabel = '';
 var LayerLegend = 'Ontario LHIN Information';
 var mapServicePointLegendLabel = '';
-var accordionHeaders = {6 : 'Hospitals By Services Offered', 13 : 'Hospitals By French Language Service (FLS) Designation'};
+var accordionHeaders = {7 : 'Hospitals By Services Offered', 14 : 'Hospitals By French Language Service (FLS) Designation'};

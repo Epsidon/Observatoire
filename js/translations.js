@@ -22,7 +22,7 @@ Fr['Physician by LHIN'] = 'Par des Médecins du RLISS';
 Fr['Zoom in for more details on DA'] = 'Zoomer pour plus de détails sur DA';
 Fr['Health Professionals'] = 'Professionnels de la santé';
 Fr['Health Profiles'] = 'Profiles Santé';
-Fr['Socio-economic Profiles'] = 'Profiles socio-économique';
+Fr['Socio-Economic Profiles'] = 'Profiles socio-économique';
 
 Fr['Mother Tongue'] = 'Langue maternelle';
 Fr['French='] = 'Français=';
@@ -150,5 +150,10 @@ Fr['Mother Tongue = French'] = 'Langue maternelle = Français';
 Fr['Knowledge of Official Language = French Only'] = 'Connaissance des langues officielles = Français seulement';
 Fr['First Official Language Spoken = French'] = 'Première langue officielle parlée = Français';
 Fr['Language Spoken Most Often at Home = French'] = 'Langue parlée le plus souvent à la maison = Français';
+
+Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
+Fr['Canadian Community Health Survey Combined Cycles 2001 to 2012'] = 'Cycles combinés de 2001 à 2012 de l’Enquête sur la santé dans les collectivités canadiennes';
+
+
 
 

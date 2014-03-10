@@ -438,7 +438,7 @@ layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "S
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("Health Profiles") + "</b>";
 layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}" + ")" +
-"<br>" + "<b>" + "Canadian Community Health Survey Combined Cycles 2001 to 2012" + "</b>" + "</br>" +
+"<br>" + "<b>" + T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" +
 "<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+
@@ -869,14 +869,14 @@ var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAMapGeoportalFLS/Map
  
 var layersLabels = [
 T('Mother Tongue'), T('Knowledge of Official Language'), T('First Official Language Spoken'), T('Language Spoken Most Often at Home'),
-T('Health Professionals by LHIN'), T('Socio-economic Profiles'), T('Health Profiles'),
+T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profiles'),
 T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
 T('FLS Designated Partial'), T('FLS Designated All'), T('hamplain Local Health Integration Network (LHIN)'), T('Ontario Layer'), T('Ontario Layer')];
   
 var legendLabel = [T('Mother Tongue = French'), T('Knowledge of Official Language = French Only'), T('First Official Language Spoken = French'), T('Language Spoken Most Often at Home = French'),
-T('Health Professionals by LHIN'), T('Socio-economic Profiles'), T('Health Profiles'), T('All Hospitals and Health Units'), 
+T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profiles'), T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
 T('FLS Designated Partial'), T('FLS Designated All'), T('Champlain Local Health Integration Network (LHIN)'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];

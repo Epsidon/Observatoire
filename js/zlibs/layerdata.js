@@ -59,7 +59,7 @@ layerData[1]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<td class=first align='center'>${KEngNorFre}</td>"+
 "<td align='center'>${Knowledgeo}</td>"+
 "</tr>"+
-"</table>" + "</p>" +"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + + "</p>" +"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[1]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 layerData[2] = [];

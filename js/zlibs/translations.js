@@ -165,7 +165,7 @@ Fr['Local Health Integration Network (LHIN)'] = 'Réseaux locaux d’intégratio
 
 Fr['0 to 19 years old'] = '0 à 19 ans';
 Fr['20 to 64 years old'] ='20 à 64 ans';
-Fr['65 years old and above'] ='65 ans et plus';
+Fr['65 years old and above']= '65 ans et plus';
 Fr['No certificate, diploma or degree'] = 'Aucun certificat, diplôme ou grade';
 Fr['High scholl diploma'] = 'Diplôme d’études secondaires';
 Fr['Apprenticeship or trades certificate or diploma'] = '';

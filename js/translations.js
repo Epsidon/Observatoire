@@ -175,3 +175,25 @@ Fr['University certificate/diploma degree'] = 'Certificat/diplôme universitaire
 Fr['Low income person'] = 'Personne à faible revenu';
 Fr['Person living alone'] = 'Personne vivant seule';
 
+Fr['Perceived health, fair or poor (%)'] = 'Santé perçue, passable ou mauvaise (%)';
+Fr['Perceived mental health, fair or poor (%)'] = 'Santé mentale perçue, passable ou mauvaise (%)';
+Fr['Perceived life stress, quite a bit or extremely stressful (%)'] = 'Stress perçu dans la vie, assez ou extrêmement stressantes (%)';
+Fr['Participation and activity limitation, sometimes or often (%)'] = 'Participation et limitation des activités, parfois ou souvent (%)';
+Fr['At least one chronic disease (%)'] = 'Au moins un problèmes chroniques de santé (%)';
+Fr['Body mass index (BMI) (18 or older), overweight or obese (%)'] = 'Indice de la masse corporelle (IMC) (18 ans et plus), embonpoint ou obésité (%)';
+Fr['Fruit and vegetable consumption, less than 5 times per day (%)'] = 'Consommation de fruits et légumes, moins de 5 fois par jour (%)';
+Fr['Current smoker, daily or occasional (%)'] = 'Fume actuellement, tous les jours ou à l’occasion (%)';
+Fr['Type of drinker, regular (%)'] = 'Type de buveur, buveur régulier (%)';
+Fr['Regular medical doctor (%)'] = 'A un médecin régulier (%)';
+Fr['Language spoken with medical doctor, English (%)'] = 'Langue parlée avec le médecin, anglais';
+Fr['Contact with a family medicine physician or a nurse in the past 12 months (%)'] = 'Consultation d’un médecin de famille ou une infirmière au cours des 12 derniers mois (%)';
+Fr['Required health care in the past 12 months  (%)'] = 'Besoin de soins de santé au cours des 12 derniers mois  (%)';
+Fr['Difficulties obtaining health care in the past 12 months  (%)'] = 'Difficultés à obtenir soins de santé au cours des 12 derniers mois  (%)';
+Fr['Perceived access to health care in Ontario, good or excellent (%)'] = 'Évaluation de l’accessibilité des soins de santé, excellente ou bonne (%)';
+Fr['Perceived quality of health care in Ontario, good or excellent (%)'] = 'Évaluation de la qualité des soins de santé, excellente ou bonne (%)';
+Fr['Perceived access to health care in community, good or excellent (%)'] = 'Évaluation de l’accessibilité des soins de santé communautaires, excellente ou bonne (%)';
+Fr['Perceived quality health care in community , good or excellent (%)'] = 'Évaluation de la qualité des soins de santé communautaires, excellente ou bonne (%) ';
+Fr['Sense of community belonging, very strong or somewhat strong (%)'] = 'Sentiment d’appartenance à la communauté locale, très fort ou plutôt fort (%)';
+
+
+

@@ -319,10 +319,10 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+
-"<th align='center'>French Only</th>"+
-"<th align='center'>English Only</th>"+
-"<th align='center'>French & English</th>"+
-"<th align='center'>Neither Official Language</th>"+
+"<th align='center'>" + T("French Only") + "</th>" +
+"<th align='center'>" + T("English Only") + "</th>" +
+"<th align='center'>" + T("French & English") + "</th>" +
+"<th align='center'>" + T("Neither Official Language") + "</th>" +
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Population") + "</td>"+

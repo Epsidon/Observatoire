@@ -333,7 +333,7 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Proportion of the total population") + "</td>"+
-"<td align='center'>${FrTotPerc }" + "%" + "</td>"+
+"<td align='center'>${FrTotPerc}" + "%" + "</td>"+
 "<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
 "<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
 "<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
@@ -409,7 +409,7 @@ layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" 
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Person living alone") + "</td>"+
-"<td align='center'>${SociEco_46 }</td>"+
+"<td align='center'>${SociEco_46}</td>"+
 "<td class=first align='center'>${SociEco_47}</td>"+
 "<td align='center'>${SociEco_48}</td>"+
 "<td class=first align='center'>${SociEco_49}</td>"+
@@ -432,7 +432,7 @@ layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "S
 "SociEco_40", "SociEco_41", "SociEco_42",
 "SociEco_43", "SociEco_44", "SociEco_45",
 "SociEco_46", "SociEco_47", "SociEco_48",
-"SociEco_49"
+"SociEco_49", "FrAngTotPe"
  );
  
 layerData[6] = [];

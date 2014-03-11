@@ -23,9 +23,9 @@ layerData[0]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<table border=1 align='center'>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
-"<th align='center'>French</th>"+
-"<th align='center'>English</th>"+
-"<th align='center'>Non Official</th>"+
+"<th align='center'>" + T("French") + "</th>" +
+"<th align='center'>" + T("English") + "</th>" +
+"<th align='center'>" + T("Non Official") + "</th>" +
 "<th align='center'>Total</th>"+
 "</tr>"+
 "<tr>"+
@@ -47,9 +47,9 @@ layerData[1]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<table border=1 align='center'>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
-"<th align='center'>French</th>"+
-"<th align='center'>English & French</th>"+
-"<th align='center'>Neither</th>"+
+"<th align='center'>" + T("French") + "</th>" +
+"<th align='center'>" + T("English & French") + "</th>"+
+"<th align='center'>" + T("Neither") +"</th>"+
 "<th align='center'>Total</th>"+
 "</tr>"+
 "<tr>"+
@@ -71,10 +71,10 @@ layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<table border=1 align='center'>"+
 "<tr>"+
 "<th align='center'>DA</th>"+
-"<th align='center'>French</th>"+
-"<th align='center'>English</th>"+
-"<th align='center'>English & French</th>"+
-"<th align='center'>Neither</th>"+
+"<th align='center'>" + T("French") + "</th>"+
+"<th align='center'>" + T("English") + "</th>"+
+"<th align='center'>" + T("English & French") + "</th>"+
+"<th align='center'>" + T("Neither") + "</th>"+
 "<th align='center'>Total</th>"+
 "</tr>"+
 "<tr>"+
@@ -96,10 +96,10 @@ layerData[3]['infoWindowBody'] =T("Dissemination Area(DA) #") + "${DAUID_1}"
 "<p>" + 
 "<table border=1 align='center'>"+
 "<tr>"+
-"<th align='center'>DA</th>"+
-"<th align='center'>French</th>"+
-"<th align='center'>English</th>"+
-"<th align='center'>Non Official</th>"+
+"<th align='center'>" + T("DA") + "</th>"+
+"<th align='center'>" + T("French") + "</th>"+
+"<th align='center'>" + T("English") + "</th>"+
+"<th align='center'>" + T("Non Official") + "</th>"+
 "<th align='center'>Total</th>"+
 "</tr>"+
 "<tr>"+

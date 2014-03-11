@@ -41,7 +41,9 @@ Fr['Ambulatory Care'] = 'Soins ambulatoires';
 Fr['Chronic Care Treatment Hospital'] = 'Hôpital pour malades chroniques';
 
 Fr['English & French='] = 'Anglais et Français=';
+Fr['English & French']='Anglais et Français';
 Fr['Neither='] = 'Ni=';
+Fr['Neither'] = 'Ni';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';
 Fr['First Official Language Spoken'] = 'Première langue officielle parlée';
 Fr['Language Spoken Most Often at Home='] = 'Langue parlée le plus souvent à la maison=';
@@ -171,6 +173,7 @@ Fr['High scholl diploma'] = 'Diplôme d’études secondaires';
 Fr['Apprenticeship or trades certificate or diploma'] = '';
 Fr['College certificate/diploma'] = 'Certificat/diplôme d’un collège';
 Fr['University certificate/diploma degree'] = 'Certificat/diplôme universitaire';
+Fr['Non Official']= 'Non officiel';
 
 Fr['Low income person'] = 'Personne à faible revenu';
 Fr['Person living alone'] = 'Personne vivant seule';
@@ -200,6 +203,10 @@ Fr['French'] = 'Français';
 Fr['English'] = 'Anglais seulement';
 Fr['Others'] = 'Autres';
 Fr['Total Population in 2011:'] = 'Population totale en 2011: ';
+
+Fr['Dissemination Area(DA) #'] = 'Aire de diffusion(AD) #';
+Fr[' is part of the '] = 'fait partie du RLISS';
+Fr['DA'] = 'AD';
 
 
 

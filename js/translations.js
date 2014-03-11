@@ -207,6 +207,7 @@ Fr['Total Population in 2011:'] = 'Population totale en 2011: ';
 Fr['Dissemination Area(DA) #'] = 'Aire de diffusion(AD) #';
 Fr[' is part of the '] = ' fait partie du RLISS ';
 Fr['DA'] = 'AD';
+Fr[' Local Health Integration Network (LHIN).'] = '.';
 
 
 

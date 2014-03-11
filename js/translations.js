@@ -210,5 +210,7 @@ Fr['DA'] = 'AD';
 Fr[' Local Health Integration Network (LHIN).'] = '.';
 Fr['Ontario']= 'Ontario';
 
+Fr['E = Use with caution']= 'E = Utiliser avec prudence';
+Fr['F = Too unreliable to be published']= 'F = Trop peu fiable pour être publiée';
 
 

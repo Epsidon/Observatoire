@@ -541,6 +541,10 @@ layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}
 "<td class=first align='center'>${Health__19}</td>"+
 "</tr>"+
 "</table>" + 
+"<br>" + 
+T("E = Use with caution") +  "</br>" +
+"<n>" +T("F = Too unreliable to be published") + "</n>" +
+"</br>" +
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[6]['outFields'] = new Array( "EnglishL_1", "EnglishLab", "Health__26",
 "Health__32", "Health__11", "Health_P_1", "Health__20",

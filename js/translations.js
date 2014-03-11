@@ -195,5 +195,11 @@ Fr['Perceived access to health care in community, good or excellent (%)'] = 'Év
 Fr['Perceived quality health care in community , good or excellent (%)'] = 'Évaluation de la qualité des soins de santé communautaires, excellente ou bonne (%) ';
 Fr['Sense of community belonging, very strong or somewhat strong (%)'] = 'Sentiment d’appartenance à la communauté locale, très fort ou plutôt fort (%)';
 
+Fr['Speciality'] = 'Specialité';
+Fr['French'] = 'Français';
+Fr['English'] = 'Anglais seulement';
+Fr['Others'] = 'Autres';
+Fr['Total Population in 2011:'] = 'Population totale en 2011: ';
+
 
 

@@ -117,10 +117,10 @@ layerData[4]['infoWindowTitle'] = "<b>" + T("Health Professionals By LHIN") + "<
 layerData[4]['infoWindowBody'] = "${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H}" + ")" + "<p>"+ "<b>"+ T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" + 
 "<table border=1>"+
 "<tr>"+
-"<th align='center'>Speciality</th>"+
-"<th align='center'>French</th>"+
-"<th align='center'>English</th>"+
-"<th align='center'>Others</th>"+
+"<th align='center'>" + T("Speciality") + "</th>"+
+"<th align='center'>" + T("French") + "</th>"+
+"<th align='center'>" + T("English") + "</th>"+
+"<th align='center'>" + T("Others") + "</th>"+
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>" + T("Audiologists") + "</td>"+

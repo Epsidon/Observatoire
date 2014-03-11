@@ -153,7 +153,7 @@ Fr['No FLS Obligation'] = ' Aucune obligation';
 Fr['FLS Identified'] = 'Identifié - LSF';
 Fr['FLS Designated Partial'] = 'Désignation partielle - LSF';
 Fr['FLS Designated All'] = 'Désignation complète - LSF';
-Fr['Selected layer:'] = 'Selected layer:';
+Fr['Selected layer:'] = 'Couche choisie:';
 
 Fr['Legend: '] = 'légende: ';
 Fr['Mother Tongue = French'] = 'Langue maternelle = Français';
@@ -208,6 +208,7 @@ Fr['Dissemination Area(DA) #'] = 'Aire de diffusion(AD) #';
 Fr[' is part of the '] = ' fait partie du RLISS ';
 Fr['DA'] = 'AD';
 Fr[' Local Health Integration Network (LHIN).'] = '.';
+Fr['Ontario']= 'Ontario';
 
 
 

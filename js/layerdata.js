@@ -873,14 +873,14 @@ T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profi
 T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
-T('FLS Designated Partial'), T('FLS Designated All'), T('Local Health Integration Network (LHIN)'), T('Ontario Layer'), T('Ontario Layer')];
+T('FLS Designated Partial'), T('FLS Designated All'), T('Local Health Integration Network (LHIN)'), T('Ontario'), T('Ontario')];
   
 var legendLabel = [T('Mother Tongue = French'), T('Knowledge of Official Language = French Only'), T('First Official Language Spoken = French'), T('Language Spoken Most Often at Home = French'),
 T('Health Professionals by LHIN'), T('Socio-Economic Profiles'), T('Health Profiles'), T('All Hospitals and Health Units'), 
 T('General Rehabilitation Hospital'), T('Mental Health Units') , T('Special Rehabilitation Hospital'), 
 T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatment Hospital'), T('No FLS Obligation'), T('FLS Identified'),
 T('FLS Designated Partial'), T('FLS Designated All'), T('% for which First Official Language Spoken = French'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];
-var mapLayerLabel = 'Ontario Layer';
+var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
 var LayerLegend = 'Ontario LHIN Information';
 var mapServicePointLegendLabel = '';

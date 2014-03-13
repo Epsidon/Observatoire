@@ -492,7 +492,7 @@ layerData[6]['infoWindowBody'] ="${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H}
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Regular medical doctor (%)") + "</td>"+
-"<td align='center'>${Health__31}</td>"+
+"<td align='center'>${HealthP_31}</td>"+
 "<td class=first align='center'>${HealthP_10}</td>"+
 "</tr>"+
 "<tr>" +
@@ -555,7 +555,7 @@ layerData[6]['outFields'] = new Array(
 "HealthP_11", "HealthP_33", "HealthP_12", "TES4_csv_1", 
 "HealthP_13", "HealthP_35", "HealthP_14", "TES4_csv_A", 
 "HealthP_15", "HealthP_37", "HealthP_16", "TES4_csv_3", "HealthP_17", 
-"HealthP_39", "HealthP_18", "HealthP_40", "HealthP_19"
+"HealthP_39", "HealthP_18", "HealthP_40", "HealthP_19", "HealthP_31"
  );
 
 layerData[7] = [];

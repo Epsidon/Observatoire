@@ -297,19 +297,19 @@ layerData[4]['infoWindowBody'] = "${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H
 "</table>" + 
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 
-layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2", "LHINProf_3", "LHINProf_4", "LHINProf_5",
-"LHINProf_6", "LHINProf_7", "LHINProf_8", "LHINProf_9", "LHINPro_10", "LHINPro_11", "LHINPro_12", 
-"LHINPro_13", "LHINPro_14", "LHINPro_15", "LHINPro_16", "LHINPro_17", "LHINPro_18", "LHINPro_19", "LHINPro_20",
- "LHINPro_21", "LHINPro_22", "LHINPro_23", "LHINPro_24", "LHINPro_25", "LHINPro_26", "LHINPro_27", 
- "LHINPro_28", "LHINPro_29", "LHINPro_30", "LHINPro_31", "LHINPro_32", "LHINPro_33", "LHINPro_34", 
- "LHINPro_35", "LHINPro_36", "LHINPro_37", "LHINPro_38", "LHINPro_39", "LHINPro_40", "LHINPro_41",
- "LHINPro_42", "LHINPro_43", 
- "LHINPro_44", "LHINPro_45", "LHINPro_46", "LHINPro_47", "LHINPro_48", "LHINPro_49", "LHINPro_50",
- "LHINPro_51", "LHINPro_52", "LHINPro_53", "LHINPro_54", "LHINPro_55", "LHINPro_56", "LHINPro_57",
- "LHINPro_58", "LHINPro_59", "LHINPro_60",
- "LHINPro_61", "LHINPro_62", "LHINPro_63", "LHINPro_64", "LHINPro_65", 
- "LHINPro_66", "LHINPro_67", "LHINPro_68", "LHINPro_69", "lHIN_csv_R", "lHIN_csv_2", 
- "lHIN_csv_3", "LHINPro_70", "LHINPro_71", "LHINPro_72"
+layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2", 
+"LHINPro_75", "LHINPro_76", "LHINPro_77", "LHINPro_78", "LHINPro_79", "LHINPro_80", "LHINPro_81",
+"LHINPro_82", "LHINPro_83", "LHINPro_84", "LHINPro_85", "LHINPro_86", "LHINPro_87", "LHINPro_88", 
+"LHINPro_89", "LHINPro_90", "LHINPro_91", "LHINPro_92", "LHINPro_93", "LHINPro_94", "LHINPro_95", 
+"LHINPro_96", "LHINPro_97", "LHINPro_98", "LHINPro_99", "LHINPr_100", "LHINPr_101", "LHINPr_102",
+"LHINPr_103", "LHINPr_104", "LHINPr_105", "LHINPr_106", "LHINPr_107", "LHINPr_108", "LHINPr_110",
+"LHINPr_109", "LHINPr_111", "LHINPr_112", "LHINPr_113", "LHINPr_114", "LHINPr_115", "LHINPr_116", 
+"LHINPr_117", "LHINPr_118", "LHINPr_119", "LHINPr_120", "LHINPr_121",
+"LHINPr_122", "LHINPr_123", "LHINPr_124", "LHINPr_125", "LHINPr_126",
+"LHINPr_127", "LHINPr_128", "LHINPr_129", "LHINPr_130", "LHINPr_131",
+"LHINPr_132", "LHINPr_133", "LHINPr_134", "LHINPr_135", "LHINPr_136", "LHINPr_137",
+"LHINPr_138", "LHINPr_139", "LHINPr_140", "LHINPr_141", "LHINPr_142", "LHINPr_143", "LHINPr_144",
+"LHINPr_145", "LHINPr_146", "LHINPr_147"
 );
 
 layerData[5] = [];

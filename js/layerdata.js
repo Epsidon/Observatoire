@@ -136,163 +136,163 @@ layerData[4]['infoWindowBody'] = "${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>" + T("Chiropractors") + "</td>"+
-"<td align='center'>${LHINProf_9}</td>"+
-"<td class=first align='center'>${LHINPro_10}</td>"+
-"<td align='center'>${LHINPro_11}</td>"+
+"<td align='center'>${LHINPro_81}</td>"+
+"<td class=first align='center'>${LHINPro_82}</td>"+
+"<td align='center'>${LHINPro_83}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Dental Hygienists") + "</td>"+
-"<td class=first align='center'>${LHINPro_12}</td>"+
-"<td align='center'>${LHINPro_13}</td>"+
-"<td class=first align='center'>${LHINPro_14}</td>"+
+"<td class=first align='center'>${LHINPro_84}</td>"+
+"<td align='center'>${LHINPro_85}</td>"+
+"<td class=first align='center'>${LHINPro_86}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Dental Technologists") + "</td>"+
-"<td align='center'>${LHINPro_15}</td>"+
-"<td class=first align='center'>${LHINPro_16}</td>"+
-"<td align='center'>${LHINPro_17}</td>"+
+"<td align='center'>${LHINPro_87}</td>"+
+"<td class=first align='center'>${LHINPro_88}</td>"+
+"<td align='center'>${LHINPro_89}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Dentists") + "</td>"+
-"<td class=first align='center'>${LHINPro_18}</td>"+
-"<td align='center'>${LHINPro_19}</td>"+
-"<td class=first align='center'>${LHINPro_20}</td>"+
+"<td class=first align='center'>${LHINPro_90}</td>"+
+"<td align='center'>${LHINPro_91}</td>"+
+"<td class=first align='center'>${LHINPro_92}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Denturists") + "</td>"+
-"<td align='center'>${LHINPro_21}</td>"+
-"<td class=first align='center'>${LHINPro_22}</td>"+
-"<td align='center'>${LHINPro_23}</td>"+
+"<td align='center'>${LHINPro_93}</td>"+
+"<td class=first align='center'>${LHINPro_94}</td>"+
+"<td align='center'>${LHINPro_95}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Dietitians") + "</td>"+
-"<td class=first align='center'>${LHINPro_24}</td>"+
-"<td align='center'>${LHINPro_25}</td>"+
-"<td class=first align='center'>${LHINPro_26}</td>"+
+"<td class=first align='center'>${LHINPro_96}</td>"+
+"<td align='center'>${LHINPro_97}</td>"+
+"<td class=first align='center'>${LHINPro_98}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Massage Therapists") + "</td>"+
-"<td align='center'>${LHINPro_27}</td>"+
-"<td class=first align='center'>${LHINPro_28}</td>"+
-"<td align='center'>${LHINPro_29}</td>"+
+"<td align='center'>${LHINPro_99}</td>"+
+"<td class=first align='center'>${LHINPr_100}</td>"+
+"<td align='center'>${LHINPr_101}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Medical Laboratory Technologists") + "</td>"+
-"<td class=first align='center'>${LHINPro_30}</td>"+
-"<td align='center'>${LHINPro_31}</td>"+
-"<td class=first align='center'>${LHINPro_32}</td>"+
+"<td class=first align='center'>${LHINPr_102}</td>"+
+"<td align='center'>${LHINPr_103}</td>"+
+"<td class=first align='center'>${LHINPr_104}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Medical Radiation Technologists") + "</td>"+
-"<td align='center'>${LHINPro_33}</td>"+
-"<td class=first align='center'>${LHINPro_34}</td>"+
-"<td align='center' align='center'>${LHINPro_35}</td>"+
+"<td align='center'>${LHINPr_105}</td>"+
+"<td class=first align='center'>${LHINPr_106}</td>"+
+"<td align='center' align='center'>${LHINPr_107}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Midwives") + "</td>"+
-"<td class=first align='center'>${LHINPro_36}</td>"+
-"<td align='center'>${LHINPro_37}</td>"+
-"<td class=first align='center'>${LHINPro_38}</td>"+
+"<td class=first align='center'>${LHINPr_108}</td>"+
+"<td align='center'>${LHINPr_109}</td>"+
+"<td class=first align='center'>${LHINPr_110}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Nurse Practitioners") + "</td>"+
-"<td align='center'>${LHINPro_39}</td>"+
-"<td class=first align='center'>${LHINPro_40}</td>"+
-"<td align='center'>${LHINPro_41}</td>"+
+"<td align='center'>${LHINPr_111}</td>"+
+"<td class=first align='center'>${LHINPr_112}</td>"+
+"<td align='center'>${LHINPr_113}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Occupational Therapists") + "</td>"+
-"<td class=first align='center'>${LHINPro_42}</td>"+
-"<td align='center'>${LHINPro_43}</td>"+
-"<td class=first align='center'>${LHINPro_44}</td>"+
+"<td class=first align='center'>${LHINPr_114}</td>"+
+"<td align='center'>${LHINPr_115}</td>"+
+"<td class=first align='center'>${LHINPr_116}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Opticians") + "</td>"+
-"<td align='center'>${LHINPro_45}</td>"+
-"<td class=first align='center'>${LHINPro_46}</td>"+
-"<td align='center'>${LHINPro_47}</td>"+
+"<td align='center'>${LHINPr_117}</td>"+
+"<td class=first align='center'>${LHINPr_118}</td>"+
+"<td align='center'>${LHINPr_119}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Optometrists") + "</td>"+
-"<td class=first align='center'>${LHINPro_48}</td>"+
-"<td align='center'>${LHINPro_49}</td>"+
-"<td class=first align='center'>${LHINPro_50}</td>"+
+"<td class=first align='center'>${LHINPr_120}</td>"+
+"<td align='center'>${LHINPr_121}</td>"+
+"<td class=first align='center'>${LHINPr_122}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Pharmacists") + "</td>"+
-"<td align='center'>${LHINPro_51}</td>"+
-"<td class=first align='center'>${LHINPro_52}</td>"+
-"<td align='center'>${LHINPro_53}</td>"+
+"<td align='center'>${LHINPr_123}</td>"+
+"<td class=first align='center'>${LHINPr_124}</td>"+
+"<td align='center'>${LHINPr_125}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Family Physicians") + "</td>"+
-"<td class=first align='center'>${LHINPro_54}</td>"+
-"<td align='center'>${LHINPro_55}</td>"+
+"<td class=first align='center'>${LHINPr_126}</td>"+
+"<td align='center'>${LHINPr_127}</td>"+
 "<td class=first align='center'></td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Specialist Physicians") + "</td>"+
-"<td align='center'>${LHINPro_56}</td>"+
-"<td class=first align='center'>${LHINPro_57}</td>"+
+"<td align='center'>${LHINPr_128}</td>"+
+"<td class=first align='center'>${LHINPr_129}</td>"+
 "<td></td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Physiotherapists") + "</td>"+
-"<td class=first align='center'>${LHINPro_58}</td>"+
-"<td align='center'>${LHINPro_59}</td>"+
-"<td class=first align='center'>${LHINPro_60}</td>"+
+"<td class=first align='center'>${LHINPr_130}</td>"+
+"<td align='center'>${LHINPr_131}</td>"+
+"<td class=first align='center'>${LHINPr_132}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Psychologists") + "</td>"+
-"<td align='center'>${LHINPro_61}</td>"+
-"<td class=first align='center'>${LHINPro_62}</td>"+
-"<td align='center'>${LHINPro_63}</td>"+
+"<td align='center'>${LHINPr_133}</td>"+
+"<td class=first align='center'>${LHINPr_134}</td>"+
+"<td align='center'>${LHINPr_135}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Registered Nurses") + "</td>"+
-"<td class=first align='center'>${LHINPro_64}</td>"+
-"<td align='center'>${LHINPro_65}</td>"+
-"<td class=first align='center'>${LHINPro_66}</td>"+
+"<td class=first align='center'>${LHINPr_136}</td>"+
+"<td align='center'>${LHINPr_137}</td>"+
+"<td class=first align='center'>${LHINPr_138}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Registered Practical Nurses") + "</td>"+
-"<td align='center'>${LHINPro_67}</td>"+
-"<td class=first align='center'>${LHINPro_68}</td>"+
-"<td align='center'>${LHINPro_69}</td>"+
+"<td align='center'>${LHINPr_139}</td>"+
+"<td class=first align='center'>${LHINPr_140}</td>"+
+"<td align='center'>${LHINPr_141}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td align='center'>" + T("Respiratory Therapists") + "</td>"+
-"<td class=first align='center'>${lHIN_csv_R}</td>"+
-"<td align='center'>${lHIN_csv_2}</td>"+
-"<td class=first align='center'>${lHIN_csv_3}</td>"+
+"<td class=first align='center'>${LHINPr_142}</td>"+
+"<td align='center'>${LHINPr_143}</td>"+
+"<td class=first align='center'>${LHINPr_144}</td>"+
 "</tr>"+
 
 "<tr>"+
 "<td class=first align='center'>" + T("Speech Language Pathologists") + "</td>"+
-"<td align='center'>${LHINPro_70}</td>"+
-"<td class=first align='center'>${LHINPro_71}</td>"+
-"<td align='center'>${LHINPro_72}</td>"+
+"<td align='center'>${LHINPr_145}</td>"+
+"<td class=first align='center'>${LHINPr_146}</td>"+
+"<td align='center'>${LHINPr_147}</td>"+
 "</tr>"+
 "</table>" + 
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";

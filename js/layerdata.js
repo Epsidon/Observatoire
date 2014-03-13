@@ -48,6 +48,7 @@ T("${GeoKey20_2}") + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health In
 "<tr>"+
 "<th align='center'>" + T("DA") + "</th>"+
 "<th align='center'>" + T("French") + "</th>" +
+"<th align='center'>" + T("English") + "</th>" +
 "<th align='center'>" + T("English & French") + "</th>"+
 "<th align='center'>" + T("Neither") +"</th>"+
 "<th align='center'>Total</th>"+
@@ -55,12 +56,13 @@ T("${GeoKey20_2}") + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health In
 "<tr>"+
 "<td align='center'>${DAUID_1}</td>"+
 "<td class=first align='center'>${KnowledgFr}</td>"+
-"<td align='center'>${KnowlEngFr}</td>"+
-"<td class=first align='center'>${KEngNorFre}</td>"+
-"<td align='center'>${Knowledgeo}</td>"+
+"<td align='center'>${KnowlefEng}</td>"+
+"<td class=first align='center'>${KnowlEngFr}</td>"+
+"<td align='center'>${KEngNorFre}</td>"+
+"<td class=first align='center'>${Knowledgeo}</td>"+
 "</tr>"+
 "</table>" + "</p>" +"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[1]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
+layerData[1]['outFields'] = new Array("KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 layerData[2] = [];
 layerData[2]['infoWindowTitle'] = "<b>" + T("First Official Language Spoken") + "</b>";

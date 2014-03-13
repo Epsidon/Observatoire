@@ -315,7 +315,7 @@ layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2",
 layerData[5] = [];
 layerData[5]['infoWindowTitle'] = "<b>" + T("Socio-Economic Profiles") + "</b>";
 layerData[5]['infoWindowBody'] ="${FRE_LABEL}" + "&nbsp" + "(" + "${HRUID2007}" + ")" +
-"<b>" + "<p>" + T("Taux global de non-réponse (TNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" +
+"<b>" + "<p>" + T("Global Non-Response Rate (GNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" +
 "<table border=1>"+
 "<tr>"+
 "<th align='center'></th>"+

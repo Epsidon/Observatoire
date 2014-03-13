@@ -14,7 +14,7 @@ Fr['North Simcoe Muskoka'] = 'Simcoe-Nord Muskoka' ;
 Fr['South East'] = 'Sud-Est' ;
 Fr['South West'] = 'Sud-Ouest'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
-
+Fr['Global Non-Response Rate (GNR) = '] = 'Global Non-Response Rate (GNR) = ';
 Fr['French Speaking Population (2011)'] = 'Population francophone (2011)';
 Fr['Profiles By LHIN (2011)'] = 'Profiles par RLISS (2011)';
 Fr['Profession by LHIN'] = 'Profiles par RLISS';

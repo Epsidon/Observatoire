@@ -120,6 +120,11 @@ input
 	font-size: 1em;
 }
 
+.largeFont
+{
+	font-size: 1.3em;
+}
+
 .smallIcon
 {
 	height:25px;

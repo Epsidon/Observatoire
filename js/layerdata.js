@@ -437,7 +437,7 @@ layerData[5]['outFields'] = new Array("HRUID2007", "FRE_LABEL", "SociEcoP_1", "S
  
 layerData[6] = [];
 layerData[6]['infoWindowTitle'] = "<b>" + T("Health Profiles") + "</b>";
-layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}" + ")" +
+layerData[6]['infoWindowBody'] ="${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H}" + ")" +
 "<br>" + "<b>" + T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" +
 "<table border=1>"+
 "<tr>"+
@@ -447,98 +447,98 @@ layerData[6]['infoWindowBody'] ="${EnglishL_1}" + "&nbsp" + "(" + "${EnglishLab}
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived health, fair or poor (%)") + "</td>"+
-"<td align='center'>${Health__20}</td>"+
-"<td class=first align='center'>${Health_P_1}</td>"+
+"<td align='center'>${HealthP_20}</td>"+
+"<td class=first align='center'>${HealthPr_1}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived mental health, fair or poor (%)") + "</td>"+
-"<td align='center'>${Health__21}</td>"+
-"<td class=first align='center'>${Health_P_2}</td>"+
+"<td align='center'>${HealthP_21}</td>"+
+"<td class=first align='center'>${HealthPr_2}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived life stress, quite a bit or extremely stressful (%)") + "</td>"+
-"<td align='center'>${Health__22}</td>"+
-"<td class=first align='center'>${Health_P_3}</td>"+
+"<td align='center'>${HealthP_22}</td>"+
+"<td class=first align='center'>${HealthPr_3}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Participation and activity limitation, sometimes or often (%)") + "</td>"+
-"<td align='center'>${Health_P_4}</td>"+
-"<td class=first align='center'>${Health__14}</td>"+
+"<td align='center'>${TES4_csv_D}</td>"+
+"<td class=first align='center'>${HealthPr_4}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("At least one chronic disease (%)") + "</td>"+
-"<td align='center'>${Health__24}</td>"+
-"<td class=first align='center'>${Health_P_5}</td>"+
+"<td align='center'>${TES4_csv_C}</td>"+
+"<td class=first align='center'>${HealthPr_5}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Body mass index (BMI) (18 or older), overweight or obese (%)") + "</td>"+
-"<td align='center'>${Health__25}</td>"+
-"<td class=first align='center'>${Health_P_6}</td>"+
+"<td align='center'>${HealthP_25}</td>"+
+"<td class=first align='center'>${HealthPr_6}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Fruit and vegetable consumption, less than 5 times per day (%)") + "</td>"+
-"<td align='center'>${Health__26}</td>"+
-"<td class=first align='center'>${Health_P_7}</td>"+
+"<td align='center'>${HealthP_26}</td>"+
+"<td class=first align='center'>${HealthPr_7}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Current smoker, daily or occasional (%)") + "</td>"+
-"<td align='center'>${Health__29}</td>"+
-"<td class=first align='center'>${Health_P_8}</td>"+
+"<td align='center'>${HealthP_29}</td>"+
+"<td class=first align='center'>${HealthPr_8}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Type of drinker, regular (%)") + "</td>"+
-"<td align='center'>${Health__30}</td>"+
-"<td class=first align='center'>${Health_P_9}</td>"+
+"<td align='center'>${TES4_csv_B}</td>"+
+"<td class=first align='center'>${HealthPr_9}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Regular medical doctor (%)") + "</td>"+
 "<td align='center'>${Health__31}</td>"+
-"<td class=first align='center'>${Health__10}</td>"+
+"<td class=first align='center'>${HealthP_10}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Language spoken with medical doctor, English (%)") + "</td>"+
-"<td align='center'>${Health__32}</td>"+
-"<td class=first align='center'>${Health__11}</td>"+
+"<td align='center'>${TES4_csv_M}</td>"+
+"<td class=first align='center'>${HealthP_11}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Contact with a family medicine physician or a nurse in the past 12 months (%)") + "</td>"+
-"<td align='center'>${Health__33}</td>"+
-"<td class=first align='center'>${Health__12}</td>"+
+"<td align='center'>${HealthP_33}</td>"+
+"<td class=first align='center'>${HealthP_12}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Required health care in the past 12 months  (%)") + "</td>"+
-"<td align='center'>${Health__34}</td>"+
-"<td class=first align='center'>${Health__13}</td>"+
+"<td align='center'>${TES4_csv_1}</td>"+
+"<td class=first align='center'>${HealthP_13}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Difficulties obtaining health care in the past 12 months  (%)") + "</td>"+
-"<td align='center'>${Health__35}</td>"+
-"<td class=first align='center'>${Health__14}</td>"+
+"<td align='center'>${HealthP_35}</td>"+
+"<td class=first align='center'>${HealthP_14}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived access to health care in Ontario, good or excellent (%)") + "</td>"+
-"<td align='center'>${Health__36}</td>"+
-"<td class=first align='center'>${Health__15}</td>"+
+"<td align='center'>${TES4_csv_A}</td>"+
+"<td class=first align='center'>${HealthP_15}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived quality of health care in Ontario, good or excellent (%)") + "</td>"+
-"<td align='center'>${Health__37}</td>"+
-"<td class=first align='center'>${Health__16}</td>"+
+"<td align='center'>${HealthP_37}</td>"+
+"<td class=first align='center'>${HealthP_16}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived access to health care in community, good or excellent (%)") + "</td>"+
-"<td align='center'>${Health__38}</td>"+
-"<td class=first align='center'>${Health__17}</td>"+
+"<td align='center'>${TES4_csv_3}</td>"+
+"<td class=first align='center'>${HealthP_17}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Perceived quality health care in community , good or excellent (%)") + "</td>"+
-"<td align='center'>${Health__39}</td>"+
-"<td class=first align='center'>${Health__18}</td>"+
+"<td align='center'>${HealthP_39}</td>"+
+"<td class=first align='center'>${HealthP_18}</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Sense of community belonging, very strong or somewhat strong (%)") + "</td>"+
-"<td align='center'>${Health__40}</td>"+
-"<td class=first align='center'>${Health__19}</td>"+
+"<td align='center'>${HealthP_40}</td>"+
+"<td class=first align='center'>${HealthP_19}</td>"+
 "</tr>"+
 "</table>" + 
 "<br>" + 
@@ -546,17 +546,16 @@ T("E = Use with caution") +  "</br>" +
 "<n>" +T("F = Too unreliable to be published") + "</n>" +
 "</br>" +
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
-layerData[6]['outFields'] = new Array( "EnglishL_1", "EnglishLab", "Health__26",
-"Health__32", "Health__11", "Health_P_1", "Health__20",
-"Health__33", "Health__12", "Health__34", "Health__13",
-"Health__35", "Health__14", "Health__36", "Health__15", 
-"Health__25", "Health_P_6", "Fruits_F", "Health_P_7", 
-"Health__29", "Health_P_8", "Health__30", "Health_P_9",
-"Health__21", "Health_P_2", "Health__22", "Health_P_3", 
-"Health_P_4", "Health__14", "Health__24", "Health_P_5", 
-"Health__31", "Health__10", "Health__37", "Health__16",
-"Health__38", "Health__17", "Health__39", "Health__18", 
-"Health__40", "Health__19", "", ""
+layerData[6]['outFields'] = new Array( 
+"HR035b08_E", "HR035b08_H", "HealthP_20", "HealthPr_1", "HealthP_21",
+ "HealthPr_2", "HealthP_22", "HealthPr_3", "TES4_csv_D", 
+"HealthPr_4", "TES4_csv_C", "HealthPr_5", "HealthP_25", "HealthPr_6", 
+"HealthP_26", "HealthPr_7", "HealthP_29", "HealthPr_8", 
+"TES4_csv_B", "HealthPr_9", "Health__31", "HealthP_10", "TES4_csv_M", 
+"HealthP_11", "HealthP_33", "HealthP_12", "TES4_csv_1", 
+"HealthP_13", "HealthP_35", "HealthP_14", "TES4_csv_A", 
+"HealthP_15", "HealthP_37", "HealthP_16", "TES4_csv_3", "HealthP_17", 
+"HealthP_39", "HealthP_18", "HealthP_40", "HealthP_19"
  );
 
 layerData[7] = [];

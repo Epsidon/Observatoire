@@ -182,7 +182,25 @@ $('#healthMsg').html(T('Health'));
 $('#forceMsg').html(T('Force'));
 $('#ontarioMsg').html(T('Ontario'));
 
-$('#homeMainParagraph').html(T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations. The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+$('#homeMainParagraph').html(T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations."));
+$('#homeMainParagraph2').html(T("The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+$('#TeamHeader').html(T("Our Team"));
+$('#Bouchard').html(T("Dr. Louise Bouchard"));
+$('#BouchardTitle').html(T("Director and Primary Investigator"));
+
+$('#Seyed').html(T("Seyed M. Mirtaheri"));
+$('#Ava').html(T("Ava Ahadipour"));
+$('#Programmer').html(T("Programmers"));
+
+$('#Ewa').html(T("Ewa Makvandi"));
+$('#Golnaz').html(T("Golnaz Sedigh"));
+$('#Analyst').html(T("Analysts"));
+
+$('#Erik').html(T("Erik Bourdon"));
+$('#ErikTitle').html(T("Manager, Data & Analyses"));
+
+$('#GVJourdan').html(T("Dr. Guy-Vincent Jourdan"));
+$('#GVJourdanTitle').html(T("Associate professor, School of Information Technology and Engineering"));
 
 $('#homeSecondLine').html(T("The activity of the Observatory is organized around two priorities:"));
 

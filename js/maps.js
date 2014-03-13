@@ -267,7 +267,7 @@ function(
 		{
 			if (clickedLayerId == 2)
 				{
-					activeLayer = 18;
+					activeLayer = 17;
 					drawLegend({activeLayer : activeLayer});
 					LayerLegend = legendLabel[17];
 				}
@@ -276,7 +276,7 @@ function(
 			// 4.1.
 			// 4.2.
 			console.log('4.1. 4.2.');
-			activeLayer = 19;
+			activeLayer = 18;
 			drawLegend({activeLayer : activeLayer});
 			LayerLegend = legendLabel[18];
 			}

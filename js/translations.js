@@ -43,7 +43,7 @@ Fr['Chronic Care Treatment Hospital'] = 'Hôpital pour malades chroniques';
 Fr['English & French='] = 'Anglais et Français=';
 Fr['English & French']='Anglais et Français';
 Fr['Neither='] = 'Ni=';
-Fr['Neither'] = 'Ni';
+Fr['Neither'] = 'Aucune';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';
 Fr['First Official Language Spoken'] = 'Première langue officielle parlée';
 Fr['Language Spoken Most Often at Home='] = 'Langue parlée le plus souvent à la maison=';

@@ -799,12 +799,12 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "<td align='center'>" + T("100%") + "</td>"+
 "</tr>"+
 "</table>" + T("Source: 2011 National Household Survey") +
-"<p>" + T("Champlain Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
+"<p>" + "${FRE_LABEL}" + T(" Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 T("Methodological Notes") + "</a>" + "</p>";
 
 layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
-"SociEcoP_4", "SociEcoP_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc");
+"SociEcoP_4", "SociEcoP_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc", "FRE_LABEL");
 
 layerData[18] = [];
 layerData[18]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";

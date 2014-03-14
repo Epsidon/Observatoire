@@ -26,6 +26,7 @@ Fr['Health Profiles'] = 'Profiles Santé';
 Fr['Socio-Economic Profiles'] = 'Profiles socio-économique';
 Fr['PDF Link'] = 'Lien pour PDF';
 Fr['PDF Link '] = 'Lien pour PDF';
+Fr['Hospital'] = 'Hôpital';
 
 Fr['Mother Tongue'] = 'Langue maternelle';
 Fr['French='] = 'Français=';
@@ -58,6 +59,8 @@ Fr['City'] = 'nom de la ville';
 Fr['Postal code'] = 'code postal';
 Fr['SIC_1'] = 'SIC_1';
 Fr['Name'] = 'Nom';
+Fr['Address'] = 'adresse';
+Fr['Postal Code'] = 'code postal';
 Fr['Population in 2011'] = 'Population en 2011';
 Fr['Detailed mother tongue French'] = 'Détails des langues maternelles Français';
 Fr['Knowledge of official languages French only'] = 'Connaissance des langues officielles Français seulement';

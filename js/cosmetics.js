@@ -216,7 +216,9 @@ $('#validationFirstContent').html(this.T("This research uses a regional summary 
 $('#headerTwoResearchTab').html(this.T("Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada"));
 $('#headerThreeResearchTab').html(this.T("Linguistic Minorities in Canada and Health"));
 $('#headerFourResearchTab').html(this.T("Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities"));
-
-
+$('#pdf').html(T("PDF Link"));
+$('#pdf2').html(T("PDF Link "));
+$('#pdf3').html(T("PDF Link "));
+$('#pdf4').html(T("PDF Link "));
 
 $('#moreLessSpaceMsg').html(T("More Space"));

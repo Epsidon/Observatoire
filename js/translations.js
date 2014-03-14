@@ -24,6 +24,8 @@ Fr['Zoom in for more details on DA'] = 'Zoomer pour plus de détails sur DA';
 Fr['Health Professionals'] = 'Professionnels de la santé';
 Fr['Health Profiles'] = 'Profiles Santé';
 Fr['Socio-Economic Profiles'] = 'Profiles socio-économique';
+Fr['PDF Link'] = 'Lien pour PDF';
+Fr['PDF Link '] = 'Lien pour PDF';
 
 Fr['Mother Tongue'] = 'Langue maternelle';
 Fr['French='] = 'Français=';

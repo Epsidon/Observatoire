@@ -95,6 +95,7 @@ Fr['Financial Support:'] = 'Support Financier:';
 Fr['Data Providers:'] = 'Fournisseurs de données:';
 Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';
+Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario.';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
 Fr['Select a data layer from the menu below and click on map for detailed information. Click on '] = 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations. Cliquez sur le ' ;
@@ -109,7 +110,7 @@ Fr['Analysts'] = 'Analystes';
 
 
 
-Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario.";
+Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L'information sanitaire de qualité est essentielle à la décision politique et à la planification en santé. Toutefois, cette information est absente ou incomplète pour certaines populations.";
 
 Fr['The activity of the Observatory is organized around two priorities:'] = "L’activité de l’Observatoire s’organise autour de deux pôles:";
 

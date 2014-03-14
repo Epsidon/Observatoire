@@ -214,7 +214,7 @@ Fr['Sense of community belonging, very strong or somewhat strong (%)'] = 'Sentim
 
 Fr['Speciality'] = 'Specialité';
 Fr['French'] = 'Français';
-Fr['English'] = 'Anglais seulement';
+Fr['English'] = 'Anglais';
 Fr['Others'] = 'Autres';
 Fr['Total Population in 2011:'] = 'Population totale en 2011: ';
 

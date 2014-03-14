@@ -117,6 +117,7 @@ Fr['The activity of the Observatory is organized around two priorities:'] = "L�
 Fr['Activities of data collection, research and production of new knowledge'] = "activités de collecte de données, de recherche et de production de nouvelles connaissances";
 
 Fr['Valorisation and transfer of knowledge'] = "valorisation et transfert des connaissances";
+Fr['Ontario LHIN Information']= ' RLISS en Ontario';
 
 Fr['Audiologists'] = 'Audiologistes';
 Fr['Chiropodists'] = 'Podologues';

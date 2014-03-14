@@ -887,6 +887,6 @@ T('Acute Care Treatment Hospital'), T('Ambulatory Care'), T('Chronic Care Treatm
 T('FLS Designated Partial'), T('FLS Designated All'), T('% for which First Official Language Spoken = French'), T('Ontario LHIN Information'), T('Ontario LHIN Information')];
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
-var LayerLegend = 'Ontario LHIN Information';
+var LayerLegend = T('Ontario LHIN Information');
 var mapServicePointLegendLabel = '';
 var accordionHeaders = {7 : T('Hospitals By Services Offered'), 14 : T('Hospitals By French Language Service (FLS) Designation')};

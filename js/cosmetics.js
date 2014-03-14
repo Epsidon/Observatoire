@@ -6,6 +6,7 @@ if ((window.location.hostname.search("minorityhealth") == -1)
 
 $( window ).resize(function() {
 	reorganizeMapsPage();
+	 
 });
 
 function reorganizeMapsPage()

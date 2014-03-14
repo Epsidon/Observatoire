@@ -18,7 +18,7 @@ layerData[0] = [];
 layerData[0]['infoWindowTitle'] = "<b>" + T("Mother Tongue") + "</b>";
 layerData[0]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
-T("${GeoKey20_2}")+ "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"${GeoKey20_2}" + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
 "<p>" +  
 "<table border=1 align='center'>"+
 "<tr>"+
@@ -42,7 +42,7 @@ layerData[1] = [];
 layerData[1]['infoWindowTitle'] = "<b>" + T("Knowledge of Official Language") + "</b>";
 layerData[1]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
-T("${GeoKey20_2}") + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"${GeoKey20_2}" + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
 "<p>" + 
 "<table border=1 align='center'>"+
 "<tr>"+
@@ -68,7 +68,7 @@ layerData[2] = [];
 layerData[2]['infoWindowTitle'] = "<b>" + T("First Official Language Spoken") + "</b>";
 layerData[2]['infoWindowBody'] = T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
-T("${GeoKey20_2}") + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"${GeoKey20_2}" + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
 "<p>" +
 "<table border=1 align='center'>"+
 "<tr>"+
@@ -94,7 +94,7 @@ layerData[3] = [];
 layerData[3]['infoWindowTitle'] = "<b>" + T("Language Spoken Most Often at Home") + "</b>";
 layerData[3]['infoWindowBody'] =T("Dissemination Area(DA) #") + "${DAUID_1}" 
 + T(" is part of the ") + 
-T("${GeoKey20_2}") + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
+"${GeoKey20_2}" + "&nbsp" + "(" + "${GeoKey20_1}" + ")" + T(" Local Health Integration Network (LHIN).") +
 "<p>" + 
 "<table border=1 align='center'>"+
 "<tr>"+

@@ -462,7 +462,7 @@ function(
 						'<td>' + 
 							'<div style="width:10px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
-						'<td>' + thisLayerLegend.label + '</td>' + 
+						'<td>' + T(thisLayerLegend.label) + '</td>' + 
 					'</tr>';
 			}
 				

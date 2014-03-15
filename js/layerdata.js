@@ -603,7 +603,7 @@ layerData[8]['infoWindowBody'] =  "${LHIN_NAME}"+ "&nbsp" +
 layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINProf_2", "LHINProfil" , "C_NAME_ENG", "CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[9] = [];
-layerData[9]['infoWindowTitle'] = "<b>" + T("Mental Health Unit") + "</b>";
+layerData[9]['infoWindowTitle'] = "<b>" + T("Mental Health Units") + "</b>";
 layerData[9]['infoWindowBody'] = "${LHIN_NAME}"+ "&nbsp" + "(" + "${LHINProfil}" + ")" + "<p>" + "<b>" + T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +"<p><b>"+ "<p>" + "<table border=1>"+ "</p>" +
 "<tr>"+
 "<th align='center'>" + T("Hospital") + "</th>"+

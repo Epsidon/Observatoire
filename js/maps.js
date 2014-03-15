@@ -158,14 +158,15 @@ function(
 				accordionHtmlBody += 
 					'</ul>' + 
 						'<br>' +
-							'<href class="button1" onclick="myFunction()">' +
+						//<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>"
+							'<a href=http://216.48.92.42:8080/notes.html target=_blank ">' +
 							'<img src="images/Information.jpg" width="25" height="25" title="InformationImage"/>' +
-							'</href>' +
+							'</a>' +
 
 							'<script>' +
 								'function myFunction()' +
 									'{' +
-									'window.showModalDialog("./info.html" , "height=255, width=1700");' +
+									'window.showModalDialog("http://216.48.92.42:8080/notes.html" , "height=255, width=1700");' +
 									'}' +
 							'</script>' +
 						'</br>' +

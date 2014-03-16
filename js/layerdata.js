@@ -807,7 +807,7 @@ layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3",
 
 layerData[18] = [];
 layerData[18]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
-layerData[18]['infoWindowBody'] ="<span id='spanToTranslate'>${HR035b08_E}</span>"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
+layerData[18]['infoWindowBody'] ="<span class='spanToTranslate'>${HR035b08_E}</span>"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
  "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[18]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 

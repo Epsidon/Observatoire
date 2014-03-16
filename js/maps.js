@@ -103,11 +103,13 @@ function(
 	updateLegend();
 	setupAccordion();
 
-	// Translate the popup window, if there is any translatable item in it. 
-	dojo.connect(map.infoWindow, "onShow", function(){
-		$('#spanToTranslate').html(
-			T($('#spanToTranslate').html()));
-	});
+	// Translate the popup window, if there is any translatable item in it. 	
+	setInterval(function(){
+		$(".spanToTranslate").each(function(index) {
+			$(this).removeClass('spanToTranslate');
+			$(this).html(T($(this).html()));
+		});
+	}, 500);
 
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {

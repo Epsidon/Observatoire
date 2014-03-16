@@ -115,7 +115,7 @@ layerData[3]['infoWindowBody'] =T("Dissemination Area(DA) #") + "${DAUID_1}"
 layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 layerData[4] = [];
-layerData[4]['infoWindowTitle'] = "<b>" + T("Health Professionals By LHIN") + "</b>";
+layerData[4]['infoWindowTitle'] = "<b>" + T("Health Professional By LHIN") + "</b>";
 layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" + "&nbsp" + "(" + "${HR035b08_H}" + ")" + "<p>"+ "<b>"+ T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" + 
 "<table border=1>"+
 "<tr>"+

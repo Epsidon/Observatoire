@@ -182,6 +182,7 @@ Fr['First Official Language Spoken = French'] = 'Première langue officielle par
 Fr['Language Spoken Most Often at Home = French'] = 'Langue parlée le plus souvent à la maison = Français';
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
+Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';
 Fr['Canadian Community Health Survey Combined Cycles 2001 to 2012'] = 'Cycles combinés de 2001 à 2012 de l’Enquête sur la santé dans les collectivités canadiennes';
 Fr['Local Health Integration Network (LHIN)'] = 'Réseaux locaux d’intégration des services de santé (RLISS)';
 

@@ -231,6 +231,8 @@ function(
 
 	function updateLayer(clickedLayerId)
 	{
+		console.log('updateLayer was called: ' + clickedLayerId);
+		
 		/**
 		 * 1. Remove all checkboxes except for the one just clicked. 
 		 * 2. Remove old layers.
@@ -261,12 +263,7 @@ function(
 			map.removeLayer(mapLayer[i]);
 
 		// 3. 
-		var clickedLayerId = -1;
-		for(var i = 0; i < numLayers; i++)
-		{
-			if ($('#layerHyperLink' + i).prop('checked') )
-				clickedLayerId = i;	
-		}
+		clickedLayerId = getClickedLayerId();
 
 		// 4.
 		removeLegend(activeLayer);
@@ -276,19 +273,19 @@ function(
 			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
 			if (clickedLayerId == 2)
-				{
-					activeLayer = 17;
-					drawLegend({activeLayer : activeLayer});
-					LayerLegend = legendLabel[17];
-				}
+			{
+				activeLayer = 17;
+				drawLegend({activeLayer : activeLayer});
+				LayerLegend = legendLabel[17];
+			}
 			else
 			{
-			// 4.1.
-			// 4.2.
-			console.log('4.1. 4.2.');
-			activeLayer = 18;
-			drawLegend({activeLayer : activeLayer});
-			LayerLegend = legendLabel[18];
+				// 4.1.
+				// 4.2.
+				console.log('4.1. 4.2.');
+				activeLayer = 18;
+				drawLegend({activeLayer : activeLayer});
+				LayerLegend = legendLabel[18];
 			}
 
 		}
@@ -302,7 +299,6 @@ function(
 
 		try
 		{
-
 			if (layerInfoWindow[activeLayer])
 			{
 				layerInfoWindow[activeLayer].startup();
@@ -322,6 +318,21 @@ function(
 
 		updateServicePoints();
 	}	
+
+	/**
+	 * Simply checks the number which layer is clicked, if any. 
+	 */
+	function getClickedLayerId()
+	{
+		var clickedLayerId = -1;
+		for(var i = 0; i < numLayers; i++)
+		{
+			if ($('#layerHyperLink' + i).prop('checked') )
+				clickedLayerId = i;	
+		}
+		
+		return clickedLayerId;
+	}
 
 	function updateServicePoints()
 	{
@@ -439,7 +450,9 @@ function(
 
 	function drawLegend(clickedItem)
 	{
-		if (clickedItem.activeLayer)	
+		console.log('Draw legend was called: ' + JSON.stringify(clickedItem));
+	
+		if ('activeLayer' in clickedItem)	
 		{
 			var activeLayer = clickedItem.activeLayer;
 			var layer = layers[activeLayer];
@@ -489,7 +502,7 @@ function(
 			
 			for(hospitalId in hospitals)
 			{
-				console.log(hospitalId);
+				// console.log(hospitalId);
 				var layer = layers[hospitals[hospitalId]];
 
 				htmlBody +=  '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />';
@@ -505,9 +518,9 @@ function(
 
 	function showResults(featureSet) 
 	{
-		console.log('showResults was called');
+		// console.log('showResults was called');
 
-		console.log('showResults');
+		// console.log('showResults');
 
 		map.graphics.clear();
 

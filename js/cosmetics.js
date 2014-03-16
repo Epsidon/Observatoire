@@ -59,7 +59,7 @@ function reorganizeMapsPage()
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
-	var legendTop = (mapHeight /2) + (mapLabelHeight *7) ;
+	var legendTop = (mapHeight/2) + mapTop ;
 	var legendLeft = mapContainerLeft;
 	
 	$("#legendList").css(
@@ -68,7 +68,8 @@ function reorganizeMapsPage()
 	var mapLableTop = mapTop + zoomButtonHeight;
 	var mapLableLeft = mapContainerLeft + (mapContainerWidth / 2) - (mapLabelWidth / 2);
 	
-	var legendLabelTop = mapTop + (mapHeight/2) - mapLabelHeight;
+	var legendLabelTop =(mapHeight/2) + mapTop - (zoomButtonHeight*2);
+	console.log('isssssssssssss ' + legendLabelTop);
 	var legendLabelLeft = mapContainerLeft;
 	
 	$("#legendTitle").css(

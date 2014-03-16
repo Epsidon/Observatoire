@@ -108,6 +108,7 @@ function(
 		$(".spanToTranslate").each(function(index) {
 			$(this).removeClass('spanToTranslate');
 			$(this).html(T($(this).html()));
+			$(this).removeClass('hidden');
 		});
 	}, 500);
 

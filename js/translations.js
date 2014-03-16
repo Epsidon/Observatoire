@@ -24,6 +24,7 @@ Fr['Zoom in for more details on DA'] = 'Zoomer pour plus de détails sur DA';
 Fr['Health Professionals'] = 'Professionnels de la santé';
 Fr['Health Profiles'] = 'Profiles Santé';
 Fr['Socio-Economic Profiles'] = 'Profiles socio-économique';
+Fr['Socio Economic Profiles'] = 'Profiles socio-économique';
 Fr['PDF Link'] = 'Lien pour PDF';
 Fr['PDF Link '] = 'Lien pour PDF';
 Fr['Hospital'] = 'Hôpital';
@@ -155,7 +156,7 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
-Fr['Health Professionals By LHIN'] = 'Professionels de la santé par RLISS';
+Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';
 Fr['% for which First Official Language Spoken = French'] = '% pour qui Première langue officielle parlée = Français';
 Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
 Fr['Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';

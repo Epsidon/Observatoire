@@ -64,13 +64,14 @@ function(
 		layerTemplate[i].setTitle(layerData[i]['infoWindowTitle']);
 
 		layerTemplate[i].setContent(layerData[i]['infoWindowBody']);
+		
+		
 
 		mapLayer[i] = new FeatureLayer(
 			mapAddress + i, {
 				mode: FeatureLayer.MODE_ONDEMAND,
 				infoTemplate:layerTemplate[i],
 				outFields: layerData[i]['outFields']});
-
 	}
 
 	for (var j in servicePointBuffers) {
@@ -102,6 +103,11 @@ function(
 	updateLegend();
 	setupAccordion();
 
+	// Translate the popup window, if there is any translatable item in it. 
+	dojo.connect(map.infoWindow, "onShow", function(){
+		$('#spanToTranslate').html(
+			T($('#spanToTranslate').html()));
+	});
 
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
@@ -480,17 +486,14 @@ function(
 			
 			for(hospitalId in hospitals)
 			{
-			console.log(hospitalId);
+				console.log(hospitalId);
 				var layer = layers[hospitals[hospitalId]];
 
 				htmlBody +=  '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />';
 				htmlBody += ' ' + mapServicePointLegendLabel;
 			}
 		
-				
-//			$('#hospitalLegendList').html(JSON.stringify(clickedItem.hospitals));
 			$('#hospitalLegendList').html(htmlBody);
-
 		}		
 
 		$('#legendList').show();

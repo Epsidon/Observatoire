@@ -98,9 +98,7 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
-	updateLegend();	
 	
-			
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;
@@ -256,8 +254,7 @@ function(
 		if (clickedServicePoint != -1 )
 		{
 			clickedHospitalLayerIdArray.push(clickedServicePoint);
-			/* mapServicePointLegendLabel += " - " +legendLabel[clickedHospitalLayerIdArray]; */
-			
+		
 			if (clickedServicePointBufferSmall != -1 )
 			{
 				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][1]]);
@@ -278,25 +275,8 @@ function(
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
 	
-		updateLegend();
 		drawLegend({hospitals: clickedHospitalLayerIdArray});
 		
-	}
-	
-	function updateLegend()
-	{
-		console.log('updateLegend was called');
-
-		if (LayerLegend == '' && mapServicePointLegendLabel == '')
-		{
-			$('#legendTitle').hide();
-			return;
-		}	
-		
-		$('#legendTitle').html('<b>' + translator.T('Legend: ') +  '</b>' + LayerLegend + "  "  );
-		$('#legendTitle').show();
-
-		organizer.reorganizeMapsPage();
 	}
 	
 	function removeLegend()
@@ -311,8 +291,6 @@ function(
 	
 	function drawLegend(clickedItem)
 	{
-		//console.log('Draw legend was called: ' + JSON.stringify(clickedItem));
-		
 		if ('activeLayer' in clickedItem)	
 		{
 			var activeLayer = clickedItem.activeLayer;

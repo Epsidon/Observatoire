@@ -98,6 +98,7 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
+	updateLegend();
 	
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
@@ -275,8 +276,24 @@ function(
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
 	
-		drawLegend({hospitals: clickedHospitalLayerIdArray});
+		updateLegend();
+		drawLegend({hospitals: clickedHospitalLayerIdArray});	
+	}
+	
+	function updateLegend()
+	{
+		console.log('updateLegend was called');
+
+		if (LayerLegend == '' && mapServicePointLegendLabel == '')
+		{
+			$('#legendTitle').hide();
+			return;
+		}	
 		
+		$('#legendTitle').html('<b>' + translator.T('Legend: ') +  '</b>' + LayerLegend + "  "  );
+		$('#legendTitle').show();
+
+		organizer.reorganizeMapsPage();
 	}
 	
 	function removeLegend()

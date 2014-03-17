@@ -138,6 +138,12 @@ input
 	padding: 1em;
 }
 
+#legendTitle 
+{
+	pointer-events:none;
+	padding: 1em;
+}
+
 .esriSimpleSliderHomeButton{
       border-bottom: 2px solid #666666;
       background-image: url(../dijit/images/home.png);

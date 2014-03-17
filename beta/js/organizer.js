@@ -16,19 +16,18 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
 	
-	var legendLabelTop =(mapHeight/2) + mapTop - (20*2);
-	var legendLabelLeft = 70;
+	var legendLabelTop =mapTop + mapHeight - legendHeight - (navbarBrandHeight* 5 );
+	var legendLabelLeft = mapLeft + navbarBrandHeight;
 	
 	$("#legendTitle").css(
 		{'position' : 'absolute' , 'left' : legendLabelLeft + 'px', 'top' : legendLabelTop + 'px'});	
-	
-
-	$("#map").height(mapHeight);
-	$("#map").width(mapWidth);
 	 
 	$("#legendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
 	 
 	$("#loadingIndicator").css(
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
+
+	$("#map").height(mapHeight);
+	$("#map").width(mapWidth);	
 };

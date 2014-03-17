@@ -69,7 +69,6 @@ function reorganizeMapsPage()
 	var mapLableLeft = mapContainerLeft + (mapContainerWidth / 2) - (mapLabelWidth / 2);
 	
 	var legendLabelTop =(mapHeight/2) + mapTop - (zoomButtonHeight*2);
-	console.log('isssssssssssss ' + legendLabelTop);
 	var legendLabelLeft = mapContainerLeft;
 	
 	$("#legendTitle").css(

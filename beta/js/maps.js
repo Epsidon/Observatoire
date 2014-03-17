@@ -98,6 +98,9 @@ function(
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
 
+	updateLegend();	
+	
+			
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;
@@ -175,16 +178,16 @@ function(
 		{
 			if (clickedLayerId == 2)
 			{
-				activeLayer = 13;
-				drawLegend(activeLayer);
+				activeLayer = 17;
+				drawLegend({activeLayer : activeLayer});
 			}
 			else
 			{
 				// 4.1.
 				// 4.2.
 				console.log('4.1. 4.2.');
-				activeLayer = 14;
-				drawLegend(activeLayer);
+				activeLayer = 18;
+				drawLegend({activeLayer : activeLayer});
 			}
 		}
 		else
@@ -192,7 +195,8 @@ function(
 			// 4.3.
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			activeLayer = clickedLayerId;
-			drawLegend(activeLayer);	
+			drawLegend({activeLayer : activeLayer});
+			
 		}
 	
 		try
@@ -210,11 +214,27 @@ function(
 			console.log('ERROR: ' + err.message);
 		}
 		
+		LayerLegend = legendLabel[activeLayer];
 		updateServicePoints();
 	}	
 	
+	function getClickedLayerId()
+	{
+		var clickedLayerId = -1;
+		for(var i = 0; i < numLayers; i++)
+		{
+			if ($('#layerHyperLink' + i).prop('checked') )
+				clickedLayerId = i;	
+		}
+		
+		return clickedLayerId;
+	}
+	
 	function updateServicePoints()
 	{
+		var clickedHospitalLayerIdArray = Array();
+		
+		mapServicePointLegendLabel = '';
 		/**
 		 * 1. Remove all service point layers.
 		 * 2. Add the clicked service point. 
@@ -235,6 +255,9 @@ function(
 		
 		if (clickedServicePoint != -1 )
 		{
+			clickedHospitalLayerIdArray.push(clickedServicePoint);
+			/* mapServicePointLegendLabel += " - " +legendLabel[clickedHospitalLayerIdArray]; */
+			
 			if (clickedServicePointBufferSmall != -1 )
 			{
 				map.addLayer(mapLayer[servicePointBuffers[clickedServicePoint][1]]);
@@ -250,9 +273,30 @@ function(
 			}
 
 			map.addLayer(mapLayer[clickedServicePoint]);
+			mapServicePointLegendLabel += " - " +legendLabel[clickedServicePoint];
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
+	
+		updateLegend();
+		drawLegend({hospitals: clickedHospitalLayerIdArray});
+		
+	}
+	
+	function updateLegend()
+	{
+		console.log('updateLegend was called');
+
+		if (LayerLegend == '' && mapServicePointLegendLabel == '')
+		{
+			$('#legendTitle').hide();
+			return;
+		}	
+		
+		$('#legendTitle').html('<b>' + translator.T('Legend: ') +  '</b>' + LayerLegend + "  "  );
+		$('#legendTitle').show();
+
+		organizer.reorganizeMapsPage();
 	}
 	
 	function removeLegend()
@@ -265,30 +309,34 @@ function(
 		$('#legendList').hide();
 	}
 	
-	function drawLegend(activeLayer)
+	function drawLegend(clickedItem)
 	{
-		var layer = layers[activeLayer];
+		//console.log('Draw legend was called: ' + JSON.stringify(clickedItem));
 		
-				
+		if ('activeLayer' in clickedItem)	
+		{
+			var activeLayer = clickedItem.activeLayer;
+			var layer = layers[activeLayer];
+
 			if (layer.drawingInfo.renderer.classBreakInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.classBreakInfos;
 			else if (layer.drawingInfo.renderer.uniqueValueInfos)
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.uniqueValueInfos;
 			else
 				legendsArray[activeLayer] = null;
-		
-		var layerLegend = legendsArray[activeLayer];
-			
+
+			var layerLegend = legendsArray[activeLayer];
+
 			var legendBody = '<table>';
-			
-				for (j = 0; j < layerLegend.length; j++)
+
+			for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
-	
+
 				var legendColour = thisLayerLegend.symbol.color[0] + ',' +
 					thisLayerLegend.symbol.color[1] + ',' +
 					thisLayerLegend.symbol.color[2];
-	
+
 				legendBody +=  
 					'<tr>' + 
 						'<td>' + 
@@ -298,16 +346,34 @@ function(
 						'<td>' + 
 							'<div style="width:10px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
-						'<td>' + thisLayerLegend.label + '</td>' + 
+						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
 					'</tr>';
-			}	
+			}
+				
 			legendBody += '</table>';
 
-			$('#legendList').html(legendBody);
-			$('#legendList').show();
-			
-			organizer.reorganizeMapsPage();
+			$('#layerLegendList').html(legendBody);
+		}
+		if ('hospitals' in clickedItem)	
+		{
+			var htmlBody = '';
 		
+			var hospitals = clickedItem.hospitals;
+			
+			for(hospitalId in hospitals)
+			{
+				var layer = layers[hospitals[hospitalId]];
+
+				htmlBody +=  '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />';
+				htmlBody += ' ' + mapServicePointLegendLabel;
+			}
+		
+			$('#hospitalLegendList').html(htmlBody);
+		}		
+
+		$('#legendList').show();
+		
+		organizer.reorganizeMapsPage();
 	}
 
 	function showResults(featureSet) 

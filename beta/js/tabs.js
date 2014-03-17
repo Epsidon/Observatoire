@@ -29,7 +29,11 @@ Tabs.prototype.getMaps = function ()
 		'<div class="row" style="padding-left: 20px;">' +
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
-			'<div id="legendList" class="transbox"></div>' + 
+			'<div id="legendTitle" class="transbox">Loading ...</div>' +
+			'<div id="legendList" class="transbox">' +
+				'<div id="hospitalLegendList"></div>' +
+				'<div id="layerLegendList"></div>' +
+			'</div>' +
 		'</div>' +
 		
 		'<div class="modal fade" id="mapsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +

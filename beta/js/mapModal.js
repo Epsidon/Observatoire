@@ -8,16 +8,18 @@ function MapModal()
 
 	this.accordion[1] = []
 	this.accordion[1]['title'] = translator.T('Profiles By LHIN (2011)');
-	this.accordion[1]['numLayers'] = 2;
+	this.accordion[1]['numLayers'] = 3;
 
 	this.accordion[2] = []
 	this.accordion[2]['title'] = translator.T('Health Services (2011)');
-	this.accordion[2]['numLayers'] = 7;
+	this.accordion[2]['numLayers'] = 10;
 	
 	this.clickedLayerId = -1;
 	this.clickedServicePoint = -1;
 	this.clickedServicePointBufferSmall = -1;
 	this.clickedServicePointBufferLarge = -1;
+	
+	this.accordionHeaders = {7 : translator.T('Hospitals By Services Offered'), 14 : translator.T('Hospitals By French Language Service (FLS) Designation')};
 	
 };
 
@@ -81,9 +83,15 @@ MapModal.prototype.fillModalBody = function()
 
 MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accordionCounter) 
 {
+	htmlBody = '';
+		
+	if (this.accordionHeaders[layerCounter])
+				htmlBody = "<td colspan='2' align='center'>" + this.accordionHeaders[layerCounter] +
+							'</td>';
+
 	if (accordionCounter != (this.accordion.length-1)) 
 	{
-		htmlBody = 
+		htmlBody += 
 			'<tr>' +
 				'<td>' + 
 					'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
@@ -97,7 +105,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	}
 	else
 	{
-		htmlBody = 
+		htmlBody += 
 				'<tr>' + 				
 					'<td>' + 
 						'<input type="checkbox" id="servicePointHyperLink' + layerCounter + '" ' + 
@@ -131,7 +139,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 						'</input>' +
 					'</td>' + 
 					'<td><small>' + 
-							translator.T(' 25 km Driving Distance') +
+							translator.T(' 50 km Driving Distance') +
 					'</small></td>' + 
 					
 				'</tr>';

@@ -21,12 +21,6 @@ else
 			'class="navbar-link">English</a>');
 }
 
-
-
-
-
-
-
 	$( window ).resize(function() {
 		reorganizeMapsPage();
 	});

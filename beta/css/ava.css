@@ -10,6 +10,10 @@ body {
 	padding-bottom:0px;
 }
 
+.esriPopup .sizer {
+    width: 430px;
+}
+
 td.first
 {
 	color:#000000;

@@ -34,7 +34,7 @@ Tabs.prototype.getHome = function ()
 				'<p id="Analyst"></p>' +
 				
 				'<h2 class="grayFont largeFont" id="withSupportOfMsg"></h2>' +
-				'<img border="0" src="images/ontario.jpg" alt="I" width="80" height="80">' +
+				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
 		'</div>';
@@ -84,7 +84,7 @@ Tabs.prototype.getPartners = function ()
 		'<div class="container">' +	
 			'<h2 class="grayFont smallFont" id="financialSupport"></h2>' +
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg" width="100" height="150">' +
+				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
@@ -92,19 +92,17 @@ Tabs.prototype.getPartners = function ()
 			'<h2 class="grayFont smallFont" id="dataProvidersMsg"></h2>' +
 
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg" width="100" height="150">' +
+				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
 				'<font class="mediumFont" id="healthMsg"></font>' +
 				'<font class="redFont" id="forceMsg"></font>' +
 				'<font id="ontarioMsg"></font>' +
 			'</p>' +
-
-			'<p><img border="0" src="images/ontario.jpg"  width="100" height="150">' +
+			'<p><img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">'  +
 			'<font class="smallFont blueFont ministryOfMsg"></font>' +
 			'<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
-
-			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="Pulpit rock" width="500" height="250"></p>' +
-			'<p><img border="0" src="images/StatisticsCanada.jpg"  width="250" height="250"></p>' + 
+			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="I" width="350" height="80"></p>' +
+			'<p><img border="0" src="images/StatisticsCanada.jpg"  width="240" height="80"></p>' + 
 		'</div>';
 
 

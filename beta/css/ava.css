@@ -8,6 +8,12 @@
 	width: 270px;
 }
 
+.alert-success {
+	background-color: #BDCCD4;
+	border-color: #000000;
+	color: #000000;
+}
+
 body {
   	padding-top: 50px;
   	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";

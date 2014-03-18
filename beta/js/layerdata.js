@@ -35,7 +35,7 @@ layerData[0]['infoWindowBody'] = translator.T("Dissemination Area(DA) #") + "${D
 "<td align='center'>${MTNonOFF}</td>"+
 "<td class=first align='center'>${Detailedmo}</td>"+
 "</tr>"+
-"</table>" + "</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "</p>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[0]['outFields'] = new Array("POPIN2011", "GeoKey20_2", "GeoKey20_1","Detailedmo", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
 layerData[1] = [];
@@ -61,7 +61,7 @@ layerData[1]['infoWindowBody'] = translator.T("Dissemination Area(DA) #") + "${D
 "<td align='center'>${KEngNorFre}</td>"+
 "<td class=first align='center'>${Knowledgeo}</td>"+
 "</tr>"+
-"</table>" + "</p>" +"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "</p>" +"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[1]['outFields'] = new Array("KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 layerData[2] = [];
@@ -87,7 +87,7 @@ layerData[2]['infoWindowBody'] = translator.T("Dissemination Area(DA) #") + "${D
 "<td class=first align='center'>${FOFENorF}</td>"+
 "<td align='center'>${FirstoffTo}</td>"+
 "</tr>"+
-"</table>" + "</p>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "</p>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
 layerData[3] = [];
@@ -111,7 +111,7 @@ layerData[3]['infoWindowBody'] =translator.T("Dissemination Area(DA) #") + "${DA
 "<td class=first align='center'>${DLSHNON}</td>"+
 "<td align='center' align='center'>${DLAthomeTo}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 layerData[4] = [];
@@ -297,7 +297,7 @@ layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b0
 "<td align='center'>${LHINPr_147}</td>"+
 "</tr>"+
 "</table>" + 
-"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 
 layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2", 
 "LHINPro_75", "LHINPro_76", "LHINPro_77", "LHINPro_78", "LHINPro_79", "LHINPro_80", "LHINPro_81",
@@ -417,7 +417,7 @@ layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${English
 "<td class=first align='center'>${SociEco_49}</td>"+
 "</tr>"+
 "</table>" + 
-"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[5]['outFields'] = new Array("HRUID2007", "EnglishL_1", "SociEcoP_1", "SociEcoP_1",
 "SociEcoP_2", "SociEcoP_3", "SociEcoP_4", "SociEcoP_5", 
 "socio_csv1", "socio_cs_1", "socio_cs_2",
@@ -547,7 +547,7 @@ layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b0
 translator.T("E = Use with caution") +  "</br>" +
 "<n>" +translator.T("F = Too unreliable to be published") + "</n>" +
 "</br>" +
-"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[6]['outFields'] = new Array( 
 "HR035b08_E", "HR035b08_H", "HealthP_20", "HealthPr_1", "HealthP_21",
  "HealthPr_2", "HealthP_22", "HealthPr_3", "TES4_csv_D", 
@@ -577,7 +577,7 @@ layerData[7]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NA
 "<td align='center'>${ADDRESS_1}</td>"+
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[7]['outFields'] = new Array("LHIN_NAME", "C_NAME_ENG", "CITY", "ADDRESS_1",
 "POSTALCODE" );
 
@@ -599,7 +599,7 @@ layerData[8]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NA
 "<td align='center'>${ADDRESS_1}</td>"+
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINProf_2", "LHINProfil" , "C_NAME_ENG", "CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[9] = [];
@@ -617,7 +617,7 @@ layerData[9]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NA
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[9]['outFields'] = new Array("LHINProfil","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[10] = [];
@@ -635,7 +635,7 @@ layerData[10]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td align='center'>${ADDRESS_1}</td>"+
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[10]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[11] = [];
@@ -653,7 +653,7 @@ layerData[11]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[11]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[12] = [];
@@ -671,7 +671,7 @@ layerData[12]['infoWindowBody']= "<span class='spanToTranslate hidden'>${LHIN_NA
 "<td align='center'>${ADDRESS_1}</td>"+
 "<td class=first align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[12]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[13] = [];
@@ -690,28 +690,10 @@ layerData[13]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[13]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-/* layerData[14] = [];
-layerData[14]['infoWindowTitle'] = "<b>" + translator.T("No FLS Obligation") + "</b>";
-layerData[14]['infoWindowBody'] ="${LHIN_NAME}"+ 
-"<table border=1>"+
-"<tr>"+
-"<th align='center'>" + translator.T("Health Unit Name") + "</th>"+
-"<th align='center'>" + translator.T("City") + "</th>"+
-"<th align='center'>" + translator.T("Address") + "</th>"+
-"<th align='center'>" + translator.T("Postal Code") + "</th>"+
-"</tr>"+
-"<tr>"+
-"<td class=first align='center'>${C_NAME_ENG}</td>"+
-"<td align='center'>${CITY}</td>"+
-"<td class=first align='center'>${ADDRESS_1}</td>"+
-"<td align='center'>${POSTALCODE}</td>"+
-"</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
-layerData[14]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
- */
+
 layerData[14] = [];
 layerData[14]['infoWindowTitle'] = "<b>" + translator.T("FLS Identified") + "</b>";
 layerData[14]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NAME}</span>" + 
@@ -728,7 +710,7 @@ layerData[14]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[14]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[15] = [];
@@ -747,7 +729,7 @@ layerData[15]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[15]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 layerData[16] = [];
@@ -766,7 +748,7 @@ layerData[16]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_N
 "<td class=first align='center'>${ADDRESS_1}</td>"+
 "<td align='center'>${POSTALCODE}</td>"+
 "</tr>"+
-"</table>" + "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[16]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 
@@ -799,7 +781,7 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "</tr>"+
 "</table>" + translator.T("Source: 2011 National Household Survey") +
 "<p>" + "${FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
-"<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + 
+"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 translator.T("Methodological Notes") + "</a>" + "</p>";
 
 layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
@@ -808,7 +790,7 @@ layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3",
 layerData[18] = [];
 layerData[18]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
 layerData[18]['infoWindowBody'] ="<span class='spanToTranslate hidden'>${HR035b08_E}</span>"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
- "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+ "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 layerData[18]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 

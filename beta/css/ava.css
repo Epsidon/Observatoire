@@ -195,6 +195,12 @@ input
 	color:#000000;
 }
 
+a.methodologicalNote
+{
+	color:#F15A24;
+	float:right;
+}
+
 div.transbox
   {
   background-color:#F2F5F6;

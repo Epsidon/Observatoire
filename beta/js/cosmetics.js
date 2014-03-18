@@ -165,6 +165,8 @@ $('#forceMsg').html(T('Force'));
 $('#ontarioMsg').html(T('Ontario'));
 
 $('#homeMainParagraph').html(T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations. The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada"));
+$('#headerTwoResearchTab').html(this.T("Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada"));
 
 $('#homeSecondLine').html(T("The activity of the Observatory is organized around two priorities:"));
 

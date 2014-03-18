@@ -30,8 +30,8 @@ Tabs.prototype.getMaps = function ()
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
 			'<div id="legendTitle" class="transbox">Loading ...</div>' +
+			'<div id="hospitalLegendList" class="transbox"></div>' +
 			'<div id="legendList" class="transbox">' +
-				'<div id="hospitalLegendList"></div>' +
 				'<div id="layerLegendList"></div>' +
 			'</div>' +
 		'</div>' +
@@ -99,16 +99,16 @@ Tabs.prototype.getAnalysis = function ()
 			'<p>' +
 				'<font class="mediumFont" id="validationFirstContent"></font>' +
 			'</p>' +
-			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>PDF Link</b></a>' +
+			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
 			'<h2 class="grayFont mediumFont" id="headerTwoResearchTab"></h2>' +
-			'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>PDF Link</b></a>' +
+			'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
 			'<h2 class="grayFont mediumFont" id="headerThreeResearchTab"></h2>' +
-			'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>PDF Link</b></a>' +
+			'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
 			'<h2 class="grayFont mediumFont" id="headerFourResearchTab"></h2>' +
-			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>PDF Link</b></a>' +
+			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 		'</div>';
 		
 	return body;

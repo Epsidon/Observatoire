@@ -57,7 +57,7 @@ Tabs.prototype.getMaps = function ()
 				'<span id="mapsInstructionTwo"></span>' +
 			'</div>' +
 			
-			'<div id="legendTitle" class="transbox width">Loading ...</div>' +
+			'<div id="legendTitle" class="transbox width legendLabel"><b>Loading ...</b></div>' +
 			'<div id="hospitalLegendList" class="transbox width"></div>' +
 			'<div id="legendList" class="transbox width">' +
 				'<div id="layerLegendList" class="width"></div>' +

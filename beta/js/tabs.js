@@ -49,10 +49,18 @@ Tabs.prototype.getMaps = function ()
 		'<div class="row" style="padding-left: 20px;">' +
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
-			'<div id="legendTitle" class="transbox">Loading ...</div>' +
-			'<div id="hospitalLegendList" class="transbox"></div>' +
-			'<div id="legendList" class="transbox">' +
-				'<div id="layerLegendList"></div>' +
+			
+			'<div class="mapsInstruction alert alert-success mediumFont width" id="instruction">' +
+				'<span id="mapsInstructionOne"></span>' +
+				'<a href=http://216.48.92.42:8080/notes.html target=_blank>' +
+				'<img src="images/Information.jpg" class="smallIcon opacity" title="InformationImage"/></a>' +
+				'<span id="mapsInstructionTwo"></span>' +
+			'</div>' +
+			
+			'<div id="legendTitle" class="transbox width">Loading ...</div>' +
+			'<div id="hospitalLegendList" class="transbox width"></div>' +
+			'<div id="legendList" class="transbox width">' +
+				'<div id="layerLegendList" class="width"></div>' +
 			'</div>' +
 		'</div>' +
 		

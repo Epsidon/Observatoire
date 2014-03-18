@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.width
+{
+	width: 270px;
+}
+
 body {
   	padding-top: 50px;
   	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";

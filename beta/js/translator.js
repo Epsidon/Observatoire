@@ -34,11 +34,26 @@ Translator.prototype.translatePage = function()
 	$('#forceMsg').html(this.T('Force'));
 	$('#ontarioMsg').html(this.T('Ontario'));
 
-	$('#homeMainParagraph').html(this.T("Quality health information is essential for policy making and health policy planning. " + 
-		"However, this information is missing or incomplete for some populations. " +
-		"The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to " +
-		"health services for the Francophone minority population of Ontario."));
+	$('#homeMainParagraph').html(this.T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations."));
+	$('#homeMainParagraph2').html(this.T("The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+	$('#TeamHeader').html(this.T("Our Team"));
+	$('#Bouchard').html(this.T("Dr. Louise Bouchard"));
+	$('#BouchardTitle').html(this.T("Director and Primary Investigator"));
 
+	$('#Seyed').html(this.T("Seyed M. Mirtaheri"));
+	$('#Ava').html(this.T("Ava Ahadipour"));
+	$('#Programmer').html(this.T("Programmers"));
+
+	$('#Ewa').html(this.T("Ewa Makvandi"));
+	$('#Golnaz').html(this.T("Golnaz Sedigh"));
+	$('#Analyst').html(this.T("Analysts"));
+
+	$('#Erik').html(this.T("Erik Bourdon"));
+	$('#ErikTitle').html(this.T("Manager, Data & Analyses"));
+
+	$('#GVJourdan').html(this.T("Dr. Guy-Vincent Jourdan"));
+	$('#GVJourdanTitle').html(this.T("Associate professor, School of Information Technology and Engineering"));
+	
 	$('#homeSecondLine').html(this.T("The activity of the Observatory is organized around two priorities:"));
 
 	$('#homeOptionOne').html(this.T("Activities of data collection, research and production of new knowledge"));

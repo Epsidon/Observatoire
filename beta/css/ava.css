@@ -1,15 +1,18 @@
-.starter-template {
+.starter-template 
+{
   padding: 40px 15px;
   text-align: center;
 }
 
-.navbar-inverse {
-background-color: #2F3335;
-border-color: #080808;
+.navbar-inverse
+{
+	background-color: #2F3335;
+	border-color: #080808;
 }
 
-.navbar-inverse .navbar-brand {
-color: #FFF;
+.navbar-inverse .navbar-brand 
+{
+	color: #FFF;
 }
 
 .width
@@ -42,14 +45,15 @@ color: #FFF;
 	background-color: #FFFFFF;
 }
 
-border
+.navbarItem
 {
-	border:2px solid #a1a1a1;
+	border:2px solid;
 	border-radius:10px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
 	color: #000;
+	font-family: arial bold;
 }
 
 
@@ -61,20 +65,23 @@ color: #000;
 color: #000;
 }
 
-.alert-success {
+.alert-success 
+{
 	background-color: #BDCCD4;
 	border-color: #000000;
 	color: #000000;
 }
 
-body {
+body 
+{
   	padding-top: 50px;
   	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	padding-top: 0px;
 	padding-bottom:0px;
 }
 
-.esriPopup .sizer {
+.esriPopup .sizer 
+{
     width: 330px;
 }
 
@@ -93,9 +100,10 @@ body {
     -o-border-radius: 5px;
 }
 
-.esriPopup a {
-color: #F15A24;
-text-decoration: underline;
+.esriPopup a 
+{
+	color: #F15A24;
+	text-decoration: underline;
 }
 
 .esriPopup .esriPopupWrapper {

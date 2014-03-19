@@ -8,6 +8,50 @@
 	width: 280px;
 }
 
+#homeTabContainer 
+{
+	background-color: #8E999F;
+}
+
+#mapsTabContainer 
+{
+	background-color: #BDCCD4;
+}
+
+#analysisTabContainer 
+{
+	background-color: #D7E0E5;
+}
+
+#partnersTabContainer 
+{
+	background-color: #E5EBEE;
+}
+
+#languageContainer 
+{
+	background-color: #FFFFFF;
+}
+
+border
+{
+	border:2px solid #a1a1a1;
+	border-radius:10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #000;
+}
+
+
+.navbar-inverse .navbar-link {
+color: #000;
+}
+
+.navbar-inverse .navbar-link:hover {
+color: #000;
+}
+
 .alert-success {
 	background-color: #BDCCD4;
 	border-color: #000000;

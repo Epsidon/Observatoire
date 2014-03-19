@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+.navbar-inverse {
+background-color: #2F3335;
+border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+color: #FFF;
+}
+
 .width
 {
 	width: 280px;

@@ -5,7 +5,7 @@
 
 .width
 {
-	width: 270px;
+	width: 280px;
 }
 
 .alert-success {
@@ -22,8 +22,41 @@ body {
 }
 
 .esriPopup .sizer {
-    width: 430px;
+    width: 330px;
 }
+
+.esriPopup {
+    position: absolute;
+    z-index: 40;
+    box-shadow: 0 0 0.75em #777777;
+    -moz-box-shadow: 0 0 0.75em #777777;
+    -webkit-box-shadow: 0 0 0.75em #777777;
+    -o-box-shadow: 0 0 0.75em #777777;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.esriPopup a {
+color: #F15A24;
+text-decoration: underline;
+}
+
+.esriPopup .esriPopupWrapper {
+    box-shadow: 0 0 0.75em #777777;
+    -moz-box-shadow: 0 0 0.75em #777777;
+    -webkit-box-shadow: 0 0 0.75em #777777;
+    -o-box-shadow: 0 0 0.75em #777777;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+	font-size:0.9em;
+}
+
 
 td.first
 {
@@ -90,6 +123,12 @@ h2
 {
 	font-family: Verdana,Arial,sans-serif;
 	height: 100%
+}
+
+#hospitalLegendList
+{
+	font-size: 17px;
+	text-decoration:underline;
 }
 
 label 
@@ -204,7 +243,9 @@ a.methodologicalNote
 div.transbox
   {
   background-color:#F2F5F6;
-  border:1px solid black;
-  opacity:0.6;
-  filter:alpha(opacity=60); /* For IE8 and earlier */
-  }
+  border:1px solid white;
+  box-shadow: 5px 5px 5px #888888;
+  opacity:0.7;
+  filter:alpha(opacity=70); /* For IE8 and earlier */
+ }
+ 

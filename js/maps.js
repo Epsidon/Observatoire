@@ -61,21 +61,15 @@ function(
 		sliderStyle: "small"
 	});
 	
-	 on(map, 'extent-change', function(evt) {
+	 on(map, 'pan', function(evt) {
             if ( !initExtent.contains(evt.extent) ) {
                 console.log('Outside bounds!');
-				map.centerAt(new esri.geometry.Point({
-				"x": centerX + adjX,
-				"y": centerY + adjY,
-				"spatialReference": {
-					"wkid": 102100
-				}
-			}));
             } else {
                 console.log('Updated extent');
                 validExtent = evt.extent;
             }
         });
+
 		
 	on(map, 'pan-end', function(evt) {
             if ( !initExtent.contains(evt.extent) ) {

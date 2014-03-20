@@ -61,7 +61,7 @@ function(
 		sliderStyle: "small"
 	});
 	
-	 on(map, 'pan', function(evt) {
+	 /*  on(map, 'pan', function(evt) {
             if ( !initExtent.contains(evt.extent) ) {
                 console.log('Outside bounds!');
             } else {
@@ -75,11 +75,9 @@ function(
             if ( !initExtent.contains(evt.extent) ) {
                 map.setExtent(validExtent);
             }
-        });
-    
-
-	
-	/* on(map, 'pan', function( extent)
+        });  */
+   
+	 on(map, 'pan-end', function( extent)
 	{
 		var outOfBounds = false;
 		// get center of current extent
@@ -108,11 +106,8 @@ function(
 			adjY = 5520088.41 - centerY;
 			outOfBounds = true;
 		}
-		}); */
-		
-		/* on(map, 'pan-end', function(extent)
-		{
 		if (outOfBounds) {
+		 console.log('outOfBounds');
 			map.centerAt(new esri.geometry.Point({
 				"x": centerX + adjX,
 				"y": centerY + adjY,
@@ -121,7 +116,7 @@ function(
 				}
 			}));
 		}
-	}); */
+	}); 
 	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";

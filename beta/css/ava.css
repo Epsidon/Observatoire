@@ -29,6 +29,17 @@
 	width: 370px;
 }
 
+.inputWidth
+{
+	width: 5px;
+}
+
+.hospitalLabelWidth
+{
+	width: 340px;
+	font-family: arial bold;
+}
+
 #homeTabContainer 
 {
 	background-color: #8E999F;

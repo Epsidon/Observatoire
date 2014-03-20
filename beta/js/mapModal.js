@@ -86,7 +86,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	htmlBody = '';
 		
 	if (this.accordionHeaders[layerCounter])
-				htmlBody = '<td><small>' + this.accordionHeaders[layerCounter] +
+				htmlBody += '<td colspan="3"><small>' + this.accordionHeaders[layerCounter] +
 							'</small></td>';
 
 	if (accordionCounter != (this.accordion.length-1)) 

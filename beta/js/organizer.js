@@ -20,7 +20,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendLabelTop = mapTop + mapHeight - legendHeight - (navbarBrandHeight * 7 );
 	var legendLabelLeft = mapLeft + navbarBrandHeight;
 	
-	var instructionTop = mapTop + mapHeight - (legendHeight * 2) ;
+	var instructionTop = mapTop + (mapHeight / 2) - (mapTop * 2);
 	var instructionLeft = mapLeft + navbarBrandHeight;
 	
 	var hospitalLegendLabelTop = mapHeight;

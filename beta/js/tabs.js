@@ -33,7 +33,7 @@ Tabs.prototype.getHome = function ()
 				'<u><br><b class="grayFont mediumFont" id="Golnaz"></b></br></u>' +
 				'<p id="Analyst"></p>' +
 				
-				'<h2 class="grayFont largeFont" id="withSupportOfMsg"></h2>' +
+				'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
 				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
@@ -90,14 +90,14 @@ Tabs.prototype.getPartners = function ()
 {
 	var body =
 		'<div class="container">' +	
-			'<h2 class="grayFont smallFont" id="financialSupport"></h2>' +
+			'<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +
 				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
 
-			'<h2 class="grayFont smallFont" id="dataProvidersMsg"></h2>' +
+			'<h4 class="grayFont largeFont" id="dataProvidersMsg"></h4>' +
 
 			'<p>' +
 				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
@@ -109,8 +109,8 @@ Tabs.prototype.getPartners = function ()
 			'<font class="smallFont blueFont ministryOfMsg"></font>' +
 			'<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
-			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="I" width="350" height="80"></p>' +
-			'<p><img border="0" src="images/StatisticsCanada.jpg"  width="240" height="80"></p>' + 
+			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="I" width="350" height="50"></p>' +
+			'<p><img border="0" src="images/StatisticsCanada.jpg"  width="240" height="50"></p>' + 
 		'</div>';
 
 

@@ -41,7 +41,15 @@ function(
 		}
 	});
 	
-	
+	var validExtent = esri.geometry.Extent({
+		"xmax":  -8350513.84 ,
+		"xmin": -10951900.25,
+		"ymax": 7387679.36,
+		"ymin": 5520088.41,
+		"spatialReference": {
+			"wkid": 102100
+		}
+	});
 	// 1.
 	console.log('Creating Map');
 
@@ -53,7 +61,31 @@ function(
 		sliderStyle: "small"
 	});
 	
-	on(map, 'extent-change', function( extent)
+	 on(map, 'extent-change', function(evt) {
+            if ( !initExtent.contains(evt.extent) ) {
+                console.log('Outside bounds!');
+				map.centerAt(new esri.geometry.Point({
+				"x": centerX + adjX,
+				"y": centerY + adjY,
+				"spatialReference": {
+					"wkid": 102100
+				}
+			}));
+            } else {
+                console.log('Updated extent');
+                validExtent = evt.extent;
+            }
+        });
+		
+	on(map, 'pan-end', function(evt) {
+            if ( !initExtent.contains(evt.extent) ) {
+                map.setExtent(validExtent);
+            }
+        });
+    
+
+	
+	/* on(map, 'pan', function( extent)
 	{
 		var outOfBounds = false;
 		// get center of current extent
@@ -82,7 +114,10 @@ function(
 			adjY = 5520088.41 - centerY;
 			outOfBounds = true;
 		}
+		}); */
 		
+		/* on(map, 'pan-end', function(extent)
+		{
 		if (outOfBounds) {
 			map.centerAt(new esri.geometry.Point({
 				"x": centerX + adjX,
@@ -92,7 +127,7 @@ function(
 				}
 			}));
 		}
-	});
+	}); */
 	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";

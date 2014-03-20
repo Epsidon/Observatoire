@@ -1,5 +1,7 @@
 require([
 	"esri/map", 
+	"esri/geometry/Extent",
+	"dojo/on",
 	"esri/layers/ImageParameters",
 	"esri/dijit/HomeButton", 
 	"esri/dijit/InfoWindowLite",
@@ -10,6 +12,8 @@ require([
 	"dojo/domReady!"], 
 function(
 	Map,
+	Extent,
+	on,
 	ImageParameters,
 	HomeButton,
 	InfoWindowLite,
@@ -25,17 +29,71 @@ function(
 	 */
 
 	reorganizeMapsPage();
-
+	
+	//boundary of valid extent
+	var initExtent = esri.geometry.Extent({
+		"xmax":  -8550513.84 ,
+		"xmin": -10751900.25,
+		"ymax": 7187679.36,
+		"ymin": 5720088.41,
+		"spatialReference": {
+			"wkid": 102100
+		}
+	});
+	
+	
 	// 1.
 	console.log('Creating Map');
 
 	map = new Map( "map" , {
 		basemap: "gray",	
-    	center: [-85.416, 49.000],
+		extent: initExtent,
 		zoom : 6,
 		logo: false,
 		sliderStyle: "small"
 	});
+	
+	on(map, 'extent-change', function( extent)
+	{
+		var outOfBounds = false;
+		// get center of current extent
+		var centerX = (map.extent.xmax - map.extent.xmin) / 2 + map.extent.xmin;
+		var centerY = (map.extent.ymax - map.extent.ymin) / 2 + map.extent.ymin;
+		
+		var adjX = 0;
+		var adjY = 0;
+		
+		if (centerX >  -8350513.84) {
+	
+			adjX = -8350513.84 - centerX;
+			outOfBounds = true;
+		} else if (centerX < -10951900.25) {
+		
+			adjX = -10951900.25 - centerX;
+			outOfBounds = true;
+		}
+		
+		if (centerY > 7387679.36) {
+
+			adjY = 7387679.36 - centerY;
+			outOfBounds = true;
+		} else if (centerY < 5520088.41) {
+	
+			adjY = 5520088.41 - centerY;
+			outOfBounds = true;
+		}
+		
+		if (outOfBounds) {
+			map.centerAt(new esri.geometry.Point({
+				"x": centerX + adjX,
+				"y": centerY + adjY,
+				"spatialReference": {
+					"wkid": 102100
+				}
+			}));
+		}
+	});
+	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 

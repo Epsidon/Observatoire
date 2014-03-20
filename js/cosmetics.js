@@ -40,7 +40,6 @@ function reorganizeMapsPage()
 		var mapContainerLeft = 400;
 		var mapContainerWidth = 400;
 		var zoomButtonHeight = 20;	
-			
 	}
 		
 		
@@ -60,6 +59,8 @@ function reorganizeMapsPage()
 		{'position' : 'absolute' , 'left' : loaderLeft + 'px', 'top' : loaderTop + 'px'});
 		
 	var legendTop = (mapHeight/2) + mapTop ;
+	
+	
 	var legendLeft = mapContainerLeft;
 	
 	$("#legendList").css(
@@ -68,12 +69,12 @@ function reorganizeMapsPage()
 	var mapLableTop = mapTop + zoomButtonHeight;
 	var mapLableLeft = mapContainerLeft + (mapContainerWidth / 2) - (mapLabelWidth / 2);
 	
-	var legendLabelTop =(mapHeight/2) + mapTop - (zoomButtonHeight*2);
+	var legendLabelTop =(mapHeight/2) + mapTop - (zoomButtonHeight * 2);
 	var legendLabelLeft = mapContainerLeft;
 	
 	$("#legendTitle").css(
 		{'position' : 'absolute' , 'left' : legendLabelLeft + 'px', 'top' : legendLabelTop + 'px'});	
-	
+		
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});			
 }

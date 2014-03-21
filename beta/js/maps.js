@@ -46,7 +46,6 @@ function(
 	map = new Map( "map" , {
 		basemap: "gray",
 		extent: initExtent,
-    	center: [-85.416, 49.000],
 		zoom : 5,
 		logo: false,
 		sliderStyle: "small"

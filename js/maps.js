@@ -63,22 +63,23 @@ function(
 	});
 	
 	  on(map, 'pan', function(evt) {
-	  
-	 
-            if ( !initExtent.contains(evt.extent) ) {
-                console.log('Outside bounds!');
-            } else {
-                console.log('Updated extent');
-                validExtent = evt.extent;
+		if (!initExtent.contains(evt.extent)) 
+			{
+				console.log('Outside bounds!');
+            } 
+			else 
+			{
+				console.log('Updated extent');
+				validExtent = evt.extent;
             }
-        });
+	});
 
-		
 	on(map, 'pan-end', function(evt) {
-            if ( !initExtent.contains(evt.extent) ) {
-                map.setExtent(validExtent);
-            }
-        }); 
+		if (!initExtent.contains(evt.extent)) 
+		{
+			map.setExtent(validExtent);
+		}
+	}); 
    /* 
 	 on(map, 'pan-end', function( extent)
 	{

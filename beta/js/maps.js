@@ -1,5 +1,7 @@
 require([
 	"esri/map", 
+	"esri/geometry/Extent",
+	"dojo/on",
 	"esri/layers/ImageParameters",
 	"esri/dijit/HomeButton", 
 	"esri/dijit/InfoWindowLite",
@@ -10,6 +12,8 @@ require([
 	"dojo/domReady!"], 
 function(
 	Map,
+	Extent,
+	on,
 	ImageParameters,
 	HomeButton,
 	InfoWindowLite,
@@ -26,16 +30,57 @@ function(
 	
 	organizer.reorganizeMapsPage();
 	
+	var initExtent = esri.geometry.Extent({
+		"xmax": -7506078.28,
+		"xmin": -11908851.11,
+		"ymax": 7989962.40,
+		"ymin": 5054780.52,
+		"spatialReference": {
+			"wkid": 102100
+		}
+	});
+	
 	// 1.
 	console.log('Creating Map');
 
 	map = new Map( "map" , {
-		basemap: "gray",	
+		basemap: "gray",
+		extent: initExtent,
     	center: [-85.416, 49.000],
-		zoom : 6,
+		zoom : 5,
 		logo: false,
 		sliderStyle: "small"
 	});
+	
+	 var validExtent = esri.geometry.Extent({
+		"xmax": -8506771.49,
+		"xmin": -10808157.90,
+		"ymax": 7256166.93,
+		"ymin": 4988575.99,
+		"spatialReference": {
+			"wkid": 102100
+		}
+	});
+	
+	on(map, 'pan', function(evt) {
+		if (!initExtent.contains(evt.extent)) 
+			{
+				console.log('Outside bounds!');
+            } 
+			else 
+			{
+				console.log('Updated extent');
+				validExtent = evt.extent;
+            }
+	});
+
+	on(map, 'pan-end', function(evt) {
+		if (!initExtent.contains(evt.extent)) 
+		{
+			map.setExtent(validExtent);
+		}
+	}); 
+	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 	

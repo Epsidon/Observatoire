@@ -51,7 +51,7 @@ function(
 		sliderStyle: "small"
 	});
 	
-	 var validExtent = esri.geometry.Extent({
+	/*  var validExtent = esri.geometry.Extent({
 		"xmax": -8506771.49,
 		"xmin": -10808157.90,
 		"ymax": 7256166.93,
@@ -59,9 +59,9 @@ function(
 		"spatialReference": {
 			"wkid": 102100
 		}
-	});
+	}); */
 	
-	on(map, 'pan', function(evt) {
+	/* on(map, 'pan', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
 			{
 				console.log('Outside bounds!');
@@ -78,7 +78,7 @@ function(
 		{
 			map.setExtent(validExtent);
 		}
-	}); 
+	});  */
 	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";

@@ -32,24 +32,15 @@ function(
 	
 	//boundary of valid extent
 	var initExtent = esri.geometry.Extent({
-		"xmax":  -8550513.84 ,
-		"xmin": -10751900.25,
-		"ymax": 7187679.36,
-		"ymin": 5720088.41,
+		"xmax": -7506078.28,
+		"xmin": -11908851.11,
+		"ymax": 7989962.40,
+		"ymin": 5054780.52,
 		"spatialReference": {
 			"wkid": 102100
 		}
 	});
 	
-	var validExtent = esri.geometry.Extent({
-		"xmax":  -8350513.84 ,
-		"xmin": -10951900.25,
-		"ymax": 7387679.36,
-		"ymin": 5520088.41,
-		"spatialReference": {
-			"wkid": 102100
-		}
-	});
 	// 1.
 	console.log('Creating Map');
 
@@ -61,7 +52,19 @@ function(
 		sliderStyle: "small"
 	});
 	
-	 /*  on(map, 'pan', function(evt) {
+	 var validExtent = esri.geometry.Extent({
+		"xmax": -8606771.49,
+		"xmin": -10808157.90,
+		"ymax": 7256166.93,
+		"ymin": 5788575.99,
+		"spatialReference": {
+			"wkid": 102100
+		}
+	});
+	
+	  on(map, 'pan', function(evt) {
+	  
+	 
             if ( !initExtent.contains(evt.extent) ) {
                 console.log('Outside bounds!');
             } else {
@@ -75,8 +78,8 @@ function(
             if ( !initExtent.contains(evt.extent) ) {
                 map.setExtent(validExtent);
             }
-        });  */
-   
+        }); 
+   /* 
 	 on(map, 'pan-end', function( extent)
 	{
 		var outOfBounds = false;
@@ -87,23 +90,23 @@ function(
 		var adjX = 0;
 		var adjY = 0;
 		
-		if (centerX >  -8350513.84) {
+		if (centerX > -5304691.87) {
 	
-			adjX = -8350513.84 - centerX;
+			adjX = -5304691.87 - centerX;
 			outOfBounds = true;
-		} else if (centerX < -10951900.25) {
+		} else if (centerX < -14110237.52) {
 		
-			adjX = -10951900.25 - centerX;
+			adjX = -14110237.52 - centerX;
 			outOfBounds = true;
 		}
 		
-		if (centerY > 7387679.36) {
+		if (centerY > 9457553.35) {
 
-			adjY = 7387679.36 - centerY;
+			adjY = 9457553.35 - centerY;
 			outOfBounds = true;
-		} else if (centerY < 5520088.41) {
+		} else if (centerY < 3587189.58) {
 	
-			adjY = 5520088.41 - centerY;
+			adjY = 3587189.58 - centerY;
 			outOfBounds = true;
 		}
 		if (outOfBounds) {
@@ -116,7 +119,7 @@ function(
 				}
 			}));
 		}
-	}); 
+	});  */
 	
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";

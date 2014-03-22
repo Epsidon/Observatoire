@@ -30,11 +30,13 @@ function(
 	
 	organizer.reorganizeMapsPage();
 	
+	
+	//initExtent stores boundary of your valid extent
 	var initExtent = esri.geometry.Extent({
-		"xmax": -7506078.28,
-		"xmin": -11908851.11,
-		"ymax": 7989962.40,
-		"ymin": 5054780.52,
+		"xmax":  -5204406.49,
+		"xmin": -14009952.14,
+		"ymax": 9477121.23,
+		"ymin": 3606757.45,
 		"spatialReference": {
 			"wkid": 102100
 		}
@@ -45,41 +47,37 @@ function(
 
 	map = new Map( "map" , {
 		basemap: "gray",
-		extent: initExtent,
-		zoom : 5,
+		center: [-85.416, 49.000],
+		//extent: initExtent,
+		zoom : 6,
 		logo: false,
 		sliderStyle: "small"
 	});
 	
-	/*  var validExtent = esri.geometry.Extent({
-		"xmax": -8506771.49,
-		"xmin": -10808157.90,
-		"ymax": 7256166.93,
-		"ymin": 4988575.99,
-		"spatialReference": {
-			"wkid": 102100
-		}
-	}); */
+	//"validExtent" stores the last valid extent found while panning 
+	 var validExtent ;
 	
-	/* on(map, 'pan', function(evt) {
+	on(map, 'pan', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
 			{
 				console.log('Outside bounds!');
+				
             } 
 			else 
 			{
 				console.log('Updated extent');
 				validExtent = evt.extent;
+			
             }
 	});
 
-	on(map, 'pan-end', function(evt) {
+	 on(map, 'pan-end', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
 		{
 			map.setExtent(validExtent);
 		}
-	});  */
-	
+	}); 
+	 
 	var imageParameters = new ImageParameters();
         imageParameters.format = "PNG";
 	

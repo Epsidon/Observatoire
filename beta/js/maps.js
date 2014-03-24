@@ -50,7 +50,7 @@ function(
 		map = new Map( "map" , {
 		basemap: "gray",
 		center: [-84.416, 49.000],
-		zoom : 5,
+		zoom : 6,
 		logo: false,
 		sliderStyle: "small"
 	});

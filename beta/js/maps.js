@@ -42,9 +42,46 @@ function(
 		}
 	});
 	
+	var windowWidth = $( window ).width();
+	console.log('window width is ' + windowWidth);
+	
+	if ( windowWidth <= 1920 || windowWidth >= 1464 )
+	{
+		map = new Map( "map" , {
+		basemap: "gray",
+		center: [-84.416, 49.000],
+		zoom : 5,
+		logo: false,
+		sliderStyle: "small"
+	});
+		
+	}
+	else if ( windowWidth < 1464 || windowWidth >= 1123 )
+	{
+		map = new Map( "map" , {
+		basemap: "gray",
+		center: [-85.416, 49.000],
+		zoom : 6,
+		logo: false,
+		sliderStyle: "small"
+	});
+	}
+	else if ( windowWidth < 1123)
+	{
+		map = new Map( "map" , {
+		basemap: "gray",
+		center: [-85.416, 49.000],
+		//extent: initExtent,
+		zoom : 4,
+		logo: false,
+		sliderStyle: "small"
+	});
+
+	}
+	
 	// 1.
 	console.log('Creating Map');
-
+/* 
 	map = new Map( "map" , {
 		basemap: "gray",
 		center: [-85.416, 49.000],
@@ -52,12 +89,12 @@ function(
 		zoom : 6,
 		logo: false,
 		sliderStyle: "small"
-	});
+	}); */
 	
 	//"validExtent" stores the last valid extent found while panning 
 	 var validExtent ;
 	
-	on(map, 'pan', function(evt) {
+	on(map, 'extent-change', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
 			{
 				console.log('Outside bounds!');

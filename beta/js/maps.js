@@ -45,7 +45,7 @@ function(
 	var windowWidth = $( window ).width();
 	console.log('window width is ' + windowWidth);
 	
-	if ( windowWidth <= 1920 || windowWidth >= 1464 )
+	if ( windowWidth <= 1920 && windowWidth >= 1464 )
 	{
 		map = new Map( "map" , {
 		basemap: "gray",
@@ -56,23 +56,36 @@ function(
 	});
 		
 	}
-	else if ( windowWidth < 1464 || windowWidth >= 1123 )
+	else if ( windowWidth < 1464 && windowWidth >= 1123 )
 	{
 		map = new Map( "map" , {
 		basemap: "gray",
 		center: [-85.416, 49.000],
-		zoom : 6,
+		zoom : 5,
 		logo: false,
 		sliderStyle: "small"
 	});
 	}
-	else if ( windowWidth < 1123)
+	else if ( windowWidth < 1123 && windowWidth >= 713)
 	{
 		map = new Map( "map" , {
 		basemap: "gray",
 		center: [-85.416, 49.000],
 		//extent: initExtent,
-		zoom : 4,
+		zoom : 5,
+		logo: false,
+		sliderStyle: "small"
+	});
+
+	}
+	
+	else if ( windowWidth < 713 )
+	{
+		map = new Map( "map" , {
+		basemap: "gray",
+		center: [-85.416, 49.000],
+		//extent: initExtent,
+		zoom : 3,
 		logo: false,
 		sliderStyle: "small"
 	});

@@ -192,6 +192,15 @@ function(
 
 	updateLegend();
 	
+	// Translate the popup window, if there is any translatable item in it. 	
+	setInterval(function(){
+		$(".spanToTranslate").each(function(index) {
+			$(this).removeClass('spanToTranslate');
+			$(this).html(translator.T($(this).html()));
+			$(this).removeClass('hidden');
+		});
+	}, 500);
+	
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;

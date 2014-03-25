@@ -85,7 +85,7 @@ function(
 		basemap: "gray",
 		center: [-85.416, 49.000],
 		//extent: initExtent,
-		zoom : 3,
+		zoom : 4,
 		logo: false,
 		sliderStyle: "small"
 	});

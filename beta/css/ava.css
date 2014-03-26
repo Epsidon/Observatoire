@@ -6,6 +6,18 @@
 .informationImage
 {
 	overflow:hidden;
+	
+}
+
+a:hover, a:focus
+{
+	color: #000000;
+	text-decoration: '';
+}
+
+.mapsInstructionOne
+{
+	color: #000;
 }
 
 .modal-header 

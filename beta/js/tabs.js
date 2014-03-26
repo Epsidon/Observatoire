@@ -51,9 +51,10 @@ Tabs.prototype.getMaps = function ()
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
 			
 			'<div class="mapsInstruction alert alert-success smallFont" id="instruction">' +
-			'<a href=http://216.48.92.42:8080/notes.html target=_blank>' +
-				'<img src="images/Information.jpg" class="smallIcon opacity informationImage" title="Information"/></a>' +
-				'<a id="mapsInstructionOne"></a>' +
+				'<object data="images/information.svg" type="image/svg+xml" id="object">' +
+					'<img src="images/Information.jpg" class="smallIcon opacity informationImage" title="Information" id="infoImage"/>' +
+				'</object>'+
+				'<p id="mapsInstructionOne" class="mapsInstructionOne" align="center"></p>' +
 			'</div>' +
 			
 			'<div id="legendTitle" class="transbox legendLabel"><b>Loading ...</b></div>' +

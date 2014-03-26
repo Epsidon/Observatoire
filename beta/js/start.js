@@ -21,8 +21,18 @@ $(document).ready(function()
 			$("#mapsModal").modal('show');
 		});
 
-	router.route();
+		router.route();
 	});
+	
+	$(document).ready(function()
+	{
+		$("#instruction").on("click", function()
+		   {
+				$("#mapsModal").modal('show');
+			});
 
+		router.route();
+	});
+	
 	router.route();
 });

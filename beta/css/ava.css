@@ -11,13 +11,19 @@
 
 a:hover, a:focus
 {
-	color: #000000;
+	color: #000;
 	text-decoration: '';
 }
 
 .mapsInstructionOne
 {
 	color: #000;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus 
+{
+	color: #000;
+	background-color: transparent;
 }
 
 .modal-header 

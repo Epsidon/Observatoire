@@ -14,6 +14,23 @@ Fr['North Simcoe Muskoka'] = 'Simcoe-Nord Muskoka' ;
 Fr['South East'] = 'Sud-Est' ;
 Fr['South West'] = 'Sud-Ouest'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
+
+Fr['Centre'] = 'Central';
+Fr['Centre-Est'] = 'Central East' ;
+Fr['Centre-Ouest'] = 'Central West'; 
+Fr['Centre-Toronto'] = 'Toronto Central' ;
+Fr['Champlain'] = 'Champlain' ;
+Fr['Erié St. Clair'] = 'Erie St Clair' ;
+Fr['Hamilton Niagara Haldimand Brant'] = 'Hamilton Niagara Haldimand Brant' ;
+Fr['Mississauga Halton'] = 'Mississauga Halton' ;
+Fr['Nord-Est'] = 'North East' ;
+Fr['Nord-Ouest'] = 'North West'; 
+Fr['Simcoe-Nord Muskoka'] = 'North Simcoe Muskoka' ;
+Fr['Sud-Est'] = 'South East' ;
+Fr['Sud-Ouest'] = 'South West'; 
+Fr['Waterloo Wellington'] = 'Waterloo Wellington';
+
+
 Fr['Global Non-Response Rate (GNR) = '] = 'Taux global de non-réponse (TGN) = ';
 Fr[' Global non-response rate (GNR) = '] = ' Taux global de non-réponse (TGN) = ';
 Fr['French Speaking Population (2011)'] = 'Population francophone (2011)';
@@ -107,7 +124,7 @@ Fr['Force'] = 'Force';
 Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario.';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
-Fr['Select a data layer from the menu below and click on map for detailed information. Click on '] = 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations. Cliquez sur le ' ;
+Fr[' Select a data layer'] = ' Modifier les couches de données' ;
 Fr['for data sources and methodology.'] = ' pour accéder aux notes méthodologiques.';
 Fr['Our Team'] = 'Notre équipe';
 Fr['Director and Primary Investigator'] = 'Directrice du projet et chercheuse principale';

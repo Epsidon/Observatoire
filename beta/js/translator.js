@@ -59,11 +59,10 @@ Translator.prototype.translatePage = function()
 	$('#homeOptionOne').html(this.T("Activities of data collection, research and production of new knowledge"));
 	$('#homeOptionTwo').html(this.T("Valorisation and transfer of knowledge"));
 
-	$('#mapsInstructionOne').html(this.T("Select a data layer from the menu below and click on map for detailed information. Click on "));
+	$('#mapsInstructionOne').html(this.T(" Select a data layer"));
 	$('#mapsInstructionTwo').html(this.T("for data sources and methodology."));
 	$('#analysisInstruction').html(this.T("Instruction"));
-	$('#mapsInstructionOne').html(this.T("Select a data layer from the menu below and click on map for detailed information. Click on "));
-	$('#mapsInstructionTwo').html(this.T("for data sources and methodology."));
+	
 	$('#moreLessSpaceMsg').html(this.T("More Space"));
 	$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada"));
 	$('#validationFirstContent').html(this.T("This research uses a regional summary indicator (IHPOLM) to measure the capacity of the health system to provide equitable access to health professionals for 2 million Official Language Minority Community (OLMC) members dispersed across 104 health regions in Canada."));

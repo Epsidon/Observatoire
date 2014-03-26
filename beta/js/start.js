@@ -16,8 +16,10 @@ $(document).ready(function()
 	
 	$(document).ready(function()
 	{
-      
-       $("#mapsInstructionOne").on("click", function(){ $("#mapsModal").modal('show');});
+		$("#mapsInstructionOne").on("click", function()
+	   {
+			$("#mapsModal").modal('show');
+		});
 
 	router.route();
 	});

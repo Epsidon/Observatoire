@@ -73,6 +73,7 @@ Router.prototype.route = function()
 			{
 				mapModal.modalUpdateMapsClick();
 			});
+			
 		}
 		
 		$('#mapsModal').modal('show');

@@ -13,6 +13,14 @@ $(document).ready(function()
 	{
 		router.route();
 	});
+	
+	$(document).ready(function()
+	{
+      
+       $("#mapsInstructionOne").on("click", function(){ $("#mapsModal").modal('show');});
+
+	router.route();
+	});
 
 	router.route();
 });

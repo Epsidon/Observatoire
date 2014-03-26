@@ -6,7 +6,6 @@
 .informationImage
 {
 	overflow:hidden;
-	
 }
 
 a:hover, a:focus
@@ -97,25 +96,33 @@ a:hover, a:focus
 
 .navbar-nav>li>a 
 {
-	padding-bottom: 15px;
+	padding-bottom: 15px;	
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th 
+{
 	background-color: #323549;
 	color: #FFFFFF;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-padding: 1px;
-
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td 
+{
+	padding: 1px;
 }
 
-.navbar-inverse .navbar-link {
-color: #000;
+.navbar-inverse .navbar-link 
+{
+	color: #000;
 }
 
-.navbar-inverse .navbar-link:hover {
-color: #000;
+.navbar-inverse .navbar-link:hover
+{
+	color: #000;
+}
+
+.nav>li 
+{
+	margin-left: 5px;
 }
 
 .alert-success 
@@ -138,7 +145,8 @@ body
     width: 330px;
 }
 
-.esriPopup {
+.esriPopup 
+{
     position: absolute;
     z-index: 40;
     box-shadow: 0 0 0.75em #777777;
@@ -159,7 +167,8 @@ body
 	text-decoration: underline;
 }
 
-.esriPopup .esriPopupWrapper {
+.esriPopup .esriPopupWrapper 
+{
     box-shadow: 0 0 0.75em #777777;
     -moz-box-shadow: 0 0 0.75em #777777;
     -webkit-box-shadow: 0 0 0.75em #777777;
@@ -308,7 +317,8 @@ input
 	padding: 1em;
 }
 
-.esriSimpleSliderHomeButton{
+.esriSimpleSliderHomeButton
+{
       border-bottom: 2px solid #666666;
       background-image: url(../dijit/images/home.png);
       background-repeat:no-repeat;

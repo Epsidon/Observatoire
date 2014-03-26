@@ -25,10 +25,12 @@ a:hover, a:focus
 	background-color: #BDCCD4;
 }
 
-.navbar-inverse
+.navbar-inverse 
 {
 	background-color: #2F3335;
 	border-color: #080808;
+	margin: 10px;
+	height: 35px;
 }
 
 .navbar-inverse .navbar-brand 
@@ -48,7 +50,6 @@ a:hover, a:focus
 
 .hospitalLabelWidth
 {
-	
 	font-family: arial bold;
 }
 
@@ -79,13 +80,18 @@ a:hover, a:focus
 
 .navbarItem
 {
-	border:2px solid;
-	border-radius:10px;
+	border:0px;
+	border-radius:4px;	
 }
 
 .navbar-inverse .navbar-nav>li>a {
 	color: #000;
 	font-family: arial bold;
+}
+
+.navbar-nav>li>a 
+{
+	padding-bottom: 15px;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {

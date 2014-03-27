@@ -8,6 +8,12 @@
 	overflow:hidden;
 }
 
+.modal-header {
+background-color: #BDCCD4;
+border-radius: 5px;
+border-bottom-color: #000000;
+}
+
 .navbar-xs .navbar-primary .navbar {
 min-height: 28px;
 margin: 10px;

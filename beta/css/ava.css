@@ -8,6 +8,17 @@
 	overflow:hidden;
 }
 
+.bold
+{
+	font-family:arial bold;
+	margin:10px;
+}
+
+.paddingMargin
+{
+	margin-left:20px;
+}
+
 .modal-header {
 background-color: #BDCCD4;
 border-radius: 5px;

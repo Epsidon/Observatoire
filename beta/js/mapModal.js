@@ -3,15 +3,15 @@ function MapModal()
 	this.accordion = [];
 
 	this.accordion[0] = []
-	this.accordion[0]['title'] = translator.T('French Speaking Population (2011)');
+	this.accordion[0]['title'] = '<u class="bold">' + translator.T('French Speaking Population (2011)') + '</u>';
 	this.accordion[0]['numLayers'] = 4;
 
 	this.accordion[1] = []
-	this.accordion[1]['title'] = translator.T('Profiles By LHIN (2011)');
+	this.accordion[1]['title'] = '<u class="bold">' + translator.T('Profiles By LHIN (2011)') + '</u>';
 	this.accordion[1]['numLayers'] = 3;
 
 	this.accordion[2] = []
-	this.accordion[2]['title'] = translator.T('Health Services (2011)');
+	this.accordion[2]['title'] = '<u class="bold">' + translator.T('Health Services (2011)') + '</u>';
 	this.accordion[2]['numLayers'] = 10;
 	
 	this.clickedLayerId = -1;
@@ -98,7 +98,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	if (accordionCounter != (this.accordion.length-1)) 
 	{
 		htmlBody += 
-			'<div float="left">' +
+			'<div class="smallFont">' +
 				'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
 						'class="layerHyperLinkCheckBox"' +
 						'onClick="javascript:mapModal.layerCheckBoxClicked(' + layerCounter + ')"/>' + 
@@ -108,19 +108,19 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	else
 	{
 		htmlBody += 
-				'<div float="right">' + 				
+				'<div class="smallFont">' + 				
 						'<input type="checkbox" id="servicePointHyperLink' + layerCounter + '" ' + 
 							'class="servicePointCheckBox"' +
 							'onClick="javascript:mapModal.servicePointCheckBoxClicked(' + layerCounter + ')"/>' + 
 						translator.T(layer.name) +
 				'</div>' +
 				
-				'<div class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 	
+				'<div class="smallFont paddingMargin servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 	
 						'<input type="checkbox"  class="servicePointBufferLayerCheckBox" id="servicePointBuffer10k' +layerCounter+ '" >' + 
 							translator.T(' 25 km Driving Distance') +
 				'</div>' + 
 				
-				'<div class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
+				'<div class="smallFont paddingMargin servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
 						'<input type="checkbox" class="servicePointBufferLayerCheckBox" id="servicePointBuffer20k' +layerCounter+ '" >' + 
 							translator.T(' 50 km Driving Distance') +
 				'</div>';

@@ -429,6 +429,12 @@ a.methodologicalNote
 	float:right;
 }
 
+.navbar-nav {
+float: left;
+margin: 0;
+font-family: arial bold;
+}
+
 div.transbox
   {
   background-color:#F2F5F6;

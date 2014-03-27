@@ -47,8 +47,7 @@ MapModal.prototype.fillModalBody = function()
 			var colspan = (j == self.accordion.length - 1)? 3 : 2;
 			
 			accordionHtmlBody += 
-				'<table class="table table-condensed table-hover table-bordered">' +
-					'<tr><td colspan="' + colspan +'"><strong>' + self.accordion[j]['title'] + '</strong></td></tr>';
+				'<div>' + self.accordion[j]['title'] + '</div>';
 
 			for (var k = 0; k < self.accordion[j]['numLayers']; k++)
 			{
@@ -58,7 +57,7 @@ MapModal.prototype.fillModalBody = function()
 				i++;
 			}
 
-			accordionHtmlBody += '</table>';
+			//accordionHtmlBody += '</table>';
 		}
 													
 		$( ".modal-body" ).html(accordionHtmlBody);
@@ -93,63 +92,38 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	
 	
 	if (this.accordionHeaders[layerCounter])
-				htmlBody += '<td colspan="3"><small>' + this.accordionHeaders[layerCounter] +
-							'</small></td>';
+				htmlBody += '<div' + this.accordionHeaders[layerCounter] +
+							'</div>';
 
 	if (accordionCounter != (this.accordion.length-1)) 
 	{
 		htmlBody += 
-			'<tr>' +
-				'<td>' + 
-					'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
+			'<div float="left">' +
+				'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
 						'class="layerHyperLinkCheckBox"' +
 						'onClick="javascript:mapModal.layerCheckBoxClicked(' + layerCounter + ')"/>' + 
-				'</td>' + 
-				'<td><small>' + 
 					translator.T(layer.name) +
-				'</small></td>' + 
-			'</tr>';
+			'</div>';
 	}
 	else
 	{
 		htmlBody += 
-				'<tr>' + 				
-					'<td>' + 
+				'<div float="right">' + 				
 						'<input type="checkbox" id="servicePointHyperLink' + layerCounter + '" ' + 
 							'class="servicePointCheckBox"' +
 							'onClick="javascript:mapModal.servicePointCheckBoxClicked(' + layerCounter + ')"/>' + 
-
-					'</td>' +
-
-					'<td colspan="2"><small>' + 
 						translator.T(layer.name) +
-					'</small></td>' + 
-				'</tr>' + 
-				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
-					'<td>' + 
-					'</td>' + 
-					'<td>' + 
+				'</div>' +
+				
+				'<div class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 	
 						'<input type="checkbox"  class="servicePointBufferLayerCheckBox" id="servicePointBuffer10k' +layerCounter+ '" >' + 
-						'</input>' +
-					'</td>' + 
-					'<td><small>' + 
 							translator.T(' 25 km Driving Distance') +
-					'</small></td>' + 
-				'</tr>' + 
-				'<tr class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
-
-					'<td>' + 
-					'</td>' + 
-
-					'<td>' + 
+				'</div>' + 
+				
+				'<div class="servicePointBufferRowLayer' + layerCounter + ' servicePointBufferRow">' + 
 						'<input type="checkbox" class="servicePointBufferLayerCheckBox" id="servicePointBuffer20k' +layerCounter+ '" >' + 
-						'</input>' +
-					'</td>' + 
-					'<td><small>' + 
 							translator.T(' 50 km Driving Distance') +
-					'</small></td>' + 
-					
-				'</tr>';
+				'</div>';
 	}
 
 /*	

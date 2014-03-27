@@ -14,6 +14,11 @@ a:hover, a:focus
 	text-decoration: '';
 }
 
+a {
+color: #000000;
+text-decoration: none;
+}
+
 .mapsInstructionOne
 {
 	color: #000;
@@ -29,6 +34,11 @@ a:hover, a:focus
 .modal-header .close
  {
 	margin-top: -10px;
+}
+
+.navbar-header
+{
+	height: 35px;
 }
 
 .modal-dialog
@@ -427,4 +437,41 @@ div.transbox
   opacity:0.7;
   filter:alpha(opacity=70); /* For IE8 and earlier */
  }
+
+.navbar-toggle {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: url('toggle.jpg');
+border: 2px solid white;
+border-radius: 4px;
+}
+
+input, button, select, textarea {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+
  
+ .navbar-primary .navbar { background:#2f3335; border-bottom:none; }
+.navbar-primary .navbar .nav > li > a {color: #000000;}
+.navbar-primary .navbar .nav > li > a {color: #000000;}
+.navbar-primary .navbar .nav > li > a:hover {color: #000;}
+.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {color:#000;}
+.navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover,
+.navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;border-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar    .nav > li.dropdown.open > a .caret {border-top-color: #fff;}
+.navbar-primary .navbar .navbar-brand {color:#fff;}
+.navbar-primary .navbar .nav.pull-right {margin-left: 10px;margin-right: 0;}
+.navbar-xs .navbar-primary .navbar { min-height:28px; } 
+.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 8px 8px;font-size: 16px;line-height: 18px; } 
+.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; } 
+.navbar-sm .navbar-primary .navbar { min-height:40px; } 
+.navbar-sm .navbar-primary .navbar .navbar-brand{ padding: 12px 12px;font-size: 16px;line-height: 18px; } 
+.navbar-sm .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 12px; padding-bottom: 12px; line-height: 20px; }

@@ -17,6 +17,17 @@ a:hover, a:focus
 .mapsInstructionOne
 {
 	color: #000;
+	float: center;
+}
+
+#object
+{
+	float:left;
+}
+
+.mapsInstruction
+{
+	width:195px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus 
@@ -35,7 +46,6 @@ a:hover, a:focus
 	background-color: #2F3335;
 	border-color: #080808;
 	margin: 10px;
-	height: 35px;
 	border-radius: 5px;
 }
 
@@ -150,7 +160,23 @@ body
 
 .esriPopup .sizer 
 {
-    width: 330px;
+    width: 300px;
+}
+
+.esriPopup .titlePane 
+{
+background-color: #2F3335;
+color: #FFFFFF;
+line-height: 40px;
+padding-left: 6px;
+border-radius: 5px 5px 0px 0px;
+-moz-border-radius: 5px 5px 0px 0px;
+-webkit-border-radius: 5px 5px 0px 0px;
+-o-border-radius: 5px 5px 0px 0px;
+cursor: default;
+border: 1px solid #BEB7B7;
+border-bottom: none;
+height: 40px;
 }
 
 .esriPopup 

@@ -62,6 +62,8 @@ Translator.prototype.translatePage = function()
 	$('#mapsInstructionOne').html(this.T(" Select a data layer"));
 	$('#mapsInstructionTwo').html(this.T("for data sources and methodology."));
 	$('#analysisInstruction').html(this.T("Instruction"));
+	$('#notesLinkPage').html(this.T(" Select a data layer from the menu below and click on map for detailed information."));
+	
 	
 	$('#moreLessSpaceMsg').html(this.T("More Space"));
 	$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada"));

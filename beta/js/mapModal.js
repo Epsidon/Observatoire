@@ -33,6 +33,12 @@ MapModal.prototype.fillModalBody = function()
 		layers = data.layers;
 		
 		var accordionHtmlBody = '';
+		
+		accordionHtmlBody = '<div class="notesDiv">' +
+				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
+				'<p align="center">' +
+					translator.T('Select a data layer from the menu below and click on map for detailed information.') + '</p>' +
+			'</div>' ;
 
 		var i = 0;
 
@@ -84,7 +90,8 @@ MapModal.prototype.fillModalBody = function()
 MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accordionCounter) 
 {
 	htmlBody = '';
-		
+	
+	
 	if (this.accordionHeaders[layerCounter])
 				htmlBody += '<td colspan="3"><small>' + this.accordionHeaders[layerCounter] +
 							'</small></td>';

@@ -191,6 +191,7 @@ Fr['FLS Identified'] = 'Identifié - LSF';
 Fr['FLS Designated Partial'] = 'Désignation partielle - LSF';
 Fr['FLS Designated All'] = 'Désignation complète - LSF';
 Fr['Selected layer:'] = 'Couche choisie:';
+Fr[' Select a data layer from the menu below and click on map for detailed information.'] = ' Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
 Fr['Legend: '] = 'légende: ';
 Fr['Mother Tongue = French'] = 'Langue maternelle = Français';

@@ -20,6 +20,27 @@ a:hover, a:focus
 	float: center;
 }
 
+.modal-title 
+{
+	margin: 0;
+	line-height: 20%;
+}
+
+.modal-header .close
+ {
+	margin-top: -10px;
+}
+
+.modal-dialog
+{
+	width: 500px;
+}
+
+.modal-header
+{
+	height: 35px;
+}
+
 #object
 {
 	float:left;

@@ -134,13 +134,13 @@ Router.prototype.normalizeHashLanguage = function()
 	{
 		$('#alternativeLanguageContainer').html(
 			'<a href="javascript:router.setLanguage(\'#french\')" '+ 
-				'class="navbar-link">Français</a>');
+				'class="navbar-link">Fr</a>');
 	}
 	else
 	{
 		$('#alternativeLanguageContainer').html(
 			'<a href="javascript:router.setLanguage(\'#english\')" '+ 
-				'class="navbar-link">English</a>');
+				'class="navbar-link">En</a>');
 	}
 };
 

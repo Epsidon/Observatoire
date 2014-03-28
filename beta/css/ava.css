@@ -87,12 +87,26 @@ border-color: #A29898;
 .btn-primary {
 color: #000;
 background-color: #BDCCD4;
-border-color: #6E7174;
+border-color: #adadad;
 font-family: arial bold;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-color: #333;
+color: #000;
+background-color: #F2F5F6;
+border-color: #adadad;
+font-family: arial bold;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+color: #000;
+background-color: #BDCCD4;
+border-color: #adadad;
+FONT-family: arial bold;
+}
+
+.btn-default {
+color: #000;
 background-color: #F2F5F6;
 border-color: #adadad;
 font-family: arial bold;

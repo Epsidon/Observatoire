@@ -14,9 +14,26 @@
 	margin:10px;
 }
 
+.modalFooterSize
+{
+	height: 55px;
+}
+
 .paddingMargin
 {
 	margin-left:20px;
+}
+
+.right
+{
+	float:right;
+}
+
+.modal-footer {
+margin-top: 15px;
+padding: 9px 10px 10px;
+text-align: right;
+border-top: 1px solid #e5e5e5;
 }
 
 .modal-header {

@@ -30,38 +30,57 @@ MapModal.prototype.fillModalBody = function()
 	console.log('Setting up accordion');
 	$.get("layers.json", function( data ) 
 	{
+		var modalMaps = Array();
 		layers = data.layers;
 		
 		var accordionHtmlBody = '';
 		
-		accordionHtmlBody = '<div class="notesDiv">' +
+		accordionHtmlBody = 
+			'<div class="notesDiv">' +
 				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
 				'<p align="center">' +
 					translator.T('Select a data layer from the menu below and click on map for detailed information.') + '</p>' +
-			'</div>' ;
+			'</div>' +
+			'<div>' +
+				'<table border="0">' + 
+					'<tr>' +
+						'<td id="modalMapLanguage"></td>' +
+						'<td rowspan="2" id="modalMapHospital"></td>' +
+					'</tr>' +
+					'<tr>' +
+						'<td id="modalMapHealth"></td>' +
+					'</tr>' +
+				'</table>' +
+			'</div>';
 
 		var i = 0;
 
 		for (var j = 0; j < self.accordion.length; j++)
 		{
+			modalMaps[j] = '';
+			
 			var colspan = (j == self.accordion.length - 1)? 3 : 2;
 			
-			accordionHtmlBody += 
-				'<div>' + self.accordion[j]['title'] + '</div>';
+			modalMaps[j] += 
+				'<div>' + self.accordion[j]['title'] ;
 
 			for (var k = 0; k < self.accordion[j]['numLayers']; k++)
 			{
 				var layer = layers[i];
 						
-				accordionHtmlBody += self.getAccordionRowHtmlBody(layer, i, j);
+				modalMaps[j] += self.getAccordionRowHtmlBody(layer, i, j);
 				i++;
 			}
 
-			//accordionHtmlBody += '</table>';
+			modalMaps[j] += '</div>';
 		}
 													
 		$( ".modal-body" ).html(accordionHtmlBody);
 
+		$( "#modalMapLanguage" ).html(modalMaps[0]);
+		$( "#modalMapHealth" ).html(modalMaps[1]);
+		$( "#modalMapHospital" ).html(modalMaps[2]);
+				
 		$('.servicePointBufferRow').hide();	
 
 		self.addSelectedItemsToModal();
@@ -98,7 +117,7 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	if (accordionCounter != (this.accordion.length-1)) 
 	{
 		htmlBody += 
-			'<div class="smallFont">' +
+			'<div class="smallFont" >' +
 				'<input type="checkbox" id="layerHyperLink' +layerCounter+ '" ' + 
 						'class="layerHyperLinkCheckBox"' +
 						'onClick="javascript:mapModal.layerCheckBoxClicked(' + layerCounter + ')"/>' + 

@@ -75,11 +75,10 @@ Router.prototype.route = function()
 				mapModal.modalUpdateMapsClick();
 			});
 						
-			$("#hospitalLegendList").draggable();
-			$("#instruction").draggable();
-			$("#legendTitle").draggable();
-			$("#legendList").draggable();
-
+			$("#hospitalLegendList").draggable({containment: "parent"});
+			$("#instruction").draggable({containment: "parent"});
+			$("#legendTitle").draggable({containment: "parent"});
+			$("#legendList").draggable({containment: "parent"});
 
 			$("#instruction").on("click", function()
 			{

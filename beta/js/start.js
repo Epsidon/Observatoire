@@ -18,44 +18,6 @@ $(document).ready(function()
 	{
 		organizer.reorganizeMapsPage();
 	});
-	
-	$(document).ready(function()
-	{
-		$("#mapsInstructionOne").on("click", function()
-	   {
-			$("#mapsModal").modal('show');
-		});
 		
-		$("#hospitalLegendList").on("click", function()
-	   {
-			$("#hospitalLegendList").draggable();
-		});
-		
-		$("#instruction").on("click", function()
-	   {
-			$("#instruction").draggable();
-		});
-		
-		$("#legendTitle").on("click", function()
-	   {
-			$("#legendTitle").draggable();
-		});
-		
-		$("#legendList").on("click", function()
-	   {
-			$("#legendList").draggable();
-		});
-		
-	});
-	
-	$(document).ready(function()
-	{
-		$("#instruction").on("click", function()
-		   {
-				$("#mapsModal").modal('show');
-			});
-
-	});
-	
 	router.route();
 });

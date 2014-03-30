@@ -17,12 +17,13 @@ Router.prototype.route = function()
 
 	var currentHashArray = location.hash.split('_');
 	
-	/**it gets element 1 of hashArray (which is "maps","analysis", ...)
-	*	and based on the result hash
-	*	it calls methods 
-	*	if hash ="maps" -->  tabs.getMaps
-	* getHome, getMaps, ...  are defined in "tas.js"
-	**/
+	/**
+	 * it gets element 1 of hashArray (which is "maps","analysis", ...)
+	 * and based on the result hash
+	 * it calls methods 
+	 * if hash ="maps" --> tabs.getMaps
+	 * getHome, getMaps, ...  are defined in "tas.js"
+	 **/
 	switch(currentHashArray[1])
 	{
 		case 'home':
@@ -73,7 +74,17 @@ Router.prototype.route = function()
 			{
 				mapModal.modalUpdateMapsClick();
 			});
-			
+						
+			$("#hospitalLegendList").draggable();
+			$("#instruction").draggable();
+			$("#legendTitle").draggable();
+			$("#legendList").draggable();
+
+
+			$("#instruction").on("click", function()
+			{
+				$("#mapsModal").modal('show');
+			});
 		}
 		
 		$('#mapsModal').modal('show');

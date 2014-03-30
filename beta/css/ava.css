@@ -402,7 +402,11 @@ h2
 #hospitalLegendList
 {
 	font-size: 17px;
-	text-decoration:underline;
+	font-family:arial bold;
+	border-color: #000;
+	border-width:1px;
+	border-radius: 5px;
+	padding:5px;
 }
 
 label 
@@ -459,6 +463,11 @@ input
 #legendList 
 {
 	padding: 1em;
+}
+
+.cursorStyle
+{
+	cursor:move;
 }
 
 #legendTitle 

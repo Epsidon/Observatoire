@@ -50,17 +50,17 @@ Tabs.prototype.getMaps = function ()
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
 			
-			'<div class="mapsInstruction alert alert-success smallFont" id="instruction">' +
+			'<div class="mapsInstruction alert alert-success smallFont cursorStyle" id="instruction">' +
 				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
-				'<p id="mapsInstructionOne" class="mapsInstructionOne" align="center"></p>' +
+				'<p id="mapsInstructionOne" class="mapsInstructionOne cursorStyle" align="center"></p>' +
 			'</div>' +
 			
-			'<div id="legendTitle" class="transbox legendLabel"><b>Loading ...</b></div>' +
+			'<div id="legendTitle" class="transbox legendLabel cursorStyle"><b>Loading ...</b></div>' +
 			
-			'<div id="hospitalLegendList" class="transbox"></div>' +
+			'<div id="hospitalLegendList" class="transbox cursorStyle"></div>' +
 			
 			
-			'<div id="legendList" class="transbox">' +
+			'<div id="legendList" class="transbox cursorStyle smallFont">' +
 				'<div id="layerLegendList"></div>' +
 			'</div>' +
 		

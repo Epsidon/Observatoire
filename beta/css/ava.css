@@ -474,7 +474,7 @@ input
 	cursor:move;
 }
 
-#legendTitle 
+#legendTitle_Disabled 
 {
 	padding: 1em;
 	border-color: #D8D7D7;

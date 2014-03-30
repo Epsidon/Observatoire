@@ -42,67 +42,16 @@ function(
 		}
 	});
 	
-	var windowWidth = $( window ).width();
-	console.log('window width is ' + windowWidth);
-	
-	if ( windowWidth <= 1920 && windowWidth >= 1464 )
-	{
-		map = new Map( "map" , {
-		basemap: "gray",
-		center: [-84.416, 49.000],
-		zoom : 6,
-		logo: false,
-		sliderStyle: "small"
-	});
-		
-	}
-	else if ( windowWidth < 1464 && windowWidth >= 1123 )
-	{
-		map = new Map( "map" , {
-		basemap: "gray",
-		center: [-85.416, 49.000],
-		zoom : 5,
-		logo: false,
-		sliderStyle: "small"
-	});
-	}
-	else if ( windowWidth < 1123 && windowWidth >= 713)
-	{
-		map = new Map( "map" , {
-		basemap: "gray",
-		center: [-85.416, 49.000],
-		//extent: initExtent,
-		zoom : 5,
-		logo: false,
-		sliderStyle: "small"
-	});
-
-	}
-	
-	else if ( windowWidth < 713 )
-	{
-		map = new Map( "map" , {
-		basemap: "gray",
-		center: [-85.416, 49.000],
-		//extent: initExtent,
-		zoom : 4,
-		logo: false,
-		sliderStyle: "small"
-	});
-
-	}
-	
 	// 1.
 	console.log('Creating Map');
-/* 
 	map = new Map( "map" , {
 		basemap: "gray",
-		center: [-85.416, 49.000],
-		//extent: initExtent,
-		zoom : 6,
+		center: [-84.416, 49.000],
+		zoom : getInitialZoom(),
 		logo: false,
-		sliderStyle: "small"
-	}); */
+		sliderStyle: "small"});
+
+
 	
 	//"validExtent" stores the last valid extent found while panning 
 	 var validExtent ;
@@ -524,6 +473,43 @@ function(
 			$("#loadingIndicator").fadeOut('fast');
 			$( "#map" ).fadeTo("fast" , 1);	
 		}
+	}
+	
+	/**
+	 * This function gets the width and height of the screen and based on that suggests 
+	 * an initial zoom level that fits the entire map in the page. 
+ 	 *
+	 * Here is how it works: The ratio of height to width in the map of ontario is 57/53.
+	 * We first measure the ratio of window height to width. If it is less than 57/53, 
+	 * we conclude we have to squeeze the map based on height. If not we have to do it 
+	 * based on width. 
+	 *
+	 * For each case 4 scenariors are defined and based on the scenario we get the zoom 
+	 * level. 
+	 */
+	function getInitialZoom()
+	{
+	
+		var mapHeightToWidthRatio = 57 / 53;
+ 		var normalizedDimentionBoundries = Array(1464, 1123, 713);
+
+		var windowWidth = $( window ).width();
+		var windowHeight = $( window ).height();
+		var windowHeightToWidthRatio = windowHeight / windowWidth;
+				
+		if (windowHeightToWidthRatio < mapHeightToWidthRatio)
+			var mapNormalizedDimention = windowHeight * mapHeightToWidthRatio;
+		else
+			var mapNormalizedDimention = windowWidth;
+			
+		if ( mapNormalizedDimention >= normalizedDimentionBoundries[0] )
+			return 7;
+		else if ( mapNormalizedDimention >= normalizedDimentionBoundries[1] )
+			return 6;
+		else if ( mapNormalizedDimention >= normalizedDimentionBoundries[2] )
+			return 5;
+		else
+			return 4;
 	}
 
 	window.map = map;

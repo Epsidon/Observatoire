@@ -8,8 +8,8 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendHeight = $("#legendList").height();
 	var legendWidth = $("#legendList").width();
 	
-	var mapHeight = $(window).height() - mapTop - (navbarBrandHeight * 2);
-	var mapWidth = $(window).width() - (mapLeft * 2);
+	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
+	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
 
 	var legendTop = mapTop + mapHeight - legendHeight - (navbarBrandHeight * 2);
 	var legendLeft = (mapLeft *2);
@@ -24,7 +24,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var instructionLeft = (mapLeft *2);
 	
 	var hospitalLegendLabelTop = mapHeight - (mapLeft * 3);
-	var hospitalLegendLabelLeft = (mapWidth /3) ;
+	var hospitalLegendLabelLeft = (mapWidth /5) ;
 	
 	$("#instruction").css(
 		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	

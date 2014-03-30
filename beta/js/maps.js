@@ -33,7 +33,7 @@ function(
 	
 	//initExtent stores boundary of your valid extent
 	var initExtent = esri.geometry.Extent({
-		"xmax":  -5204406.49,
+		"xmax": -5204406.49,
 		"xmin": -14009952.14,
 		"ymax": 9477121.23,
 		"ymin": 3606757.45,
@@ -54,7 +54,7 @@ function(
 
 	
 	//"validExtent" stores the last valid extent found while panning 
-	 var validExtent ;
+	var validExtent ;
 	
 	on(map, 'extent-change', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
@@ -485,7 +485,7 @@ function(
 	 * based on width. 
 	 *
 	 * For each case 4 scenariors are defined and based on the scenario we get the zoom 
-	 * level. 
+	 * level. To reuse the code we normalize the dimensions based on width. 
 	 */
 	function getInitialZoom()
 	{

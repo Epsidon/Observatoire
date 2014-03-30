@@ -47,6 +47,29 @@ Router.prototype.route = function()
 	
 	}
 	
+/*	
+	var selectedTabLeft = $("#homeTabContainer").offset().left;	
+	var selectedTabTop = $("#homeTabContainer").offset().top;	
+	var selectedTabHeight = $("#homeTabContainer").height();
+	var selectedTabWidth = $("#homeTabContainer").width();
+
+	var downTriangleHolderWidth = 15; // $("#downTriangleHolder").width();
+
+	var downTriangleHolderTop = selectedTabTop + selectedTabHeight;
+	var downTriangleHolderLeft = selectedTabLeft + 
+		((selectedTabWidth - downTriangleHolderWidth) / 2);
+
+	console.log('selectedTabLeft: ' + selectedTabLeft);
+	console.log('selectedTabTop: ' + selectedTabTop);
+	console.log('selectedTabHeight: ' + selectedTabHeight);
+	console.log('selectedTabWidth: ' + selectedTabWidth);
+	console.log('downTriangleHolderWidth: ' + downTriangleHolderWidth);
+	console.log('downTriangleHolderLeft: ' + downTriangleHolderLeft);
+	console.log('downTriangleHolderTop: ' + downTriangleHolderTop);
+		
+	$("#downTriangleHolder").css(
+		{'position' : 'absolute' , 'left' : downTriangleHolderLeft + 'px', 'top' : downTriangleHolderTop + 'px'});	
+*/
 	
 	if (currentHashArray[1] != 'maps')
 	{

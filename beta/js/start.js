@@ -14,6 +14,11 @@ $(document).ready(function()
 		router.route();
 	});
 	
+	$(window).on('resize',function()
+	{
+		organizer.reorganizeMapsPage();
+	});
+	
 	$(document).ready(function()
 	{
 		$("#mapsInstructionOne").on("click", function()

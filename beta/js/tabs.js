@@ -56,10 +56,14 @@ Tabs.prototype.getMaps = function ()
 			'</div>' +
 			
 			'<div id="legendTitle" class="transbox legendLabel"><b>Loading ...</b></div>' +
+			
 			'<div id="hospitalLegendList" class="transbox"></div>' +
-			'<div id="legendList" class="transbox smallFont">' +
+			
+			
+			'<div id="legendList" class="transbox">' +
 				'<div id="layerLegendList"></div>' +
 			'</div>' +
+		
 		'</div>' +
 		
 		'<div class="modal fade" id="mapsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +

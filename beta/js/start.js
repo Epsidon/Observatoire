@@ -20,7 +20,27 @@ $(document).ready(function()
 	   {
 			$("#mapsModal").modal('show');
 		});
-
+		
+		$("#hospitalLegendList").on("click", function()
+	   {
+			$("#hospitalLegendList").draggable();
+		});
+		
+		$("#instruction").on("click", function()
+	   {
+			$("#instruction").draggable();
+		});
+		
+		$("#legendTitle").on("click", function()
+	   {
+			$("#legendTitle").draggable();
+		});
+		
+		$("#legendList").on("click", function()
+	   {
+			$("#legendList").draggable();
+		});
+		
 		router.route();
 	});
 	

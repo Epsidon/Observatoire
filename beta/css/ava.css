@@ -8,10 +8,11 @@
 	overflow:hidden;
 }
 
-.bold
+.bold 
 {
-	font-family:arial bold;
-	margin:10px;
+	font-size: small;
+	font-family: arial bold;
+	margin: 0.1em;
 }
 
 .modalFooterSize
@@ -403,7 +404,7 @@ h2
 {
 	font-size: 17px;
 	font-family:arial bold;
-	border-color: #000;
+	border-color: #D8D7D7;
 	border-width:1px;
 	border-radius: 5px;
 	padding:5px;
@@ -463,6 +464,9 @@ input
 #legendList 
 {
 	padding: 1em;
+	border-color: #D8D7D7;
+	border-width:1px;
+	border-radius: 5px;
 }
 
 .cursorStyle
@@ -473,6 +477,9 @@ input
 #legendTitle 
 {
 	padding: 1em;
+	border-color: #D8D7D7;
+	border-width:1px;
+	border-radius: 5px;
 }
 
 .modal-content {

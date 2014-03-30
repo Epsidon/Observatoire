@@ -8,23 +8,23 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendHeight = $("#legendList").height();
 	var legendWidth = $("#legendList").width();
 	
-	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
-	var mapWidth = $(window).width() - (navbarBrandHeight * 2);
+	var mapHeight = $(window).height() - mapTop - (navbarBrandHeight * 2);
+	var mapWidth = $(window).width() - (mapLeft * 2);
 
 	var legendTop = mapTop + mapHeight - legendHeight - (navbarBrandHeight * 2);
-	var legendLeft = mapLeft + navbarBrandHeight;
+	var legendLeft = (mapLeft *2);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
 	
-	var legendLabelTop = mapTop + mapHeight - legendHeight - (navbarBrandHeight * 7 );
-	var legendLabelLeft = mapLeft + navbarBrandHeight;
+	var legendLabelTop = (mapTop ) + mapHeight - legendHeight - (navbarBrandHeight * 4 );
+	var legendLabelLeft = (mapLeft *2);
 	
 	var instructionTop = mapTop + (mapHeight / 2) - (mapTop * 2);
-	var instructionLeft = mapLeft + navbarBrandHeight;
+	var instructionLeft = (mapLeft *2);
 	
-	var hospitalLegendLabelTop = mapHeight;
-	var hospitalLegendLabelLeft = legendWidth + mapTop;
+	var hospitalLegendLabelTop = mapHeight - (mapLeft * 3);
+	var hospitalLegendLabelLeft = (mapWidth /3) ;
 	
 	$("#instruction").css(
 		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	

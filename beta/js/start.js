@@ -41,7 +41,6 @@ $(document).ready(function()
 			$("#legendList").draggable();
 		});
 		
-		router.route();
 	});
 	
 	$(document).ready(function()
@@ -51,7 +50,6 @@ $(document).ready(function()
 				$("#mapsModal").modal('show');
 			});
 
-		router.route();
 	});
 	
 	router.route();

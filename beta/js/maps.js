@@ -148,8 +148,21 @@ function(
 			$(this).html(translator.T($(this).html()));
 			$(this).removeClass('hidden');
 		});
-	}, 500);
 	
+	/* 	$(".methodologicalNote").each(function(index) {
+			
+			$(".methodologicalNote").addClass(" sizer actionsPane actionList action zoomTo ");
+		});
+		
+		$(".zoomTo").each(function(index) {
+			
+			$(".zoomTo").addClass("   actionList action zoomTo ");
+		}); */
+	
+		$(".zoomTo").append($(".methodologicalNote"));
+	}, 100);
+	
+
 	numVisibleSpinners = 0;
 	map.on("zoom-start", function() {
 		numVisibleSpinners++;

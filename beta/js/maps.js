@@ -149,8 +149,12 @@ function(
 			$(this).removeClass('hidden');
 		});
 		
-		$(".zoomTo").append($(".methodologicalNote"));
-	}, 500);
+		 var methNote = $(".methodologicalNote").first();
+		 $(".methodologicalNote").remove();
+		 $(".zoomTo").append($(methNote));
+		 
+	}, 100);
+	
 	
 
 	numVisibleSpinners = 0;

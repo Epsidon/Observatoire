@@ -132,6 +132,8 @@ Fr['Manager, Data & Analyses'] = 'Gestionnaire, données et analyse';
 Fr['Associate professor, School of Information Technology and Engineering'] = 'Professeur agrégé, École d’ingénierie et de technologie de l’information';
 Fr['Programmers'] = 'Programmeurs';
 Fr['Analysts'] = 'Analystes';
+Fr['Interactive Maps'] = 'CARTES INTERACTIVES';
+Fr['Select a data layer from the menu below and click on map for detailed information.']= 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
 
 

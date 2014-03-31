@@ -148,19 +148,9 @@ function(
 			$(this).html(translator.T($(this).html()));
 			$(this).removeClass('hidden');
 		});
-	
-	/* 	$(".methodologicalNote").each(function(index) {
-			
-			$(".methodologicalNote").addClass(" sizer actionsPane actionList action zoomTo ");
-		});
 		
-		$(".zoomTo").each(function(index) {
-			
-			$(".zoomTo").addClass("   actionList action zoomTo ");
-		}); */
-	
 		$(".zoomTo").append($(".methodologicalNote"));
-	}, 100);
+	}, 500);
 	
 
 	numVisibleSpinners = 0;

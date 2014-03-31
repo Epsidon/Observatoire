@@ -320,7 +320,7 @@ layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${English
 "<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" +
 "<table border=1 class='table table-striped'>"+
 "<tr>"+
-"<th align='center'></th>"+
+"<th align='center' id='emptyHeader'></th>"+
 "<th align='center'>" + translator.T("French Only") + "</th>" +
 "<th align='center'>" + translator.T("English Only") + "</th>" +
 "<th align='center'>" + translator.T("French & English") + "</th>" +

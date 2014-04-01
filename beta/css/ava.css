@@ -78,7 +78,7 @@ line-height: 18px;
 a:hover, a:focus
 {
 	color: #000;
-	text-decoration: '';
+	text-decoration: none;
 }
 
 a {
@@ -501,25 +501,30 @@ input
 	width:25px;
 }
 
-#legendList 
-{
-	padding: 1em;
-	border-color: #D8D7D7;
-	border-width:1px;
-	border-radius: 5px;
+#legendList {
+padding: 1em;
+border-color: #D8D7D7;
+border-width: 1px;
+border-radius: 5px;
+width: 195px;
 }
-
 .cursorStyle
 {
 	cursor:move;
 }
 
-#legendTitle 
+#legendTitle {
+padding: 1em;
+color: #000;
+font-family: arial bold;
+}
+
+#layerLegendList
 {
-	padding: 1em;
-	border-color: #746B6B;
+	border-color: #FFFFFF;
 	border-width: 1px;
-	border-radius: 5px;
+	background-color:#E0E0FF;
+	
 }
 
 .modal-content {

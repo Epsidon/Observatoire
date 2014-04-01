@@ -43,7 +43,8 @@ Router.prototype.route = function()
 			break;
 			
 		default: 
-			var body = tabs.getHome();				
+			var body = tabs.getHome();
+			$('#homeTab').addClass('selectedTab');
 	
 	}
 	

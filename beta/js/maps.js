@@ -355,9 +355,6 @@ function(
 
 		$('#mapLabel').html('<b>' + translator.T('Selected layer:') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
-		console.log('map name is ' + mapLayerLabel);
-
-		//organizer.reorganizeMapsPage();
 	}
 	
 	function updateLegend()

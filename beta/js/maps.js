@@ -30,7 +30,6 @@ function(
 	
 	organizer.reorganizeMapsPage();
 	
-	
 	//initExtent stores boundary of your valid extent
 	var initExtent = esri.geometry.Extent({
 		"xmax": -5204406.49,
@@ -350,7 +349,7 @@ function(
 		$('#legendTitle').html('<b>' + translator.T('Legend: ') +  '</b>' + LayerLegend + "  "  );
 		$('#legendTitle').show();
 
-		organizer.reorganizeMapsPage();
+		
 	}
 	
 	function removeLegend()
@@ -425,7 +424,7 @@ function(
 
 		$('#legendList').show();
 		
-		organizer.reorganizeMapsPage();
+		//organizer.reorganizeMapsPage();
 	}
 
 	function showResults(featureSet) 

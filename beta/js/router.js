@@ -28,18 +28,22 @@ Router.prototype.route = function()
 	{
 		case 'home':
 			var body = tabs.getHome();
+			$('#homeTab').removeClass('selectedTab');
 			break;
 	
 		case 'maps':
 			var body = tabs.getMaps();
+			$('#homeTab').removeClass('selectedTab');
 			break;
 	
 		case 'analysis':
 			var body = tabs.getAnalysis();
+			$('#homeTab').removeClass('selectedTab');
 			break;
 	
 		case 'partners':
 			var body = tabs.getPartners();
+			$('#homeTab').removeClass('selectedTab');
 			break;
 			
 		default: 

@@ -14,6 +14,12 @@ border-style: solid;
 border-color: #888AC4;
 }
 
+.navbar-primary .navbar .nav > li > a {
+color: #000;
+border-style: solid;
+border-color: #888AC4;
+}
+
 .container
 {
 	border-style:solid;

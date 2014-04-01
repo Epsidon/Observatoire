@@ -513,6 +513,11 @@ width: 195px;
 	cursor:move;
 }
 
+.alert>p, .alert>ul {
+margin-top: -5px;
+font-family: arial bold;
+}
+
 #legendTitle {
 padding: 1em;
 color: #000;

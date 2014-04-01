@@ -54,6 +54,7 @@ Tabs.prototype.getMaps = function ()
 				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
 				'<p id="mapsInstructionOne" class="mapsInstructionOne cursorStyle" align="center"></p>' +
 			'</div>' +
+			'<div id="mapLabel" class="mediumFont alert alert-success">Loading ...</div>' +
 						
 			'<div id="hospitalLegendList" class="transbox cursorStyle"></div>' +
 			

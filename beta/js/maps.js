@@ -137,7 +137,8 @@ function(
 			esri.symbol.SimpleLineSymbol.STYLE_DASHDOT, 
 			new dojo.Color([0,255,0]), 2),
 			new dojo.Color([0,255,0,0]));
-
+	
+	updateMapLabel();
 	updateLegend();
 	
 	// Translate the popup window, if there is any translatable item in it. 	
@@ -269,6 +270,7 @@ function(
 			console.log('ERROR: ' + err.message);
 		}
 		
+		mapLayerLabel = layersLabels[activeLayer];
 		LayerLegend = legendLabel[activeLayer];
 		updateServicePoints();
 	}	
@@ -289,6 +291,7 @@ function(
 	{
 		var clickedHospitalLayerIdArray = Array();
 		
+		mapServicePointLabel = '';
 		mapServicePointLegendLabel = '';
 		/**
 		 * 1. Remove all service point layers.
@@ -331,9 +334,30 @@ function(
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
-	
+		
+		mapServicePointLabel += " & " + layersLabels[clickedHospitalLayerIdArray];
 		updateLegend();
+		updateMapLabel();
 		drawLegend({hospitals: clickedHospitalLayerIdArray});	
+	}
+	
+	function updateMapLabel()
+	{
+		console.log('updateMapLabel was called');
+
+		if (mapLayerLabel == '' && mapServicePointLabel == '')
+		{
+			console.log('Labels are empty');
+
+			$('#mapLabel').hide();
+			return;
+		}	
+
+		$('#mapLabel').html('<b>' + translator.T('Selected layer:') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
+		$('#mapLabel').show();
+		console.log('map name is ' + mapLayerLabel);
+
+		//organizer.reorganizeMapsPage();
 	}
 	
 	function updateLegend()

@@ -101,11 +101,13 @@ Router.prototype.route = function()
 			$('#modalUpdateMapButton').click(function() 
 			{
 				mapModal.modalUpdateMapsClick();
+				
 			});
 						
 			$("#hospitalLegendList").draggable({containment: "parent"});
 			$("#instruction").draggable({containment: "parent"});
 			$("#legendList").draggable({containment: "parent"});
+			$("#mapLabel").draggable({containment: "parent"});
 
 			$("#instruction").on("click", function()
 			{

@@ -8,6 +8,18 @@
 	overflow:hidden;
 }
 
+.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover {
+color: #000;
+border-style: solid;
+border-color: #888AC4;
+}
+
+.container
+{
+	border-style:solid;
+	border-color:#888AC4;
+}
+
 .bold 
 {
 	font-size: small;
@@ -394,13 +406,15 @@ h2
 	overflow: visible;
 }
 
-#map
+#map 
 {
-	position:relative;
-	top:0px;
-	border:1px solid;
-	border-radius:10px;
-	border-color:#888888;		
+	position: relative;
+	top: 0px;
+	border: 1px solid;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #888AC4;
+	border-width: 3px;
 }	
 
 #tooltip 

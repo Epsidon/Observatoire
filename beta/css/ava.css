@@ -281,6 +281,12 @@ body
     width: 380px;
 }
 
+.smallInstruction
+{
+	font-size: 0.8em;
+	height: 50px;
+}
+
 .esriPopup .contentPane {
 position: relative;
 max-height: 300px;

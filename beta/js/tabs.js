@@ -50,7 +50,7 @@ Tabs.prototype.getMaps = function ()
 			'<div id="map" class="col-xs-12" data-dojo-type="dijit.layout.ContentPane" region="center"></div>' +
 			'<img src="images/loading2.gif" id="loadingIndicator"/>' +
 			
-			'<div class="mapsInstruction alert alert-success smallFont cursorStyle" id="instruction">' +
+			'<div class="mapsInstruction alert alert-success smallInstruction cursorStyle" id="instruction">' +
 				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
 				'<p id="mapsInstructionOne" class="mapsInstructionOne cursorStyle" align="center"></p>' +
 			'</div>' +

@@ -100,7 +100,6 @@ Router.prototype.route = function()
 						
 			$("#hospitalLegendList").draggable({containment: "parent"});
 			$("#instruction").draggable({containment: "parent"});
-			$("#legendTitle").draggable({containment: "parent"});
 			$("#legendList").draggable({containment: "parent"});
 
 			$("#instruction").on("click", function()

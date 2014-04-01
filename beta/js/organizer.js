@@ -17,21 +17,21 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
 	
-	var legendLabelTop = (mapTop ) + mapHeight - legendHeight - (navbarBrandHeight * 4 );
-	var legendLabelLeft = (mapLeft *2);
+	/* var legendLabelTop = (mapTop ) + mapHeight - legendHeight - (navbarBrandHeight * 4 );
+	var legendLabelLeft = (mapLeft *2); */
 	
 	var instructionTop = mapTop + (mapHeight / 2) - (mapTop * 2 );
 	var instructionLeft = (mapLeft *2);
 	
 	var hospitalLegendLabelTop = mapHeight - (mapLeft * 3);
-	var hospitalLegendLabelLeft = (mapWidth /5) ;
+	var hospitalLegendLabelLeft = (mapTop * 5) ;
 	
 	$("#instruction").css(
 		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	
 	
-	$("#legendTitle").css(
+	/* $("#legendTitle").css(
 		{'position' : 'absolute' , 'left' : legendLabelLeft + 'px', 'top' : legendLabelTop + 'px'});	
-	
+	 */
 	$("#hospitalLegendList").css(
 		{'position' : 'absolute' , 'left' : hospitalLegendLabelLeft + 'px', 'top' : hospitalLegendLabelTop + 'px'});	
 		

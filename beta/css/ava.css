@@ -278,7 +278,7 @@ body
 
 .esriPopup .sizer 
 {
-    width: 380px;
+    width: 390px;
 }
 
 .smallInstruction
@@ -297,7 +297,7 @@ border: 1px solid #999999;
 border-top: none;
 border-bottom: none;
 color: #333333;
-font-size: xx-small;
+font-size: x-small;
 }
 
 .esriPopup .titlePane 
@@ -496,8 +496,8 @@ input
 #legendTitle 
 {
 	padding: 1em;
-	border-color: #D8D7D7;
-	border-width:1px;
+	border-color: #746B6B;
+	border-width: 1px;
 	border-radius: 5px;
 }
 

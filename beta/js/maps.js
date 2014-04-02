@@ -366,7 +366,7 @@ function(
 			return;
 		}	
 		
-		$('#legendTitle').html('<b>' + translator.T('Legend: ') +  '</b>' + LayerLegend + "  "  );
+		$('#legendTitle').html( LayerLegend + "  "  );
 		$('#legendTitle').show();
 
 		

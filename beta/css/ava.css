@@ -523,6 +523,9 @@ margin: -5px;
 color: #000;
 font-family: arial bold;
 border-bottom-color: #000;
+border-top-color: #C4C4C4;
+border-right-color: #C4C4C4;
+border-left-color: #C4C4C4;
 border-bottom-width: 2px;
 }
 

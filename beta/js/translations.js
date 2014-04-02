@@ -29,6 +29,8 @@ Fr['Simcoe-Nord Muskoka'] = 'North Simcoe Muskoka' ;
 Fr['Sud-Est'] = 'South East' ;
 Fr['Sud-Ouest'] = 'South West'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
+Fr['Update Map'] = 'Valider';
+Fr['Close'] = 'Fermer';
 
 
 Fr['Global Non-Response Rate (GNR) = '] = 'Taux global de non-réponse (TGN) = ';

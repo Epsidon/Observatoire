@@ -78,8 +78,8 @@ Tabs.prototype.getMaps = function ()
 						'Loading ...' +
 					'</div>' +
 					'<div class="modal-footer modalFooterSize">' +
-						'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-						'<button type="button" class="btn btn-primary" id="modalUpdateMapButton">Update Map</button>' +
+						'<button type="button" class="btn btn-default" data-dismiss="modal">' + translator.T('Close') + '</button>' +
+						'<button type="button" class="btn btn-primary" id="modalUpdateMapButton">' + translator.T('Update Map') + '</button>' +
 					'</div>' +
 				'</div>' +
 			'</div>' +

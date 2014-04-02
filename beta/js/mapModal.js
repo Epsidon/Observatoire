@@ -2,6 +2,16 @@ function MapModal()
 {
 	this.accordion = [];
 
+	this.setTranslatedTitles();
+	
+	this.clickedLayerId = -1;
+	this.clickedServicePoint = -1;
+	this.clickedServicePointBufferSmall = -1;
+	this.clickedServicePointBufferLarge = -1;	
+};
+
+MapModal.prototype.setTranslatedTitles = function()
+{	
 	this.accordion[0] = []
 	this.accordion[0]['title'] = '<u class="bold">' + translator.T('French Speaking Population (2011)') + '</u>';
 	this.accordion[0]['numLayers'] = 4;
@@ -13,19 +23,18 @@ function MapModal()
 	this.accordion[2] = []
 	this.accordion[2]['title'] = '<u class="bold">' + translator.T('Health Services (2011)') + '</u>';
 	this.accordion[2]['numLayers'] = 10;
-	
-	this.clickedLayerId = -1;
-	this.clickedServicePoint = -1;
-	this.clickedServicePointBufferSmall = -1;
-	this.clickedServicePointBufferLarge = -1;
-	
-	this.accordionHeaders = {7 : translator.T('Hospitals By Services Offered'), 14 : translator.T('Hospitals By French Language Service (FLS) Designation')};
-	
-};
+
+	this.accordionHeaders = {
+		7 : translator.T('Hospitals By Services Offered'), 
+		14 : translator.T('Hospitals By French Language Service (FLS) Designation')};
+}
+
 
 MapModal.prototype.fillModalBody = function()
 {
 	var self = this;
+	
+	self.setTranslatedTitles();
 	
 	console.log('Setting up accordion');
 	$.get("layers.json", function( data ) 

@@ -86,10 +86,11 @@ color: #000000;
 text-decoration: none;
 }
 
-.mapsInstructionOne
-{
-	color: #000;
-	float: center;
+.mapsInstructionOne {
+color: #000;
+float: center;
+font-family: arial bold;
+font-size: 1em;
 }
 
 .modal-title 
@@ -285,6 +286,15 @@ font-family: arial bold;
 	background-color: #BDCCD4;
 	border-color: #000000;
 	color: #000000;
+	line-height:2;
+}
+
+.alert {
+padding: 3px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+border-color: #000000;
 }
 
 body 
@@ -300,11 +310,6 @@ body
     width: 390px;
 }
 
-.smallInstruction
-{
-	font-size: 0.8em;
-	height: 50px;
-}
 
 .esriPopup .contentPane {
 position: relative;

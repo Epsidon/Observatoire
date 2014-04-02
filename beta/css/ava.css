@@ -514,9 +514,9 @@ width: 195px;
 }
 
 .alert>p, .alert>ul {
-margin-top: 1px;
 font-family: arial bold;
-font-size:1.1em;
+font-size: 1.2em;
+margin: -5px;
 }
 
 #legendTitle {

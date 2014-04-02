@@ -92,6 +92,11 @@ text-decoration: none;
 	float: center;
 }
 
+#instruction
+{
+height:45px;
+}
+
 .modal-title 
 {
 	margin: 0;
@@ -514,14 +519,17 @@ width: 195px;
 }
 
 .alert>p, .alert>ul {
-margin-top: -5px;
+margin-top: 1px;
 font-family: arial bold;
+font-size:1.1em;
 }
 
 #legendTitle {
 padding: 1em;
 color: #000;
 font-family: arial bold;
+border-bottom-color: #000;
+border-bottom-width: 2px;
 }
 
 #layerLegendList

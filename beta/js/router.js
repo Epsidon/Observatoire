@@ -171,16 +171,16 @@ Router.prototype.normalizeHashLanguage = function()
 	
 	if (currentHashArray[0] != '#french')
 	{
-		$('#alternativeLanguageContainer').html(
-			'<a href="javascript:router.setLanguage(\'#french\')" '+ 
-				'class="navbar-link">Fr</a>');
+		$('#alternativeLanguageContainer').attr("href", "javascript:router.setLanguage('#french')");
+		$('#alternativeLanguageContainer').html("Fr");
 	}
 	else
 	{
-		$('#alternativeLanguageContainer').html(
-			'<a href="javascript:router.setLanguage(\'#english\')" '+ 
-				'class="navbar-link">En</a>');
+		$('#alternativeLanguageContainer').attr("href", "javascript:router.setLanguage('#english')");
+		$('#alternativeLanguageContainer').html("En");
 	}
+		
+	
 };
 
 Router.prototype.setLanguage = function(lang)

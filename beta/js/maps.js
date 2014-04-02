@@ -151,8 +151,7 @@ function(
 		
 		 var methNote = $(".methodologicalNote").first();
 		 $(".methodologicalNote").remove();
-		 $(".zoomTo").append($(methNote));
-		 
+		 $(".zoomTo").parent().append($(methNote));	 
 	}, 100);
 	
 	

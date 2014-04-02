@@ -147,11 +147,11 @@ function(
 			$(this).removeClass('spanToTranslate');
 			$(this).html(translator.T($(this).html()));
 			$(this).removeClass('hidden');
+			var methNote = $(".methodologicalNote").first();
+			$(".methodologicalNote").remove();
+			$(".zoomTo").parent().append($(methNote));
 		});
-		
-		 var methNote = $(".methodologicalNote").first();
-		 $(".methodologicalNote").remove();
-		 $(".zoomTo").parent().append($(methNote));	 
+			 
 	}, 100);
 	
 	

@@ -54,7 +54,7 @@ Tabs.prototype.getMaps = function ()
 				'<img type="image" src="images/Information.jpg" align="center" id="object"/>'+
 				'<div id="mapsInstructionOne" class="mapsInstructionOne cursorStyle" align="center"></div>' +
 			'</div>' +
-			'<div id="mapLabel" class="mediumFont transbox cursorStyle">Loading ...</div>' +
+			'<div id="mapLabel" class="mediumFont transbox">Loading ...</div>' +
 						
 			'<div id="hospitalLegendList" class="transbox cursorStyle"></div>' +
 			

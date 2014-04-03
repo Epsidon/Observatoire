@@ -25,6 +25,8 @@ padding: 4px;
 	color: #000;
 	border-style: solid;
 	border-color: #888AC4;
+	border-width: 2px;
+	height: 34px;
 }
 
 .container

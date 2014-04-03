@@ -1,6 +1,7 @@
 function Router()
 {
 	this.mapsAreLoaded = false;
+	this.languageHasChanged = false;
 };
 
 Router.prototype.updateHashTab = function(tabName)
@@ -46,35 +47,11 @@ Router.prototype.route = function()
 			$('#homeTab').removeClass('selectedTab');
 			break;
 			
-		default: 
+		default:
 			var body = tabs.getHome();
 			$('#homeTab').addClass('selectedTab');
 	
 	}
-	
-/*	
-	var selectedTabLeft = $("#homeTabContainer").offset().left;	
-	var selectedTabTop = $("#homeTabContainer").offset().top;	
-	var selectedTabHeight = $("#homeTabContainer").height();
-	var selectedTabWidth = $("#homeTabContainer").width();
-
-	var downTriangleHolderWidth = 15; // $("#downTriangleHolder").width();
-
-	var downTriangleHolderTop = selectedTabTop + selectedTabHeight;
-	var downTriangleHolderLeft = selectedTabLeft + 
-		((selectedTabWidth - downTriangleHolderWidth) / 2);
-
-	console.log('selectedTabLeft: ' + selectedTabLeft);
-	console.log('selectedTabTop: ' + selectedTabTop);
-	console.log('selectedTabHeight: ' + selectedTabHeight);
-	console.log('selectedTabWidth: ' + selectedTabWidth);
-	console.log('downTriangleHolderWidth: ' + downTriangleHolderWidth);
-	console.log('downTriangleHolderLeft: ' + downTriangleHolderLeft);
-	console.log('downTriangleHolderTop: ' + downTriangleHolderTop);
-		
-	$("#downTriangleHolder").css(
-		{'position' : 'absolute' , 'left' : downTriangleHolderLeft + 'px', 'top' : downTriangleHolderTop + 'px'});	
-*/
 	
 	if (currentHashArray[1] != 'maps')
 	{
@@ -88,12 +65,13 @@ Router.prototype.route = function()
 		$('#mainContainer').hide();
 		$('#mapContainer').show();
 
-
-	 	if (this.mapsAreLoaded == false)
+	 	if (this.mapsAreLoaded == false || this.languageHasChanged)
 		{
-			$('#mapContainer').html(body);	
-
 			this.mapsAreLoaded = true;
+			this.languageHasChanged = false;
+
+			$('#mapContainer').html(body);	
+			
 			this.loadMapsJSFiles();
 	
 			$('#mapsModal').modal();
@@ -178,12 +156,12 @@ Router.prototype.normalizeHashLanguage = function()
 		$('#alternativeLanguageContainer').attr("href", "javascript:router.setLanguage('#english')");
 		$('#alternativeLanguageContainer').html("En");
 	}
-		
-	
 };
 
 Router.prototype.setLanguage = function(lang)
 {
+	this.languageHasChanged = true;
+	
 	var currentHashArray = location.hash.split('_');
 
 	currentHashArray[0] = lang;

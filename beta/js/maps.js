@@ -313,6 +313,7 @@ function(
 		if (clickedServicePoint != -1 )
 		{
 			clickedHospitalLayerIdArray.push(clickedServicePoint);
+			mapServicePointLabel += " & " + layersLabels[clickedServicePoint];
 		
 			if (clickedServicePointBufferSmall != -1 )
 			{
@@ -334,7 +335,6 @@ function(
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
 		
-		mapServicePointLabel += " & " + layersLabels[clickedHospitalLayerIdArray];
 		updateLegend();
 		updateMapLabel();
 		drawLegend({hospitals: clickedHospitalLayerIdArray});	
@@ -352,7 +352,7 @@ function(
 			return;
 		}	
 
-		$('#mapLabel').html('<b>' + translator.T('Selected layer:') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
+		$('#mapLabel').html('<b>' + translator.T('Selected layer : ') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
 	}
 	

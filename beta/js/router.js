@@ -107,8 +107,7 @@ Router.prototype.route = function()
 			$("#hospitalLegendList").draggable({containment: "parent"});
 			$("#instruction").draggable({containment: "parent"});
 			$("#legendList").draggable({containment: "parent"});
-			$("#mapLabel").draggable({containment: "parent"});
-
+			
 			$("#instruction").on("click", function()
 			{
 				$("#mapsModal").modal('show');

@@ -11,7 +11,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
 
-	var legendTop = ($( window ).height())/2;
+	var legendTop = ($( window ).height())/3;
 	//var legendTop = mapTop + mapHeight - legendHeight - (mapHeight/2);
 	var legendLeft = (mapLeft *2);
 

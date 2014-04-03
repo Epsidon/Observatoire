@@ -12,6 +12,12 @@
 color: #000;
 border-style: solid;
 border-color: #888AC4;
+border-width: 2px;
+height: 34px;
+}
+
+.mapLabel {
+padding: 4px;
 }
 
 .selectedTab
@@ -19,6 +25,8 @@ border-color: #888AC4;
 	color: #000;
 	border-style: solid;
 	border-color: #888AC4;
+	border-width: 2px;
+	height: 34px;
 }
 
 .container

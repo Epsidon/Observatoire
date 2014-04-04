@@ -65,7 +65,7 @@ Router.prototype.route = function()
 		$('#mainContainer').hide();
 		$('#mapContainer').show();
 
-	 	if (this.mapsAreLoaded == false )
+	 	if (this.mapsAreLoaded == false)
 		{
 			this.mapsAreLoaded = true;
 			
@@ -73,12 +73,11 @@ Router.prototype.route = function()
 			
 			this.loadMapsJSFiles();
 	
-			$('#mapsModal').modal();
+			$('#mapsModal').modal('show');
 			
 			$('#modalUpdateMapButton').click(function() 
 			{
-				mapModal.modalUpdateMapsClick();
-				
+				mapModal.modalUpdateMapsClick();				
 			});
 						
 			$("#hospitalLegendList").draggable({containment: "parent"});
@@ -93,13 +92,10 @@ Router.prototype.route = function()
 		
 		if (this.languageHasChanged)
 		{
-			this.mapsAreLoaded = false;
 			this.languageHasChanged = false;
-			this.loadMapsJSFiles();
-			$('#modalUpdateMapButton').prop('checked', true);
+			translateMap();		
+			mapModal.modalUpdateMapsClick();			
 		}
-		
-		$('#mapsModal').modal('show');
 		
 		mapModal.fillModalBody();
 	}

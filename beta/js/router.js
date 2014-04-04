@@ -65,11 +65,10 @@ Router.prototype.route = function()
 		$('#mainContainer').hide();
 		$('#mapContainer').show();
 
-	 	if (this.mapsAreLoaded == false || this.languageHasChanged)
+	 	if (this.mapsAreLoaded == false )
 		{
 			this.mapsAreLoaded = true;
-			this.languageHasChanged = false;
-
+			
 			$('#mapContainer').html(body);	
 			
 			this.loadMapsJSFiles();
@@ -90,6 +89,14 @@ Router.prototype.route = function()
 			{
 				$("#mapsModal").modal('show');
 			});
+		}
+		
+		if (this.languageHasChanged)
+		{
+			this.mapsAreLoaded = false;
+			this.languageHasChanged = false;
+			this.loadMapsJSFiles();
+			$('#modalUpdateMapButton').prop('checked', true);
 		}
 		
 		$('#mapsModal').modal('show');

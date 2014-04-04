@@ -30,8 +30,8 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var hospitalLegendLabelTop = mapHeight - (mapLeft * 3);
 	var hospitalLegendLabelLeft = (mapTop * 5) ;
 	
-	var mapLableTop = (mapTop *2);
-	var mapLableLeft = ($( window ).width())/3;
+	var mapLableTop = mapTop + (mapLeft *2);
+	var mapLableLeft = (($( window ).width())/2) - legendWidth ;
 	
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});

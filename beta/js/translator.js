@@ -21,7 +21,7 @@ Translator.prototype.translatePage = function()
 	$('#mapsTab').html(this.T('INTERACTIVE MAPS'));
 	$('#analysisTab').html(this.T('RESEARCH'));
 	$('#partnersTab').html(this.T('PARTNERS'));
-
+	
 	$('#withSupportOfMsg').html(this.T('With the Support of:'));
 
 	$('#financialSupport').html(this.T('Financial Support:'));
@@ -64,6 +64,10 @@ Translator.prototype.translatePage = function()
 	$('#analysisInstruction').html(this.T("Instruction"));
 	$('#notesLinkPage').html(this.T(" Select a data layer from the menu below and click on map for detailed information."));
 	
+	$('#myModalLabel').html(this.T("Interactive Maps"));
+	$('#close').html(this.T("Close"));
+	$('#modalUpdateMapButton').html(this.T("Update Map"));
+	$('.zoomTo').html(this.T('Zoom to'));
 	
 	$('#moreLessSpaceMsg').html(this.T("More Space"));
 	$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada"));

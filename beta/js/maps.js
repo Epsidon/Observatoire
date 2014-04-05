@@ -150,6 +150,8 @@ function(
 			var methNote = $(".methodologicalNote").first();
 			$(".methodologicalNote").remove();
 			$(".zoomTo").parent().append($(methNote));
+			var html = $(".zoomTo").html();
+			$('.zoomTo').html(translator.T(html));
 		});
 			 
 	}, 100);

@@ -31,6 +31,7 @@ Fr['Sud-Ouest'] = 'South West';
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
 Fr['Update Map'] = 'Valider';
 Fr['Close'] = 'Fermer';
+Fr['Zoom to'] = 'Zoomer';
 
 
 Fr['Global Non-Response Rate (GNR) = '] = 'Taux global de non-réponse (TGN) = ';
@@ -257,3 +258,5 @@ Fr['E = Use with caution']= 'E = Utiliser avec prudence';
 Fr['F = Too unreliable to be published']= 'F = Trop peu fiable pour être publiée';
 Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
 Fr['Hospitals By French Language Service (FLS) Designation'] = 'Hôpitaux par désignation selon la Loi sur les services en français (LSF)';
+
+

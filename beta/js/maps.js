@@ -93,7 +93,6 @@ function(
     // 2.
 	for (var i = 0; i < numLayers; i++) {
 		console.log('Creating Layer ' + i);
-
 		layerInfoWindow[i] = 
 			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
 
@@ -203,6 +202,9 @@ function(
 			};
 		}
 	}
+	
+	
+	
 
 	function updateLayer(clickedLayerId)
 	{
@@ -219,6 +221,7 @@ function(
 		// 2.
 		map.graphics.clear();
 		map.infoWindow.hide();
+		
 
 		for(var i = 0; i < numLayers; i++)
 			map.removeLayer(mapLayer[i]);
@@ -228,6 +231,8 @@ function(
 
 		// 4.
 		removeLegend();
+		
+		createInfoWindow();
 		var extent = map.getZoom();
 
 		if ((clickedLayerId == -1) || 
@@ -501,6 +506,45 @@ function(
 			$("#loadingIndicator").fadeOut('fast');
 			$( "#map" ).fadeTo("fast" , 1);	
 		}
+	}
+	
+	function createInfoWindow()
+	{
+		for (var i = 0; i < numLayers; i++) {
+		layerInfoWindow[i] = 
+			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
+
+		layerInfoWindow[i].startup();
+
+		layerTemplate[i] = new InfoTemplate();
+
+		layerTemplate[i].setTitle(layerData[i]['infoWindowTitle']);
+
+		layerTemplate[i].setContent(layerData[i]['infoWindowBody']);
+
+		mapLayer[i] = new FeatureLayer(
+			mapAddress + i, {
+				mode: FeatureLayer.MODE_ONDEMAND,
+				infoTemplate:layerTemplate[i],
+				outFields: layerData[i]['outFields']});
+		
+		}
+		
+		for (var j in servicePointBuffers) {
+	
+		for (var i = 0; i < 2; i++) {
+
+			var bufferIndex = servicePointBuffers[j][i];
+		
+			console.log('Creating Buffers for Layer ' + j + 
+				' buffer index: ' + bufferIndex);
+
+			mapLayer[bufferIndex] = new FeatureLayer(
+				mapAddress + bufferIndex);
+		}
+	}
+
+
 	}
 	
 	/**

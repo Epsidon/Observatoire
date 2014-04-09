@@ -142,15 +142,15 @@ function(
 	
 	// Translate the popup window, if there is any translatable item in it. 	
 	setInterval(function(){
-		$(".spanToTranslate").each(function(index) {
-			$(this).removeClass('spanToTranslate');
-			$(this).html(translator.T($(this).html()));
-			$(this).removeClass('hidden');
-			var methNote = $(".methodologicalNote").first();
+		var methNote = $(".methodologicalNote").first();
 			$(".methodologicalNote").remove();
 			$(".zoomTo").parent().append($(methNote));
 			var html = $(".zoomTo").html();
 			$('.zoomTo').html(translator.T(html));
+		$(".spanToTranslate").each(function(index) {
+			$(this).removeClass('spanToTranslate');
+			$(this).html(translator.T($(this).html()));
+			$(this).removeClass('hidden');
 		});
 			 
 	}, 100);
@@ -511,6 +511,7 @@ function(
 	function createInfoWindow()
 	{
 		for (var i = 0; i < numLayers; i++) {
+		
 		layerInfoWindow[i] = 
 			new InfoWindowLite(null, domConstruct.create("div", null, null, map.root));
 

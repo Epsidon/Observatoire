@@ -142,15 +142,15 @@ function(
 	
 	// Translate the popup window, if there is any translatable item in it. 	
 	setInterval(function(){
-		var methNote = $(".methodologicalNote").first();
-			$(".methodologicalNote").remove();
-			$(".zoomTo").parent().append($(methNote));
-			var html = $(".zoomTo").html();
-			$('.zoomTo').html(translator.T(html));
 		$(".spanToTranslate").each(function(index) {
 			$(this).removeClass('spanToTranslate');
 			$(this).html(translator.T($(this).html()));
 			$(this).removeClass('hidden');
+			var methNote = $(".methodologicalNote").first();
+			$(".methodologicalNote").remove();
+			$(".zoomTo").parent().append($(methNote));
+			var html = $(".zoomTo").html();
+			$('.zoomTo').html(translator.T(html));
 		});
 			 
 	}, 100);

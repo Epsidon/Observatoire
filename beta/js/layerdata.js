@@ -855,6 +855,7 @@ function translateMap()
 	"</tr>"+
 	"</table>" + translator.T("Source: 2011 National Household Survey") +
 	"<p>" + "${FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
+	"<span class='spanToTranslate hidden'></span>" +
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 

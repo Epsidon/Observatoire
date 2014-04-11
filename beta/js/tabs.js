@@ -112,8 +112,8 @@ Tabs.prototype.getPartners = function ()
 			'<font class="smallFont blueFont ministryOfMsg"></font>' +
 			'<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
-			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" alt="I" width="350" height="50"></p>' +
-			'<p><img border="0" src="images/StatisticsCanada.jpg"  width="240" height="50"></p>' + 
+			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg"></p>' +
+			'<p><img border="0" src="images/StatisticsCanada.jpg"></p>' + 
 		'</div>';
 
 

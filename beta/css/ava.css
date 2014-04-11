@@ -47,6 +47,13 @@ border-radius: 4px;
 	margin-right: 20px;
 }
 
+.popupTextStyle
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 13px;
+}
+
 .modalFooterSize
 {
 	height: 55px;

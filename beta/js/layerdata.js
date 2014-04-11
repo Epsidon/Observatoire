@@ -186,8 +186,10 @@ function translateMap()
 
 	layerData[4] = [];
 	layerData[4]['infoWindowTitle'] = "<b>" + translator.T("Health Professional By LHIN") + "</b>";
-	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" + "&nbsp" + "(" + "${HR035b08_H}" + ")" + "<p>"+ "<b>"+ translator.T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" + 
-	"<table border=1 class='table table-striped'>"+
+	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}" + "&nbsp" + 
+	"(" + "${HR035b08_H}" + ")" +
+	"<p>"+ "<b>"+ translator.T("Total Population in 2011:") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
+	"<table border=1 class='table table-striped'>" +
 	"<tr>"+
 	"<th align='center'>" + translator.T("Speciality") + "</th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+

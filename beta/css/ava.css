@@ -495,9 +495,10 @@ input
 	color:#FE642E;
 }
 
-.smallFont {
-font-size: 0.8em;
-font-family: arial;
+.smallFont
+ {
+	font-size: 11px;
+	font-family: arial;
 }
 
 input[type=radio], input[type=checkbox] {

@@ -113,7 +113,7 @@ Fr['HEALTH AND LONG-TERM CARE'] = 'SANTÉ ET SOINS DE LONGUE DURÉE';
 Fr['With the Support of:'] = 'Avec le soutien de:';
 
 Fr['HOME'] = 'ACCUEIL';
-Fr['INTERACTIVE MAPS'] = 'CARTES INTERACTIVES';
+Fr['INTERACTIVE MAPS'] = 'CARTES INTÉRACTIVES';
 Fr['ANALYSIS'] = 'ANALYSES';
 Fr['PARTNERS'] = 'PARTENAIRES';
 Fr['Methodological Notes'] = 'Notes Méthodologiques';
@@ -135,7 +135,7 @@ Fr['Manager, Data & Analyses'] = 'Gestionnaire, données et analyse';
 Fr['Associate professor, School of Information Technology and Engineering'] = 'Professeur agrégé, École d’ingénierie et de technologie de l’information';
 Fr['Programmers'] = 'Programmeurs';
 Fr['Analysts'] = 'Analystes';
-Fr['Interactive Maps'] = 'CARTES INTERACTIVES';
+Fr['Interactive Maps'] = 'CARTES INTÉRACTIVES';
 Fr['Select a data layer from the menu below and click on map for detailed information.']= 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
 

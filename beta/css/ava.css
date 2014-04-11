@@ -71,18 +71,6 @@ border-radius: 5px;
 border-bottom-color: #000000;
 }
 
-.navbar-xs .navbar-primary .navbar {
-min-height: 28px;
-margin: 10px;
-border-radius: 5px;
-}
-
-.navbar-xs .navbar-primary .navbar .navbar-brand {
-padding: 8px 8px;
-font-size: 16px;
-font-family: arial bold;
-line-height: 18px;
-}
 
 a:hover, a:focus
 {
@@ -613,9 +601,8 @@ a.methodologicalNote
 }
 
 .navbar-nav {
-float: left;
-margin: 0;
-font-family: arial bold;
+float: right;
+margin-right:10px;
 }
 
 div.transbox
@@ -659,8 +646,8 @@ line-height: inherit;
 .navbar-primary .navbar .navbar-brand {color:#fff;}
 .navbar-primary .navbar .nav.pull-right {margin-left: 10px;margin-right: 0;}
 .navbar-xs .navbar-primary .navbar { min-height:28px; } 
-.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 8px 8px;font-size: 16px;line-height: 18px; } 
-.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; } 
+.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 8px 8px;font-size: 21px;line-height: 18px; font-family: arial; font-weight:bold; } 
+.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; font-family: arial;font-weight: bold; } 
 .navbar-sm .navbar-primary .navbar { min-height:40px; } 
 .navbar-sm .navbar-primary .navbar .navbar-brand{ padding: 12px 12px;font-size: 16px;line-height: 18px; } 
 .navbar-sm .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 12px; padding-bottom: 12px; line-height: 20px; }

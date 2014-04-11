@@ -39,8 +39,8 @@ border-radius: 4px;
 .bold 
 {
 	font-size: small;
-	font-family: arial bold;
-	margin: 0.1em;
+	font-family: arial;
+	font-weight: bold;
 }
 
 .modalFooterSize
@@ -94,7 +94,10 @@ margin-top: 5px;
 .modal-title 
 {
 	margin: 0;
-	line-height: 20%;
+	line-height: 50%;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 .btn-default {
@@ -161,10 +164,10 @@ margin-left: 5px;
 	width:195px;
 }
 
-.notesDiv
+/* .notesDiv
 {
 	border-bottom: 1px solid #aaa;
-}
+} */
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus 
 {
@@ -488,9 +491,15 @@ input
 	color:#FE642E;
 }
 
-.smallFont
-{
-	font-size: 0.8em;
+.smallFont {
+font-size: 0.8em;
+font-family: arial;
+}
+
+input[type=radio], input[type=checkbox] {
+margin: 3px;
+margin-top: 1px \9;
+line-height: normal;
 }
 
 .mediumFont

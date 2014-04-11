@@ -45,11 +45,6 @@ MapModal.prototype.fillModalBody = function()
 		var accordionHtmlBody = '';
 		
 		accordionHtmlBody = 
-			'<div class="notesDiv">' +
-				'<object data="images/information.svg" type="image/svg+xml" id="object"></object>'+
-				'<p align="center">' +
-					translator.T('Select a data layer from the menu below and click on map for detailed information.') + '</p>' +
-			'</div>' +
 			'<div>' +
 				'<table border="0">' + 
 					'<tr>' +

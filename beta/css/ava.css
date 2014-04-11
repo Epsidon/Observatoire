@@ -450,14 +450,14 @@ h2
 	height: 100%
 }
 
-#hospitalLegendList
-{
-	font-size: 17px;
-	font-family:arial bold;
-	border-color: #D8D7D7;
-	border-width:1px;
-	border-radius: 5px;
-	padding:5px;
+#hospitalLegendList {
+font-size: 15px;
+font-family: arial;
+font-weight: bold;
+border-width: 1px;
+border-bottom-color: #000000;
+border-radius: 3px;
+padding: 5px;
 }
 
 label 
@@ -538,13 +538,15 @@ margin: -5px;
 
 #legendTitle {
 color: #000;
-font-family: arial bold;
+font-family: arial;
+font-weight: bold;
+font-size: 15px;
 border-bottom-color: #000;
-border-top-color: #C4C4C4;
-border-right-color: #C4C4C4;
-border-left-color: #C4C4C4;
-border-bottom-width: 2px;
-padding:3px;
+border-top-color: #FFFFFF;
+border-right-color: #FFFFFF;
+border-left-color: #FFFFFF;
+border-bottom-width: 0.1em;
+padding: 4px;
 }
 
 #layerLegendList
@@ -619,14 +621,13 @@ float: right;
 margin-right:10px;
 }
 
-div.transbox
-  {
-  background-color:#F2F5F6;
-  border:1px solid white;
-  box-shadow: 5px 5px 5px #888888;
-  opacity:0.7;
-  filter:alpha(opacity=70); /* For IE8 and earlier */
- }
+div.transbox {
+background-color: #F2F5F6;
+border: 0px solid white;
+box-shadow: 5px 5px 5px #D1D1D1;
+opacity: 0.9;
+filter: alpha(opacity=70);
+}
 
 .navbar-toggle {
 position: relative;

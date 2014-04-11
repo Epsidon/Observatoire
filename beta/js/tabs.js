@@ -34,7 +34,7 @@ Tabs.prototype.getHome = function ()
 				'<p id="Analyst"></p>' +
 				
 				'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
-				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
+				'<img border="0" src="images/ontario.jpg" >' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
 		'</div>';
@@ -95,7 +95,7 @@ Tabs.prototype.getPartners = function ()
 		'<div class="container">' +	
 			'<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
+				'<img border="0" src="images/ontario.jpg">' +
 				'<font class="blueFont smallFont ministryOfMsg"></font>' +
 				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +
@@ -103,12 +103,12 @@ Tabs.prototype.getPartners = function ()
 			'<h4 class="grayFont largeFont" id="dataProvidersMsg"></h4>' +
 
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">' +
+				'<img border="0" src="images/ontario.jpg">' +
 				'<font class="mediumFont" id="healthMsg"></font>' +
 				'<font class="redFont" id="forceMsg"></font>' +
 				'<font id="ontarioMsg"></font>' +
 			'</p>' +
-			'<p><img border="0" src="images/ontario.jpg" alt="I" width="90" height="50">'  +
+			'<p><img border="0" src="images/ontario.jpg">'  +
 			'<font class="smallFont blueFont ministryOfMsg"></font>' +
 			'<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>' +
 			'</p>' +

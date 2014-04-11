@@ -388,8 +388,8 @@ function translateMap()
 
 	layerData[5] = [];
 	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Socio-Economic Profiles") + "</b>";
-	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${EnglishL_1}</span>" + "&nbsp" + "(" + "${HRUID2007}" + ")" +
-	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" +
+	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${EnglishL_1}" + "&nbsp" + "(" + "${HRUID2007}" + ")" +
+	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" + "</span>" +
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center' id='emptyHeader'></th>"+
@@ -511,8 +511,8 @@ function translateMap()
 	 
 	layerData[6] = [];
 	layerData[6]['infoWindowTitle'] = "<b>" + translator.T("Health Profiles") + "</b>";
-	layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" + "&nbsp" + "(" + "${HR035b08_H}" + ")" +
-	"<br>" + "<b>" + translator.T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" +
+	layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}" + "&nbsp" + "(" + "${HR035b08_H}" + ")" +
+	"<br>" + "<b>" + translator.T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" + "</span>" +
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center'></th>"+
@@ -866,7 +866,7 @@ function translateMap()
 
 	layerData[18] = [];
 	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[18]['infoWindowBody'] ="<span class='spanToTranslate hidden'>${HR035b08_E}</span>"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + 
+	layerData[18]['infoWindowBody'] ="<span class='spanToTranslate hidden popupTextStylepopupTextStyle'>${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
 	 "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[18]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 

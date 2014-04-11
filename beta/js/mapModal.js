@@ -13,15 +13,15 @@ function MapModal()
 MapModal.prototype.setTranslatedTitles = function()
 {	
 	this.accordion[0] = []
-	this.accordion[0]['title'] = '<u class="bold">' + translator.T('French Speaking Population (2011)') + '</u>';
+	this.accordion[0]['title'] = '<div class="bold">' + translator.T('French Speaking Population (2011)') + '</div>';
 	this.accordion[0]['numLayers'] = 4;
 
 	this.accordion[1] = []
-	this.accordion[1]['title'] = '<u class="bold">' + translator.T('Profiles By LHIN (2011)') + '</u>';
+	this.accordion[1]['title'] = '<div class="bold">' + translator.T('Profiles By LHIN (2011)') + '</div>';
 	this.accordion[1]['numLayers'] = 3;
 
 	this.accordion[2] = []
-	this.accordion[2]['title'] = '<u class="bold">' + translator.T('Health Services (2011)') + '</u>';
+	this.accordion[2]['title'] = '<div class="bold">' + translator.T('Health Services (2011)') + '</div>';
 	this.accordion[2]['numLayers'] = 10;
 
 	this.accordionHeaders = {

@@ -34,9 +34,11 @@ Tabs.prototype.getHome = function ()
 				'<p id="Analyst"></p>' +
 				
 				'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
-				'<img border="0" src="images/ontario.jpg" >' +
-				'<font class="blueFont smallFont ministryOfMsg"></font>' +
-				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
+				'<br>' +
+				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
+				'</br>' +
+				
 		'</div>';
 
 	
@@ -95,25 +97,30 @@ Tabs.prototype.getPartners = function ()
 		'<div class="container">' +	
 			'<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg">' +
-				'<font class="blueFont smallFont ministryOfMsg"></font>' +
-				'<font class="blueFont mediumFont healthAndLongTermCareMsg"></font>' +
+				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
 			'</p>' +
 
 			'<h4 class="grayFont largeFont" id="dataProvidersMsg"></h4>' +
 
 			'<p>' +
-				'<img border="0" src="images/ontario.jpg">' +
-				'<font class="mediumFont" id="healthMsg"></font>' +
-				'<font class="redFont" id="forceMsg"></font>' +
-				'<font id="ontarioMsg"></font>' +
+				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'&nbsp;' +
+				'<a href="http://www.healthforceontario.ca/en/Home" target="_blank"><img border="0" src="images/HealthForceOntario.jpg" ></a>' +	
 			'</p>' +
-			'<p><img border="0" src="images/ontario.jpg">'  +
-			'<font class="smallFont blueFont ministryOfMsg"></font>' +
-			'<font class="mediumFont blueFont healthAndLongTermCareMsg"></font>' +
+			
+			'<p>' +
+				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
 			'</p>' +
-			'<p><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg"></p>' +
-			'<p><img border="0" src="images/StatisticsCanada.jpg"></p>' + 
+			
+			'<p>' +
+				'<a href="https://www.ophrdc.org/" target="_blank"><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" ></a>' +
+			'</p>' +
+			
+			'<p>' +
+			'<a href="http://www.statcan.gc.ca/start-debut-eng.html" target="_blank"><img border="0" src="images/StatisticsCanada.jpg" ></a>' +
+			'</p>' + 
 		'</div>';
 
 

@@ -359,7 +359,7 @@ function(
 			return;
 		}	
 
-		$('#mapLabel').html('<b>' + translator.T('Selected layer: ') +  '</b>' + mapLayerLabel + "  " + mapServicePointLabel);
+		$('#mapLabel').html(mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
 	}
 	

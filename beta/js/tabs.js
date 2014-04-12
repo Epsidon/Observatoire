@@ -36,8 +36,10 @@ Tabs.prototype.getHome = function ()
 				'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
 				'<br>' +
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<br>'+
 				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
 				'</br>' +
+				'</br>' ;
 				
 		'</div>';
 
@@ -98,20 +100,25 @@ Tabs.prototype.getPartners = function ()
 			'<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<br>' +
 				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
+				'</br>' +
 			'</p>' +
 
 			'<h4 class="grayFont largeFont" id="dataProvidersMsg"></h4>' +
 
 			'<p>' +
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'&nbsp;' +
+				'<br>' +
 				'<a href="http://www.healthforceontario.ca/en/Home" target="_blank"><img border="0" src="images/HealthForceOntario.jpg" ></a>' +	
+				'</br>' +
 			'</p>' +
 			
 			'<p>' +
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<br>' +
 				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
+				'<br>' +
 			'</p>' +
 			
 			'<p>' +

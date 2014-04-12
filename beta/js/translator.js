@@ -59,7 +59,7 @@ Translator.prototype.translatePage = function()
 	$('#homeOptionOne').html(this.T("Activities of data collection, research and production of new knowledge"));
 	$('#homeOptionTwo').html(this.T("Valorisation and transfer of knowledge"));
 
-	$('#mapsInstructionOne').html(this.T(" Select a data layer"));
+	$('#mapsInstructionOne').html(this.T(" Select a map"));
 	$('#mapsInstructionTwo').html(this.T("for data sources and methodology."));
 	$('#analysisInstruction').html(this.T("Instruction"));
 	$('#notesLinkPage').html(this.T(" Select a data layer from the menu below and click on map for detailed information."));

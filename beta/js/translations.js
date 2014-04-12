@@ -127,7 +127,7 @@ Fr['Force'] = 'Force';
 Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario.';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
-Fr[' Select a data layer'] = ' Modifier les couches de données' ;
+Fr[' Select a map'] = ' Sélectionner une carte' ;
 Fr['for data sources and methodology.'] = ' pour accéder aux notes méthodologiques.';
 Fr['Our Team'] = 'Notre équipe';
 Fr['Director and Primary Investigator'] = 'Directrice du projet et chercheuse principale';

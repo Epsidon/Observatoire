@@ -179,7 +179,7 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
 Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';
-Fr['% for which First Official Language Spoken = French'] = '% pour qui Première langue officielle parlée = Français';
+Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
 Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
 Fr['Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';
 Fr['Population Number'] = 'Population';
@@ -197,11 +197,11 @@ Fr['FLS Designated Partial'] = 'Désignation partielle - LSF';
 Fr['FLS Designated All'] = 'Désignation complète - LSF';
 Fr[' Select a data layer from the menu below and click on map for detailed information.'] = ' Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
-Fr['Legend: '] = 'légende: ';
-Fr['Mother Tongue = French'] = 'Langue maternelle = Français';
-Fr['Knowledge of Official Language = French Only'] = 'Connaissance des langues officielles = Français seulement';
-Fr['First Official Language Spoken = French'] = 'Première langue officielle parlée = Français';
-Fr['Language Spoken Most Often at Home = French'] = 'Langue parlée le plus souvent à la maison = Français';
+Fr['Legend: '] = 'légende : ';
+Fr['Mother Tongue: French'] = 'Langue maternelle : Français';
+Fr['Knowledge of Official Language: French Only'] = 'Connaissance des langues officielles : Français seulement';
+Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
+Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
 Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';

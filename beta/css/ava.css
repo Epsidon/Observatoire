@@ -54,19 +54,12 @@ color: #000000;
 vertical-align: middle;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-padding: 2px;
-line-height: 1.42857143;
-border-top: 1px solid #000;
-text-align: center;
-vertical-align: middle;
-}
 
 .popupTextStyle
 {
 	font-family: arial;
 	font-weight: bold;
-	
+	font-size:1.3em;	
 }
 
 .modalFooterSize
@@ -285,18 +278,26 @@ margin-left: 5px;
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) {
 background-color: #E4E4E6;
 color: #000000;
+font-family: arial;
+font-weight: bold;
+font-size: 1.1em;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>th {
 background-color: #141242;
+font-size: 1.1em;
+font-weight: bold;
+font-family: arial;
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
 padding: 2px;
-line-height: 1.42857143;
 border-top: 1px solid #000;
 text-align: center;
 vertical-align: middle;
+font-family: arial;
+font-weight: bold;
+font-size: 1.2em;
 }
 
 .navbar-inverse .navbar-link 

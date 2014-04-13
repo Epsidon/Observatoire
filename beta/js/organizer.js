@@ -33,6 +33,9 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var mapLableTop = mapTop + (mapLeft *2);
 	var mapLableLeft = (($( window ).width())/2) - legendWidth ;
 	
+	var zoomInstructionTop = mapTop + (mapLeft *5);
+	var zoomInstructionLeft = (($( window ).width())/2) - legendWidth ;
+	
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
 	
@@ -44,7 +47,10 @@ Organizer.prototype.reorganizeMapsPage = function()
 	 */
 	$("#hospitalLegendList").css(
 		{'position' : 'absolute' , 'left' : hospitalLegendLabelLeft + 'px', 'top' : hospitalLegendLabelTop + 'px'});	
-		
+	
+	$("#zoomInInstruction").css(
+		{'position' : 'absolute' , 'left' : zoomInstructionLeft + 'px', 'top' : zoomInstructionTop + 'px'});	
+	
 	$("#legendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
 	 

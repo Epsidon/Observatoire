@@ -32,6 +32,7 @@ Fr['Waterloo Wellington'] = 'Waterloo Wellington';
 Fr['Update Map'] = 'Valider';
 Fr['Close'] = 'Fermer';
 Fr['Zoom to'] = 'Zoomer';
+Fr['Zoom to access data'] = 'Zoomer pour accéder aux données';
 
 
 Fr['Global Non-Response Rate (GNR) = '] = 'Taux global de non-réponse (TGN) = ';

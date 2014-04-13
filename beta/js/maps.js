@@ -242,13 +242,15 @@ function(
 			{
 				activeLayer = 17;
 				drawLegend({activeLayer : activeLayer});
+				
 			}
 			else
 			{
 				// 4.1.
 				// 4.2.
 				console.log('4.1. 4.2.');
-				activeLayer = 18;
+				//activeLayer = 18;
+				zoomInstruction();
 				drawLegend({activeLayer : activeLayer});
 			}
 		}
@@ -256,6 +258,7 @@ function(
 		{
 			// 4.3.
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
+			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;
 			drawLegend({activeLayer : activeLayer});
 			
@@ -374,9 +377,13 @@ function(
 		}	
 		
 		$('#legendTitle').html( LayerLegend + "  "  );
-		$('#legendTitle').show();
-
-		
+		$('#legendTitle').show();	
+	}
+	
+	function zoomInstruction()
+	{
+		$('#zoomInInstruction').show();
+		$('#zoomInInstruction').removeClass( "hidden" );
 	}
 	
 	function removeLegend()

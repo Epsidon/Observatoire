@@ -61,6 +61,7 @@ Tabs.prototype.getMaps = function ()
 			'<div id="mapLabel" class="mediumFont transbox mapLabel">Loading ...</div>' +
 						
 			'<div id="hospitalLegendList" class="transbox cursorStyle"></div>' +
+			'<div id="zoomInInstruction" class="transbox cursorStyle hidden"></div>' +
 			
 			'<div id="legendList" class="transbox cursorStyle smallFont">' +
 				'<div id="legendTitle" class="transbox legendLabel cursorStyle smallFont"><b>Loading ...</b></div>' +

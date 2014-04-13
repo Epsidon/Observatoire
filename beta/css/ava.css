@@ -657,7 +657,11 @@ background-color: #F2F5F6;
 border: 0px solid white;
 box-shadow: 5px 5px 5px #D1D1D1;
 opacity: 0.9;
-filter: alpha(opacity=70);
+padding: 0.5em;
+font-family: arial;
+font-weight: bold;
+border-width: 0.1em;
+border-color: rgb(196, 188, 188);
 }
 
 .navbar-toggle {

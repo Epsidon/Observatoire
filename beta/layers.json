@@ -3109,7 +3109,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "uniqueValue",
-     "field1": "EnglishL_1",
+     "field1": "lhin.csv.LHINNames",
      "field2": null,
      "field3": null,
      "fieldDelimiter": ", ",
@@ -3496,8 +3496,8 @@
          "width": 1
         }
        },
-       "value": "WaterlooWellington",
-       "label": "WaterlooWellington",
+       "value": "Waterloo Wellington",
+       "label": "Waterloo Wellington",
        "description": ""
       }
      ]
@@ -3505,7 +3505,7 @@
     "transparency": 25,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.8633020665529,
     "ymin": 40.67324700252785,
@@ -3518,457 +3518,470 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HRUID2007",
+   "displayField": "Export_Output_6.HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FID",
+     "name": "Export_Output_6.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Shape",
+     "name": "Export_Output_6.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "GEODB_OID",
+     "name": "Export_Output_6.GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "OBJECTID",
+     "name": "Export_Output_6.OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "HRUID2007",
+     "name": "Export_Output_6.HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "FRE_LABEL",
+     "name": "Export_Output_6.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "LENGTH",
+     "name": "Export_Output_6.LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "SHAPE_AREA",
+     "name": "Export_Output_6.SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "HRUID2007_",
+     "name": "Export_Output_6.HRUID2007_",
      "type": "esriFieldTypeInteger",
      "alias": "HRUID2007_",
      "domain": null
     },
     {
-     "name": "Total",
+     "name": "Export_Output_6.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "SociEcoPro",
+     "name": "Export_Output_6.SociEcoPro",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoPro",
      "domain": null
     },
     {
-     "name": "SociEcoP_1",
+     "name": "Export_Output_6.SociEcoP_1",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_2",
+     "name": "Export_Output_6.SociEcoP_2",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_2",
      "domain": null
     },
     {
-     "name": "SociEcoP_3",
+     "name": "Export_Output_6.SociEcoP_3",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_3",
      "domain": null
     },
     {
-     "name": "SociEcoP_4",
+     "name": "Export_Output_6.SociEcoP_4",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_4",
      "domain": null
     },
     {
-     "name": "SociEcoP_5",
+     "name": "Export_Output_6.SociEcoP_5",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_5",
      "domain": null
     },
     {
-     "name": "SociEcoP_6",
+     "name": "Export_Output_6.SociEcoP_6",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_6",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_7",
+     "name": "Export_Output_6.SociEcoP_7",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_7",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_8",
+     "name": "Export_Output_6.SociEcoP_8",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_8",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_9",
+     "name": "Export_Output_6.SociEcoP_9",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_9",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_10",
+     "name": "Export_Output_6.SociEco_10",
      "type": "esriFieldTypeString",
      "alias": "SociEco_10",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_11",
+     "name": "Export_Output_6.SociEco_11",
      "type": "esriFieldTypeString",
      "alias": "SociEco_11",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_12",
+     "name": "Export_Output_6.SociEco_12",
      "type": "esriFieldTypeString",
      "alias": "SociEco_12",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_13",
+     "name": "Export_Output_6.SociEco_13",
      "type": "esriFieldTypeString",
      "alias": "SociEco_13",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_14",
+     "name": "Export_Output_6.SociEco_14",
      "type": "esriFieldTypeString",
      "alias": "SociEco_14",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_15",
+     "name": "Export_Output_6.SociEco_15",
      "type": "esriFieldTypeString",
      "alias": "SociEco_15",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_16",
+     "name": "Export_Output_6.SociEco_16",
      "type": "esriFieldTypeString",
      "alias": "SociEco_16",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_17",
+     "name": "Export_Output_6.SociEco_17",
      "type": "esriFieldTypeString",
      "alias": "SociEco_17",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_18",
+     "name": "Export_Output_6.SociEco_18",
      "type": "esriFieldTypeString",
      "alias": "SociEco_18",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_19",
+     "name": "Export_Output_6.SociEco_19",
      "type": "esriFieldTypeString",
      "alias": "SociEco_19",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_20",
+     "name": "Export_Output_6.SociEco_20",
      "type": "esriFieldTypeString",
      "alias": "SociEco_20",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_21",
+     "name": "Export_Output_6.SociEco_21",
      "type": "esriFieldTypeString",
      "alias": "SociEco_21",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_22",
+     "name": "Export_Output_6.SociEco_22",
      "type": "esriFieldTypeString",
      "alias": "SociEco_22",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_23",
+     "name": "Export_Output_6.SociEco_23",
      "type": "esriFieldTypeString",
      "alias": "SociEco_23",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_24",
+     "name": "Export_Output_6.SociEco_24",
      "type": "esriFieldTypeString",
      "alias": "SociEco_24",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_25",
+     "name": "Export_Output_6.SociEco_25",
      "type": "esriFieldTypeString",
      "alias": "SociEco_25",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_26",
+     "name": "Export_Output_6.SociEco_26",
      "type": "esriFieldTypeString",
      "alias": "SociEco_26",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_27",
+     "name": "Export_Output_6.SociEco_27",
      "type": "esriFieldTypeString",
      "alias": "SociEco_27",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_28",
+     "name": "Export_Output_6.SociEco_28",
      "type": "esriFieldTypeString",
      "alias": "SociEco_28",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_29",
+     "name": "Export_Output_6.SociEco_29",
      "type": "esriFieldTypeString",
      "alias": "SociEco_29",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_30",
+     "name": "Export_Output_6.SociEco_30",
      "type": "esriFieldTypeString",
      "alias": "SociEco_30",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_31",
+     "name": "Export_Output_6.SociEco_31",
      "type": "esriFieldTypeString",
      "alias": "SociEco_31",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_32",
+     "name": "Export_Output_6.SociEco_32",
      "type": "esriFieldTypeString",
      "alias": "SociEco_32",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_33",
+     "name": "Export_Output_6.SociEco_33",
      "type": "esriFieldTypeString",
      "alias": "SociEco_33",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_34",
+     "name": "Export_Output_6.SociEco_34",
      "type": "esriFieldTypeString",
      "alias": "SociEco_34",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_35",
+     "name": "Export_Output_6.SociEco_35",
      "type": "esriFieldTypeString",
      "alias": "SociEco_35",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_36",
+     "name": "Export_Output_6.SociEco_36",
      "type": "esriFieldTypeString",
      "alias": "SociEco_36",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_37",
+     "name": "Export_Output_6.SociEco_37",
      "type": "esriFieldTypeString",
      "alias": "SociEco_37",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_38",
+     "name": "Export_Output_6.SociEco_38",
      "type": "esriFieldTypeString",
      "alias": "SociEco_38",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_39",
+     "name": "Export_Output_6.SociEco_39",
      "type": "esriFieldTypeString",
      "alias": "SociEco_39",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_40",
+     "name": "Export_Output_6.SociEco_40",
      "type": "esriFieldTypeString",
      "alias": "SociEco_40",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_41",
+     "name": "Export_Output_6.SociEco_41",
      "type": "esriFieldTypeString",
      "alias": "SociEco_41",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_42",
+     "name": "Export_Output_6.SociEco_42",
      "type": "esriFieldTypeString",
      "alias": "SociEco_42",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_43",
+     "name": "Export_Output_6.SociEco_43",
      "type": "esriFieldTypeString",
      "alias": "SociEco_43",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_44",
+     "name": "Export_Output_6.SociEco_44",
      "type": "esriFieldTypeString",
      "alias": "SociEco_44",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_45",
+     "name": "Export_Output_6.SociEco_45",
      "type": "esriFieldTypeString",
      "alias": "SociEco_45",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_46",
+     "name": "Export_Output_6.SociEco_46",
      "type": "esriFieldTypeString",
      "alias": "SociEco_46",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_47",
+     "name": "Export_Output_6.SociEco_47",
      "type": "esriFieldTypeString",
      "alias": "SociEco_47",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_48",
+     "name": "Export_Output_6.SociEco_48",
      "type": "esriFieldTypeString",
      "alias": "SociEco_48",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_49",
+     "name": "Export_Output_6.SociEco_49",
      "type": "esriFieldTypeString",
      "alias": "SociEco_49",
      "length": 254,
      "domain": null
     },
     {
-     "name": "EnglishLab",
+     "name": "Export_Output_6.EnglishLab",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishLab",
      "domain": null
     },
     {
-     "name": "EnglishL_1",
+     "name": "Export_Output_6.EnglishL_1",
      "type": "esriFieldTypeString",
      "alias": "EnglishL_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "socio_csv_",
+     "name": "Export_Output_6.socio_csv_",
      "type": "esriFieldTypeInteger",
      "alias": "socio_csv_",
      "domain": null
     },
     {
-     "name": "socio_csv1",
+     "name": "Export_Output_6.socio_csv1",
      "type": "esriFieldTypeDouble",
      "alias": "FreToPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_1",
+     "name": "Export_Output_6.socio_cs_1",
      "type": "esriFieldTypeDouble",
      "alias": "AngTotPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_2",
+     "name": "Export_Output_6.socio_cs_2",
      "type": "esriFieldTypeDouble",
      "alias": "FreAngToPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_3",
+     "name": "Export_Output_6.socio_cs_3",
      "type": "esriFieldTypeDouble",
      "alias": "AucToPerc",
+     "domain": null
+    },
+    {
+     "name": "lhin.csv.LHINCode2013",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode2013",
+     "domain": null
+    },
+    {
+     "name": "lhin.csv.LHINNames",
+     "type": "esriFieldTypeString",
+     "alias": "LHINNames",
+     "length": 255,
      "domain": null
     }
    ],
@@ -11487,7 +11500,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "socio_csv1",
+     "field": "Export_Output_7.socio_csv1",
      "classificationMethod": "esriClassifyManual",
      "minValue": 0.9,
      "classBreakInfos": [
@@ -11613,444 +11626,457 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HRUID2007",
+   "displayField": "Export_Output_7.HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FID",
+     "name": "Export_Output_7.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Shape",
+     "name": "Export_Output_7.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "GEODB_OID",
+     "name": "Export_Output_7.GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "OBJECTID",
+     "name": "Export_Output_7.OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "HRUID2007",
+     "name": "Export_Output_7.HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "FRE_LABEL",
+     "name": "Export_Output_7.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "LENGTH",
+     "name": "Export_Output_7.LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "SHAPE_AREA",
+     "name": "Export_Output_7.SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "HRUID2007_",
+     "name": "Export_Output_7.HRUID2007_",
      "type": "esriFieldTypeInteger",
      "alias": "HRUID2007_",
      "domain": null
     },
     {
-     "name": "Total",
+     "name": "Export_Output_7.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "SociEcoPro",
+     "name": "Export_Output_7.SociEcoPro",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoPro",
      "domain": null
     },
     {
-     "name": "SociEcoP_1",
+     "name": "Export_Output_7.SociEcoP_1",
      "type": "esriFieldTypeString",
      "alias": "SociEcoP_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_2",
+     "name": "Export_Output_7.SociEcoP_2",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_2",
      "domain": null
     },
     {
-     "name": "SociEcoP_3",
+     "name": "Export_Output_7.SociEcoP_3",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_3",
      "domain": null
     },
     {
-     "name": "SociEcoP_4",
+     "name": "Export_Output_7.SociEcoP_4",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_4",
      "domain": null
     },
     {
-     "name": "SociEcoP_5",
+     "name": "Export_Output_7.SociEcoP_5",
      "type": "esriFieldTypeInteger",
      "alias": "SociEcoP_5",
      "domain": null
     },
     {
-     "name": "SociEcoP_6",
+     "name": "Export_Output_7.SociEcoP_6",
      "type": "esriFieldTypeString",
      "alias": "FranAge019",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_7",
+     "name": "Export_Output_7.SociEcoP_7",
      "type": "esriFieldTypeString",
      "alias": "FranAge2064",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_8",
+     "name": "Export_Output_7.SociEcoP_8",
      "type": "esriFieldTypeString",
      "alias": "FranAge65plus",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEcoP_9",
+     "name": "Export_Output_7.SociEcoP_9",
      "type": "esriFieldTypeString",
      "alias": "AngAge019",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_10",
+     "name": "Export_Output_7.SociEco_10",
      "type": "esriFieldTypeString",
      "alias": "AngAge2064",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_11",
+     "name": "Export_Output_7.SociEco_11",
      "type": "esriFieldTypeString",
      "alias": "AngAge65plus",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_12",
+     "name": "Export_Output_7.SociEco_12",
      "type": "esriFieldTypeString",
      "alias": "FranAngAge019",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_13",
+     "name": "Export_Output_7.SociEco_13",
      "type": "esriFieldTypeString",
      "alias": "FranAngAge2064",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_14",
+     "name": "Export_Output_7.SociEco_14",
      "type": "esriFieldTypeString",
      "alias": "FranAngAge65plus",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_15",
+     "name": "Export_Output_7.SociEco_15",
      "type": "esriFieldTypeString",
      "alias": "AucuneAge019",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_16",
+     "name": "Export_Output_7.SociEco_16",
      "type": "esriFieldTypeString",
      "alias": "AucuneAge2064",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_17",
+     "name": "Export_Output_7.SociEco_17",
      "type": "esriFieldTypeString",
      "alias": "AucuneAge65plus",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_18",
+     "name": "Export_Output_7.SociEco_18",
      "type": "esriFieldTypeString",
      "alias": "FranAucunDip",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_19",
+     "name": "Export_Output_7.SociEco_19",
      "type": "esriFieldTypeString",
      "alias": "FranDES",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_20",
+     "name": "Export_Output_7.SociEco_20",
      "type": "esriFieldTypeString",
      "alias": "FranApprenti",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_21",
+     "name": "Export_Output_7.SociEco_21",
      "type": "esriFieldTypeString",
      "alias": "FranCollege",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_22",
+     "name": "Export_Output_7.SociEco_22",
      "type": "esriFieldTypeString",
      "alias": "FranUni",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_23",
+     "name": "Export_Output_7.SociEco_23",
      "type": "esriFieldTypeString",
      "alias": "AngAucunDip",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_24",
+     "name": "Export_Output_7.SociEco_24",
      "type": "esriFieldTypeString",
      "alias": "AngDES",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_25",
+     "name": "Export_Output_7.SociEco_25",
      "type": "esriFieldTypeString",
      "alias": "AngApprenti",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_26",
+     "name": "Export_Output_7.SociEco_26",
      "type": "esriFieldTypeString",
      "alias": "AngCollege",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_27",
+     "name": "Export_Output_7.SociEco_27",
      "type": "esriFieldTypeString",
      "alias": "AngUni",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_28",
+     "name": "Export_Output_7.SociEco_28",
      "type": "esriFieldTypeString",
      "alias": "FranAngAucunDip",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_29",
+     "name": "Export_Output_7.SociEco_29",
      "type": "esriFieldTypeString",
      "alias": "FranAngDES",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_30",
+     "name": "Export_Output_7.SociEco_30",
      "type": "esriFieldTypeString",
      "alias": "FranAngApprenti",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_31",
+     "name": "Export_Output_7.SociEco_31",
      "type": "esriFieldTypeString",
      "alias": "FranAngCollege",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_32",
+     "name": "Export_Output_7.SociEco_32",
      "type": "esriFieldTypeString",
      "alias": "FranAngUni",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_33",
+     "name": "Export_Output_7.SociEco_33",
      "type": "esriFieldTypeString",
      "alias": "AucuneAucunDip",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_34",
+     "name": "Export_Output_7.SociEco_34",
      "type": "esriFieldTypeString",
      "alias": "AucuneDES",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_35",
+     "name": "Export_Output_7.SociEco_35",
      "type": "esriFieldTypeString",
      "alias": "AucuneApprenti",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_36",
+     "name": "Export_Output_7.SociEco_36",
      "type": "esriFieldTypeString",
      "alias": "AucuneCollege",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_37",
+     "name": "Export_Output_7.SociEco_37",
      "type": "esriFieldTypeString",
      "alias": "AucuneUni",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_38",
+     "name": "Export_Output_7.SociEco_38",
      "type": "esriFieldTypeString",
      "alias": "FranImm",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_39",
+     "name": "Export_Output_7.SociEco_39",
      "type": "esriFieldTypeString",
      "alias": "AngImm",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_40",
+     "name": "Export_Output_7.SociEco_40",
      "type": "esriFieldTypeString",
      "alias": "FranAngImm",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_41",
+     "name": "Export_Output_7.SociEco_41",
      "type": "esriFieldTypeString",
      "alias": "AucunegImm",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_42",
+     "name": "Export_Output_7.SociEco_42",
      "type": "esriFieldTypeString",
      "alias": "FranFaibleRev",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_43",
+     "name": "Export_Output_7.SociEco_43",
      "type": "esriFieldTypeString",
      "alias": "AngFaibleRev",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_44",
+     "name": "Export_Output_7.SociEco_44",
      "type": "esriFieldTypeString",
      "alias": "FranAngFaibleRev",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_45",
+     "name": "Export_Output_7.SociEco_45",
      "type": "esriFieldTypeString",
      "alias": "AucuneFaibleRev",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_46",
+     "name": "Export_Output_7.SociEco_46",
      "type": "esriFieldTypeString",
      "alias": "FranVivantSeul",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_47",
+     "name": "Export_Output_7.SociEco_47",
      "type": "esriFieldTypeString",
      "alias": "AngVivantSeul",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_48",
+     "name": "Export_Output_7.SociEco_48",
      "type": "esriFieldTypeString",
      "alias": "FranAngVivantSeul",
      "length": 254,
      "domain": null
     },
     {
-     "name": "SociEco_49",
+     "name": "Export_Output_7.SociEco_49",
      "type": "esriFieldTypeString",
      "alias": "AucuneVivantSeul",
      "length": 254,
      "domain": null
     },
     {
-     "name": "socio_csv_",
+     "name": "Export_Output_7.socio_csv_",
      "type": "esriFieldTypeInteger",
      "alias": "socio_csv_",
      "domain": null
     },
     {
-     "name": "socio_csv1",
+     "name": "Export_Output_7.socio_csv1",
      "type": "esriFieldTypeDouble",
      "alias": "FreToPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_1",
+     "name": "Export_Output_7.socio_cs_1",
      "type": "esriFieldTypeDouble",
      "alias": "AngTotPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_2",
+     "name": "Export_Output_7.socio_cs_2",
      "type": "esriFieldTypeDouble",
      "alias": "FreAngToPerc",
      "domain": null
     },
     {
-     "name": "socio_cs_3",
+     "name": "Export_Output_7.socio_cs_3",
      "type": "esriFieldTypeDouble",
      "alias": "AucToPerc",
+     "domain": null
+    },
+    {
+     "name": "LHINName.csv.LHINCode",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode",
+     "domain": null
+    },
+    {
+     "name": "LHINName.csv.HINName",
+     "type": "esriFieldTypeString",
+     "alias": "HINName",
+     "length": 255,
      "domain": null
     }
    ],
@@ -12089,395 +12115,30 @@
       "type": "esriSFS",
       "style": "esriSFSSolid",
       "color": [
-       189,
-       242,
-       194,
-       255
+       0,
+       0,
+       0,
+       0
       ],
       "outline": {
        "type": "esriSLS",
        "style": "esriSLSSolid",
        "color": [
-        110,
-        110,
-        110,
+        52,
+        52,
+        52,
         255
        ],
-       "width": 0.4
+       "width": 1
       }
      },
      "defaultLabel": "<all other values>",
-     "uniqueValueInfos": [
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         0,
-         0,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Central",
-       "label": "Central",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         85,
-         0,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 0.4
-        }
-       },
-       "value": "Central East",
-       "label": "Central East",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         255,
-         0,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Central West",
-       "label": "Central West",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         170,
-         255,
-         0,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Champlain",
-       "label": "Champlain",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         0,
-         197,
-         255,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Erie St. Clair",
-       "label": "Erie St. Clair",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         190,
-         190,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Hamilton Niagara Haldimand Brant",
-       "label": "Hamilton Niagara Haldimand Brant",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         233,
-         255,
-         190,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Mississauga Halton",
-       "label": "Mississauga Halton",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         190,
-         255,
-         232,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "North East",
-       "label": "North East",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         115,
-         223,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "North Simcoe Muskoka",
-       "label": "North Simcoe Muskoka",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         102,
-         119,
-         205,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "North West",
-       "label": "North West",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         211,
-         127,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "South East",
-       "label": "South East",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         158,
-         170,
-         215,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "South West",
-       "label": "South West",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         255,
-         234,
-         190,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "Toronto Central",
-       "label": "Toronto Central",
-       "description": ""
-      },
-      {
-       "symbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-         0,
-         112,
-         255,
-         255
-        ],
-        "outline": {
-         "type": "esriSLS",
-         "style": "esriSLSSolid",
-         "color": [
-          0,
-          0,
-          0,
-          255
-         ],
-         "width": 1
-        }
-       },
-       "value": "WaterlooWellington",
-       "label": "WaterlooWellington",
-       "description": ""
-      }
-     ]
+     "uniqueValueInfos": []
     },
     "transparency": 25,
     "labelingInfo": null
    },
-   "defaultVisibility": false,
+   "defaultVisibility": true,
    "extent": {
     "xmin": -95.85382313606915,
     "ymin": 40.67822210102392,
@@ -37407,6 +37068,39 @@
      "name": "AucToPerc",
      "type": "esriFieldTypeDouble",
      "alias": "AucToPerc",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 161,
+   "name": "lhin.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHINNames",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHINCode2013",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode2013",
+     "domain": null
+    },
+    {
+     "name": "LHINNames",
+     "type": "esriFieldTypeString",
+     "alias": "LHINNames",
+     "length": 255,
      "domain": null
     }
    ],

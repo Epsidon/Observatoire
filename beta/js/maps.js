@@ -249,7 +249,7 @@ function(
 				// 4.1.
 				// 4.2.
 				console.log('4.1. 4.2.');
-				//activeLayer = 18;
+				activeLayer = 18;
 				zoomInstruction();
 				drawLegend({activeLayer : activeLayer});
 			}

@@ -10,20 +10,16 @@ Organizer.prototype.reorganizeMapsPage = function()
 	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
-
+	
 	var instructionHeight = $("#instruction").height();
 	var instructionWidth = $("#instruction").width();
 
 	var legendTop = ($( window ).height())/3;
-	//var legendTop = mapTop + mapHeight - legendHeight - (mapHeight/2);
 	var legendLeft = (mapLeft *2);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
-	
-	/* var legendLabelTop = (mapTop ) + mapHeight - legendHeight - (navbarBrandHeight * 4 );
-	var legendLabelLeft = (mapLeft *2); */
-	
+
 	var instructionTop = mapTop + (mapLeft *2);
 	var instructionLeft = mapWidth - instructionWidth;
 	
@@ -35,6 +31,27 @@ Organizer.prototype.reorganizeMapsPage = function()
 	
 	var zoomInstructionTop = mapTop + (mapHeight / 2);
 	var zoomInstructionLeft = (($( window ).width())/2) - legendWidth ;
+	var windowWidth = $(window).width();
+	
+	var windowWidth = $( window ).width();
+		if (windowWidth <= 800) 
+		{
+			$('#zoomInInstruction').removeClass('mediumFont').addClass('smallerFont');
+			$('#mapLabel').removeClass('mediumFont').addClass('smallerFont');
+			$('#legendList').removeClass('smallFont').addClass('smallerFont');
+			$('#mapsInstructionOne').removeClass('mediumFont').addClass('smallerFont');
+			$('#hospitalLegendList').removeClass('mediumFont').addClass('smallerFont');
+			$('#legendTitle').removeClass('smallFont').addClass('smallerFont');
+		}
+		else
+		{
+			$('#zoomInInstruction').removeClass('smallerFont').addClass('mediumFont');
+			$('#legendList').removeClass('smallerFont').addClass('smallFont');
+			$('#mapLabel').removeClass('smallerFont').addClass('mediumFont');
+			$('#mapsInstructionOne').removeClass('smallerFont').addClass('mediumFont');
+			$('#hospitalLegendList').removeClass('smallerFont').addClass('mediumFont');
+			$('#legendTitle').removeClass('smallerFont').addClass('mediumFont');
+		}
 	
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
@@ -42,9 +59,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 	$("#instruction").css(
 		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	
 	
-	/* $("#legendTitle").css(
-		{'position' : 'absolute' , 'left' : legendLabelLeft + 'px', 'top' : legendLabelTop + 'px'});	
-	 */
 	$("#hospitalLegendList").css(
 		{'position' : 'absolute' , 'left' : hospitalLegendLabelLeft + 'px', 'top' : hospitalLegendLabelTop + 'px'});	
 	

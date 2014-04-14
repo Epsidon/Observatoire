@@ -482,7 +482,6 @@ h2
 }
 
 #hospitalLegendList {
-font-size: 15px;
 font-family: arial;
 font-weight: bold;
 border-width: 1px;
@@ -532,6 +531,13 @@ input
 	font-family: arial;
 }
 
+.smallerFont
+ {
+	font-size: 0.7em;
+	font-family: arial;
+	font-weight:bold;
+}
+
 input[type=radio], input[type=checkbox] {
 margin: 3px;
 margin-top: 1px \9;
@@ -571,7 +577,6 @@ margin: -5px;
 color: #000;
 font-family: arial;
 font-weight: bold;
-font-size: 15px;
 border-bottom-color: #000;
 border-top-color: #FFFFFF;
 border-right-color: #FFFFFF;

@@ -4,7 +4,44 @@ Tabs.prototype.getHome = function ()
 {
 	var body = 
 		'<div class="container">' +
-			'<p id="homeMainParagraph">Loading ...</p>' +
+			'<p><b>L’observatoire de la santé</b></p>' +
+			
+			'<p>L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.</p>'+
+			'<p>L’Observatoire de la santé des minorités de langue officielle (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.</p>'+
+			'<p>L’activité de l’Observatoire s’organise autour de deux pôles:</p>' +
+			'<p>' +
+			'<ul>1) activités de collecte de données, de recherche et de production de nouvelles connaissances</ul>'+
+			'<ul>2) valorisation et transfert des connaissances</ul>'+
+			'</p>' +
+			'<b>Contact :</b>' + ' louise.bouchard@uottawa.ca' +
+			
+			'<h4>L’équipe</h4>' +
+			
+			'<h5 class="space"><u>Direction scientifique</u></h5>' + 
+			'Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
+			
+			'<h5 class="space"><u>Co-chercheurs</u></h5>' + 
+			'Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
+			
+			'<h5 class="space"><u>Géomatique, données et analyses</u></h5>' + 
+			'Érik Bourdon, conseiller' +
+			
+			'<h5 class="space"><u>Analystes</u></h5>' + 
+			'<p>Ewa Sucha, PhD (c), Biostatistique</p>' +
+			'<p>Golnaz Sedigh, PhD (c), Économie</p>' +
+			'Ricardo Batista, PhD (c), Santé des populations' +
+			
+			'<h5 class="space"><u>Transfert et application des connaissances</u></h5>' + 
+			'<p>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</p>' +
+			
+			'<h5 class="space"><u>Programmation et gestion de la base de données</u></h5>' + 
+			'<p>Ava Ahadipour, informaticienne</p>' +
+			'<p>Seyed M Mirtaheri, informaticien</p>' +
+			
+			'<h5 class="space"><u>Soutien financier</u></h5>' + 
+			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
+			
+			/* '<p id="homeMainParagraph">Loading ...</p>' +
 				'<p id="homeMainParagraph2">Loading ...</p>' +
 				'<p>' +
 				'<span id="homeSecondLine"></span>' + 
@@ -38,7 +75,7 @@ Tabs.prototype.getHome = function ()
 				'<br>'+
 				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
 				'</br>' +
-				'</br>' ;
+				'</br>' ; */
 				
 		'</div>';
 

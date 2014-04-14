@@ -14,7 +14,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var instructionHeight = $("#instruction").height();
 	var instructionWidth = $("#instruction").width();
 
-	var legendTop = ($( window ).height())/3;
+	var legendTop = ($( window ).height())/4;
 	var legendLeft = (mapLeft *2);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
@@ -23,9 +23,19 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var instructionTop = mapTop + (mapLeft *2);
 	var instructionLeft = mapWidth - instructionWidth;
 	
-	var hospitalLegendLabelTop = mapHeight - (mapLeft * 3);
-	var hospitalLegendLabelLeft = (mapTop * 5) ;
+	var windowHeight = $(window).height();
 	
+	if (windowHeight <= 768)
+	{
+		var hospitalLegendLabelTop = ($( window ).height()) - (mapTop*2);
+		var hospitalLegendLabelLeft = (($( window ).width())/2);
+	}
+	else
+	{
+		var hospitalLegendLabelTop = ($( window ).height()) - (mapTop*2);
+		var hospitalLegendLabelLeft = (mapLeft *2);
+	}	
+
 	var mapLableTop = mapTop + (mapLeft *2);
 	var mapLableLeft = (($( window ).width())/2) - legendWidth ;
 	

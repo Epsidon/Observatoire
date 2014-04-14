@@ -2088,7 +2088,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "uniqueValue",
-     "field1": "LHINPro_73",
+     "field1": "HR035b08_E",
      "field2": null,
      "field3": null,
      "fieldDelimiter": ", ",
@@ -2475,8 +2475,8 @@
          "width": 1
         }
        },
-       "value": "WaterlooWellington",
-       "label": "WaterlooWellington",
+       "value": "Waterloo Wellington",
+       "label": "Waterloo Wellington",
        "description": ""
       }
      ]

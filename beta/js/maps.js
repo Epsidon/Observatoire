@@ -438,7 +438,10 @@ function(
 			legendBody += '</table>';
 
 			$('#layerLegendList').html(legendBody);
+			
+			sortLegendList();
 		}
+		
 		if ('hospitals' in clickedItem)	
 		{
 			var htmlBody = '';
@@ -459,6 +462,18 @@ function(
 		$('#legendList').show();
 		
 		//organizer.reorganizeMapsPage();
+	}
+	
+	function sortLegendList()
+	{	
+		var sortedTable = $('#layerLegendList').find('tr').sort(function(a,b)
+		{ 
+    		var tda = $(a).find('td:eq(2)').text(); 
+    		var tdb = $(b).find('td:eq(2)').text(); 
+			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
+		});
+				
+		$('#layerLegendList').html( $('<table></table>').append(sortedTable) );
 	}
 
 	function showResults(featureSet) 
@@ -569,7 +584,6 @@ function(
 	 */
 	function getInitialZoom()
 	{
-	
 		var mapHeightToWidthRatio = 57 / 53;
  		var normalizedDimentionBoundries = Array(1464, 1123, 713);
 

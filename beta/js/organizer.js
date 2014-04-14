@@ -50,7 +50,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 			$('#mapLabel').removeClass('smallerFont').addClass('mediumFont');
 			$('#mapsInstructionOne').removeClass('smallerFont').addClass('mediumFont');
 			$('#hospitalLegendList').removeClass('smallerFont').addClass('mediumFont');
-			$('#legendTitle').removeClass('smallerFont').addClass('mediumFont');
+			$('#legendTitle').removeClass('smallerFont').addClass('smallFont');
 		}
 	
 	$("#mapLabel").css(

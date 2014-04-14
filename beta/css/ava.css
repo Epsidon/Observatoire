@@ -45,14 +45,13 @@ border-radius: 0.8em;
 	padding-top:1em;
 }
 
-.bold
- {
-	font-family: arial;
-	font-weight: bold;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	margin-bottom: 10px;
-	margin-right: 20px;
+.bold {
+font-family: arial;
+font-weight: bold;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+margin-bottom: 10px;
+margin-right: 13px;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) {
@@ -62,12 +61,10 @@ color: #000000;
 vertical-align: middle;
 }
 
-
-.popupTextStyle
-{
-	font-family: arial;
-	font-weight: bold;
-	font-size:1.3em;	
+.popupTextStyle {
+font-family: arial;
+font-weight: bold;
+font-size: 1.4em;
 }
 
 .modalFooterSize
@@ -287,8 +284,7 @@ margin-left: 5px;
 background-color: #E4E4E6;
 color: #000000;
 font-family: arial;
-font-weight: bold;
-font-size: 1.1em;
+font-size: 1em;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>th {
@@ -304,10 +300,8 @@ border-top: 1px solid #000;
 text-align: center;
 vertical-align: middle;
 font-family: arial;
-font-weight: bold;
-font-size: 1.2em;
+font-size: 1.1em;
 }
-
 .navbar-inverse .navbar-link 
 {
 	color: #000;
@@ -533,10 +527,10 @@ input
 	color:#FE642E;
 }
 
-.smallFont
- {
-	font-size: 11px;
-	font-family: arial;
+.smallFont {
+font-size: 11px;
+font-family: arial;
+font-weight: bold;
 }
 
 .smallerFont
@@ -554,7 +548,9 @@ line-height: normal;
 
 .mediumFont
 {
-	font-size: 1em;
+	font-size: 13px;
+	font-family: arial;
+	
 }
 
 .smallIcon

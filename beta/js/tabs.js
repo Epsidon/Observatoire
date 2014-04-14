@@ -175,19 +175,19 @@ Tabs.prototype.getAnalysis = function ()
 {
 	var body = 
 		'<div class="container">' +
-			'<h2 class="grayFont mediumFont" id="headerOneResearchTab"></h2>' +
+			'<p class="homeTitle" id="headerOneResearchTab"></p>' +
 			'<p>' +
 				'<font class="mediumFont" id="validationFirstContent"></font>' +
 			'</p>' +
 			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
-			'<h2 class="grayFont mediumFont" id="headerTwoResearchTab"></h2>' +
+			'<h6 id="headerTwoResearchTab"></h6>' +
 			'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
-			'<h2 class="grayFont mediumFont" id="headerThreeResearchTab"></h2>' +
+			'<h6 id="headerThreeResearchTab"></h6>' +
 			'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
-			'<h2 class="grayFont mediumFont" id="headerFourResearchTab"></h2>' +
+			'<h6 id="headerFourResearchTab"></h6>' +
 			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 		'</div>';
 		

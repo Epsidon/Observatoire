@@ -4,7 +4,7 @@ Tabs.prototype.getHome = function ()
 {
 	var body = 
 		'<div class="container">' +
-			'<p><b>L’observatoire de la santé</b></p>' +
+			'<p class="homeTitle">L’observatoire de la santé</p>' +
 			
 			'<p>L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.</p>'+
 			'<p>L’Observatoire de la santé des minorités de langue officielle (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.</p>'+
@@ -13,9 +13,9 @@ Tabs.prototype.getHome = function ()
 			'<ul>1) activités de collecte de données, de recherche et de production de nouvelles connaissances</ul>'+
 			'<ul>2) valorisation et transfert des connaissances</ul>'+
 			'</p>' +
-			'<b>Contact :</b>' + ' louise.bouchard@uottawa.ca' +
+			'<p><b>Contact :</b>' + ' louise.bouchard@uottawa.ca' + '</p>'+
 			
-			'<h4>L’équipe</h4>' +
+			'<p class="homeTitle">L’équipe</p>' +
 			
 			'<h5 class="space"><u class="title">Direction scientifique</u></h5>' + 
 			'Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +

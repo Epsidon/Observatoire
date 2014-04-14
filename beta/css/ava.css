@@ -8,6 +8,12 @@
 	overflow:hidden;
 }
 
+.title {
+font-family: arial;
+font-weight: bold;
+color: #424594;
+}
+
 .navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover {
 color: #000;
 border-style: solid;

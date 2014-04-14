@@ -17,28 +17,28 @@ Tabs.prototype.getHome = function ()
 			
 			'<h4>L’équipe</h4>' +
 			
-			'<h5 class="space"><u>Direction scientifique</u></h5>' + 
+			'<h5 class="space"><u class="title">Direction scientifique</u></h5>' + 
 			'Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
 			
-			'<h5 class="space"><u>Co-chercheurs</u></h5>' + 
+			'<h5 class="space"><u class="title">Co-chercheurs</u></h5>' + 
 			'Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
 			
-			'<h5 class="space"><u>Géomatique, données et analyses</u></h5>' + 
+			'<h5 class="space"><u class="title">Géomatique, données et analyses</u></h5>' + 
 			'Érik Bourdon, conseiller' +
 			
-			'<h5 class="space"><u>Analystes</u></h5>' + 
+			'<h5 class="space"><u class="title">Analystes</u></h5>' + 
 			'<p>Ewa Sucha, PhD (c), Biostatistique</p>' +
 			'<p>Golnaz Sedigh, PhD (c), Économie</p>' +
 			'Ricardo Batista, PhD (c), Santé des populations' +
 			
-			'<h5 class="space"><u>Transfert et application des connaissances</u></h5>' + 
+			'<h5 class="space"><u class="title">Transfert et application des connaissances</u></h5>' + 
 			'<p>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</p>' +
 			
-			'<h5 class="space"><u>Programmation et gestion de la base de données</u></h5>' + 
+			'<h5 class="space"><u class="title">Programmation et gestion de la base de données</u></h5>' + 
 			'<p>Ava Ahadipour, informaticienne</p>' +
 			'<p>Seyed M Mirtaheri, informaticien</p>' +
 			
-			'<h5 class="space"><u>Soutien financier</u></h5>' + 
+			'<h5 class="space"><u class="title">Soutien financier</u></h5>' + 
 			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
 			
 			/* '<p id="homeMainParagraph">Loading ...</p>' +

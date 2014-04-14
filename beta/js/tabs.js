@@ -10,9 +10,8 @@ Tabs.prototype.getHome = function ()
 				'<span id="homeSecondLine"></span>' + 
 				'</p>' +
 
-				'<p><br>1) <span id="homeOptionOne"></span></br>' +
-				'<br>2) <span id="homeOptionTwo"></span></br>' +
-				'</br></p>' +
+				'<ul>1) <span id="homeOptionOne"></span></ul>' +
+				'<ul>2) <span id="homeOptionTwo"></span></ul>' +
 				
 				'<h4 class="grayFont largeFont" id="TeamHeader"></h4>' +
 				

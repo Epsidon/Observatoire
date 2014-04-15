@@ -13,32 +13,33 @@ Tabs.prototype.getHome = function ()
 			'<ul>1) activités de collecte de données, de recherche et de production de nouvelles connaissances</ul>'+
 			'<ul>2) valorisation et transfert des connaissances</ul>'+
 			'</p>' +
-			'<p><b>Contact :</b>' + '<a href="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + '<u>louise.bouchard@uottawa.ca</u>' + '</a>' + '</p>'+
+			'<p><b>Contact :</b>' + 
+			'<a href="mailto:louise.bouchard@uottawa.ca">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 			
 			'<p class="homeTitle">L’équipe</p>' +
 			
-			'<h5 class="space"><u class="title">Direction scientifique</u></h5>' + 
+			'<h5 class="space">Direction scientifique</h5>' + 
 			'<a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + ' Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' + '</a>' +
 			
-			'<h5 class="space"><u class="title">Co-chercheurs</u></h5>' + 
+			'<h5>Co-chercheurs</h5>' + 
 			'Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
 			
-			'<h5 class="space"><u class="title">Géomatique, données et analyses</u></h5>' + 
+			'<h5 class="space">Géomatique, données et analyses</h5>' + 
 			'Érik Bourdon, conseiller' +
 			
-			'<h5 class="space"><u class="title">Analystes</u></h5>' + 
+			'<h5 class="space">Analystes</h5>' + 
 			'<p>Ewa Sucha, PhD (c), Biostatistique</p>' +
 			'<p>Golnaz Sedigh, PhD (c), Économie</p>' +
 			'Ricardo Batista, PhD (c), Santé des populations' +
 			
-			'<h5 class="space"><u class="title">Transfert et application des connaissances</u></h5>' + 
+			'<h5 class="space">Transfert et application des connaissances</h5>' + 
 			'<p>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</p>' +
 			
-			'<h5 class="space"><u class="title">Programmation et gestion de la base de données</u></h5>' + 
+			'<h5 class="space">Programmation et gestion de la base de données</h5>' + 
 			'<p>Ava Ahadipour, informaticienne</p>' +
 			'<p>Seyed M Mirtaheri, informaticien</p>' +
 			
-			'<h5 class="space"><u class="title">Soutien financier</u></h5>' + 
+			'<h5 class="space">Soutien financier</h5>' + 
 			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
 			
 			/* '<p id="homeMainParagraph">Loading ...</p>' +

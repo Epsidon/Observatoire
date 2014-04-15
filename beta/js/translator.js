@@ -75,4 +75,9 @@ Translator.prototype.translatePage = function()
 	$('#headerTwoResearchTab').html(this.T("Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada"));
 	$('#headerThreeResearchTab').html(this.T("Linguistic Minorities in Canada and Health"));
 	$('#headerFourResearchTab').html(this.T("Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities"));
+
+	$('#ENhealthForceOntario').html(this.T("Health Force Ontario"));
+	$('#ENministryOfHealth').html(this.T("Ministry of Health and Long-Term Care of Ontario"));
+	$('#ENStatisticCanada').html(this.T("Statistics Canada"));
+	
 };

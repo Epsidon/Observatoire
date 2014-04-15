@@ -259,4 +259,7 @@ Fr['F = Too unreliable to be published']= 'F = Trop peu fiable pour être publi�
 Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
 Fr['Hospitals By French Language Service (FLS) Designation'] = 'Hôpitaux par désignation selon la Loi sur les services en français (LSF)';
 
+Fr['Health Force Ontario'] = 'Professions Santé Ontario';
+Fr['Ministry of Health and Long-Term Care of Ontario'] = 'Ministère de la santé et des soins de longue durée de l’Ontario';
+Fr['Statistics Canada'] = 'Statistique Canada';
 

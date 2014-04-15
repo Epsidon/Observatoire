@@ -13,12 +13,12 @@ Tabs.prototype.getHome = function ()
 			'<ul>1) activités de collecte de données, de recherche et de production de nouvelles connaissances</ul>'+
 			'<ul>2) valorisation et transfert des connaissances</ul>'+
 			'</p>' +
-			'<p><b>Contact :</b>' + ' louise.bouchard@uottawa.ca' + '</p>'+
+			'<p><b>Contact :</b>' + '<a href="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + '<u>louise.bouchard@uottawa.ca</u>' + '</a>' + '</p>'+
 			
 			'<p class="homeTitle">L’équipe</p>' +
 			
 			'<h5 class="space"><u class="title">Direction scientifique</u></h5>' + 
-			'Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
+			'<a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + ' Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' + '</a>' +
 			
 			'<h5 class="space"><u class="title">Co-chercheurs</u></h5>' + 
 			'Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +

@@ -387,8 +387,9 @@ function translateMap()
 
 	layerData[5] = [];
 	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Socio-Economic Profiles") + "</b>";
-	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${EnglishL_1}" + "&nbsp" + "(" + "${HRUID2007}" + ")" +
-	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${SociEcoP_1}" + "</p>" + "</span>" +
+	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_6.EnglishL_1}" + 
+	"&nbsp" + "(" + "${Export_Output_6.HRUID2007}" + ")" +
+	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${Export_Output_6.SociEcoP_1}" + "</p>" + "</span>" +
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center' id='emptyHeader'></th>"+
@@ -399,114 +400,118 @@ function translateMap()
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Population") + "</td>"+
-	"<td align='center'>${SociEcoP_2}</td>"+
-	"<td align='center'>${SociEcoP_3}</td>"+
-	"<td align='center'>${SociEcoP_4}</td>"+
-	"<td align='center'>${SociEcoP_5}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_2}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_3}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_4}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_5}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Proportion of the total population") + "</td>"+
-	"<td align='center'>${socio_csv1}" + "%" + "</td>"+
-	"<td align='center'>${socio_cs_1}" + "%" + "</td>"+
-	"<td align='center'>${socio_cs_2}" + "%" + "</td>"+
-	"<td align='center'>${socio_cs_3}" + "%" + "</td>"+
+	"<td align='center'>${Export_Output_6.socio_csv1}" + "%" + "</td>"+
+	"<td align='center'>${Export_Output_6.socio_cs_1}" + "%" + "</td>"+
+	"<td align='center'>${Export_Output_6.socio_cs_2}" + "%" + "</td>"+
+	"<td align='center'>${Export_Output_6.socio_cs_3}" + "%" + "</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Age groups") + "</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("0 to 19 years old") + "</td>"+
-	"<td align='center'>${SociEcoP_6}</td>"+
-	"<td align='center'>${SociEcoP_9}</td>"+
-	"<td align='center'>${SociEco_12}</td>"+
-	"<td align='center'>${SociEco_15}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_6}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_9}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_12}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_15}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("20 to 64 years old") + "</td>"+
-	"<td align='center'>${SociEcoP_7}</td>"+
-	"<td align='center'>${SociEco_10}</td>"+
-	"<td align='center'>${SociEco_13}</td>"+
-	"<td align='center'>${SociEco_16}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_7}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_10}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_13}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_16}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("65 years old and above") + "</td>"+
-	"<td align='center'>${SociEcoP_8}</td>"+
-	"<td align='center'>${SociEco_11}</td>"+
-	"<td align='center'>${SociEco_14}</td>"+
-	"<td align='center'>${SociEco_17}</td>"+
+	"<td align='center'>${Export_Output_6.SociEcoP_8}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_11}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_14}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_17}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Education") + "</td>" +
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("No certificate, diploma or degree") + "</td>"+
-	"<td align='center'>${SociEco_18}</td>"+
-	"<td align='center'>${SociEco_23}</td>"+
-	"<td align='center'>${SociEco_28}</td>"+
-	"<td align='center'>${SociEco_33}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_18}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_23}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_28}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_33}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("High school diploma") + "</td>"+
-	"<td align='center'>${SociEco_19}</td>"+
-	"<td align='center'>${SociEco_24}</td>"+
-	"<td align='center'>${SociEco_29}</td>"+
-	"<td align='center'>${SociEco_34}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_19}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_24}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_29}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_34}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("College certificate/diploma") + "</td>"+
-	"<td align='center'>${SociEco_21}</td>"+
-	"<td align='center'>${SociEco_26}</td>"+
-	"<td align='center'>${SociEco_31}</td>"+
-	"<td align='center'>${SociEco_36}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_21}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_26}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_31}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_36}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("University certificate/diploma degree") + "</td>"+
-	"<td align='center'>${SociEco_22}</td>"+
-	"<td align='center'>${SociEco_27}</td>"+
-	"<td align='center'>${SociEco_32}</td>"+
-	"<td align='center'>${SociEco_37}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_22}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_27}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_32}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_37}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Immigrants") + "</td>"+
-	"<td align='center'>${SociEco_38}</td>"+
-	"<td align='center'>${SociEco_39}</td>"+
-	"<td align='center'>${SociEco_40}</td>"+
-	"<td align='center'>${SociEco_41}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_38}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_39}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_40}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_41}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Low income person") + "</td>"+
-	"<td align='center'>${SociEco_42}</td>"+
-	"<td align='center'>${SociEco_43}</td>"+
-	"<td align='center'>${SociEco_44}</td>"+
-	"<td align='center'>${SociEco_45}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_42}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_43}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_44}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_45}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Person living alone") + "</td>"+
-	"<td align='center'>${SociEco_46}</td>"+
-	"<td align='center'>${SociEco_47}</td>"+
-	"<td align='center'>${SociEco_48}</td>"+
-	"<td align='center'>${SociEco_49}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_46}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_47}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_48}</td>"+
+	"<td align='center'>${Export_Output_6.SociEco_49}</td>"+
 	"</tr>"+
 	"</table>" + 
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[5]['outFields'] = new Array("HRUID2007", "EnglishL_1", "SociEcoP_1", "SociEcoP_1",
-	"SociEcoP_2", "SociEcoP_3", "SociEcoP_4", "SociEcoP_5", 
-	"socio_csv1", "socio_cs_1", "socio_cs_2",
-	"SociEcoP_6", "SociEcoP_9", "SociEco_12",
-	"SociEco_15", "SociEcoP_7", "SociEco_10",
-	"SociEco_13", "SociEco_16", "SociEcoP_8",
-	"SociEco_11", "SociEco_14", "SociEco_17",
-	"SociEco_18", "SociEco_23", "SociEco_28",
-	"SociEco_33", "SociEco_19", "SociEco_24",
-	"SociEco_29", "SociEco_34", "SociEco_21",
-	"SociEco_26", "SociEco_31", "SociEco_36",
-	"SociEco_22", "SociEco_27", "SociEco_32",
-	"SociEco_37", "SociEco_38", "SociEco_39",
-	"SociEco_40", "SociEco_41", "SociEco_42",
-	"SociEco_43", "SociEco_44", "SociEco_45",
-	"SociEco_46", "SociEco_47", "SociEco_48",
-	"SociEco_49", "socio_cs_3"
-	 );
+	layerData[5]['outFields'] = new Array("Export_Output_6.EnglishL_1", "Export_Output_6.HRUID2007", "Export_Output_6.SociEcoP_1",
+	 "Export_Output_6.SociEcoP_2",
+	"Export_Output_6.SociEcoP_3",
+	"Export_Output_6.SociEcoP_4",
+	"Export_Output_6.SociEcoP_5",
+	"Export_Output_6.socio_csv1",
+	"Export_Output_6.socio_cs_1",
+	"Export_Output_6.socio_cs_2",
+	"Export_Output_6.socio_cs_3",
+	"Export_Output_6.SociEcoP_6",
+	"Export_Output_6.SociEcoP_9",
+	"Export_Output_6.SociEco_12",
+	"Export_Output_6.SociEco_15",
+	"Export_Output_6.SociEcoP_7","Export_Output_6.SociEco_10", "Export_Output_6.SociEco_13", "Export_Output_6.SociEco_16",
+	"Export_Output_6.SociEcoP_8", "Export_Output_6.SociEco_11", "Export_Output_6.SociEco_14", "Export_Output_6.SociEco_17",
+	"Export_Output_6.SociEco_18","Export_Output_6.SociEco_36","Export_Output_6.SociEco_22","Export_Output_6.SociEco_27",
+	"Export_Output_6.SociEco_23", "Export_Output_6.SociEco_28", "Export_Output_6.SociEco_33", "Export_Output_6.SociEco_19", 
+	"Export_Output_6.SociEco_24","Export_Output_6.SociEco_21", "Export_Output_6.SociEco_26","Export_Output_6.SociEco_32",
+	"Export_Output_6.SociEco_29", "Export_Output_6.SociEco_34", "Export_Output_6.SociEco_31", "Export_Output_6.SociEco_49",
+	"Export_Output_6.SociEco_37", "Export_Output_6.SociEco_38","Export_Output_6.SociEco_39","Export_Output_6.SociEco_40",
+	"Export_Output_6.SociEco_41", "Export_Output_6.SociEco_42", "Export_Output_6.SociEco_43", "Export_Output_6.SociEco_44", 
+	"Export_Output_6.SociEco_45", "Export_Output_6.SociEco_46", "Export_Output_6.SociEco_47", "Export_Output_6.SociEco_48");
 	 
 	layerData[6] = [];
 	layerData[6]['infoWindowTitle'] = "<b>" + translator.T("Health Profiles") + "</b>";

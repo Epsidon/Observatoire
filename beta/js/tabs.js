@@ -177,7 +177,7 @@ Tabs.prototype.getAnalysis = function ()
 		'<div class="container">' +
 			'<p class="homeTitle" id="headerOneResearchTab"></p>' +
 			'<p>' +
-				'<font class="mediumFont" id="validationFirstContent"></font>' +
+				'<font id="validationFirstContent"></font>' +
 			'</p>' +
 			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			

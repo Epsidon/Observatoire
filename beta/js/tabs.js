@@ -135,14 +135,14 @@ Tabs.prototype.getPartners = function ()
 {
 	var body =
 		'<div class="container">' +	
-			'<li>EPSIDON</li>' +
-			'<li>J W COMM INC.</li>' +
-			'<li class="healthForceOntario">Health Force Ontario</li>' +
-			'<li>IRHM -Institut de recherche de l’Hôpital Montfort</li>' +
-			'<li>OPHRDC - Ontario Physician Human Resources Data Center</li>' +
-			'<li class="ministryOfHealth">Ministry of Health and Long-Term Care of Ontario </li>' +
-			'<li>RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</li>' +
-			'<li class="StatisticCanada>Statistics Canada</li>' +
+			'<li><a href="http://www.epsidon.com/" target="_blank">EPSIDON</a></li>' +
+			'<li><a href="http://www.jwcomm.ca/" target="_blank">J W COMM INC.</a></li>' +
+			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/en/Home" target="_blank">Health Force Ontario</li>' +
+			'<li><a href="http://www.hopitalmontfort.com/fr/travailler-a-irhm" target="_blank">IRHM -Institut de recherche de l’Hôpital Montfort</a></li>' +
+			'<li><a href="https://www.ophrdc.org/" target="_blank">OPHRDC - Ontario Physician Human Resources Data Center</a></li>' +
+			'<li class="ENministryOfHealth"><a href="http://www.health.gov.on.ca/en/" target="_blank">Ministry of Health and Long-Term Care of Ontario </li>' +
+			'<li><a href="http://www.rrasfo.ca/" target="_blank">RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</a></li>' +
+			'<li class="ENStatisticCanada"><a href="http://www.statcan.gc.ca/start-debut-eng.html/" target="_blank">Statistics Canada</a></li>' +
 			
 			/* '<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +

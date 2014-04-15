@@ -50,23 +50,19 @@ function(
 		logo: false,
 		sliderStyle: "small"});
 
-
-	
 	//"validExtent" stores the last valid extent found while panning 
 	var validExtent ;
 	
 	on(map, 'extent-change', function(evt) {
 		if (!initExtent.contains(evt.extent)) 
-			{
-				console.log('Outside bounds!');
-				
-            } 
-			else 
-			{
-				console.log('Updated extent');
-				validExtent = evt.extent;
-			
-            }
+		{
+			console.log('Outside bounds!');
+		} 
+		else 
+		{
+			console.log('Updated extent');
+			validExtent = evt.extent;
+		}
 	});
 
 	 on(map, 'pan-end', function(evt) {
@@ -109,18 +105,15 @@ function(
 				mode: FeatureLayer.MODE_ONDEMAND,
 				infoTemplate:layerTemplate[i],
 				outFields: layerData[i]['outFields']});
-		
 	}
 
-	for (var j in servicePointBuffers) {
-	
-		for (var i = 0; i < 2; i++) {
-
+	for (var j in servicePointBuffers) 
+	{
+		for (var i = 0; i < 2; i++) 
+		{
 			var bufferIndex = servicePointBuffers[j][i];
-		
 			console.log('Creating Buffers for Layer ' + j + 
 				' buffer index: ' + bufferIndex);
-
 			mapLayer[bufferIndex] = new FeatureLayer(
 				mapAddress + bufferIndex);
 		}
@@ -151,22 +144,19 @@ function(
 			$(".zoomTo").parent().append($(methNote));
 			var html = $(".zoomTo").html();
 			$('.zoomTo').html(translator.T(html));
-		});
-			 
+		});	 
 	}, 100);
-	
-	
 
 	numVisibleSpinners = 0;
+	
 	map.on("zoom-start", function() {
-		numVisibleSpinners++;
-		
-		if (numVisibleSpinners == 1)
-		{
-			$("#loadingIndicator").fadeIn('fast');
-			$( "#map" ).fadeTo("slow" , 0.8);
-		}
-		
+	numVisibleSpinners++;
+	
+	if (numVisibleSpinners == 1)
+	{
+		$("#loadingIndicator").fadeIn('fast');
+		$( "#map" ).fadeTo("slow" , 0.8);
+	}
 		fadeOutSpinnerEventually();
 	});	
 
@@ -177,7 +167,6 @@ function(
 	map.on("update-start", function() {
 		$("#loadingIndicator").fadeIn('fast');
 		$( "#map" ).fadeTo("slow" , 0.8);
-		
 		fadeOutSpinnerEventually();
 	});
 
@@ -189,22 +178,19 @@ function(
 	{		
 		if (isServicePoint)
 		{
-			return function(){
+			return function()
+			{
 				updateServicePoints();
 			};
 		}
 		else
 		{
 			var myId = layerId;
-		
 			return function(){
 				updateLayer(myId);
 			};
 		}
 	}
-	
-	
-	
 
 	function updateLayer(clickedLayerId)
 	{
@@ -222,7 +208,6 @@ function(
 		map.graphics.clear();
 		map.infoWindow.hide();
 		
-
 		for(var i = 0; i < numLayers; i++)
 			map.removeLayer(mapLayer[i]);
 		
@@ -231,7 +216,6 @@ function(
 
 		// 4.
 		removeLegend();
-		
 		createInfoWindow();
 		var extent = map.getZoom();
 
@@ -242,7 +226,6 @@ function(
 			{
 				activeLayer = 17;
 				drawLegend({activeLayer : activeLayer});
-				
 			}
 			else
 			{
@@ -250,6 +233,8 @@ function(
 				// 4.2.
 				console.log('4.1. 4.2.');
 				activeLayer = 18;
+				$('#legendList').addClass('hidden');
+				$('#legendTitle').addClass('hidden');
 				zoomInstruction();
 				drawLegend({activeLayer : activeLayer});
 			}
@@ -257,11 +242,12 @@ function(
 		else
 		{
 			// 4.3.
+			$('#legendList').removeClass('hidden');
+			$('#legendTitle').removeClass('hidden');
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;
 			drawLegend({activeLayer : activeLayer});
-			
 		}
 	
 		try
@@ -278,7 +264,6 @@ function(
 		{
 			console.log('ERROR: ' + err.message);
 		}
-		
 		mapLayerLabel = layersLabels[activeLayer];
 		LayerLegend = legendLabel[activeLayer];
 		updateServicePoints();
@@ -292,7 +277,6 @@ function(
 			if ($('#layerHyperLink' + i).prop('checked') )
 				clickedLayerId = i;	
 		}
-		
 		return clickedLayerId;
 	}
 	
@@ -436,9 +420,7 @@ function(
 			}
 				
 			legendBody += '</table>';
-
 			$('#layerLegendList').html(legendBody);
-			
 			sortLegendList();
 		}
 		
@@ -460,8 +442,6 @@ function(
 		}		
 
 		$('#legendList').show();
-		
-		//organizer.reorganizeMapsPage();
 	}
 	
 	function sortLegendList()
@@ -553,21 +533,18 @@ function(
 		
 		}
 		
-		for (var j in servicePointBuffers) {
+		for (var j in servicePointBuffers) 
+		{
 	
-		for (var i = 0; i < 2; i++) {
-
-			var bufferIndex = servicePointBuffers[j][i];
-		
-			console.log('Creating Buffers for Layer ' + j + 
-				' buffer index: ' + bufferIndex);
-
-			mapLayer[bufferIndex] = new FeatureLayer(
-				mapAddress + bufferIndex);
+			for (var i = 0; i < 2; i++)
+			{
+				var bufferIndex = servicePointBuffers[j][i];
+				console.log('Creating Buffers for Layer ' + j + 
+					' buffer index: ' + bufferIndex);
+				mapLayer[bufferIndex] = new FeatureLayer(
+					mapAddress + bufferIndex);
+			}
 		}
-	}
-
-
 	}
 	
 	/**

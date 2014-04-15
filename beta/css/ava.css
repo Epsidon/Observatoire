@@ -718,7 +718,12 @@ border-radius: 0.5em;
 }
 
  
- .navbar-primary .navbar { background:#2f3335; border-bottom:none; }
+.navbar-primary .navbar {
+background: #2f3335;
+border-bottom: none;
+margin: 9px;
+border-radius:0.5em;
+}
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a:hover {color: #000;}

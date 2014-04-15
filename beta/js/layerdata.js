@@ -190,7 +190,7 @@ function translateMap()
 	"<p>"+ "<b>"+ translator.T("Total Population in 2011:") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
 	"<table border=1 class='table table-striped'>" +
 	"<tr>"+
-	"<th align='center'>" + translator.T("Speciality") + "</th>"+
+	"<th>" + translator.T("Speciality") + "</th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
 	"<th align='center'>" + translator.T("English") + "</th>"+
 	"<th align='center'>" + translator.T("Others") + "</th>"+
@@ -840,28 +840,29 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${SociEcoP_2}</td>"+
-	"<td align='center'>${SociEcoP_3}</td>"+
-	"<td align='center'>${SociEcoP_4}</td>"+
-	"<td align='center'>${SociEcoP_5}</td>"+
-	"<td align='center'>${Total}</td>"+
+	"<td align='center'>${Export_Output_7.SociEcoP_2}</td>"+
+	"<td align='center'>${Export_Output_7.SociEcoP_3}</td>"+
+	"<td align='center'>${Export_Output_7.SociEcoP_4}</td>"+
+	"<td align='center'>${Export_Output_7.SociEcoP_5}</td>"+
+	"<td align='center'>${Export_Output_7.Total}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${socio_csv1}" + "%" + "</td>"+
-	"<td align='center'>" + "${socio_cs_1}" + "%" + "</td>"+
-	"<td align='center'>" + "${socio_cs_2}" + "%" + "</td>"+
-	"<td align='center'>" + "${socio_cs_3}" + "%" + "</td>"+
+	"<td align='center'>" + "${Export_Output_7.socio_csv1}" + "%" + "</td>"+
+	"<td align='center'>" + "${Export_Output_7.socio_cs_1}" + "%" + "</td>"+
+	"<td align='center'>" + "${Export_Output_7.socio_cs_2}" + "%" + "</td>"+
+	"<td align='center'>" + "${Export_Output_7.socio_cs_3}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
 	"</table>" + translator.T("Source: 2011 National Household Survey") +
-	"<p>" + "${FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${SociEcoP_1}"+ "</p>" +
+	"<p>" + "${Export_Output_7.FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${Export_Output_7.SociEcoP_1}"+ "</p>" +
 	"<span class='spanToTranslate hidden'></span>" +
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
-	"SociEcoP_4", "SociEcoP_5", "Total", "socio_csv1", "socio_cs_1", "socio_cs_2", "socio_cs_3", "FRE_LABEL");
+	layerData[17]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
+	,"Export_Output_7.Total", "Export_Output_7.socio_csv1", "Export_Output_7.socio_cs_1", "Export_Output_7.socio_cs_2",
+	"Export_Output_7.socio_cs_3", "Export_Output_7.SociEcoP_1");
 
 	layerData[18] = [];
 	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";

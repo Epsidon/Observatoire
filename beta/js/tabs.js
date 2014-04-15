@@ -135,7 +135,16 @@ Tabs.prototype.getPartners = function ()
 {
 	var body =
 		'<div class="container">' +	
-			'<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
+			'<li>EPSIDON</li>' +
+			'<li>J W COMM INC.</li>' +
+			'<li class="healthForceOntario">Health Force Ontario</li>' +
+			'<li>IRHM -Institut de recherche de l’Hôpital Montfort</li>' +
+			'<li>OPHRDC - Ontario Physician Human Resources Data Center</li>' +
+			'<li class="ministryOfHealth">Ministry of Health and Long-Term Care of Ontario </li>' +
+			'<li>RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</li>' +
+			'<li class="StatisticCanada>Statistics Canada</li>' +
+			
+			/* '<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
 			'<p>' +
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
 				'<br>' +
@@ -165,7 +174,7 @@ Tabs.prototype.getPartners = function ()
 			
 			'<p>' +
 			'<a href="http://www.statcan.gc.ca/start-debut-eng.html" target="_blank"><img border="0" src="images/StatisticsCanada.jpg" ></a>' +
-			'</p>' + 
+			'</p>' +  */
 		'</div>';
 
 

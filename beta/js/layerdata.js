@@ -406,7 +406,7 @@ function translateMap()
 	"<td align='center'>${Export_Output_6.SociEcoP_5}</td>"+
 	"</tr>"+ */
 	"<tr>" +
-	"<td align='center'>" + translator.T("Proportion of the total population") + "</td>"+
+	"<td align='center'>" + translator.T("% of the total population") + "</td>"+
 	"<td align='center'>${Export_Output_6.socio_csv1}" + "%" + "</td>"+
 	"<td align='center'>${Export_Output_6.socio_cs_1}" + "%" + "</td>"+
 	"<td align='center'>${Export_Output_6.socio_cs_2}" + "%" + "</td>"+
@@ -565,7 +565,7 @@ function translateMap()
 	"<td align='center'>${HealthPr_8}</td>"+
 	"</tr>"+
 	"<tr>" +
-	"<td align='center'>" + translator.T("Type of drinker, regular (%)") + "</td>"+
+	"<td align='center'>" + translator.T("Regular drinker(%)") + "</td>"+
 	"<td align='center'>${TES4_csv_B}</td>"+
 	"<td align='center'>${HealthPr_9}</td>"+
 	"</tr>"+
@@ -621,8 +621,8 @@ function translateMap()
 	"</tr>"+
 	"</table>" + 
 	"<br>" + 
-	translator.T("E = Use with caution") +  "</br>" +
-	"<n>" +translator.T("F = Too unreliable to be published") + "</n>" +
+	translator.T("E: Use with caution") +  "</br>" +
+	"<n>" +translator.T("F: Too unreliable to be published") + "</n>" +
 	"</br>" +
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[6]['outFields'] = new Array( 

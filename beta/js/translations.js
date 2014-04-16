@@ -107,7 +107,7 @@ Fr['French only'] = 'Francais seulement';
 Fr['English only'] = 'Anglais seulement';
 Fr['French & English'] = 'Francais et anglais';
 Fr['Neither Official Language'] = 'Aucune langue officielle';
-Fr['Proportion of the total population'] = 'Proportion de la population totale';
+Fr['% of the total population'] = '% de la population totale';
 Fr['Age groups'] = 'Groupes d’age';
 Fr['Education'] = 'Éducation';
 
@@ -229,13 +229,13 @@ Fr['Person living alone'] = 'Personne vivant seule';
 
 Fr['Perceived health, fair or poor (%)'] = 'Santé perçue, passable ou mauvaise (%)';
 Fr['Perceived mental health, fair or poor (%)'] = 'Santé mentale perçue, passable ou mauvaise (%)';
-Fr['Perceived life stress, quite a bit or extremely stressful (%)'] = 'Stress perçu dans la vie, assez ou extrêmement stressantes (%)';
-Fr['Participation and activity limitation, sometimes or often (%)'] = 'Participation et limitation des activités, parfois ou souvent (%)';
-Fr['At least one chronic disease (%)'] = 'Au moins un problèmes chroniques de santé (%)';
-Fr['Body mass index (BMI) (18 or older), overweight or obese (%)'] = 'Indice de la masse corporelle (IMC) (18 ans et plus), embonpoint ou obésité (%)';
+Fr['Perceived life stress, quite a bit or extremely stressful (%)'] = 'Stress perçu dans la vie, assez et extrêmement élevé (%)';
+Fr['Participation and activity limitation, sometimes or often (%)'] = 'Limitation des activités, parfois ou souvent (%) | Activity limitation, sometimes or often (%)';
+Fr['At least one chronic disease (%)'] = 'Au moins un problème chronique de santé';
+Fr['Body mass index (BMI) (18 or older), overweight or obese (%)'] = 'Embonpoint ou obésité (%) | Overweight and obese (%)';
 Fr['Fruit and vegetable consumption, less than 5 times per day (%)'] = 'Consommation de fruits et légumes, moins de 5 fois par jour (%)';
 Fr['Current smoker, daily or occasional (%)'] = 'Fume actuellement, tous les jours ou à l’occasion (%)';
-Fr['Type of drinker, regular (%)'] = 'Type de buveur, buveur régulier (%)';
+Fr['Regular drinker(%)'] = 'Buveur régulier (%)';
 Fr['Regular medical doctor (%)'] = 'A un médecin régulier (%)';
 Fr['Language spoken with medical doctor, English (%)'] = 'Langue parlée avec le médecin, anglais';
 Fr['Contact with a family medicine physician or a nurse in the past 12 months (%)'] = 'Consultation d’un médecin de famille ou une infirmière au cours des 12 derniers mois (%)';
@@ -259,8 +259,8 @@ Fr['DA'] = 'AD';
 Fr[' Local Health Integration Network (LHIN).'] = '.';
 Fr['Ontario']= 'Ontario';
 
-Fr['E = Use with caution']= 'E = Utiliser avec prudence';
-Fr['F = Too unreliable to be published']= 'F = Trop peu fiable pour être publiée';
+Fr['E: Use with caution']= 'E : donnée à utiliser avec prudence';
+Fr['F: Too unreliable to be published']= 'F : donnée trop peu fiable pour être publiée';
 Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
 Fr['Hospitals By French Language Service (FLS) Designation'] = 'Hôpitaux par désignation selon la Loi sur les services en français (LSF)';
 

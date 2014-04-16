@@ -133,48 +133,17 @@ Tabs.prototype.getMaps = function ()
 
 Tabs.prototype.getPartners = function () 
 {
+
 	var body =
 		'<div class="container">' +	
 			'<li><a href="http://www.epsidon.com/" target="_blank">EPSIDON</a></li>' +
 			'<li><a href="http://www.jwcomm.ca/" target="_blank">J W COMM INC.</a></li>' +
-			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/en/Home" target="_blank">' + translator.T('Health Force Ontario') + '</a></li>' +
+			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'eng/Home') + '" target="_blank">' + translator.T('Health Force Ontario') + '</a></li>' +
 			'<li><a href="http://www.hopitalmontfort.com/fr/travailler-a-irhm" target="_blank">IRHM -Institut de recherche de l’Hôpital Montfort</a></li>' +
 			'<li><a href="https://www.ophrdc.org/" target="_blank">OPHRDC - Ontario Physician Human Resources Data Center</a></li>' +
-			'<li class="ENministryOfHealth"><a href="http://www.health.gov.on.ca/en/" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a></li>' +
+			'<li class="ENministryOfHealth"><a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/default.aspx':'eng') + '" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a></li>' +
 			'<li><a href="http://www.rrasfo.ca/" target="_blank">RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</a></li>' +
-			'<li class="ENStatisticCanada"><a href="http://www.statcan.gc.ca/start-debut-eng.html" target="_blank">' + translator.T('Statistics Canada') + '</a></li>' +
-			
-			/* '<h4 class="grayFont largeFont" id="financialSupport"></h4>' +
-			'<p>' +
-				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'<br>' +
-				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
-				'</br>' +
-			'</p>' +
-
-			'<h4 class="grayFont largeFont" id="dataProvidersMsg"></h4>' +
-
-			'<p>' +
-				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'<br>' +
-				'<a href="http://www.healthforceontario.ca/en/Home" target="_blank"><img border="0" src="images/HealthForceOntario.jpg" ></a>' +	
-				'</br>' +
-			'</p>' +
-			
-			'<p>' +
-				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'<br>' +
-				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
-				'<br>' +
-			'</p>' +
-			
-			'<p>' +
-				'<a href="https://www.ophrdc.org/" target="_blank"><img border="0" src="images/OntarioPhysicianHumanResourcesDataCentre.jpg" ></a>' +
-			'</p>' +
-			
-			'<p>' +
-			'<a href="http://www.statcan.gc.ca/start-debut-eng.html" target="_blank"><img border="0" src="images/StatisticsCanada.jpg" ></a>' +
-			'</p>' +  */
+			'<li class="ENStatisticCanada"><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + translator.T('Statistics Canada') + '</a></li>' +
 		'</div>';
 
 

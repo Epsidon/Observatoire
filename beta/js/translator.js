@@ -80,4 +80,6 @@ Translator.prototype.translatePage = function()
 	$('#ENministryOfHealth').html(this.T("Ministry of Health and Long-Term Care of Ontario"));
 	$('#ENStatisticCanada').html(this.T("Statistics Canada"));
 	
+	$('#ENhealthForceOntarioLink').html(this.T("http://www.healthforceontario.ca/en/Home"));
+	
 };

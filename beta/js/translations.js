@@ -263,3 +263,5 @@ Fr['Health Force Ontario'] = 'Professions Santé Ontario';
 Fr['Ministry of Health and Long-Term Care of Ontario'] = 'Ministère de la santé et des soins de longue durée de l’Ontario';
 Fr['Statistics Canada'] = 'Statistique Canada';
 
+Fr['http://www.healthforceontario.ca/en/Home'] = 'http://www.healthforceontario.ca/fr/Home';
+

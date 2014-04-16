@@ -42,6 +42,15 @@ Tabs.prototype.getHome = function ()
 			'<h5 class="space">Soutien financier</h5>' + 
 			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
 			
+			'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
+				'<br>' +
+				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+				'<br>'+
+				'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') +  '"target="_blank">' +
+				'<img border="0" src="images/healthandLongTermCare' +  (router.getLanguage() == 'french'? 'Fr':'En')  +  '.jpg" ></a>' +
+				'</br>' +
+				'</br>'+
+			
 			/* '<p id="homeMainParagraph">Loading ...</p>' +
 				'<p id="homeMainParagraph2">Loading ...</p>' +
 				'<p>' +

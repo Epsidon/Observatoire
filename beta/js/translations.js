@@ -38,13 +38,14 @@ Fr['Zoom to access data'] = 'Zoomer pour accéder aux données';
 Fr['Global Non-Response Rate (GNR) = '] = 'Taux global de non-réponse (TGN) = ';
 Fr[' Global non-response rate (GNR) = '] = ' Taux global de non-réponse (TGN) = ';
 Fr['French Speaking Population (2011)'] = 'Population francophone (2011)';
-Fr['Profiles By LHIN (2011)'] = 'Profiles par RLISS (2011)';
+Fr['Profiles By LHIN (2011)'] = 'Profils par RLISS (2011)';
 Fr['Profession by LHIN'] = 'Profiles par RLISS';
 Fr['Physician by LHIN'] = 'Par des Médecins du RLISS';
 Fr['Zoom in for more details on DA'] = 'Zoomer pour plus de détails sur DA';
 Fr['Health Professionals'] = 'Professionnels de la santé';
-Fr['Health Profiles'] = 'Profiles Santé';
+Fr['Health Profiles'] = 'Profil de la santé';
 Fr['Socio-Economic Profiles'] = 'Profiles socio-économique';
+Fr['Sociodemographic Profile']= 'Profil socio-démographique';
 Fr['Socio Economic Profiles'] = 'Profiles socio-économique';
 Fr['PDF Link'] = 'Lien pour PDF';
 Fr['PDF Link '] = 'Lien pour PDF';
@@ -60,13 +61,13 @@ Fr['Knowledge of Official Language'] = 'Connaissance des langues officielles';
 
 Fr['All Hospitals'] = 'Tous les hôpitaux';
 
-Fr['All Hospitals and Health Units'] = 'Tous les hôpitaux et centres de santé';
-Fr['General Rehabilitation Hospital'] = 'Hôpital avec soins général en réadaptation';
+Fr['All Hospitals and Health Units'] = 'Tous les hôpitaux et unités de santé';
+Fr['General Rehabilitation Hospital'] = 'Hôpital général de réadaptation';
 Fr['Mental Health Units'] = 'Unités de santé mentale';
-Fr['Special Rehabilitation Hospital'] = 'Hôpital avec soins spécialisés en réadaptation';
-Fr['Acute Care Treatment Hospital'] = 'Hôpital pour soins aigus';
+Fr['Special Rehabilitation Hospital'] = 'Hôpital spécialisé en réadaptation';
+Fr['Acute Care Treatment Hospital'] = 'Hôpital de soins aigus';
 Fr['Ambulatory Care'] = 'Soins ambulatoires';
-Fr['Chronic Care Treatment Hospital'] = 'Hôpital pour malades chroniques';
+Fr['Chronic Care Treatment Hospital'] = 'Hôpital de soins chroniques';
 
 Fr['English & French='] = 'Anglais et Français=';
 Fr['English & French']='Anglais et Français';
@@ -179,7 +180,7 @@ Fr['Speech Language Pathologists'] = 'Orthophonistes';
 
 Fr[' 25 km Driving Distance'] = ' Distance de conduite 25 km';
 Fr[' 50 km Driving Distance'] = ' Distance de conduite 50 km';
-Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';
+Fr['Health Professions by LHIN'] = 'Professions de santé par RLISS';
 Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
 Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
 Fr['Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';
@@ -194,8 +195,8 @@ Fr['Examining the Distribution of French Speaking Family Physicians in Ontario�
 
 Fr['No FLS Obligation'] = ' Aucune obligation';
 Fr['FLS Identified'] = 'Identifié - LSF';
-Fr['FLS Designated Partial'] = 'Désignation partielle - LSF';
-Fr['FLS Designated All'] = 'Désignation complète - LSF';
+Fr['FLS Designated Partial'] = 'Établissements avec désignation partielle -LSF';
+Fr['FLS Designated All'] = 'Établissements  avec désignation complète - LSF';
 Fr[' Select a data layer from the menu below and click on map for detailed information.'] = ' Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
 Fr['Legend: '] = 'légende : ';
@@ -205,7 +206,7 @@ Fr['First Official Language Spoken: French'] = 'Première langue officielle parl
 Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
-Fr['Health Professional By LHIN'] = 'Professionel de la santé par RLISS';
+Fr['Health Professions by LHIN'] = 'Professions de santé par RLISS';
 Fr['Canadian Community Health Survey Combined Cycles 2001 to 2012'] = 'Cycles combinés de 2001 à 2012 de l’Enquête sur la santé dans les collectivités canadiennes';
 Fr['Local Health Integration Network (LHIN)'] = 'Réseaux locaux d’intégration des services de santé (RLISS)';
 

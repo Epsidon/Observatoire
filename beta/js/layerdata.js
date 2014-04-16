@@ -184,7 +184,7 @@ function translateMap()
 	layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 	layerData[4] = [];
-	layerData[4]['infoWindowTitle'] = "<b>" + translator.T("Health Professional By LHIN") + "</b>";
+	layerData[4]['infoWindowTitle'] = "<b>" + translator.T("Health Professions by LHIN") + "</b>";
 	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}" + "&nbsp" + 
 	"(" + "${HR035b08_H}" + ")" +
 	"<p>"+ "<b>"+ translator.T("Total Population in 2011:") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
@@ -386,7 +386,7 @@ function translateMap()
 	);
 
 	layerData[5] = [];
-	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Socio-Economic Profiles") + "</b>";
+	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Sociodemographic Profile") + "</b>";
 	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_6.EnglishL_1}" + 
 	"&nbsp" + "(" + "${Export_Output_6.HRUID2007}" + ")" +
 	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${Export_Output_6.SociEcoP_1}" + "</p>" + "</span>" +
@@ -877,14 +877,14 @@ function translateMap()
 
 	layersLabels = [
 		translator.T('Mother Tongue'), translator.T('Knowledge of Official Language'), translator.T('First Official Language Spoken'), translator.T('Language Spoken Most Often at Home'),
-		translator.T('Health Professionals by LHIN'), translator.T('Socio-Economic Profiles'), translator.T('Health Profiles'),
+		translator.T('Health Professions by LHIN'), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'),
 		translator.T('All Hospitals and Health Units'), 
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
 		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Identified'),
 		translator.T('FLS Designated Partial'), translator.T('FLS Designated All'), translator.T('Local Health Integration Network (LHIN)'), translator.T('Ontario'), translator.T('Ontario')];
 	  
 	legendLabel = [translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French Only'), translator.T('First Official Language Spoken: French'), translator.T('Language Spoken Most Often at Home: French'),
-		translator.T('Health Professionals by LHIN'), translator.T('Socio-Economic Profiles'), translator.T('Health Profiles'), translator.T('All Hospitals and Health Units'), 
+		translator.T('Health Professions by LHIN'), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'), translator.T('All Hospitals and Health Units'), 
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
 		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Identified'),
 		translator.T('FLS Designated Partial'), translator.T('FLS Designated All'), translator.T('First Official Language Spoken: French'), translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];

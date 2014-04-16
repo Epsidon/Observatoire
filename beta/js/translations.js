@@ -56,7 +56,7 @@ Fr['French='] = 'Français=';
 Fr['English='] = 'Anglais=';
 Fr['Non Official='] = 'Non officiel=';
 Fr['Total='] = 'Total=';
-Fr['Total Population in 2011='] = 'Population en 2011=';
+Fr['Total Population in 2011:'] = 'Population en 2011 : ';
 Fr['Knowledge of Official Language'] = 'Connaissance des langues officielles';
 
 Fr['All Hospitals'] = 'Tous les hôpitaux';
@@ -249,7 +249,7 @@ Fr['Speciality'] = 'Specialité';
 Fr['French'] = 'Français';
 Fr['English'] = 'Anglais';
 Fr['Others'] = 'Autres';
-Fr['Total Population in 2011:'] = 'Population totale en 2011: ';
+Fr['Total Population in 2011: '] = 'Population totale en 2011 : ';
 
 Fr['Dissemination Area(DA) #'] = 'Aire de diffusion(AD) #';
 Fr[' is part of the '] = ' fait partie du RLISS ';

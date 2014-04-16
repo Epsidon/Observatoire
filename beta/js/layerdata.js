@@ -188,7 +188,7 @@ function translateMap()
 	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}</span>" +
 	"&nbsp" + 
 	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${HR035b08_H}" + ")" + 
-	"<p>"+ "<b>"+ translator.T("Total Population in 2011:") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
+	"<p>"+ "<b>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
 	"<table border=1 class='table table-striped'>" +
 	"<tr>"+
 	"<th>" + translator.T("Speciality") + "</th>"+
@@ -663,7 +663,7 @@ function translateMap()
 	layerData[8]['infoWindowTitle'] = "<b>" + translator.T("General Rehabilitation Hospital") + "</b>";
 	layerData[8]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NAME}</span>" + "&nbsp" +
 	 "(" + "${LHINProfil}" + ")" + "<p>" + "<b>" + 
-	 translator.T("Total Population in 2011:") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +
+	 translator.T("Total Population in 2011: ") + "&nbsp" + "</b>" + "${LHINProf_2}"+ "</p>" +
 	 "<p><b>"+ "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'>" + translator.T("Hospital") + "</th>"+

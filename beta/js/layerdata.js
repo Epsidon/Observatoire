@@ -398,13 +398,13 @@ function translateMap()
 	"<th align='center'>" + translator.T("French & English") + "</th>" +
 	"<th align='center'>" + translator.T("Neither Official Language") + "</th>" +
 	"</tr>"+
-	"<tr>" +
+	/* "<tr>" +
 	"<td align='center'>" + translator.T("Population") + "</td>"+
 	"<td align='center'>${Export_Output_6.SociEcoP_2}</td>"+
 	"<td align='center'>${Export_Output_6.SociEcoP_3}</td>"+
 	"<td align='center'>${Export_Output_6.SociEcoP_4}</td>"+
 	"<td align='center'>${Export_Output_6.SociEcoP_5}</td>"+
-	"</tr>"+
+	"</tr>"+ */
 	"<tr>" +
 	"<td align='center'>" + translator.T("Proportion of the total population") + "</td>"+
 	"<td align='center'>${Export_Output_6.socio_csv1}" + "%" + "</td>"+

@@ -94,6 +94,7 @@ Fr['First official language spoken French'] = 'Première langue officielle parl�
 Fr['Detailed language spoken most often at home French'] = 'Détails des langues utilisées régulièrement à la maison Français';
 Fr['Physicians by LHIN'] = 'Médecins par RLISS';
 Fr['Hospitals'] = 'Hôpitaux';
+Fr['High school diploma'] = 'Diplôme d’études secondaires';
 
 Fr['The number of GP who can provide care in French'] = 'GPF';
 Fr['The number of GP who can provide care in English'] = 'GPE';
@@ -108,6 +109,7 @@ Fr['French & English'] = 'Francais et anglais';
 Fr['Neither Official Language'] = 'Aucune langue officielle';
 Fr['Proportion of the total population'] = 'Proportion de la population totale';
 Fr['Age groups'] = 'Groupes d’age';
+Fr['Education'] = 'Éducation';
 
 Fr['Notes'] = 'Notes';
 Fr['MINISTRY OF '] = 'Ministere de la ';

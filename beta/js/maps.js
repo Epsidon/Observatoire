@@ -224,7 +224,7 @@ function(
 		{
 			if (clickedLayerId == 2)
 			{
-				activeLayer = 17;
+				activeLayer = 16;
 				drawLegend({activeLayer : activeLayer});
 			}
 			else
@@ -232,7 +232,7 @@ function(
 				// 4.1.
 				// 4.2.
 				console.log('4.1. 4.2.');
-				activeLayer = 18;
+				activeLayer = 17;
 				$('#legendList').addClass('hidden');
 				$('#legendTitle').addClass('hidden');
 				zoomInstruction();

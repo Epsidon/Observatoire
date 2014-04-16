@@ -38,11 +38,11 @@ var layerInfoWindow = new Array();
 var layerTemplate = new Array();
 var mapLayer = new Array();
 
-var defaultLayer = 18;
+var defaultLayer = 17;
 
 var activeLayer = defaultLayer;
 var inLayer = 0;
-var numLayers = 19;
+var numLayers = 18;
 
 var map;
 var symbol;
@@ -57,7 +57,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/Ontario/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAOntarioRLISS/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
@@ -775,9 +775,9 @@ function translateMap()
 	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[13]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
-
+	
 	layerData[14] = [];
-	layerData[14]['infoWindowTitle'] = "<b>" + translator.T("FLS Identified") + "</b>";
+	layerData[14]['infoWindowTitle'] = "<b>" + translator.T("FLS Designated All") + "</b>";
 	layerData[14]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NAME}</span>" + 
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
@@ -814,29 +814,10 @@ function translateMap()
 	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[15]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
+	
 	layerData[16] = [];
-	layerData[16]['infoWindowTitle'] = "<b>" + translator.T("FLS Designated All") + "</b>";
-	layerData[16]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${LHIN_NAME}</span>" + 
-	"<table border=1 class='table table-striped'>"+
-	"<tr>"+
-	"<th align='center'>" + translator.T("Hospital") + "</th>"+
-	"<th align='center'>" + translator.T("City") + "</th>"+
-	"<th align='center'>" + translator.T("Address") + "</th>"+
-	"<th align='center'>" + translator.T("Postal Code") + "</th>"+
-	"</tr>"+
-	"<tr>"+
-	"<td align='center'>${C_NAME_ENG}</td>"+
-	"<td align='center'>${CITY}</td>"+
-	"<td align='center'>${ADDRESS_1}</td>"+
-	"<td align='center'>${POSTALCODE}</td>"+
-	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[16]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
-
-
-	layerData[17] = [];
-	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Local Health Integration Network (LHIN)") + "</b>";
-	layerData[17]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	layerData[16]['infoWindowTitle'] = "<b>" + translator.T("Local Health Integration Network (LHIN)") + "</b>";
+	layerData[16]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -867,28 +848,28 @@ function translateMap()
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + 
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[17]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
+	layerData[16]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
 	,"Export_Output_7.Total", "Export_Output_7.socio_csv1", "Export_Output_7.socio_cs_1", "Export_Output_7.socio_cs_2",
 	"Export_Output_7.socio_cs_3", "Export_Output_7.SociEcoP_1");
 
-	layerData[18] = [];
-	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[18]['infoWindowBody'] ="<span class='spanToTranslate hidden popupTextStylepopupTextStyle'>${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
+	layerData[17] = [];
+	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
+	layerData[17]['infoWindowBody'] ="<span class='spanToTranslate hidden popupTextStylepopupTextStyle'>${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
 	 "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[18]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
+	layerData[17]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 	layersLabels = [
 		translator.T('Mother Tongue'), translator.T('Knowledge of Official Language'), translator.T('First Official Language Spoken'), translator.T('Language Spoken Most Often at Home'),
 		translator.T('Health Professions by LHIN '), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'),
 		translator.T('All Hospitals and Health Units'), 
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
-		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Identified'),
-		translator.T('FLS Designated Partial'), translator.T('FLS Designated All'), translator.T('Local Health Integration Network (LHIN)'), translator.T('Ontario'), translator.T('Ontario')];
+		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
+		translator.T('FLS Designated Partial'), translator.T('Local Health Integration Network (LHIN)'), translator.T('Ontario'), translator.T('Ontario')];
 	  
 	legendLabel = [translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French Only'), translator.T('First Official Language Spoken: French'), translator.T('Language Spoken Most Often at Home: French'),
 		translator.T(' Health Professions by LHIN '), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'), translator.T('All Hospitals and Health Units'), 
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
-		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Identified'),
-		translator.T('FLS Designated Partial'), translator.T('FLS Designated All'), translator.T('First Official Language Spoken: French'), translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
+		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
+		translator.T('FLS Designated Partial'), translator.T('First Official Language Spoken: French'), translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
 }
 

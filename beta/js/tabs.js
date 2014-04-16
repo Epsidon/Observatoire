@@ -42,10 +42,10 @@ Tabs.prototype.getHome = function ()
 			'<h5 class="space">Soutien financier</h5>' + 
 			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
 			
-			'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
-				'<br>' +
+			
+				
 				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'<br>'+
+				
 				'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') +  '"target="_blank">' +
 				'<img border="0" src="images/healthandLongTermCare' +  (router.getLanguage() == 'french'? 'Fr':'En')  +  '.jpg" ></a>' +
 				'</br>' +
@@ -148,7 +148,7 @@ Tabs.prototype.getPartners = function ()
 			'<li><a href="http://www.epsidon.com/" target="_blank">EPSIDON</a></li>' +
 			'<li><a href="http://www.jwcomm.ca/" target="_blank">J W COMM INC.</a></li>' +
 			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'eng/Home') + '" target="_blank">' + translator.T('Health Force Ontario') + '</a></li>' +
-			'<li><a href="http://www.hopitalmontfort.com/fr/travailler-a-irhm" target="_blank">IRHM -Institut de recherche de l’Hôpital Montfort</a></li>' +
+			'<li><a href=" http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('IRHM -Institut de recherche de l’Hôpital Montfort') + '</a></li>' +
 			'<li><a href="https://www.ophrdc.org/" target="_blank">OPHRDC - Ontario Physician Human Resources Data Center</a></li>' +
 			'<li class="ENministryOfHealth"><a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/default.aspx':'eng') + '" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a></li>' +
 			'<li><a href="http://www.rrasfo.ca/" target="_blank">RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</a></li>' +

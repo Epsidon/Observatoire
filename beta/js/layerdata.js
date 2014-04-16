@@ -18,7 +18,7 @@ layerToRegion[12] = 2;
 layerToRegion[13] = 2;
 layerToRegion[14] = 2;
 layerToRegion[15] = 2;
-layerToRegion[16] = 2;
+//layerToRegion[16] = 2;
 
 
 var servicePointBuffers = [];
@@ -31,7 +31,7 @@ servicePointBuffers[12] = [94,101];
 servicePointBuffers[13] = [108,115];
 servicePointBuffers[14] = [129,122];
 servicePointBuffers[15] = [136,143];
-servicePointBuffers[16] = [150,157];
+//servicePointBuffers[16] = [150,157];
 
 
 var layerInfoWindow = new Array();
@@ -80,7 +80,7 @@ function translateMap()
 
 	accordion[2] = []
 	accordion[2]['title'] = translator.T('Health Services (2011)');
-	accordion[2]['numLayers'] = 10;
+	accordion[2]['numLayers'] = 9;
 
 
 	layerData[0] = [];

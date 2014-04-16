@@ -22,7 +22,7 @@ MapModal.prototype.setTranslatedTitles = function()
 
 	this.accordion[2] = []
 	this.accordion[2]['title'] = '<div class="bold">' + translator.T('Health Services (2011)') + '</div>';
-	this.accordion[2]['numLayers'] = 10;
+	this.accordion[2]['numLayers'] = 9;
 
 	this.accordionHeaders = {
 		7 : translator.T('Hospitals By Services Offered'), 

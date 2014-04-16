@@ -38,7 +38,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	}	
 
 	var mapLableTop = mapTop + (mapLeft *2);
-	var mapLableLeft = (($( window ).width())/2) - legendWidth ;
+	var mapLableLeft = (($( window ).width())/2) - 240 ;
 	
 	var zoomInstructionTop = mapTop + (mapHeight / 2);
 	var zoomInstructionLeft = (($( window ).width())/2) - legendWidth ;

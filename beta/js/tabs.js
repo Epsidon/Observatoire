@@ -40,16 +40,8 @@ Tabs.prototype.getHome = function ()
 			'<p>Seyed M Mirtaheri, informaticien</p>' +
 			
 			'<h5 class="space">Soutien financier</h5>' + 
-			'<p>Ministère de la santé et des soins de longue durée de l’Ontario</p>' +
-			
-			
-				
-				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				
-				'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') +  '"target="_blank">' +
-				'<img border="0" src="images/healthandLongTermCare' +  (router.getLanguage() == 'french'? 'Fr':'En')  +  '.jpg" ></a>' +
-				'</br>' +
-				'</br>'+
+			'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
+			'<a href="http://www.health.gov.on.ca/en/" target="_blank">Ministère de la santé et des soins de longue durée de l’Ontario</a>' +
 			
 			/* '<p id="homeMainParagraph">Loading ...</p>' +
 				'<p id="homeMainParagraph2">Loading ...</p>' +

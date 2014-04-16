@@ -51,8 +51,8 @@ Tabs.prototype.getHome = function ()
 			'</p>' +
 		
 			'<h5 class="space"><u>Soutien financier</u></h5>' + 
-			'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-			'<a href="http://www.health.gov.on.ca/en/" target="_blank">Ministère de la santé et des soins de longue durée de l’Ontario</a>' +
+			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
+			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministère de la santé et des soins de longue durée de l’Ontario') + '</a>' +
 			
 			/* '<p id="homeMainParagraph">Loading ...</p>' +
 				'<p id="homeMainParagraph2">Loading ...</p>' +

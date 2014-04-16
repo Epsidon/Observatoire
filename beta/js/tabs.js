@@ -16,30 +16,41 @@ Tabs.prototype.getHome = function ()
 			'<p><b>Contact :</b>' + 
 			'<a href="mailto:louise.bouchard@uottawa.ca">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 			
-			'<p class="homeTitle">L’équipe</p>' +
+			'<p>' +
+				'<h4>L’équipe</h4>' +
+				'Direction scientifique' +
+				'<br><a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
+			'</p>' +
 			
-			'<h5 class="space">Direction scientifique</h5>' + 
-			'<a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + ' Louise Bouchard, PhD, Sociologie, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' + '</a>' +
+			'<p>' +
+				'Co-chercheur' +
+				'<br>Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</br>' +
+			'</p>' +
 			
-			'<h5>Co-chercheurs</h5>' + 
-			'Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa' +
+			'<p>' +
+				'Géomatique, données et analyses' +
+				'<br>Érik Bourdon, conseiller</br>' +
+			'</p>' +
 			
-			'<h5 class="space">Géomatique, données et analyses</h5>' + 
-			'Érik Bourdon, conseiller' +
+			'<p>' +
+				'Analystes' +
+				'<br>Ewa Sucha, PhD (candidate), Biostatistique</br>' +
+				'<br>Golnaz Sedigh, PhD (candidate), Économie</br>' +
+				'<br>Ricardo Batista, PhD (candidat), Santé des populations</br>' +
+			'</p>' +
 			
-			'<h5 class="space">Analystes</h5>' + 
-			'<p>Ewa Sucha, PhD (c), Biostatistique</p>' +
-			'<p>Golnaz Sedigh, PhD (c), Économie</p>' +
-			'Ricardo Batista, PhD (c), Santé des populations' +
+			'<p>' +
+				'Transfert et application des connaissances' +
+				'<br>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</br>' +
+			'</p>' +
 			
-			'<h5 class="space">Transfert et application des connaissances</h5>' + 
-			'<p>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</p>' +
-			
-			'<h5 class="space">Programmation et gestion de la base de données</h5>' + 
-			'<p>Ava Ahadipour, informaticienne</p>' +
-			'<p>Seyed M Mirtaheri, informaticien</p>' +
-			
-			'<h5 class="space">Soutien financier</h5>' + 
+			'<p>' +
+				'Développeurs' +
+				'<br>Ava Ahadipour</br>' +
+				'<br>Seyed M. Mirtaheri</br>' +
+			'</p>' +
+		
+			'<h5 class="space"><u>Soutien financier</u></h5>' + 
 			'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
 			'<a href="http://www.health.gov.on.ca/en/" target="_blank">Ministère de la santé et des soins de longue durée de l’Ontario</a>' +
 			

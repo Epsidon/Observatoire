@@ -135,7 +135,9 @@ function(
 	
 	// Translate the popup window, if there is any translatable item in it. 	
 	setInterval(function(){
+	
 		$(".spanToTranslate").each(function(index) {
+			sortTable();
 			$(this).removeClass('spanToTranslate');
 			$(this).html(translator.T($(this).html()));
 			$(this).removeClass('hidden');
@@ -207,7 +209,6 @@ function(
 		// 2.
 		map.graphics.clear();
 		map.infoWindow.hide();
-		
 		for(var i = 0; i < numLayers; i++)
 			map.removeLayer(mapLayer[i]);
 		
@@ -452,28 +453,21 @@ function(
     		var tdb = $(b).find('td:eq(2)').text(); 
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
-				
+		
 		$('#layerLegendList').html( $('<table></table>').append(sortedTable) );
+	
 	}
-
 	
 	function sortTable()
-	{	
-		var tableData = document.getElementById('healthProfesionsByLhin');
-
-        var rowData = tableData.getElementsByTagName('tr'); 
-
-        for(var i = 0; i < rowData.length - 1; i++)
-		{
-            for(var j = 0; j < rowData.length - (i + 1); j++)
-			{
-				if(parseInt(rowData.item(j).getElementsByTagName('td').item(0).innerHTML) > parseInt(rowData.item(j+1).getElementsByTagName('td').item(0).innerHTML))
-				{
-				tableData.insertBefore(rowData.item(j+1),rowData.item(j));
-                }
-            }
-        }
-		
+	{
+		var sortedTable = $('#healthProfesionsByLhin').find('tr').sort(function(a,b)
+		{ 
+    		var tda = $(a).find('td:eq(0)').text(); 
+    		var tdb = $(b).find('td:eq(0)').text(); 
+			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
+		});
+				
+		$('#healthProfesionsByLhin').append(sortedTable);
 	}
 	
 	

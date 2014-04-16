@@ -459,15 +459,17 @@ function(
 	
 	function sortTable()
 	{	
-		 var tableData = document.getElementById('healthProfesionsByLhin');
+		var tableData = document.getElementById('healthProfesionsByLhin');
 
         var rowData = tableData.getElementsByTagName('tr'); 
 
-        for(var i = 0; i < rowData.length - 1; i++){
-            for(var j = 0; j < rowData.length - (i + 1); j++){
-
-                if(parseInt(rowData.item(j).getElementsByTagName('td').item(0).innerHTML) > parseInt(rowData.item(j+1).getElementsByTagName('td').item(0).innerHTML)){
-                    tableData.insertBefore(rowData.item(j+1),rowData.item(j));
+        for(var i = 0; i < rowData.length - 1; i++)
+		{
+            for(var j = 0; j < rowData.length - (i + 1); j++)
+			{
+				if(parseInt(rowData.item(j).getElementsByTagName('td').item(0).innerHTML) > parseInt(rowData.item(j+1).getElementsByTagName('td').item(0).innerHTML))
+				{
+				tableData.insertBefore(rowData.item(j+1),rowData.item(j));
                 }
             }
         }

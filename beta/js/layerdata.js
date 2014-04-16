@@ -117,7 +117,7 @@ function translateMap()
 	"<th>" + translator.T("DA") + "</th>"+
 	"<th>" + translator.T("French") + "</th>" +
 	"<th>" + translator.T("English") + "</th>" +
-	"<th>" + translator.T("English & French") + "</th>"+
+	"<th>" + translator.T("French & English") + "</th>"+
 	"<th>" + translator.T("Neither") +"</th>"+
 	"<th>Total</th>"+
 	"</tr>"+
@@ -143,7 +143,7 @@ function translateMap()
 	"<th>" + translator.T("DA") + "</th>"+
 	"<th>" + translator.T("French") + "</th>"+
 	"<th>" + translator.T("English") + "</th>"+
-	"<th>" + translator.T("English & French") + "</th>"+
+	"<th>" + translator.T("French & English") + "</th>"+
 	"<th>" + translator.T("Neither") + "</th>"+
 	"<th>Total</th>"+
 	"</tr>"+
@@ -393,8 +393,8 @@ function translateMap()
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center' id='emptyHeader'></th>"+
-	"<th align='center'>" + translator.T("French Only") + "</th>" +
-	"<th align='center'>" + translator.T("English Only") + "</th>" +
+	"<th align='center'>" + translator.T("French only") + "</th>" +
+	"<th align='center'>" + translator.T("English only") + "</th>" +
 	"<th align='center'>" + translator.T("French & English") + "</th>" +
 	"<th align='center'>" + translator.T("Neither Official Language") + "</th>" +
 	"</tr>"+
@@ -821,7 +821,7 @@ function translateMap()
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
 	"<th align='center'>" + translator.T("English") + "</th>"+
-	"<th align='center'>" + translator.T("English & French") + "</th>"+
+	"<th align='center'>" + translator.T("French & English") + "</th>"+
 	"<th align='center'>" + translator.T("Neither") + "</th>"+
 	"<th align='center'>" + translator.T("Total") + "</th>"+
 	"</tr>"+
@@ -865,7 +865,7 @@ function translateMap()
 		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
 		translator.T('FLS Designated Partial'), translator.T('Local Health Integration Network (LHIN)'), translator.T('Ontario'), translator.T('Ontario')];
 	  
-	legendLabel = [translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French Only'), translator.T('First Official Language Spoken: French'), translator.T('Language Spoken Most Often at Home: French'),
+	legendLabel = [translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French only'), translator.T('First Official Language Spoken: French'), translator.T('Language Spoken Most Often at Home: French'),
 		translator.T(' Health Professions by LHIN '), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'), translator.T('All Hospitals and Health Units'), 
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
 		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),

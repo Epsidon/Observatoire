@@ -69,8 +69,8 @@ Fr['Acute Care Treatment Hospital'] = 'Hôpital de soins aigus';
 Fr['Ambulatory Care'] = 'Soins ambulatoires';
 Fr['Chronic Care Treatment Hospital'] = 'Hôpital de soins chroniques';
 
-Fr['English & French='] = 'Anglais et Français=';
-Fr['English & French']='Anglais et Français';
+Fr['French & English: '] = 'Français et Anglais : ';
+Fr['French & English']='Français et Anglais';
 Fr['Neither='] = 'Ni=';
 Fr['Neither'] = 'Aucune';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';

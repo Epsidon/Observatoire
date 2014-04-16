@@ -65,7 +65,6 @@ var LayerLegend = translator.T('Ontario LHIN Information');
 var mapServicePointLegendLabel = '';
 //var accordionHeaders = {7 : translator.T('Hospitals By Services Offered'), 14 : translator.T('Hospitals By French Language Service (FLS) Designation')};
 
-
 translateMap();
 
 function translateMap()
@@ -189,7 +188,7 @@ function translateMap()
 	"&nbsp" + 
 	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${HR035b08_H}" + ")" + 
 	"<p>"+ "<b>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
-	"<table border=1 class='table table-striped'>" +
+	"<table border=1 id ='healthProfesionsByLhin' class='table table-striped'>" +
 	"<tr>"+
 	"<th>" + translator.T("Speciality") + "</th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -385,7 +384,7 @@ function translateMap()
 	"LHINPr_138", "LHINPr_139", "LHINPr_140", "LHINPr_141", "LHINPr_142", "LHINPr_143", "LHINPr_144",
 	"LHINPr_145", "LHINPr_146", "LHINPr_147"
 	);
-
+	
 	layerData[5] = [];
 	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Sociodemographic Profile") + "</b>";
 	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_6.EnglishL_1}</span>" + 
@@ -871,5 +870,6 @@ function translateMap()
 		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
 		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
 		translator.T('FLS Designated Partial'), translator.T('First Official Language Spoken: French'), translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
+		
 }
 

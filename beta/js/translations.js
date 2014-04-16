@@ -118,7 +118,7 @@ Fr['HOME'] = 'ACCUEIL';
 Fr['INTERACTIVE MAPS'] = 'CARTES INTÉRACTIVES';
 Fr['ANALYSIS'] = 'ANALYSES';
 Fr['PARTNERS'] = 'PARTENAIRES';
-Fr['Methodological Notes'] = 'Notes Méthodologiques';
+Fr['Methodological Notes'] = 'Notes méthodologiques';
 Fr['LEGENDS'] = 'légende';
 Fr['Legends'] = 'légende';
 Fr['Financial Support:'] = 'Support Financier:';
@@ -245,7 +245,7 @@ Fr['Perceived access to health care in community, good or excellent (%)'] = 'Év
 Fr['Perceived quality health care in community , good or excellent (%)'] = 'Évaluation de la qualité des soins de santé communautaires, excellente ou bonne (%) ';
 Fr['Sense of community belonging, very strong or somewhat strong (%)'] = 'Sentiment d’appartenance à la communauté locale, très fort ou plutôt fort (%)';
 
-Fr['Speciality'] = 'Specialité';
+Fr['Speciality'] = 'Spécialité';
 Fr['French'] = 'Français';
 Fr['English'] = 'Anglais';
 Fr['Others'] = 'Autres';

@@ -102,8 +102,8 @@ Fr['The number of specialists who can provide care in English'] = 'SPECE';
 
 Fr['Minority Health Observatory'] = 'Observatoire de la santé des minorités';
 
-Fr['French Only'] = 'Francais seulement';
-Fr['English Only'] = 'Anglais seulement';
+Fr['French only'] = 'Francais seulement';
+Fr['English only'] = 'Anglais seulement';
 Fr['French & English'] = 'Francais et anglais';
 Fr['Neither Official Language'] = 'Aucune langue officielle';
 Fr['Proportion of the total population'] = 'Proportion de la population totale';
@@ -203,7 +203,7 @@ Fr[' Select a data layer from the menu below and click on map for detailed infor
 
 Fr['Legend: '] = 'légende : ';
 Fr['Mother Tongue: French'] = 'Langue maternelle : Français';
-Fr['Knowledge of Official Language: French Only'] = 'Connaissance des langues officielles : Français seulement';
+Fr['Knowledge of Official Language: French only'] = 'Connaissance des langues officielles : Français seulement';
 Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
 Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
 

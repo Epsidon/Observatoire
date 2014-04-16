@@ -18,19 +18,19 @@ layerToRegion[12] = 2;
 layerToRegion[13] = 2;
 layerToRegion[14] = 2;
 layerToRegion[15] = 2;
-//layerToRegion[16] = 2;
+
 
 
 var servicePointBuffers = [];
-servicePointBuffers[7] = [38,45];
-servicePointBuffers[8] = [24,31];
-servicePointBuffers[9] = [52,59];
-servicePointBuffers[10] = [66,73];
-servicePointBuffers[11] = [80,87];
-servicePointBuffers[12] = [94,101];
-servicePointBuffers[13] = [108,115];
-servicePointBuffers[14] = [129,122];
-servicePointBuffers[15] = [136,143];
+servicePointBuffers[7] = [44,37];
+servicePointBuffers[8] = [30,23];
+servicePointBuffers[9] = [58,51];
+servicePointBuffers[10] = [72,65];
+servicePointBuffers[11] = [86,79];
+servicePointBuffers[12] = [100,93];
+servicePointBuffers[13] = [114,107];
+servicePointBuffers[14] = [128,121];
+servicePointBuffers[15] = [142,135];
 //servicePointBuffers[16] = [150,157];
 
 

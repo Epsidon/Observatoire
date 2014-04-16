@@ -192,7 +192,9 @@ Fr['This research uses a regional summary indicator (IHPOLM) to measure the capa
 Fr['Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada'] = 'Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada';
 Fr['Linguistic Minorities in Canada and Health'] = 'Les minorités linguistiques au Canada et la santé';
 Fr['Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities'] = 'Un regard sur la distribution des médecins de famille qui parlent français dans les communautés francophones de l’Ontario';
-
+Fr[' Health Professions by LHIN '] = 'RLISS';
+Fr['Health professions by LHIN'] = 'Professionnels de la santé par RLISS';
+Fr['Health Professions by LHIN ']= 'Professionnels de la santé et capacité linguistique par RLISS';
 Fr['No FLS Obligation'] = ' Aucune obligation';
 Fr['FLS Identified'] = 'Identifié - LSF';
 Fr['FLS Designated Partial'] = 'Établissements avec désignation partielle -LSF';

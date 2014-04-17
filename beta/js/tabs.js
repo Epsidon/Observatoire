@@ -20,34 +20,32 @@ Tabs.prototype.getHome = function ()
 			
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
-				translator.T('Scientific Director') +
-				'<br><a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
+				'<b>' + translator.T('Scientific Director') + '</b>' +
+				'<br><a href="http://sciencessociales.uottawa.ca/soc-ant/' + (router.getLanguage() == 'french'? 'profil-professeur?id=274':'professor-profile?id=274') + 'target="_blank">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
 			'</p>' +
 			
 			'<p>' +
-				translator.T('Co-researcher') +
+				'<b>' + translator.T('Co-researcher') + '</b>' +
 				'<br>Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</br>' +
 			'</p>' +
 			
 			'<p>' +
-				translator.T('GIS, data and analysis') +
+				'<b>' + translator.T('GIS, data and analysis') + '</b>' +
 				'<br>Érik Bourdon, conseiller</br>' +
 			'</p>' +
 			
 			
-				translator.T('Analysts') +
+				'<b>' + translator.T('Analysts') + '</b>' +
 				'<li>Ewa Sucha, PhD (candidate), Biostatistique</li>' +
 				'<li>Golnaz Sedigh, PhD (candidate), Économie</li>' +
 				'<li>Ricardo Batista, PhD (candidat), Santé des populations</li>' +
 			
 			'<br>' +
-			'<p>' +
-				translator.T('Transfer and application of knowledge') +
+				'<b>' + translator.T('Transfer and application of knowledge') + '</b>' +
 				'<br>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</br>' +
-			'</p>' +
 			'</br>' +	
 			
-				translator.T('Developers') +
+				'<b>' + translator.T('Developers') + '</b>' +
 				'<li>Ava Ahadipour</li>' +
 				'<li>Seyed M. Mirtaheri</li>' +
 			

@@ -50,16 +50,14 @@ li
 	height: 34px;
 }
 
-.container 
-{
-	border-style: solid;
-	border-color: #888AC4;
-	font-family: arial;
-	padding: 3em;
-	line-height: 1.5em;
-	font-weight: bold;
-	font-size: 12px;
-	border-radius: 0.8em;
+.container {
+border-style: solid;
+border-color: #888AC4;
+font-family: arial;
+padding: 3em;
+line-height: 1.5em;
+font-size: 13px;
+border-radius: 0.8em;
 }
 
 .space

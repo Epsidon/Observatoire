@@ -52,7 +52,7 @@ Tabs.prototype.getHome = function ()
 		'<br>' +
 			'<p class="homeTitle">' + translator.T('Financial support') + '</p>' + 
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
-			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministère de la santé et des soins de longue durée de l’Ontario') + '</a>' +
+			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a>' +
 		'</br>' +		
 		'</div>';
 

@@ -103,7 +103,9 @@ function translateMap()
 	"<td>${MTNonOFF}</td>"+
 	"<td>${Detailedmo}</td>"+
 	"</tr>"+
-	"</table>" + "</p>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "</p>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[0]['outFields'] = new Array("POPIN2011", "GeoKey20_2", "GeoKey20_1","Detailedmo", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
 	layerData[1] = [];
@@ -129,7 +131,9 @@ function translateMap()
 	"<td>${KEngNorFre}</td>"+
 	"<td align='center'>${Knowledgeo}</td>"+
 	"</tr>"+
-	"</table>" + "</p>" +"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "</p>" +"<p>" +
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[1]['outFields'] = new Array("KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 	layerData[2] = [];
@@ -155,7 +159,9 @@ function translateMap()
 	"<td>${FOFENorF}</td>"+
 	"<td>${FirstoffTo}</td>"+
 	"</tr>"+
-	"</table>" + "</p>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "</p>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
 	layerData[3] = [];
@@ -179,7 +185,9 @@ function translateMap()
 	"<td>${DLSHNON}</td>"+
 	"<td>${DLAthomeTo}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 	layerData[4] = [];
@@ -368,35 +376,37 @@ function translateMap()
 	"<td align='center'>${Export_Output_5.LHINPr_147}</td>"+
 	"</tr>"+
 	"</table>" + 
-	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[4]['outFields'] = new Array( "Export_Output_5.HR035b08_E", "Export_Output_5.HR035b08_H", "Export_Output_5.LHINProf_2", 
-"Export_Output_5.LHINPro_75", "Export_Output_5.LHINPro_76", "Export_Output_5.LHINPro_77", 
-"Export_Output_5.LHINPro_78", "Export_Output_5.LHINPro_79", "Export_Output_5.LHINPro_80", 
-"Export_Output_5.LHINPro_81", "Export_Output_5.LHINPro_82", "Export_Output_5.LHINPro_83", 
-"Export_Output_5.LHINPro_84", "Export_Output_5.LHINPro_85", "Export_Output_5.LHINPro_86", 
-"Export_Output_5.LHINPro_87", "Export_Output_5.LHINPro_88", "Export_Output_5.LHINPro_89", 
-"Export_Output_5.HR035b08_E", "Export_Output_5.LHINProf_2", "Export_Output_5.HR035b08_H", 
-"Export_Output_5.LHINPro_90", "Export_Output_5.LHINPro_91", "Export_Output_5.LHINPro_92", 
-"Export_Output_5.LHINPro_93", "Export_Output_5.LHINPro_94", "Export_Output_5.LHINPro_95", 
-"Export_Output_5.LHINPro_96", "Export_Output_5.LHINPro_97", "Export_Output_5.LHINPro_98", 
-"Export_Output_5.LHINPro_99", "Export_Output_5.LHINPr_100", "Export_Output_5.LHINPr_101", 
-"Export_Output_5.LHINPr_102", "Export_Output_5.LHINPr_103", "Export_Output_5.LHINPr_104", 
-"Export_Output_5.LHINPr_105", "Export_Output_5.LHINPr_106", "Export_Output_5.LHINPr_107", 
-"Export_Output_5.LHINPr_108", "Export_Output_5.LHINPr_109", "Export_Output_5.LHINPr_110", 
-"Export_Output_5.LHINPr_111", "Export_Output_5.LHINPr_112", "Export_Output_5.LHINPr_113", 
-"Export_Output_5.LHINPr_114", "Export_Output_5.LHINPr_115", "Export_Output_5.LHINPr_116", 
-"Export_Output_5.LHINPr_117", "Export_Output_5.LHINPr_118", "Export_Output_5.LHINPr_119", 
-"Export_Output_5.LHINPr_120", "Export_Output_5.LHINPr_121", "Export_Output_5.LHINPr_122", 
-"Export_Output_5.LHINPr_123", "Export_Output_5.LHINPr_124", "Export_Output_5.LHINPr_125", 
-"Export_Output_5.LHINPr_126", "Export_Output_5.LHINPr_127", "Export_Output_5.LHINPr_128", 
-"Export_Output_5.LHINPr_129", "Export_Output_5.LHINPr_130", "Export_Output_5.LHINPr_131", 
-"Export_Output_5.LHINPr_132", "Export_Output_5.LHINPr_133", "Export_Output_5.LHINPr_134", 
-"Export_Output_5.LHINPr_135", "Export_Output_5.LHINPr_136", "Export_Output_5.LHINPr_137", 
-"Export_Output_5.LHINPr_138", "Export_Output_5.LHINPr_139", "Export_Output_5.LHINPr_140", 
-"Export_Output_5.LHINPr_141", "Export_Output_5.LHINPr_142", "Export_Output_5.LHINPr_143", 
-"Export_Output_5.LHINPr_144","Export_Output_5.LHINPr_145", "Export_Output_5.LHINPr_146",
-"Export_Output_5.LHINPr_147", "pop2011.csv.Population"
+		"Export_Output_5.LHINPro_75", "Export_Output_5.LHINPro_76", "Export_Output_5.LHINPro_77", 
+		"Export_Output_5.LHINPro_78", "Export_Output_5.LHINPro_79", "Export_Output_5.LHINPro_80", 
+		"Export_Output_5.LHINPro_81", "Export_Output_5.LHINPro_82", "Export_Output_5.LHINPro_83", 
+		"Export_Output_5.LHINPro_84", "Export_Output_5.LHINPro_85", "Export_Output_5.LHINPro_86", 
+		"Export_Output_5.LHINPro_87", "Export_Output_5.LHINPro_88", "Export_Output_5.LHINPro_89", 
+		"Export_Output_5.HR035b08_E", "Export_Output_5.LHINProf_2", "Export_Output_5.HR035b08_H", 
+		"Export_Output_5.LHINPro_90", "Export_Output_5.LHINPro_91", "Export_Output_5.LHINPro_92", 
+		"Export_Output_5.LHINPro_93", "Export_Output_5.LHINPro_94", "Export_Output_5.LHINPro_95", 
+		"Export_Output_5.LHINPro_96", "Export_Output_5.LHINPro_97", "Export_Output_5.LHINPro_98", 
+		"Export_Output_5.LHINPro_99", "Export_Output_5.LHINPr_100", "Export_Output_5.LHINPr_101", 
+		"Export_Output_5.LHINPr_102", "Export_Output_5.LHINPr_103", "Export_Output_5.LHINPr_104", 
+		"Export_Output_5.LHINPr_105", "Export_Output_5.LHINPr_106", "Export_Output_5.LHINPr_107", 
+		"Export_Output_5.LHINPr_108", "Export_Output_5.LHINPr_109", "Export_Output_5.LHINPr_110", 
+		"Export_Output_5.LHINPr_111", "Export_Output_5.LHINPr_112", "Export_Output_5.LHINPr_113", 
+		"Export_Output_5.LHINPr_114", "Export_Output_5.LHINPr_115", "Export_Output_5.LHINPr_116", 
+		"Export_Output_5.LHINPr_117", "Export_Output_5.LHINPr_118", "Export_Output_5.LHINPr_119", 
+		"Export_Output_5.LHINPr_120", "Export_Output_5.LHINPr_121", "Export_Output_5.LHINPr_122", 
+		"Export_Output_5.LHINPr_123", "Export_Output_5.LHINPr_124", "Export_Output_5.LHINPr_125", 
+		"Export_Output_5.LHINPr_126", "Export_Output_5.LHINPr_127", "Export_Output_5.LHINPr_128", 
+		"Export_Output_5.LHINPr_129", "Export_Output_5.LHINPr_130", "Export_Output_5.LHINPr_131", 
+		"Export_Output_5.LHINPr_132", "Export_Output_5.LHINPr_133", "Export_Output_5.LHINPr_134", 
+		"Export_Output_5.LHINPr_135", "Export_Output_5.LHINPr_136", "Export_Output_5.LHINPr_137", 
+		"Export_Output_5.LHINPr_138", "Export_Output_5.LHINPr_139", "Export_Output_5.LHINPr_140", 
+		"Export_Output_5.LHINPr_141", "Export_Output_5.LHINPr_142", "Export_Output_5.LHINPr_143", 
+		"Export_Output_5.LHINPr_144","Export_Output_5.LHINPr_145", "Export_Output_5.LHINPr_146",
+		"Export_Output_5.LHINPr_147", "pop2011.csv.Population"
 	);
 	
 	layerData[5] = [];
@@ -503,7 +513,9 @@ function translateMap()
 	"<td align='center'>${Export_Output_6.SociEco_49}</td>"+
 	"</tr>"+
 	"</table>" + 
-	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[5]['outFields'] = new Array("Export_Output_6.EnglishL_1", "Export_Output_6.HRUID2007", "Export_Output_6.SociEcoP_1",
 	 "Export_Output_6.SociEcoP_2",
 	"Export_Output_6.SociEcoP_3",
@@ -638,7 +650,9 @@ function translateMap()
 	translator.T("(*): Use with caution") +  "</br>" +
 	"<n>" +translator.T("(**): Too unreliable to be published") + "</n>" +
 	"</br>" +
-	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"<p>" +
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[6]['outFields'] = new Array( 
 	"HealthProfile.csv.Appartenance_A", "HealthProfile.csv.Appartenance_F", "HealthProfile.csv.QualiteComm_A",
 	"HealthProfile.csv.QualiteComm_F", "HealthProfile.csv.AccessibiliteComm_A", 
@@ -674,7 +688,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[7]['outFields'] = new Array("LHIN_NAME", "C_NAME_ENG", "CITY", "ADDRESS_1",
 	"POSTALCODE" );
 
@@ -696,7 +712,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINProf_2", "LHINProfil" , "C_NAME_ENG", "CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[9] = [];
@@ -715,7 +733,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" +
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[9]['outFields'] = new Array("LHINProfil","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[10] = [];
@@ -734,7 +754,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" +
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[10]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[11] = [];
@@ -753,7 +775,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[11]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[12] = [];
@@ -772,7 +796,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[12]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[13] = [];
@@ -791,7 +817,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[13]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	
@@ -811,7 +839,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" +
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[14]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[15] = [];
@@ -830,7 +860,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	"</table>" + "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[15]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	
@@ -864,7 +896,8 @@ function translateMap()
 	"</table>" + translator.T("Source: 2011 National Household Survey") +
 	"<p>" + "${Export_Output_7.FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${Export_Output_7.SociEcoP_1}"+ "</p>" +
 	"<span class='spanToTranslate hidden'></span>" +
-	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[16]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
@@ -875,7 +908,9 @@ function translateMap()
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
 	layerData[17]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
 	"&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
-	 "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
+	 "<p>" + 
+	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[17]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 	layersLabels = [

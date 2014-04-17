@@ -873,7 +873,8 @@ function translateMap()
 
 	layerData[17] = [];
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[17]['infoWindowBody'] ="<span class='spanToTranslate hidden popupTextStylepopupTextStyle'>${HR035b08_E}"+ "&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
+	layerData[17]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
+	"&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
 	 "<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[17]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 

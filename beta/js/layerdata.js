@@ -57,7 +57,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAOntarioRLISS/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/Ontario/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
@@ -184,10 +184,10 @@ function translateMap()
 
 	layerData[4] = [];
 	layerData[4]['infoWindowTitle'] = "<b>" + translator.T("Health professions by LHIN") + "</b>";
-	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}</span>" +
+	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_5.HR035b08_E}</span>" +
 	"&nbsp" + 
-	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${HR035b08_H}" + ")" + 
-	"<p>"+ "<b>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "</b>" + "${LHINProf_2}" + "<br>" + "</p>" +  "</span>" +
+	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${Export_Output_5.HR035b08_H}" + ")" + 
+	"<p>"+ "<b>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "</b>" + "${pop2011.csv.Population}" + "<br>" + "</p>" +  "</span>" +
 	"<table border=1 id ='healthProfesionsByLhin' class='table table-striped'>" +
 	"<tr>"+
 	"<th>" + translator.T("Speciality") + "</th>"+
@@ -197,192 +197,206 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Audiologists") + "</td>"+
-	"<td align='center'>${LHINPro_75}</td>"+
-	"<td align='center'>${LHINPro_76}</td>"+
-	"<td align='center'>${LHINPro_77}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_75}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_76}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_77}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Chiropodists") + "</td>"+
-	"<td align='center'>${LHINPro_78}</td>"+
-	"<td align='center'>${LHINPro_79}</td>"+
-	"<td align='center'>${LHINPro_80}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_78}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_79}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_80}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Chiropractors") + "</td>"+
-	"<td align='center'>${LHINPro_81}</td>"+
-	"<td align='center'>${LHINPro_82}</td>"+
-	"<td align='center'>${LHINPro_83}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_81}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_82}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_83}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Dental Hygienists") + "</td>"+
-	"<td align='center'>${LHINPro_84}</td>"+
-	"<td align='center'>${LHINPro_85}</td>"+
-	"<td align='center'>${LHINPro_86}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_84}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_85}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_86}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Dental Technologists") + "</td>"+
-	"<td align='center'>${LHINPro_87}</td>"+
-	"<td align='center'>${LHINPro_88}</td>"+
-	"<td align='center'>${LHINPro_89}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_87}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_88}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_89}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Dentists") + "</td>"+
-	"<td align='center'>${LHINPro_90}</td>"+
-	"<td align='center'>${LHINPro_91}</td>"+
-	"<td align='center'>${LHINPro_92}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_90}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_91}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_92}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Denturists") + "</td>"+
-	"<td align='center'>${LHINPro_93}</td>"+
-	"<td align='center'>${LHINPro_94}</td>"+
-	"<td align='center'>${LHINPro_95}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_93}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_94}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_95}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Dietitians") + "</td>"+
-	"<td align='center'>${LHINPro_96}</td>"+
-	"<td align='center'>${LHINPro_97}</td>"+
-	"<td align='center'>${LHINPro_98}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_96}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_97}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_98}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Massage Therapists") + "</td>"+
-	"<td align='center'>${LHINPro_99}</td>"+
-	"<td align='center'>${LHINPr_100}</td>"+
-	"<td align='center'>${LHINPr_101}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPro_99}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_100}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_101}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Medical Laboratory Technologists") + "</td>"+
-	"<td align='center'>${LHINPr_102}</td>"+
-	"<td align='center'>${LHINPr_103}</td>"+
-	"<td align='center'>${LHINPr_104}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_102}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_103}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_104}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Medical Radiation Technologists") + "</td>"+
-	"<td align='center'>${LHINPr_105}</td>"+
-	"<td align='center'>${LHINPr_106}</td>"+
-	"<td align='center' align='center'>${LHINPr_107}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_105}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_106}</td>"+
+	"<td align='center' align='center'>${Export_Output_5.LHINPr_107}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Midwives") + "</td>"+
-	"<td align='center'>${LHINPr_108}</td>"+
-	"<td align='center'>${LHINPr_109}</td>"+
-	"<td align='center'>${LHINPr_110}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_108}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_109}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_110}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Nurse Practitioners") + "</td>"+
-	"<td align='center'>${LHINPr_111}</td>"+
-	"<td align='center'>${LHINPr_112}</td>"+
-	"<td align='center'>${LHINPr_113}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_111}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_112}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_113}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Occupational Therapists") + "</td>"+
-	"<td align='center'>${LHINPr_114}</td>"+
-	"<td align='center'>${LHINPr_115}</td>"+
-	"<td align='center'>${LHINPr_116}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_114}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_115}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_116}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Opticians") + "</td>"+
-	"<td align='center'>${LHINPr_117}</td>"+
-	"<td align='center'>${LHINPr_118}</td>"+
-	"<td align='center'>${LHINPr_119}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_117}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_118}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_119}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Optometrists") + "</td>"+
-	"<td align='center'>${LHINPr_120}</td>"+
-	"<td align='center'>${LHINPr_121}</td>"+
-	"<td align='center'>${LHINPr_122}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_120}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_121}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_122}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Pharmacists") + "</td>"+
-	"<td align='center'>${LHINPr_123}</td>"+
-	"<td align='center'>${LHINPr_124}</td>"+
-	"<td align='center'>${LHINPr_125}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_123}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_124}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_125}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Family Physicians") + "</td>"+
-	"<td align='center'>${LHINPr_126}</td>"+
-	"<td align='center'>${LHINPr_127}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_126}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_127}</td>"+
 	"<td align='center'></td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Specialist Physicians") + "</td>"+
-	"<td align='center'>${LHINPr_128}</td>"+
-	"<td align='center'>${LHINPr_129}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_128}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_129}</td>"+
 	"<td></td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Physiotherapists") + "</td>"+
-	"<td align='center'>${LHINPr_130}</td>"+
-	"<td align='center'>${LHINPr_131}</td>"+
-	"<td align='center'>${LHINPr_132}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_130}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_131}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_132}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Psychologists") + "</td>"+
-	"<td align='center'>${LHINPr_133}</td>"+
-	"<td align='center'>${LHINPr_134}</td>"+
-	"<td align='center'>${LHINPr_135}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_133}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_134}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_135}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Registered Nurses") + "</td>"+
-	"<td align='center'>${LHINPr_136}</td>"+
-	"<td align='center'>${LHINPr_137}</td>"+
-	"<td align='center'>${LHINPr_138}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_136}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_137}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_138}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Registered Practical Nurses") + "</td>"+
-	"<td align='center'>${LHINPr_139}</td>"+
-	"<td align='center'>${LHINPr_140}</td>"+
-	"<td align='center'>${LHINPr_141}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_139}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_140}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_141}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Respiratory Therapists") + "</td>"+
-	"<td align='center'>${LHINPr_142}</td>"+
-	"<td align='center'>${LHINPr_143}</td>"+
-	"<td align='center'>${LHINPr_144}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_142}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_143}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_144}</td>"+
 	"</tr>"+
 
 	"<tr>"+
 	"<td align='center'>" + translator.T("Speech Language Pathologists") + "</td>"+
-	"<td align='center'>${LHINPr_145}</td>"+
-	"<td align='center'>${LHINPr_146}</td>"+
-	"<td align='center'>${LHINPr_147}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_145}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_146}</td>"+
+	"<td align='center'>${Export_Output_5.LHINPr_147}</td>"+
 	"</tr>"+
 	"</table>" + 
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[4]['outFields'] = new Array( "HR035b08_E", "HR035b08_H", "LHINProf_2", 
-	"LHINPro_75", "LHINPro_76", "LHINPro_77", "LHINPro_78", "LHINPro_79", "LHINPro_80", "LHINPro_81",
-	"LHINPro_82", "LHINPro_83", "LHINPro_84", "LHINPro_85", "LHINPro_86", "LHINPro_87", "LHINPro_88", 
-	"LHINPro_89", "LHINPro_90", "LHINPro_91", "LHINPro_92", "LHINPro_93", "LHINPro_94", "LHINPro_95", 
-	"LHINPro_96", "LHINPro_97", "LHINPro_98", "LHINPro_99", "LHINPr_100", "LHINPr_101", "LHINPr_102",
-	"LHINPr_103", "LHINPr_104", "LHINPr_105", "LHINPr_106", "LHINPr_107", "LHINPr_108", "LHINPr_110",
-	"LHINPr_109", "LHINPr_111", "LHINPr_112", "LHINPr_113", "LHINPr_114", "LHINPr_115", "LHINPr_116", 
-	"LHINPr_117", "LHINPr_118", "LHINPr_119", "LHINPr_120", "LHINPr_121",
-	"LHINPr_122", "LHINPr_123", "LHINPr_124", "LHINPr_125", "LHINPr_126",
-	"LHINPr_127", "LHINPr_128", "LHINPr_129", "LHINPr_130", "LHINPr_131",
-	"LHINPr_132", "LHINPr_133", "LHINPr_134", "LHINPr_135", "LHINPr_136", "LHINPr_137",
-	"LHINPr_138", "LHINPr_139", "LHINPr_140", "LHINPr_141", "LHINPr_142", "LHINPr_143", "LHINPr_144",
-	"LHINPr_145", "LHINPr_146", "LHINPr_147"
+	layerData[4]['outFields'] = new Array( "Export_Output_5.HR035b08_E", "Export_Output_5.HR035b08_H", "Export_Output_5.LHINProf_2", 
+"Export_Output_5.LHINPro_75", "Export_Output_5.LHINPro_76", "Export_Output_5.LHINPro_77", 
+"Export_Output_5.LHINPro_78", "Export_Output_5.LHINPro_79", "Export_Output_5.LHINPro_80", 
+"Export_Output_5.LHINPro_81", "Export_Output_5.LHINPro_82", "Export_Output_5.LHINPro_83", 
+"Export_Output_5.LHINPro_84", "Export_Output_5.LHINPro_85", "Export_Output_5.LHINPro_86", 
+"Export_Output_5.LHINPro_87", "Export_Output_5.LHINPro_88", "Export_Output_5.LHINPro_89", 
+"Export_Output_5.HR035b08_E", "Export_Output_5.LHINProf_2", "Export_Output_5.HR035b08_H", 
+"Export_Output_5.LHINPro_90", "Export_Output_5.LHINPro_91", "Export_Output_5.LHINPro_92", 
+"Export_Output_5.LHINPro_93", "Export_Output_5.LHINPro_94", "Export_Output_5.LHINPro_95", 
+"Export_Output_5.LHINPro_96", "Export_Output_5.LHINPro_97", "Export_Output_5.LHINPro_98", 
+"Export_Output_5.LHINPro_99", "Export_Output_5.LHINPr_100", "Export_Output_5.LHINPr_101", 
+"Export_Output_5.LHINPr_102", "Export_Output_5.LHINPr_103", "Export_Output_5.LHINPr_104", 
+"Export_Output_5.LHINPr_105", "Export_Output_5.LHINPr_106", "Export_Output_5.LHINPr_107", 
+"Export_Output_5.LHINPr_108", "Export_Output_5.LHINPr_109", "Export_Output_5.LHINPr_110", 
+"Export_Output_5.LHINPr_111", "Export_Output_5.LHINPr_112", "Export_Output_5.LHINPr_113", 
+"Export_Output_5.LHINPr_114", "Export_Output_5.LHINPr_115", "Export_Output_5.LHINPr_116", 
+"Export_Output_5.LHINPr_117", "Export_Output_5.LHINPr_118", "Export_Output_5.LHINPr_119", 
+"Export_Output_5.LHINPr_120", "Export_Output_5.LHINPr_121", "Export_Output_5.LHINPr_122", 
+"Export_Output_5.LHINPr_123", "Export_Output_5.LHINPr_124", "Export_Output_5.LHINPr_125", 
+"Export_Output_5.LHINPr_126", "Export_Output_5.LHINPr_127", "Export_Output_5.LHINPr_128", 
+"Export_Output_5.LHINPr_129", "Export_Output_5.LHINPr_130", "Export_Output_5.LHINPr_131", 
+"Export_Output_5.LHINPr_132", "Export_Output_5.LHINPr_133", "Export_Output_5.LHINPr_134", 
+"Export_Output_5.LHINPr_135", "Export_Output_5.LHINPr_136", "Export_Output_5.LHINPr_137", 
+"Export_Output_5.LHINPr_138", "Export_Output_5.LHINPr_139", "Export_Output_5.LHINPr_140", 
+"Export_Output_5.LHINPr_141", "Export_Output_5.LHINPr_142", "Export_Output_5.LHINPr_143", 
+"Export_Output_5.LHINPr_144","Export_Output_5.LHINPr_145", "Export_Output_5.LHINPr_146",
+"Export_Output_5.LHINPr_147", "pop2011.csv.Population"
 	);
 	
 	layerData[5] = [];
@@ -515,8 +529,8 @@ function translateMap()
 	 
 	layerData[6] = [];
 	layerData[6]['infoWindowTitle'] = "<b>" + translator.T("Health Profiles") + "</b>";
-	layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${HR035b08_E}</span>" +
-	"&nbsp" + "<span class='spanToTranslate hidden popupTextStyle'>(" + "${HR035b08_H}" + ")" + "</span>" +
+	layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_4.HR035b08_E}</span>" +
+	"&nbsp" + "<span class='spanToTranslate hidden popupTextStyle'>(" + "${Export_Output_4.HR035b08_H}" + ")" + "</span>" +
 	"<br>" + "<b>" + translator.T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" + "</span>" +
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
@@ -526,115 +540,121 @@ function translateMap()
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived health, fair or poor (%)") + "</td>"+
-	"<td align='center'>${HealthP_20}</td>"+
-	"<td align='center'>${HealthPr_1}</td>"+
+	"<td align='center'>${HealthProfile.csv.Sante_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Sante_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived mental health, fair or poor (%)") + "</td>"+
-	"<td align='center'>${HealthP_21}</td>"+
-	"<td align='center'>${HealthPr_2}</td>"+
+	"<td align='center'>${HealthProfile.csv.SanteMental_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.SanteMental_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived life stress, quite a bit or extremely stressful (%)") + "</td>"+
-	"<td align='center'>${HealthP_22}</td>"+
-	"<td align='center'>${HealthPr_3}</td>"+
+	"<td align='center'>${HealthProfile.csv.Stress_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Stress_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Participation and activity limitation, sometimes or often (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_D}</td>"+
-	"<td align='center'>${HealthPr_4}</td>"+
+	"<td align='center'>${HealthProfile.csv.DifficulteAct_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.DifficulteAct_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("At least one chronic disease (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_C}</td>"+
-	"<td align='center'>${HealthPr_5}</td>"+
+	"<td align='center'>${HealthProfile.csv.Chonique_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Chonique_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Body mass index (BMI) (18 or older), overweight or obese (%)") + "</td>"+
-	"<td align='center'>${HealthP_25}</td>"+
-	"<td align='center'>${HealthPr_6}</td>"+
+	"<td align='center'>${HealthProfile.csv.IMC_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.IMC_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Fruit and vegetable consumption, less than 5 times per day (%)") + "</td>"+
-	"<td align='center'>${HealthP_26}</td>"+
-	"<td align='center'>${HealthPr_7}</td>"+
+	"<td align='center'>${HealthProfile.csv.Fruits_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Fruits_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Current smoker, daily or occasional (%)") + "</td>"+
-	"<td align='center'>${HealthP_29}</td>"+
-	"<td align='center'>${HealthPr_8}</td>"+
+	"<td align='center'>${HealthProfile.csv.Fumeur_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Fumeur_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Regular drinker(%)") + "</td>"+
-	"<td align='center'>${TES4_csv_B}</td>"+
-	"<td align='center'>${HealthPr_9}</td>"+
+	"<td align='center'>${HealthProfile.csv.Buveur_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Buveur_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Regular medical doctor (%)") + "</td>"+
-	"<td align='center'>${HealthP_31}</td>"+
-	"<td align='center'>${HealthP_10}</td>"+
+	"<td align='center'>${HealthProfile.csv.Medecin_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Medecin_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Language spoken with medical doctor, English (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_M}</td>"+
-	"<td align='center'>${HealthP_11}</td>"+
+	"<td align='center'>${HealthProfile.csv.MedecinAng_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.MedecinAng_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Contact with a family medicine physician or a nurse in the past 12 months (%)") + "</td>"+
-	"<td align='center'>${HealthP_33}</td>"+
-	"<td align='center'>${HealthP_12}</td>"+
+	"<td align='center'>${HealthProfile.csv.Consultation_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Consultation_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Required health care in the past 12 months  (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_1}</td>"+
-	"<td align='center'>${HealthP_13}</td>"+
+	"<td align='center'>${HealthProfile.csv.BesoinSpec_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.BesoinSpec_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Difficulties obtaining health care in the past 12 months  (%)") + "</td>"+
-	"<td align='center'>${HealthP_35}</td>"+
-	"<td align='center'>${HealthP_14}</td>"+
+	"<td align='center'>${HealthProfile.csv.DifficulteSpec_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.DifficulteSpec_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived access to health care in Ontario, good or excellent (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_A}</td>"+
-	"<td align='center'>${HealthP_15}</td>"+
+	"<td align='center'>${HealthProfile.csv.AccessibiliteSante_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.AccessibiliteSante_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived quality of health care in Ontario, good or excellent (%)") + "</td>"+
-	"<td align='center'>${HealthP_37}</td>"+
-	"<td align='center'>${HealthP_16}</td>"+
+	"<td align='center'>${HealthProfile.csv.QualiteSante_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.QualiteSante_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived access to health care in community, good or excellent (%)") + "</td>"+
-	"<td align='center'>${TES4_csv_3}</td>"+
-	"<td align='center'>${HealthP_17}</td>"+
+	"<td align='center'>${HealthProfile.csv.AccessibiliteComm_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.AccessibiliteComm_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Perceived quality health care in community , good or excellent (%)") + "</td>"+
-	"<td align='center'>${HealthP_39}</td>"+
-	"<td align='center'>${HealthP_18}</td>"+
+	"<td align='center'>${HealthProfile.csv.QualiteComm_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.QualiteComm_A}</td>"+
 	"</tr>"+
 	"<tr>" +
 	"<td align='center'>" + translator.T("Sense of community belonging, very strong or somewhat strong (%)") + "</td>"+
-	"<td align='center'>${HealthP_40}</td>"+
-	"<td align='center'>${HealthP_19}</td>"+
+	"<td align='center'>${HealthProfile.csv.Appartenance_F}</td>"+
+	"<td align='center'>${HealthProfile.csv.Appartenance_A}</td>"+
 	"</tr>"+
 	"</table>" + 
 	"<br>" + 
-	translator.T("E: Use with caution") +  "</br>" +
-	"<n>" +translator.T("F: Too unreliable to be published") + "</n>" +
+	translator.T("(*): Use with caution") +  "</br>" +
+	"<n>" +translator.T("(**): Too unreliable to be published") + "</n>" +
 	"</br>" +
 	"<p>" + "<a class=methodologicalNote href=http://216.48.92.42:8080/notes.html target=_blank >" + translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[6]['outFields'] = new Array( 
-	"HR035b08_E", "HR035b08_H", "HealthP_20", "HealthPr_1", "HealthP_21",
-	 "HealthPr_2", "HealthP_22", "HealthPr_3", "TES4_csv_D", 
-	"HealthPr_4", "TES4_csv_C", "HealthPr_5", "HealthP_25", "HealthPr_6", 
-	"HealthP_26", "HealthPr_7", "HealthP_29", "HealthPr_8", 
-	"TES4_csv_B", "HealthPr_9", "Health__31", "HealthP_10", "TES4_csv_M", 
-	"HealthP_11", "HealthP_33", "HealthP_12", "TES4_csv_1", 
-	"HealthP_13", "HealthP_35", "HealthP_14", "TES4_csv_A", 
-	"HealthP_15", "HealthP_37", "HealthP_16", "TES4_csv_3", "HealthP_17", 
-	"HealthP_39", "HealthP_18", "HealthP_40", "HealthP_19", "HealthP_31"
+	"HealthProfile.csv.Appartenance_A", "HealthProfile.csv.Appartenance_F", "HealthProfile.csv.QualiteComm_A",
+	"HealthProfile.csv.QualiteComm_F", "HealthProfile.csv.AccessibiliteComm_A", 
+	"HealthProfile.csv.AccessibiliteComm_F", "HealthProfile.csv.QualiteSante_A", "HealthProfile.csv.QualiteSante_F",
+	"HealthProfile.csv.AccessibiliteSante_A", "HealthProfile.csv.AccessibiliteSante_F",
+	"HealthProfile.csv.DifficulteSpec_A", "HealthProfile.csv.DifficulteSpec_F",
+	"HealthProfile.csv.BesoinSpec_A", "HealthProfile.csv.BesoinSpec_F", "HealthProfile.csv.Consultation_A",
+	"HealthProfile.csv.Consultation_F", "HealthProfile.csv.MedecinAng_A", "HealthProfile.csv.MedecinAng_F",
+	"HealthProfile.csv.Medecin_A", "HealthProfile.csv.Medecin_F",
+	"HealthProfile.csv.Buveur_A", "HealthProfile.csv.Buveur_F", 
+	"HealthProfile.csv.Fumeur_A", "HealthProfile.csv.Fumeur_F", "HealthProfile.csv.Fruits_A",
+	"HealthProfile.csv.Fruits_F", "HealthProfile.csv.IMC_F", "HealthProfile.csv.IMC_A",
+	"HealthProfile.csv.Chonique_A", "HealthProfile.csv.Chonique_F", "HealthProfile.csv.DifficulteAct_A",
+	"HealthProfile.csv.DifficulteAct_F","HealthProfile.csv.Stress_A", "HealthProfile.csv.Stress_F",
+	"HealthProfile.csv.SanteMental_A", "HealthProfile.csv.SanteMental_F", "HealthProfile.csv.Sante_A",
+	"HealthProfile.csv.Sante_F", "Export_Output_4.HR035b08_E", "Export_Output_4.HR035b08_H"
 	 );
 
 	layerData[7] = [];

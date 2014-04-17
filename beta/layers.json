@@ -2088,7 +2088,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "uniqueValue",
-     "field1": "LHINPro_73",
+     "field1": "Export_Output_5.LHINPro_73",
      "field2": null,
      "field3": null,
      "fieldDelimiter": ", ",
@@ -2497,588 +2497,601 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HR035b08_H",
+   "displayField": "Export_Output_5.HR035b08_H",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FID",
+     "name": "Export_Output_5.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Shape",
+     "name": "Export_Output_5.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "OBJECTID",
+     "name": "Export_Output_5.OBJECTID",
      "type": "esriFieldTypeInteger",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "HR035b08_G",
+     "name": "Export_Output_5.HR035b08_G",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_G",
      "domain": null
     },
     {
-     "name": "HR035b08_O",
+     "name": "Export_Output_5.HR035b08_O",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_O",
      "domain": null
     },
     {
-     "name": "HR035b08_H",
+     "name": "Export_Output_5.HR035b08_H",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_H",
      "length": 4,
      "domain": null
     },
     {
-     "name": "HR035b08_E",
+     "name": "Export_Output_5.HR035b08_E",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_E",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08_F",
+     "name": "Export_Output_5.HR035b08_F",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_F",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08_L",
+     "name": "Export_Output_5.HR035b08_L",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_L",
      "domain": null
     },
     {
-     "name": "HR035b08_1",
+     "name": "Export_Output_5.HR035b08_1",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_1",
      "length": 50,
      "domain": null
     },
     {
-     "name": "HR035b08_2",
+     "name": "Export_Output_5.HR035b08_2",
      "type": "esriFieldTypeInteger",
      "alias": "HR035b08_2",
      "domain": null
     },
     {
-     "name": "LHINProfil",
+     "name": "Export_Output_5.LHINProfil",
      "type": "esriFieldTypeInteger",
      "alias": "LHINProfil",
      "domain": null
     },
     {
-     "name": "LHINProf_1",
+     "name": "Export_Output_5.LHINProf_1",
      "type": "esriFieldTypeString",
      "alias": "LHINProf_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINProf_2",
+     "name": "Export_Output_5.LHINProf_2",
      "type": "esriFieldTypeInteger",
      "alias": "LHINProf_2",
      "domain": null
     },
     {
-     "name": "lHIN_csv_L",
+     "name": "Export_Output_5.lHIN_csv_L",
      "type": "esriFieldTypeInteger",
      "alias": "lHIN_csv_L",
      "domain": null
     },
     {
-     "name": "lHIN_csv_1",
+     "name": "Export_Output_5.lHIN_csv_1",
      "type": "esriFieldTypeString",
      "alias": "lHIN_csv_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINProf_3",
+     "name": "Export_Output_5.LHINProf_3",
      "type": "esriFieldTypeInteger",
      "alias": "LHINProf_3",
      "domain": null
     },
     {
-     "name": "LHINPro_73",
+     "name": "Export_Output_5.LHINPro_73",
      "type": "esriFieldTypeString",
      "alias": "LHINName",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_74",
+     "name": "Export_Output_5.LHINPro_74",
      "type": "esriFieldTypeInteger",
      "alias": "Pop2011",
      "domain": null
     },
     {
-     "name": "LHINPro_75",
+     "name": "Export_Output_5.LHINPro_75",
      "type": "esriFieldTypeString",
      "alias": "Audiologists_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_76",
+     "name": "Export_Output_5.LHINPro_76",
      "type": "esriFieldTypeInteger",
      "alias": "Audiologists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_77",
+     "name": "Export_Output_5.LHINPro_77",
      "type": "esriFieldTypeString",
      "alias": "Audiologists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_78",
+     "name": "Export_Output_5.LHINPro_78",
      "type": "esriFieldTypeString",
      "alias": "Chiropodists_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_79",
+     "name": "Export_Output_5.LHINPro_79",
      "type": "esriFieldTypeInteger",
      "alias": "Chiropodists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_80",
+     "name": "Export_Output_5.LHINPro_80",
      "type": "esriFieldTypeString",
      "alias": "Chiropodists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_81",
+     "name": "Export_Output_5.LHINPro_81",
      "type": "esriFieldTypeInteger",
      "alias": "Chiropractor_F",
      "domain": null
     },
     {
-     "name": "LHINPro_82",
+     "name": "Export_Output_5.LHINPro_82",
      "type": "esriFieldTypeInteger",
      "alias": "Chiropractor_E",
      "domain": null
     },
     {
-     "name": "LHINPro_83",
+     "name": "Export_Output_5.LHINPro_83",
      "type": "esriFieldTypeString",
      "alias": "Chiropractor_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_84",
+     "name": "Export_Output_5.LHINPro_84",
      "type": "esriFieldTypeInteger",
      "alias": "DentalHygienists_F",
      "domain": null
     },
     {
-     "name": "LHINPro_85",
+     "name": "Export_Output_5.LHINPro_85",
      "type": "esriFieldTypeInteger",
      "alias": "DentalHygienists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_86",
+     "name": "Export_Output_5.LHINPro_86",
      "type": "esriFieldTypeInteger",
      "alias": "DentalHygienists_O",
      "domain": null
     },
     {
-     "name": "LHINPro_87",
+     "name": "Export_Output_5.LHINPro_87",
      "type": "esriFieldTypeString",
      "alias": "DentalTechnologists_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_88",
+     "name": "Export_Output_5.LHINPro_88",
      "type": "esriFieldTypeInteger",
      "alias": "DentalTechnologists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_89",
+     "name": "Export_Output_5.LHINPro_89",
      "type": "esriFieldTypeString",
      "alias": "DentalTechnologists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_90",
+     "name": "Export_Output_5.LHINPro_90",
      "type": "esriFieldTypeInteger",
      "alias": "Dentists_F",
      "domain": null
     },
     {
-     "name": "LHINPro_91",
+     "name": "Export_Output_5.LHINPro_91",
      "type": "esriFieldTypeInteger",
      "alias": "Dentists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_92",
+     "name": "Export_Output_5.LHINPro_92",
      "type": "esriFieldTypeInteger",
      "alias": "Dentists_O",
      "domain": null
     },
     {
-     "name": "LHINPro_93",
+     "name": "Export_Output_5.LHINPro_93",
      "type": "esriFieldTypeString",
      "alias": "Denturists_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_94",
+     "name": "Export_Output_5.LHINPro_94",
      "type": "esriFieldTypeInteger",
      "alias": "Denturists_E",
      "domain": null
     },
     {
-     "name": "LHINPro_95",
+     "name": "Export_Output_5.LHINPro_95",
      "type": "esriFieldTypeString",
      "alias": "Denturists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_96",
+     "name": "Export_Output_5.LHINPro_96",
      "type": "esriFieldTypeInteger",
      "alias": "Dietitians_F",
      "domain": null
     },
     {
-     "name": "LHINPro_97",
+     "name": "Export_Output_5.LHINPro_97",
      "type": "esriFieldTypeInteger",
      "alias": "Dietitians_E",
      "domain": null
     },
     {
-     "name": "LHINPro_98",
+     "name": "Export_Output_5.LHINPro_98",
      "type": "esriFieldTypeString",
      "alias": "Dietitians_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPro_99",
+     "name": "Export_Output_5.LHINPro_99",
      "type": "esriFieldTypeInteger",
      "alias": "MassageTherapists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_100",
+     "name": "Export_Output_5.LHINPr_100",
      "type": "esriFieldTypeInteger",
      "alias": "MassageTherapists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_101",
+     "name": "Export_Output_5.LHINPr_101",
      "type": "esriFieldTypeString",
      "alias": "MassageTherapists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_102",
+     "name": "Export_Output_5.LHINPr_102",
      "type": "esriFieldTypeInteger",
      "alias": "MedicalLaboratoryTechnologists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_103",
+     "name": "Export_Output_5.LHINPr_103",
      "type": "esriFieldTypeInteger",
      "alias": "MedicalLaboratoryTechnologists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_104",
+     "name": "Export_Output_5.LHINPr_104",
      "type": "esriFieldTypeInteger",
      "alias": "MedicalLaboratoryTechnologists_O",
      "domain": null
     },
     {
-     "name": "LHINPr_105",
+     "name": "Export_Output_5.LHINPr_105",
      "type": "esriFieldTypeInteger",
      "alias": "MedicalRadiationTechnologists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_106",
+     "name": "Export_Output_5.LHINPr_106",
      "type": "esriFieldTypeInteger",
      "alias": "MedicalRadiationTechnologists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_107",
+     "name": "Export_Output_5.LHINPr_107",
      "type": "esriFieldTypeString",
      "alias": "MedicalRadiationTechnologists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_108",
+     "name": "Export_Output_5.LHINPr_108",
      "type": "esriFieldTypeInteger",
      "alias": "Midwives_F",
      "domain": null
     },
     {
-     "name": "LHINPr_109",
+     "name": "Export_Output_5.LHINPr_109",
      "type": "esriFieldTypeInteger",
      "alias": "Midwives_E",
      "domain": null
     },
     {
-     "name": "LHINPr_110",
+     "name": "Export_Output_5.LHINPr_110",
      "type": "esriFieldTypeString",
      "alias": "Midwives_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_111",
+     "name": "Export_Output_5.LHINPr_111",
      "type": "esriFieldTypeString",
      "alias": "NursePractitioners_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_112",
+     "name": "Export_Output_5.LHINPr_112",
      "type": "esriFieldTypeInteger",
      "alias": "NursePractitioners_E",
      "domain": null
     },
     {
-     "name": "LHINPr_113",
+     "name": "Export_Output_5.LHINPr_113",
      "type": "esriFieldTypeString",
      "alias": "NursePractitioners_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_114",
+     "name": "Export_Output_5.LHINPr_114",
      "type": "esriFieldTypeInteger",
      "alias": "OccupationalTherapists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_115",
+     "name": "Export_Output_5.LHINPr_115",
      "type": "esriFieldTypeInteger",
      "alias": "OccupationalTherapists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_116",
+     "name": "Export_Output_5.LHINPr_116",
      "type": "esriFieldTypeInteger",
      "alias": "OccupationalTherapists_O",
      "domain": null
     },
     {
-     "name": "LHINPr_117",
+     "name": "Export_Output_5.LHINPr_117",
      "type": "esriFieldTypeInteger",
      "alias": "Opticians_F",
      "domain": null
     },
     {
-     "name": "LHINPr_118",
+     "name": "Export_Output_5.LHINPr_118",
      "type": "esriFieldTypeInteger",
      "alias": "Opticians_E",
      "domain": null
     },
     {
-     "name": "LHINPr_119",
+     "name": "Export_Output_5.LHINPr_119",
      "type": "esriFieldTypeInteger",
      "alias": "Opticians_O",
      "domain": null
     },
     {
-     "name": "LHINPr_120",
+     "name": "Export_Output_5.LHINPr_120",
      "type": "esriFieldTypeInteger",
      "alias": "Optometrists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_121",
+     "name": "Export_Output_5.LHINPr_121",
      "type": "esriFieldTypeInteger",
      "alias": "Optometrists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_122",
+     "name": "Export_Output_5.LHINPr_122",
      "type": "esriFieldTypeString",
      "alias": "Optometrists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_123",
+     "name": "Export_Output_5.LHINPr_123",
      "type": "esriFieldTypeInteger",
      "alias": "Pharmacists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_124",
+     "name": "Export_Output_5.LHINPr_124",
      "type": "esriFieldTypeInteger",
      "alias": "Pharmacists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_125",
+     "name": "Export_Output_5.LHINPr_125",
      "type": "esriFieldTypeString",
      "alias": "Pharmacists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_126",
+     "name": "Export_Output_5.LHINPr_126",
      "type": "esriFieldTypeInteger",
      "alias": "PhysiciansGP_F",
      "domain": null
     },
     {
-     "name": "LHINPr_127",
+     "name": "Export_Output_5.LHINPr_127",
      "type": "esriFieldTypeInteger",
      "alias": "PhysiciansGP_E",
      "domain": null
     },
     {
-     "name": "LHINPr_128",
+     "name": "Export_Output_5.LHINPr_128",
      "type": "esriFieldTypeInteger",
      "alias": "PhysiciansSpec_F",
      "domain": null
     },
     {
-     "name": "LHINPr_129",
+     "name": "Export_Output_5.LHINPr_129",
      "type": "esriFieldTypeInteger",
      "alias": "PhysiciansSpec_E",
      "domain": null
     },
     {
-     "name": "LHINPr_130",
+     "name": "Export_Output_5.LHINPr_130",
      "type": "esriFieldTypeInteger",
      "alias": "Physiotherapists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_131",
+     "name": "Export_Output_5.LHINPr_131",
      "type": "esriFieldTypeInteger",
      "alias": "Physiotherapists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_132",
+     "name": "Export_Output_5.LHINPr_132",
      "type": "esriFieldTypeInteger",
      "alias": "Physiotherapists_O",
      "domain": null
     },
     {
-     "name": "LHINPr_133",
+     "name": "Export_Output_5.LHINPr_133",
      "type": "esriFieldTypeInteger",
      "alias": "Psychologists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_134",
+     "name": "Export_Output_5.LHINPr_134",
      "type": "esriFieldTypeInteger",
      "alias": "Psychologists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_135",
+     "name": "Export_Output_5.LHINPr_135",
      "type": "esriFieldTypeString",
      "alias": "Psychologists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_136",
+     "name": "Export_Output_5.LHINPr_136",
      "type": "esriFieldTypeInteger",
      "alias": "RegisteredNurses_F",
      "domain": null
     },
     {
-     "name": "LHINPr_137",
+     "name": "Export_Output_5.LHINPr_137",
      "type": "esriFieldTypeInteger",
      "alias": "RegisteredNurses_E",
      "domain": null
     },
     {
-     "name": "LHINPr_138",
+     "name": "Export_Output_5.LHINPr_138",
      "type": "esriFieldTypeString",
      "alias": "RegisteredNurses_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_139",
+     "name": "Export_Output_5.LHINPr_139",
      "type": "esriFieldTypeInteger",
      "alias": "RegisteredPracticalNurses_F",
      "domain": null
     },
     {
-     "name": "LHINPr_140",
+     "name": "Export_Output_5.LHINPr_140",
      "type": "esriFieldTypeInteger",
      "alias": "RegisteredPracticalNurses_E",
      "domain": null
     },
     {
-     "name": "LHINPr_141",
+     "name": "Export_Output_5.LHINPr_141",
      "type": "esriFieldTypeString",
      "alias": "RegisteredPracticalNurses_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_142",
+     "name": "Export_Output_5.LHINPr_142",
      "type": "esriFieldTypeInteger",
      "alias": "RespiratoryTherapists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_143",
+     "name": "Export_Output_5.LHINPr_143",
      "type": "esriFieldTypeInteger",
      "alias": "RespiratoryTherapists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_144",
+     "name": "Export_Output_5.LHINPr_144",
      "type": "esriFieldTypeString",
      "alias": "RespiratoryTherapists_O",
      "length": 254,
      "domain": null
     },
     {
-     "name": "LHINPr_145",
+     "name": "Export_Output_5.LHINPr_145",
      "type": "esriFieldTypeInteger",
      "alias": "SpeechLanguagePathologists_F",
      "domain": null
     },
     {
-     "name": "LHINPr_146",
+     "name": "Export_Output_5.LHINPr_146",
      "type": "esriFieldTypeInteger",
      "alias": "SpeechLanguagePathologists_E",
      "domain": null
     },
     {
-     "name": "LHINPr_147",
+     "name": "Export_Output_5.LHINPr_147",
      "type": "esriFieldTypeString",
      "alias": "SpeechLanguagePathologists_O",
      "length": 254,
+     "domain": null
+    },
+    {
+     "name": "pop2011.csv.code",
+     "type": "esriFieldTypeInteger",
+     "alias": "code",
+     "domain": null
+    },
+    {
+     "name": "pop2011.csv.Population",
+     "type": "esriFieldTypeString",
+     "alias": "Population",
+     "length": 255,
      "domain": null
     }
    ],
@@ -4012,7 +4025,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "uniqueValue",
-     "field1": "HR035b08_E",
+     "field1": "Export_Output_4.HR035b08_E",
      "field2": null,
      "field3": null,
      "fieldDelimiter": ", ",
@@ -4421,385 +4434,637 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HR035b08_H",
+   "displayField": "Export_Output_4.HR035b08_H",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FID",
+     "name": "Export_Output_4.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Shape",
+     "name": "Export_Output_4.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "OBJECTID",
+     "name": "Export_Output_4.OBJECTID",
      "type": "esriFieldTypeInteger",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "HR035b08_G",
+     "name": "Export_Output_4.HR035b08_G",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_G",
      "domain": null
     },
     {
-     "name": "HR035b08_O",
+     "name": "Export_Output_4.HR035b08_O",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_O",
      "domain": null
     },
     {
-     "name": "HR035b08_H",
+     "name": "Export_Output_4.HR035b08_H",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_H",
      "length": 4,
      "domain": null
     },
     {
-     "name": "HR035b08_E",
+     "name": "Export_Output_4.HR035b08_E",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_E",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08_F",
+     "name": "Export_Output_4.HR035b08_F",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_F",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08_L",
+     "name": "Export_Output_4.HR035b08_L",
      "type": "esriFieldTypeDouble",
      "alias": "HR035b08_L",
      "domain": null
     },
     {
-     "name": "HR035b08_1",
+     "name": "Export_Output_4.HR035b08_1",
      "type": "esriFieldTypeString",
      "alias": "HR035b08_1",
      "length": 50,
      "domain": null
     },
     {
-     "name": "HR035b08_2",
+     "name": "Export_Output_4.HR035b08_2",
      "type": "esriFieldTypeInteger",
      "alias": "HR035b08_2",
      "domain": null
     },
     {
-     "name": "LHINProfil",
+     "name": "Export_Output_4.LHINProfil",
      "type": "esriFieldTypeInteger",
      "alias": "LHINProfil",
      "domain": null
     },
     {
-     "name": "Shape_Leng",
+     "name": "Export_Output_4.Shape_Leng",
      "type": "esriFieldTypeDouble",
      "alias": "Shape_Leng",
      "domain": null
     },
     {
-     "name": "Shape_Area",
+     "name": "Export_Output_4.Shape_Area",
      "type": "esriFieldTypeDouble",
      "alias": "Shape_Area",
      "domain": null
     },
     {
-     "name": "MaxSimpTol",
+     "name": "Export_Output_4.MaxSimpTol",
      "type": "esriFieldTypeDouble",
      "alias": "MaxSimpTol",
      "domain": null
     },
     {
-     "name": "MinSimpTol",
+     "name": "Export_Output_4.MinSimpTol",
      "type": "esriFieldTypeDouble",
      "alias": "MinSimpTol",
      "domain": null
     },
     {
-     "name": "lHIN_csv_L",
+     "name": "Export_Output_4.lHIN_csv_L",
      "type": "esriFieldTypeInteger",
      "alias": "lHIN_csv_L",
      "domain": null
     },
     {
-     "name": "lHIN_csv_1",
+     "name": "Export_Output_4.lHIN_csv_1",
      "type": "esriFieldTypeString",
      "alias": "lHIN_csv_1",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_L",
+     "name": "Export_Output_4.TES4_csv_L",
      "type": "esriFieldTypeInteger",
      "alias": "TES4_csv_L",
      "domain": null
     },
     {
-     "name": "TES4_csv_D",
+     "name": "Export_Output_4.TES4_csv_D",
      "type": "esriFieldTypeString",
      "alias": "DifficlteAct_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_C",
+     "name": "Export_Output_4.TES4_csv_C",
      "type": "esriFieldTypeString",
      "alias": "Chonique_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_B",
+     "name": "Export_Output_4.TES4_csv_B",
      "type": "esriFieldTypeString",
      "alias": "Buveur_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_M",
+     "name": "Export_Output_4.TES4_csv_M",
      "type": "esriFieldTypeString",
      "alias": "MedecinAng_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_1",
+     "name": "Export_Output_4.TES4_csv_1",
      "type": "esriFieldTypeString",
      "alias": "BesoinSpec_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_A",
+     "name": "Export_Output_4.TES4_csv_A",
      "type": "esriFieldTypeString",
      "alias": "AccessibiliteSante_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "TES4_csv_3",
+     "name": "Export_Output_4.TES4_csv_3",
      "type": "esriFieldTypeString",
      "alias": "AccessibiliteComm_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthProf",
+     "name": "Export_Output_4.HealthProf",
      "type": "esriFieldTypeInteger",
      "alias": "HealthProf",
      "domain": null
     },
     {
-     "name": "HealthPr_1",
+     "name": "Export_Output_4.HealthPr_1",
      "type": "esriFieldTypeDouble",
      "alias": "Sante_A",
      "domain": null
     },
     {
-     "name": "HealthPr_2",
+     "name": "Export_Output_4.HealthPr_2",
      "type": "esriFieldTypeDouble",
      "alias": "SanteMental_A",
      "domain": null
     },
     {
-     "name": "HealthPr_3",
+     "name": "Export_Output_4.HealthPr_3",
      "type": "esriFieldTypeDouble",
      "alias": "Stress_A",
      "domain": null
     },
     {
-     "name": "HealthPr_4",
+     "name": "Export_Output_4.HealthPr_4",
      "type": "esriFieldTypeDouble",
      "alias": "DifficulteAct_A",
      "domain": null
     },
     {
-     "name": "HealthPr_5",
+     "name": "Export_Output_4.HealthPr_5",
      "type": "esriFieldTypeDouble",
      "alias": "Chonique_A",
      "domain": null
     },
     {
-     "name": "HealthPr_6",
+     "name": "Export_Output_4.HealthPr_6",
      "type": "esriFieldTypeDouble",
      "alias": "IMC_A",
      "domain": null
     },
     {
-     "name": "HealthPr_7",
+     "name": "Export_Output_4.HealthPr_7",
      "type": "esriFieldTypeDouble",
      "alias": "Fruits_A",
      "domain": null
     },
     {
-     "name": "HealthPr_8",
+     "name": "Export_Output_4.HealthPr_8",
      "type": "esriFieldTypeDouble",
      "alias": "Fumeur_A",
      "domain": null
     },
     {
-     "name": "HealthPr_9",
+     "name": "Export_Output_4.HealthPr_9",
      "type": "esriFieldTypeDouble",
      "alias": "Buveur_A",
      "domain": null
     },
     {
-     "name": "HealthP_10",
+     "name": "Export_Output_4.HealthP_10",
      "type": "esriFieldTypeDouble",
      "alias": "Medecin_A",
      "domain": null
     },
     {
-     "name": "HealthP_11",
+     "name": "Export_Output_4.HealthP_11",
      "type": "esriFieldTypeDouble",
      "alias": "MedecinAng_A",
      "domain": null
     },
     {
-     "name": "HealthP_12",
+     "name": "Export_Output_4.HealthP_12",
      "type": "esriFieldTypeDouble",
      "alias": "Consultation_A",
      "domain": null
     },
     {
-     "name": "HealthP_13",
+     "name": "Export_Output_4.HealthP_13",
      "type": "esriFieldTypeDouble",
      "alias": "BesoinSpec_A",
      "domain": null
     },
     {
-     "name": "HealthP_14",
+     "name": "Export_Output_4.HealthP_14",
      "type": "esriFieldTypeDouble",
      "alias": "DifficulteSpec_A",
      "domain": null
     },
     {
-     "name": "HealthP_15",
+     "name": "Export_Output_4.HealthP_15",
      "type": "esriFieldTypeDouble",
      "alias": "AccessibiliteSante_A",
      "domain": null
     },
     {
-     "name": "HealthP_16",
+     "name": "Export_Output_4.HealthP_16",
      "type": "esriFieldTypeDouble",
      "alias": "QualiteSante_A",
      "domain": null
     },
     {
-     "name": "HealthP_17",
+     "name": "Export_Output_4.HealthP_17",
      "type": "esriFieldTypeDouble",
      "alias": "AccessibiliteComm_A",
      "domain": null
     },
     {
-     "name": "HealthP_18",
+     "name": "Export_Output_4.HealthP_18",
      "type": "esriFieldTypeDouble",
      "alias": "QualiteComm_A",
      "domain": null
     },
     {
-     "name": "HealthP_19",
+     "name": "Export_Output_4.HealthP_19",
      "type": "esriFieldTypeDouble",
      "alias": "Appartenance_A",
      "domain": null
     },
     {
-     "name": "HealthP_20",
+     "name": "Export_Output_4.HealthP_20",
      "type": "esriFieldTypeString",
      "alias": "Sante_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_21",
+     "name": "Export_Output_4.HealthP_21",
      "type": "esriFieldTypeString",
      "alias": "SanteMental_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_22",
+     "name": "Export_Output_4.HealthP_22",
      "type": "esriFieldTypeString",
      "alias": "Stress_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_25",
+     "name": "Export_Output_4.HealthP_25",
      "type": "esriFieldTypeString",
      "alias": "IMC_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_26",
+     "name": "Export_Output_4.HealthP_26",
      "type": "esriFieldTypeString",
      "alias": "Fruits_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_29",
+     "name": "Export_Output_4.HealthP_29",
      "type": "esriFieldTypeString",
      "alias": "Fumeur_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_30",
+     "name": "Export_Output_4.HealthP_30",
      "type": "esriFieldTypeDouble",
      "alias": "Buveur_F",
      "domain": null
     },
     {
-     "name": "HealthP_31",
+     "name": "Export_Output_4.HealthP_31",
      "type": "esriFieldTypeString",
      "alias": "Medecin_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_33",
+     "name": "Export_Output_4.HealthP_33",
      "type": "esriFieldTypeString",
      "alias": "Consultation_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_35",
+     "name": "Export_Output_4.HealthP_35",
      "type": "esriFieldTypeString",
      "alias": "DifficulteSpec_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_37",
+     "name": "Export_Output_4.HealthP_37",
      "type": "esriFieldTypeString",
      "alias": "QualiteSante_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_39",
+     "name": "Export_Output_4.HealthP_39",
      "type": "esriFieldTypeString",
      "alias": "QualiteComm_F",
      "length": 254,
      "domain": null
     },
     {
-     "name": "HealthP_40",
+     "name": "Export_Output_4.HealthP_40",
      "type": "esriFieldTypeString",
      "alias": "Appartenance_F",
      "length": 254,
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.lhinCode",
+     "type": "esriFieldTypeInteger",
+     "alias": "lhinCode",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.LHINCode",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Sante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Sante_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.SanteMental_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "SanteMental_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Stress_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Stress_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.DifficulteAct_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteAct_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Chonique_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Chonique_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.IMC_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "IMC_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Fruits_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Fruits_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Fumeur_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Fumeur_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Buveur_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Buveur_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Medecin_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Medecin_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.MedecinAng_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "MedecinAng_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Consultation_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Consultation_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.BesoinSpec_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "BesoinSpec_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.DifficulteSpec_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteSpec_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.AccessibiliteSante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteSante_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.QualiteSante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "QualiteSante_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.AccessibiliteComm_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteComm_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.QualiteComm_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "QualiteComm_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Appartenance_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Appartenance_A",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Sante_F",
+     "type": "esriFieldTypeString",
+     "alias": "Sante_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.SanteMental_F",
+     "type": "esriFieldTypeString",
+     "alias": "SanteMental_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Stress_F",
+     "type": "esriFieldTypeString",
+     "alias": "Stress_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.DifficulteAct_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteAct_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Chonique_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "Chonique_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.IMC_F",
+     "type": "esriFieldTypeString",
+     "alias": "IMC_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Fruits_F",
+     "type": "esriFieldTypeString",
+     "alias": "Fruits_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Fumeur_F",
+     "type": "esriFieldTypeString",
+     "alias": "Fumeur_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Buveur_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "Buveur_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Medecin_F",
+     "type": "esriFieldTypeString",
+     "alias": "Medecin_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Consultation_F",
+     "type": "esriFieldTypeString",
+     "alias": "Consultation_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.MedecinAng_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "MedecinAng_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.DifficulteSpec_F",
+     "type": "esriFieldTypeString",
+     "alias": "DifficulteSpec_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.BesoinSpec_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "BesoinSpec_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.QualiteSante_F",
+     "type": "esriFieldTypeString",
+     "alias": "QualiteSante_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.AccessibiliteSante_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteSante_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.QualiteComm_F",
+     "type": "esriFieldTypeString",
+     "alias": "QualiteComm_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.AccessibiliteComm_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteComm_F",
+     "domain": null
+    },
+    {
+     "name": "HealthProfile.csv.Appartenance_F",
+     "type": "esriFieldTypeString",
+     "alias": "Appartenance_F",
+     "length": 255,
      "domain": null
     }
    ],
@@ -34173,5 +34438,305 @@
    "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true}
   }
  ],
- "tables": []
+ "tables": [
+  {
+   "currentVersion": 10.11,
+   "id": 144,
+   "name": "pop2011.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "Population",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "code",
+     "type": "esriFieldTypeInteger",
+     "alias": "code",
+     "domain": null
+    },
+    {
+     "name": "Population",
+     "type": "esriFieldTypeString",
+     "alias": "Population",
+     "length": 255,
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 145,
+   "name": "HealthProfile.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "Sante_F",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHINCode",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode",
+     "domain": null
+    },
+    {
+     "name": "Sante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Sante_A",
+     "domain": null
+    },
+    {
+     "name": "SanteMental_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "SanteMental_A",
+     "domain": null
+    },
+    {
+     "name": "Stress_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Stress_A",
+     "domain": null
+    },
+    {
+     "name": "DifficulteAct_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteAct_A",
+     "domain": null
+    },
+    {
+     "name": "Chonique_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Chonique_A",
+     "domain": null
+    },
+    {
+     "name": "IMC_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "IMC_A",
+     "domain": null
+    },
+    {
+     "name": "Fruits_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Fruits_A",
+     "domain": null
+    },
+    {
+     "name": "Fumeur_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Fumeur_A",
+     "domain": null
+    },
+    {
+     "name": "Buveur_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Buveur_A",
+     "domain": null
+    },
+    {
+     "name": "Medecin_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Medecin_A",
+     "domain": null
+    },
+    {
+     "name": "MedecinAng_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "MedecinAng_A",
+     "domain": null
+    },
+    {
+     "name": "Consultation_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Consultation_A",
+     "domain": null
+    },
+    {
+     "name": "BesoinSpec_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "BesoinSpec_A",
+     "domain": null
+    },
+    {
+     "name": "DifficulteSpec_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteSpec_A",
+     "domain": null
+    },
+    {
+     "name": "AccessibiliteSante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteSante_A",
+     "domain": null
+    },
+    {
+     "name": "QualiteSante_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "QualiteSante_A",
+     "domain": null
+    },
+    {
+     "name": "AccessibiliteComm_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteComm_A",
+     "domain": null
+    },
+    {
+     "name": "QualiteComm_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "QualiteComm_A",
+     "domain": null
+    },
+    {
+     "name": "Appartenance_A",
+     "type": "esriFieldTypeDouble",
+     "alias": "Appartenance_A",
+     "domain": null
+    },
+    {
+     "name": "Sante_F",
+     "type": "esriFieldTypeString",
+     "alias": "Sante_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "SanteMental_F",
+     "type": "esriFieldTypeString",
+     "alias": "SanteMental_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Stress_F",
+     "type": "esriFieldTypeString",
+     "alias": "Stress_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "DifficulteAct_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "DifficulteAct_F",
+     "domain": null
+    },
+    {
+     "name": "Chonique_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "Chonique_F",
+     "domain": null
+    },
+    {
+     "name": "IMC_F",
+     "type": "esriFieldTypeString",
+     "alias": "IMC_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Fruits_F",
+     "type": "esriFieldTypeString",
+     "alias": "Fruits_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Fumeur_F",
+     "type": "esriFieldTypeString",
+     "alias": "Fumeur_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Medecin_F",
+     "type": "esriFieldTypeString",
+     "alias": "Medecin_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Consultation_F",
+     "type": "esriFieldTypeString",
+     "alias": "Consultation_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "MedecinAng_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "MedecinAng_F",
+     "domain": null
+    },
+    {
+     "name": "DifficulteSpec_F",
+     "type": "esriFieldTypeString",
+     "alias": "DifficulteSpec_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "BesoinSpec_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "BesoinSpec_F",
+     "domain": null
+    },
+    {
+     "name": "QualiteSante_F",
+     "type": "esriFieldTypeString",
+     "alias": "QualiteSante_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "AccessibiliteSante_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteSante_F",
+     "domain": null
+    },
+    {
+     "name": "QualiteComm_F",
+     "type": "esriFieldTypeString",
+     "alias": "QualiteComm_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "AccessibiliteComm_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "AccessibiliteComm_F",
+     "domain": null
+    },
+    {
+     "name": "Buveur_F",
+     "type": "esriFieldTypeDouble",
+     "alias": "Buveur_F",
+     "domain": null
+    },
+    {
+     "name": "Appartenance_F",
+     "type": "esriFieldTypeString",
+     "alias": "Appartenance_F",
+     "length": 255,
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  }
+ ]
 }

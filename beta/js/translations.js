@@ -271,8 +271,8 @@ Fr['Ontario']= 'Ontario';
 
 
 
-Fr['E: Use with caution']= 'E : donnée à utiliser avec prudence';
-Fr['F: Too unreliable to be published']= 'F : donnée trop peu fiable pour être publiée';
+Fr['(*): Use with caution']= '(*) : donnée à utiliser avec prudence';
+Fr['(**): Too unreliable to be published']= '(**) : donnée trop peu fiable pour être publiée';
 Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
 Fr['Hospitals By French Language Service (FLS) Designation'] = 'Hôpitaux par désignation selon la Loi sur les services en français (LSF)';
 

@@ -174,12 +174,14 @@ MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 
 	$('.servicePointCheckBox').prop('checked', false);	
 	$('.servicePointBufferRow').hide();	
-	$('.servicePointBufferLayerCheckBox').prop('checked', false);	
+	$('.servicePointBufferLayerCheckBox').prop('checked', false);
+	$('#hospitalLegendList').addClass('hidden');	
 
 	if (checked)
 	{
 		$('#servicePointHyperLink' + layerCounter).prop('checked', true);	
 		$('.servicePointBufferRowLayer' + layerCounter).show();
+		$('#hospitalLegendList').removeClass('hidden');
 	}
 };
 

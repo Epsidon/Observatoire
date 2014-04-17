@@ -8,6 +8,11 @@
 	overflow:hidden;
 }
 
+li
+{
+    list-style-type: none;
+}
+
 .title 
 {
 	font-family: arial;

@@ -19,7 +19,7 @@ Tabs.prototype.getHome = function ()
 			'<a href="mailto:louise.bouchard@uottawa.ca">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 			
 			'<p>' +
-				'<h4 id="p7">' + translator.T('Team') + '</h4>'+
+				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
 				translator.T('Scientific Director') +
 				'<br><a href ="http://www.hopitalmontfort.com/en/health-francophones-minority-communities">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
 			'</p>' +
@@ -34,28 +34,28 @@ Tabs.prototype.getHome = function ()
 				'<br>Érik Bourdon, conseiller</br>' +
 			'</p>' +
 			
-			'<p>' +
-				translator.T('Analysts') +
-				'<br>Ewa Sucha, PhD (candidate), Biostatistique</br>' +
-				'<br>Golnaz Sedigh, PhD (candidate), Économie</br>' +
-				'<br>Ricardo Batista, PhD (candidat), Santé des populations</br>' +
-			'</p>' +
 			
+				translator.T('Analysts') +
+				'<li>Ewa Sucha, PhD (candidate), Biostatistique</li>' +
+				'<li>Golnaz Sedigh, PhD (candidate), Économie</li>' +
+				'<li>Ricardo Batista, PhD (candidat), Santé des populations</li>' +
+			
+			'<br>' +
 			'<p>' +
 				translator.T('Transfer and application of knowledge') +
 				'<br>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</br>' +
 			'</p>' +
+			'</br>' +	
 			
-			'<p>' +
 				translator.T('Developers') +
-				'<br>Ava Ahadipour</br>' +
-				'<br>Seyed M. Mirtaheri</br>' +
-			'</p>' +
-		
-			'<h5 class="space"><u>' + translator.T('Financial support') + '</u></h5>' + 
+				'<li>Ava Ahadipour</li>' +
+				'<li>Seyed M. Mirtaheri</li>' +
+			
+		'<br>' +
+			'<p class="homeTitle">' + translator.T('Financial support') + '</p>' + 
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministère de la santé et des soins de longue durée de l’Ontario') + '</a>' +
-				
+		'</br>' +		
 		'</div>';
 
 	

@@ -21,7 +21,7 @@ Tabs.prototype.getHome = function ()
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
 				'<b>' + translator.T('Scientific Director') + '</b>' +
-				'<br><a href="http://sciencessociales.uottawa.ca/soc-ant/' + (router.getLanguage() == 'french'? 'profil-professeur?id=274':'professor-profile?id=274') + 'target="_blank">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
+				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
 			'</p>' +
 			
 			'<p>' +

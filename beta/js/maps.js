@@ -219,6 +219,8 @@ function(
 		removeLegend();
 		createInfoWindow();
 		var extent = map.getZoom();
+		$('#legendList').removeClass('hidden');
+		$('#legendTitle').removeClass('hidden');
 
 		if ((clickedLayerId == -1) || 
 			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
@@ -243,8 +245,7 @@ function(
 		else
 		{
 			// 4.3.
-			$('#legendList').removeClass('hidden');
-			$('#legendTitle').removeClass('hidden');
+			
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;

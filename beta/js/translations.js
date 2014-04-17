@@ -269,6 +269,8 @@ Fr['DA'] = 'AD';
 Fr[' Local Health Integration Network (LHIN).'] = '.';
 Fr['Ontario']= 'Ontario';
 
+
+
 Fr['E: Use with caution']= 'E : donnée à utiliser avec prudence';
 Fr['F: Too unreliable to be published']= 'F : donnée trop peu fiable pour être publiée';
 Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
@@ -280,3 +282,10 @@ Fr['Statistics Canada'] = 'Statistique Canada';
 
 Fr['http://www.healthforceontario.ca/en/Home'] = 'http://www.healthforceontario.ca/fr/Home';
 
+Fr['Linguistic Minorities in Canada and Health'] = 'Les minorités linguistiques du Canada et la santé';
+Fr['Official language minorities (Francophones outside of Quebec and Anglophones in Quebec) make up about 6.4% of the Canadian population. Even though the Canadian constitution gives legal equality status to French and English, there is still room to ask if this equality is maintained in the health sector. In other words, do Francophone and Anglophone communities of Canada have the same health profiles regardless of their minority or majority status? Do they have access to the same health services and in the same conditions? The objective of this paper is to identify the health issues associated with belonging to a linguistic minority. Our research allows us to highlight the social and health disparities that can be attributed to belonging to a minority. In the Canadian context, which has two official languages, an equitable health policy will have to take into consideration language as a determinant of health.'] = 'Les minorités de langue officielle (les francophones hors-Québec et les anglophones du Québec) représentent près de 6,4 % de la population canadienne. Bien que le français et l’anglais aient un statut d’égalité juridique selon la Constitution canadienne, il y a lieu de s’interroger sur leur égalité dans le domaine de la santé : les communautés francophones et anglophones du Canada, selon leur statut de minorité ou de majorité, présentent elles le même profil santé ? Ont-elles accés aux mêmes services de santé et dans les mêmes conditions ? L’objectif de cet article cet article est de rendre compte des enjeux de santé reliés au fait d’appartenir à une minorité linguistique. Nos recherches permettent de mettre en évidence des disparités sociales et de santé qui peuvent être attribuées au fait minoritaire. Dans le contexte canadien des deux langues officielles, une politique de santé équitable devra dorénavant prendre en considération la situation linguistique minoritaire comme déterminant de la santé.';
+
+Fr['Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities'] = 'Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities';
+
+Fr['Title: '] = 'Titre : ';
+Fr['Abstract: '] = 'Résumé : ';

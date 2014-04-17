@@ -55,42 +55,6 @@ Tabs.prototype.getHome = function ()
 			'<h5 class="space"><u>' + translator.T('Financial support') + '</u></h5>' + 
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministère de la santé et des soins de longue durée de l’Ontario') + '</a>' +
-			
-			/* '<p id="homeMainParagraph">Loading ...</p>' +
-				'<p id="homeMainParagraph2">Loading ...</p>' +
-				'<p>' +
-				'<span id="homeSecondLine"></span>' + 
-				'</p>' +
-
-				'<ul>1) <span id="homeOptionOne"></span></ul>' +
-				'<ul>2) <span id="homeOptionTwo"></span></ul>' +
-				
-				'<h4 class="grayFont largeFont" id="TeamHeader"></h4>' +
-				
-				'<br><u><b class="grayFont mediumFont" id="Bouchard"></b></u></br>' +
-				'<p id="BouchardTitle"></p>' +
-				
-				'<u><b class="grayFont mediumFont" id="Erik"></b></u>' +
-				'<p id="ErikTitle"></p>' +
-				
-				'<u><b class="grayFont mediumFont" id="GVJourdan"></b></u>' +
-				'<p id="GVJourdanTitle"></p>' +
-				
-				'<b class="grayFont mediumFont" id="Seyed"></b>' +
-				'<u><br><b class="grayFont mediumFont" id="Ava"></b></br></u>' +
-				'<p id="Programmer"></p>' +
-				
-				'<b class="grayFont mediumFont" id="Ewa"></b>' +
-				'<u><br><b class="grayFont mediumFont" id="Golnaz"></b></br></u>' +
-				'<p id="Analyst"></p>' +
-				
-				'<h4 class="grayFont largeFont" id="withSupportOfMsg"></h4>' +
-				'<br>' +
-				'<a href="http://www.ontario.ca/" target="_blank"><img border="0" src="images/ontario.jpg" ></a>' +
-				'<br>'+
-				'<a href="http://www.health.gov.on.ca/en/" target="_blank"><img border="0" src="images/healthandLongTermCare.jpg" ></a>' +
-				'</br>' +
-				'</br>' ; */
 				
 		'</div>';
 
@@ -172,16 +136,48 @@ Tabs.prototype.getAnalysis = function ()
 			'<p>' +
 				'<font id="validationFirstContent"></font>' +
 			'</p>' +
-			'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
 			
-			'<h6 id="headerTwoResearchTab"></h6>' +
-			'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
-			
-			'<h6 id="headerThreeResearchTab"></h6>' +
-			'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
-			
-			'<h6 id="headerFourResearchTab"></h6>' +
-			'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF Link') + '</b></a>' +
+			'<table>' +
+				'<p>' +
+					'<b>' + translator.T('Title: ') + '</b>' +
+					'<b id="BouchardWarnkeTitle"></b>' +
+					
+					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+					'<h5 id="BouchardWarnkeAbstract"></h5>' +
+					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+				'</p>' +	
+				
+				'<p>' +
+					//'<h6 id="headerTwoResearchTab"></h6>' +
+					'<b>' + translator.T('Title: ') + '</b>' +
+					'<b id="AgingTitle"></b>' +
+					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+					'<h5 id="agingAbstract"></h5>' +
+					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+				'</p>' +
+
+				'<p>' +
+					//'<h6 id="headerThreeResearchTab"></h6>' +
+					'<b>' + translator.T('Title: ') + '</b>' +
+					'<b id="PolicyTitle"></b>' +
+					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+					'<h5 id="PolicyAbstract"></h5>' +
+					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+					'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+				'</p>' +
+				
+				'<p>' +
+					'<b>' + translator.T('Title: ') + '</b>' +
+					'<b id="FOCUS13Title"></b>' +
+					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+					'<h5 id="FOCUS13Abstract"></h5>' +
+					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+				'</p>' +
+		
+			'</table>' +
 		'</div>';
 		
 	return body;

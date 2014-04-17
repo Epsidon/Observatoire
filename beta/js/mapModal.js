@@ -168,20 +168,21 @@ MapModal.prototype.layerCheckBoxClicked = function (layerCounter)
 MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 {
 	if ($('#servicePointHyperLink' + layerCounter).prop('checked'))
+	{
 		var checked = true;
+	}
 	else 
 		var checked = false;
-
+		
 	$('.servicePointCheckBox').prop('checked', false);	
 	$('.servicePointBufferRow').hide();	
-	$('.servicePointBufferLayerCheckBox').prop('checked', false);
-	$('#hospitalLegendList').addClass('hidden');	
-
+	$('.servicePointBufferLayerCheckBox').prop('checked', false);	
+	
 	if (checked)
 	{
 		$('#servicePointHyperLink' + layerCounter).prop('checked', true);	
 		$('.servicePointBufferRowLayer' + layerCounter).show();
-		$('#hospitalLegendList').removeClass('hidden');
+		
 	}
 };
 
@@ -191,7 +192,6 @@ MapModal.prototype.modalUpdateMapsClick = function()
 	this.storeClickedItems();
 
 	$('#mapsModal').modal('hide');
-
 	updateLayer();
 };
 

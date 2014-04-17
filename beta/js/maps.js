@@ -304,9 +304,11 @@ function(
 		var clickedServicePoint = mapModal.getCheckedServicePoint();
 		var clickedServicePointBufferSmall = mapModal.getCheckedServicePointBufferSmall();							
 		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
+		$('#hospitalLegendList').addClass('hidden');
 		
 		if (clickedServicePoint != -1 )
 		{
+			$('#hospitalLegendList').removeClass('hidden');
 			clickedHospitalLayerIdArray.push(clickedServicePoint);
 			mapServicePointLabel += " & " + layersLabels[clickedServicePoint];
 		

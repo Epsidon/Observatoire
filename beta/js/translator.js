@@ -34,9 +34,9 @@ Translator.prototype.translatePage = function()
 	$('#forceMsg').html(this.T('Force'));
 	$('#ontarioMsg').html(this.T('Ontario'));
 
-	$('#homeMainParagraph').html(this.T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations."));
-	$('#homeMainParagraph2').html(this.T("The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
-	$('#TeamHeader').html(this.T("Our Team"));
+	$('#p1').html(this.T("Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations."));
+	$('#p2').html(this.T("The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario."));
+	$('#p7').html(this.T("Team"));
 	$('#Bouchard').html(this.T("Dr. Louise Bouchard"));
 	$('#BouchardTitle').html(this.T("Director and Primary Investigator"));
 
@@ -54,10 +54,10 @@ Translator.prototype.translatePage = function()
 	$('#GVJourdan').html(this.T("Dr. Guy-Vincent Jourdan"));
 	$('#GVJourdanTitle').html(this.T("Associate professor, School of Information Technology and Engineering"));
 	
-	$('#homeSecondLine').html(this.T("The activity of the Observatory is organized around two priorities:"));
+	$('#p3').html(this.T("The activity of the Observatory is organized around two priorities: "));
 
-	$('#homeOptionOne').html(this.T("Activities of data collection, research and production of new knowledge"));
-	$('#homeOptionTwo').html(this.T("Valorisation and transfer of knowledge"));
+	$('#p4').html(this.T("1) Activities of data collection, research and production of new knowledge"));
+	$('#p5').html(this.T("2) Valorisation and transfer of knowledge"));
 
 	$('#mapsInstructionOne').html(this.T(" Choose a map"));
 	$('#mapsInstructionTwo').html(this.T("for data sources and methodology."));
@@ -79,7 +79,7 @@ Translator.prototype.translatePage = function()
 	$('#ENhealthForceOntario').html(this.T("Health Force Ontario"));
 	$('#ENministryOfHealth').html(this.T("Ministry of Health and Long-Term Care of Ontario"));
 	$('#ENStatisticCanada').html(this.T("Statistics Canada"));
-	
 	$('#ENhealthForceOntarioLink').html(this.T("http://www.healthforceontario.ca/en/Home"));
+
 	
 };

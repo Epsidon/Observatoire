@@ -14,6 +14,12 @@ Fr['North Simcoe Muskoka'] = 'Simcoe-Nord Muskoka' ;
 Fr['South East'] = 'Sud-Est' ;
 Fr['South West'] = 'Sud-Ouest'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
+Fr['Co-chercheur'] = 'Co-researcher';
+Fr['Géomatique, données et analyses'] = 'GIS, data and analysis';
+Fr['Analystes'] = 'Analysts';
+Fr['Transfert et application des connaissances'] = 'Transfer and application of knowledge';
+Fr['Développeurs'] = 'Developers';
+Fr['Soutien financier'] = 'Financial support';
 
 Fr['Centre'] = 'Central';
 Fr['Centre-Est'] = 'Central East' ;
@@ -128,12 +134,12 @@ Fr['Financial Support:'] = 'Support Financier:';
 Fr['Data Providers:'] = 'Fournisseurs de données:';
 Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';
-Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé et l’accès aux services de santé de la population francophone en situation minoritaire de l’Ontario.';
+Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités de langue officielle (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
 Fr[' Choose a map'] = ' Choisir une carte' ;
 Fr['for data sources and methodology.'] = ' pour accéder aux notes méthodologiques.';
-Fr['Our Team'] = 'Notre équipe';
+Fr['Team'] = 'L’équipe';
 Fr['Director and Primary Investigator'] = 'Directrice du projet et chercheuse principale';
 Fr['Manager, Data & Analyses'] = 'Gestionnaire, données et analyse';
 Fr['Associate professor, School of Information Technology and Engineering'] = 'Professeur agrégé, École d’ingénierie et de technologie de l’information';
@@ -141,17 +147,21 @@ Fr['Programmers'] = 'Programmeurs';
 Fr['Analysts'] = 'Analystes';
 Fr['Interactive Maps'] = 'CARTES INTÉRACTIVES';
 Fr['Select a data layer from the menu below and click on map for detailed information.']= 'Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
+Fr['Scientific Director'] = 'Direction scientifique';
+Fr['Co-researcher']= 'Co-chercheur';
+Fr['GIS, data and analysis'] = 'Géomatique, données et analyses';
+Fr['Analysts'] = 'Analystes';
+Fr['Transfer and application of knowledge'] = 'Transfert et application des connaissances';
+Fr['Developers'] = 'Developers';
+Fr['Financial support'] = 'Soutien financier';
+Fr['The Health Observatory'] = 'L’observatoire de la santé';
+Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.";
 
+Fr['The activity of the Observatory is organized around two priorities: '] = "L’activité de l’Observatoire s’organise autour de deux pôles : ";
 
+Fr['1) Activities of data collection, research and production of new knowledge'] = "1) activités de collecte de données, de recherche et de production de nouvelles connaissances";
 
-
-Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L'information sanitaire de qualité est essentielle à la décision politique et à la planification en santé. Toutefois, cette information est absente ou incomplète pour certaines populations.";
-
-Fr['The activity of the Observatory is organized around two priorities:'] = "L’activité de l’Observatoire s’organise autour de deux pôles:";
-
-Fr['Activities of data collection, research and production of new knowledge'] = "activités de collecte de données, de recherche et de production de nouvelles connaissances";
-
-Fr['Valorisation and transfer of knowledge'] = "valorisation et transfert des connaissances";
+Fr['2) Valorisation and transfer of knowledge'] = "2) valorisation et transfert des connaissances";
 Fr['Ontario LHIN Information']= ' RLISS en Ontario';
 
 Fr['Audiologists'] = 'Audiologistes';

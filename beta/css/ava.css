@@ -736,19 +736,17 @@ input, button, select, textarea
 	line-height: inherit;
 }
 
-#zoomInInstruction 
-{
-	font-family: arial;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #474650;
-	border-color: #BAB9C5;
-	border-width: 0.1em;
-	padding: 0.5em;
-	border-radius: 0.5em;
+#zoomInInstruction {
+font-family: arial;
+font-size: 1.9em;
+font-weight: bold;
+color: #474650;
+border-color: #BAB9C5;
+border-width: 0.13em;
+padding: 0.5em;
+border-radius: 0.5em;
 }
 
- 
 .navbar-primary .navbar
 {
 	background: #2f3335;

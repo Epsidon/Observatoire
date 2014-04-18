@@ -14,12 +14,7 @@ Fr['North Simcoe Muskoka'] = 'Simcoe-Nord Muskoka' ;
 Fr['South East'] = 'Sud-Est' ;
 Fr['South West'] = 'Sud-Ouest'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
-Fr['Co-chercheur'] = 'Co-researcher';
-Fr['Géomatique, données et analyses'] = 'GIS, data and analysis';
-Fr['Analystes'] = 'Analysts';
-Fr['Transfert et application des connaissances'] = 'Transfer and application of knowledge';
-Fr['Développeurs'] = 'Developers';
-Fr['Soutien financier'] = 'Financial support';
+Fr['Co-researcher'] = 'Co-chercheur';
 
 Fr['Centre'] = 'Central';
 Fr['Centre-Est'] = 'Central East' ;
@@ -134,12 +129,12 @@ Fr['Financial Support:'] = 'Support Financier:';
 Fr['Data Providers:'] = 'Fournisseurs de données:';
 Fr['Health'] = 'Santé';
 Fr['Force'] = 'Force';
-Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’Observatoire de la santé des minorités de langue officielle (OSM) vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.';
+Fr['The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.'] = 'L’observatoire de la santé des minorités de langue officielle vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.';
 
 Fr['MINISTRY OF'] = 'Ministere de la';
 Fr[' Choose a map'] = ' Choisir une carte' ;
 Fr['for data sources and methodology.'] = ' pour accéder aux notes méthodologiques.';
-Fr['Team'] = 'L’équipe';
+Fr['Team'] = 'Équipe';
 Fr['Director and Primary Investigator'] = 'Directrice du projet et chercheuse principale';
 Fr['Manager, Data & Analyses'] = 'Gestionnaire, données et analyse';
 Fr['Associate professor, School of Information Technology and Engineering'] = 'Professeur agrégé, École d’ingénierie et de technologie de l’information';
@@ -152,12 +147,12 @@ Fr['Co-researcher']= 'Co-chercheur';
 Fr['GIS, data and analysis'] = 'Géomatique, données et analyses';
 Fr['Analysts'] = 'Analystes';
 Fr['Transfer and application of knowledge'] = 'Transfert et application des connaissances';
-Fr['Developers'] = 'Developers';
+Fr['Developers'] = 'Développeurs';
 Fr['Financial support'] = 'Soutien financier';
-Fr['The Health Observatory'] = 'L’observatoire de la santé';
-Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.";
+Fr['The Health Observatory'] = 'Observatoire de la santé';
+Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = "L'information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.";
 
-Fr['The activity of the Observatory is organized around two priorities: '] = "L’activité de l’Observatoire s’organise autour de deux pôles : ";
+Fr['The activity of the Observatory is organized around two priorities: '] = "L’activité de l’observatoire s’organise autour de deux pôles: ";
 
 Fr['1) Activities of data collection, research and production of new knowledge'] = "1) activités de collecte de données, de recherche et de production de nouvelles connaissances";
 

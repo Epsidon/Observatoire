@@ -195,7 +195,6 @@ Fr['Population Number'] = 'Population';
 Fr['Population Proportion'] = 'Proportion de la Population';
 Fr['RESEARCH'] = 'RECHERCHE';
 Fr['Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada'] = 'Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada';
-Fr['This research uses a regional summary indicator (IHPOLM) to measure the capacity of the health system to provide equitable access to health professionals for 2 million Official Language Minority Community (OLMC) members dispersed across 104 health regions in Canada.'] = 'Cette recherche utilise l’indicateur synthétique régional (IPSLOM) pour mesurer la capacité du système de santé à fournir un accès équitable aux professionnels de la santé pour les deux millions de personnes qui constituent des Communautés de langue officielle en situation minoritaire (CLOSM) dans 104 régions sociosanitaires du Canada.';
 Fr['Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada'] = 'Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada';
 Fr['Linguistic Minorities in Canada and Health'] = 'Les minorités linguistiques au Canada et la santé';
 Fr['Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities'] = 'Un regard sur la distribution des médecins de famille qui parlent français dans les communautés francophones de l’Ontario';

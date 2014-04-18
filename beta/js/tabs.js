@@ -130,9 +130,6 @@ Tabs.prototype.getAnalysis = function ()
 {
 	var body = 
 		'<div class="container">' +
-			'<p class="homeTitle" id="validationFirstContent"></p>' +
-
-				
 					'<b>' + translator.T('Title: ') + '</b>' +
 					'<b id="BouchardWarnkeTitle"></b>' +
 					

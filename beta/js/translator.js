@@ -71,7 +71,6 @@ Translator.prototype.translatePage = function()
 	
 	$('#moreLessSpaceMsg').html(this.T("More Space"));
 	$('#headerOneResearchTab').html(this.T("Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada."));
-	$('#validationFirstContent').html(this.T("This research uses a regional summary indicator (IHPOLM) to measure the capacity of the health system to provide equitable access to health professionals for 2 million Official Language Minority Community (OLMC) members dispersed across 104 health regions in Canada."));
 	$('#headerTwoResearchTab').html(this.T("Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada"));
 	$('#headerThreeResearchTab').html(this.T("Linguistic Minorities in Canada and Health"));
 	$('#headerFourResearchTab').html(this.T("Examining the Distribution of French Speaking Family Physicians in Ontario’s Francophone Communities"));

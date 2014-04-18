@@ -104,7 +104,7 @@ function translateMap()
 	"<td>${Detailedmo}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[0]['outFields'] = new Array("POPIN2011", "GeoKey20_2", "GeoKey20_1","Detailedmo", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
@@ -131,8 +131,8 @@ function translateMap()
 	"<td>${KEngNorFre}</td>"+
 	"<td align='center'>${Knowledgeo}</td>"+
 	"</tr>"+
-	"</table>" + "</p>" +"<p>" +
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + "</p>" + "<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[1]['outFields'] = new Array("KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
@@ -160,7 +160,7 @@ function translateMap()
 	"<td>${FirstoffTo}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
@@ -185,8 +185,8 @@ function translateMap()
 	"<td>${DLSHNON}</td>"+
 	"<td>${DLAthomeTo}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + "</p>" + "<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
@@ -377,7 +377,7 @@ function translateMap()
 	"</tr>"+
 	"</table>" + 
 	"<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[4]['outFields'] = new Array( "Export_Output_5.HR035b08_E", "Export_Output_5.HR035b08_H", "Export_Output_5.LHINProf_2", 
@@ -514,8 +514,9 @@ function translateMap()
 	"</tr>"+
 	"</table>" + 
 	"<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
+
 	layerData[5]['outFields'] = new Array("Export_Output_6.EnglishL_1", "Export_Output_6.HRUID2007", "Export_Output_6.SociEcoP_1",
 	 "Export_Output_6.SociEcoP_2",
 	"Export_Output_6.SociEcoP_3",
@@ -650,9 +651,10 @@ function translateMap()
 	translator.T("(*): Use with caution") +  "</br>" +
 	"<n>" +translator.T("(**): Too unreliable to be published") + "</n>" +
 	"</br>" +
-	"<p>" +
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
+
 	layerData[6]['outFields'] = new Array( 
 	"HealthProfile.csv.Appartenance_A", "HealthProfile.csv.Appartenance_F", "HealthProfile.csv.QualiteComm_A",
 	"HealthProfile.csv.QualiteComm_F", "HealthProfile.csv.AccessibiliteComm_A", 
@@ -688,9 +690,11 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
+	
 	layerData[7]['outFields'] = new Array("LHIN_NAME", "C_NAME_ENG", "CITY", "ADDRESS_1",
 	"POSTALCODE" );
 
@@ -712,9 +716,12 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
+	
 	layerData[8]['outFields'] = new Array("LHIN_NAME", "LHINProf_2", "LHINProfil" , "C_NAME_ENG", "CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[9] = [];
@@ -733,9 +740,11 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" +
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
+
 	layerData[9]['outFields'] = new Array("LHINProfil","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
 	layerData[10] = [];
@@ -754,8 +763,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" +
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[10]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
@@ -775,8 +785,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[11]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
@@ -817,8 +828,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[13]['outFields'] = new Array("LHINInform","LHIN_NAME", "LHINInfo_1" , "LHINProf_2","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
@@ -839,8 +851,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" +
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[14]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
@@ -860,8 +873,9 @@ function translateMap()
 	"<td align='center'>${ADDRESS_1}</td>"+
 	"<td align='center'>${POSTALCODE}</td>"+
 	"</tr>"+
-	"</table>" + "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[15]['outFields'] = new Array("LHIN_NAME","C_NAME_ENG","CITY", "ADDRESS_1", "POSTALCODE");
 
@@ -897,7 +911,7 @@ function translateMap()
 	"<p>" + "${Export_Output_7.FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${Export_Output_7.SociEcoP_1}"+ "</p>" +
 	"<span class='spanToTranslate hidden'></span>" +
 	"<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[16]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
@@ -908,8 +922,9 @@ function translateMap()
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
 	layerData[17]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
 	"&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
-	 "<p>" + 
-	"<a class=methodologicalNote href='Pdf/NotesMéthodologiques" + (router.getLanguage() == 'french'? 'FRANCAIS':'ANGLAIS') + ".pdf'" + "target='_blank'>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[17]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 

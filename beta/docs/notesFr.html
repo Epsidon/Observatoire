@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Geoportal</title>
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]><!--><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+		<!--[if IE]><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+		<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">	
+
+		<link rel="stylesheet" href="css/ava.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="http://js.arcgis.com/3.8/"></script>
+		<script type="text/javascript" src="js/touchPunch.js"></script>
+		<script type="text/javascript" src="js/translations.js"></script>
+		<script type="text/javascript" src="js/translator.js"></script>
+		<script type="text/javascript" src="js/tabs.js"></script>
+		<script type="text/javascript" src="js/router.js"></script>		
+		<script type="text/javascript" src="js/organizer.js"></script>		
+		<script type="text/javascript" src="js/mapModal.js"></script>		
+		
+		<script type="text/javascript" src="js/start.js"></script>
+
+	</head>
+	<body>
+	<div class="navbar-xs">
+		<div class="navbar-primary">
+			<div class="navbar navbar-static-top" role="navigation">
+				<div class="navbar-header">
+					<a class="navbar-brand" id="pageTitle">Notes Méthodologiques</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div id="mainContainer"></div>
+	<div class="container">
+	<H4>Population (2011)</H4>
+
+<b>Langue maternelle</b>
+<br>
+	<p>
+	Langue maternelle est la première langue apprise à la maison dans l'enfance et encore comprise par la personne au moment où les données sont recueillies. Si la personne ne comprend plus la première langue apprise, la langue maternelle est la deuxième langue apprise. Dans le cas d'une personne qui a appris deux langues en même temps dans la petite enfance, la langue maternelle est la langue que cette personne a parlé le plus souvent à la maison avant de commencer l'école. Une personne a deux langues maternelles seulement si les deux langues ont été utilisées aussi souvent et sont toujours comprises par la personne. Dans le cas d'un enfant qui n'a pas encore appris à parler, la langue maternelle est la langue parlée le plus souvent à cet enfant à la maison. Un enfant a deux langues maternelles seulement si les deux langues lui sont parlées aussi souvent, afin qu'il apprenne les deux en même temps.
+	(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue01-fra.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue01-fra.htm</a> )
+	</p>
+</br>
+
+<b>Connaissance des langues officielles </b>
+<br>
+	<p>
+	Connaissance des langues officielles s'entend de la capacité d'une personne de soutenir une conversation en anglais, en français, dans les deux langues, ou dans ni l'une ni l'autre. Dans le cas d'un enfant qui n'a pas encore appris à parler, cela comprend les langues que l'enfant apprend à parler à la maison.
+	(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue04-fra.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue04-fra.htm</a> )
+	</p>
+</br>
+
+<b>Première langue officielle parlée</b>
+<p>
+	Variable élaborée pour l'application de la Loi sur les langues officielles.
+</p>	
+	
+	<br>Dérivation</br>
+		<p>
+		Première langue officielle parlée de la personne est dérivée. Les règles de dérivation attribuent des langues particulières aux personnes, comme suit.
+		</p>
+
+	<p>
+	Anglais
+	</p>
+		<br>
+		Cette catégorie comprend :
+		</br>
+	</p>
+	
+	<li>les personnes qui parlent suffisamment bien l'anglais pour soutenir une conversation et qui ne peuvent soutenir une conversation en français</li>
+	<li>les personnes qui parlent à la fois l'anglais et le français suffisamment bien pour soutenir une conversation dont l'anglais est la langue maternelle, ou une de leurs langues maternelles avec une autre langue que le français</li>
+	<li>les personnes qui ne parlent ni l'anglais ni le français suffisamment bien pour soutenir une conversation dont l'anglais est la langue maternelle, ou une de leurs langues maternelles avec une autre langue que le français</li>
+	<li>les personnes qui ne sont pas classées selon les critères qui précèdent, qui parlent à la fois l'anglais et le français suffisamment bien pour soutenir une conversation et dont la principale langue parlée à la maison est l'anglais ou l'anglais et une autre langue que le français</li>
+	<li>les personnes qui ne sont pas classées selon les critères qui précèdent, qui ne parlent ni l'anglais ni le français suffisamment bien pour soutenir une conversation et dont la principale langue parlée à la maison est l'anglais ou l'anglais et une autre langue que le français.</li>
+	
+	
+	<br>
+	Français
+	</br>
+		<br>
+		Cette catégorie comprend :
+		</br>
+	<li>les personnes qui parlent suffisamment bien le français pour soutenir une conversation et qui ne peuvent soutenir une conversation en anglais.</li>
+	<li>les personnes qui parlent à la fois le français et l'anglais suffisamment bien pour soutenir une conversation dont le français est la langue maternelle, ou une de leurs langues maternelles avec une autre langue que l'anglais.</li>
+	<li>les personnes qui ne parlent ni l'anglais ni le français suffisamment bien pour soutenir une conversation dont le français est la langue maternelle, ou une de leurs langues maternelles avec une autre langue que l'anglais.</li>
+	<li>les personnes qui ne sont pas classées selon les critères qui précèdent, qui parlent à la fois le français et l'anglais suffisamment bien pour soutenir une conversation et dont la principale langue parlée à la maison est le français ou le français et une autre langue que l'anglais.</li>
+	<li>les personnes qui ne sont pas classées selon les critères qui précèdent, qui ne parlent ni l'anglais ni le français suffisamment bien pour soutenir une conversation et dont la principale langue parlée à la maison est le français ou le français et une autre langue que l'anglais.</li>
+	
+	
+	<br>
+	Anglais et français 
+	</br>
+		<br>
+		Cette catégorie comprend :
+		</br>
+	<li>les personnes qui parlent à la fois l'anglais et le français suffisamment bien pour soutenir une conversation et dont les langues maternelles et les principales langues parlées à la maison sont à la fois l'anglais et le français.</li>
+	<li>les personnes qui parlent à la fois l'anglais et le français suffisamment bien pour soutenir une conversation et dont les langues maternelles et les principales langues parlées à la maison ne sont ni l'anglais ni le français.</li>
+	
+	<br>
+	Ni anglais ni français
+	</br>
+	<br>
+		<p>
+		Cette catégorie comprend les personnes qui ne parlent ni l'anglais ni le français suffisamment bien pour soutenir une conversation et dont la langue maternelle et principale langue parlée à la maison ne sont ni l'anglais ni le français.
+		(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue05-fra.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue05-fra.htm</a> )
+	
+		</p>
+	</br>
+	
+	<b>Langue parlée le plus souvent à la maison</b>
+		<br>
+			<p>
+			Langue parlée le plus souvent à la maison désigne la langue que la personne parle plus le souvent à la maison au moment de la collecte des données. Une personne peut déclarer plus d'une langue comme étant « parlée le plus souvent à la maison » si les langues sont parlées aussi souvent l'une que l'autre.
+			</p>
+		</br>
+			Dans le cas d'une personne qui vit seule, la langue parlée le plus souvent à la maison est la langue dans laquelle elle se sent le plus à l'aise. Dans le cas d'un enfant qui n'a pas encore appris à parler, il s'agit de la langue parlée le plus souvent à l'enfant à la maison. Lorsque deux langues sont parlées à l'enfant, la langue parlée le plus souvent à la maison est celle qui l'est effectivement le plus souvent. Si les deux langues sont utilisées également, alors les deux sont incluses ici.
+			(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue02-fra.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue02-fra.htm</a> )
+	
+		</p>
+	
+	<b>Réseaux locaux d’intégration des services de santé (RLISS)</b>
+	
+	<p>
+	En 2006, le ministère de la Santé et des Soins de longue durée a divisé la province en 14 régions ou réseaux locaux d’intégration des services de santé (RLISS) car on a estimé que les personnes au niveau local étaient davantage en mesure de planifier, de financer et d’intégrer les services de santé dans leurs propres collectivités.  À partir du 1er avril 2007, les RLISS ont assumé l’entière responsabilité des services de santé dans leurs collectivités.
+	(Source: <a href="http://www.lhins.on.ca/home.aspx?LangType=3084">http://www.lhins.on.ca/home.aspx?LangType=3084</a> )
+	
+	</p>
+	
+	<p>
+		Source des données : 
+		<li id="liNote">Tableau personnalisé, Recensement du Canada de 2011</li>
+		<li id="liNote">Services conseils, Statistiques Canada, région centrale, 2014</li>
+		<li id="liNote">Pour plus de détails sur le recensement du Canada de 2011:
+			<br>
+				<a href="http://www12.statcan.gc.ca/census-recensement/index-fra.cfm">http://www12.statcan.gc.ca/census-recensement/index-fra.cfm</a>
+			</br>
+		</li>
+	</p>
+	
+	<b>
+		Note: In the case of variables Mother Tongue and Language Spoken Most Often at Home, Other includes “French and non-official language”, “English, French and non-official language” and “English and non-official language”.
+	</b>
+	
+	<H4>Aires de diffusion</H4>
+	Une aire de diffusion (AD) est une petite unité géographique relativement stable formée de un ou de plusieurs îlots de diffusion avoisinants. Il s'agit de la plus petite région géographique normalisée pour laquelle toutes les données du recensement sont diffusées. Les AD couvrent tout le territoire du Canada.
+	
+	(Source: <a href="https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-fra.cfm"> https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-fra.cfm</a>)
+	
+	<br>Source des données :</br>
+	<li>Profil du recensement, 2011</li>
+	<br><a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=F">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=F</a></br>
+
+	<p>
+	Afin d'assurer la confidentialité, les valeurs, incluant les totaux sont arrondis de façon aléatoire vers le haut ou vers le bas, à un multiple de 5 ou de 10. Par conséquent, lorsque ces données sont totalisées ou regroupées, la valeur totale peut ne pas totaliser les valeurs individuelles étant donné que les sous-totaux sont arrondis séparément.
+	</p>
+	
+	<br>
+		Pour plus de détails sur le Profil du recensement:
+		<br>
+		<a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=F">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=F</a>
+		</br>
+	</br>
+	
+	<b>
+	Note: Data presented on the population map for variables Mother Tongue and Language Spoken Most Often at Home include only unique responses and excludes multiple answers.
+	</b>
+	
+	<H4>Profils (2011)</H4>
+	
+	<b>Professionnels de la santé (sauf les médecins)</b>
+	
+	<p>Source des données :	Base de données des professions de la santé, soumission 2011</p>
+	
+	<b>Notes:</b>
+	<p>1. La base de données des professions de la santé (BDPS) recueille jusqu'à cinq « Langues de soins », défini comme « Langues dans lesquelles le membre peut fournir des services professionnels ».</p>
+	<p>2. La BDPS saisit le nombre de professionnels de la santé «actifs» qui sont inscrits par leur ordre professionnel respectif à exercer leur profession en totalité ou une quelconque capacité (clinique, recherche, enseignement, promotion de la santé, etc.) Les membres peuvent travailler ou pas dans la profession. Ces données ne comprennent pas les membres qui détiennent une inscription pédagogique.</p>
+	<p>3. L’information sur le site de pratique par RLISS se réfère au premier lieu de pratique figurant dans la BDPS. La BDPS recueille des données sur l'emploi pour un maximum de trois sites de pratique différents et le premier site classé n'est pas nécessairement le lieu de pratique «primaire». Les professionnels de la santé qui détiennent un enregistrement actif ne listent pas tous un site de pratique valide en Ontario et ne travaillent pas tous dans leur profession. Ainsi, les chiffres cités peuvent ne pas totaliser le total de 2011.</p>
+	
+	
+	<b>Avertissement:</b>
+	<p>1. L'information est fournie «tel quel». Ces données sont tirées de données initialement obtenues par le Ministère de la santé et des soins de longue durée (le ministère) directement des  ordres de réglementation de la santé. Le ministère ne peut donc pas et ne garantit pas que l'information est exacte, complète, fiable ou à jour.</p>
+	<p>2. Vous devez citer le ministère en tant que source de données dans toutes publications, de la manière suivante: Ministère de la santé et des soins de longue durée, base de données des professions de la santé, période de soumission 2011, Imprimeur de la Reine pour l’Ontario.</p>
+	
+	<p>Suppression: Le symbole "<5" est utilisé pour remplacer une valeur supérieure à 0 et inférieure à 5.</p>
+	
+	<b>Médecins</b>
+	<p>Source des données :	Ontario Physician Human Resources Data Centre (OPHRDC)</p>
+	
+	<p>
+		Notes:
+		<br>Registre des médecins actifs 31 Décembre 2011</br>
+		<br>Rapport préparé le 23 juillet 2013</br>
+	</p>
+	
+	<b>Profils socio-économiques</b>
+	<p>Source des données :</p>
+	<li>Tableau personnalisé, Enquête nationale auprès des ménages, 2011</li>
+	<li>Services conseils, Statistiques Canada, région centrale, 2014</li>
+	
+	<p>Pour plus de détails sur l’Enquête nationale auprès des ménages:</p>
+	<br><a href="http://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-fra.cfm">http://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-fra.cfm</a></br>
+	
+	<b>Profils santé</b>
+	<p>Source des données :	Enquête sur la santé dans les collectivités canadiennes (ESCC), 2001 à 2012</p>
+	<p>Notes:</p>
+	<p>Les statistiques présentées proviennent de huit cycles de l’Enquête sur la santé dans les collectivités canadiennes (ESCC), menée par Statistique Canada en 2001 (cycle 1.1), 2002 (cycle 1.2), 2003 (cycle 2.1), 2004 (cycle 2.2), 2005 (cycle 3.1), 2007 (cycle 4.1), 2008, 2009, 2010, 2011 et 2012.</p>
+	<p>La population cible de l’ESCC est composée de Canadiens et Canadiennes âgés de 12 ans et plus, habitant dans des logements privés des 10 provinces et trois territoires du pays.</p>
+	<p>Sont exclus les résidents des réserves indiennes et des terres de la Couronne, les personnes vivant en institution, les membres à temps plein des Forces armées, ainsi que les habitants de certaines régions éloignées.</p>
+	
+	<b>Population à l’étude</b>
+	<br>Les francophones (n=5 827) et les anglophones (n=259 861) résidant dans les 14 RLISS de l’Ontario.Les proportions présentées reposent sur le calcul des distributions de fréquences, pondérées afin de représenter l’ensemble de la population cible. Certaines catégories de réponses ont été regroupées afin d’obtenir le nombre d’observations requises pour la divulgation des résultats selon les normes de Statistique Canada. Lorsque les effectifs sont trop faibles même après regroupement, les données ne peuvent être rendues publiques.
+	</br>
+	
+	<p>
+	Un algorithme a été créé à partir de variables linguistiques présentes dans les Enquêtes sur la santé des collectivités canadiennes (ESCC): la langue de conversation, la langue maternelle, la langue de l’entrevue et la langue de contact préférée lors de l’enquête. Cet algorithme permet d’identifier les locuteurs francophones, anglophones et allophones. 
+	</p>
+
+
+	<H4>Services de santé</H4>
+	
+	<b>Hôpitaux</b>
+	
+	<p>Source des données :
+	<li>Planification des capacités et soutien des RLISS</li>
+	<li>Direction de l'analyse en matière de santé</li>
+	<li>Ministère de la santé et des soins de longue durée</li>
+	</p>
+	
+	<b>Hôpitaux selon leurs désignation</b>
+	<p>Désignation partielle :  organisme avait demandé de se faire reconnaitre par le gouvernement comme un organisme offrant des services de qualité en français.  Le processus a vérifié qu’un ou plusieurs de ses services (mais pas tous) rencontraient les critères de désignation.  Les détails de sa désignation figurent dans le Règlement 398/93 fait en vertu de la Loi sur les services en français.</p>
+	
+	<p>Désignation complète : organisme avait demandé de se faire reconnaitre par le gouvernement comme un organisme offrant des services de qualité en français.  Le processus a vérifié que tous ses services rencontraient les critères de désignation.  Les détails de sa désignation figurent dans le Règlement 398/93 fait en vertu de la Loi sur les services en français.</p>
+	<br>(Source : Ministère de la santé et des soins de longue durée)</br>
+	
+	<p>Source des données :
+	<li>Services en français</li>
+	<li>Ministère de la santé et des soins de longue durée</li>
+	</p>
+	
+	</div>
+
+
+	</body>
+</html>

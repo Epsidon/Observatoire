@@ -24,24 +24,24 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var instructionLeft = mapWidth - instructionWidth;
 	
 	var windowHeight = $(window).height();
-	var windowWidth = $( window ).width();
+	var windowWidth = $(window).width();
 
 	if (windowHeight <= 768)
 	{
-		var hospitalLegendLabelTop = ($( window ).height()) - (mapTop*2);
-		var hospitalLegendLabelLeft = (($( window ).width())/2);
+		var hospitalLegendLabelTop = ($(window).height()) - (mapTop*2);
+		var hospitalLegendLabelLeft = (($(window).width())/2);
 	}
 	else
 	{
-		var hospitalLegendLabelTop = ($( window ).height()) - (mapTop*2);
+		var hospitalLegendLabelTop = ($(window).height()) - (mapTop*2);
 		var hospitalLegendLabelLeft = (mapLeft *2);
 	}	
 
 	var mapLableTop = mapTop + (mapLeft *2);
-	var mapLableLeft = (($( window ).width())/2) - 240 ;
+	var mapLableLeft = ($(window).width()/2) - 110 ;
 	
 	var zoomInstructionTop = mapTop + (mapHeight / 2);
-	var zoomInstructionLeft = (($( window ).width())/2) - legendWidth ;
+	var zoomInstructionLeft = (($(window).width())/2) - legendWidth ;
 	
 		if (windowWidth <= 800) 
 		{

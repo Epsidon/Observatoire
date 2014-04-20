@@ -85,6 +85,11 @@ Router.prototype.route = function()
 			{
 				$("#mapsModal").modal('show');
 			});
+			
+			$("#mapsTabContainer").on("click", function()
+			{
+				$("#mapsModal").modal('show');
+			});
 		}
 		
 		if (this.languageHasChanged)

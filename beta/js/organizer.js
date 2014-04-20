@@ -8,6 +8,11 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendHeight = $("#legendList").height();
 	var legendWidth = $("#legendList").width();
 	
+	var windowHeight = $(window).height();
+	var modalHeight = $('.modal-dialog').height();
+	
+	$('.modal-dialog').css({'margin-top' : ((windowHeight - modalHeight )/2)});
+	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
 	

@@ -65,14 +65,27 @@ border-radius: 0.8em;
 	padding-top:1em;
 }
 
-.bold {
-font-family: arial;
-font-weight: bold;
-border-bottom-style: solid;
-border-bottom-width: 1px;
-margin-bottom: 10px;
-margin-right: 20px;
-margin-left: 5px;
+.bold
+ {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-left: 5px;
+}
+
+.modal-body 
+{
+	position: relative;
+	padding: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-bottom: 0px;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) 
@@ -135,7 +148,7 @@ a
 
 .mapsInstructionOne 
 {
-	color: #504F4F;
+	color: #000000;
 	font-family: arial;
 	font-weight:bold;
 	font-size: 0.9em;
@@ -165,20 +178,22 @@ a
 	font-family: arial bold;
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default
- {
-	color: #000;
-	background-color: #F2F5F6;
-	border-color: #adadad;
-	font-family: arial bold;
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+color: #000;
+background-color: #F2F5F6;
+border-color: #adadad;
+font-family: arial;
+font-size: 14px;
+font-weight: bold;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary 
-{
-	color: #000;
-	background-color: #BDCCD4;
-	border-color: #adadad;
-	FONT-family: arial bold;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+color: #000;
+background-color: #BDCCD4;
+border-color: #adadad;
+font-family: arial;
+font-size: 14px;
+font-weight: bold;
 }
 
 .btn-default 

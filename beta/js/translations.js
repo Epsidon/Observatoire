@@ -87,6 +87,7 @@ Fr['SIC_1'] = 'SIC_1';
 Fr['Name'] = 'Nom';
 Fr['Address'] = 'adresse';
 Fr['Postal Code'] = 'code postal';
+		
 Fr['Population in 2011'] = 'Population en 2011';
 Fr['Detailed mother tongue French'] = 'Détails des langues maternelles Français';
 Fr['Knowledge of official languages French only'] = 'Connaissance des langues officielles Français seulement';
@@ -212,6 +213,11 @@ Fr['Mother Tongue: French'] = 'Langue maternelle : Français';
 Fr['Knowledge of Official Language: French only'] = 'Connaissance des langues officielles : Français seulement';
 Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
 Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
+
+Fr['Mother Tongue (LHIN)'] = 'Langue maternelle (LHIN)';
+Fr['Knowledge of Official Language (LHIN)'] = 'Connaissance des langues officielles (LHIN)';
+Fr['First Official Language Spoken (LHIN)'] = 'Première langue officielle parlée (LHIN)';
+Fr['Language Spoken Most Often at Home (LHIN)'] = 'Langue parlée le plus souvent à la maison (LHIN)';
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
 Fr['Health Professions by LHIN'] = 'Professions de santé par RLISS';

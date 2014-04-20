@@ -5112,7 +5112,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.56714821871427,
     "ymin": 41.43724413398197,
@@ -5495,7 +5495,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -89.22271989964797,
     "ymin": 41.82625354721363,
@@ -6418,7 +6418,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -94.5001366997576,
     "ymin": 41.708178556267264,
@@ -6755,7 +6755,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -89.22271989964797,
     "ymin": 42.06842015309098,
@@ -7678,7 +7678,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.56714821871427,
     "ymin": 41.43724413398197,
@@ -8601,7 +8601,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.56714821871427,
     "ymin": 41.43724413398197,
@@ -9524,7 +9524,7 @@
     "transparency": 0,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.1980312882869,
     "ymin": 41.46902469828617,
@@ -11309,7 +11309,7 @@
   {
    "currentVersion": 10.11,
    "id": 16,
-   "name": "Champlain Local Health Integration Network (LHIN)",
+   "name": "Mother Tongue (LHIN)",
    "type": "Feature Layer",
    "description": "",
    "definitionExpression": "",
@@ -11322,30 +11322,30 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "Export_Output_7.socio_csv1",
-     "classificationMethod": "esriClassifyManual",
-     "minValue": 0.9,
+     "field": "FrenchPr",
+     "classificationMethod": "esriClassifyNaturalBreaks",
+     "minValue": 1,
      "classBreakInfos": [
       {
        "symbol": {
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         40,
-         146,
-         199,
+         0,
+         140,
+         235,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0.4
+         "width": 1
         }
        },
        "classMaxValue": 1,
@@ -11359,23 +11359,23 @@
         "color": [
          255,
          255,
-         115,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0.4
+         "width": 1
         }
        },
-       "classMaxValue": 1.9,
-       "label": "1 - 1.9 %",
+       "classMaxValue": 2,
+       "label": "1 -1.9 %",
        "description": ""
       },
       {
@@ -11383,25 +11383,25 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         252,
-         179,
-         68,
+         255,
+         170,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0.4
+         "width": 1
         }
        },
-       "classMaxValue": 2.9,
-       "label": "2 - 2.9 %",
+       "classMaxValue": 3,
+       "label": "2 - 2.9%",
        "description": ""
       },
       {
@@ -11418,15 +11418,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0.4
+         "width": 1
         }
        },
-       "classMaxValue": 100,
+       "classMaxValue": 22,
        "label": "> 3%",
        "description": ""
       }
@@ -11448,457 +11448,154 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "Export_Output_7.HRUID2007",
+   "displayField": "HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "Export_Output_7.FID",
+     "name": "FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Export_Output_7.Shape",
+     "name": "Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "Export_Output_7.GEODB_OID",
+     "name": "GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "Export_Output_7.OBJECTID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "Export_Output_7.HRUID2007",
+     "name": "HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "Export_Output_7.FRE_LABEL",
+     "name": "FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "Export_Output_7.LENGTH",
+     "name": "LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "Export_Output_7.SHAPE_AREA",
+     "name": "SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "Export_Output_7.HRUID2007_",
+     "name": "HRUID2007_",
      "type": "esriFieldTypeInteger",
      "alias": "HRUID2007_",
      "domain": null
     },
     {
-     "name": "Export_Output_7.Total",
+     "name": "Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "Export_Output_7.SociEcoPro",
+     "name": "EnglishL_1",
+     "type": "esriFieldTypeString",
+     "alias": "EnglishL_1",
+     "length": 254,
+     "domain": null
+    },
+    {
+     "name": "Health_Pro",
      "type": "esriFieldTypeInteger",
-     "alias": "SociEcoPro",
+     "alias": "Health_Pro",
      "domain": null
     },
     {
-     "name": "Export_Output_7.SociEcoP_1",
-     "type": "esriFieldTypeString",
-     "alias": "SociEcoP_1",
-     "length": 254,
+     "name": "FrenchProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "FrenchProp",
      "domain": null
     },
     {
-     "name": "Export_Output_7.SociEcoP_2",
-     "type": "esriFieldTypeInteger",
-     "alias": "SociEcoP_2",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_3",
-     "type": "esriFieldTypeInteger",
-     "alias": "SociEcoP_3",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_4",
-     "type": "esriFieldTypeInteger",
-     "alias": "SociEcoP_4",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_5",
-     "type": "esriFieldTypeInteger",
-     "alias": "SociEcoP_5",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_6",
-     "type": "esriFieldTypeString",
-     "alias": "FranAge019",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_7",
-     "type": "esriFieldTypeString",
-     "alias": "FranAge2064",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_8",
-     "type": "esriFieldTypeString",
-     "alias": "FranAge65plus",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEcoP_9",
-     "type": "esriFieldTypeString",
-     "alias": "AngAge019",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_10",
-     "type": "esriFieldTypeString",
-     "alias": "AngAge2064",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_11",
-     "type": "esriFieldTypeString",
-     "alias": "AngAge65plus",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_12",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngAge019",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_13",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngAge2064",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_14",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngAge65plus",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_15",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneAge019",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_16",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneAge2064",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_17",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneAge65plus",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_18",
-     "type": "esriFieldTypeString",
-     "alias": "FranAucunDip",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_19",
-     "type": "esriFieldTypeString",
-     "alias": "FranDES",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_20",
-     "type": "esriFieldTypeString",
-     "alias": "FranApprenti",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_21",
-     "type": "esriFieldTypeString",
-     "alias": "FranCollege",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_22",
-     "type": "esriFieldTypeString",
-     "alias": "FranUni",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_23",
-     "type": "esriFieldTypeString",
-     "alias": "AngAucunDip",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_24",
-     "type": "esriFieldTypeString",
-     "alias": "AngDES",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_25",
-     "type": "esriFieldTypeString",
-     "alias": "AngApprenti",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_26",
-     "type": "esriFieldTypeString",
-     "alias": "AngCollege",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_27",
-     "type": "esriFieldTypeString",
-     "alias": "AngUni",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_28",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngAucunDip",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_29",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngDES",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_30",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngApprenti",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_31",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngCollege",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_32",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngUni",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_33",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneAucunDip",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_34",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneDES",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_35",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneApprenti",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_36",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneCollege",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_37",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneUni",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_38",
-     "type": "esriFieldTypeString",
-     "alias": "FranImm",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_39",
-     "type": "esriFieldTypeString",
-     "alias": "AngImm",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_40",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngImm",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_41",
-     "type": "esriFieldTypeString",
-     "alias": "AucunegImm",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_42",
-     "type": "esriFieldTypeString",
-     "alias": "FranFaibleRev",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_43",
-     "type": "esriFieldTypeString",
-     "alias": "AngFaibleRev",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_44",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngFaibleRev",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_45",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneFaibleRev",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_46",
-     "type": "esriFieldTypeString",
-     "alias": "FranVivantSeul",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_47",
-     "type": "esriFieldTypeString",
-     "alias": "AngVivantSeul",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_48",
-     "type": "esriFieldTypeString",
-     "alias": "FranAngVivantSeul",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.SociEco_49",
-     "type": "esriFieldTypeString",
-     "alias": "AucuneVivantSeul",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.socio_csv_",
-     "type": "esriFieldTypeInteger",
-     "alias": "socio_csv_",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.socio_csv1",
-     "type": "esriFieldTypeDouble",
-     "alias": "FreToPerc",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.socio_cs_1",
-     "type": "esriFieldTypeDouble",
-     "alias": "AngTotPerc",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.socio_cs_2",
-     "type": "esriFieldTypeDouble",
-     "alias": "FreAngToPerc",
-     "domain": null
-    },
-    {
-     "name": "Export_Output_7.socio_cs_3",
-     "type": "esriFieldTypeDouble",
-     "alias": "AucToPerc",
-     "domain": null
-    },
-    {
-     "name": "LHINName.csv.LHINCode",
+     "name": "MotherTong",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "LHINName.csv.HINName",
-     "type": "esriFieldTypeString",
-     "alias": "HINName",
-     "length": 255,
+     "name": "MotherTo_1",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "MotherTo_2",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "MotherTo_3",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "MotherTo_4",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "MotherTo_5",
+     "type": "esriFieldTypeInteger",
+     "alias": "NonOfficialLanguage",
+     "domain": null
+    },
+    {
+     "name": "MotherTo_6",
+     "type": "esriFieldTypeInteger",
+     "alias": "Other",
+     "domain": null
+    },
+    {
+     "name": "FrenchPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "FrenchPr",
+     "domain": null
+    },
+    {
+     "name": "EnglishPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "EnglishPr",
+     "domain": null
+    },
+    {
+     "name": "frEngPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "frEngPr",
+     "domain": null
+    },
+    {
+     "name": "nonOffiPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "nonOffiPr",
      "domain": null
     }
    ],
@@ -11916,6 +11613,842 @@
   {
    "currentVersion": 10.11,
    "id": 17,
+   "name": "Knowledge of Official Language (LHIN)",
+   "type": "Feature Layer",
+   "description": "",
+   "definitionExpression": "",
+   "geometryType": "esriGeometryPolygon",
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "classBreaks",
+     "field": "FrProp",
+     "classificationMethod": "esriClassifyManual",
+     "minValue": 0,
+     "classBreakInfos": [
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         40,
+         146,
+         199,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 1,
+       "label": "<= 1%",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         255,
+         170,
+         0,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 2,
+       "label": "2 %",
+       "description": ""
+      }
+     ]
+    },
+    "transparency": 25,
+    "labelingInfo": null
+   },
+   "defaultVisibility": false,
+   "extent": {
+    "xmin": -95.8633020665529,
+    "ymin": 40.67324700252785,
+    "xmax": -69.61248076644709,
+    "ymax": 56.89723733604702,
+    "spatialReference": {
+     "wkid": 4269,
+     "latestWkid": 4269
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "HRUID2007",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "FID",
+     "type": "esriFieldTypeOID",
+     "alias": "FID",
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "Shape",
+     "domain": null
+    },
+    {
+     "name": "GEODB_OID",
+     "type": "esriFieldTypeDouble",
+     "alias": "GEODB_OID",
+     "domain": null
+    },
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeDouble",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007",
+     "type": "esriFieldTypeString",
+     "alias": "HRUID2007",
+     "length": 4,
+     "domain": null
+    },
+    {
+     "name": "FRE_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "FRE_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "LENGTH",
+     "type": "esriFieldTypeDouble",
+     "alias": "LENGTH",
+     "domain": null
+    },
+    {
+     "name": "SHAPE_AREA",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE_AREA",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007_",
+     "type": "esriFieldTypeInteger",
+     "alias": "HRUID2007_",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "EnglishL_1",
+     "type": "esriFieldTypeString",
+     "alias": "EnglishL_1",
+     "length": 254,
+     "domain": null
+    },
+    {
+     "name": "Health_Pro",
+     "type": "esriFieldTypeInteger",
+     "alias": "Health_Pro",
+     "domain": null
+    },
+    {
+     "name": "Knowledge",
+     "type": "esriFieldTypeInteger",
+     "alias": "Knowledge",
+     "domain": null
+    },
+    {
+     "name": "Knowledg_1",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "Knowledg_2",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "Knowledg_3",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "Knowledg_4",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Knowledg_5",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "FrProp",
+     "domain": null
+    },
+    {
+     "name": "EnProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "EnProp",
+     "domain": null
+    },
+    {
+     "name": "Eng_FrPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "Eng_FrPr",
+     "domain": null
+    },
+    {
+     "name": "NeitherPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "NeitherPr",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "canModifyLayer": false,
+   "canScaleSymbols": false,
+   "hasLabels": false,
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true}
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 18,
+   "name": "First Official Language Spoken (LHIN)",
+   "type": "Feature Layer",
+   "description": "",
+   "definitionExpression": "",
+   "geometryType": "esriGeometryPolygon",
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "classBreaks",
+     "field": "FrPr",
+     "classificationMethod": "esriClassifyManual",
+     "minValue": 1,
+     "classBreakInfos": [
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         40,
+         146,
+         199,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 1,
+       "label": "< 1%",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         255,
+         255,
+         0,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 1.9,
+       "label": "1 - 1.9 %",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         255,
+         170,
+         0,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 2.9,
+       "label": "2 - 2.9 %",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         232,
+         21,
+         21,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 22,
+       "label": "> 3%",
+       "description": ""
+      }
+     ]
+    },
+    "transparency": 25,
+    "labelingInfo": null
+   },
+   "defaultVisibility": false,
+   "extent": {
+    "xmin": -95.8633020665529,
+    "ymin": 40.67324700252785,
+    "xmax": -69.61248076644709,
+    "ymax": 56.89723733604702,
+    "spatialReference": {
+     "wkid": 4269,
+     "latestWkid": 4269
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "HRUID2007",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "FID",
+     "type": "esriFieldTypeOID",
+     "alias": "FID",
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "Shape",
+     "domain": null
+    },
+    {
+     "name": "GEODB_OID",
+     "type": "esriFieldTypeDouble",
+     "alias": "GEODB_OID",
+     "domain": null
+    },
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeDouble",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007",
+     "type": "esriFieldTypeString",
+     "alias": "HRUID2007",
+     "length": 4,
+     "domain": null
+    },
+    {
+     "name": "FRE_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "FRE_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "LENGTH",
+     "type": "esriFieldTypeDouble",
+     "alias": "LENGTH",
+     "domain": null
+    },
+    {
+     "name": "SHAPE_AREA",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE_AREA",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007_",
+     "type": "esriFieldTypeInteger",
+     "alias": "HRUID2007_",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "EnglishL_1",
+     "type": "esriFieldTypeString",
+     "alias": "EnglishL_1",
+     "length": 254,
+     "domain": null
+    },
+    {
+     "name": "Health_Pro",
+     "type": "esriFieldTypeInteger",
+     "alias": "Health_Pro",
+     "domain": null
+    },
+    {
+     "name": "FirstOffic",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_1",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_2",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_3",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_4",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_5",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "FrPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "FrPr",
+     "domain": null
+    },
+    {
+     "name": "EnProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "EnProp",
+     "domain": null
+    },
+    {
+     "name": "En_FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "En_FrProp",
+     "domain": null
+    },
+    {
+     "name": "NeitherPro",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "NeitherPro",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "canModifyLayer": false,
+   "canScaleSymbols": false,
+   "hasLabels": false,
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true}
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 19,
+   "name": "Language Spoken Most Often at Home (LHIN)",
+   "type": "Feature Layer",
+   "description": "",
+   "definitionExpression": "",
+   "geometryType": "esriGeometryPolygon",
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "classBreaks",
+     "field": "FrProp",
+     "classificationMethod": "esriClassifyManual",
+     "minValue": 0,
+     "classBreakInfos": [
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         40,
+         146,
+         199,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 1,
+       "label": "< 1%",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         255,
+         255,
+         0,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 1.9,
+       "label": "1 - 1.9 %",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         255,
+         170,
+         0,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 2.9,
+       "label": "2 - 2.9%",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         232,
+         21,
+         21,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          0,
+          0,
+          0,
+          255
+         ],
+         "width": 1
+        }
+       },
+       "classMaxValue": 13,
+       "label": "> 3%",
+       "description": ""
+      }
+     ]
+    },
+    "transparency": 25,
+    "labelingInfo": null
+   },
+   "defaultVisibility": false,
+   "extent": {
+    "xmin": -95.8633020665529,
+    "ymin": 40.67324700252785,
+    "xmax": -69.61248076644709,
+    "ymax": 56.89723733604702,
+    "spatialReference": {
+     "wkid": 4269,
+     "latestWkid": 4269
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "HRUID2007",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "FID",
+     "type": "esriFieldTypeOID",
+     "alias": "FID",
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "Shape",
+     "domain": null
+    },
+    {
+     "name": "GEODB_OID",
+     "type": "esriFieldTypeDouble",
+     "alias": "GEODB_OID",
+     "domain": null
+    },
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeDouble",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007",
+     "type": "esriFieldTypeString",
+     "alias": "HRUID2007",
+     "length": 4,
+     "domain": null
+    },
+    {
+     "name": "FRE_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "FRE_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "LENGTH",
+     "type": "esriFieldTypeDouble",
+     "alias": "LENGTH",
+     "domain": null
+    },
+    {
+     "name": "SHAPE_AREA",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE_AREA",
+     "domain": null
+    },
+    {
+     "name": "HRUID2007_",
+     "type": "esriFieldTypeInteger",
+     "alias": "HRUID2007_",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "EnglishL_1",
+     "type": "esriFieldTypeString",
+     "alias": "EnglishL_1",
+     "length": 254,
+     "domain": null
+    },
+    {
+     "name": "Health_Pro",
+     "type": "esriFieldTypeInteger",
+     "alias": "Health_Pro",
+     "domain": null
+    },
+    {
+     "name": "Language_S",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHINCode",
+     "domain": null
+    },
+    {
+     "name": "Language_1",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "Language_2",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "Language_3",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "Language_4",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Language_5",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "Language_6",
+     "type": "esriFieldTypeInteger",
+     "alias": "Other",
+     "domain": null
+    },
+    {
+     "name": "FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "FrProp",
+     "domain": null
+    },
+    {
+     "name": "EnProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "EnProp",
+     "domain": null
+    },
+    {
+     "name": "En_FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "En_FrProp",
+     "domain": null
+    },
+    {
+     "name": "NeitherPro",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "NeitherPro",
+     "domain": null
+    },
+    {
+     "name": "otherProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "otherProp",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "canModifyLayer": false,
+   "canScaleSymbols": false,
+   "hasLabels": false,
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true}
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 20,
    "name": "Ontario",
    "type": "Feature Layer",
    "description": "",
@@ -11960,7 +12493,7 @@
     "transparency": 25,
     "labelingInfo": null
    },
-   "defaultVisibility": true,
+   "defaultVisibility": false,
    "extent": {
     "xmin": -95.85382313606915,
     "ymin": 40.67822210102392,
@@ -12569,7 +13102,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 18,
+   "id": 21,
    "name": "GRRoad25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -12579,27 +13112,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 19,
+     "id": 22,
      "name": "Facilities"
     },
     {
-     "id": 20,
+     "id": 23,
      "name": "Point Barriers"
     },
     {
-     "id": 21,
+     "id": 24,
      "name": "Lines"
     },
     {
-     "id": 22,
+     "id": 25,
      "name": "Line Barriers"
     },
     {
-     "id": 23,
+     "id": 26,
      "name": "Polygons"
     },
     {
-     "id": 24,
+     "id": 27,
      "name": "Polygon Barriers"
     }
    ],
@@ -12633,7 +13166,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 19,
+   "id": 22,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -12641,7 +13174,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -12931,7 +13464,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 20,
+   "id": 23,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -12939,7 +13472,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -13232,7 +13765,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 21,
+   "id": 24,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -13240,7 +13773,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -13348,7 +13881,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 22,
+   "id": 25,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -13356,7 +13889,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -13490,7 +14023,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 23,
+   "id": 26,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -13498,7 +14031,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -13633,7 +14166,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 24,
+   "id": 27,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -13641,7 +14174,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 18,
+    "id": 21,
     "name": "GRRoad25k"
    },
    "subLayers": [],
@@ -13758,7 +14291,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 25,
+   "id": 28,
    "name": "GRRoad50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -13768,27 +14301,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 26,
+     "id": 29,
      "name": "Facilities"
     },
     {
-     "id": 27,
+     "id": 30,
      "name": "Point Barriers"
     },
     {
-     "id": 28,
+     "id": 31,
      "name": "Lines"
     },
     {
-     "id": 29,
+     "id": 32,
      "name": "Line Barriers"
     },
     {
-     "id": 30,
+     "id": 33,
      "name": "Polygons"
     },
     {
-     "id": 31,
+     "id": 34,
      "name": "Polygon Barriers"
     }
    ],
@@ -13822,7 +14355,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 26,
+   "id": 29,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -13830,7 +14363,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14120,7 +14653,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 27,
+   "id": 30,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -14128,7 +14661,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14421,7 +14954,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 28,
+   "id": 31,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -14429,7 +14962,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14537,7 +15070,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 29,
+   "id": 32,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -14545,7 +15078,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14679,7 +15212,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 30,
+   "id": 33,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -14687,7 +15220,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14822,7 +15355,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 31,
+   "id": 34,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -14830,7 +15363,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 25,
+    "id": 28,
     "name": "GRRoad50k"
    },
    "subLayers": [],
@@ -14947,7 +15480,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 32,
+   "id": 35,
    "name": "AllHospitals25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -14957,27 +15490,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 33,
+     "id": 36,
      "name": "Facilities"
     },
     {
-     "id": 34,
+     "id": 37,
      "name": "Point Barriers"
     },
     {
-     "id": 35,
+     "id": 38,
      "name": "Lines"
     },
     {
-     "id": 36,
+     "id": 39,
      "name": "Line Barriers"
     },
     {
-     "id": 37,
+     "id": 40,
      "name": "Polygons"
     },
     {
-     "id": 38,
+     "id": 41,
      "name": "Polygon Barriers"
     }
    ],
@@ -15011,7 +15544,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 33,
+   "id": 36,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -15019,7 +15552,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -15309,7 +15842,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 34,
+   "id": 37,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -15317,7 +15850,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -15610,7 +16143,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 35,
+   "id": 38,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -15618,7 +16151,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -15726,7 +16259,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 36,
+   "id": 39,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -15734,7 +16267,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -15868,7 +16401,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 37,
+   "id": 40,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -15876,7 +16409,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -16089,7 +16622,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 38,
+   "id": 41,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -16097,7 +16630,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 32,
+    "id": 35,
     "name": "AllHospitals25k"
    },
    "subLayers": [],
@@ -16214,7 +16747,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 39,
+   "id": 42,
    "name": "AllHospitals50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -16224,27 +16757,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 40,
+     "id": 43,
      "name": "Facilities"
     },
     {
-     "id": 41,
+     "id": 44,
      "name": "Point Barriers"
     },
     {
-     "id": 42,
+     "id": 45,
      "name": "Lines"
     },
     {
-     "id": 43,
+     "id": 46,
      "name": "Line Barriers"
     },
     {
-     "id": 44,
+     "id": 47,
      "name": "Polygons"
     },
     {
-     "id": 45,
+     "id": 48,
      "name": "Polygon Barriers"
     }
    ],
@@ -16278,7 +16811,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 40,
+   "id": 43,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -16286,7 +16819,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -16576,7 +17109,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 41,
+   "id": 44,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -16584,7 +17117,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -16877,7 +17410,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 42,
+   "id": 45,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -16885,7 +17418,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -16993,7 +17526,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 43,
+   "id": 46,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -17001,7 +17534,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -17135,7 +17668,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 44,
+   "id": 47,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -17143,7 +17676,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -17356,7 +17889,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 45,
+   "id": 48,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -17364,7 +17897,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 39,
+    "id": 42,
     "name": "AllHospitals50k"
    },
    "subLayers": [],
@@ -17481,7 +18014,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 46,
+   "id": 49,
    "name": "MentalHealthRoad25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -17491,27 +18024,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 47,
+     "id": 50,
      "name": "Facilities"
     },
     {
-     "id": 48,
+     "id": 51,
      "name": "Point Barriers"
     },
     {
-     "id": 49,
+     "id": 52,
      "name": "Lines"
     },
     {
-     "id": 50,
+     "id": 53,
      "name": "Line Barriers"
     },
     {
-     "id": 51,
+     "id": 54,
      "name": "Polygons"
     },
     {
-     "id": 52,
+     "id": 55,
      "name": "Polygon Barriers"
     }
    ],
@@ -17545,7 +18078,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 47,
+   "id": 50,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -17553,7 +18086,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -17843,7 +18376,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 48,
+   "id": 51,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -17851,7 +18384,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -18144,7 +18677,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 49,
+   "id": 52,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -18152,7 +18685,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -18260,7 +18793,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 50,
+   "id": 53,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -18268,7 +18801,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -18402,7 +18935,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 51,
+   "id": 54,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -18410,7 +18943,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -18545,7 +19078,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 52,
+   "id": 55,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -18553,7 +19086,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 46,
+    "id": 49,
     "name": "MentalHealthRoad25k"
    },
    "subLayers": [],
@@ -18670,7 +19203,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 53,
+   "id": 56,
    "name": "MentalHealthRoad50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -18680,27 +19213,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 54,
+     "id": 57,
      "name": "Facilities"
     },
     {
-     "id": 55,
+     "id": 58,
      "name": "Point Barriers"
     },
     {
-     "id": 56,
+     "id": 59,
      "name": "Lines"
     },
     {
-     "id": 57,
+     "id": 60,
      "name": "Line Barriers"
     },
     {
-     "id": 58,
+     "id": 61,
      "name": "Polygons"
     },
     {
-     "id": 59,
+     "id": 62,
      "name": "Polygon Barriers"
     }
    ],
@@ -18734,7 +19267,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 54,
+   "id": 57,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -18742,7 +19275,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19032,7 +19565,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 55,
+   "id": 58,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -19040,7 +19573,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19333,7 +19866,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 56,
+   "id": 59,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -19341,7 +19874,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19449,7 +19982,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 57,
+   "id": 60,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -19457,7 +19990,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19591,7 +20124,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 58,
+   "id": 61,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -19599,7 +20132,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19734,7 +20267,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 59,
+   "id": 62,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -19742,7 +20275,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 53,
+    "id": 56,
     "name": "MentalHealthRoad50k"
    },
    "subLayers": [],
@@ -19859,7 +20392,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 60,
+   "id": 63,
    "name": "SpecialRehabilitationRoad25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -19869,27 +20402,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 61,
+     "id": 64,
      "name": "Facilities"
     },
     {
-     "id": 62,
+     "id": 65,
      "name": "Point Barriers"
     },
     {
-     "id": 63,
+     "id": 66,
      "name": "Lines"
     },
     {
-     "id": 64,
+     "id": 67,
      "name": "Line Barriers"
     },
     {
-     "id": 65,
+     "id": 68,
      "name": "Polygons"
     },
     {
-     "id": 66,
+     "id": 69,
      "name": "Polygon Barriers"
     }
    ],
@@ -19923,7 +20456,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 61,
+   "id": 64,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -19931,7 +20464,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -20221,7 +20754,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 62,
+   "id": 65,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -20229,7 +20762,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -20522,7 +21055,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 63,
+   "id": 66,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -20530,7 +21063,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -20638,7 +21171,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 64,
+   "id": 67,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -20646,7 +21179,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -20780,7 +21313,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 65,
+   "id": 68,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -20788,7 +21321,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -20923,7 +21456,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 66,
+   "id": 69,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -20931,7 +21464,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 60,
+    "id": 63,
     "name": "SpecialRehabilitationRoad25k"
    },
    "subLayers": [],
@@ -21048,7 +21581,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 67,
+   "id": 70,
    "name": "SpecialRehabilitationRoad50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -21058,27 +21591,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 68,
+     "id": 71,
      "name": "Facilities"
     },
     {
-     "id": 69,
+     "id": 72,
      "name": "Point Barriers"
     },
     {
-     "id": 70,
+     "id": 73,
      "name": "Lines"
     },
     {
-     "id": 71,
+     "id": 74,
      "name": "Line Barriers"
     },
     {
-     "id": 72,
+     "id": 75,
      "name": "Polygons"
     },
     {
-     "id": 73,
+     "id": 76,
      "name": "Polygon Barriers"
     }
    ],
@@ -21112,7 +21645,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 68,
+   "id": 71,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -21120,7 +21653,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -21410,7 +21943,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 69,
+   "id": 72,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -21418,7 +21951,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -21711,7 +22244,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 70,
+   "id": 73,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -21719,7 +22252,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -21827,7 +22360,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 71,
+   "id": 74,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -21835,7 +22368,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -21969,7 +22502,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 72,
+   "id": 75,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -21977,7 +22510,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -22112,7 +22645,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 73,
+   "id": 76,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -22120,7 +22653,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 67,
+    "id": 70,
     "name": "SpecialRehabilitationRoad50k"
    },
    "subLayers": [],
@@ -22237,7 +22770,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 74,
+   "id": 77,
    "name": "AcuteCareTreatmentRoad25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -22247,27 +22780,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 75,
+     "id": 78,
      "name": "Facilities"
     },
     {
-     "id": 76,
+     "id": 79,
      "name": "Point Barriers"
     },
     {
-     "id": 77,
+     "id": 80,
      "name": "Lines"
     },
     {
-     "id": 78,
+     "id": 81,
      "name": "Line Barriers"
     },
     {
-     "id": 79,
+     "id": 82,
      "name": "Polygons"
     },
     {
-     "id": 80,
+     "id": 83,
      "name": "Polygon Barriers"
     }
    ],
@@ -22301,7 +22834,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 75,
+   "id": 78,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -22309,7 +22842,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -22599,7 +23132,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 76,
+   "id": 79,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -22607,7 +23140,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -22900,7 +23433,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 77,
+   "id": 80,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -22908,7 +23441,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -23016,7 +23549,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 78,
+   "id": 81,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -23024,7 +23557,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -23158,7 +23691,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 79,
+   "id": 82,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -23166,7 +23699,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -23353,7 +23886,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 80,
+   "id": 83,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -23361,7 +23894,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 74,
+    "id": 77,
     "name": "AcuteCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -23478,7 +24011,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 81,
+   "id": 84,
    "name": "AcuteCareTreatmentRoad50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -23488,27 +24021,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 82,
+     "id": 85,
      "name": "Facilities"
     },
     {
-     "id": 83,
+     "id": 86,
      "name": "Point Barriers"
     },
     {
-     "id": 84,
+     "id": 87,
      "name": "Lines"
     },
     {
-     "id": 85,
+     "id": 88,
      "name": "Line Barriers"
     },
     {
-     "id": 86,
+     "id": 89,
      "name": "Polygons"
     },
     {
-     "id": 87,
+     "id": 90,
      "name": "Polygon Barriers"
     }
    ],
@@ -23542,7 +24075,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 82,
+   "id": 85,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -23550,7 +24083,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -23840,7 +24373,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 83,
+   "id": 86,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -23848,7 +24381,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -24141,7 +24674,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 84,
+   "id": 87,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -24149,7 +24682,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -24257,7 +24790,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 85,
+   "id": 88,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -24265,7 +24798,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -24399,7 +24932,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 86,
+   "id": 89,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -24407,7 +24940,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -24594,7 +25127,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 87,
+   "id": 90,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -24602,7 +25135,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 81,
+    "id": 84,
     "name": "AcuteCareTreatmentRoad50k"
    },
    "subLayers": [],
@@ -24719,7 +25252,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 88,
+   "id": 91,
    "name": "AmbulatoryCare25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -24729,27 +25262,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 89,
+     "id": 92,
      "name": "Facilities"
     },
     {
-     "id": 90,
+     "id": 93,
      "name": "Point Barriers"
     },
     {
-     "id": 91,
+     "id": 94,
      "name": "Lines"
     },
     {
-     "id": 92,
+     "id": 95,
      "name": "Line Barriers"
     },
     {
-     "id": 93,
+     "id": 96,
      "name": "Polygons"
     },
     {
-     "id": 94,
+     "id": 97,
      "name": "Polygon Barriers"
     }
    ],
@@ -24783,7 +25316,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 89,
+   "id": 92,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -24791,7 +25324,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25081,7 +25614,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 90,
+   "id": 93,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -25089,7 +25622,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25382,7 +25915,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 91,
+   "id": 94,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -25390,7 +25923,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25498,7 +26031,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 92,
+   "id": 95,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -25506,7 +26039,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25640,7 +26173,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 93,
+   "id": 96,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -25648,7 +26181,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25861,7 +26394,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 94,
+   "id": 97,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -25869,7 +26402,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 88,
+    "id": 91,
     "name": "AmbulatoryCare25k"
    },
    "subLayers": [],
@@ -25986,7 +26519,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 95,
+   "id": 98,
    "name": "AmbulatoryCare50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -25996,27 +26529,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 96,
+     "id": 99,
      "name": "Facilities"
     },
     {
-     "id": 97,
+     "id": 100,
      "name": "Point Barriers"
     },
     {
-     "id": 98,
+     "id": 101,
      "name": "Lines"
     },
     {
-     "id": 99,
+     "id": 102,
      "name": "Line Barriers"
     },
     {
-     "id": 100,
+     "id": 103,
      "name": "Polygons"
     },
     {
-     "id": 101,
+     "id": 104,
      "name": "Polygon Barriers"
     }
    ],
@@ -26050,7 +26583,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 96,
+   "id": 99,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -26058,7 +26591,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -26348,7 +26881,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 97,
+   "id": 100,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -26356,7 +26889,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -26649,7 +27182,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 98,
+   "id": 101,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -26657,7 +27190,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -26765,7 +27298,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 99,
+   "id": 102,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -26773,7 +27306,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -26907,7 +27440,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 100,
+   "id": 103,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -26915,7 +27448,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -27128,7 +27661,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 101,
+   "id": 104,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -27136,7 +27669,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 95,
+    "id": 98,
     "name": "AmbulatoryCare50k"
    },
    "subLayers": [],
@@ -27253,7 +27786,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 102,
+   "id": 105,
    "name": "ChronicCareTreatmentRoad25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -27263,27 +27796,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 103,
+     "id": 106,
      "name": "Facilities"
     },
     {
-     "id": 104,
+     "id": 107,
      "name": "Point Barriers"
     },
     {
-     "id": 105,
+     "id": 108,
      "name": "Lines"
     },
     {
-     "id": 106,
+     "id": 109,
      "name": "Line Barriers"
     },
     {
-     "id": 107,
+     "id": 110,
      "name": "Polygons"
     },
     {
-     "id": 108,
+     "id": 111,
      "name": "Polygon Barriers"
     }
    ],
@@ -27317,7 +27850,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 103,
+   "id": 106,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -27325,7 +27858,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -27615,7 +28148,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 104,
+   "id": 107,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -27623,7 +28156,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -27916,7 +28449,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 105,
+   "id": 108,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -27924,7 +28457,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -28032,7 +28565,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 106,
+   "id": 109,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -28040,7 +28573,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -28174,7 +28707,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 107,
+   "id": 110,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -28182,7 +28715,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -28343,7 +28876,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 108,
+   "id": 111,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -28351,7 +28884,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 102,
+    "id": 105,
     "name": "ChronicCareTreatmentRoad25k"
    },
    "subLayers": [],
@@ -28468,7 +29001,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 109,
+   "id": 112,
    "name": "ChronicCareTreatment50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -28478,27 +29011,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 110,
+     "id": 113,
      "name": "Facilities"
     },
     {
-     "id": 111,
+     "id": 114,
      "name": "Point Barriers"
     },
     {
-     "id": 112,
+     "id": 115,
      "name": "Lines"
     },
     {
-     "id": 113,
+     "id": 116,
      "name": "Line Barriers"
     },
     {
-     "id": 114,
+     "id": 117,
      "name": "Polygons"
     },
     {
-     "id": 115,
+     "id": 118,
      "name": "Polygon Barriers"
     }
    ],
@@ -28532,7 +29065,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 110,
+   "id": 113,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -28540,7 +29073,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -28830,7 +29363,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 111,
+   "id": 114,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -28838,7 +29371,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -29131,7 +29664,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 112,
+   "id": 115,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -29139,7 +29672,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -29247,7 +29780,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 113,
+   "id": 116,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -29255,7 +29788,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -29389,7 +29922,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 114,
+   "id": 117,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -29397,7 +29930,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -29558,7 +30091,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 115,
+   "id": 118,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -29566,7 +30099,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 109,
+    "id": 112,
     "name": "ChronicCareTreatment50k"
    },
    "subLayers": [],
@@ -29683,7 +30216,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 116,
+   "id": 119,
    "name": "FLS Designated All 25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -29693,27 +30226,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 117,
+     "id": 120,
      "name": "Facilities"
     },
     {
-     "id": 118,
+     "id": 121,
      "name": "Point Barriers"
     },
     {
-     "id": 119,
+     "id": 122,
      "name": "Lines"
     },
     {
-     "id": 120,
+     "id": 123,
      "name": "Line Barriers"
     },
     {
-     "id": 121,
+     "id": 124,
      "name": "Polygons"
     },
     {
-     "id": 122,
+     "id": 125,
      "name": "Polygon Barriers"
     }
    ],
@@ -29747,7 +30280,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 117,
+   "id": 120,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -29755,7 +30288,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30045,7 +30578,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 118,
+   "id": 121,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -30053,7 +30586,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30346,7 +30879,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 119,
+   "id": 122,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -30354,7 +30887,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30462,7 +30995,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 120,
+   "id": 123,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -30470,7 +31003,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30604,7 +31137,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 121,
+   "id": 124,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -30612,7 +31145,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30747,7 +31280,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 122,
+   "id": 125,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -30755,7 +31288,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 116,
+    "id": 119,
     "name": "FLS Designated All 25k"
    },
    "subLayers": [],
@@ -30872,7 +31405,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 123,
+   "id": 126,
    "name": "FLS Designated All50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -30882,27 +31415,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 124,
+     "id": 127,
      "name": "Facilities"
     },
     {
-     "id": 125,
+     "id": 128,
      "name": "Point Barriers"
     },
     {
-     "id": 126,
+     "id": 129,
      "name": "Lines"
     },
     {
-     "id": 127,
+     "id": 130,
      "name": "Line Barriers"
     },
     {
-     "id": 128,
+     "id": 131,
      "name": "Polygons"
     },
     {
-     "id": 129,
+     "id": 132,
      "name": "Polygon Barriers"
     }
    ],
@@ -30936,7 +31469,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 124,
+   "id": 127,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -30944,7 +31477,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -31234,7 +31767,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 125,
+   "id": 128,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -31242,7 +31775,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -31535,7 +32068,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 126,
+   "id": 129,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -31543,7 +32076,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -31651,7 +32184,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 127,
+   "id": 130,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -31659,7 +32192,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -31793,7 +32326,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 128,
+   "id": 131,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -31801,7 +32334,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -31936,7 +32469,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 129,
+   "id": 132,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -31944,7 +32477,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 123,
+    "id": 126,
     "name": "FLS Designated All50k"
    },
    "subLayers": [],
@@ -32061,7 +32594,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 130,
+   "id": 133,
    "name": "FLS Designated Partial 25k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -32071,27 +32604,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 131,
+     "id": 134,
      "name": "Facilities"
     },
     {
-     "id": 132,
+     "id": 135,
      "name": "Point Barriers"
     },
     {
-     "id": 133,
+     "id": 136,
      "name": "Lines"
     },
     {
-     "id": 134,
+     "id": 137,
      "name": "Line Barriers"
     },
     {
-     "id": 135,
+     "id": 138,
      "name": "Polygons"
     },
     {
-     "id": 136,
+     "id": 139,
      "name": "Polygon Barriers"
     }
    ],
@@ -32125,7 +32658,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 131,
+   "id": 134,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -32133,7 +32666,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -32423,7 +32956,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 132,
+   "id": 135,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -32431,7 +32964,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -32724,7 +33257,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 133,
+   "id": 136,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -32732,7 +33265,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -32840,7 +33373,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 134,
+   "id": 137,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -32848,7 +33381,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -32982,7 +33515,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 135,
+   "id": 138,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -32990,7 +33523,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -33125,7 +33658,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 136,
+   "id": 139,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -33133,7 +33666,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 130,
+    "id": 133,
     "name": "FLS Designated Partial 25k"
    },
    "subLayers": [],
@@ -33250,7 +33783,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 137,
+   "id": 140,
    "name": "FLS Designated Partial50k",
    "type": "Network Analysis Layer",
    "description": "",
@@ -33260,27 +33793,27 @@
    "parentLayer": null,
    "subLayers": [
     {
-     "id": 138,
+     "id": 141,
      "name": "Facilities"
     },
     {
-     "id": 139,
+     "id": 142,
      "name": "Point Barriers"
     },
     {
-     "id": 140,
+     "id": 143,
      "name": "Lines"
     },
     {
-     "id": 141,
+     "id": 144,
      "name": "Line Barriers"
     },
     {
-     "id": 142,
+     "id": 145,
      "name": "Polygons"
     },
     {
-     "id": 143,
+     "id": 146,
      "name": "Polygon Barriers"
     }
    ],
@@ -33314,7 +33847,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 138,
+   "id": 141,
    "name": "Facilities",
    "type": "Feature Layer",
    "description": "",
@@ -33322,7 +33855,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -33612,7 +34145,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 139,
+   "id": 142,
    "name": "Point Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -33620,7 +34153,7 @@
    "geometryType": "esriGeometryPoint",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -33913,7 +34446,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 140,
+   "id": 143,
    "name": "Lines",
    "type": "Feature Layer",
    "description": "",
@@ -33921,7 +34454,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -34029,7 +34562,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 141,
+   "id": 144,
    "name": "Line Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -34037,7 +34570,7 @@
    "geometryType": "esriGeometryPolyline",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -34171,7 +34704,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 142,
+   "id": 145,
    "name": "Polygons",
    "type": "Feature Layer",
    "description": "",
@@ -34179,7 +34712,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -34314,7 +34847,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 143,
+   "id": 146,
    "name": "Polygon Barriers",
    "type": "Feature Layer",
    "description": "",
@@ -34322,7 +34855,7 @@
    "geometryType": "esriGeometryPolygon",
    "copyrightText": "",
    "parentLayer": {
-    "id": 137,
+    "id": 140,
     "name": "FLS Designated Partial50k"
    },
    "subLayers": [],
@@ -34441,7 +34974,7 @@
  "tables": [
   {
    "currentVersion": 10.11,
-   "id": 144,
+   "id": 147,
    "name": "pop2011.csv",
    "type": "Table",
    "description": null,
@@ -34474,7 +35007,7 @@
   },
   {
    "currentVersion": 10.11,
-   "id": 145,
+   "id": 148,
    "name": "HealthProfile.csv",
    "type": "Table",
    "description": null,
@@ -34728,6 +35261,242 @@
      "type": "esriFieldTypeString",
      "alias": "Appartenance_F",
      "length": 255,
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 149,
+   "name": "MotherTongueLHIN.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHIN",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FrenchOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "English&French",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "EnglishOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "NonOffLanguage",
+     "type": "esriFieldTypeInteger",
+     "alias": "NonOffLanguage",
+     "domain": null
+    },
+    {
+     "name": "Other",
+     "type": "esriFieldTypeInteger",
+     "alias": "Other",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 150,
+   "name": "Knowledge of Official Lnaguage.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHIN",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FrenchOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "English&French",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "EnglishOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Neither",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 151,
+   "name": "FirstOfficialLanguage.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHIN",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FrenchOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "English&French",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "EnglishOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Neither",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 152,
+   "name": "Language Spoken Most Often at Home.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHIN",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FrenchOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "English&French",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "EnglishOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Neither",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "Other",
+     "type": "esriFieldTypeInteger",
+     "alias": "Other",
      "domain": null
     }
    ],

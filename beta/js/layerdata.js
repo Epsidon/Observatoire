@@ -38,11 +38,11 @@ var layerInfoWindow = new Array();
 var layerTemplate = new Array();
 var mapLayer = new Array();
 
-var defaultLayer = 17;
+var defaultLayer = 20;
 
 var activeLayer = defaultLayer;
 var inLayer = 0;
-var numLayers = 18;
+var numLayers = 21;
 
 var map;
 var symbol;
@@ -57,7 +57,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/Ontario/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/OntarioMaps/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
@@ -881,8 +881,43 @@ function translateMap()
 
 	
 	layerData[16] = [];
-	layerData[16]['infoWindowTitle'] = "<b>" + translator.T("Local Health Integration Network (LHIN)") + "</b>";
+	layerData[16]['infoWindowTitle'] = "<b>" + translator.T("Mother Tongue (LHIN)") + "</b>";
 	layerData[16]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	"<tr>"+
+	"<th align='center'></th>"+
+	"<th align='center'>" + translator.T("French") + "</th>"+
+	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French & English") + "</th>"+
+	"<th align='center'>" + translator.T("Non Official") + "</th>"+
+	"<th align='center'>" + translator.T("Total") + "</th>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Number") + "</td>"+
+	"<td align='center'>${MotherTo_2}</td>"+
+	"<td align='center'>${MotherTo_4}</td>"+
+	"<td align='center'>${MotherTo_3}</td>"+
+	"<td align='center'>${MotherTo_5}</td>"+
+	"<td align='center'>${MotherTo_1}</td>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
+	"<td align='center'>" + "${FrenchPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${EnglishPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${frEngPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${nonOffiPr}" + "%" + "</td>"+
+	"<td align='center'>" + translator.T("100%") + "</td>"+
+	"</tr>"+
+	"<span class='spanToTranslate hidden'></span>" +
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
+
+	layerData[16]['outFields'] = new Array("MotherTo_2", "MotherTo_4", "MotherTo_3", "MotherTo_5",
+	"MotherTo_1", "FrenchPr", "EnglishPr", "frEngPr", "nonOffiPr");
+
+	layerData[17] = [];
+	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Knowledge of Official Language (LHIN)") + "</b>";
+	layerData[17]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -893,54 +928,132 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${Export_Output_7.SociEcoP_2}</td>"+
-	"<td align='center'>${Export_Output_7.SociEcoP_3}</td>"+
-	"<td align='center'>${Export_Output_7.SociEcoP_4}</td>"+
-	"<td align='center'>${Export_Output_7.SociEcoP_5}</td>"+
-	"<td align='center'>${Export_Output_7.Total}</td>"+
+	"<td align='center'>${Knowledg_2}</td>"+
+	"<td align='center'>${Knowledg_4}</td>"+
+	"<td align='center'>${Knowledg_3}</td>"+
+	"<td align='center'>${Knowledg_5}</td>"+
+	"<td align='center'>${Knowledg_1}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${Export_Output_7.socio_csv1}" + "%" + "</td>"+
-	"<td align='center'>" + "${Export_Output_7.socio_cs_1}" + "%" + "</td>"+
-	"<td align='center'>" + "${Export_Output_7.socio_cs_2}" + "%" + "</td>"+
-	"<td align='center'>" + "${Export_Output_7.socio_cs_3}" + "%" + "</td>"+
+	"<td align='center'>" + "${FrProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${Eng_FrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${NeitherPr}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
-	"</table>" + translator.T("Source: 2011 National Household Survey") +
-	"<p>" + "${Export_Output_7.FRE_LABEL}" + translator.T(" Global non-response rate (GNR) = ") + "${Export_Output_7.SociEcoP_1}"+ "</p>" +
 	"<span class='spanToTranslate hidden'></span>" +
 	"<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[16]['outFields'] = new Array("Export_Output_7.SociEcoP_2", "Export_Output_7.SociEcoP_3", "Export_Output_7.SociEcoP_4", "Export_Output_7.SociEcoP_5"
-	,"Export_Output_7.Total", "Export_Output_7.socio_csv1", "Export_Output_7.socio_cs_1", "Export_Output_7.socio_cs_2",
-	"Export_Output_7.socio_cs_3", "Export_Output_7.SociEcoP_1");
+	layerData[17]['outFields'] = new Array("Knowledg_2", "Knowledg_4","Knowledg_3", "Knowledg_5",
+	"Knowledg_1", "FrProp",
+	"EnProp", "Eng_FrPr","NeitherPr");
+	
+	layerData[18] = [];
+	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("First Official Language Spoken (LHIN)") + "</b>";
+	layerData[18]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	"<tr>"+
+	"<th align='center'></th>"+
+	"<th align='center'>" + translator.T("French") + "</th>"+
+	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French & English") + "</th>"+
+	"<th align='center'>" + translator.T("Neither") + "</th>"+
+	"<th align='center'>" + translator.T("Total") + "</th>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Number") + "</td>"+
+	"<td align='center'>${FirstOff_2}</td>"+
+	"<td align='center'>${FirstOff_4}</td>"+
+	"<td align='center'>${FirstOff_3}</td>"+
+	"<td align='center'>${FirstOff_5}</td>"+
+	"<td align='center'>${FirstOff_1}</td>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
+	"<td align='center'>" + "${FrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${En_FrProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${NeitherPro}" + "%" + "</td>"+
+	"<td align='center'>" + translator.T("100%") + "</td>"+
+	"</tr>"+
+	"<span class='spanToTranslate hidden'></span>" +
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[17] = [];
-	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[17]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
+	layerData[18]['outFields'] = new Array("FirstOff_2", "FirstOff_4", "FirstOff_3", 
+	"FirstOff_5", "FirstOff_1", "FrPr",
+	"EnProp", "En_FrProp", "NeitherPro");
+	
+	layerData[19] = [];
+	layerData[19]['infoWindowTitle'] = "<b>" + translator.T("Language Spoken Most Often at Home (LHIN)") + "</b>";
+	layerData[19]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	"<tr>"+
+	"<th align='center'></th>"+
+	"<th align='center'>" + translator.T("French") + "</th>"+
+	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French & English") + "</th>"+
+	"<th align='center'>" + translator.T("Neither") + "</th>"+
+	"<th align='center'>" + translator.T("Other") + "</th>"+
+	"<th align='center'>" + translator.T("Total") + "</th>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Number") + "</td>"+
+	"<td align='center'>${Language_2}</td>"+
+	"<td align='center'>${Language_4}</td>"+
+	"<td align='center'>${Language_3}</td>"+
+	"<td align='center'>${Language_5}</td>"+
+	"<td align='center'>${Language_6}</td>"+
+	"<td align='center'>${Total}</td>"+
+	"</tr>"+
+	"<tr>"+
+	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
+	"<td align='center'>" + "${FrProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${En_FrProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${NeitherPro}" + "%" + "</td>"+
+	"<td align='center'>" + "${otherProp}" + "%" + "</td>"+
+	"<td align='center'>" + translator.T("100%") + "</td>"+
+	"</tr>"+
+	"</table>" + 
+	"<span class='spanToTranslate hidden'></span>" +
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
+
+	layerData[19]['outFields'] = new Array( "Language_2", "otherProp", "NeitherPro", "En_FrProp", "EnProp", "Total", "FrProp", "Language_1", "Language_6", "Language_5", "Language_3", "Language_4");
+	
+	layerData[20] = [];
+	layerData[20]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
+	layerData[20]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
 	"&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
 	"</table>" + 
 	"<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[17]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
+	layerData[20]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
 
 	layersLabels = [
-		translator.T('Mother Tongue'), translator.T('Knowledge of Official Language'), translator.T('First Official Language Spoken'), translator.T('Language Spoken Most Often at Home'),
-		translator.T('Health Professions by LHIN '), translator.T('Sociodemographic Profile'), translator.T('Health Profiles'),
-		translator.T('All Hospitals and Health Units'), 
-		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
-		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
-		translator.T('FLS Designated Partial'), translator.T('Local Health Integration Network (LHIN)'), translator.T('Ontario'), translator.T('Ontario')];
+		translator.T('Mother Tongue'), translator.T('Knowledge of Official Language'), translator.T('First Official Language Spoken'),
+		translator.T('Language Spoken Most Often at Home'),translator.T('Health Professions by LHIN '), translator.T('Sociodemographic Profile'),
+		translator.T('Health Profiles'),translator.T('All Hospitals and Health Units'), translator.T('General Rehabilitation Hospital'),
+		translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), translator.T('Acute Care Treatment Hospital'), 
+		translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
+		translator.T('FLS Designated Partial'), translator.T('Mother Tongue (LHIN)'),translator.T('Knowledge of Official Language (LHIN)'),
+		translator.T('First Official Language Spoken (LHIN)'),translator.T('Language Spoken Most Often at Home (LHIN)'),translator.T('Ontario'),
+		translator.T('Ontario')];
 	  
-	legendLabel = [translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French only'), translator.T('First Official Language Spoken: French'), translator.T('Language Spoken Most Often at Home: French'),
-		translator.T('LHIN'), translator.T('LHIN'), translator.T('LHIN'), translator.T('All Hospitals and Health Units'), 
-		translator.T('General Rehabilitation Hospital'), translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), 
-		translator.T('Acute Care Treatment Hospital'), translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
-		translator.T('FLS Designated Partial'), translator.T('First Official Language Spoken: French'), translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
+	legendLabel = [
+		translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French only'), translator.T('First Official Language Spoken: French'), 
+		translator.T('Language Spoken Most Often at Home: French'),translator.T('LHIN'), translator.T('LHIN'), 
+		translator.T('LHIN'), translator.T('All Hospitals and Health Units'),translator.T('General Rehabilitation Hospital'),
+		translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), translator.T('Acute Care Treatment Hospital'),
+		translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
+		translator.T('FLS Designated Partial'), translator.T('Mother Tongue (LHIN)'),translator.T('Knowledge of Official Language (LHIN)'),
+		translator.T('First Official Language Spoken (LHIN)'),translator.T('Language Spoken Most Often at Home (LHIN)'), 
+		translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
 		
 }
 

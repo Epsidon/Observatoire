@@ -222,30 +222,13 @@ function(
 		$('#legendList').removeClass('hidden');
 		$('#legendTitle').removeClass('hidden');
 
+		var populationLayerArray = new Array(16, 17, 18, 19);
+		
 		if ((clickedLayerId == -1) || 
 			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
 		{
-			if (clickedLayerId == 0)
-			{
-				activeLayer = 16;
-				drawLegend({activeLayer : activeLayer});
-			}
-			else if (clickedLayerId == 1)
-			{
-				activeLayer = 17;
-				drawLegend({activeLayer : activeLayer});
-			}
-			else if (clickedLayerId == 2)
-			{
-				activeLayer = 18;
-				drawLegend({activeLayer : activeLayer});
-			}
-			else if (clickedLayerId == 3)
-			{
-				activeLayer = 19;
-				drawLegend({activeLayer : activeLayer});
-			}
-			
+			activeLayer = populationLayerArray[clickedLayerId];
+			drawLegend({activeLayer : activeLayer});			
 		}
 		else
 		{

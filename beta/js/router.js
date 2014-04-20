@@ -42,11 +42,11 @@ Router.prototype.route = function()
 		case 'partners':
 			var body = tabs.getPartners();
 			break;
-			
+		$('#homeTab').removeClass('selectedTab');
+		
 		default:
 			var body = tabs.getHome();
-
-		$('#homeTab').removeClass('selectedTab');
+		$('#homeTab').addClass('selectedTab');
 	
 	}
 	

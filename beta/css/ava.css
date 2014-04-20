@@ -3,6 +3,7 @@
   padding: 40px 15px;
   text-align: center;
 }
+
 .informationImage
 {
 	overflow:hidden;
@@ -81,9 +82,8 @@ border-radius: 0.8em;
 {
 	position: relative;
 	padding: 20px;
-	padding-top: 20px;
+	padding-top: 13px;
 	padding-right: 20px;
-	padding-bottom: 0px;
 	padding-left: 20px;
 	padding-bottom: 0px;
 }

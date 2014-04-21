@@ -544,7 +544,7 @@ function translateMap()
 	layerData[6]['infoWindowTitle'] = "<b>" + translator.T("Health Profiles") + "</b>";
 	layerData[6]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_4.HR035b08_E}</span>" +
 	"&nbsp" + "<span class='spanToTranslate hidden popupTextStyle'>(" + "${Export_Output_4.HR035b08_H}" + ")" + "</span>" +
-	"<br>" + "<b>" + translator.T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</b>" + "</br>" + "</span>" +
+	 "<p class='popupTextStyle'>" + translator.T("Canadian Community Health Survey Combined Cycles 2001 to 2012") + "</p>" + "</span>" +
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center'></th>"+

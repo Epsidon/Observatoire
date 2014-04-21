@@ -51,15 +51,6 @@ li
 	height: 34px;
 }
 
-.container {
-border-style: solid;
-border-color: #888AC4;
-font-family: arial;
-padding: 3em;
-line-height: 1.5em;
-font-size: 13px;
-border-radius: 0.8em;
-}
 
 .space
 {
@@ -542,16 +533,14 @@ h2
 	overflow: visible;
 }
 
-#map 
+.map .container .container 
 {
-	position: relative;
-	top: 0px;
-	border: 1px solid;
-	border-radius: 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	border-style: solid;
+	border: 3px solid;
+	border-radius: 10px;
 	border-color: #888AC4;
-	border-width: 3px;
-}	
+}
 
 #tooltip 
 {    

@@ -5,8 +5,8 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var mapLeft = $("#map").offset().left;	
 	var mapTop = $("#map").offset().top;
 	var navbarBrandHeight = $(".navbar-brand").height();
-	var legendHeight = $("#legendList").height();
-	var legendWidth = $("#legendList").width();
+	var legendHeight = $("#layerLegendList").height();
+	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
 	var modalHeight = $('.modal-dialog').height();
@@ -52,7 +52,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 		{
 			$('#zoomInInstruction').removeClass('mediumFont').addClass('smallerFont');
 			$('#mapLabel').removeClass('mediumFont').addClass('smallerFont');
-			$('#legendList').removeClass('smallFont').addClass('smallerFont');
+			$('#layerLegendList').removeClass('smallFont').addClass('smallerFont');
 			$('#mapsInstructionOne').removeClass('mediumFont').addClass('smallerFont');
 			$('#hospitalLegendList').removeClass('mediumFont').addClass('smallerFont');
 			$('#legendTitle').removeClass('smallFont').addClass('smallerFont');
@@ -60,7 +60,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 		else
 		{
 			$('#zoomInInstruction').removeClass('smallerFont').addClass('mediumFont');
-			$('#legendList').removeClass('smallerFont').addClass('smallFont');
+			$('#layerLegendList').removeClass('smallerFont').addClass('smallFont');
 			$('#mapLabel').removeClass('smallerFont').addClass('mediumFont');
 			$('#mapsInstructionOne').removeClass('smallerFont').addClass('mediumFont');
 			$('#hospitalLegendList').removeClass('smallerFont').addClass('mediumFont');
@@ -79,7 +79,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	$("#zoomInInstruction").css(
 		{'position' : 'absolute' , 'left' : zoomInstructionLeft + 'px', 'top' : zoomInstructionTop + 'px'});	
 	
-	$("#legendList").css(
+	$("#layerLegendList").css(
 		{'position' : 'absolute' , 'left' : legendLeft + 'px', 'top' : legendTop + 'px'});			
 	 
 	$("#loadingIndicator").css(

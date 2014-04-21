@@ -493,6 +493,25 @@ th
 	color:#F2F2F2;
 }
 
+#legendHeader 
+{
+	text-align: center;
+	font-size: 1.2em;
+	vertical-align: middle;
+	background-color: #F2F5F6;
+	color: #000000;
+	font-family: arial;
+	font-weight: bold;
+	padding: 17px;
+	border-bottom: 2px solid black;
+}
+
+table 
+{
+	max-width: 100%;
+	background-color: #F2F5F6;
+}
+
 h2 
 {
 	text-shadow:2px 2px #FFFFFF;
@@ -646,12 +665,6 @@ input[type=radio], input[type=checkbox]
 	padding: 4px;
 }
 
-#layerLegendList
-{
-	border-color: #FFFFFF;
-	border-width: 1px;
-	background-color:#E0E0FF;
-}
 
 .modal-content 
 {

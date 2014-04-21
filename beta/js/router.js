@@ -79,7 +79,7 @@ Router.prototype.route = function()
 						
 			$("#hospitalLegendList").draggable({containment: "parent"});
 			$("#instruction").draggable({containment: "parent"});
-			$("#legendList").draggable({containment: "parent"});
+			$("#layerLegendList").draggable({containment: "parent"});
 			
 			$("#instruction").on("click", function()
 			{

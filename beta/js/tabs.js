@@ -75,14 +75,9 @@ Tabs.prototype.getMaps = function ()
 						
 			'<div id="hospitalLegendList" class="transbox cursorStyle mediumFont hidden"></div>' +
 			'<div id="zoomInInstruction" class="transbox cursorStyle hidden"></div>' +
-			
-			'<div id="legendList" class="transbox cursorStyle smallFont hidden">' +
-				'<div id="legendTitle" class="transbox legendLabel cursorStyle smallFont hidden"><b>Loading ...</b></div>' +
 				'<p>' +
-				'<div id="layerLegendList"></div>' +
+				'<div id="layerLegendList" class="transbox cursorStyle smallFont"></div>' +
 				'</p>' +
-			'</div>' +
-		
 		'</div>' +
 		
 		'<div class="modal fade" id="mapsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +

@@ -386,9 +386,20 @@ function(
 				legendsArray[activeLayer] = null;
 
 			var layerLegend = legendsArray[activeLayer];
-
+			
+			if (LayerLegend == '' && mapServicePointLegendLabel == '')
+			{
+				$('#legendTitle').hide();
+				return;
+			}	
+	
 			var legendBody = '<table>';
-
+			
+			legendBody += 
+						'<th id="legendHeader" colspan="4">' + 
+							LayerLegend +
+						'</th>' ;
+					
 			for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
@@ -404,7 +415,7 @@ function(
 							' #000;background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
 						'<td>' + 
-							'<div style="width:10px;height:20px;border:0px;"></div>' + 
+							'<div style="width:5px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
 						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
 					'</tr>';

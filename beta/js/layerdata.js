@@ -1046,14 +1046,28 @@ function translateMap()
 		translator.T('Ontario')];
 	  
 	legendLabel = [
-		translator.T('Mother Tongue: French'), translator.T('Knowledge of Official Language: French only'), translator.T('First Official Language Spoken: French'), 
-		translator.T('Language Spoken Most Often at Home: French'),translator.T('LHIN'), translator.T('LHIN'), 
-		translator.T('LHIN'), translator.T('All Hospitals and Health Units'),translator.T('General Rehabilitation Hospital'),
-		translator.T('Mental Health Units') , translator.T('Special Rehabilitation Hospital'), translator.T('Acute Care Treatment Hospital'),
-		translator.T('Ambulatory Care'), translator.T('Chronic Care Treatment Hospital'), translator.T('FLS Designated All'),
-		translator.T('FLS Designated Partial'), translator.T('Mother Tongue (LHIN)'),translator.T('Knowledge of Official Language (LHIN)'),
-		translator.T('First Official Language Spoken (LHIN)'),translator.T('Language Spoken Most Often at Home (LHIN)'), 
-		translator.T('Ontario LHIN Information'), translator.T('Ontario LHIN Information')];
+		translator.T('Mother Tongue: French'), 
+		translator.T('Knowledge of Official Language: French only'),
+		translator.T('First Official Language Spoken: French'), 
+		translator.T('Language Spoken Most Often at Home: French'),
+		translator.T('LHIN'), 
+		translator.T('LHIN'), 
+		translator.T('LHIN'),
+		translator.T('All Hospitals and Health Units'),
+		translator.T('General Rehabilitation Hospital'),
+		translator.T('Mental Health Units') ,
+		translator.T('Special Rehabilitation Hospital'),
+		translator.T('Acute Care Treatment Hospital'),
+		translator.T('Ambulatory Care'),
+		translator.T('Chronic Care Treatment Hospital'),
+		translator.T('FLS Designated All'),
+		translator.T('FLS Designated Partial'), 
+		translator.T('Mother Tongue (LHIN)'),
+		translator.T('Knowledge of Official Language (LHIN)'),
+		translator.T('First Official Language Spoken (LHIN)'),
+		translator.T('Language Spoken Most Often at Home (LHIN)'), 
+		translator.T('Ontario LHIN Information'), 
+		translator.T('Ontario LHIN Information')];
 		
 }
 

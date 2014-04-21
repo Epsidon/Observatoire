@@ -384,20 +384,15 @@ function(
 				legendsArray[activeLayer] = layer.drawingInfo.renderer.uniqueValueInfos;
 			else
 				legendsArray[activeLayer] = null;
-
-			var layerLegend = legendsArray[activeLayer];
 			
-			if (LayerLegend == '' && mapServicePointLegendLabel == '')
-			{
-				$('#legendTitle').hide();
-				return;
-			}	
-	
+			console.log('active Layer is ' + activeLayer);
+			var layerLegend = legendsArray[activeLayer];
+			var  legendTitle = legendLabel[activeLayer];
 			var legendBody = '<table>';
 			
 			legendBody += 
 						'<th id="legendHeader" colspan="4">' + 
-							LayerLegend +
+							legendTitle +
 						'</th>' ;
 					
 			for (j = 0; j < layerLegend.length; j++)

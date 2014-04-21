@@ -385,7 +385,6 @@ function(
 			else
 				legendsArray[activeLayer] = null;
 			
-			console.log('active Layer is ' + activeLayer);
 			var layerLegend = legendsArray[activeLayer];
 			var  legendTitle = legendLabel[activeLayer];
 			var legendBody = '<table>';

@@ -20,7 +20,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var instructionWidth = $("#instruction").width();
 
 	var legendTop = ($(window).height())/4;
-	var legendLeft = (mapLeft *2);
+	var legendLeft = (mapLeft * 3);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;

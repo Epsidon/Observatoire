@@ -18,6 +18,7 @@ li
 {
 	font-family: arial;
 	font-weight: bold;
+	padding-left: 5px;
 }
 
 .homeTitle
@@ -87,11 +88,10 @@ li
 	vertical-align: middle;
 }
 
-.popupTextStyle
- {
+.popupTextStyle 
+{
 	font-family: arial;
-	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
 .modalFooterSize

@@ -195,7 +195,7 @@ function translateMap()
 	layerData[4]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_5.HR035b08_E}</span>" +
 	"&nbsp" + 
 	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${Export_Output_5.HR035b08_H}" + ")" + 
-	"<p>"+ "<b>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "</b>" + "${pop2011.csv.Population}" + "<br>" + "</p>" +  "</span>" +
+	"<p>"+ translator.T("Total Population in 2011: ") +  "&nbsp" + "${pop2011.csv.Population}" + "<br>" + "</p>" +  "</span>" +
 	"<table border=1 id ='healthProfesionsByLhin' class='table table-striped'>" +
 	"<tr>"+
 	"<th>" + translator.T("Speciality") + "</th>"+
@@ -412,8 +412,8 @@ function translateMap()
 	layerData[5] = [];
 	layerData[5]['infoWindowTitle'] = "<b>" + translator.T("Sociodemographic Profile") + "</b>";
 	layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${Export_Output_6.EnglishL_1}</span>" + 
-	"&nbsp" + "<span class='popupTextStyle'>(" + "${Export_Output_6.HRUID2007}" + ")" +
-	"<b>" + "<p>" + translator.T("Global Non-Response Rate (GNR) = ") + "</b>" + "${Export_Output_6.SociEcoP_1}" + "</p>" + "</span>" +
+	"&nbsp" + "<span class='popupTextStyle'>(" + "${Export_Output_6.HRUID2007}" + ")" + "</span>" +
+	"<p class='popupTextStyle'>" + translator.T("Global Non-Response Rate (GNR) = ") + "${Export_Output_6.SociEcoP_1}" + "</p>" + 
 	"<table border=1 class='table table-striped'>"+
 	"<tr>"+
 	"<th align='center' id='emptyHeader'></th>"+

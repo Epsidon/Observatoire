@@ -381,6 +381,7 @@ body
   	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	padding-top: 0px;
 	padding-bottom:0px;
+	line-height:1.22857143;
 }
 
 .esriPopup .sizer 
@@ -549,9 +550,8 @@ h2
 	border: 3px solid;
 	border-radius: 10px;
 	border-color: #888AC4;
-	padding: 10px;
+	padding: 20px;
 }
-
 #tooltip 
 {    
     display: block;

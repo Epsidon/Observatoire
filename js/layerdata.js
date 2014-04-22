@@ -335,10 +335,10 @@ layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${English
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Proportion of the total population") + "</td>"+
-"<td align='center'>${socio_csv1}" + "%" + "</td>"+
-"<td class=first align='center'>${socio_cs_1}" + "%" + "</td>"+
-"<td align='center'>${socio_cs_2}" + "%" + "</td>"+
-"<td class=first align='center'>${socio_cs_3}" + "%" + "</td>"+
+"<td align='center'>${FrTotPerc}" + "%" + "</td>"+
+"<td class=first align='center'>${AngTotPerc}" + "%" + "</td>"+
+"<td align='center'>${FrAngTotPe}" + "%" + "</td>"+
+"<td class=first align='center'>${AucPerc}" + "%" + "</td>"+
 "</tr>"+
 "<tr>" +
 "<td class=first align='center'>" + T("Age groups") + "</td>"+
@@ -420,7 +420,7 @@ layerData[5]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${English
 "<p>" + "<a href=http://216.48.92.42:8080/notes.html target=_blank >" + T("Methodological Notes") + "</a>" + "</p>";
 layerData[5]['outFields'] = new Array("HRUID2007", "EnglishL_1", "SociEcoP_1", "SociEcoP_1",
 "SociEcoP_2", "SociEcoP_3", "SociEcoP_4", "SociEcoP_5", 
-"socio_csv1", "socio_cs_1", "socio_cs_2",
+"FrTotPerc", "AngTotPerc", "FrAngTotPe",
 "SociEcoP_6", "SociEcoP_9", "SociEco_12",
 "SociEco_15", "SociEcoP_7", "SociEco_10",
 "SociEco_13", "SociEco_16", "SociEcoP_8",
@@ -434,7 +434,7 @@ layerData[5]['outFields'] = new Array("HRUID2007", "EnglishL_1", "SociEcoP_1", "
 "SociEco_40", "SociEco_41", "SociEco_42",
 "SociEco_43", "SociEco_44", "SociEco_45",
 "SociEco_46", "SociEco_47", "SociEco_48",
-"SociEco_49", "socio_cs_3"
+"SociEco_49", "AucPerc"
  );
  
 layerData[6] = [];
@@ -791,10 +791,10 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>" + T("Population Proportion") + "</td>"+
-"<td align='center'>" + "${socio_csv1}" + "%" + "</td>"+
-"<td class=first align='center'>" + "${socio_cs_1}" + "%" + "</td>"+
-"<td align='center'>" + "${socio_cs_2}" + "%" + "</td>"+
-"<td align='center'>" + "${socio_cs_3}" + "%" + "</td>"+
+"<td align='center'>" + "${FrTotPerc}" + "%" + "</td>"+
+"<td class=first align='center'>" + "${AngTotPerc}" + "%" + "</td>"+
+"<td align='center'>" + "${FrAngTotPe}" + "%" + "</td>"+
+"<td align='center'>" + "${AucPerc}" + "%" + "</td>"+
 "<td align='center'>" + T("100%") + "</td>"+
 "</tr>"+
 "</table>" + T("Source: 2011 National Household Survey") +
@@ -803,7 +803,7 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 T("Methodological Notes") + "</a>" + "</p>";
 
 layerData[17]['outFields'] = new Array("SociEcoP_1", "SociEcoP_2", "SociEcoP_3", 
-"SociEcoP_4", "SociEcoP_5", "Total", "socio_csv1", "socio_cs_1", "socio_cs_2", "socio_cs_3", "FRE_LABEL");
+"SociEcoP_4", "SociEcoP_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc", "FRE_LABEL");
 
 layerData[18] = [];
 layerData[18]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";

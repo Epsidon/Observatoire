@@ -98,7 +98,6 @@ Tabs.prototype.getMaps = function ()
 			'</div>' +
 		'</div>';
 		
-
 	return body;
 };
 

@@ -88,31 +88,12 @@ MapModal.prototype.fillModalBody = function()
 		$('.servicePointBufferRow').hide();	
 
 		self.addSelectedItemsToModal();
-
-/*	
-		for (var l = 0; l < numLayers; l++) {
-			if (layerToRegion[l] == 2)
-			{
-				$('.servicePointBufferRow' + l).hide();
-				$('#servicePointHyperLink' + l).click(updateLayerWrapper(l, true));
-			}
-			else
-			{
-				$('#layerHyperLink' + l).click(updateLayerWrapper(l, false));
-			}
-		}
-		
-		$('.servicePointBufferLayerCheckBox').click(updateServicePoints);
-		
-		drawLegend(activeLayer);
-*/					
 	}, "json" );
 }
 
 MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accordionCounter) 
 {
 	htmlBody = '';
-	
 	
 	if (this.accordionHeaders[layerCounter])
 				htmlBody += '<div' + this.accordionHeaders[layerCounter] +
@@ -149,13 +130,6 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 				'</div>';
 	}
 
-/*	
-	htmlBody = 
-		'<li id="region' + layerCounter + '">' +  
-			htmlBody + 
-		'</li>';
-*/
-
 	return htmlBody;
 }
 
@@ -168,9 +142,7 @@ MapModal.prototype.layerCheckBoxClicked = function (layerCounter)
 MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 {
 	if ($('#servicePointHyperLink' + layerCounter).prop('checked'))
-	{
 		var checked = true;
-	}
 	else 
 		var checked = false;
 		
@@ -181,8 +153,7 @@ MapModal.prototype.servicePointCheckBoxClicked = function (layerCounter)
 	if (checked)
 	{
 		$('#servicePointHyperLink' + layerCounter).prop('checked', true);	
-		$('.servicePointBufferRowLayer' + layerCounter).show();
-		
+		$('.servicePointBufferRowLayer' + layerCounter).show();	
 	}
 };
 

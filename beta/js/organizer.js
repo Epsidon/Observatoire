@@ -9,9 +9,8 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-	var modalHeight = $('.modal-dialog').height();
-	
-	$('.modal-dialog').css({'margin-top' : ((windowHeight - modalHeight )/2)});
+
+	var modalHeight = $('.modal-dialog').height();	
 	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
@@ -87,4 +86,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 
 	$("#map").height(mapHeight);
 	$("#map").width(mapWidth);	
+	
+	$('.modal-dialog').css({'margin-top' : ((mapHeight - modalHeight )/2 + mapTop)});
 };

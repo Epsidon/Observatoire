@@ -4,6 +4,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 {
 	var mapLeft = $("#map").offset().left;	
 	var mapTop = $("#map").offset().top;
+
 	var navbarBrandHeight = $(".navbar-brand").height();
 	var legendHeight = $("#layerLegendList").height();
 	var legendWidth = $("#layerLegendList").width();
@@ -30,6 +31,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
 
+
 	if (windowHeight <= 768)
 	{
 		var hospitalLegendLabelTop = ($(window).height()) - (mapTop*2);
@@ -41,8 +43,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 		var hospitalLegendLabelLeft = (mapLeft *2);
 	}	
 
-	var mapLableTop = mapTop + (mapLeft *2);
-	var mapLableLeft = ($(window).width()/2) - 110 ;
+
 	
 	var zoomInstructionTop = mapTop + (mapHeight / 2);
 	var zoomInstructionLeft = (($(window).width())/2) - legendWidth ;
@@ -66,8 +67,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 			$('#legendTitle').removeClass('smallerFont').addClass('smallFont');
 		}
 	
-	$("#mapLabel").css(
-		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
 	
 	$("#instruction").css(
 		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	
@@ -88,4 +87,27 @@ Organizer.prototype.reorganizeMapsPage = function()
 	$("#map").width(mapWidth);	
 	
 	$('.modal-dialog').css({'margin-top' : ((mapHeight - modalHeight )/2 + mapTop)});
+	
+	this.reorganizeMapTitle();
 };
+
+Organizer.prototype.reorganizeMapTitle = function()
+{
+	var mapLeft = $("#map").offset().left;	
+	var mapTop = $("#map").offset().top;
+	var mapWidth = $("#map").width();
+
+	var mapLabelWidth = $("#mapLabel").width();
+	
+	mapLabelWidth = (mapLabelWidth > 800)? 800 : mapLabelWidth;
+
+	var mapLableTop = mapTop + (mapLeft * 2);
+	var mapLableLeft = ( ((mapWidth - mapLabelWidth)/2) + mapLeft) ;
+
+	$("#mapLabel").css(
+		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
+}
+
+
+
+

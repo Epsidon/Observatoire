@@ -339,6 +339,8 @@ function(
 
 		$('#mapLabel').html(mapLayerLabel + "  " + mapServicePointLabel);
 		$('#mapLabel').show();
+		
+		organizer.reorganizeMapTitle(); 
 	}
 	
 	function updateLegend()

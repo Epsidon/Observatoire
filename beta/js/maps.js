@@ -389,7 +389,7 @@ function(
 			
 			var layerLegend = legendsArray[activeLayer];
 			var  legendTitle = legendLabel[activeLayer];
-			var legendBody = '<table>';
+			var legendBody = '<table id="legendTable">';
 			
 			legendBody += 
 						'<th id="legendHeader" colspan="4">' + 
@@ -451,7 +451,7 @@ function(
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
 		
-		$('#layerLegendList').html( $('<table></table>').append(sortedTable) );
+		$('#layerLegendList').html( $('<table id="legendTable" width="195"></table>').append(sortedTable) );
 	
 	}
 	

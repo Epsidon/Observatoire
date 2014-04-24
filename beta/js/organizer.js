@@ -91,7 +91,13 @@ Organizer.prototype.reorganizeMapsPage = function()
 
 Organizer.prototype.reorganizeMapTitle = function()
 {
-	var mapLeft = $("#map").offset().left;	
+	if (!$("#map_zoom_slider").offset())
+	{
+		setTimeout(organizer.reorganizeMapTitle,100);
+		return;
+	}
+
+	var zoomSliderTop = $("#map_zoom_slider").offset().top;
 	var mapTop = $("#map").offset().top;
 	var mapWidth = $("#map").width();
 
@@ -99,8 +105,8 @@ Organizer.prototype.reorganizeMapTitle = function()
 	
 	mapLabelWidth = (mapLabelWidth > 800)? 800 : mapLabelWidth;
 
-	var mapLableTop = mapTop + (mapLeft * 2);
-	var mapLableLeft = ( ((mapWidth - mapLabelWidth)/2) + mapLeft) ;
+	var mapLableTop = zoomSliderTop;
+	var mapLableLeft = ( ((mapWidth - mapLabelWidth)/2) ) ;
 
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});

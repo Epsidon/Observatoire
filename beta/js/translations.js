@@ -15,6 +15,7 @@ Fr['South East'] = 'Sud-Est' ;
 Fr['South West'] = 'Sud-Ouest'; 
 Fr['Waterloo Wellington'] = 'Waterloo Wellington';
 Fr['Co-researcher'] = 'Co-chercheur';
+Fr['Other'] = 'Autre';
 
 Fr['Centre'] = 'Central';
 Fr['Centre-Est'] = 'Central East' ;

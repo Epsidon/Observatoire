@@ -485,13 +485,6 @@ th
 	color:#F2F2F2;
 }
 
-td
-{
-	padding-top:1px;
-	padding-bottom:1px;
-	padding-left:2px;
-	padding-right:2px;
-}
 
 .esriSimpleSliderTL
  {
@@ -765,7 +758,6 @@ div.legendTransbox
 	box-shadow: 5px 5px 5px #D1D1D1;
 	opacity: 0.9;
 	font-family: arial;
-	font-weight: bold;
 	border-width: 0.1em;
 	border-color: rgb(196, 188, 188);
 }

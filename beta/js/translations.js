@@ -193,7 +193,7 @@ Fr['First Official Language Spoken: French'] = 'Première langue officielle parl
 Fr['Source: 2011 National Household Survey'] = 'Source: Enquête nationale auprès des ménages (ENM) de 2011';
 Fr['Global non-response rate (GNR) = '] = 'Taux global de non-réponse (TGN) de Champlain = ';
 Fr['Population Number'] = 'Population';
-Fr['Population Proportion'] = 'Proportion de la Population';
+Fr['Population Proportion'] = 'Proportion de la population';
 Fr['RESEARCH'] = 'RECHERCHE';
 Fr['Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada'] = 'Validation de l’équité d’accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada';
 Fr['Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada'] = 'Language as an Important Determinant of Poverty in the Aging Francophone Minority Population in Canada';

@@ -803,6 +803,39 @@ padding: 0.5em;
 border-radius: 0.5em;
 }
 
+.homeContainer
+{
+margin-right: auto;
+margin-left: auto;
+padding: 15px;
+border-style: solid;
+border-radius: 7px;
+border-color:#8E999F;
+margin: 10px;
+}
+
+.researchContainer
+{
+margin-right: auto;
+margin-left: auto;
+padding: 15px;
+border-style: solid;
+border-radius: 7px;
+border-color:#D7E0E5;
+margin: 10px;
+}
+
+.partnersContainer
+{
+margin-right: auto;
+margin-left: auto;
+padding: 15px;
+border-style: solid;
+border-radius: 7px;
+border-color:#E5EBEE;
+margin: 10px;
+}
+
 .navbar-primary .navbar
 {
 	background: #2f3335;

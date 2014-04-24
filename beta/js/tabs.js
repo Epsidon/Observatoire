@@ -3,7 +3,7 @@ function Tabs() {}
 Tabs.prototype.getHome = function () 
 {
 	var body = 
-		'<div class="container">' +
+		'<div class="homeContainer">' +
 			'<p class="homeTitle">' +  translator.T('The Health Observatory') + '</p>' +
 			
 			'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.') + '</p>'+
@@ -105,7 +105,7 @@ Tabs.prototype.getPartners = function ()
 {
 
 	var body =
-		'<div class="container">' +	
+		'<div class="partnersContainer">' +	
 			'<li><a href="http://www.epsidon.com/" target="_blank">EPSIDON</a></li>' +
 			'<li><a href="http://www.jwcomm.ca/" target="_blank">J W COMM INC.</a></li>' +
 			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'eng/Home') + '" target="_blank">' + translator.T('Health Force Ontario') + '</a></li>' +
@@ -123,7 +123,7 @@ Tabs.prototype.getPartners = function ()
 Tabs.prototype.getAnalysis = function ()
 {
 	var body = 
-		'<div class="container">' +
+		'<div class="researchContainer">' +
 					'<b>' + translator.T('Title: ') + '</b>' +
 					'<b id="BouchardWarnkeTitle"></b>' +
 					

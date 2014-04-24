@@ -825,15 +825,16 @@ padding: 0.5em;
 border-radius: 0.5em;
 }
 
-.homeContainer
-{
+.homeContainer {
 margin-right: auto;
 margin-left: auto;
 padding: 15px;
 border-style: solid;
 border-radius: 7px;
-border-color:#8E999F;
+border-color: #8E999F;
 margin: 10px;
+font-family: arial;
+font-size: 14px;
 }
 
 .researchContainer
@@ -845,6 +846,8 @@ border-style: solid;
 border-radius: 7px;
 border-color:#D7E0E5;
 margin: 10px;
+font-family: arial;
+font-size: 14px;
 }
 
 .partnersContainer
@@ -856,6 +859,8 @@ border-style: solid;
 border-radius: 7px;
 border-color:#E5EBEE;
 margin: 10px;
+font-family: arial;
+font-size: 14px;
 }
 
 .navbar-primary .navbar

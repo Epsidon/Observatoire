@@ -507,12 +507,12 @@ th
 
 th.selected 
 { 
-border: 1px solid #000;
+border-bottom: 0px solid #000;
 }
 
 table.legendTable {
 border-collapse: separate;
-border-spacing: 2px;
+border-spacing: 0px 2px;
 }
 
 #Modal 

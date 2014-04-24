@@ -432,8 +432,19 @@ function(
 			{
 				var layer = layers[hospitals[hospitalId]];
 
-				htmlBody +=  '<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />';
-				htmlBody += ' ' + mapServicePointLegendLabel;
+				htmlBody += '<table>' ;
+				htmlBody += 
+						'<tr>' + 
+							'<td>' +
+							'<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
+							' ' +
+							'</td>' +
+							'<td class="hospitalString">' +
+							 mapServicePointLegendLabel +
+							'</td>' +
+						'</tr>' ;
+					
+				htmlBody += '</table>';
 			}
 		
 			$('#hospitalLegendList').html(htmlBody);

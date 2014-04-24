@@ -11,7 +11,6 @@ Router.prototype.updateHashTab = function(tabName)
 	location.hash = currentHashArray[0] + '_' + tabName;
 };
 
-
 Router.prototype.route = function()
 {
 	this.normalizeHashLanguage();
@@ -69,9 +68,7 @@ Router.prototype.route = function()
 			$('#mapContainer').html(body);	
 			
 			this.loadMapsJSFiles();
-	
-			$('#mapsModal').modal('show');
-			
+				
 			$('#modalUpdateMapButton').click(function() 
 			{
 				mapModal.modalUpdateMapsClick();				

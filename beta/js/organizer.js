@@ -10,8 +10,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-
-	var modalHeight = $('.modal-dialog').height();	
 	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
@@ -86,9 +84,9 @@ Organizer.prototype.reorganizeMapsPage = function()
 	$("#map").height(mapHeight);
 	$("#map").width(mapWidth);	
 	
-	$('.modal-dialog').css({'margin-top' : ((mapHeight - modalHeight )/2 + mapTop)});
 	
 	this.reorganizeMapTitle();
+	this.reorganizeModal();
 };
 
 Organizer.prototype.reorganizeMapTitle = function()
@@ -108,6 +106,23 @@ Organizer.prototype.reorganizeMapTitle = function()
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
 }
 
+Organizer.prototype.reorganizeModal = function()
+{
+	var modalHeight = $('.modal-dialog').height();	
 
+	if (modalHeight == 0)
+	{
+		setTimeout(organizer.reorganizeModal,100);
+		return;
+	}
 
+	var navbarBrandHeight = $(".navbar-brand").height();
+
+	var mapTop = $("#map").offset().top;
+	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
+
+	var modalHeight = $('.modal-dialog').height();	
+
+	$('.modal-dialog').css({'margin-top' : ((mapHeight - modalHeight )/2 + mapTop)});
+};
 

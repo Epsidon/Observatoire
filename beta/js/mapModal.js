@@ -29,7 +29,6 @@ MapModal.prototype.setTranslatedTitles = function()
 		14 : translator.T('Hospitals By French Language Service (FLS) Designation')};
 }
 
-
 MapModal.prototype.fillModalBody = function()
 {
 	var self = this;
@@ -88,6 +87,9 @@ MapModal.prototype.fillModalBody = function()
 		$('.servicePointBufferRow').hide();	
 
 		self.addSelectedItemsToModal();
+
+		$('#mapsModal').modal('show');		
+				
 	}, "json" );
 }
 

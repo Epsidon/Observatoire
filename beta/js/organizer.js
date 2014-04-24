@@ -10,9 +10,10 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
+	var mapWidth = $("#map").width() - (mapLeft*2);
 	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
-	var mapWidth = $(window).width() - (navbarBrandHeight  * 2);
+	
 	
 	var instructionHeight = $("#instruction").height();
 	var instructionWidth = $("#instruction").width();
@@ -23,7 +24,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
 
-	var instructionTop = mapTop + (mapLeft *2);
+	var instructionTop = mapTop + (mapLeft);
 	var instructionLeft = mapWidth - instructionWidth;
 	
 	var windowHeight = $(window).height();

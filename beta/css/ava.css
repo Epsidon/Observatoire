@@ -9,6 +9,11 @@
 	overflow:hidden;
 }
 
+.map {
+overflow: hidden;
+padding: 1px;
+}
+
 li
 {
     list-style-type: none;

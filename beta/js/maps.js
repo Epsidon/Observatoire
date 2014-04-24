@@ -411,7 +411,7 @@ function(
 							' #000;background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
 						'<td>' + 
-							'<div style="width:5px;height:20px;border:0px;"></div>' + 
+							'<div style="width:0px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
 						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
 					'</tr>' ;

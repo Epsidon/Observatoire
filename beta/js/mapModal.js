@@ -46,7 +46,7 @@ MapModal.prototype.fillModalBody = function()
 		
 		accordionHtmlBody = 
 			'<div>' +
-				'<table border="0">' +
+				'<table id="Modal" border="0">' +
 						'<tr valign="top">' +
 							'<td id="modalMapLanguage"></td>' +
 							'<td rowspan="2" id="modalMapHospital"></td>' +

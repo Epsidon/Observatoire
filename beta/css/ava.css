@@ -502,7 +502,17 @@ th
 	font-family: arial;
 	font-weight: bold;
 	padding: 7px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
+}
+
+th.selected 
+{ 
+border: 1px solid #000;
+}
+
+table.legendTable {
+border-collapse: separate;
+border-spacing: 2px;
 }
 
 #Modal 

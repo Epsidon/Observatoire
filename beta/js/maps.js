@@ -389,10 +389,10 @@ function(
 			
 			var layerLegend = legendsArray[activeLayer];
 			var  legendTitle = legendLabel[activeLayer];
-			var legendBody = '<table id="legendTable">';
+			var legendBody = '<table>';
 			
 			legendBody += 
-						'<th id="legendHeader" colspan="4">' + 
+						'<th class="selected" id="legendHeader" colspan="4">' + 
 							legendTitle +
 						'</th>' ;
 					
@@ -414,7 +414,7 @@ function(
 							'<div style="width:5px;height:20px;border:0px;"></div>' + 
 						'</td>' + 
 						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
-					'</tr>';
+					'</tr>' ;
 			}
 				
 			legendBody += '</table>';
@@ -451,7 +451,7 @@ function(
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
 		
-		$('#layerLegendList').html( $('<table id="legendTable" width="195"></table>').append(sortedTable) );
+		$('#layerLegendList').html( $('<table class="legendTable" id="legendTable" width="195"></table>').append(sortedTable) );
 	
 	}
 	

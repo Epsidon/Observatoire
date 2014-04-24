@@ -797,10 +797,10 @@ layerData[17]['infoWindowBody'] = "<p>" + "<table border=1>"+ "</p>" +
 "</tr>"+
 "<tr>"+
 "<td class=first align='center'>" + T("Population Proportion") + "</td>"+
-"<td align='center'>" + "${test}" + "%" + "</td>"+
-"<td class=first align='center'>" + "${ENP}" + "%" + "</td>"+
-"<td align='center'>" + "${FrEnPr}" + "%" + "</td>"+
-"<td align='center'>" + "${NeitherP}" + "%" + "</td>"+
+"<td align='center'>" + "${FR4}" + "%" + "</td>"+
+"<td class=first align='center'>" + "${EnP_1}" + "%" + "</td>"+
+"<td align='center'>" + "${EnFrProp}" + "%" + "</td>"+
+"<td align='center'>" + "${NeitherPr}" + "%" + "</td>"+
 "<td align='center'>" + T("100%") + "</td>"+
 "</tr>"+
 "</table>" + 
@@ -810,7 +810,7 @@ T("Methodological Notes") + "</a>" + "</p>";
 
 layerData[17]['outFields'] = new Array("SociEcoP_1", "FirstOff_2", "FirstOff_4", 
 "FirstOff_3", "FirstOff_5", "Total", "FrTotPerc", "AngTotPerc", "FrAngTotPe", "AucPerc", "FRE_LABEL",
-"test", "ENP", "FrEnPr", "NeitherP");
+"FR4", "EnP_1", "EnFrProp", "NeitherPr");
 
 layerData[18] = [];
 layerData[18]['infoWindowTitle'] = "<b>" + T("Ontario") + "</b>";
@@ -875,7 +875,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/GeoPortal/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/DAPortal/MapServer/';
  
  
 var layersLabels = [

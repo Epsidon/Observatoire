@@ -20,17 +20,16 @@ layerToRegion[14] = 2;
 layerToRegion[15] = 2;
 
 
-
 var servicePointBuffers = [];
-servicePointBuffers[7] = [44,37];
-servicePointBuffers[8] = [30,23];
-servicePointBuffers[9] = [58,51];
-servicePointBuffers[10] = [72,65];
-servicePointBuffers[11] = [86,79];
-servicePointBuffers[12] = [100,93];
-servicePointBuffers[13] = [114,107];
-servicePointBuffers[14] = [128,121];
-servicePointBuffers[15] = [142,135];
+servicePointBuffers[7] = [47,40];
+servicePointBuffers[8] = [33,26];
+servicePointBuffers[9] = [61,54];
+servicePointBuffers[10] = [75,68];
+servicePointBuffers[11] = [89,82];
+servicePointBuffers[12] = [103,96];
+servicePointBuffers[13] = [117,110];
+servicePointBuffers[14] = [131,124];
+servicePointBuffers[15] = [145,138];
 //servicePointBuffers[16] = [150,157];
 
 
@@ -915,7 +914,7 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[16]['outFields'] = new Array("MTLHIN.MotherTo_2", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5}",
+	layerData[16]['outFields'] = new Array("MTLHIN.MotherTo_2", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5",
 	"MTLHIN.MotherTo_1", "MTLHIN.FrP", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
 
 	layerData[17] = [];

@@ -57,7 +57,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/OntarioMaps/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/RLISSGeoportalMaps/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
@@ -882,7 +882,10 @@ function translateMap()
 	
 	layerData[16] = [];
 	layerData[16]['infoWindowTitle'] = "<b>" + translator.T("Mother Tongue (LHIN)") + "</b>";
-	layerData[16]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	layerData[16]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${lhin.csv.LHINNames}</span>" +
+	"&nbsp" + 
+	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${lhin.csv.LHINCode2013}" + ")" + "</span>" +
+	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -893,18 +896,18 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${MotherTo_2}</td>"+
-	"<td align='center'>${MotherTo_4}</td>"+
-	"<td align='center'>${MotherTo_3}</td>"+
-	"<td align='center'>${MotherTo_5}</td>"+
-	"<td align='center'>${MotherTo_1}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_2}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_4}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_3}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_5}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_1}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${FrenchPr}" + "%" + "</td>"+
-	"<td align='center'>" + "${EnglishPr}" + "%" + "</td>"+
-	"<td align='center'>" + "${frEngPr}" + "%" + "</td>"+
-	"<td align='center'>" + "${nonOffiPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${MTLHIN.FrP}" + "%" + "</td>"+
+	"<td align='center'>" + "${MTLHIN.ENProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${MTLHIN.ErFrProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${MTLHIN.nonPro}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
 	"<span class='spanToTranslate hidden'></span>" +
@@ -912,12 +915,15 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[16]['outFields'] = new Array("MotherTo_2", "MotherTo_4", "MotherTo_3", "MotherTo_5",
-	"MotherTo_1", "FrenchPr", "EnglishPr", "frEngPr", "nonOffiPr");
+	layerData[16]['outFields'] = new Array("MTLHIN.MotherTo_2", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5}",
+	"MTLHIN.MotherTo_1", "MTLHIN.FrP", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
 
 	layerData[17] = [];
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Knowledge of Official Language (LHIN)") + "</b>";
-	layerData[17]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	layerData[17]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${lhin.csv.LHINNames}</span>" +
+	"&nbsp" + 
+	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${lhin.csv.LHINCode2013}" + ")" + "</span>" +
+	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -928,18 +934,18 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${Knowledg_2}</td>"+
-	"<td align='center'>${Knowledg_4}</td>"+
-	"<td align='center'>${Knowledg_3}</td>"+
-	"<td align='center'>${Knowledg_5}</td>"+
-	"<td align='center'>${Knowledg_1}</td>"+
+	"<td align='center'>${Knowledget.Knowledg_2}</td>"+
+	"<td align='center'>${Knowledget.Knowledg_4}</td>"+
+	"<td align='center'>${Knowledget.Knowledg_3}</td>"+
+	"<td align='center'>${Knowledget.Knowledg_5}</td>"+
+	"<td align='center'>${Knowledget.Knowledg_1}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${FrProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${Eng_FrPr}" + "%" + "</td>"+
-	"<td align='center'>" + "${NeitherPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${Knowledget.frprop_1}" + "%" + "</td>"+
+	"<td align='center'>" + "${Knowledget.EnProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${Knowledget.ENFrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${Knowledget.NeitherP}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
 	"<span class='spanToTranslate hidden'></span>" +
@@ -947,13 +953,16 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[17]['outFields'] = new Array("Knowledg_2", "Knowledg_4","Knowledg_3", "Knowledg_5",
-	"Knowledg_1", "FrProp",
-	"EnProp", "Eng_FrPr","NeitherPr");
+	layerData[17]['outFields'] = new Array("lhin.csv.LHINNames", "lhin.csv.LHINCode2013", "Knowledget.Knowledg_2", "Knowledget.Knowledg_4","Knowledget.Knowledg_3", "Knowledget.Knowledg_5",
+	"Knowledget.Knowledg_1", "Knowledget.frprop_1",
+	"Knowledget.EnProp", "Knowledget.ENFrPr","Knowledget.NeitherP");
 	
 	layerData[18] = [];
 	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("First Official Language Spoken (LHIN)") + "</b>";
-	layerData[18]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	layerData[18]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${lhin.csv.LHINNames}</span>" +
+	"&nbsp" + 
+	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${lhin.csv.LHINCode2013}" + ")" + "</span>" +
+	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -964,18 +973,18 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${FirstOff_2}</td>"+
-	"<td align='center'>${FirstOff_4}</td>"+
-	"<td align='center'>${FirstOff_3}</td>"+
-	"<td align='center'>${FirstOff_5}</td>"+
-	"<td align='center'>${FirstOff_1}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_2}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_4}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_3}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_5}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_1}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${FrPr}" + "%" + "</td>"+
-	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${En_FrProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${NeitherPro}" + "%" + "</td>"+
+	"<td align='center'>" + "${FirstOfficial.FrP}" + "%" + "</td>"+
+	"<td align='center'>" + "${FirstOfficial.EnP}" + "%" + "</td>"+
+	"<td align='center'>" + "${FirstOfficial.ENFrP}" + "%" + "</td>"+
+	"<td align='center'>" + "${FirstOfficial.NeitherP}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
 	"<span class='spanToTranslate hidden'></span>" +
@@ -983,13 +992,16 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[18]['outFields'] = new Array("FirstOff_2", "FirstOff_4", "FirstOff_3", 
-	"FirstOff_5", "FirstOff_1", "FrPr",
-	"EnProp", "En_FrProp", "NeitherPro");
+	layerData[18]['outFields'] = new Array("FirstOfficial.FirstOff_2", "FirstOfficial.FirstOff_4", "FirstOfficial.FirstOff_3", 
+	"FirstOfficial.FirstOff_5", "FirstOfficial.FirstOff_1", "FirstOfficial.FrP",
+	"FirstOfficial.EnP", "FirstOfficial.ENFrP", "FirstOfficial.NeitherP", "lhin.csv.LHINCode2013", "lhin.csv.LHINNames");
 	
 	layerData[19] = [];
 	layerData[19]['infoWindowTitle'] = "<b>" + translator.T("Language Spoken Most Often at Home (LHIN)") + "</b>";
-	layerData[19]['infoWindowBody'] = "<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
+	layerData[19]['infoWindowBody'] = "<span class='spanToTranslate hidden popupTextStyle'>${lhin.csv.LHINNames}</span>" +
+	"&nbsp" + 
+	"<span class='spanToTranslate hidden popupTextStyle'>(" + "${lhin.csv.LHINCode2013}" + ")" + "</span>" +
+	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
 	"<th align='center'>" + translator.T("French") + "</th>"+
@@ -1001,20 +1013,20 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${Language_2}</td>"+
-	"<td align='center'>${Language_4}</td>"+
-	"<td align='center'>${Language_3}</td>"+
-	"<td align='center'>${Language_5}</td>"+
-	"<td align='center'>${Language_6}</td>"+
-	"<td align='center'>${Total}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Language_2}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Language_4}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Language_3}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Language_5}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Language_6}</td>"+
+	"<td align='center'>${ELanguageSpokenAtHome.Total}</td>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${FrProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${EnProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${En_FrProp}" + "%" + "</td>"+
-	"<td align='center'>" + "${NeitherPro}" + "%" + "</td>"+
-	"<td align='center'>" + "${otherProp}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.FrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.EnPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.EnFrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.NeitherP}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.otherP}" + "%" + "</td>"+
 	"<td align='center'>" + translator.T("100%") + "</td>"+
 	"</tr>"+
 	"</table>" + 
@@ -1023,7 +1035,11 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[19]['outFields'] = new Array( "Language_2", "otherProp", "NeitherPro", "En_FrProp", "EnProp", "Total", "FrProp", "Language_1", "Language_6", "Language_5", "Language_3", "Language_4");
+	layerData[19]['outFields'] = new Array( "lhin.csv.LHINCode2013", "lhin.csv.LHINNames", "ELanguageSpokenAtHome.Language_2",
+	"ELanguageSpokenAtHome.Language_4", "ELanguageSpokenAtHome.Language_3", "ELanguageSpokenAtHome.Language_6", 
+	"ELanguageSpokenAtHome.Language_5", "ELanguageSpokenAtHome.Total", "ELanguageSpokenAtHome.EnPr",
+	"ELanguageSpokenAtHome.FrPr", "ELanguageSpokenAtHome.EnFrPr", 
+	"ELanguageSpokenAtHome.otherP", "ELanguageSpokenAtHome.NeitherP");
 	
 	layerData[20] = [];
 	layerData[20]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";

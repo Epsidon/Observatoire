@@ -396,7 +396,7 @@ function(
 							legendTitle +
 						'</th>' ;
 						
-			legendBody += '<tr style="height:3px;"></tr>';		
+			//legendBody += '<tr style="height:3px;"></tr>';		
 			for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
@@ -407,15 +407,14 @@ function(
 					
 				legendBody +=  
 					'<tr>' + 
-						'<td align="right">' + 
+						'<td align="center">' + 
 							'<div style="width:25px;height:20px;border:1px solid' + 
 							' #000;background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
-						'<td>' + 
-							'<div style="width:3px;height:20px;border:2px;"></div>' + 
+						'<td align="left">' + 
+							'<div style="width:3px;height:20px;border:1px;"></div>' + 
 						'</td>' + 
-						
-						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
+						'<td align="left">' + translator.T(thisLayerLegend.label) + '</td>' + 
 					'</tr>' ;
 			}
 		

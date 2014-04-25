@@ -395,7 +395,8 @@ function(
 						'<th class="selected" id="legendHeader" colspan="4">' + 
 							legendTitle +
 						'</th>' ;
-					
+						
+			legendBody += '<tr style="height:3px;"></tr>';		
 			for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
@@ -403,21 +404,23 @@ function(
 				var legendColour = thisLayerLegend.symbol.color[0] + ',' +
 					thisLayerLegend.symbol.color[1] + ',' +
 					thisLayerLegend.symbol.color[2];
-
+					
 				legendBody +=  
 					'<tr>' + 
-						'<td>' + 
-							'<div style="width:40px;height:20px;border:1px solid' + 
+						'<td align="right">' + 
+							'<div style="width:25px;height:20px;border:1px solid' + 
 							' #000;background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
 						'<td>' + 
-							'<div style="width:0px;height:20px;border:0px;"></div>' + 
+							'<div style="width:3px;height:20px;border:2px;"></div>' + 
 						'</td>' + 
+						
 						'<td>' + translator.T(thisLayerLegend.label) + '</td>' + 
 					'</tr>' ;
 			}
-				
+		
 			legendBody += '</table>';
+				
 			$('#layerLegendList').html(legendBody);
 			sortLegendList();
 		}

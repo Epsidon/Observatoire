@@ -238,7 +238,6 @@ function(
 			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;
 			drawLegend({activeLayer : activeLayer});
-			sortLegendList();
 		}
 		try
 		{
@@ -423,6 +422,8 @@ function(
 			legendBody += '</table>';
 				
 			$('#layerLegendList').html(legendBody);
+			
+			sortLegendList();
 		}
 		
 		if ('hospitals' in clickedItem)	
@@ -460,8 +461,20 @@ function(
 	{	
 		var sortedTable = $('#legendTable').find('tr').sort(function(a,b)
 		{ 
+			/**
+			 * Only sort there are not numerical character in the text. 
+			 */
     		var tda = $(a).find('td:eq(2)').text(); 
     		var tdb = $(b).find('td:eq(2)').text(); 
+    		
+    		console.log(tda.match(/\d+/g));
+    		console.log(tdb.match(/\d+/g));
+    		
+    		if (tda.match(/\d+/g) || tdb.match(/\d+/g))
+				return 0;
+
+			console.log('actually sorting');
+			
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
 		

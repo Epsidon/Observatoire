@@ -390,14 +390,14 @@ function(
 			
 			var layerLegend = legendsArray[activeLayer];
 			var  legendTitle = legendLabel[activeLayer];
-			var legendBody = '<table class="legendTable" width="195">';
 			
-			legendBody += 
-						'<th class="selected" id="legendHeader" colspan="4">' + 
+			var legendBody = 
+						'<div id="legendTitleDiv">' + 
 							legendTitle +
-						'</th>' ;
+						'</div>' ;
 						
-			//legendBody += '<tr style="height:3px;"></tr>';		
+			legendBody += '<table class="legendTable">';
+
 			for (j = 0; j < layerLegend.length; j++)
 			{
 				var thisLayerLegend = layerLegend[j];
@@ -409,8 +409,7 @@ function(
 				legendBody +=  
 					'<tr>' + 
 						'<td align="center">' + 
-							'<div style="width:25px;height:20px;border:1px solid' + 
-							' #000;background-color:RGB('+legendColour+');"></div>' + 
+							'<div class="legendColourRectDiv" style="background-color:RGB('+legendColour+');"></div>' + 
 						'</td>' + 
 						'<td align="left">' + 
 							'<div style="width:3px;height:20px;border:1px;"></div>' + 

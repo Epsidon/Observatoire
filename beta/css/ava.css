@@ -510,9 +510,16 @@ th
 	border-bottom: 1px solid black;
 }
 
-th.selected 
+#legendTitleDiv
 { 
-border-bottom: 0px solid #000;
+	color: #000000;
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	padding: 15px;
+	width: 175px;
+	border-bottom: solid #CCCCCC;
+	border-bottom-width: 2px;	
 }
 
 .hospitalString
@@ -534,9 +541,18 @@ border-bottom: 0px solid #000;
 	border-color: rgb(196, 188, 188);
 }
 
-table.legendTable {
-border-collapse: separate;
-border-spacing: 0px 3px;
+.legendTable {
+	border-collapse: separate;
+	border-spacing: 0px 3px;
+	padding: 15px;
+	width: 175px;
+}
+
+.legendColourRectDiv
+{
+	width:10px;
+	height:10px;
+	border:1.5px solid #000;
 }
 
 #Modal 

@@ -238,6 +238,7 @@ function(
 			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;
 			drawLegend({activeLayer : activeLayer});
+			sortLegendList();
 		}
 		try
 		{
@@ -389,7 +390,7 @@ function(
 			
 			var layerLegend = legendsArray[activeLayer];
 			var  legendTitle = legendLabel[activeLayer];
-			var legendBody = '<table>';
+			var legendBody = '<table class="legendTable" width="195">';
 			
 			legendBody += 
 						'<th class="selected" id="legendHeader" colspan="4">' + 
@@ -421,7 +422,7 @@ function(
 			legendBody += '</table>';
 				
 			$('#layerLegendList').html(legendBody);
-			sortLegendList();
+			//sortLegendList();
 		}
 		
 		if ('hospitals' in clickedItem)	

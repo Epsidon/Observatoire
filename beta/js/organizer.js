@@ -4,15 +4,16 @@ Organizer.prototype.reorganizeMapsPage = function()
 {
 	var mapLeft = $("#map").offset().left;	
 	var mapTop = $("#map").offset().top;
-
+	console.log('mapToppppppppppp' +mapTop);
+	
 	var navbarBrandHeight = $(".navbar-brand").height();
 	var legendHeight = $("#layerLegendList").height();
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-	var mapWidth = $(window).width() - mapTop;
+	var mapWidth = $(window).width() - 50;
 	
-	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
+	var mapHeight = $(window).height() - 70;
 	
 	
 	var instructionHeight = $("#instruction").height();

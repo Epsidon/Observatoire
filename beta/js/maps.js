@@ -316,7 +316,7 @@ function(
 			}
 
 			map.addLayer(mapLayer[clickedServicePoint]);
-			mapServicePointLegendLabel += " - " + legendLabel[clickedServicePoint];
+			mapServicePointLegendLabel +=  legendLabel[clickedServicePoint];
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}

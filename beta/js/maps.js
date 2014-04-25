@@ -396,7 +396,7 @@ function(
 							legendTitle +
 						'</div>' ;
 						
-			legendBody += '<table class="legendTable">';
+			legendBody += '<table id="legendTable">';
 
 			for (j = 0; j < layerLegend.length; j++)
 			{
@@ -423,7 +423,6 @@ function(
 			legendBody += '</table>';
 				
 			$('#layerLegendList').html(legendBody);
-			//sortLegendList();
 		}
 		
 		if ('hospitals' in clickedItem)	
@@ -459,14 +458,14 @@ function(
 	
 	function sortLegendList()
 	{	
-		var sortedTable = $('#layerLegendList').find('tr').sort(function(a,b)
+		var sortedTable = $('#legendTable').find('tr').sort(function(a,b)
 		{ 
     		var tda = $(a).find('td:eq(2)').text(); 
     		var tdb = $(b).find('td:eq(2)').text(); 
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
 		
-		$('#layerLegendList').html( $('<table class="legendTable" id="legendTable" width="195"></table>').append(sortedTable) );
+		$('#legendTable').html( $('<table id="legendTable"></table>').append(sortedTable) );
 	
 	}
 	

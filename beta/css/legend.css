@@ -45,7 +45,7 @@
 /**
  * Legend Table with rectangular colours
  */
-.legendTable 
+#legendTable 
 {
 	border-collapse: separate;
 	border-spacing: 0px 3px;

@@ -1,0 +1,97 @@
+.legendTable {
+	border-collapse: separate;
+	border-spacing: 0px 3px;
+	padding: 15px;
+	width: 175px;
+}
+
+.legendColourRectDiv
+{
+	width:10px;
+	height:10px;
+	border:1.5px solid #000;
+}
+
+#hospitalLegendList 
+{
+	font-family: arial;
+	font-weight: bold;
+	width: 195px;
+}
+
+#legendList 
+{
+	padding: 1em;
+	border-color: #D8D7D7;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 195px;
+}
+
+#legendTitle
+ {
+	color: #000;
+	font-family: arial;
+	font-weight: bold;
+	border-bottom-color: #000;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	border-bottom-width: 0.1em;
+	padding: 4px;
+}
+
+.legendCellText
+{
+	border:1px solid #000;
+}
+
+.legendLabel
+{
+	font-size: 1.2em;
+	color:#000000;
+}
+
+div.legendTransbox 
+{
+	background-color: #F2F5F6;
+	border: 0px solid white;
+	box-shadow: 5px 5px 5px #D1D1D1;
+	opacity: 0.9;
+	font-family: arial;
+	border-width: 0.1em;
+	border-color: rgb(196, 188, 188);
+}
+
+#legendHeader 
+{
+	text-align: center;
+	font-size: 1.1em;
+	vertical-align: middle;
+	background-color: #F2F5F6;
+	color: #000000;
+	font-family: arial;
+	font-weight: bold;
+	padding: 7px;
+	border-bottom: 1px solid black;
+}
+
+#legendTitleDiv
+{ 
+	color: #000000;
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	padding: 15px;
+	width: 175px;
+	border-bottom: solid #CCCCCC;
+	border-bottom-width: 2px;	
+}
+
+.legendColorRect
+{
+	width:10px;
+	height:10px;
+	border:1px solid #000;
+}
+

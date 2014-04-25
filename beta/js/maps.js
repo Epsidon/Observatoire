@@ -395,7 +395,7 @@ function(
 							legendTitle +
 						'</div>' ;
 						
-			legendBody += '<table id="legendTable">';
+			legendBody += '<div id="legendTableDiv"><table id="legendTable">';
 
 			for (j = 0; j < layerLegend.length; j++)
 			{
@@ -419,7 +419,7 @@ function(
 					'</tr>' ;
 			}
 		
-			legendBody += '</table>';
+			legendBody += '</table></div>';
 				
 			$('#layerLegendList').html(legendBody);
 			
@@ -472,13 +472,11 @@ function(
     		
     		if (tda.match(/\d+/g) || tdb.match(/\d+/g))
 				return 0;
-
-			console.log('actually sorting');
 			
 			return tda > tdb ? 1 : tda < tdb ? -1 : 0;           
 		});
 		
-		$('#legendTable').html( $('<table id="legendTable"></table>').append(sortedTable) );
+		$('#legendTableDiv').html( $('<table id="legendTable"></table>').append(sortedTable) );
 	
 	}
 	

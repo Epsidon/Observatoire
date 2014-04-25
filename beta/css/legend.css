@@ -63,19 +63,9 @@ div.legendTransbox
 	border-color: rgb(196, 188, 188);
 }
 
-#legendHeader 
-{
-	text-align: center;
-	font-size: 1.1em;
-	vertical-align: middle;
-	background-color: #F2F5F6;
-	color: #000000;
-	font-family: arial;
-	font-weight: bold;
-	padding: 7px;
-	border-bottom: 1px solid black;
-}
-
+/** 
+ * Legend Title
+ */
 #legendTitleDiv
 { 
 	color: #000000;
@@ -88,6 +78,9 @@ div.legendTransbox
 	border-bottom-width: 2px;	
 }
 
+/** 
+ * Legend Colour Rectangles. 
+ */
 .legendColorRect
 {
 	width:10px;

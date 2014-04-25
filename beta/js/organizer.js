@@ -10,7 +10,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-	var mapWidth = $("#map").width() - (mapLeft*2);
+	var mapWidth = $(window).width() - mapTop;
 	
 	var mapHeight = $(window).height() - mapTop - navbarBrandHeight;
 	

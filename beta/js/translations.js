@@ -54,12 +54,14 @@ Fr['PDF Link '] = 'Lien pour PDF';
 Fr['Hospital'] = 'Hôpital';
 
 Fr['Mother Tongue'] = 'Langue maternelle';
+Fr['Mother Tongue (LHIN)'] = 'Langue maternelle (RLISS)';
 Fr['French='] = 'Français=';
 Fr['English='] = 'Anglais=';
 Fr['Non Official='] = 'Non officiel=';
 Fr['Total='] = 'Total=';
 Fr['Total Population in 2011:'] = 'Population en 2011 : ';
 Fr['Knowledge of Official Language'] = 'Connaissance des langues officielles';
+Fr['Knowledge of Official Language (LHIN)'] = 'Connaissance des langues officielles (RLISS)';
 
 Fr['All Hospitals'] = 'Tous les hôpitaux';
 
@@ -77,6 +79,8 @@ Fr['Neither='] = 'Ni=';
 Fr['Neither'] = 'Aucune';
 Fr['First Official Language Spoken='] = 'Première langue officielle parlée=';
 Fr['First Official Language Spoken'] = 'Première langue officielle parlée';
+Fr['First Official Language Spoken (LHIN)'] = 'Première langue officielle parlée (RLISS)';
+Fr['Language Spoken Most Often at Home (LHIN)'] = 'Langue parlée le plus souvent à la maison (RLISS)';
 Fr['Language Spoken Most Often at Home='] = 'Langue parlée le plus souvent à la maison=';
 Fr['Language Spoken Most Often at Home'] = 'Langue parlée le plus souvent à la maison';
 

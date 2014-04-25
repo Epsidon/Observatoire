@@ -522,14 +522,11 @@ th
 	border-bottom-width: 2px;	
 }
 
-.hospitalString
-{
-	border-collapse: separate;
-	border-spacing: 0px 2px;
-	border-bottom: 1px solid #000;
-	padding: 7px;
+.hospitalString {
+border-bottom: 1px solid #000;
+padding: 4px;
+width: 195px;
 }
-
 .hospitalTable
 {
 	background-color: #F2F5F6;
@@ -613,9 +610,9 @@ h2
 
 #hospitalLegendList {
 font-family: arial;
-font-weight:bold;
+font-weight: bold;
+width: 195px;
 }
-
 label 
 {
     display: block;

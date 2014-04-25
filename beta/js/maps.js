@@ -316,7 +316,7 @@ function(
 			}
 
 			map.addLayer(mapLayer[clickedServicePoint]);
-			mapServicePointLegendLabel += " - " + legendLabel[clickedServicePoint];
+			mapServicePointLegendLabel +=  legendLabel[clickedServicePoint];
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 		}
@@ -441,7 +441,7 @@ function(
 							'<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
 							' ' +
 							'</td>' +
-							'<td class="hospitalString">' +
+							'<td class="hospitalString" align="center">' +
 							 mapServicePointLegendLabel +
 							'</td>' +
 						'</tr>' ;

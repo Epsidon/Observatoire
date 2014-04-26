@@ -4,29 +4,21 @@ Organizer.prototype.reorganizeMapsPage = function()
 {
 	var mapLeft = $("#map").offset().left;	
 	var mapTop = $("#map").offset().top;
-	console.log('mapToppppppppppp' +mapTop);
 	
 	var navbarBrandHeight = $(".navbar-brand").height();
 	var legendHeight = $("#layerLegendList").height();
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-	var mapWidth = $(window).width() - 50;
+	var mapWidth = $(window).width();
 	
-	var mapHeight = $(window).height() - 70;
+	var mapHeight = $(window).height();
 	
-	
-	var instructionHeight = $("#instruction").height();
-	var instructionWidth = $("#instruction").width();
-
 	var legendTop = ($(window).height())/4;
 	var legendLeft = (mapLeft * 3);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
-
-	var instructionTop = mapTop + (mapLeft);
-	var instructionLeft = mapWidth - instructionWidth;
 	
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
@@ -68,9 +60,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 		}
 	
 	
-	$("#instruction").css(
-		{'position' : 'absolute' , 'left' : instructionLeft + 'px', 'top' : instructionTop + 'px'});	
-	
 	$("#hospitalLegendList").css(
 		{'position' : 'absolute' , 'left' : hospitalLegendLabelLeft + 'px', 'top' : hospitalLegendLabelTop + 'px'});	
 	
@@ -85,7 +74,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 
 	$("#map").height(mapHeight);
 	$("#map").width(mapWidth);	
-	
 	
 	this.reorganizeMapTitle();
 	this.reorganizeModal();
@@ -112,6 +100,14 @@ Organizer.prototype.reorganizeMapTitle = function()
 
 	$("#mapLabel").css(
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
+		
+	var instructionLabelTop = mapLableTop + 35;
+	var mapLabelRight = ($(window).width() - ($("#mapLabel").offset().left + ($("#mapLabel").width()) ))
+	var instructionLabelRight = mapLabelRight - 33;
+	
+	$("#instruction").css(
+		{'position' : 'absolute' , 'right' : instructionLabelRight + 'px', 'top' : instructionLabelTop + 'px'});
+	
 }
 
 Organizer.prototype.reorganizeModal = function()

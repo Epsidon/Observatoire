@@ -10,12 +10,11 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var legendWidth = $("#layerLegendList").width();
 	
 	var windowHeight = $(window).height();
-	var mapWidth = $(window).width();
+	var mapWidth = $(window).width() - 50;
 	
-	var mapHeight = $(window).height();
+	var mapHeight = $(window).height() - 70;
 	
-	var legendTop = ($(window).height())/4;
-	var legendLeft = (mapLeft + 10);
+	
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;
@@ -26,13 +25,13 @@ Organizer.prototype.reorganizeMapsPage = function()
 
 	if (windowHeight <= 768)
 	{
-		var hospitalLegendLabelTop = ($(window).height()) - (mapTop*2);
-		var hospitalLegendLabelLeft = (($(window).width())/2);
+		var legendTop = ($(window).height())/3;
+		var legendLeft = (mapLeft + 10);
 	}
 	else
 	{
-		var hospitalLegendLabelTop = ($(window).height()) - (mapTop*2);
-		var hospitalLegendLabelLeft = (mapLeft *2);
+		var legendTop = ($(window).height())/2;
+		var legendLeft = (mapLeft + 10);
 	}	
 
 
@@ -59,9 +58,6 @@ Organizer.prototype.reorganizeMapsPage = function()
 			$('#legendTitle').removeClass('smallerFont').addClass('smallFont');
 		}
 	
-	
-	$("#hospitalLegendList").css(
-		{'position' : 'absolute' , 'left' : hospitalLegendLabelLeft + 'px', 'top' : hospitalLegendLabelTop + 'px'});	
 	
 	$("#zoomInInstruction").css(
 		{'position' : 'absolute' , 'left' : zoomInstructionLeft + 'px', 'top' : zoomInstructionTop + 'px'});	

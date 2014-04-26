@@ -15,7 +15,7 @@ Organizer.prototype.reorganizeMapsPage = function()
 	var mapHeight = $(window).height();
 	
 	var legendTop = ($(window).height())/4;
-	var legendLeft = (mapLeft * 3);
+	var legendLeft = (mapLeft + 10);
 
 	var loaderTop = (mapHeight - $("#loadingIndicator").height()) / 2 + mapTop;
 	var loaderLeft = (mapWidth - $("#loadingIndicator").width()) / 2 + mapLeft;

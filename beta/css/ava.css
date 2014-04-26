@@ -497,11 +497,11 @@ th
 	left: 10px;
 }
 
-.hospitalString {
-border-bottom: 1px solid #000;
-padding: 4px;
-width: 195px;
+.hospitalString 
+{
+	width: 195px;
 }
+
 .hospitalTable
 {
 	background-color: #F2F5F6;

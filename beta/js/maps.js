@@ -428,7 +428,7 @@ function(
 		
 		if ('hospitals' in clickedItem)	
 		{
-			var htmlBody = '';
+			var htmlBody = '<div id="hospitalTitleDiv">' ;
 		
 			var hospitals = clickedItem.hospitals;
 			
@@ -440,7 +440,7 @@ function(
 				htmlBody += 
 						'<tr>' + 
 							'<td>' +
-							'<img src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
+							'<img style="padding-right:3px;" src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
 							' ' +
 							'</td>' +
 							'<td class="hospitalString" align="center">' +
@@ -448,10 +448,10 @@ function(
 							'</td>' +
 						'</tr>' ;
 					
-				htmlBody += '</table>';
+				htmlBody += '</table></div>';
 			}
 		
-			$('#hospitalLegendList').html(htmlBody);
+			$('#layerLegendList').append(htmlBody);
 		}		
 
 		$('#legendList').show();

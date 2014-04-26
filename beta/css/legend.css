@@ -30,16 +30,27 @@
 /** 
  * Legend Title
  */
-#legendTitleDiv
-{ 
+#legendTitleDiv 
+{
 	color: #000000;
 	font-size: 13px;
 	font-family: arial;
 	font-weight: bold;
-	padding: 15px;
+	padding: 10px;
 	width: 175px;
-	border-bottom: solid #CCCCCC;
-	border-bottom-width: 2px;	
+	border-bottom: solid #000000;
+	border-bottom-width: 1px;
+}
+
+#hospitalTitleDiv
+{
+	color: #000000;
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	padding: 10px;
+	width: 175px;
+	border-top: solid #000000 1px;
 }
 
 /**
@@ -49,7 +60,7 @@
 {
 	border-collapse: separate;
 	border-spacing: 0px 3px;
-	padding: 15px;
+	padding: 8px;
 	width: 175px;
 }
 
@@ -58,8 +69,8 @@
  */
 .legendColourRectDiv
 {
-	width:10px;
-	height:10px;
+	width:40px;
+	height:20px;
 	border:1.5px solid #000;
 }
 

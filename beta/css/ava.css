@@ -456,7 +456,8 @@ body
 	-o-border-radius: 5px 5px 0px 0px;
 	cursor: default;
 	border: 1px solid #BEB7B7;
-	border-bottom: none;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(32, 29, 29);
 	height: 40px;
 	font-family: arial;
 	font-weight: bold;

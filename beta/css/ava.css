@@ -35,6 +35,7 @@ li
 
  .nav>li>a:hover, .nav>li>a:focus {
 	background-color: inherit;
+	color: inherit !important;
 }
 
 .navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover 
@@ -55,11 +56,12 @@ li
 
 .selectedTab
 {
-	color: #000;
+	color: #fff !important;
 	border-style: solid;
-	border-color: #888AC4;
-	border-width: 2px;
-	height: 34px;
+	border-color: #ffffff;
+	border-width: 3px;
+	border-radius:3px;
+	height: 35px;
 }
 
 

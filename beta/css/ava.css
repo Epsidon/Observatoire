@@ -332,12 +332,45 @@ font-family: arial;
 font-size: 1.1em;
 }
 
-.table-striped>tbody>tr:nth-child(odd)>th
- {
-background-color: #141242;
-font-size: 1.1em;
-font-weight: bold;
-font-family: arial;
+.table-striped>tbody>tr:nth-child(odd)>th 
+{
+	background-color: #A5B95A;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: arial;
+	color: #000;
+}
+
+.esriPopup .titleButton.maximize 
+{
+	right: 22px;
+	background-position: 0 -251px;
+	width: 11px;
+	height: 11px;
+	top: 15px;
+}
+
+.esriPopup .titleButton.close 
+{
+	background-position: 0 -171px;
+	width: 12px;
+	height: 17px;
+	top: 12px;
+	right: 5px;
+}
+
+.esriPopup .actionsPane 
+{
+	padding: 9px 10px 4px 10px;
+	background-color: #F7F7F7;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-o-border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid #3F3E3E;
+	height: 40px;
+	border-top-style: solid;
+	border-top-width: 1px;
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
@@ -413,7 +446,7 @@ body
 
 .esriPopup .titlePane 
 {
-	background-color: #2F3335;
+	background-color: #7C8B44;
 	color: #FFFFFF;
 	line-height: 40px;
 	padding-left: 6px;
@@ -713,6 +746,7 @@ div.transbox
 	font-weight: bold;
 	border-width: 0.1em;
 	border-color: rgb(196, 188, 188);
+	height: 30px;
 }
 
 .navbar-toggle 

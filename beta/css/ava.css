@@ -26,11 +26,22 @@ li
 	padding-left: 5px;
 }
 
-.homeTitle
+.homeTitle 
 {
 	font-family: arial;
 	font-weight: bold;
-	font-size:16px;
+	font-size: 16px;
+	color: #7C8B44;
+}
+
+.contact
+{
+	color: #7C8B44;
+}
+
+.mail
+{
+	color: #F15A24;
 }
 
  .nav>li>a:hover, .nav>li>a:focus {

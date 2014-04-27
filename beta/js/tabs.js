@@ -15,8 +15,8 @@ Tabs.prototype.getHome = function ()
 				'<ul id="p5">' + translator.T('2) Valorisation and transfer of knowledge') + '</ul>'+
 			'</p>' +
 			
-			'<p><b>Contact :</b>' + 
-			'<a href="mailto:louise.bouchard@uottawa.ca">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
+			'<p><b class="contact">Contact :</b>' + 
+			'<a href="mailto:louise.bouchard@uottawa.ca" class="mail">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 			
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+

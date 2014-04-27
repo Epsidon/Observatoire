@@ -33,13 +33,18 @@ li
 	font-size:16px;
 }
 
-.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover
- {
-	color: #000;
+ .nav>li>a:hover, .nav>li>a:focus {
+	background-color: inherit;
+}
+
+.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover 
+{
 	border-style: solid;
-	border-color: #888AC4;
-	border-width: 2px;
-	height: 34px;
+	border-color: #FFFFFF;
+	border-width: 4px;
+	height: 35px;
+	border-radius: 3px;
+	color: #FFF;
 }
 
 .mapLabel 
@@ -864,7 +869,7 @@ font-size: 14px;
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a:hover {color: #000;}
-.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {color:#000;}
+.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover {color: #FFF;}
 .navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
 .navbar-primary .navbar .nav > li.dropdown.open.active > a:hover,
 .navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;border-color: #fff;}

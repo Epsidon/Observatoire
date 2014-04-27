@@ -610,7 +610,7 @@ h2
 	border-style: solid;
 	border: 3px solid;
 	border-radius: 10px;
-	border-color: #888AC4;
+	border-color: #B7C77B;
 }
 
 
@@ -815,16 +815,17 @@ padding: 0.5em;
 border-radius: 0.5em;
 }
 
-.homeContainer {
-margin-right: auto;
-margin-left: auto;
-padding: 15px;
-border-style: solid;
-border-radius: 7px;
-border-color: #8E999F;
-margin: 10px;
-font-family: arial;
-font-size: 14px;
+.homeContainer 
+{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	border-color: #A5B95A;
+	margin: 10px;
+	font-family: arial;
+	font-size: 14px;
 }
 
 .researchContainer

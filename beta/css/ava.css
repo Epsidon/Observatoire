@@ -321,15 +321,14 @@ a
 	padding-bottom: 15px;	
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) 
-{
-background-color: #E4E4E6;
-padding: 2px;
-border-top: 1px solid #000;
-text-align: center;
-vertical-align: middle;
-font-family: arial;
-font-size: 1.1em;
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) {
+	background-color: #EDF1DE;
+	padding: 2px;
+	border-top: 1px solid #000;
+	text-align: center;
+	vertical-align: middle;
+	font-family: arial;
+	font-size: 1.1em;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>th 

@@ -309,14 +309,14 @@ a
 	border-bottom: 2px solid #A5B95A;
 	-webkit-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
+	background-color: #EBEEEB;
 }
 
-.esriSimpleSliderHomeButton 
-{
-	border-bottom: 2px solid #A5B95A;
-	background-image: url(../dijit/images/home.png);
-	background-repeat: no-repeat;
-	background-position: center;
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton
+ {
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	background-color: #EBEEEB;
 }
 
 .esriSimpleSlider 
@@ -735,7 +735,7 @@ input[type=radio], input[type=checkbox]
 
 .esriSimpleSliderHomeButton
 {
-	border-bottom: 2px solid #666666;
+	border-bottom: 2px solid #A5B95A;
 	background-image: url(../dijit/images/home.png);
 	background-repeat:no-repeat;
 	background-position:center; 

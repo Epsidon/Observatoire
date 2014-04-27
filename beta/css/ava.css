@@ -117,9 +117,9 @@ li
 .modal-footer 
 {
 	margin-top: 15px;
-	padding: 9px 10px 10px;
+	padding: 15px 15px 15px;
 	text-align: right;
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid #1D1D1D;
 }
 
 .modal-header 
@@ -159,46 +159,49 @@ a
 	font-size: 1.1em;
 }
 
-.btn-default 
-{
+.btn-default
+ {
 	color: #000;
 	background-color: #F2F5F6;
-	border-color: #A29898;
+	border-color: #6C6E6F;
+	font-family:arial;
+	font-weight:bold;
+	height: 25px;
+	line-height:2px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	color: #000;
+	background-color: #F2F5F6;
+	border-color: #6C6E6F;
+	font-family:arial;
+	font-weight:bold;
+	height: 25px;
+	line-height:2px;
 }
 
 .btn-primary 
 {
-	color: #000;
-	background-color: #BDCCD4;
-	border-color: #adadad;
-	font-family: arial bold;
+	color: #fff;
+	background-color: #7C8B44;
+	border-color: #6C6E6F;
+	font-family:arial;
+	font-weight:bold;
+	height: 25px;
+	line-height:2px;
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-color: #000;
-background-color: #F2F5F6;
-border-color: #adadad;
-font-family: arial;
-font-size: 14px;
-font-weight: bold;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active
+ {
+	color: #fff;
+	background-color: #7C8B44;
+	border-color: #6C6E6F;
+	font-family:arial;
+	font-weight:bold;
+	height: 25px;
+	line-height:2px;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-color: #000;
-background-color: #BDCCD4;
-border-color: #adadad;
-font-family: arial;
-font-size: 14px;
-font-weight: bold;
-}
-
-.btn-default 
-{
-	color: #000;
-	background-color: #F2F5F6;
-	border-color: #adadad;
-	font-family: arial bold;
-}
 
 .modal-header .close
  {
@@ -239,7 +242,7 @@ font-weight: bold;
 
 .modal-header 
 {
-	background-color: #BDCCD4;
+	background-color: #B7C77B;
 }
 
 .navbar-inverse 
@@ -585,7 +588,8 @@ input
     margin:0;
     vertical-align: middle;
     position: relative;
-    top: -1px;
+    top: -1px;\
+	color:red;
     *overflow: hidden;
 }
 

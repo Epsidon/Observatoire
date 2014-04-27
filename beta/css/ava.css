@@ -281,27 +281,27 @@ a
 
 #homeTabContainer 
 {
-	background-color: #8E999F;
+	background-color: #A5B95A;
 }
 
 #mapsTabContainer 
 {
-	background-color: #BDCCD4;
+	background-color: #B7C77B;;
 }
 
 #analysisTabContainer 
 {
-	background-color: #D7E0E5;
+	background-color: #C9D59C;
 }
 
 #partnersTabContainer 
 {
-	background-color: #E5EBEE;
+	background-color: #DBE3BD;
 }
 
 #languageContainer 
 {
-	background-color: #FFFFFF;
+	background-color: #EDF1DE;
 }
 
 .navbarItem
@@ -411,7 +411,8 @@ font-size: 1.2em;
 	margin-bottom: 20px;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	border-color: #5F5F5F;
+	border-color: #DAD4D4;
+	background-color: #C9D59C;
 }
 
 body 
@@ -735,10 +736,10 @@ a.methodologicalNote
 	margin-right:10px;
 }
 
-div.transbox 
-{
-	background-color: #F2F5F6;
-	border: 0px solid white;
+div.transbox
+ {
+	background-color: #7C8B44;
+	border: 0px solid rgb(77, 109, 81);
 	box-shadow: 5px 5px 5px #D1D1D1;
 	opacity: 0.9;
 	padding: 0.5em;
@@ -747,6 +748,7 @@ div.transbox
 	border-width: 0.1em;
 	border-color: rgb(196, 188, 188);
 	height: 30px;
+	color: #F2F5F6;
 }
 
 .navbar-toggle 
@@ -820,11 +822,11 @@ font-size: 14px;
 }
 
 .navbar-primary .navbar
-{
-	background: #2f3335;
+ {
+	background: #7C8B44;
 	border-bottom: none;
 	margin: 9px;
-	border-radius:0.5em;
+	border-radius: 0.5em;
 }
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a {color: #000000;}

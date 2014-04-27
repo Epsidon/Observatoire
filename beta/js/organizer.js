@@ -82,7 +82,8 @@ Organizer.prototype.reorganizeMapTitle = function()
 		setTimeout(organizer.reorganizeMapTitle,100);
 		return;
 	}
-
+	
+	var mapLeft = $("#map").offset().left;
 	var zoomSliderTop = $("#map_zoom_slider").offset().top;
 	var mapTop = $("#map").offset().top;
 	var mapWidth = $("#map").width();
@@ -98,8 +99,8 @@ Organizer.prototype.reorganizeMapTitle = function()
 		{'position' : 'absolute' , 'left' : mapLableLeft + 'px', 'top' : mapLableTop + 'px'});
 		
 	var instructionLabelTop = mapLableTop + 35;
-	var mapLabelRight = ($(window).width() - ($("#mapLabel").offset().left + ($("#mapLabel").width()) ))
-	var instructionLabelRight = mapLabelRight - 33;
+	var mapLabelRight = ((mapWidth + (mapLeft/2)) - ($("#mapLabel").offset().left + ($("#mapLabel").width()) ))
+	var instructionLabelRight = mapLabelRight ;
 	
 	$("#instruction").css(
 		{'position' : 'absolute' , 'right' : instructionLabelRight + 'px', 'top' : instructionLabelTop + 'px'});

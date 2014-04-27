@@ -304,6 +304,38 @@ a
 	background-color: #EDF1DE;
 }
 
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton 
+{
+	border-bottom: 2px solid #A5B95A;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.esriSimpleSliderHomeButton 
+{
+	border-bottom: 2px solid #A5B95A;
+	background-image: url(../dijit/images/home.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.esriSimpleSlider 
+{
+	position: absolute;
+	text-align: center;
+	border: 2px solid #A5B95A;
+	background-color: #FFF;
+	color: #A5B95A;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
 .navbarItem
 {
 	border:0px;

@@ -7,14 +7,14 @@ Tabs.prototype.getHome = function ()
 			'<table>' +
 				'<tr>' +
 					'<td>' +
-						'<img src="images/accueil.jpg" id="accueil"/>' +
+						'<img src="images/accueil_img.jpg" id="accueil"/>' +
 					'</td>' +
 				
 					'<td>' +
-						'<p class="homeTitle">' +  translator.T('The Health Observatory') + '</p>' +
+						'<p class="homeTitle">' +  translator.T('Observatory of Minority Health') + '</p>' +
 						
-						'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.') + '</p>'+
-						'<p id="p2">' + translator.T('The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.') + '</p>'+
+						'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.') + '</p>'+
+						'<p id="p2">' + translator.T('The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.') + '</p>'+
 						
 						'<p id="p3">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
 						'<p>' +
@@ -22,7 +22,7 @@ Tabs.prototype.getHome = function ()
 							'<ul id="p5">' + translator.T('2) Valorisation and transfer of knowledge') + '</ul>'+
 						'</p>' +
 						
-						'<p><b class="contact">Contact :</b>' + 
+						'<p><b class="contact">Contact : </b>' + 
 						'<a href="mailto:louise.bouchard@uottawa.ca" class="mail">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 					'</td>' +
 				'</tr>' +	
@@ -30,39 +30,39 @@ Tabs.prototype.getHome = function ()
 			
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
-				'<b>' + translator.T('Scientific Director') + '</b>' +
-				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' + 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</a></br>' +
+				'<b>' + translator.T('Scientific director') + '</b>' +
+				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' + 'Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa</a></br>' +
 			'</p>' +
 			
 			'<p>' +
-				'<b>' + translator.T('Co-researcher') + '</b>' +
-				'<br>Guy-Vincent Jourdan, PhD, École d’ingénierie et de technologie de l’information, Institut de recherche de l’Hôpital Montfort, Université d’Ottawa</br>' +
+				'<b>' + translator.T('Co-Investigator') + '</b>' +
+				'<br>Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa</br>' +
 			'</p>' +
 			
 			'<p>' +
-				'<b>' + translator.T('GIS, data and analysis') + '</b>' +
-				'<br>Érik Bourdon, conseiller</br>' +
+				'<b>' + translator.T('Geomatic, Data and Analysis') + '</b>' +
+				'<br>Érik Bourdon, Manager</br>' +
 			'</p>' +
 			
 			
 				'<b>' + translator.T('Analysts') + '</b>' +
-				'<li>Ewa Sucha, PhD (candidate), Biostatistique</li>' +
-				'<li>Golnaz Sedigh, PhD (candidate), Économie</li>' +
-				'<li>Ricardo Batista, PhD (candidat), Santé des populations</li>' +
+				'<li>Ewa Sucha, PhD (candidate), Biostatistic</li>' +
+				'<li>Golnaz Sedigh, PhD (candidate), Economy</li>' +
+				'<li>Ricardo Batista, PhD (candidat), Population Health</li>' +
 			
 			'<br>' +
 				'<b>' + translator.T('Transfer and application of knowledge') + '</b>' +
-				'<br>Solange van Kemenade, PhD,  Associée de recherche, Université d’Ottawa</br>' +
+				'<br>Solange van Kemenade, PhD, Research Associate, University of Ottawa</br>' +
 			'</br>' +	
 			
 				'<b>' + translator.T('Developers') + '</b>' +
 				'<li>Ava Ahadipour</li>' +
-				'<li>Seyed M. Mirtaheri</li>' +
+				'<li>Seyed M Mirtaheri</li>' +
 			
 		'<br>' +
 			'<p class="homeTitle">' + translator.T('Financial support') + '</p>' + 
 			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
-			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a>' +
+			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministry of Health and Long Term Care of Ontario') + '</a>' +
 		'</br>' +		
 		'</div>';
 

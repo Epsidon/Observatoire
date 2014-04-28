@@ -14,7 +14,7 @@ Tabs.prototype.getHome = function ()
 						'<p class="homeTitle">' +  translator.T('Observatory of Minority Health') + '</p>' +
 						
 						'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.') + '</p>'+
-						'<p id="p2">' + translator.T('The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.') + '</p>'+
+						'<p >' + translator.T('The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.') + '</p>'+
 						
 						'<p id="p3">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
 						'<p>' +
@@ -31,28 +31,28 @@ Tabs.prototype.getHome = function ()
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
 				'<b>' + translator.T('Scientific director') + '</b>' +
-				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' + 'Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa</a></br>' +
+				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' +  translator.T('Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</a></br>' +
 			'</p>' +
 			
 			'<p>' +
 				'<b>' + translator.T('Co-Investigator') + '</b>' +
-				'<br>Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa</br>' +
+				'<br>' +  translator.T('Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</br>' +
 			'</p>' +
 			
 			'<p>' +
 				'<b>' + translator.T('Geomatic, Data and Analysis') + '</b>' +
-				'<br>Érik Bourdon, Manager</br>' +
+				'<br>'+ translator.T('Érik Bourdon, Manager') + '</br>' +
 			'</p>' +
 			
 			
 				'<b>' + translator.T('Analysts') + '</b>' +
-				'<li>Ewa Sucha, PhD (candidate), Biostatistic</li>' +
-				'<li>Golnaz Sedigh, PhD (candidate), Economy</li>' +
-				'<li>Ricardo Batista, PhD (candidat), Population Health</li>' +
+				'<li>'+ translator.T('Ewa Sucha, PhD (candidate), Biostatistic') + '</li>' +
+				'<li>' + translator.T('Golnaz Sedigh, PhD (candidate), Economy') + '</li>' +
+				'<li>'+  translator.T('Ricardo Batista, PhD (candidat), Population Health') + '</li>' +
 			
 			'<br>' +
 				'<b>' + translator.T('Transfer and application of knowledge') + '</b>' +
-				'<br>Solange van Kemenade, PhD, Research Associate, University of Ottawa</br>' +
+				'<br>' +  translator.T('Solange van Kemenade, PhD, Research Associate, University of Ottawa') + '</br>' +
 			'</br>' +	
 			
 				'<b>' + translator.T('Developers') + '</b>' +
@@ -116,14 +116,35 @@ Tabs.prototype.getPartners = function ()
 
 	var body =
 		'<div class="partnersContainer">' +	
-			'<li><a href="http://www.epsidon.com/" target="_blank">EPSIDON</a></li>' +
-			'<li><a href="http://www.jwcomm.ca/" target="_blank">J W COMM INC.</a></li>' +
-			'<li class="ENhealthForceOntario"><a href="http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'eng/Home') + '" target="_blank">' + translator.T('Health Force Ontario') + '</a></li>' +
-			'<li><a href=" http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('IRHM -Institut de recherche de l’Hôpital Montfort') + '</a></li>' +
-			'<li><a href="https://www.ophrdc.org/" target="_blank">OPHRDC - Ontario Physician Human Resources Data Center</a></li>' +
-			'<li class="ENministryOfHealth"><a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/default.aspx':'eng') + '" target="_blank">' + translator.T('Ministry of Health and Long-Term Care of Ontario') + '</a></li>' +
-			'<li><a href="http://www.rrasfo.ca/" target="_blank">RRASFO – Réseau de recherche appliquée sur la santé de la population francophone de l’Ontario</a></li>' +
-			'<li class="ENStatisticCanada"><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + translator.T('Statistics Canada') + '</a></li>' +
+			'<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">' +
+				'<tr>'+
+					'<td colspan="4">'+
+						'<p class="homeTitle">L&rsquo;équipe de l&rsquo;Observatoire de la santé des minorités remercie ses partenaires   pour la mise en place de ce projet.</p>'+
+					'</blockquote>'+
+					'</td>'+
+				'</tr>'+
+				
+			
+				'<tr>'+
+					'<td width="25%" align="right" valign="bottom"><p><img src="images/ontario.jpg" width="127" height="47" /></p>'+
+					 '<p><a href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/ophrdc.jpg" width="204" height="38" >' + '</a></p>' +
+					 '<p><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + '<img border="0" width="205" height="30" src="images/stat_canada.jpg" width="204" height="38" >' + '</a></p>' +
+					  
+					'<td width="75%" colspan="3" valign="top"><p><strong>Le soutien financier est assuré par le<span class="homeTitle"> Ministère de la santé et des soins de   longue durée de l&rsquo;Ontario</span>.</strong></p>'+          
+					  '<p><strong>Les données utilisées sont fournies par<span class="homeTitle"> Professions Santé Ontario</span>, <span class="homeTitle">OPHRDC</span> (Ontario Physician Human Resources Data Center), le <span class="homeTitle">Ministère de la santé et des   soins de longue durée de l&rsquo;Ontario</span> et <span class="boldcolor">Statistique Canada</span>. </strong></p>          <p><strong>Aide à la conception : <br />'+
+						'<span class="homeTitle">          RRASFO</span> – Réseau de recherche appliquée sur la santé de la   population francophone de l&rsquo;Ontario,<br />'+
+					  '<span class="homeTitle">J W COMM INC.</span>, <span class="homeTitle">IRHM</span> (Institut de   recherche de l&rsquo;Hôpital Montfort)</strong></p>'+  
+					  '<p><strong>Soutien et réalisation technique : <span class="homeTitle">Epsidon Inc</span>.</strong></p></td>'+
+				'</tr>'+
+				
+				'<tr>'+	  
+					'<td width="25%" align="center" valign="middle"><p><a href="http://www.rrasfo.ca/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/rrasfo.jpg">' + '</a></p></td>'+
+					'<td width="25%" align="center" valign="middle"><p><a href="http://www.jwcomm.ca/' + (router.getLanguage() == 'french'? '':'english.htm') + '" target="_blank">' + '<img border="0" src="images/jwcomm.jpg"  width="200" height="50" >' + '</a></p></td>'+
+					'<td width="25%" align="center" valign="middle"><p><a href="http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0"  src="images/irhm.jpg"  width="200" height="50" >' + '</a></p></td>'+
+					'<td width="25%" align="center" valign="middle"><p><a href="http://www.epsidon.com/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/epsidon.jpg"  width="157" height="50" >' + '</a></p></td>'+
+			  '</tr>'+
+			'</table>' +
+	
 		'</div>';
 
 

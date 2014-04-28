@@ -56,7 +56,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/RLISSGeoportalMaps/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/RlissGeoportal/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';
@@ -895,7 +895,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${MTLHIN.MotherTo_2}</td>"+
+	"<td align='center'>${MTLHIN.Frprop}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_4}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_3}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_5}</td>"+
@@ -914,7 +914,7 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[16]['outFields'] = new Array("MTLHIN.MotherTo_2", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5",
+	layerData[16]['outFields'] = new Array("MTLHIN.Frprop", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5",
 	"MTLHIN.MotherTo_1", "MTLHIN.FrP", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
 
 	layerData[17] = [];
@@ -941,7 +941,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${Knowledget.frprop_1}" + "%" + "</td>"+
+	"<td align='center'>" + "${Knowledget.FrP}" + "%" + "</td>"+
 	"<td align='center'>" + "${Knowledget.EnProp}" + "%" + "</td>"+
 	"<td align='center'>" + "${Knowledget.ENFrPr}" + "%" + "</td>"+
 	"<td align='center'>" + "${Knowledget.NeitherP}" + "%" + "</td>"+
@@ -952,9 +952,9 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[17]['outFields'] = new Array("lhin.csv.LHINNames", "lhin.csv.LHINCode2013", "Knowledget.Knowledg_2", "Knowledget.Knowledg_4","Knowledget.Knowledg_3", "Knowledget.Knowledg_5",
+	layerData[17]['outFields'] = new Array("lhin.csv.LHINNames", "lhin.csv.LHINCode2013", "Knowledget.FrP", "Knowledget.Knowledg_4","Knowledget.Knowledg_3", "Knowledget.Knowledg_5",
 	"Knowledget.Knowledg_1", "Knowledget.frprop_1",
-	"Knowledget.EnProp", "Knowledget.ENFrPr","Knowledget.NeitherP");
+	"Knowledget.EnProp", "Knowledget.ENFrPr","Knowledget.NeitherP", "Knowledget.Knowledg_2");
 	
 	layerData[18] = [];
 	layerData[18]['infoWindowTitle'] = "<b>" + translator.T("First Official Language Spoken (LHIN)") + "</b>";
@@ -972,7 +972,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${FirstOfficial.FirstOff_2}</td>"+
+	"<td align='center'>${FirstOfficial.FrProp}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_4}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_3}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_5}</td>"+
@@ -991,7 +991,7 @@ function translateMap()
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
-	layerData[18]['outFields'] = new Array("FirstOfficial.FirstOff_2", "FirstOfficial.FirstOff_4", "FirstOfficial.FirstOff_3", 
+	layerData[18]['outFields'] = new Array("FirstOfficial.FrProp", "FirstOfficial.FirstOff_4", "FirstOfficial.FirstOff_3", 
 	"FirstOfficial.FirstOff_5", "FirstOfficial.FirstOff_1", "FirstOfficial.FrP",
 	"FirstOfficial.EnP", "FirstOfficial.ENFrP", "FirstOfficial.NeitherP", "lhin.csv.LHINCode2013", "lhin.csv.LHINNames");
 	
@@ -1021,7 +1021,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${ELanguageSpokenAtHome.FrPr}" + "%" + "</td>"+
+	"<td align='center'>" + "${ELanguageSpokenAtHome.FrProp}" + "%" + "</td>"+
 	"<td align='center'>" + "${ELanguageSpokenAtHome.EnPr}" + "%" + "</td>"+
 	"<td align='center'>" + "${ELanguageSpokenAtHome.EnFrPr}" + "%" + "</td>"+
 	"<td align='center'>" + "${ELanguageSpokenAtHome.NeitherP}" + "%" + "</td>"+
@@ -1037,7 +1037,7 @@ function translateMap()
 	layerData[19]['outFields'] = new Array( "lhin.csv.LHINCode2013", "lhin.csv.LHINNames", "ELanguageSpokenAtHome.Language_2",
 	"ELanguageSpokenAtHome.Language_4", "ELanguageSpokenAtHome.Language_3", "ELanguageSpokenAtHome.Language_6", 
 	"ELanguageSpokenAtHome.Language_5", "ELanguageSpokenAtHome.Total", "ELanguageSpokenAtHome.EnPr",
-	"ELanguageSpokenAtHome.FrPr", "ELanguageSpokenAtHome.EnFrPr", 
+	"ELanguageSpokenAtHome.FrProp", "ELanguageSpokenAtHome.EnFrPr", 
 	"ELanguageSpokenAtHome.otherP", "ELanguageSpokenAtHome.NeitherP");
 	
 	layerData[20] = [];

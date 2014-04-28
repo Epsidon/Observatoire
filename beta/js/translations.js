@@ -286,12 +286,17 @@ Fr['French'] = 'Français';
 Fr['English'] = 'Anglais';
 Fr['Others'] = 'Autres';
 Fr['Total Population in 2011: '] = 'Population totale en 2011 : ';
+Fr['Ministry of Health and Long Term Care of Ontario'] = 'Ministère de la santé et des soins de longue durée de l’Ontario';
 
 Fr['Dissemination Area(DA) #'] = 'Aire de diffusion(AD) #';
 Fr[' is part of the '] = ' fait partie du RLISS ';
 Fr['DA'] = 'AD';
 Fr[' Local Health Integration Network (LHIN).'] = '.';
 Fr['Ontario']= 'Ontario';
+
+Fr['Observatory of Minority Health'] = 'Observatoire de la santé des minorités';
+
+Fr['Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa'] = 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa';
 
 
 

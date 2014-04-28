@@ -4,19 +4,29 @@ Tabs.prototype.getHome = function ()
 {
 	var body = 
 		'<div class="homeContainer">' +
-			'<p class="homeTitle">' +  translator.T('The Health Observatory') + '</p>' +
-			
-			'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.') + '</p>'+
-			'<p id="p2">' + translator.T('The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.') + '</p>'+
-			
-			'<p id="p3">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
-			'<p>' +
-				'<ul id="p4">' + translator.T('1) Activities of data collection, research and production of new knowledge') + '</ul>'+
-				'<ul id="p5">' + translator.T('2) Valorisation and transfer of knowledge') + '</ul>'+
-			'</p>' +
-			
-			'<p><b class="contact">Contact :</b>' + 
-			'<a href="mailto:louise.bouchard@uottawa.ca" class="mail">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
+			'<table>' +
+				'<tr>' +
+					'<td>' +
+						'<img src="images/accueil.jpg" id="accueil"/>' +
+					'</td>' +
+				
+					'<td>' +
+						'<p class="homeTitle">' +  translator.T('The Health Observatory') + '</p>' +
+						
+						'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.') + '</p>'+
+						'<p id="p2">' + translator.T('The Observatory of Minority Health (OMH) aims to fill these gaps and improve knowledge about health and access to health services for the Francophone minority population of Ontario.') + '</p>'+
+						
+						'<p id="p3">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
+						'<p>' +
+							'<ul id="p4">' + translator.T('1) Activities of data collection, research and production of new knowledge') + '</ul>'+
+							'<ul id="p5">' + translator.T('2) Valorisation and transfer of knowledge') + '</ul>'+
+						'</p>' +
+						
+						'<p><b class="contact">Contact :</b>' + 
+						'<a href="mailto:louise.bouchard@uottawa.ca" class="mail">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
+					'</td>' +
+				'</tr>' +	
+			'</table>' +
 			
 			'<p>' +
 				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+

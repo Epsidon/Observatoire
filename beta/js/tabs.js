@@ -151,7 +151,7 @@ Tabs.prototype.getPartners = function ()
 	return body;	
 };
  
-Tabs.prototype.getAnalysis = function ()
+Tabs.prototype.getResearch = function ()
 {
 	var body = 
 		'<div class="researchContainer">' +

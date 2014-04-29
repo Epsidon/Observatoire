@@ -125,7 +125,7 @@ Fr['With the Support of:'] = 'Avec le soutien de:';
 
 Fr['HOME'] = 'ACCUEIL';
 Fr['INTERACTIVE MAPS'] = 'CARTES INTÉRACTIVES';
-Fr['ANALYSIS'] = 'ANALYSES';
+Fr['RESEARCH'] = 'RESEARCH';
 Fr['PARTNERS'] = 'PARTENAIRES';
 Fr['Methodological Notes'] = 'Notes méthodologiques';
 Fr['LEGENDS'] = 'légende';

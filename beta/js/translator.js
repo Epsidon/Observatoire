@@ -19,7 +19,7 @@ Translator.prototype.translatePage = function()
 	$('#notesTitle').html(this.T('Methodological Notes'));
 	$('#homeTab').html(this.T('HOME'));
 	$('#mapsTab').html(this.T('INTERACTIVE MAPS'));
-	$('#analysisTab').html(this.T('RESEARCH'));
+	$('#researchTab').html(this.T('RESEARCH'));
 	$('#partnersTab').html(this.T('PARTNERS'));
 	
 	$('#withSupportOfMsg').html(this.T('With the Support of:'));

@@ -18,7 +18,7 @@ Router.prototype.route = function()
 	var currentHashArray = location.hash.split('_');
 	
 	/**
-	 * it gets element 1 of hashArray (which is "maps","analysis", ...)
+	 * it gets element 1 of hashArray (which is "maps","research", ...)
 	 * and based on the result hash
 	 * it calls methods 
 	 * if hash ="maps" --> tabs.getMaps
@@ -36,8 +36,8 @@ Router.prototype.route = function()
 			$('#homeTab').removeClass('selectedTab');
 			break;
 	
-		case 'analysis':
-			var body = tabs.getAnalysis();
+		case 'research':
+			var body = tabs.getResearch();
 			$('#homeTab').removeClass('selectedTab');
 			break;
 	

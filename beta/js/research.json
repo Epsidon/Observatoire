@@ -1,0 +1,176 @@
+{
+	"sections": 
+	[
+		{
+			"sectionTitle":"Profil de la santé",
+			"publications": 
+			[
+				{
+					"authors": "Bouchard L, Makvandi E, Sedigh G, van Kemenade S (2014).",
+					"title": "The health of the Francophone Population Aged 65 and over in Ontario.",
+					"pdfs": 
+					[
+						{
+							"desc": "RASFO, Université d’Ottawa",
+							"url": ""
+						},
+						{
+							"desc": "Rapport court en français",
+							"url": ""
+						},
+						{
+							"desc": "Rapport court en anglais",
+							"url": ""
+						},
+					]
+				},
+				{
+					"authors": "Bouchard L, Leis A (coord.) (2013)",
+					"title": "La santé des populations de langue officielle en situation minoritaire.",
+					"desc": "Canadian Journal of Public Health/ Revue canadienne de santé publique, Numéro spécial, 104 (5).", 
+					"url": "http://journal.cpha.ca/index.php/cjph/issue/view/303"
+				},
+				{
+					"authors": "Bouchard L, Sedigh G*, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)",
+					"title": "Language as an important determinant of poverty in the aging Francophone minority population in Canada.",
+					"desc": "International Journal of Aging and Society, (2) 4 : 61-76",
+					"pdfs": 
+					[
+						{
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Bouchard L, Desmeules M (2013)",
+					"title": "Les minorités linguistiques du Canada et la santé.",
+					"desc": "Health Care Policy/Politiques de santé, Numéro spécial 9: 38-47",
+					"pdfs": 
+					[
+						{
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Bouchard L, Gagnon-Arpin I, Makvandi E* (2012)",
+					"title": "Rapport d'enquête d'évaluation des besoins et de services de santé des francophones de la région du Sud-Est de l’Ontario. ",
+					"pdfs": 
+					[
+						{
+							"url": "this url"
+						}
+					]
+				}
+			]
+		},
+		{
+			"sectionTitle": "Services et professionnels de la santé en langue officielle minoritaire",
+			"publications":
+			[
+				{
+					"authors": "Warnke J, Bouchard L (2013). ",
+					"title": "Validation de l’équité d'accès des CLOSM aux professionnels de la santé dans les régions sociosanitaires du Canada. ",
+					"desc": "Canadian Journal of Public Health/ Revue canadienne de santé publique, Numéro spécial, 104 (6) : S49-54 ",
+					"pdfs": 
+					[
+						{
+							"desc": "",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "",
+					"title": "Centre de recherche en santé dans les milieux ruraux et du nord (2013)",
+					"desc": "La distribution des médecins de famille qui parlent français en Ontario. ",
+					"pdfs": 
+					[
+						{
+							"desc": "Recherche en FOCUS sur la recherche",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"title": "Centre for Rural and Northern Health Research (2013)",
+					"desc": "The distribution of French Speaking family Physicians in Ontario. ",
+					"pdfs": 
+					[
+						{
+							"desc": "Research in FOCUS on Research"
+						}
+					]
+				},
+				{
+					"authors": "Timony PE, Gauthier AP, Hogenbirk JC, Wenghofer EF (2013).",
+					"title": "Promising quantities, disappointing distribution.",
+					"desc": "Investigating the presence of French-speaking physicians in Ontario’s rural Francophone communities.",
+					"pdfs": 
+					[
+						{
+							"desc": "Rural and Remote Health 13: 2543.",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Gauthier AP, Timony PE, Wenghofer EF (2012).",
+					"title": "Examining the geographic distribution of French-speaking physicians in Ontario. Canadian Family Physician . ",
+					"pdfs": 
+					[
+						{
+							"desc": "Le Médecin de famille canadien, 58 : e717-724",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Bouchard L, Chomienne MH, Benoit M, Boudreau F, Lemonde M, Dufour S (2012)",
+					"title": "Les personnes âgées francophones souffrant de maladies chroniques se perçoivent-elles bien desservies par le système de santé ontarien ?",
+					"pdfs": 
+					[
+						{
+							"desc": "Canadian Family Physician/Le Médecin de famille canadien, 58 :1325",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Bouchard L, Chomienne MH, Benoit M, Boudreau F, Lemonde M, Dufour S (2012).",
+					"title": "Do chronically ill, elderly Francophone patients believe they are adequately serve by Ontario’s health care system? ",
+					"pdfs": 
+					[
+						{
+							"desc": "Canadian Family Physician/Le Médecin de famille canadien, 58 : e686",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Bouchard L, Beaulieu M, Desmeules M (2012)",
+					"title": "L'offre active des services de santé en français en Ontario: une mesure d'équité.",
+					"pdfs": 
+					[
+						{
+							"desc": "REFLETS 18 (2) ; 38-65",
+							"url": "this url"
+						}
+					]
+				},
+				{
+					"authors": "Gagnon-Arpin I, Bouchard L (2011)",
+					"title": "Les services de santé en français en Ontario: Offre, demande, utilisation. ",
+					"desc": "Rapport préparé pour le Bureau des services en français du ministère de la Santé et des Soins de Longue Durée de l'Ontario",
+					"url": "",
+					[
+						{
+							"url": "this url"
+						}
+					]
+				}
+			]
+		
+		}
+	] 
+}

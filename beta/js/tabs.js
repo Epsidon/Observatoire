@@ -11,27 +11,36 @@ Tabs.prototype.getHome = function ()
 					'</td>' +
 				
 					'<td>' +
-						'<p class="homeTitle">' +  translator.T('Observatory of Minority Health') + '</p>' +
+						'<p class="titre1">' +  translator.T('Observatory of Minority Health') + '</p>' +
+						 
+						'<p id="titre1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.') + '</p>'+
 						
-						'<p id="p1">' + translator.T('Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.') + '</p>'+
 						'<p >' + translator.T('The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.') + '</p>'+
 						
-						'<p id="p3">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
+						'<p class="titre1">' + translator.T('The activity of the Observatory is organized around two priorities: ') + '</p>' +
 						'<p>' +
-							'<ul id="p4">' + translator.T('1) Activities of data collection, research and production of new knowledge') + '</ul>'+
-							'<ul id="p5">' + translator.T('2) Valorisation and transfer of knowledge') + '</ul>'+
+							'<ol>'+
+							'<li>' + translator.T('1) Activities of data collection, research and production of new knowledge') + '</li>'+
+							'<li>' + translator.T('2) Valorisation and transfer of knowledge') + '</li>'+
+							'</ol>'+
 						'</p>' +
 						
-						'<p><b class="contact">Contact : </b>' + 
+						'<p><span class="boldcolor">Contact : </span>' + 
 						'<a href="mailto:louise.bouchard@uottawa.ca" class="mail">' + ' louise.bouchard@uottawa.ca</a>' + '</p>'+
 					'</td>' +
 				'</tr>' +	
 			'</table>' +
 			
+			'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
+			'<tbody>' +
+			'<tr>'+
+				'<td width="25%" align="right" valign="bottom"><img src="images/ontario.jpg" width="127" height="47"></td>'+
+			
+			'<td width="75%">'+
 			'<p>' +
-				'<p id="p7" class="homeTitle">' + translator.T('Team') + '</p>'+
+				'<p class="titre1">' + translator.T('Team') + '</p>'+
 				'<b>' + translator.T('Scientific director') + '</b>' +
-				'<br><a href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' +  translator.T('Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</a></br>' +
+				'<br><a class="Lousie" href="http://' + (router.getLanguage() == 'french'? 'sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">' +  translator.T('Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</a></br>' +
 			'</p>' +
 			
 			'<p>' +
@@ -59,11 +68,15 @@ Tabs.prototype.getHome = function ()
 				'<li>Ava Ahadipour</li>' +
 				'<li>Seyed M Mirtaheri</li>' +
 			
-		'<br>' +
-			'<p class="homeTitle">' + translator.T('Financial support') + '</p>' + 
-			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + '<img border="0" src="images/ontario.jpg" >' + '</a>' +
-			'<a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministry of Health and Long Term Care of Ontario') + '</a>' +
-		'</br>' +		
+		
+			'<p class="titre1">' + translator.T('Financial support') + '</p>' + 
+			
+			'<p> <strong><a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' + translator.T('Ministry of Health and Long Term Care of Ontario') + '</a></strong></p>' +
+		
+		'</td>' +
+		'</tr>'+
+		'</tbody>' +
+		'</table>' +
 		'</div>';
 
 	
@@ -116,25 +129,24 @@ Tabs.prototype.getPartners = function ()
 
 	var body =
 		'<div class="partnersContainer">' +	
-			'<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">' +
+			'<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="partnersTable">' +
 				'<tr>'+
 					'<td colspan="4">'+
-						'<p class="homeTitle">L&rsquo;équipe de l&rsquo;Observatoire de la santé des minorités remercie ses partenaires   pour la mise en place de ce projet.</p>'+
+						'<p class="titre1">L&rsquo;équipe de l&rsquo;Observatoire de la santé des minorités remercie ses partenaires   pour la mise en place de ce projet.</p>'+
 					'</blockquote>'+
 					'</td>'+
-				'</tr>'+
-				
+				'</tr>'+	
 			
 				'<tr>'+
-					'<td width="25%" align="right" valign="bottom"><p><img src="images/ontario.jpg" width="127" height="47" /></p>'+
+					'<td width="25%" align="right" valign="bottom" style="padding:45px;"><p><img src="images/ontario.jpg" width="127" height="47" /></p>'+
 					 '<p><a href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/ophrdc.jpg" width="204" height="38" >' + '</a></p>' +
 					 '<p><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + '<img border="0" width="205" height="30" src="images/stat_canada.jpg" width="204" height="38" >' + '</a></p>' +
 					  
-					'<td width="75%" colspan="3" valign="top"><p><strong>Le soutien financier est assuré par le<span class="homeTitle"> Ministère de la santé et des soins de   longue durée de l&rsquo;Ontario</span>.</strong></p>'+          
-					  '<p><strong>Les données utilisées sont fournies par<span class="homeTitle"> Professions Santé Ontario</span>, <span class="homeTitle">OPHRDC</span> (Ontario Physician Human Resources Data Center), le <span class="homeTitle">Ministère de la santé et des   soins de longue durée de l&rsquo;Ontario</span> et <span class="boldcolor">Statistique Canada</span>. </strong></p>          <p><strong>Aide à la conception : <br />'+
-						'<span class="homeTitle">          RRASFO</span> – Réseau de recherche appliquée sur la santé de la   population francophone de l&rsquo;Ontario,<br />'+
-					  '<span class="homeTitle">J W COMM INC.</span>, <span class="homeTitle">IRHM</span> (Institut de   recherche de l&rsquo;Hôpital Montfort)</strong></p>'+  
-					  '<p><strong>Soutien et réalisation technique : <span class="homeTitle">Epsidon Inc</span>.</strong></p></td>'+
+					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">Le soutien financier est assuré par le<span class="boldcolor"> Ministère de la santé et des soins de   longue durée de l&rsquo;Ontario</span>.</strong></p>'+          
+					  '<p><strong>Les données utilisées sont fournies par<span class="boldcolor"> Professions Santé Ontario</span>, <span class="boldcolor">OPHRDC</span> (Ontario Physician Human Resources Data Center), le <span class="boldcolor">Ministère de la santé et des   soins de longue durée de l&rsquo;Ontario</span> et <span class="boldcolor">Statistique Canada</span>. </strong></p>          <p><strong>Aide à la conception : <br />'+
+						'<span class="boldcolor">          RRASFO</span> – Réseau de recherche appliquée sur la santé de la   population francophone de l&rsquo;Ontario,<br />'+
+					  '<span class="boldcolor">J W COMM INC.</span>, <span class="boldcolor">IRHM</span> (Institut de   recherche de l&rsquo;Hôpital Montfort)</strong></p>'+  
+					  '<p><strong>Soutien et réalisation technique : <span class="boldcolor">Epsidon Inc</span>.</strong></p></td>'+
 				'</tr>'+
 				
 				'<tr>'+	  
@@ -151,7 +163,7 @@ Tabs.prototype.getPartners = function ()
 	return body;	
 };
  
-Tabs.prototype.getResearch = function ()
+Tabs.prototype.getAnalysis = function ()
 {
 	var body = 
 		'<div class="researchContainer">' +

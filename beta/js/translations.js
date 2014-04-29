@@ -125,7 +125,7 @@ Fr['With the Support of:'] = 'Avec le soutien de:';
 
 Fr['HOME'] = 'ACCUEIL';
 Fr['INTERACTIVE MAPS'] = 'CARTES INTÉRACTIVES';
-Fr['RESEARCH'] = 'RESEARCH';
+Fr['ANALYSIS'] = 'ANALYSES';
 Fr['PARTNERS'] = 'PARTENAIRES';
 Fr['Methodological Notes'] = 'Notes méthodologiques';
 Fr['LEGENDS'] = 'légende';
@@ -157,8 +157,7 @@ Fr['Transfer and application of knowledge'] = 'Transfert et application des conn
 Fr['Developers'] = 'Développeurs';
 Fr['Financial support'] = 'Soutien financier';
 Fr['The Health Observatory'] = 'Observatoire de la santé des minorités';
-Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for some populations.'] = 
-"L'information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.";
+Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.'] = "L'information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.";
 
 Fr['Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa'] = 
 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l’Hôpital Montfort, Université d’Ottawa';

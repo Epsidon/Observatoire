@@ -163,51 +163,124 @@ Tabs.prototype.getPartners = function ()
 	return body;	
 };
  
-Tabs.prototype.getAnalysis = function ()
+Tabs.prototype.getResearch = function ()
 {
-	var body = 
-		'<div class="researchContainer">' +
-					'<b>' + translator.T('Title: ') + '</b>' +
-					'<b id="BouchardWarnkeTitle"></b>' +
-					
-					'<br>'+
-					'<b>' + translator.T('Abstract: ') + '</b>' +
-					'<li id="BouchardWarnkeAbstract"></li>' +
-					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
-					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
-					'</br>' +
-				
-				'<br>' +
-					//'<h6 id="headerTwoResearchTab"></h6>' +
-					'<b>' + translator.T('Title: ') + '</b>' +
-					'<b id="AgingTitle"></b>' +
-					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
-					'<li id="agingAbstract"></li>' +
-					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
-					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
-				'</br>' +
+/*
+sections
+	publications
+		authors
+		title
+		desc
+		pdfs
+			desc
+			url
+		url
+*/
+	$.getJSON( "js/research.json", function( data ) 
+	{
+		var body = 
+			'<table width="70%" border="0" align="center" cellpadding="0" cellspacing="0">'+
+				'<tr><td>'+
 
-				'<br>' +
-					//'<h6 id="headerThreeResearchTab"></h6>' +
-					'<b>' + translator.T('Title: ') + '</b>' +
-					'<b id="PolicyTitle"></b>' +
-					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
-					'<li id="PolicyAbstract"></li>' +
-					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
-					'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
-				'</br>' +
-				
-				'<br>' +
-					'<b>' + translator.T('Title: ') + '</b>' +
-					'<b id="FOCUS13Title"></b>' +
-					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
-					'<li id="FOCUS13Abstract"></li>' +
-					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
-					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
-				'</br>' +
+					'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+						'<tr>'+
+							'<td>'+
+								'<p class="titre1">Recherche de l’Observatoire</p><BR/>'+
+							'</td>'+
+						'</tr>'+
+					'</table>'+
 
-		'</div>';
+				'</td></tr><tr><td>';
+
+		for(sectionIndex in data.sections)
+		{
+			var section = data.sections[sectionIndex];
 		
-	return body;
+			body += 
+				'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+      				'<tr>'+
+        				'<td>'+
+          					'<p class="titre1">' + section.sectionTitle + '</p>'+
+        				'</td>'+
+        			'</tr>'+
+  				'</table>';
+  				
+  			var publicationHtml = '<tr>';	
+  			for(publicaitonIndex in section.publications)
+  			{
+  				var publication = section.publications[publicaitonIndex];
+  			
+  				if ((publicaitonIndex != 0) && (publicaitonIndex % 2 == 0))
+  				{
+  					publicationHtml += '</tr><tr><td height="30"></td></tr><tr>';
+				}
+
+				publicationHtml += '<td width="5%"></td><td width="50%" align="left" valign="top">';
+				
+				if (publication.authors)
+				{
+					publicationHtml +=
+                		'<p class="boldcolor">' + 
+                			publication.authors + '<br />' + 
+                		'</p>';
+                }
+                
+				publicationHtml += '<p>';
+                    
+				if (publication.title)
+				{
+					publicationHtml +=
+                		'<strong>' + 
+                			publication.title + '<br />' + 
+                		'</strong><br />';
+                }
+                
+                if (publication.desc)
+                {
+					publicationHtml +=
+                		'<em>' + 
+                			publication.desc + 
+                		'</em>';                
+                }
+                
+                if (publication.url)
+                {
+					publicationHtml +=
+                		'<a class="Lousie" href="' + publication.url + '">' + 
+                			publication.url + 
+                		'</a>';                
+                }
+                
+				if (publication.pdfs)
+                {
+                	for (var pdfIndex in publication.pdfs)
+                	{
+						var pdf = publication.pdfs[pdfIndex];
+
+						if (pdf.desc)
+							publicationHtml += pdf.desc;
+                
+						publicationHtml += '<img src="images/ico_pdf.jpg" width="46" height="16" /><br />';      
+					}                
+                }
+
+				publicationHtml += '</p></td>';
+  				
+  			}	
+				
+			body += 
+				'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+					publicationHtml+
+  				'</tr></table>';
+		}
+		
+
+		body += '</td></tr></table>';
+
+
+		$('#mainContainer').html(body);	
+	});
+
+	return '';
 };
 

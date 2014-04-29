@@ -21,7 +21,7 @@
 						{
 							"desc": "Rapport court en anglais",
 							"url": ""
-						},
+						}
 					]
 				},
 				{
@@ -162,7 +162,7 @@
 					"authors": "Gagnon-Arpin I, Bouchard L (2011)",
 					"title": "Les services de santé en français en Ontario: Offre, demande, utilisation. ",
 					"desc": "Rapport préparé pour le Bureau des services en français du ministère de la Santé et des Soins de Longue Durée de l'Ontario",
-					"url": "",
+					"pdfs": 
 					[
 						{
 							"url": "this url"

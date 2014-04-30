@@ -83,24 +83,22 @@ Tabs.prototype.getHome = function ()
 	'</tr>'+
 	
 	'<tr>'+
-		
-		
 					'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
 						'<tr>'+
-						'<td width="35%"><img src="images/accueil_img.jpg" width="401" height="226" /></td>'+
-						'<td width="65%"><p class="titre1">Observatoire de la santé des minorités</p>'+
-							'<ol>'+
-							'<p>            L’information  sanitaire de qualité est essentielle à la décision politique et à la  planification de la santé. Toutefois, cette information est absente ou  incomplète pour les populations minoritaires. <br />'+
-							'L&rsquo;Observatoire de la santé des minorités vise à combler ces  lacunes et à améliorer la connaissance sur la santé, l&rsquo;accès aux services et  aux professionnels de la santé de la population francophone de l&rsquo;Ontario. </p>'+
-							'</ol>'+
-							'<p class="titre1"> L&rsquo;activité  de l&rsquo;observatoire s&rsquo;organise autour de deux pôles :&nbsp;</p>'+
-							'<ol>'+
-							'<li>              activités de collecte de données, de recherche et de production de nouvelles  connaissances</li>'+
-							'<li> valorisation et transfert des connaissances</li>'+
-							'</ol>'+
-							'<p><span class="boldcolor">Contact&nbsp;: </span><a class="boldcolor2" href="mailto:louise.bouchard@uottawa.ca">louise.bouchard@uottawa.ca</a>'+          
-							'</p>'+
-						'</td>'+
+							'<td width="35%"><img src="images/accueil_img.jpg" width="401" height="226" /></td>'+
+							'<td width="65%"><p class="titre1">Observatoire de la santé des minorités</p>'+
+								'<ol>'+
+								'<p>            L’information  sanitaire de qualité est essentielle à la décision politique et à la  planification de la santé. Toutefois, cette information est absente ou  incomplète pour les populations minoritaires.'+
+								'L&rsquo;Observatoire de la santé des minorités vise à combler ces  lacunes et à améliorer la connaissance sur la santé, l&rsquo;accès aux services et  aux professionnels de la santé de la population francophone de l&rsquo;Ontario. </p>'+
+								
+								'<p class="titre1"> L&rsquo;activité  de l&rsquo;observatoire s&rsquo;organise autour de deux pôles :&nbsp;</p>'+
+								'</ol>'+
+								'<li>              1. activités de collecte de données, de recherche et de production de nouvelles  connaissances</li>'+
+								'<li> 2. valorisation et transfert des connaissances</li>'+
+								'</ol>'+
+								'<p><span class="boldcolor">Contact&nbsp;: </span><a class="boldcolor2" href="mailto:louise.bouchard@uottawa.ca">louise.bouchard@uottawa.ca</a>'+          
+								'</p>'+
+							'</td>'+
 						'</tr>'+
 					'</table>'+
 					
@@ -237,7 +235,7 @@ Tabs.prototype.getPartners = function ()
 	return body;	
 };
  
-Tabs.prototype.getResearch = function ()
+Tabs.prototype.getResearch  = function ()
 {
 /*
 sections
@@ -250,7 +248,7 @@ sections
 			url
 		url
 */
-	$.getJSON( "js/research.json", function( data ) 
+	/* $.getJSON( "js/research.json", function( data ) 
 	{
 		var body = 
 			'<table width="70%" border="0" align="center" cellpadding="0" cellspacing="0">'+
@@ -350,11 +348,53 @@ sections
 		
 
 		body += '</td></tr></table>';
+ */
+	var body = 
+	
+	'<div class="researchContainer">' +
+ 					'<b>' + translator.T('Title: ') + '</b>' +
+ 					'<b id="BouchardWarnkeTitle"></b>' +
+ 					
+ 					'<br>'+
+ 					'<b>' + translator.T('Abstract: ') + '</b>' +
+ 					'<li id="BouchardWarnkeAbstract"></li>' +
+ 					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+ 					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+ 					'</br>' +
+ 				
+ 				'<br>' +
+ 					//'<h6 id="headerTwoResearchTab"></h6>' +
+ 					'<b>' + translator.T('Title: ') + '</b>' +
+ 					'<b id="AgingTitle"></b>' +
+ 					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+ 					'<li id="agingAbstract"></li>' +
+ 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+ 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+ 				'</br>' +
+ 
+ 				'<br>' +
+ 					//'<h6 id="headerThreeResearchTab"></h6>' +
+ 					'<b>' + translator.T('Title: ') + '</b>' +
+ 					'<b id="PolicyTitle"></b>' +
+ 				'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+ 					'<li id="PolicyAbstract"></li>' +
+ 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+ 					'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+ 				'</br>' +
+				
+				'<br>' +
+ 					'<b>' + translator.T('Title: ') + '</b>' +
+ 					'<b id="FOCUS13Title"></b>' +
+ 					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
+ 					'<li id="FOCUS13Abstract"></li>' +
+ 					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
+ 					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
+ 				'</br>' +
+		'</div>';
+		
 
-
-		$('#mainContainer').html(body);	
-	});
-
-	return '';
+		//$('#mainContainer').html(body);	
+	
+	return body;
 };
 

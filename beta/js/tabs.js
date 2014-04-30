@@ -4,7 +4,7 @@ Tabs.prototype.getHome = function ()
 {
 	var body = 
 		'<div class="homeContainer">' +
-			'<table>' +
+			/* '<table>' +
 				'<tr>' +
 					'<td>' +
 						'<img src="images/accueil_img.jpg" id="accueil"/>' +
@@ -76,7 +76,81 @@ Tabs.prototype.getHome = function ()
 		'</td>' +
 		'</tr>'+
 		'</tbody>' +
-		'</table>' +
+		'</table>' + */
+		'<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">'+
+	'<tr>'+
+	'<td></td>'+
+	'</tr>'+
+	
+	'<tr>'+
+		
+		
+					'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
+						'<tr>'+
+						'<td width="35%"><img src="images/accueil_img.jpg" width="401" height="226" /></td>'+
+						'<td width="65%"><p class="titre1">Observatoire de la santé des minorités</p>'+
+							'<ol>'+
+							'<p>            L’information  sanitaire de qualité est essentielle à la décision politique et à la  planification de la santé. Toutefois, cette information est absente ou  incomplète pour les populations minoritaires. <br />'+
+							'L&rsquo;Observatoire de la santé des minorités vise à combler ces  lacunes et à améliorer la connaissance sur la santé, l&rsquo;accès aux services et  aux professionnels de la santé de la population francophone de l&rsquo;Ontario. </p>'+
+							'</ol>'+
+							'<p class="titre1"> L&rsquo;activité  de l&rsquo;observatoire s&rsquo;organise autour de deux pôles :&nbsp;</p>'+
+							'<ol>'+
+							'<li>              activités de collecte de données, de recherche et de production de nouvelles  connaissances</li>'+
+							'<li> valorisation et transfert des connaissances</li>'+
+							'</ol>'+
+							'<p><span class="boldcolor">Contact&nbsp;: </span><a class="boldcolor2" href="mailto:louise.bouchard@uottawa.ca">louise.bouchard@uottawa.ca</a>'+          
+							'</p>'+
+						'</td>'+
+						'</tr>'+
+					'</table>'+
+					
+					'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
+						'<tr>'+
+							'<td width="25%" align="right" valign="bottom"><img src="images/ontario.jpg" width="127" height="47" /></td>'+
+							'<td width="75%"><p class="titre1">Équipe</p>'+
+								'<ol>'+
+									'<p><strong>Directrice scientifique&nbsp;</strong><br />'+
+									'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l&rsquo;Hôpital Montfort,  Université d&rsquo;Ottawa'+
+									'</p>'+
+									
+									'<p><strong>Co-chercheur<br />'+
+									'</strong>Guy-Vincent Jourdan, PhD, École d&rsquo;ingénierie  et de technologie de l&rsquo;information, Institut de recherche de l&rsquo;Hôpital  Montfort, Université d&rsquo;Ottawa'+
+									'</p>'+
+									
+									'<p><strong>Géomatique, données et analyses&nbsp;</strong><br />'+
+									'Érik Bourdon, conseiller <u></u>'+
+									'</p>'+
+									
+									'<p><strong>Analystes</strong><br />'+
+									'Ewa Sucha, PhD (candidate), Biostatistique <u></u><br />'+
+									'Golnaz Sedigh, PhD (candidate),  Économie  <br />'+
+									'Ricardo Batista, PhD (candidat), Santé  des populations'+
+									'</p>'+
+									
+									'<p><strong>Transfert  et application des connaissances<br />'+
+									'</strong>Solange  van Kemenade, PhD,  Associée de  recherche, Université d&rsquo;Ottawa'+
+									'</p>'+
+									
+									'<p><strong>Développeurs<br />'+
+									'</strong>Ava Ahadipour<br />'+
+									'Seyed M Mirtaheri'+
+									'</p>'+
+								'</ol>'+
+								
+									'<p class="titre1">Soutien financier'+
+									'</p>'+
+									
+									'<ol>'+
+									'<p> <strong>Ministère de la santé et des soins  de longue durée de l&rsquo;Ontario</strong></p>'+
+									'</ol>'+
+				'</td>'+
+			'</tr>'+
+					'</table>'+
+		
+	'</tr>'+
+	
+		
+'</table>' ; 
 		'</div>';
 
 	

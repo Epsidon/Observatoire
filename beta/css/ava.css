@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+#Meth
+{
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 4px;
+	background-color: #A5B95A;
+}
+
 .partnersStrong
 {
 	font-weight: bold;
@@ -59,6 +67,12 @@ Table.partnersTable
  .nav>li>a:hover, .nav>li>a:focus {
 	background-color: inherit;
 	color: inherit !important;
+
+}
+
+.boldcolor2
+{
+ color:#F15A24;
 }
 
 .navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover 
@@ -932,7 +946,7 @@ a .Lousie
 .navbar-primary .navbar .navbar-brand {color:#fff;}
 .navbar-primary .navbar .nav.pull-right {margin-left: 10px;margin-right: 0;}
 .navbar-xs .navbar-primary .navbar { min-height:28px; } 
-.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 8px 8px;font-size: 21px;line-height: 18px; font-family: arial; font-weight:bold; } 
+.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 8px 8px;font-size: 21px;line-height: 18px; font-family: arial;  } 
 .navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; font-family: arial;font-weight: bold; } 
 .navbar-sm .navbar-primary .navbar { min-height:40px; } 
 .navbar-sm .navbar-primary .navbar .navbar-brand{ padding: 12px 12px;font-size: 16px;line-height: 18px; } 

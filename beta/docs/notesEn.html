@@ -1,269 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Methodological Notes</title>
+<link href="../docs/ava.css" rel="stylesheet" type="text/css" />
+</head>
 
-		<title>Geoportal</title>
-
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-		<!-- Just for debugging purposes. Don't actually copy this line! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-		<!--[if !IE]><!--><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
-		<!--[if IE]><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-
-		<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/dojo/dijit/themes/claro/claro.css">
-		<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">	
-
-		<link rel="stylesheet" href="css/ava.css">
-
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
-		<script type="text/javascript" src="http://js.arcgis.com/3.8/"></script>
-		<script type="text/javascript" src="js/touchPunch.js"></script>
-		<script type="text/javascript" src="js/translations.js"></script>
-		<script type="text/javascript" src="js/translator.js"></script>
-		<script type="text/javascript" src="js/tabs.js"></script>
-		<script type="text/javascript" src="js/router.js"></script>		
-		<script type="text/javascript" src="js/organizer.js"></script>		
-		<script type="text/javascript" src="js/mapModal.js"></script>		
-		
-		<script type="text/javascript" src="js/start.js"></script>
-
-	</head>
-	<body>
-	<div class="navbar-xs">
+<body>
+<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+		<div class="navbar-xs">
 		<div class="navbar-primary">
 			<div class="navbar navbar-static-top" role="navigation">
 				<div class="navbar-header">
-					<a class="navbar-brand" id="pageTitle">Methodological Note</a>
+					<a class="navbar-brand" id="pageTitle">Minority Health Observatory</a>
+					<a class="navbar-brand" id="Meth">Methodological Notes</a>
 				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-					</ul>
-				</div><!--/.nav-collapse -->
+				
 			</div>
 		</div>
 	</div>
-	<div id="mainContainer"></div>
-	<div class="container">
-	<H4>Population (2011)</H4>
-
-<b>Mother Tongue</b>
-<br>
-	<p>
-	Mother tongue refers to the first language learned at home in childhood and still understood by the person at the time the data was collected. If the person no longer understands the first language learned, the mother tongue is the second language learned. For a person who learned two languages at the same time in early childhood, the mother tongue is the language this person spoke most often at home before starting school. The person has two mother tongues only if the two languages were used equally often and are still understood by the person. For a child who has not yet learned to speak, the mother tongue is the language spoken most often to this child at home. The child has two mother tongues only if both languages are spoken equally often so that the child learns both languages at the same time.
-	(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue01-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue01-eng.htm</a> )
-	</p>
-</br>
-
-<b>Knowledge of official languages</b>
-<br>
-	<p>
-	Knowledge of official languages refers to whether the person can conduct a conversation in English, French, in both or in neither language. For a child who has not yet learned to speak, this includes languages that the child is learning to speak at home.
-	(Source:<a href="http://www.statcan.gc.ca/concepts/definitions/language-langue04-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue04-eng.htm</a> )
-	</p>
-</br>
-
-<b>First official language spoken</b>
-<p>
-	Refers to a variable specified within the framework of the Official Languages Act.
-</p>	
-	
-	<br>Derivation</br>
-		<p>
-		First official language spoken is derived. The derivation rules assign persons to particular languages as follows.
-		</p>
-
-	<p>
-	English
-	</p>
-		<br>
-		Includes:
-		</br>
-	</p>
-	
-	<li>persons who can speak English well enough to conduct a conversation and cannot conduct a conversation in French;</li>
-	<li>persons who can speak both English and French well enough to conduct a conversation who have English as their mother tongue or as one of their mother tongues along with a language other than French.</li>
-	<li>persons who cannot speak either English or French well enough to conduct a conversation and who have English as their mother tongue or as one of their mother tongues along with a language other than French.</li>
-	<li>persons not classified according to the preceding criteria, who can speak both English and French well enough to conduct a conversation and whose main home language is English or English and another language other than French.</li>
-	<li>persons not classified according to the preceding criteria who cannot speak either English or French well enough to conduct a conversation and whose main home language is English or English and another language other than French.</li>
-
-	<br>
-	French
-	</br>
-		<br>
-		Includes:
-		</br>
-	<li>persons who can speak French well enough to conduct a conversation and cannot conduct a conversation in English.</li>
-	<li>persons who can speak both French and English well enough to conduct a conversation and who have French as their mother tongue or as one of their mother tongues along with a language other than English.</li>
-	<li>persons who cannot speak either English or French well enough to conduct a conversation and who have French as their mother tongue or as one of their mother tongues along with a language other than English.</li>
-	<li>persons not yet classified according to the preceding criteria, who can speak both French and English well enough to conduct a conversation and whose main home language is French or French and another language other than English.</li>
-	<li>persons not classified according to the preceding criteria who cannot speak either English or French well enough to conduct a conversation and whose main home language is French or French and another language other than English.</li>
-
-	<br>
-	English and French
-	</br>
-		<br>
-		Includes:
-		</br>
-	<li>persons who can speak both English and French well enough to conduct a conversation, and whose mother tongues and main home languages are both English and French.</li>
-	<li>persons who can speak both English and French well enough to conduct a conversation and whose mother tongues and main home languages are neither English nor French.</li>
-
-	<br>
-	Neither English nor French
-	</br>
-	<br>
-		<p>
-		Includes persons who can speak neither English nor French well enough to conduct a conversation and whose mother tongue and main home language are neither English nor French.
-		(Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue05-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue05-eng.htm</a> )
-		</p>
-	</br>
-	
-	<b>Language spoken most often at home </b>
-		<br>
-			<p>
-			Language spoken most often at home refers to the language the person speaks most often at home at the time of data collection. A person can report more than one language as "spoken most often at home" if the languages are spoken equally often.
-		</br>
-		<p>
-			For a person who lives alone, the language spoken most often at home is the language in which he or she feels most comfortable. For a child who has not yet learned to speak, this is the language spoken most often to the child at home. Where two languages are spoken to the child, the language spoken most often at home is the language spoken most often. If both languages are used equally often, then both languages are included here.
-			(Source:<a href="http://www.statcan.gc.ca/concepts/definitions/language-langue02-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue02-eng.htm</a> )
-		</p>
-	
-	<b>Local Health Integration Network (LHIN)</b>
-	
-	<p>
-	In 2006, the Ministry of Health and Long-Term Care divided the province into 14 regions or Local Health Integration Networks (more succinctly known as LHINs) because, it was thought, people living locally were better able to plan, fund and integrate health services in their own communities. By April 1, 2007, LHINs took on full responsibility for health services in their communities. 
-	(Source: <a href="http://www.lhins.on.ca/home.aspx?LangType=4105">http://www.lhins.on.ca/home.aspx?LangType=4105</a> )
-	</p>
-	
-	<p>
-		Data Source: 
-		<li id="liNote">Custom data request, 2011 Census of Canada</li>
-		<li id="liNote">Statistics Canada Advisory Services, Central Region, 2014</li>
-		<li id="liNote">For more details on the 2011 Census of Canada: 
-			<br>
-				<a href="http://www12.statcan.gc.ca/census-recensement/index-eng.cfm">http://www12.statcan.gc.ca/census-recensement/index-eng.cfm</a>
-			</br>
-		</li>
-	</p>
-	
-	<b>
-		Note: In the case of variables Mother Tongue and Language Spoken Most Often at Home, Other includes “French and non-official language”, “English, French and non-official language” and “English and non-official language”.
-	</b>
-	
-	<H4>Dissemination Areas</H4>
-	A dissemination area (DA) is a small, relatively stable geographic unit composed of one or more adjacent dissemination blocks. It is the smallest standard geographic area for which all census data are disseminated. DAs cover all the territory of Canada.
-	(Source: <a href="https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-eng.cfm">https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-eng.cfm</a> )
-	
-	<br>Data Source:</br>
-	<li>2011 Census Profile </li>
-	<br><a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=E">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=E</a></br>
-
-	<p>
-	To ensure confidentiality, the values, including totals, are randomly rounded either up or down to a multiple of '5' or '10.' To understand these data, you must be aware that each individual value is rounded. As a result, when these data are summed or grouped, the total value may not match the individual values since totals and sub-totals are independently rounded. Similarly, percentages, which are calculated on rounded data, may not necessarily add up to 100%.
-	</p>
-	
-	<br>
-		For more details on the Census Profile:
-		<br>
-		<a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=E">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=E</a>
-		</br>
-	</br>
-	
-	<b>
-		Note: Data presented on the population map for variables Mother Tongue and Language Spoken Most Often at Home include only unique responses and excludes multiple answers.
-	</b>
-	
-	<H4>Profiles (2011)</H4>
-	
-	<b>Health Professionals (except physicians)</b>
-	
-	<p>Data Source:	Health Professions Database, 2011 Submission</p>
-	
-	<b>Notes:</b>
-	<p>1. The Health Professions Database (HPDB) collects up to 5 'Languages of Care", which is defined as 'Languages in which the member can provide professional services". </p>
-	<p>2. The HPDB captures the number of ‘active’ health professionals who are registered by their respective regulatory College to practice in their profession in full or any one capacity (clinical, research, teaching health promotion, etc.). Members may or may not be working in the profession. This data does not include members who hold educational registrations.</p>
-	<p>3. Practice site by LHIN information refers to the first practice site listed in the HPDB. The HPDB collects employment data for up to three different practice sites and the first site listed is not necessarily the 'primary' practice location. Not all RHPs who hold an active registration listed a valid practice site in Ontario, or were working in their profession. As such numbers quoted may not sum to 2011 totals.</p>
-	
-	<b>Disclaimer:</b>
-	<p>1. The Information is being provided on an “as-is” basis. This data is derived from data that was originally obtained by the Ministry of Health and Long-Term Care (ministry) directly from health regulatory Colleges. The ministry therefore cannot and does not warrant or represent that the Information is accurate, complete, reliable or current.</p>
-	<p>2. You must reference the ministry as the source for the data in any publications, in the following manner: Ministry of Health and Long-Term Care, Health Professions Database, 2011 Submission Period © Queen's Printer for Ontario"</p>
-	
-	<p>Suppression: Symbol “<5” is used to replace a value greater than 0 and less than 5.</p>
-	
-	<b>Physicians</b>
-	<p>Source:	 Ontario Physician Human Resources Data Centre (OPHRDC)</p>
-	
-	<p>
-		Notes:
-		<br>Active Physician Registry December 31, 2011</br>
-		<br>Report Prepared July 23, 2013</br>
-	</p>
-	
-	<b>Socio Economic Profiles</b>
-	<p>Data Source:</p>
-	<li>Custom data request, National Household Survey, 2011</li>
-	<li>Statistics Canada Advisory Services, Central Region, 2014</li>
-	<p>For more details on the 2011 National Household Survey:</p>
-	<br>
-		<a href="https://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-eng.cfm">https://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-eng.cfm</a>
-	</br>
-	
-	<b>Health Profiles</b>
-	<p>Data Source: Canadian Community Health Survey (CCHS), 2001 to 2012</p>
-	<p>Notes:</p>
-	<p>Results come from eight cycles of the CCHS performed by Statistics Canada in 2001 (cycle 1.1), 2002 (cycle 1.2), 2003 (cycle 2.1), 2004 (cycle 2.2), 2005 (cycle 3.1), 2007 (cycle 4.1), 2008, 2009, 2010, 2011 and 2012.</p>
-
-	<P>The target population of the CCHS is composed of Canadians aged 12 and older, living in private households in the 10 provinces and 3 territories.Excluded are residents of Indian reserves and crown lands, people living in institutions, full-time members of the Armed Forces, and residents of certain remote regions.
-	</P>
-
-	<b>Study Population </b>
-	<br>Francophones (n = 5,827) and anglophones (n = 259,861) residing in the 14 LHINs in Ontario. </br>
-
-	<p>
-	The proportions shown are based on the calculation of frequency distributions, weighted to represent the entire target population. Certain categories of responses were aggregated to obtain the number of observations required for the release of results according to the standards of Statistics Canada. When the numbers are too small even after aggregation, the data cannot be made public.
-	</p>
-
-	<p>
-	An algorithm was created based on language variables present in the Canadian Community Health Survey (CCHS): conversational language, mother tongue, the language of the interview and in the preferred language of contact during the survey. This algorithm identifies French speakers, anglophones and allophones.
-	</p>
-
-	<H4>Health Services</H4>
-	
-	<b>Hospitals</b>
-	
-	<p>Data Source:
-	<li>Capacity Planning & LHIN Support Unit</li>
-	<li>Health Analytics Branch, HSIMID</li>
-	<li>Ontario Ministry of Health and Long-Term Care</li>
-	</p>
-	
-	<b>Hospitals Designations</b>
-	<p>Designated Partial:  organisme avait demandé de se faire reconnaitre par le gouvernement comme un organisme offrant des services de qualité en français.  Le processus a vérifié qu’un ou plusieurs de ses services (mais pas tous) rencontraient les critères de désignation.  Les détails de sa désignation figurent dans le Règlement 398/93 fait en vertu de la Loi sur les services en français.</p>
-	<p>organisme avait demandé de se faire reconnaitre par le gouvernement comme un organisme offrant des services de qualité en français.  Le processus a vérifié que tous ses services rencontraient les critères de désignation.  Les détails de sa désignation figurent dans le Règlement 398/93 fait en vertu de la Loi sur les services en français.</p>
-	<p>Data Source:
-	<li>French Language Services</li>
-	<li>Ontario Ministry of Health and Long-Term Care</li>
-	</p>
-	
-	</div>
-
-
-	</body>
+	</td>
+  </tr>
+  
+  <tr>
+    <td background="../images/methodo2.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td colspan="2" align="left" valign="bottom">          <blockquote>
+          <p class="titre1">Population (2011)</p>
+        </blockquote>
+          </td>
+        </tr>
+      <tr>
+        <td width="25%" align="left" valign="bottom">&nbsp;</td>
+        <td width="75%" align="left" valign="bottom"><p><span class="titre2">Langue  maternelle</span><br />
+            </p>
+          <blockquote>
+            <p>Mother Tongue&nbsp;Mother tongue refers to the first language learned at home in childhood and still understood by the person at the time the data was collected. If the person no longer understands the first language learned, the mother tongue is the second language learned. For a person who learned two languages at the same time in early childhood, the mother tongue is the language this person spoke most often at home before starting school. The person has two mother tongues only if the two languages were used equally often and are still understood by the person. For a child who has not yet learned to speak, the mother tongue is the language spoken most often to this child at home. The child has two mother tongues only if both languages are spoken equally often so that the child learns both languages at the same time.<br />
+              (Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue01-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue01-eng.htm</a>)<br />
+            </p>
+            </blockquote>
+          <p><span class="titre2">Knowledge of official languages</span><br />
+              </p>
+          <blockquote>
+            <p>Knowledge of official languages refers to whether the person can conduct a conversation in English, French, in both or in neither language. For a child who has not yet learned to speak, this includes languages that the child is learning to speak at home.<br />
+              (Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue04-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue04-eng.htm</a>)</p>
+          </blockquote>
+          <p><span class="titre2">First official language spoken<br />
+          </span></p>
+          <blockquote>
+            <p>Refers to a variable specified within the framework of the Official Languages Act.</p>
+            <p><span class="boldcolor">Derivation</span><br />
+              First official language spoken is derived. The derivation rules assign persons to particular languages as follows.</p>
+            <blockquote>
+              <p><strong>English</strong><br />
+                Includes:</p>
+              <ol>
+                <li>persons who can speak English well enough to conduct a conversation and cannot conduct a conversation in French;</li>
+                <li>persons who can speak both English and French well enough to conduct a conversation who have English as their mother tongue or as one of their mother tongues along with a language other than French.</li>
+                <li>persons who cannot speak either English or French well enough to conduct a conversation and who have English as their mother tongue or as one of their mother tongues along with a language other than French.</li>
+                <li>persons not classified according to the preceding criteria, who can speak both English and French well enough to conduct a conversation and whose main home language is English or English and another language other than French.</li>
+                <li>persons not classified according to the preceding criteria who cannot speak either English or French well enough to conduct a conversation and whose main home language is English or English and another language other than French.</li>
+              </ol>
+              <p><strong>French</strong><br />
+                Includes:</p>
+              <ol>
+                <li>persons who can speak French well enough to conduct a conversation and cannot conduct a conversation in English.</li>
+                <li>persons who can speak both French and English well enough to conduct a conversation and who have French as their mother tongue or as one of their mother tongues along with a language other than English.</li>
+                <li>persons who cannot speak either English or French well enough to conduct a conversation and who have French as their mother tongue or as one of their mother tongues along with a language other than English.</li>
+                <li>persons not yet classified according to the preceding criteria, who can speak both French and English well enough to conduct a conversation and whose main home language is French or French and another language other than English.</li>
+                <li>persons not classified according to the preceding criteria who cannot speak either English or French well enough to conduct a conversation and whose main home language is French or French and another language other than English.</li>
+              </ol>
+              <p><strong>English and French</strong><br />
+                Includes:</p>
+              <ol>
+                <li>persons who can speak both English and French well enough to conduct a conversation, and whose mother tongues and main home languages are both English and French.</li>
+                <li>persons who can speak both English and French well enough to conduct a conversation and whose mother tongues and main home languages are neither English nor French.</li>
+              </ol>
+              <p><strong>Neither English nor French</strong><br />
+                Includes persons who can speak neither English nor French well enough to conduct a conversation and whose mother tongue and main home language are neither English nor French.<br />
+                (Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue05-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue05-eng.htm</a>) </p>
+            </blockquote>
+            </blockquote>
+          <p><span class="titre2">Language spoken most often at home</span></p>
+          <blockquote>
+            <p>            Language spoken most often at home refers to the language the person speaks most often at home at the time of data collection. A person can report more than one language as "spoken most often at home" if the languages are spoken equally often.<br />
+              For a person who lives alone, the language spoken most often at home is the language in which he or she feels most comfortable. For a child who has not yet learned to speak, this is the language spoken most often to the child at home. Where two languages are spoken to the child, the language spoken most often at home is the language spoken most often. If both languages are used equally often, then both languages are included here.<br />
+              (Source: <a href="http://www.statcan.gc.ca/concepts/definitions/language-langue02-eng.htm">http://www.statcan.gc.ca/concepts/definitions/language-langue02-eng.htm</a>)</p>
+          </blockquote></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="bottom"><blockquote>
+          <p class="titre1">Local Health Integration Network (LHIN)</p>
+        </blockquote></td>
+        </tr>
+      <tr>
+        <td width="25%" align="left" valign="bottom">&nbsp;</td>
+        <td width="75%" align="left" valign="bottom"><p>In 2006, the Ministry of Health and Long-Term Care divided the province into 14 regions or Local Health Integration Networks (more succinctly known as LHINs) because, it was thought, people living locally were better able to plan, fund and integrate health services in their own communities. By April 1, 2007, LHINs took on full responsibility for health services in their communities.<br />
+          (Source: <a href="http://www.lhins.on.ca/home.aspx?LangType=4105">http://www.lhins.on.ca/home.aspx?LangType=4105</a>)</p>
+          <p class="titre2">Data Source:</p>
+          <blockquote>
+            <p>Custom data request, 2011 Census of Canada<br />
+              Statistics Canada Advisory Services, Central Region, 2014<br />
+              <strong>For more details on the 2011 Census of Canada: </strong><br />
+              <a href="http://www12.statcan.gc.ca/census-recensement/index-eng.cfm">http://www12.statcan.gc.ca/census-recensement/index-eng.cfm</a></p>
+          </blockquote>
+          <p><strong>Note: </strong> In the case of variables Mother Tongue and Language Spoken Most Often at Home, Other includes “French and non-official language”, “English, French and non-official language” and “English and non-official language”.</p></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="bottom"><blockquote>
+          <p class="titre1">Dissemination Areas</p>
+        </blockquote></td>
+        </tr>
+      <tr>
+        <td width="25%" align="left" valign="bottom">&nbsp;</td>
+        <td width="75%" align="left" valign="bottom"><p>A dissemination area (DA) is a small, relatively stable geographic unit composed of one or more adjacent dissemination blocks. It is the smallest standard geographic area for which all census data are disseminated. DAs cover all the territory of Canada.<br />
+          (Source: <a href="https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-eng.cfm">https://www12.statcan.gc.ca/census-recensement/2011/ref/dict/geo021-eng.cfm</a>)</p>
+          <p class="titre2">Data Source: </p>
+          <blockquote>
+            <p>2011 Census Profile <br />
+              <a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=E">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/index.cfm?Lang=E</a></p>
+            <p>To ensure confidentiality, the values, including totals, are randomly rounded either up or down to a multiple of '5' or '10.' To understand these data, you must be aware that each individual value is rounded. As a result, when these data are summed or grouped, the total value may not match the individual values since totals and sub-totals are independently rounded. Similarly, percentages, which are calculated on rounded data, may not necessarily add up to 100%.<br />
+              <strong>For more details on the Census Profile: </strong><br />
+            <a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=E">http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/help-aide/help-aide.cfm?Lang=E</a></p></blockquote>
+          <p><strong>Note: </strong>Data presented on the population map for variables Mother Tongue and Language Spoken Most Often at Home include only unique responses and excludes multiple answers.</p></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="bottom"><blockquote>
+          <p class="titre1">Profiles (2011)</p>
+        </blockquote></td>
+        </tr>
+      <tr>
+        <td width="25%" align="left" valign="bottom">&nbsp;</td>
+        <td width="75%" align="left" valign="bottom"><p class="titre2">Health Professionals (except physicians)</p>
+          <blockquote>
+            <p><span class="boldcolor">Data Source:	</span>Health Professions Database, 2011 Submission</p>
+            <p><strong>Notes: </strong>          </p>
+            <ol>
+              <li>            The Health Professions Database (HPDB) collects up to 5 'Languages of Care", which is defined as 'Languages in which the member can provide professional services".</li>
+              <li> The HPDB captures the number of ‘active’ health professionals who are registered by their respective regulatory College to practice in their profession in full or any one capacity (clinical, research, teaching health promotion, etc.). Members may or may not be working in the profession. This data does not include members who hold educational registrations.</li>
+              <li>Practice site by LHIN information refers to the first practice site listed in the HPDB. The HPDB collects employment data for up to three different practice sites and the first site listed is not necessarily the 'primary' practice location. Not all RHPs who hold an active registration listed a valid practice site in Ontario, or were working in their profession. As such numbers quoted may not sum to 2011 totals.</li>
+              </ol>
+            <p><strong>Disclaimer: </strong><br />
+              </p>
+            <ol>
+              <li>The Information is being provided on an “as-is” basis. This data is derived from data that was originally obtained by the Ministry of Health and Long-Term Care (ministry) directly from health regulatory Colleges. The ministry therefore cannot and does not warrant or represent that the Information is accurate, complete, reliable or current.</li>
+              <li> You must reference the ministry as the source for the data in any publications, in the following manner: Ministry of Health and Long-Term Care, Health Professions Database, 2011 Submission Period © Queen's Printer for Ontario"</li>
+            </ol>
+            <p><strong>Suppression: </strong>Symbol “<5” is used to replace a value greater than 0 and less than 5.</p>
+          </blockquote>
+          <p class="titre2">Physicians
+          </p>
+          <blockquote>
+            <p><span class="boldcolor">Source: </span>Ontario Physician Human Resources Data Centre (OPHRDC)</p>
+            <p><strong>Note: </strong><br />
+              Active Physician Registry December 31, 2011<br />
+              Report Prepared July 23, 2013</p>
+          </blockquote>
+          <h2>&nbsp;</h2>
+          <p class="titre2">Socio Economic Profiles</p>
+          <blockquote>
+            <p><span class="boldcolor">Data Source: </span>Custom data request, National Household Survey, 2011<br />
+              Statistics Canada Advisory Services, Central Region, 2014<br />
+              <strong>             For more details on the 2011 National Household Survey: </strong><br />
+              <a href=""https://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-eng.cfm">"https://www12.statcan.gc.ca/nhs-enm/2011/ref/nhs-enm_guide/index-eng.cfm</a></p>
+          </blockquote>
+          <p class="titre2">Health Profiles</p>
+          <blockquote>
+            <p><span class="boldcolor">Data Source: </span>Canadian Community Health Survey (CCHS), 2001 to 2012</p>
+            <p><strong>Notes: </strong><br />
+              Results come from eight cycles of the CCHS performed by Statistics Canada in 2001 (cycle 1.1), 2002 (cycle 1.2), 2003 (cycle 2.1), 2004 (cycle 2.2), 2005 (cycle 3.1), 2007 (cycle 4.1), 2008, 2009, 2010, 2011 and 2012.<br />
+              The target population of the CCHS is composed of Canadians aged 12 and older, living in private households in the 10 provinces and 3 territories.Excluded are residents of Indian reserves and crown lands, people living in institutions, full-time members of the Armed Forces, and residents of certain remote regions.<br />
+              Sont exclus les  résidents des réserves indiennes et des terres de la Couronne, les personnes  vivant en institution, les membres à temps plein des Forces armées, ainsi que  les habitants de certaines régions éloignées.</p>
+            <p><span class="boldcolor">Study Population</span><br />
+              Francophones (n = 5,827) and anglophones (n = 259,861) residing in the 14 LHINs in Ontario.</p>
+            <blockquote>
+              <p>The proportions shown are based on the calculation of frequency distributions, weighted to represent the entire target population. Certain categories of responses were aggregated to obtain the number of observations required for the release of results according to the standards of Statistics Canada. When the numbers are too small even after aggregation, the data cannot be made public.</p>
+            </blockquote>
+          </blockquote>          </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="../images/methodo3.jpg" width="1021" height="51" /></td>
+  </tr>
+</table> 
+</body>
 </html>

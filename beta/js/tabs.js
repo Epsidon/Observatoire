@@ -35,7 +35,7 @@ Tabs.prototype.getHome = function ()
 						
 						'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
 							'<tr>'+
-								'<td width="25%" align="right" valign="bottom"><img src="images/ontario.jpg" width="127" height="47" /></td>'+
+								'<td width="25%" align="right" valign="bottom"><a href="http://www.ontario.ca/' + (router.getLanguage() == 'french'? 'fr/bienvenue-en-ontario':'welcome-ontario') + '.html" target="_blank"><img src="images/ontario.jpg" width="127" height="47" /></a></td>'+
 								'<td width="75%"><p class="titre1">' + translator.T('Team') + '</p>'+
 									'<ol>'+
 										'<p><strong>' + translator.T('Scientific director') + '</strong><br />'+
@@ -71,7 +71,7 @@ Tabs.prototype.getHome = function ()
 										'</p>' +
 										
 										'<ol>'+
-										'<p><strong>' + translator.T('Ministry of Health and Long Term care of Ontario') + '</strong></p>' +
+										'<p><strong><a href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') + '" target="_blank">' + translator.T('Ministry of Health and Long Term care of Ontario') + '</a></strong></p>' +
 										'</ol>'+
 								'</td>' +
 							'</tr>' +
@@ -80,7 +80,6 @@ Tabs.prototype.getHome = function ()
 		'</table>' +
 	'</div>';
 
-	
 	return body;	
 };
 

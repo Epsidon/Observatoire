@@ -17,6 +17,18 @@
 	font-weight: bold;
 }
 
+Table.researchTable
+{
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+strong, b {
+font-weight: bold;
+font-size: 12px;
+}
+
 .informationImage
 {
 	overflow:hidden;

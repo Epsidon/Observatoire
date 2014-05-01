@@ -78,7 +78,7 @@ Table.partnersTable
 
  .nav>li>a:hover, .nav>li>a:focus {
 	background-color: inherit;
-	color: inherit !important;
+	color: inherit#fff !important;
 
 }
 
@@ -91,7 +91,7 @@ Table.partnersTable
 {
 	border-style: solid;
 	border-color: #FFFFFF;
-	border-width: 4px;
+	border-width: 2px;
 	height: 35px;
 	border-radius: 3px;
 	color: #FFF;
@@ -513,6 +513,7 @@ body
 font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
 color: #2F3335;
+line-height:1;
 }
 
 
@@ -950,7 +951,7 @@ a .Lousie
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a {color: #000000;}
 .navbar-primary .navbar .nav > li > a:hover {color: #000;}
-.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover {color: #FFF;}
+
 .navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
 .navbar-primary .navbar .nav > li.dropdown.open.active > a:hover,
 .navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;border-color: #fff;}

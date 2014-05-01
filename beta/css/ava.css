@@ -869,9 +869,6 @@ input, button, select, textarea
 }
 
 #zoomInInstruction {
-font-family: arial;
-font-size: 1.9em;
-font-weight: bold;
 color: #474650;
 border-color: #BAB9C5;
 border-width: 0.13em;
@@ -893,25 +890,23 @@ border-radius: 0.5em;
 
 .researchContainer
 {
-margin-right: auto;
-margin-left: auto;
-border-style: solid;
-border-radius: 7px;
-border-color:#C9D59C;
-margin: 10px;
-
+	margin-right: auto;
+	margin-left: auto;
+	border-style: solid;
+	border-radius: 7px;
+	border-color:#C9D59C;
+	margin: 10px;
 }
 
 .partnersContainer
 {
-margin-right: auto;
-margin-left: auto;
-padding: 15px;
-border-style: solid;
-border-radius: 7px;
-border-color:#DBE3BD;
-margin: 10px;
-
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	border-color:#DBE3BD;
+	margin: 10px;
 }
 
 .navbar-primary .navbar

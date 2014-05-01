@@ -239,7 +239,7 @@ Tabs.prototype.getResearch  = function ()
 							'<td width="50%" align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
-										'<p class="boldcolor">' + 'Bouchard L’ ' + '<strong>' + ',' + '</strong>' + 'Sedigh G, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)' + '</p>' +
+										'<p class="boldcolor">' + 'Bouchard L ' + '<strong>' + ',' + '</strong>' + 'Sedigh G, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)' + '</p>' +
 										'<p>' +'<strong>' + 'Language  as an important determinant of poverty in the aging Francophone minority  population in Canada.' + '</strong>' +'<em>' + 'International Journal of Aging and  Society,' + '</em>' +'(2)  4&nbsp;: 61-76' + '<strong>' +'<br />' +
 										'</strong>' +'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</p>' +
 									'</ol>' +
@@ -259,7 +259,7 @@ Tabs.prototype.getResearch  = function ()
 							'<td width="50%" align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
-										'<p class="boldcolor">' + 'Bouchard L’' + '<strong>' + ',' + '</strong>' + 'Gagnon-Arpin I, Makvandi E (2012)' + '</p>' +
+										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + 'Gagnon-Arpin I, Makvandi E (2012)' + '</p>' +
 										'<p>' +'<strong>' + 'Rapport d’enquête d’évaluation  des besoins et de services de santé des francophones de la région du Sud-Est de  l&rsquo;Ontario.' + '</strong>' +'<br />' +
 										'Rapport préparé pour l’Association canadienne-française de  l’Ontario- Conseil régional des Mille-Îles.' + '<br />' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</p>' +

@@ -293,6 +293,8 @@ function(
 		var clickedServicePointBufferSmall = mapModal.getCheckedServicePointBufferSmall();							
 		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
 		$('#hospitalLegendList').addClass('hidden');
+		$('#hospitalTitleDiv').addClass('hidden');
+		
 		
 		if (clickedServicePoint != -1 )
 		{
@@ -318,11 +320,13 @@ function(
 			mapServicePointLegendLabel +=  legendLabel[clickedServicePoint];
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
+			drawLegend({hospitals: clickedHospitalLayerIdArray});
+			$('#hospitalTitleDiv').removeClass('hidden');
 		}
 		
 		updateLegend();
 		updateMapLabel();
-		drawLegend({hospitals: clickedHospitalLayerIdArray});	
+			
 	}
 	
 	function updateMapLabel()

@@ -142,9 +142,9 @@ Tabs.prototype.getPartners = function ()
 					 '<p><a href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/ophrdc.jpg" width="204" height="38" >' + '</a></p>' +
 					 '<p><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + '<img border="0" width="205" height="30" src="images/stat_canada.jpg" width="204" height="38" >' + '</a></p>' +
 					  
-					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">' + translator.T('Financial support is provided by the ') + 
+					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p style="line-height: 1.2;"><strong class="partnersStrong">' + translator.T('Financial support is provided by the ') + 
 					'<span class="boldcolor"><a  class="boldcolor" href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') + '" target="_blank">'  + translator.T('Ministry of Health and Long Term care of Ontario') + '</a></span>.</strong></p>'+          
-					  '<p><strong>' + translator.T('The data are provided by ') + '<span class="boldcolor">' +
+					  '<p style="line-height: 1.2;"><strong>' + translator.T('The data are provided by ') + '<span class="boldcolor">' +
 					 
 					  '<a class="boldcolor"  class="boldcolor" href=" http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'en/Home') + '" target="_blank">'  +
 					  
@@ -152,7 +152,7 @@ Tabs.prototype.getPartners = function ()
 					  translator.T(' the ') +  '<span class="boldcolor">' +
 					  '<a  class="boldcolor" href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') + '" target="_blank">'  +
 					  translator.T('Ministry of Health and Long Term Care of Ontario') + '</a></span>' +
-					  translator.T(' and ') + '<span class="boldcolor">' + translator.T(' Statistics Canada') + '</span>. </strong></p>          <p><strong>' +
+					  translator.T(' and ') + '<span class="boldcolor">' + translator.T(' Statistics Canada') + '</span>. </strong></p>          <p style="line-height: 1.2;"><strong>' +
 					  translator.T('Design assistance: ') + '<br />'+
 						'<span class="boldcolor">          RRASFO</span>' +
 					  '<span>' + translator.T('- Applied Research Network on the health of the Francophone population of Ontario') + ',<br />'+'</span>' +
@@ -161,7 +161,7 @@ Tabs.prototype.getPartners = function ()
 					  
 					  '<a class="boldcolor" href="http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' +
 					   translator.T('IRHM') + '</a></span>' + translator.T('(Research Institute of Montfort)') +  '</span> ' +'</strong></p>'+  
-					  '<p><strong>' +  translator.T('Support and technical implementation: ') + 
+					  '<p style="line-height: 1.2;"><strong>' +  translator.T('Support and technical implementation: ') + 
 					  '<span class="boldcolor"><a class="boldcolor" href="http://www.epsidon.com/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + 'Epsidon Inc</span>.</strong></p></td>'+
 				'</tr>'+
 				

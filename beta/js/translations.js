@@ -22,8 +22,20 @@ Fr['Developers'] = 'Développeurs';
 Fr['Financial Support'] = 'Soutien financier';
 Fr['Ministry of Health and Long Term care of Ontario'] = 'Ministère de la santé et des soins  de longue durée de l&rsquo;Ontario';
 Fr['Team'] ='Équipe';
+Fr['the'] = 'le';
+Fr['Support and technical implementation: '] = 'Soutien et réalisation technique : ';
 
 
+Fr['Financial support is provided by the '] = 'Le soutien financier est assuré par le ';
+Fr['The data are provided by '] = 'Les données utilisées sont fournies par ';
+Fr['Health Force Ontario'] = 'Professions Santé Ontario';
+Fr['(Ontario Physician Human Resources Data Center), le'] = '(Ontario Physician Human Resources Data Center), the';
+Fr['Ministry of Health and Long Term Care Ontario '] = 'Ministère de la santé et des   soins de longue durée de l&rsquo;Ontario ';
+Fr[' and '] = ' et ';
+Fr[' Statistics Canada'] = ' Statistique Canada';
+Fr['Design assistance: '] = 'Aide à la conception : ';
+Fr['(Research Institute of Montfort)'] = '(Institut de   recherche de l&rsquo;Hôpital Montfort)';
+Fr['- Applied Research Network on the health of the Francophone population of Ontario,'] = '– Réseau de recherche appliquée sur la santé de la   population francophone de l&rsquo;Ontario,';
 
 Fr['LHIN'] = 'RLISS';
 Fr['Central'] = 'Centre';

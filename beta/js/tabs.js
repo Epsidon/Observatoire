@@ -35,7 +35,7 @@ Tabs.prototype.getHome = function ()
 						
 						'<table width="100%" border="0" cellspacing="0" cellpadding="20">'+
 							'<tr>'+
-								'<td width="25%" align="right" valign="bottom"><a href="http://www.ontario.ca/' + (router.getLanguage() == 'french'? 'fr/bienvenue-en-ontario':'welcome-ontario') + '.html" target="_blank"><img src="images/ontario.jpg" width="127" height="47" /></a></td>'+
+								'<td width="25%" align="right" valign="bottom"><a href="http://www.ontario.ca/' + (router.getLanguage() == 'french'? 'fr/bienvenue-en-ontario':'welcome-ontario') + '" target="_blank"><img src="images/ontario.jpg" width="127" height="47" /></a></td>'+
 								'<td width="75%"><p class="titre1">' + translator.T('Team') + '</p>'+
 									'<ol>'+
 										'<p><strong>' + translator.T('Scientific director') + '</strong><br />'+
@@ -138,15 +138,26 @@ Tabs.prototype.getPartners = function ()
 				'</tr>'+	
 			
 				'<tr>'+
-					'<td width="25%" align="right" valign="bottom" style="padding:45px;"><p><img src="images/ontario.jpg" width="127" height="47" /></p>'+
+					'<td width="25%" align="right" valign="bottom" style="padding:45px;"><p><a href="http://www.ontario.ca/' + (router.getLanguage() == 'french'? 'fr/bienvenue-en-ontario':'welcome-ontario') + '" target="_blank"><img src="images/ontario.jpg" width="127" height="47" /></a></p>'+
 					 '<p><a href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/ophrdc.jpg" width="204" height="38" >' + '</a></p>' +
 					 '<p><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + '<img border="0" width="205" height="30" src="images/stat_canada.jpg" width="204" height="38" >' + '</a></p>' +
 					  
-					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">Le soutien financier est assuré par le<span class="boldcolor"> Ministère de la santé et des soins de   longue durée de l&rsquo;Ontario</span>.</strong></p>'+          
-					  '<p><strong>Les données utilisées sont fournies par<span class="boldcolor"> Professions Santé Ontario</span>, <span class="boldcolor">OPHRDC</span> (Ontario Physician Human Resources Data Center), le <span class="boldcolor">Ministère de la santé et des   soins de longue durée de l&rsquo;Ontario</span> et <span class="boldcolor">Statistique Canada</span>. </strong></p>          <p><strong>Aide à la conception : <br />'+
-						'<span class="boldcolor">          RRASFO</span> – Réseau de recherche appliquée sur la santé de la   population francophone de l&rsquo;Ontario,<br />'+
-					  '<span class="boldcolor">J W COMM INC.</span>, <span class="boldcolor">IRHM</span> (Institut de   recherche de l&rsquo;Hôpital Montfort)</strong></p>'+  
-					  '<p><strong>Soutien et réalisation technique : <span class="boldcolor">Epsidon Inc</span>.</strong></p></td>'+
+					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">' + translator.T('Financial support is provided by the ') + '<span class="boldcolor">' + translator.T('Ministry of Health and Long Term care of Ontario') + '</span>.</strong></p>'+          
+					  '<p><strong>' + translator.T('The data are provided by ') + '<span class="boldcolor">' +
+					  translator.T('Health Force Ontario') + '</span>, <span class="boldcolor">OPHRDC</span> (Ontario Physician Human Resources Data Center),' +
+					  translator.T(' the ') +  '<span class="boldcolor">' +
+					  translator.T('Ministry of Health and Long Term Care of Ontario ') + '</span>' +
+					  translator.T('and') + '<span class="boldcolor">' + translator.T(' Statistics Canada') + '</span>. </strong></p>          <p><strong>' +
+					  translator.T('Design assistance: ') + '<br />'+
+						'<span class="boldcolor">          RRASFO</span>' +
+					  '<span>' + translator.T('- Applied Research Network on the health of the Francophone population of Ontario') + ',<br />'+'</span>' +
+					  '<a class="boldcolor" href="http://www.jwcomm.ca/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' +
+					  '<span class="boldcolor">J W COMM INC.</span>, <span class="boldcolor">' + 
+					  '<a  href="http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr/recherche':'en/research') + '" target="_blank">' +
+					   '<span class="boldcolor">' +
+					   translator.T('IRHM') + '</span>' + translator.T('(Research Institute of Montfort)') +  '</span> ' +'</strong></p>'+  
+					  '<p><strong>' +  translator.T('Support and technical implementation: ') + 
+					  '<span class="boldcolor"><a class="boldcolor" href="http://www.epsidon.com/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + 'Epsidon Inc</span>.</strong></p></td>'+
 				'</tr>'+
 				
 				'<tr>'+	  
@@ -319,7 +330,7 @@ sections
  					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
  				'</br>' + */
 				
-			'<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">' +
+			'<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">' +
 		'<tr>' +
 			'<td></td>' +
 		'</tr>' +

@@ -78,8 +78,13 @@ Table.partnersTable
 
  .nav>li>a:hover, .nav>li>a:focus {
 	background-color: inherit;
-	color: inherit#fff !important;
+	color: #fff !important;
 
+}
+
+.navbar .nav .active > a:hover
+{
+	color: #000 !important;
 }
 
 .boldcolor2
@@ -87,7 +92,7 @@ Table.partnersTable
  color:#F15A24;
 }
 
-.navbar-primary .navbar .nav .active > a, .navbar .nav .active > a:hover 
+.navbar-primary .navbar .nav .active > a 
 {
 	border-style: solid;
 	border-color: #FFFFFF;

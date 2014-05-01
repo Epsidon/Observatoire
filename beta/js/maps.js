@@ -440,7 +440,7 @@ function(
 				htmlBody += 
 						'<tr>' + 
 							'<td>' +
-							'<img style="padding-right:3px;" align="left" src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
+							'<img style="padding-right:5px;" align="left" src="data:image/png;base64,' + layer.drawingInfo.renderer.symbol.imageData + '"  />' +
 							' ' +
 							'</td>' +
 							'<td class="hospitalString" align="left">' +

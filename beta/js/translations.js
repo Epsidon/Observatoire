@@ -1,4 +1,30 @@
 var Fr = {};
+Fr['Observatory of Minority Health'] = 'Observatoire de la santé des minorités';
+Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.'] = 'L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.';
+Fr['The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.'] = 'L’Observatoire de la santé des minorités vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.';
+Fr['The activity of the Observatory is organized around two priorities: '] = 'L’activité de l’observatoire s’organise autour de deux pôles : ';
+Fr[' 1) Activities of data collection, research and production of new knowledge'] = ' 1) activités de collecte de données, de recherche et de production de nouvelles connaissances';
+Fr[' 2) Valorisation and transfer of knowledge'] = ' 2) valorisation et transfert des connaissances';
+Fr['Contact: '] = 'Contact : ';
+Fr['Scientific director'] = 'Directrice scientifique ';
+Fr['Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa'] = 'Louise Bouchard, PhD, Sociologie,  Institut de recherche de l&rsquo;Hôpital Montfort,  Université d&rsquo;Ottawa';
+Fr['Co-Investigator '] = 'Co-chercheur';
+Fr['Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa'] = 'Guy-Vincent Jourdan, PhD, École d&rsquo;ingénierie  et de technologie de l&rsquo;information, Institut de recherche de l&rsquo;Hôpital  Montfort, Université d&rsquo;Ottawa';
+Fr['Geomatic, Data and Analysis'] = 'Géomatique, données et analyses ';
+Fr['Érik Bourdon, Manager'] = 'Érik Bourdon, conseiller';
+Fr['Analystes'] = 'Analystes';
+Fr['Ewa Sucha, PhD (candidate), Biostatistic'] = 'Ewa Sucha, PhD (candidate), Biostatistique';
+Fr['Golnaz Sedigh, PhD (candidate),  Economy'] = 'Golnaz Sedigh, PhD (candidate),  Économie';
+Fr['Ricardo Batista, PhD (candidat), Population Health'] = 'Ricardo Batista, PhD (candidat), Santé  des populations';
+Fr['Solange van Kemenade, PhD, Research Associate, University of Ottawa'] = 'Solange  van Kemenade, PhD,  Associée de  recherche, Université d&rsquo;Ottawa';
+Fr['Transfer and application of knowledge'] = 'Transfert  et application des connaissances';
+Fr['Developers'] = 'Développeurs';
+Fr['Financial Support'] = 'Soutien financier';
+Fr['Ministry of Health and Long Term care of Ontario'] = 'Ministère de la santé et des soins  de longue durée de l&rsquo;Ontario';
+Fr['Team'] ='Équipe';
+
+
+
 Fr['LHIN'] = 'RLISS';
 Fr['Central'] = 'Centre';
 Fr['Central East'] = 'Centre-Est' ;

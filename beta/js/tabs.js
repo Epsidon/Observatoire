@@ -142,20 +142,25 @@ Tabs.prototype.getPartners = function ()
 					 '<p><a href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + '<img border="0" src="images/ophrdc.jpg" width="204" height="38" >' + '</a></p>' +
 					 '<p><a href="http://www.statcan.gc.ca/start-debut-' + (router.getLanguage() == 'french'? 'fra':'eng') + '.html" target="_blank">' + '<img border="0" width="205" height="30" src="images/stat_canada.jpg" width="204" height="38" >' + '</a></p>' +
 					  
-					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">' + translator.T('Financial support is provided by the ') + '<span class="boldcolor">' + translator.T('Ministry of Health and Long Term care of Ontario') + '</span>.</strong></p>'+          
+					'<td width="75%" colspan="3" valign="top" style="padding-top:45px;"><p><strong class="partnersStrong">' + translator.T('Financial support is provided by the ') + 
+					'<span class="boldcolor"><a  class="boldcolor" href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') + '" target="_blank">'  + translator.T('Ministry of Health and Long Term care of Ontario') + '</a></span>.</strong></p>'+          
 					  '<p><strong>' + translator.T('The data are provided by ') + '<span class="boldcolor">' +
-					  translator.T('Health Force Ontario') + '</span>, <span class="boldcolor">OPHRDC</span> (Ontario Physician Human Resources Data Center),' +
+					 
+					  '<a class="boldcolor"  class="boldcolor" href=" http://www.healthforceontario.ca/' + (router.getLanguage() == 'french'? 'fr/Home':'en/Home') + '" target="_blank">'  +
+					  
+					  translator.T('Health Force Ontario') + '</a></span>, <span class="boldcolor"><a class="boldcolor" href="https://www.ophrdc.org/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + 'OPHRDC</a></span> (Ontario Physician Human Resources Data Center),' +
 					  translator.T(' the ') +  '<span class="boldcolor">' +
-					  translator.T('Ministry of Health and Long Term Care of Ontario ') + '</span>' +
-					  translator.T('and') + '<span class="boldcolor">' + translator.T(' Statistics Canada') + '</span>. </strong></p>          <p><strong>' +
+					  '<a  class="boldcolor" href="http://www.health.gov.on.ca/' + (router.getLanguage() == 'french'? 'fr/':'en/') + '" target="_blank">'  +
+					  translator.T('Ministry of Health and Long Term Care of Ontario') + '</a></span>' +
+					  translator.T(' and ') + '<span class="boldcolor">' + translator.T(' Statistics Canada') + '</span>. </strong></p>          <p><strong>' +
 					  translator.T('Design assistance: ') + '<br />'+
 						'<span class="boldcolor">          RRASFO</span>' +
 					  '<span>' + translator.T('- Applied Research Network on the health of the Francophone population of Ontario') + ',<br />'+'</span>' +
 					  '<a class="boldcolor" href="http://www.jwcomm.ca/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' +
-					  '<span class="boldcolor">J W COMM INC.</span>, <span class="boldcolor">' + 
-					  '<a  href="http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr/recherche':'en/research') + '" target="_blank">' +
-					   '<span class="boldcolor">' +
-					   translator.T('IRHM') + '</span>' + translator.T('(Research Institute of Montfort)') +  '</span> ' +'</strong></p>'+  
+					  '<span class="boldcolor">J W COMM INC.</a></span>, <span class="boldcolor">' + 
+					  
+					  '<a class="boldcolor" href="http://www.hopitalmontfort.com/' + (router.getLanguage() == 'french'? 'fr':'en') + '" target="_blank">' +
+					   translator.T('IRHM') + '</a></span>' + translator.T('(Research Institute of Montfort)') +  '</span> ' +'</strong></p>'+  
 					  '<p><strong>' +  translator.T('Support and technical implementation: ') + 
 					  '<span class="boldcolor"><a class="boldcolor" href="http://www.epsidon.com/' + (router.getLanguage() == 'french'? '':'') + '" target="_blank">' + 'Epsidon Inc</span>.</strong></p></td>'+
 				'</tr>'+
@@ -176,164 +181,13 @@ Tabs.prototype.getPartners = function ()
  
 Tabs.prototype.getResearch  = function ()
 {
-/*
-sections
-	publications
-		authors
-		title
-		desc
-		pdfs
-			desc
-			url
-		url
-*/
-	/* $.getJSON( "js/research.json", function( data ) 
-	{
-		var body = 
-			'<table width="70%" border="0" align="center" cellpadding="0" cellspacing="0">'+
-				'<tr><td>'+
-
-					'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-						'<tr>'+
-							'<td>'+
-								'<p class="titre1">Recherche de l’Observatoire</p><BR/>'+
-							'</td>'+
-						'</tr>'+
-					'</table>'+
-
-				'</td></tr><tr><td>';
-
-		for(sectionIndex in data.sections)
-		{
-			var section = data.sections[sectionIndex];
-		
-			body += 
-				'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-      				'<tr>'+
-        				'<td>'+
-          					'<p class="titre1">' + section.sectionTitle + '</p>'+
-        				'</td>'+
-        			'</tr>'+
-  				'</table>';
-  				
-  			var publicationHtml = '<tr>';	
-  			for(publicaitonIndex in section.publications)
-  			{
-  				var publication = section.publications[publicaitonIndex];
-  			
-  				if ((publicaitonIndex != 0) && (publicaitonIndex % 2 == 0))
-  				{
-  					publicationHtml += '</tr><tr><td height="30"></td></tr><tr>';
-				}
-
-				publicationHtml += '<td width="5%"></td><td width="50%" align="left" valign="top">';
-				
-				if (publication.authors)
-				{
-					publicationHtml +=
-                		'<p class="boldcolor">' + 
-                			publication.authors + '<br />' + 
-                		'</p>';
-                }
-                
-				publicationHtml += '<p>';
-                    
-				if (publication.title)
-				{
-					publicationHtml +=
-                		'<strong>' + 
-                			publication.title + '<br />' + 
-                		'</strong><br />';
-                }
-                
-                if (publication.desc)
-                {
-					publicationHtml +=
-                		'<em>' + 
-                			publication.desc + 
-                		'</em>';                
-                }
-                
-                if (publication.url)
-                {
-					publicationHtml +=
-                		'<a class="Lousie" href="' + publication.url + '">' + 
-                			publication.url + 
-                		'</a>';                
-                }
-                
-				if (publication.pdfs)
-                {
-                	for (var pdfIndex in publication.pdfs)
-                	{
-						var pdf = publication.pdfs[pdfIndex];
-
-						if (pdf.desc)
-							publicationHtml += pdf.desc;
-                
-						publicationHtml += '<img src="images/ico_pdf.jpg" width="46" height="16" /><br />';      
-					}                
-                }
-
-				publicationHtml += '</p></td>';
-  				
-  			}	
-				
-			body += 
-				'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-					publicationHtml+
-  				'</tr></table>';
-		}
-		
-
-		body += '</td></tr></table>';
- */
 	var body = 
 	
 	'<div class="researchContainer">' +
- 					/* '<b>' + translator.T('Title: ') + '</b>' +
- 					'<b id="BouchardWarnkeTitle"></b>' +
- 					
- 					'<br>'+
- 					'<b>' + translator.T('Abstract: ') + '</b>' +
- 					'<li id="BouchardWarnkeAbstract"></li>' +
- 					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
- 					'<a href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
- 					'</br>' +
- 				
- 				'<br>' +
- 					//'<h6 id="headerTwoResearchTab"></h6>' +
- 					'<b>' + translator.T('Title: ') + '</b>' +
- 					'<b id="AgingTitle"></b>' +
- 					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
- 					'<li id="agingAbstract"></li>' +
- 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
- 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
- 				'</br>' +
- 
- 				'<br>' +
- 					//'<h6 id="headerThreeResearchTab"></h6>' +
- 					'<b>' + translator.T('Title: ') + '</b>' +
- 					'<b id="PolicyTitle"></b>' +
- 				'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
- 					'<li id="PolicyAbstract"></li>' +
- 					'<a href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
- 					'<a href="Pdf/Policy_vol9_SP-BOUCHARD-2013.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
- 				'</br>' +
-				
-				'<br>' +
- 					'<b>' + translator.T('Title: ') + '</b>' +
- 					'<b id="FOCUS13Title"></b>' +
- 					'<br><b>' + translator.T('Abstract: ') + '</b></br>' +
- 					'<li id="FOCUS13Abstract"></li>' +
- 					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank">' + '<img border="0" src="images/pdf.jpg" >' + '</a>' +
- 					'<a href="Pdf/FOCUS13-A1e.pdf" target="_blank"><b>' + translator.T('PDF') + '</b></a>' +
- 				'</br>' + */
-				
 			'<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">' +
-		'<tr>' +
-			'<td></td>' +
-		'</tr>' +
+			'<tr>' +
+				'<td></td>' +
+			'</tr>' +
 			'<tr>' +
 				'<td >' +
 					'<table width="100%" border="0" cellspacing="0" cellpadding="0" class="researchTable">' +
@@ -524,8 +378,6 @@ sections
 '</table>' + 
 		'</div>';
 		
-
-		//$('#mainContainer').html(body);	
 	
 	return body;
 };

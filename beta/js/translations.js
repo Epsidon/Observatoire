@@ -22,7 +22,7 @@ Fr['Developers'] = 'Développeurs';
 Fr['Financial Support'] = 'Soutien financier';
 Fr['Ministry of Health and Long Term care of Ontario'] = 'Ministère de la santé et des soins  de longue durée de l&rsquo;Ontario';
 Fr['Team'] ='Équipe';
-Fr['the'] = 'le';
+Fr[' the '] = ' le ';
 Fr['Support and technical implementation: '] = 'Soutien et réalisation technique : ';
 
 

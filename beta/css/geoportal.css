@@ -1,0 +1,27 @@
+@charset "utf-8";
+.titre1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #7C8B44;
+	font-weight: bold;
+}
+.titre2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #7C8B44;
+	font-weight: bold;
+}
+.boldcolor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #7C8B44;
+	font-weight: bold;
+}
+a {
+	color: #F15A24;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2F3335;
+}

@@ -24,9 +24,9 @@ Table.researchTable
 	border-color: gray;
 }
 
-strong, b {
+strong, b 
+{
 font-weight: bold;
-font-size: 12px;
 }
 
 .informationImage
@@ -196,10 +196,8 @@ a:hover, a:focus
 	text-decoration: none;
 }
 
-a 
-{
-	color: #000000;
-	text-decoration: none;
+a {
+	color: #F15A24;
 }
 
 .mapsInstructionOne 
@@ -513,12 +511,10 @@ font-size: 1.2em;
 	background-color: #C9D59C;
 }
 
-body 
-{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-color: #2F3335;
-line-height:1;
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2F3335;
 }
 
 
@@ -899,13 +895,11 @@ border-radius: 0.5em;
 {
 margin-right: auto;
 margin-left: auto;
-padding: 15px;
 border-style: solid;
 border-radius: 7px;
 border-color:#C9D59C;
 margin: 10px;
-font-family: arial;
-font-size: 14px;
+
 }
 
 .partnersContainer

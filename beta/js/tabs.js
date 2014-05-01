@@ -204,7 +204,7 @@ Tabs.prototype.getPartners = function ()
 			'<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="partnersTable">' +
 				'<tr>'+
 					'<td colspan="4">'+
-						'<p class="titre1">L&rsquo;équipe de l&rsquo;Observatoire de la santé des minorités remercie ses partenaires   pour la mise en place de ce projet.</p>'+
+						'<p class="titre1" style="margin: 19px;">L&rsquo;équipe de l&rsquo;Observatoire de la santé des minorités remercie ses partenaires   pour la mise en place de ce projet.</p>'+
 					'</blockquote>'+
 					'</td>'+
 				'</tr>'+	

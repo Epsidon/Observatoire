@@ -632,8 +632,8 @@ th
 .hospitalString 
 {
 	width: 195px;
+	line-height: 1;
 }
-
 .hospitalTable
 {
 	background-color: #F2F5F6;

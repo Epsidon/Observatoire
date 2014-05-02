@@ -56,7 +56,7 @@ var thisMapLayer = 'not initialized';
 
 var numServicePointLayers = 0;
 
-var mapAddress = 'http://216.48.92.42/arcgis/rest/services/RlissGeoportal/MapServer/';
+var mapAddress = 'http://216.48.92.42/arcgis/rest/services/test8/MapServer/';
  
 var mapLayerLabel = 'Ontario';
 var mapServicePointLabel = '';

@@ -163,7 +163,7 @@ function(
 	});	
 
 	map.on("zoom-end", function() {
-		updateLayer(-1);
+		updateLayer();
 	});	
 	
 	map.on("update-start", function() {
@@ -187,14 +187,13 @@ function(
 		}
 		else
 		{
-			var myId = layerId;
 			return function(){
-				updateLayer(myId);
+				updateLayer();
 			};
 		}
 	}
 
-	function updateLayer(clickedLayerId)
+	function updateLayer()
 	{
 		/**
 		 * 2. Remove old layers.
@@ -239,6 +238,7 @@ function(
 			activeLayer = clickedLayerId;
 			drawLegend({activeLayer : activeLayer});
 		}
+		
 		try
 		{
 			if (layerInfoWindow[activeLayer])
@@ -294,7 +294,6 @@ function(
 		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
 		$('#hospitalLegendList').addClass('hidden');
 		$('#hospitalTitleDiv').addClass('hidden');
-		
 		
 		if (clickedServicePoint != -1 )
 		{
@@ -379,9 +378,10 @@ function(
 	
 	function drawLegend(clickedItem)
 	{
-		if ('activeLayer' in clickedItem)	
+		if ('activeLayer' in clickedItem && clickedItem.activeLayer)	
 		{
 			var activeLayer = clickedItem.activeLayer;
+			
 			var layer = layers[activeLayer];
 
 			if (layer.drawingInfo.renderer.classBreakInfos)

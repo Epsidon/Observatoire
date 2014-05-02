@@ -12,7 +12,9 @@ Fr['Co-Investigator '] = 'Co-chercheur';
 Fr['Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa'] = 'Guy-Vincent Jourdan, PhD, École d&rsquo;ingénierie  et de technologie de l&rsquo;information, Institut de recherche de l&rsquo;Hôpital  Montfort, Université d&rsquo;Ottawa';
 Fr['Geomatic, Data and Analysis'] = 'Géomatique, données et analyses ';
 Fr['Érik Bourdon, Manager'] = 'Érik Bourdon, conseiller';
-Fr['Analystes'] = 'Analystes';
+
+Fr['The Observatory of Minority Health team would like to acknowledge the support of its partners in setting up this project.'] = 'L’équipe de l’Observatoire de la santé des minorités remercie ses partenaires pour la mise en place de ce projet.';
+
 Fr['Ewa Sucha, PhD (candidate), Biostatistic'] = 'Ewa Sucha, PhD (candidate), Biostatistique';
 Fr['Golnaz Sedigh, PhD (candidate),  Economy'] = 'Golnaz Sedigh, PhD (candidate),  Économie';
 Fr['Ricardo Batista, PhD (candidat), Population Health'] = 'Ricardo Batista, PhD (candidat), Santé  des populations';
@@ -190,7 +192,8 @@ Fr['Select a data layer from the menu below and click on map for detailed inform
 Fr['Scientific director'] = 'Directrice scientifique';
 Fr['Co-researcher']= 'Co-chercheur';
 Fr['Géomatique, données et analyses'] = 'Géomatique, données et analyses';
-Fr['Analysts'] = 'Analystes';
+Fr['Advisor'] ='Conseiller';
+
 Fr['Transfer and application of knowledge'] = 'Transfert et application des connaissances';
 Fr['Developers'] = 'Développeurs';
 Fr['Financial support'] = 'Soutien financier';

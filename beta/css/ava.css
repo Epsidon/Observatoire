@@ -1,3 +1,4 @@
+
 .starter-template 
 {
   padding: 40px 15px;
@@ -143,6 +144,7 @@ Table.partnersTable
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 0px;
+	width:900px;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd) 
@@ -792,7 +794,7 @@ input[type=radio], input[type=checkbox]
 	box-shadow: 0 3px 9px rgba(0,0,0,.5);
 	background-clip: padding-box;
 	outline: 0;
-	width: 500px;
+	width: 550px;
 }
 
 .esriSimpleSliderHomeButton

@@ -234,7 +234,7 @@ function(
 			console.log('4.3. clickedLayerId: ' + clickedLayerId);
 			$('#zoomInInstruction').hide();
 			activeLayer = clickedLayerId;
-			drawLegend({activeLayer : activeLayer});
+			drawLegend({activeLayer : clickedLayerId});
 		}
 		
 		try
@@ -281,7 +281,7 @@ function(
 		{
 			if (layerToRegion[i] != 2)
 				continue;
-			removeLegend();
+			
 			map.removeLayer(mapLayer[i]);	
 			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
 			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
@@ -317,6 +317,7 @@ function(
 			mapServicePointLegendLabel +=  legendLabel[clickedServicePoint];
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
+			removeLegend();
 			drawLegend({hospitals: clickedHospitalLayerIdArray});
 			$('#hospitalTitleDiv').removeClass('hidden');
 		}
@@ -428,8 +429,10 @@ function(
 			sortLegendList();
 		}
 		
-		if ('hospitals' in clickedItem)	
+		if ('hospitals' in clickedItem && clickedItem.hospitals)	
 		{
+		
+	
 			var htmlBody = '<div id="hospitalTitleDiv">' ;
 		
 			var hospitals = clickedItem.hospitals;

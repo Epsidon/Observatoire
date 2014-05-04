@@ -218,9 +218,7 @@ function(
 		removeLegend();
 		createInfoWindow();
 		var extent = map.getZoom();
-		$('#legendList').removeClass('hidden');
-		$('#legendTitle').removeClass('hidden');
-
+		
 		var populationLayerArray = new Array(16, 17, 18, 19);
 		
 		if ((clickedLayerId == -1) || 
@@ -283,7 +281,7 @@ function(
 		{
 			if (layerToRegion[i] != 2)
 				continue;
-			
+			removeLegend();
 			map.removeLayer(mapLayer[i]);	
 			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
 			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					

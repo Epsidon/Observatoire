@@ -915,7 +915,7 @@ function translateMap()
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[16]['outFields'] = new Array("MTLHIN.Frprop", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5",
-	"MTLHIN.MotherTo_1", "MTLHIN.FrP", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
+	"MTLHIN.MotherTo_1", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
 
 	layerData[17] = [];
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Knowledge of Official Language (LHIN)") + "</b>";
@@ -953,7 +953,7 @@ function translateMap()
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[17]['outFields'] = new Array("lhin.csv.LHINNames", "lhin.csv.LHINCode2013", "Knowledget.FrP", "Knowledget.Knowledg_4","Knowledget.Knowledg_3", "Knowledget.Knowledg_5",
-	"Knowledget.Knowledg_1", "Knowledget.frprop_1",
+	"Knowledget.Knowledg_1", 
 	"Knowledget.EnProp", "Knowledget.ENFrPr","Knowledget.NeitherP", "Knowledget.Knowledg_2");
 	
 	layerData[18] = [];
@@ -992,7 +992,7 @@ function translateMap()
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[18]['outFields'] = new Array("FirstOfficial.FrProp", "FirstOfficial.FirstOff_4", "FirstOfficial.FirstOff_3", 
-	"FirstOfficial.FirstOff_5", "FirstOfficial.FirstOff_1", "FirstOfficial.FrP",
+	"FirstOfficial.FirstOff_5", "FirstOfficial.FirstOff_1",
 	"FirstOfficial.EnP", "FirstOfficial.ENFrP", "FirstOfficial.NeitherP", "lhin.csv.LHINCode2013", "lhin.csv.LHINNames");
 	
 	layerData[19] = [];

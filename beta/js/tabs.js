@@ -47,7 +47,7 @@ Tabs.prototype.getHome = function ()
 										'</p>'+
 										
 										'<p><strong>' + translator.T('Geomatic, Data and Analysis') + '</strong><br />' +
-										translator.T('Érik Bourdon, Advisor') + '<u></u>'+
+										translator.T('Erik Bourdon, Advisor') + '<u></u>'+
 										'</p>'+
 										
 										'<p><strong>' + translator.T('Analysts')  + '</strong><br />' +

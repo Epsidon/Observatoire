@@ -193,6 +193,7 @@ Fr['Scientific director'] = 'Directrice scientifique';
 Fr['Co-researcher']= 'Co-chercheur';
 Fr['Géomatique, données et analyses'] = 'Géomatique, données et analyses';
 Fr['Advisor'] ='Conseiller';
+Fr['Erik Bourdon, Advisor']= 'Érik Bourdon, Conseiller';
 
 Fr['Transfer and application of knowledge'] = 'Transfert et application des connaissances';
 Fr['Developers'] = 'Développeurs';

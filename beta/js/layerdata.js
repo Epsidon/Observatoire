@@ -144,8 +144,8 @@ function translateMap()
 	"<table class='table table-striped' border=1 align='center'>"+
 	"<tr>"+
 	"<th>" + translator.T("DA") + "</th>"+
-	"<th>" + translator.T("French") + "</th>"+
-	"<th>" + translator.T("English") + "</th>"+
+	"<th>" + translator.T("French only") + "</th>"+
+	"<th>" + translator.T("English only") + "</th>"+
 	"<th>" + translator.T("French & English") + "</th>"+
 	"<th>" + translator.T("Neither") + "</th>"+
 	"<th>Total</th>"+
@@ -172,8 +172,8 @@ function translateMap()
 	"<table class='table table-striped' border=1 align='center'>"+
 	"<tr>"+
 	"<th>" + translator.T("DA") + "</th>"+
-	"<th>" + translator.T("French") + "</th>"+
-	"<th>" + translator.T("English") + "</th>"+
+	"<th>" + translator.T("French only") + "</th>"+
+	"<th>" + translator.T("English only") + "</th>"+
 	"<th>" + translator.T("Non Official") + "</th>"+
 	"<th>Total</th>"+
 	"</tr>"+
@@ -964,8 +964,8 @@ function translateMap()
 	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
-	"<th align='center'>" + translator.T("French") + "</th>"+
-	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French only") + "</th>"+
+	"<th align='center'>" + translator.T("English only") + "</th>"+
 	"<th align='center'>" + translator.T("French & English") + "</th>"+
 	"<th align='center'>" + translator.T("Neither") + "</th>"+
 	"<th align='center'>" + translator.T("Total") + "</th>"+

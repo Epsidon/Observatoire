@@ -90,8 +90,8 @@ function translateMap()
 	"<table class='table table-striped' border=1 align='center'>"+
 	"<tr>"+
 	"<th>" + translator.T("DA") + "</th>"+
-	"<th>" + translator.T("French") + "</th>" +
-	"<th>" + translator.T("English") + "</th>" +
+	"<th>" + translator.T("French only") + "</th>" +
+	"<th>" + translator.T("English only") + "</th>" +
 	"<th>" + translator.T("Non Official") + "</th>" +
 	"<th>Total</th>"+
 	"</tr>"+

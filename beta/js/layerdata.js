@@ -925,8 +925,8 @@ function translateMap()
 	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
-	"<th align='center'>" + translator.T("French") + "</th>"+
-	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French only") + "</th>"+
+	"<th align='center'>" + translator.T("English only") + "</th>"+
 	"<th align='center'>" + translator.T("French & English") + "</th>"+
 	"<th align='center'>" + translator.T("Neither") + "</th>"+
 	"<th align='center'>" + translator.T("Total") + "</th>"+

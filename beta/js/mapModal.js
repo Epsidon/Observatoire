@@ -98,8 +98,10 @@ MapModal.prototype.getAccordionRowHtmlBody = function(layer, layerCounter, accor
 	htmlBody = '';
 	
 	if (this.accordionHeaders[layerCounter])
-				htmlBody += '<div' + this.accordionHeaders[layerCounter] +
+				htmlBody = '<div style="font-family: arial;font-weight: bold;width: 260px;">' + this.accordionHeaders[layerCounter] +
 							'</div>';
+							
+							
 
 	if (accordionCounter != (this.accordion.length-1)) 
 	{

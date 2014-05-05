@@ -203,11 +203,18 @@ Tabs.prototype.getResearch  = function ()
 					
 					'<table width="100%" border="0" cellspacing="0" cellpadding="0">' +
 						'<tr>' +
-							'<td colspan="2" align="left" valign="top">' +
+							'<td colspan="1" align="left" valign="top">' +
 							'<ol>' +
 							'<p class="titre2">' + 'Profil de la santé ' + '</p>' +
 							'</ol>' +
 							'</td>' +
+							
+							'<td colspan="1" align="left" valign="top">' +
+							'<ol>' +
+							'<p class="titre2">' + 'Services et professionnels de la  santé en langue officielle minoritaire' + '</p>' +
+							'</ol>' +
+							'</td>' +
+							
 						'</tr>' +
 						
 						'<tr>' +
@@ -219,7 +226,7 @@ Tabs.prototype.getResearch  = function ()
 										'</p>' +
 										
 										'<p>' +'<strong>' +'The health of the Francophone  Population Aged 65 and over in Ontario.' + '</strong>' +'<br />' +
-										'RASFO, Université d&rsquo;Ottawa '+
+										'RRASFO, Université d&rsquo;Ottawa '+
 										'<a  href="Pdf/Bouchard-Ontario_Franc_65_Report_March_28_2014_final_2.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a><br />' +
 										'Rapport  court en français ' +
@@ -233,62 +240,6 @@ Tabs.prototype.getResearch  = function ()
 								'</ol>' +
 							'</td>' +
 							
-							'<td width="50%" align="left" valign="top">' +          
-								'<ol>' +
-									'<ol>' +
-									'<p class="boldcolor">' + 'Bouchard  L, Leis A (coord.) (2013)' + '</p>' +
-									'<p>' +'<strong>' + 'La santé des populations de langue officielle en  situation minoritaire.' + '<br />' +
-									'</strong>' +'<em>' + 'Canadian Journal  of Public Health/ Revue canadienne de santé publique, ' +               '</em>' + 'Numéro spécial, 104  (5).' + '<br />' +
-									 '<a class="boldcolor2" href="http://journal.cpha.ca/index.php/cjph/issue/view/303">' + 'http://journal.cpha.ca/index.php/cjph/issue/view/303' + '</a>' +'</p>' +
-									'</ol>' +
-								'</ol>' +
-							'</td>' +
-						'</tr>' +
-						'<tr>' +
-							'<td width="50%" align="left" valign="top">' +
-								'<ol>' +
-									'<ol>' +
-										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Sedigh G, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)' + '</p>' +
-										'<p>' +'<strong>' + 'Language  as an important determinant of poverty in the aging Francophone minority  population in Canada.' + '</strong>' +'<em>' + 'International Journal of Aging and  Society,' + '</em>' +'(2)  4&nbsp;: 61-76' + '<strong>' +'<br />' +
-										'</strong>' +
-										'<a  href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' +
-										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a></p>' +
-									'</ol>' +
-								'</ol>' +
-							'</td>' +
-							'<td width="50%" align="left" valign="top">' +
-								'<ol>' +
-									'<ol>' +
-										'<p class="boldcolor">' + 'Bouchard L, Desmeules M (2013)' + '</p>' +
-										'<p>' +'<strong>' + 'Les minorités  linguistiques du Canada et la santé.' + '</strong>' +'<em>' + 'Health  Care Policy/Politiques de santé' + '</em>' + ', Numéro spécial 9: 38-47' + '<br />' +
-										'<a  href="Pdf/Bouchard-Policy_vol9_SP-2013.pdf" target="_blank">' +
-										'<img src="images/ico_pdf.jpg"  width="46" height="16" /></a>' +'</p>' +
-									'</ol>' +
-								'</ol>' +
-							'</td>' +
-						'</tr>' +
-						'<tr>' +
-							'<td width="50%" align="left" valign="top">' +
-								'<ol>' +
-									'<ol>' +
-										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Gagnon-Arpin I, Makvandi E (2012)' + '</p>' +
-										'<p>' +'<strong>' + 'Rapport d’enquête d’évaluation  des besoins et de services de santé des francophones de la région du Sud-Est de  l&rsquo;Ontario.' + '</strong>' +'<br />' +
-										'Rapport préparé pour l’Association canadienne-française de  l’Ontario- Conseil régional des Mille-Îles.' + '<br />' +
-										'<a  href="Pdf/Bouchard-Enque¦éte Sud-est ON-acfo-2012.pdf" target="_blank">' +
-										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
-									'</ol>' +
-								'</ol>' +
-							'</td>' +
-							'<td width="50%" align="left" valign="top">' + '&nbsp;' + '</td>' +
-						'</tr>' +
-						'<tr>' +
-							'<td colspan="2" align="left" valign="top">' +
-							'<ol>' +
-							'<p class="titre2">' + 'Services et professionnels de la  santé en langue officielle minoritaire' + '</p>' +
-							'</ol>' +
-							'</td>' +
-						'</tr>' +
-						'<tr>' +
 							'<td width="50%" align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -300,6 +251,20 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +
 							'</td>' +
+						'</tr>' +
+						
+						'<tr>'+
+							'<td width="50%" align="left" valign="top">' +          
+								'<ol>' +
+									'<ol>' +
+									'<p class="boldcolor">' + 'Bouchard  L, Leis A (coord.) (2013)' + '</p>' +
+									'<p>' +'<strong>' + 'La santé des populations de langue officielle en  situation minoritaire.' + '<br />' +
+									'</strong>' +'<em>' + 'Canadian Journal  of Public Health/ Revue canadienne de santé publique, ' +               '</em>' + 'Numéro spécial, 104  (5).' + '<br />' +
+									 '<a class="boldcolor2" href="http://journal.cpha.ca/index.php/cjph/issue/view/303">' + 'http://journal.cpha.ca/index.php/cjph/issue/view/303' + '</a>' +'</p>' +
+									'</ol>' +
+								'</ol>' +
+							'</td>' +
+							
 							'<td width="50%" align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -311,8 +276,21 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +          
 							'</td>' +
-						'</tr>' +
-						'<tr>' +
+						
+						'</tr>'+
+						
+						'<tr>'+
+							'<td width="50%" align="left" valign="top">' +
+								'<ol>' +
+									'<ol>' +
+										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Sedigh G, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)' + '</p>' +
+										'<p>' +'<strong>' + 'Language  as an important determinant of poverty in the aging Francophone minority  population in Canada.' + '</strong>' +'<em>' + 'International Journal of Aging and  Society,' + '</em>' +'(2)  4&nbsp;: 61-76' + '<strong>' +'<br />' +
+										'</strong>' +
+										'<a  href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' +
+										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a></p>' +
+									'</ol>' +
+								'</ol>' +
+							'</td>' +
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -325,20 +303,46 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +          
 							'</td>' +
+						'</tr>'+
+						
+						'<tr>'+
+							'<td width="50%" align="left" valign="top">' +
+								'<ol>' +
+									'<ol>' +
+										'<p class="boldcolor">' + 'Bouchard L, Desmeules M (2013)' + '</p>' +
+										'<p>' +'<strong>' + 'Les minorités  linguistiques du Canada et la santé.' + '</strong>' +'<em>' + 'Health  Care Policy/Politiques de santé' + '</em>' + ', Numéro spécial 9: 38-47' + '<br />' +
+										'<a  href="Pdf/Bouchard-Policy_vol9_SP-2013.pdf" target="_blank">' +
+										'<img src="images/ico_pdf.jpg"  width="46" height="16" /></a>' +'</p>' +
+									'</ol>' +
+								'</ol>' +
+							'</td>' +
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
 										'<p class="boldcolor">' + 'Timony PE, Gauthier AP, Hogenbirk JC, Wenghofer EF  (2013).&nbsp;&nbsp;' + '</p>' +
-										'<p>' +'<strong>' + 'Promising quantities, disappointing distribution.' +'</strong>' +'<br />' +
-										'Investigating the presence of French-speaking physicians in Ontario&rsquo;s rural  Francophone communities.' + '<br />' +
+										'<p>' +'<strong>' + 'Promising quantities, disappointing distribution.' +
+										'Investigating the presence of French-speaking physicians in Ontario&rsquo;s rural  Francophone communities.' + '</strong>' +'<br />' +
 										'<em>' + 'Rural and Remote Health' + '</em>' + '13: 2543.' +
 										'<a  href="Pdf/Timony-rural and remote health 2013.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
 								'</ol>' +
 							'</td>' +
-						'</tr>' +
-						'<tr>' +
+							
+						'</tr>'+
+						
+						'<tr>'+
+							'<td width="50%" align="left" valign="top">' +
+								'<ol>' +
+									'<ol>' +
+										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Gagnon-Arpin I, Makvandi E (2012)' + '</p>' +
+										'<p>' +'<strong>' + 'Rapport d’enquête d’évaluation  des besoins et de services de santé des francophones de la région du Sud-Est de  l&rsquo;Ontario.' + '</strong>' +'<br />' +
+										'Rapport préparé pour l’Association canadienne-française de  l’Ontario- Conseil régional des Mille-Îles.' + '<br />' +
+										'<a  href="Pdf/Bouchard-Enque¦éte Sud-est ON-acfo-2012.pdf" target="_blank">' +
+										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
+									'</ol>' +
+								'</ol>' +
+							'</td>' +
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -351,6 +355,11 @@ Tabs.prototype.getResearch  = function ()
 								'</ol>' +
 							'</td>' +
 						
+						'</tr>'+
+						
+						'<tr>'+
+							'<td>'+
+							'</td>'+
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -361,8 +370,12 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +
 							'</td>' +
-						'</tr>' +
-						'<tr>' +
+						'</tr>'+
+						
+						'<tr>'+
+							'<td>'+
+							'</td>'+
+							
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -374,6 +387,12 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +
 							'</td>' +
+						'</tr>'+
+						
+						
+						'<tr>'+
+							'<td>'+
+							'</td>'+
 							'<td align="left" valign="top">' +
 								'<ol>' +
 									'<ol>' +
@@ -385,8 +404,11 @@ Tabs.prototype.getResearch  = function ()
 									'</ol>' +
 								'</ol>' +
 							'</td>' +
-						'</tr>' +
-						'<tr>' +
+						'</tr>'+
+						
+						'<tr>'+
+							'<td>'+
+							'</td>'+
 							'<td align="left" valign="top">' +
 							'<ol>' +
 								'<ol>' +
@@ -400,8 +422,8 @@ Tabs.prototype.getResearch  = function ()
 								'</ol>' +
 							'</ol>' +
 							'</td>' +
-							'<td align="left" valign="top">' + '&nbsp;' + '</td>' +
-						'</tr>' +
+						'</tr>'+
+				
 					'</table>' +
 				'</td>' +
 			'</tr>' +

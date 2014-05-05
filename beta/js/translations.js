@@ -148,7 +148,7 @@ Fr['The number of GP who can provide care in English'] = 'GPE';
 Fr['The number of specialists who can provide care in French'] = 'SPECF';
 Fr['The number of specialists who can provide care in English'] = 'SPECE';
 
-Fr['Minority Health Observatory'] = 'Observatoire de la santé des minorités';
+Fr['Observatory of Minority Health'] = 'Observatoire de la santé des minorités';
 
 Fr['French only'] = 'Francais seulement';
 Fr['English only'] = 'Anglais seulement';

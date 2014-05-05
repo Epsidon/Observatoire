@@ -278,10 +278,10 @@ Fr['Knowledge of Official Language: French only'] = 'Connaissance des langues of
 Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
 Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
 
-Fr['Mother Tongue: French (LHIN)'] = 'Langue maternelle : Français (RLISS)';
-Fr['Knowledge of Official Language: French (LHIN)'] = 'Connaissance des langues officielles : Français (RLISS)';
-Fr['First Official Language Spoken: French (LHIN)'] = 'Première langue officielle parlée : Français (RLISS)';
-Fr['Language Spoken Most Often at Home: French (LHIN)'] = 'Langue parlée le plus souvent à la maison : Français (RLISS)';
+Fr['Mother Tongue: French only (LHIN)'] = 'Langue maternelle : Français seulement (RLISS)';
+Fr['Knowledge of Official Language: French only (LHIN)'] = 'Connaissance des langues officielles : Français seulement (RLISS)';
+Fr['First Official Language Spoken: French only (LHIN)'] = 'Première langue officielle parlée : Français seulement (RLISS)';
+Fr['Language Spoken Most Often at Home: French only (LHIN)'] = 'Langue parlée le plus souvent à la maison : Français seulement (RLISS)';
 
 Fr['Health Professionals by LHIN'] = 'Professionels de la santé par RLISS';
 Fr['Health Professions by LHIN'] = 'Professions de santé par RLISS';

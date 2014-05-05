@@ -1077,10 +1077,10 @@ function translateMap()
 		translator.T('Chronic Care Treatment Hospital'),
 		translator.T('FLS Designated All'),
 		translator.T('FLS Designated Partial'), 
-		translator.T('Mother Tongue: French (LHIN)'),
-		translator.T('Knowledge of Official Language: French (LHIN)'),
-		translator.T('First Official Language Spoken: French (LHIN)'),
-		translator.T('Language Spoken Most Often at Home: French (LHIN)'), 
+		translator.T('Mother Tongue: French only (LHIN)'),
+		translator.T('Knowledge of Official Language: French only (LHIN)'),
+		translator.T('First Official Language Spoken: French only (LHIN)'),
+		translator.T('Language Spoken Most Often at Home: French only (LHIN)'), 
 		translator.T('Ontario LHIN Information'), 
 		translator.T('Ontario LHIN Information')];
 		

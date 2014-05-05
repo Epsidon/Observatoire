@@ -903,7 +903,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${MTLHIN.FrP}" + "%" + "</td>"+
+	"<td align='center'>" + "${MTLHIN.Frprop}" + "%" + "</td>"+
 	"<td align='center'>" + "${MTLHIN.ENProp}" + "%" + "</td>"+
 	"<td align='center'>" + "${MTLHIN.ErFrProp}" + "%" + "</td>"+
 	"<td align='center'>" + "${MTLHIN.nonPro}" + "%" + "</td>"+
@@ -980,7 +980,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Proportion") + "</td>"+
-	"<td align='center'>" + "${FirstOfficial.FrP}" + "%" + "</td>"+
+	"<td align='center'>" + "${FirstOfficial.FrProp}" + "%" + "</td>"+
 	"<td align='center'>" + "${FirstOfficial.EnP}" + "%" + "</td>"+
 	"<td align='center'>" + "${FirstOfficial.ENFrP}" + "%" + "</td>"+
 	"<td align='center'>" + "${FirstOfficial.NeitherP}" + "%" + "</td>"+

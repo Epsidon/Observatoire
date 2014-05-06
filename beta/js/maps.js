@@ -318,7 +318,9 @@ function(
 			numServicePointLayers++;				
 			map.reorderLayer(mapLayer[clickedServicePoint], numServicePointLayers);
 			removeLegend();
+			$('#hospitalTitleDiv').remove();
 			drawLegend({hospitals: clickedHospitalLayerIdArray});
+			
 			$('#hospitalTitleDiv').removeClass('hidden');
 		}
 		
@@ -377,8 +379,6 @@ function(
 	
 	function drawLegend(clickedItem)
 	{
-		var legendBodyAll = '';
-	
 		if ('activeLayer' in clickedItem && clickedItem.activeLayer)	
 		{
 			var activeLayer = clickedItem.activeLayer;
@@ -425,15 +425,16 @@ function(
 			}
 		
 			legendBody += '</table></div>';
-			
-			legendBodyAll += legendBody;	
+				
+			$('#layerLegendList').html(legendBody);
 			
 			sortLegendList();
 		}
 		
 		if ('hospitals' in clickedItem && clickedItem.hospitals)	
 		{
-
+		
+	
 			var htmlBody = '<div id="hospitalTitleDiv">' ;
 		
 			var hospitals = clickedItem.hospitals;
@@ -453,17 +454,14 @@ function(
 							 mapServicePointLegendLabel +
 							'</td>' +
 						'</tr>' ;
+					
+				htmlBody += '</table></div>';
 			}
-			
-			htmlBody += '</table></div>';
-			
-			legendBodyAll += htmlBody;	
-		}		
 		
-		console.log( 'legendBodyAll  ' + legendBodyAll);
+			$('#layerLegendList').append(htmlBody);
+		}		
 
-		$('#layerLegendList').html(legendBodyAll);
-		$('#legendList').show();	
+		$('#legendList').show();
 	}
 	
 	function sortLegendList()

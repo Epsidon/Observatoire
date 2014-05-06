@@ -274,10 +274,10 @@ Fr['FLS Designated All'] = 'Établissements  avec désignation complète - LSF';
 Fr[' Select a data layer from the menu below and click on map for detailed information.'] = ' Choisir une couche de données dans le menu ci-dessous et cliquez sur la carte pour plus d’informations.';
 
 Fr['Legend: '] = 'légende : ';
-Fr['Mother Tongue: French'] = 'Langue maternelle : Français';
+Fr['Mother Tongue: French only'] = 'Langue maternelle : Français seulement';
 Fr['Knowledge of Official Language: French only'] = 'Connaissance des langues officielles : Français seulement';
-Fr['First Official Language Spoken: French'] = 'Première langue officielle parlée : Français';
-Fr['Language Spoken Most Often at Home: French'] = 'Langue parlée le plus souvent à la maison : Français';
+Fr['First Official Language Spoken: French only'] = 'Première langue officielle parlée : Français seulement';
+Fr['Language Spoken Most Often at Home: French only'] = 'Langue parlée le plus souvent à la maison : Français seulement';
 
 Fr['Mother Tongue: French only (LHIN)'] = 'Langue maternelle : Français seulement (RLISS)';
 Fr['Knowledge of Official Language: French only (LHIN)'] = 'Connaissance des langues officielles : Français seulement (RLISS)';

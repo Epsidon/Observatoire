@@ -1061,10 +1061,10 @@ function translateMap()
 		translator.T('Ontario')];
 	  
 	legendLabel = [
-		translator.T('Mother Tongue: French'), 
+		translator.T('Mother Tongue: French only'), 
 		translator.T('Knowledge of Official Language: French only'),
-		translator.T('First Official Language Spoken: French'), 
-		translator.T('Language Spoken Most Often at Home: French'),
+		translator.T('First Official Language Spoken: French only'), 
+		translator.T('Language Spoken Most Often at Home: French only'),
 		translator.T('LHIN'), 
 		translator.T('LHIN'), 
 		translator.T('LHIN'),

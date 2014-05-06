@@ -343,7 +343,7 @@ Fr['Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Mont
 
 Fr['(*): Use with caution']= '(*) : donnée à utiliser avec prudence';
 Fr['(**): Too unreliable to be published']= '(**) : donnée trop peu fiable pour être publiée';
-Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offers';
+Fr['Hospitals By Services Offered'] = 'Hôpitaux par services offerts';
 Fr['Hospitals By French Language Service (FLS) Designation'] = 'Hôpitaux par désignation selon la Loi sur les services en français (LSF)';
 
 Fr['Health Force Ontario'] = 'Professions Santé Ontario';

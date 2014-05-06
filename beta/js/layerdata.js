@@ -887,15 +887,15 @@ function translateMap()
 	"<p>" + "<table border=1 class='table table-striped'>"+ "</p>" +
 	"<tr>"+
 	"<th align='center'></th>"+
-	"<th align='center'>" + translator.T("French") + "</th>"+
-	"<th align='center'>" + translator.T("English") + "</th>"+
+	"<th align='center'>" + translator.T("French only") + "</th>"+
+	"<th align='center'>" + translator.T("English only") + "</th>"+
 	"<th align='center'>" + translator.T("French & English") + "</th>"+
 	"<th align='center'>" + translator.T("Non Official") + "</th>"+
 	"<th align='center'>" + translator.T("Total") + "</th>"+
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${MTLHIN.Frprop}</td>"+
+	"<td align='center'>${MTLHIN.MotherTo_2}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_4}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_3}</td>"+
 	"<td align='center'>${MTLHIN.MotherTo_5}</td>"+
@@ -915,7 +915,7 @@ function translateMap()
 	translator.T("Methodological Notes") + "</a>" + "</p>";
 
 	layerData[16]['outFields'] = new Array("MTLHIN.Frprop", "MTLHIN.MotherTo_4", "MTLHIN.MotherTo_3", "MTLHIN.MotherTo_5",
-	"MTLHIN.MotherTo_1", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013" );
+	"MTLHIN.MotherTo_1", "MTLHIN.ENProp", "MTLHIN.ErFrProp", "MTLHIN.nonPro", "lhin.csv.LHINNames", "lhin.csv.LHINCode2013", "MTLHIN.MotherTo_2" );
 
 	layerData[17] = [];
 	layerData[17]['infoWindowTitle'] = "<b>" + translator.T("Knowledge of Official Language (LHIN)") + "</b>";

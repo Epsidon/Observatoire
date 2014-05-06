@@ -221,8 +221,12 @@ function(
 		
 		var populationLayerArray = new Array(16, 17, 18, 19);
 		
-		if ((clickedLayerId == -1) || 
-			((layerToRegion[clickedLayerId] == 0) && (extent < 7)))
+		if (clickedLayerId == -1) 
+		{
+			activeLayer = 20;
+		}
+		
+		else if ((layerToRegion[clickedLayerId] == 0) && (extent < 7))
 		{
 			activeLayer = populationLayerArray[clickedLayerId];
 			drawLegend({activeLayer : activeLayer});			
@@ -251,6 +255,7 @@ function(
 		{
 			console.log('ERROR: ' + err.message);
 		}
+		
 		mapLayerLabel = layersLabels[activeLayer];
 		LayerLegend = legendLabel[activeLayer];
 		updateServicePoints();

@@ -377,6 +377,8 @@ function(
 	
 	function drawLegend(clickedItem)
 	{
+		var legendBodyAll = '';
+	
 		if ('activeLayer' in clickedItem && clickedItem.activeLayer)	
 		{
 			var activeLayer = clickedItem.activeLayer;
@@ -423,16 +425,15 @@ function(
 			}
 		
 			legendBody += '</table></div>';
-				
-			$('#layerLegendList').html(legendBody);
+			
+			legendBodyAll += legendBody;	
 			
 			sortLegendList();
 		}
 		
 		if ('hospitals' in clickedItem && clickedItem.hospitals)	
 		{
-		
-	
+
 			var htmlBody = '<div id="hospitalTitleDiv">' ;
 		
 			var hospitals = clickedItem.hospitals;
@@ -452,14 +453,17 @@ function(
 							 mapServicePointLegendLabel +
 							'</td>' +
 						'</tr>' ;
-					
-				htmlBody += '</table></div>';
 			}
-		
-			$('#layerLegendList').append(htmlBody);
+			
+			htmlBody += '</table></div>';
+			
+			legendBodyAll += htmlBody;	
 		}		
+		
+		console.log( 'legendBodyAll  ' + legendBodyAll);
 
-		$('#legendList').show();
+		$('#layerLegendList').html(legendBodyAll);
+		$('#legendList').show();	
 	}
 	
 	function sortLegendList()

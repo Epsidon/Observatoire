@@ -245,7 +245,7 @@ Tabs.prototype.getResearch  = function ()
 									'<ol>' +
 										'<p class="boldcolor">' + 'Warnke J,' + '<strong>' + '</strong>' + ' Bouchard L (2013). &nbsp;' + '</p>' +
 										'<p>' +'<strong>' + 'Validation de  l&rsquo;équité d’accès des CLOSM aux professionnels de la santé dans les régions  sociosanitaires du Canada.' + '</strong>' + '<em>' +'<br />' +
-										'Canadian Journal of Public Health/  Revue canadienne de santé publique, ' + '</em>' + 'Numéro spécial, 104 (6)&nbsp;: S49-54' + '<br />' +
+										'Canadian Journal of Public Health/  Revue canadienne de santé publique, ' + '</em>' + 'Numéro spécial, 104 (6)&nbsp;: S49-54. ' + '<br />' +
 										'<a  href="Pdf/Indices IPSLOM - Bouchard&Warnke.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -398,7 +398,7 @@ Tabs.prototype.getResearch  = function ()
 									'<ol>' +
 										'<p class="boldcolor">' +'Bouchard L ' + '<strong>' + ',' + '</strong>' + 'Beaulieu M, Desmeules M (2012)' + '</p>' +
 										'<p>' +'<strong>' + 'L’offre active des services de santé en français en Ontario: une mesure  d’équité. ' + '</strong>' +'<br />' + 
-										'<em>' + 'REFLETS' + '</em>' + '18 (2)&nbsp;; 38-65 ' + 
+										'<em>' + 'REFLETS' + '</em>' + '18 (2)&nbsp;; 38-65. ' + 
 										'<a  href="Pdf/Bouchard-Reflets-LOffreActiveDeSEFenOntario.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +

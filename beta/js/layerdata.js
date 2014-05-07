@@ -972,7 +972,7 @@ function translateMap()
 	"</tr>"+
 	"<tr>"+
 	"<td align='center'>" + translator.T("Population Number") + "</td>"+
-	"<td align='center'>${FirstOfficial.FrProp}</td>"+
+	"<td align='center'>${FirstOfficial.FirstOff_2}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_4}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_3}</td>"+
 	"<td align='center'>${FirstOfficial.FirstOff_5}</td>"+
@@ -993,7 +993,7 @@ function translateMap()
 
 	layerData[18]['outFields'] = new Array("FirstOfficial.FrProp", "FirstOfficial.FirstOff_4", "FirstOfficial.FirstOff_3", 
 	"FirstOfficial.FirstOff_5", "FirstOfficial.FirstOff_1",
-	"FirstOfficial.EnP", "FirstOfficial.ENFrP", "FirstOfficial.NeitherP", "lhin.csv.LHINCode2013", "lhin.csv.LHINNames");
+	"FirstOfficial.EnP", "FirstOfficial.ENFrP", "FirstOfficial.NeitherP", "lhin.csv.LHINCode2013", "lhin.csv.LHINNames", "FirstOfficial.FirstOff_2");
 	
 	layerData[19] = [];
 	layerData[19]['infoWindowTitle'] = "<b>" + translator.T("Language Spoken Most Often at Home (LHIN)") + "</b>";

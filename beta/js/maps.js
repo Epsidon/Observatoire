@@ -218,10 +218,11 @@ function(
 		removeLegend();
 		createInfoWindow();
 		var extent = map.getZoom();
+		activeLayer = 20;
 		
 		var populationLayerArray = new Array(16, 17, 18, 19);
 		
-		if (clickedLayerId == -1) 
+		 if (clickedLayerId == -1) 
 		{
 			activeLayer = 20;
 		}
@@ -230,7 +231,7 @@ function(
 		{
 			activeLayer = populationLayerArray[clickedLayerId];
 			drawLegend({activeLayer : activeLayer});			
-		}
+		} 
 		else
 		{
 			// 4.3.
@@ -384,7 +385,7 @@ function(
 	
 	function drawLegend(clickedItem)
 	{
-		if ('activeLayer' in clickedItem && clickedItem.activeLayer)	
+		if ('activeLayer' in clickedItem &&  (typeof clickedItem.activeLayer === "number"))	
 		{
 			var activeLayer = clickedItem.activeLayer;
 			

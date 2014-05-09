@@ -11,7 +11,7 @@
    "copyrightText": "",
    "parentLayer": null,
    "subLayers": [],
-   "minScale": 5000000,
+   "minScale": 0,
    "maxScale": 0,
    "drawingInfo": {
     "renderer": {
@@ -25,9 +25,9 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         247,
-         252,
-         252,
+         255,
+         255,
+         227,
          255
         ],
         "outline": {
@@ -58,18 +58,18 @@
         ],
         "outline": {
          "type": "esriSLS",
-         "style": "esriSLSNull",
+         "style": "esriSLSSolid",
          "color": [
           110,
           110,
           110,
           255
          ],
-         "width": 0
+         "width": 0.4
         }
        },
-       "classMaxValue": 50,
-       "label": "1-50",
+       "classMaxValue": 51,
+       "label": "1 - 50",
        "description": ""
       },
       {
@@ -94,8 +94,8 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 200,
-       "label": "51-200",
+       "classMaxValue": 201,
+       "label": "51 - 200",
        "description": ""
       },
       {
@@ -120,8 +120,8 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 400,
-       "label": "201-400",
+       "classMaxValue": 401,
+       "label": "201 - 400",
        "description": ""
       },
       {
@@ -147,7 +147,7 @@
         }
        },
        "classMaxValue": 1500,
-       "label": "401-1500",
+       "label": "401 - 1500",
        "description": ""
       }
      ]
@@ -2088,7 +2088,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "uniqueValue",
-     "field1": "Export_Output_5.LHINPro_73",
+     "field1": "Export_Output_5.HR035b08_E",
      "field2": null,
      "field3": null,
      "fieldDelimiter": ", ",
@@ -2475,8 +2475,8 @@
          "width": 1
         }
        },
-       "value": "WaterlooWellington",
-       "label": "WaterlooWellington",
+       "value": "Waterloo Wellington",
+       "label": "Waterloo Wellington",
        "description": ""
       }
      ]
@@ -5058,6 +5058,60 @@
      "name": "HealthProfile.csv.AccessibiliteComm_F",
      "type": "esriFieldTypeDouble",
      "alias": "AccessibiliteComm_F",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.FrPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.FrPr",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.EnPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.EnPr",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.EnFrPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.EnFrPr",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.nonPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.nonPr",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.otherPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.otherPr",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.Frpr_1",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.Frpr_1",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.EnPR1",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.EnPR1",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.EnFrPr_1",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.EnFrPr_1",
+     "domain": null
+    },
+    {
+     "name": "Export_Output_4.NeitherPr1",
+     "type": "esriFieldTypeSingle",
+     "alias": "Export_Output_4.NeitherPr1",
      "domain": null
     },
     {
@@ -11322,9 +11376,9 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "MTLHIN.FrP",
+     "field": "lhrl035b06a_e_Oct2011.FrProp1",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 0.8100000023841858,
+     "minValue": 1,
      "classBreakInfos": [
       {
        "symbol": {
@@ -11359,7 +11413,7 @@
         "color": [
          255,
          255,
-         0,
+         115,
          255
         ],
         "outline": {
@@ -11375,7 +11429,7 @@
         }
        },
        "classMaxValue": 2,
-       "label": "1 -1.9%",
+       "label": "1 - 1.9%",
        "description": ""
       },
       {
@@ -11426,13 +11480,13 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 100,
+       "classMaxValue": 22,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 25,
+    "transparency": 0,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -11448,173 +11502,148 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "MTLHIN.HRUID2007",
+   "displayField": "lhrl035b06a_e_Oct2011.HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "MTLHIN.FID",
+     "name": "lhrl035b06a_e_Oct2011.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "MTLHIN.Shape",
+     "name": "lhrl035b06a_e_Oct2011.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "MTLHIN.GEODB_OID",
+     "name": "lhrl035b06a_e_Oct2011.GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "MTLHIN.OBJECTID",
+     "name": "lhrl035b06a_e_Oct2011.OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "MTLHIN.HRUID2007",
+     "name": "lhrl035b06a_e_Oct2011.HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "MTLHIN.FRE_LABEL",
+     "name": "lhrl035b06a_e_Oct2011.ENG_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "ENG_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "MTLHIN.LENGTH",
+     "name": "lhrl035b06a_e_Oct2011.LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "MTLHIN.SHAPE_AREA",
+     "name": "lhrl035b06a_e_Oct2011.SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "MTLHIN.HRUID2007_",
-     "type": "esriFieldTypeInteger",
-     "alias": "HRUID2007_",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.Total",
-     "type": "esriFieldTypeInteger",
-     "alias": "Total",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.EnglishL_1",
-     "type": "esriFieldTypeString",
-     "alias": "EnglishL_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.Health_Pro",
-     "type": "esriFieldTypeInteger",
-     "alias": "Health_Pro",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.FrenchProp",
-     "type": "esriFieldTypeSmallInteger",
-     "alias": "FrenchProp",
-     "domain": null
-    },
-    {
-     "name": "lhin.csv.LHINCode2013",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINCode2013",
-     "domain": null
-    },
-    {
-     "name": "lhin.csv.LHINNames",
-     "type": "esriFieldTypeString",
-     "alias": "LHINNames",
-     "length": 255,
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.MotherTong",
+     "name": "lhrl035b06a_e_Oct2011.LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_1",
+     "name": "lhrl035b06a_e_Oct2011.En",
+     "type": "esriFieldTypeSingle",
+     "alias": "lhrl035b06a_e_Oct2011.En",
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.EnFr",
+     "type": "esriFieldTypeSingle",
+     "alias": "lhrl035b06a_e_Oct2011.EnFr",
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.NonOff",
+     "type": "esriFieldTypeSingle",
+     "alias": "lhrl035b06a_e_Oct2011.NonOff",
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.Other",
+     "type": "esriFieldTypeSingle",
+     "alias": "lhrl035b06a_e_Oct2011.Other",
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "lhrl035b06a_e_Oct2011.FrProp",
+     "domain": null
+    },
+    {
+     "name": "lhrl035b06a_e_Oct2011.FrProp1",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "lhrl035b06a_e_Oct2011.FrProp1",
+     "domain": null
+    },
+    {
+     "name": "MotherTongueLHIN.csv.LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "MotherTongueLHIN.csv.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_2",
+     "name": "MotherTongueLHIN.csv.FrenchOnly",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_3",
+     "name": "MotherTongueLHIN.csv.English&French",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_4",
+     "name": "MotherTongueLHIN.csv.EnglishOnly",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_5",
+     "name": "MotherTongueLHIN.csv.NonOffLanguage",
      "type": "esriFieldTypeInteger",
-     "alias": "NonOfficialLanguage",
+     "alias": "NonOffLanguage",
      "domain": null
     },
     {
-     "name": "MTLHIN.MotherTo_6",
+     "name": "MotherTongueLHIN.csv.Other",
      "type": "esriFieldTypeInteger",
      "alias": "Other",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.FrP",
-     "type": "esriFieldTypeSingle",
-     "alias": "MTLHIN.FrP",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.ENProp",
-     "type": "esriFieldTypeSingle",
-     "alias": "MTLHIN.ENProp",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.ErFrProp",
-     "type": "esriFieldTypeSingle",
-     "alias": "MTLHIN.ErFrProp",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.OtherPro",
-     "type": "esriFieldTypeSingle",
-     "alias": "MTLHIN.OtherPro",
-     "domain": null
-    },
-    {
-     "name": "MTLHIN.nonPro",
-     "type": "esriFieldTypeSingle",
-     "alias": "MTLHIN.nonPro",
      "domain": null
     }
    ],
@@ -11645,18 +11674,18 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "Knowledget.frprop_1",
+     "field": "HR035b08.FrProp",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 0.03999999910593033,
+     "minValue": 0,
      "classBreakInfos": [
       {
        "symbol": {
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         40,
-         146,
-         199,
+         0,
+         112,
+         255,
          255
         ],
         "outline": {
@@ -11671,7 +11700,7 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 1,
+       "classMaxValue": 0.9,
        "label": "< 1%",
        "description": ""
       },
@@ -11680,9 +11709,9 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         250,
-         250,
-         100,
+         255,
+         255,
+         115,
          255
         ],
         "outline": {
@@ -11697,7 +11726,7 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 2,
+       "classMaxValue": 1.99,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -11706,9 +11735,9 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         255,
-         170,
-         0,
+         252,
+         179,
+         68,
          255
         ],
         "outline": {
@@ -11723,13 +11752,39 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 3,
+       "classMaxValue": 2.99,
        "label": "2 - 2.9%",
+       "description": ""
+      },
+      {
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         232,
+         21,
+         21,
+         255
+        ],
+        "outline": {
+         "type": "esriSLS",
+         "style": "esriSLSSolid",
+         "color": [
+          110,
+          110,
+          110,
+          255
+         ],
+         "width": 0.4
+        }
+       },
+       "classMaxValue": 4,
+       "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 25,
+    "transparency": 0,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -11745,161 +11800,136 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "Knowledget.HRUID2007",
+   "displayField": "HR035b08.HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "Knowledget.FID",
+     "name": "HR035b08.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "Knowledget.Shape",
+     "name": "HR035b08.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "Knowledget.GEODB_OID",
+     "name": "HR035b08.GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "Knowledget.OBJECTID",
+     "name": "HR035b08.OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "Knowledget.HRUID2007",
+     "name": "HR035b08.HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "Knowledget.FRE_LABEL",
+     "name": "HR035b08.ENG_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "ENG_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "HR035b08.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "Knowledget.LENGTH",
+     "name": "HR035b08.LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "Knowledget.SHAPE_AREA",
+     "name": "HR035b08.SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "Knowledget.HRUID2007_",
+     "name": "HR035b08.LHINCode",
      "type": "esriFieldTypeInteger",
-     "alias": "HRUID2007_",
+     "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "Knowledget.Total",
+     "name": "HR035b08.En",
+     "type": "esriFieldTypeSingle",
+     "alias": "HR035b08.En",
+     "domain": null
+    },
+    {
+     "name": "HR035b08.EnFr",
+     "type": "esriFieldTypeSingle",
+     "alias": "HR035b08.EnFr",
+     "domain": null
+    },
+    {
+     "name": "HR035b08.Neither",
+     "type": "esriFieldTypeSingle",
+     "alias": "HR035b08.Neither",
+     "domain": null
+    },
+    {
+     "name": "Knowledge of Official Lnaguage.csv.LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Knowledge of Official Lnaguage.csv.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "Knowledget.EnglishL_1",
-     "type": "esriFieldTypeString",
-     "alias": "EnglishL_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Knowledget.Health_Pro",
-     "type": "esriFieldTypeInteger",
-     "alias": "Health_Pro",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.Knowledge",
-     "type": "esriFieldTypeInteger",
-     "alias": "Knowledge",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.Knowledg_1",
-     "type": "esriFieldTypeInteger",
-     "alias": "Total",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.Knowledg_2",
+     "name": "Knowledge of Official Lnaguage.csv.FrenchOnly",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "Knowledget.Knowledg_3",
+     "name": "Knowledge of Official Lnaguage.csv.English&French",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "Knowledget.Knowledg_4",
+     "name": "Knowledge of Official Lnaguage.csv.EnglishOnly",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "Knowledget.Knowledg_5",
+     "name": "Knowledge of Official Lnaguage.csv.Neither",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
      "domain": null
     },
     {
-     "name": "Knowledget.EnProp",
+     "name": "HR035b08.En_1",
      "type": "esriFieldTypeSingle",
-     "alias": "Knowledget.EnProp",
+     "alias": "HR035b08.En_1",
      "domain": null
     },
     {
-     "name": "lhin.csv.LHINCode2013",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINCode2013",
-     "domain": null
-    },
-    {
-     "name": "lhin.csv.LHINNames",
-     "type": "esriFieldTypeString",
-     "alias": "LHINNames",
-     "length": 255,
-     "domain": null
-    },
-    {
-     "name": "Knowledget.frprop_1",
+     "name": "HR035b08.FrProp",
      "type": "esriFieldTypeSingle",
-     "alias": "Knowledget.frprop_1",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.ENFrPr",
-     "type": "esriFieldTypeSingle",
-     "alias": "Knowledget.ENFrPr",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.NeitherPro",
-     "type": "esriFieldTypeSingle",
-     "alias": "Knowledget.NeitherPro",
-     "domain": null
-    },
-    {
-     "name": "Knowledget.NeitherP",
-     "type": "esriFieldTypeSingle",
-     "alias": "Knowledget.NeitherP",
+     "alias": "HR035b08.FrProp",
      "domain": null
     }
    ],
@@ -11932,7 +11962,7 @@
      "type": "classBreaks",
      "field": "FirstOfficial.FrP",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 0.8700000047683716,
+     "minValue": 0.8999999761581421,
      "classBreakInfos": [
       {
        "symbol": {
@@ -11956,7 +11986,7 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 1,
+       "classMaxValue": 0.99,
        "label": "< 1%",
        "description": ""
       },
@@ -11967,7 +11997,7 @@
         "color": [
          255,
          255,
-         0,
+         115,
          255
         ],
         "outline": {
@@ -11982,7 +12012,7 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 2,
+       "classMaxValue": 1.99,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -12008,7 +12038,7 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 3,
+       "classMaxValue": 2.99,
        "label": "2 - 2.9%",
        "description": ""
       },
@@ -12034,13 +12064,13 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 100,
+       "classMaxValue": 21.600000381469727,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 25,
+    "transparency": 0,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -12091,6 +12121,13 @@
      "domain": null
     },
     {
+     "name": "FirstOfficial.ENG_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "ENG_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
      "name": "FirstOfficial.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
@@ -12110,107 +12147,69 @@
      "domain": null
     },
     {
-     "name": "FirstOfficial.HRUID2007_",
+     "name": "FirstOfficial.LHINCode",
      "type": "esriFieldTypeInteger",
-     "alias": "HRUID2007_",
+     "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "FirstOfficial.Total",
-     "type": "esriFieldTypeInteger",
-     "alias": "Total",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.EnglishL_1",
-     "type": "esriFieldTypeString",
-     "alias": "EnglishL_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.Health_Pro",
-     "type": "esriFieldTypeInteger",
-     "alias": "Health_Pro",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.FirstOffic",
+     "name": "FirstOfficialLanguage.csv.LHIN",
      "type": "esriFieldTypeInteger",
      "alias": "LHIN",
      "domain": null
     },
     {
-     "name": "FirstOfficial.FirstOff_1",
+     "name": "FirstOfficialLanguage.csv.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "FirstOfficial.FirstOff_2",
+     "name": "FirstOfficialLanguage.csv.FrenchOnly",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "FirstOfficial.FirstOff_3",
+     "name": "FirstOfficialLanguage.csv.English&French",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "FirstOfficial.FirstOff_4",
+     "name": "FirstOfficialLanguage.csv.EnglishOnly",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "FirstOfficial.FirstOff_5",
+     "name": "FirstOfficialLanguage.csv.Neither",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
      "domain": null
     },
     {
-     "name": "FirstOfficial.NeitherPr",
+     "name": "FirstOfficial.En",
      "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.NeitherPr",
+     "alias": "FirstOfficial.En",
      "domain": null
     },
     {
-     "name": "lhin.csv.LHINCode2013",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINCode2013",
+     "name": "FirstOfficial.EnFr",
+     "type": "esriFieldTypeSingle",
+     "alias": "FirstOfficial.EnFr",
      "domain": null
     },
     {
-     "name": "lhin.csv.LHINNames",
-     "type": "esriFieldTypeString",
-     "alias": "LHINNames",
-     "length": 255,
+     "name": "FirstOfficial.Neither",
+     "type": "esriFieldTypeSingle",
+     "alias": "FirstOfficial.Neither",
      "domain": null
     },
     {
      "name": "FirstOfficial.FrP",
      "type": "esriFieldTypeSingle",
      "alias": "FirstOfficial.FrP",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.EnP",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.EnP",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.ENFrP",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.ENFrP",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.NeitherP",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.NeitherP",
      "domain": null
     }
    ],
@@ -12241,9 +12240,9 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "ELanguageSpokenAtHome.FrPr",
+     "field": "LanguageSpoken.FrenchPr",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 0.27000001072883606,
+     "minValue": 0,
      "classBreakInfos": [
       {
        "symbol": {
@@ -12278,7 +12277,7 @@
         "color": [
          255,
          255,
-         0,
+         115,
          255
         ],
         "outline": {
@@ -12345,13 +12344,13 @@
          "width": 0.4
         }
        },
-       "classMaxValue": 100,
+       "classMaxValue": 13,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 25,
+    "transparency": 0,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -12367,167 +12366,148 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "ELanguageSpokenAtHome.HRUID2007",
+   "displayField": "LanguageSpoken.HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "ELanguageSpokenAtHome.FID",
+     "name": "LanguageSpoken.FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Shape",
+     "name": "LanguageSpoken.Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.GEODB_OID",
+     "name": "LanguageSpoken.GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.OBJECTID",
+     "name": "LanguageSpoken.OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.HRUID2007",
+     "name": "LanguageSpoken.HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.FRE_LABEL",
+     "name": "LanguageSpoken.ENG_LABEL",
+     "type": "esriFieldTypeString",
+     "alias": "ENG_LABEL",
+     "length": 100,
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.LENGTH",
+     "name": "LanguageSpoken.LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.SHAPE_AREA",
+     "name": "LanguageSpoken.SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.HRUID2007_",
-     "type": "esriFieldTypeInteger",
-     "alias": "HRUID2007_",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.Total",
-     "type": "esriFieldTypeInteger",
-     "alias": "Total",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.EnglishL_1",
-     "type": "esriFieldTypeString",
-     "alias": "EnglishL_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.Health_Pro",
-     "type": "esriFieldTypeInteger",
-     "alias": "Health_Pro",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.Language_S",
+     "name": "LanguageSpoken.LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_1",
+     "name": "LanguageSpoken.En",
+     "type": "esriFieldTypeSingle",
+     "alias": "LanguageSpoken.En",
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.EnFr",
+     "type": "esriFieldTypeSingle",
+     "alias": "LanguageSpoken.EnFr",
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.Neither",
+     "type": "esriFieldTypeSingle",
+     "alias": "LanguageSpoken.Neither",
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.Other",
+     "type": "esriFieldTypeSingle",
+     "alias": "LanguageSpoken.Other",
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.FrProp",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "LanguageSpoken.FrProp",
+     "domain": null
+    },
+    {
+     "name": "LanguageSpoken.FrenchPr",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "LanguageSpoken.FrenchPr",
+     "domain": null
+    },
+    {
+     "name": "Language Spoken Most Often at Home.csv.LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Language Spoken Most Often at Home.csv.Total",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_2",
+     "name": "Language Spoken Most Often at Home.csv.FrenchOnly",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_3",
+     "name": "Language Spoken Most Often at Home.csv.English&French",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_4",
+     "name": "Language Spoken Most Often at Home.csv.EnglishOnly",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_5",
+     "name": "Language Spoken Most Often at Home.csv.Neither",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
      "domain": null
     },
     {
-     "name": "ELanguageSpokenAtHome.Language_6",
+     "name": "Language Spoken Most Often at Home.csv.Other",
      "type": "esriFieldTypeInteger",
      "alias": "Other",
-     "domain": null
-    },
-    {
-     "name": "lhin.csv.LHINCode2013",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINCode2013",
-     "domain": null
-    },
-    {
-     "name": "lhin.csv.LHINNames",
-     "type": "esriFieldTypeString",
-     "alias": "LHINNames",
-     "length": 255,
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.EnPr",
-     "type": "esriFieldTypeSingle",
-     "alias": "ELanguageSpokenAtHome.EnPr",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.FrPr",
-     "type": "esriFieldTypeSingle",
-     "alias": "ELanguageSpokenAtHome.FrPr",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.EnFrPr",
-     "type": "esriFieldTypeSingle",
-     "alias": "ELanguageSpokenAtHome.EnFrPr",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.otherP",
-     "type": "esriFieldTypeSingle",
-     "alias": "ELanguageSpokenAtHome.otherP",
-     "domain": null
-    },
-    {
-     "name": "ELanguageSpokenAtHome.NeitherP",
-     "type": "esriFieldTypeSingle",
-     "alias": "ELanguageSpokenAtHome.NeitherP",
      "domain": null
     }
    ],
@@ -12557,12 +12537,8 @@
    "maxScale": 0,
    "drawingInfo": {
     "renderer": {
-     "type": "uniqueValue",
-     "field1": "LHINProf_1",
-     "field2": null,
-     "field3": null,
-     "fieldDelimiter": ", ",
-     "defaultSymbol": {
+     "type": "simple",
+     "symbol": {
       "type": "esriSFS",
       "style": "esriSFSSolid",
       "color": [
@@ -12575,25 +12551,25 @@
        "type": "esriSLS",
        "style": "esriSLSSolid",
        "color": [
-        52,
-        52,
-        52,
+        0,
+        0,
+        0,
         255
        ],
-       "width": 1
+       "width": 0.4
       }
      },
-     "defaultLabel": "<all other values>",
-     "uniqueValueInfos": []
+     "label": "",
+     "description": ""
     },
-    "transparency": 25,
+    "transparency": 0,
     "labelingInfo": null
    },
    "defaultVisibility": false,
    "extent": {
     "xmin": -95.85382313606915,
-    "ymin": 40.67822210102392,
-    "xmax": -69.65332408303513,
+    "ymin": 40.67822210102391,
+    "xmax": -69.6533240830351,
     "ymax": 56.886546730303074,
     "spatialReference": {
      "wkid": 4269,
@@ -12602,13 +12578,13 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HR035b08_H",
+   "displayField": "Shape_Length",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeOID",
-     "alias": "FID",
+     "alias": "OBJECTID",
      "domain": null
     },
     {
@@ -12618,570 +12594,15 @@
      "domain": null
     },
     {
-     "name": "OBJECTID",
-     "type": "esriFieldTypeInteger",
-     "alias": "OBJECTID",
-     "domain": null
-    },
-    {
-     "name": "HR035b08_G",
+     "name": "Shape_Length",
      "type": "esriFieldTypeDouble",
-     "alias": "HR035b08_G",
-     "domain": null
-    },
-    {
-     "name": "HR035b08_O",
-     "type": "esriFieldTypeDouble",
-     "alias": "HR035b08_O",
-     "domain": null
-    },
-    {
-     "name": "HR035b08_H",
-     "type": "esriFieldTypeString",
-     "alias": "HR035b08_H",
-     "length": 4,
-     "domain": null
-    },
-    {
-     "name": "HR035b08_E",
-     "type": "esriFieldTypeString",
-     "alias": "HR035b08_E",
-     "length": 100,
-     "domain": null
-    },
-    {
-     "name": "HR035b08_F",
-     "type": "esriFieldTypeString",
-     "alias": "HR035b08_F",
-     "length": 100,
-     "domain": null
-    },
-    {
-     "name": "HR035b08_L",
-     "type": "esriFieldTypeDouble",
-     "alias": "HR035b08_L",
-     "domain": null
-    },
-    {
-     "name": "HR035b08_1",
-     "type": "esriFieldTypeString",
-     "alias": "HR035b08_1",
-     "length": 50,
-     "domain": null
-    },
-    {
-     "name": "HR035b08_2",
-     "type": "esriFieldTypeInteger",
-     "alias": "HR035b08_2",
-     "domain": null
-    },
-    {
-     "name": "LHINProfil",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINProfil",
-     "domain": null
-    },
-    {
-     "name": "LHINProf_1",
-     "type": "esriFieldTypeString",
-     "alias": "LHINProf_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINProf_2",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINProf_2",
-     "domain": null
-    },
-    {
-     "name": "LHINProf_4",
-     "type": "esriFieldTypeInteger",
-     "alias": "Audiologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINProf_5",
-     "type": "esriFieldTypeString",
-     "alias": "Audiologists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINProf_6",
-     "type": "esriFieldTypeString",
-     "alias": "Chiropodists French",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINProf_7",
-     "type": "esriFieldTypeInteger",
-     "alias": "Chiropodists English",
-     "domain": null
-    },
-    {
-     "name": "LHINProf_8",
-     "type": "esriFieldTypeString",
-     "alias": "Chiropodists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINProf_9",
-     "type": "esriFieldTypeInteger",
-     "alias": "Chiropractor French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_10",
-     "type": "esriFieldTypeInteger",
-     "alias": "Chiropractor English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_11",
-     "type": "esriFieldTypeString",
-     "alias": "Chiropractor Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_12",
-     "type": "esriFieldTypeInteger",
-     "alias": "DentalHygienists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_13",
-     "type": "esriFieldTypeInteger",
-     "alias": "DentalHygienists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_14",
-     "type": "esriFieldTypeInteger",
-     "alias": "DentalHygienists Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_15",
-     "type": "esriFieldTypeString",
-     "alias": "DentalTechnologists French",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_16",
-     "type": "esriFieldTypeInteger",
-     "alias": "DentalTechnologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_17",
-     "type": "esriFieldTypeString",
-     "alias": "DentalTechnologists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_18",
-     "type": "esriFieldTypeInteger",
-     "alias": "Dentists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_19",
-     "type": "esriFieldTypeInteger",
-     "alias": "Dentists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_20",
-     "type": "esriFieldTypeInteger",
-     "alias": "Dentists Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_21",
-     "type": "esriFieldTypeString",
-     "alias": "Denturists French",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_22",
-     "type": "esriFieldTypeInteger",
-     "alias": "Denturists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_23",
-     "type": "esriFieldTypeString",
-     "alias": "Denturists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_24",
-     "type": "esriFieldTypeInteger",
-     "alias": "Dietitians French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_25",
-     "type": "esriFieldTypeInteger",
-     "alias": "Dietitians English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_26",
-     "type": "esriFieldTypeString",
-     "alias": "Dietitians Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_27",
-     "type": "esriFieldTypeInteger",
-     "alias": "MassageTherapists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_28",
-     "type": "esriFieldTypeInteger",
-     "alias": "MassageTherapists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_29",
-     "type": "esriFieldTypeString",
-     "alias": "MassageTherapists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_30",
-     "type": "esriFieldTypeInteger",
-     "alias": "MedicalLaboratoryTechnologists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_31",
-     "type": "esriFieldTypeInteger",
-     "alias": "MedicalLaboratoryTechnologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_32",
-     "type": "esriFieldTypeInteger",
-     "alias": "MedicalLaboratoryTechnologists Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_33",
-     "type": "esriFieldTypeInteger",
-     "alias": "MedicalRadiationTechnologists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_34",
-     "type": "esriFieldTypeInteger",
-     "alias": "MedicalRadiationTechnologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_35",
-     "type": "esriFieldTypeString",
-     "alias": "MedicalRadiationTechnologists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_36",
-     "type": "esriFieldTypeInteger",
-     "alias": "Midwives French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_37",
-     "type": "esriFieldTypeInteger",
-     "alias": "Midwives English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_38",
-     "type": "esriFieldTypeString",
-     "alias": "Midwives Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_39",
-     "type": "esriFieldTypeString",
-     "alias": "NursePractitioners French",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_40",
-     "type": "esriFieldTypeInteger",
-     "alias": "NursePractitioners English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_41",
-     "type": "esriFieldTypeString",
-     "alias": "NursePractitioners Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_42",
-     "type": "esriFieldTypeInteger",
-     "alias": "OccupationalTherapists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_43",
-     "type": "esriFieldTypeInteger",
-     "alias": "OccupationalTherapists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_44",
-     "type": "esriFieldTypeInteger",
-     "alias": "OccupationalTherapists Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_45",
-     "type": "esriFieldTypeInteger",
-     "alias": "Opticians French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_46",
-     "type": "esriFieldTypeInteger",
-     "alias": "Opticians English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_47",
-     "type": "esriFieldTypeInteger",
-     "alias": "Opticians Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_48",
-     "type": "esriFieldTypeInteger",
-     "alias": "Optometrists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_49",
-     "type": "esriFieldTypeInteger",
-     "alias": "Optometrists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_50",
-     "type": "esriFieldTypeString",
-     "alias": "Optometrists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_51",
-     "type": "esriFieldTypeInteger",
-     "alias": "Pharmacists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_52",
-     "type": "esriFieldTypeInteger",
-     "alias": "Pharmacists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_53",
-     "type": "esriFieldTypeString",
-     "alias": "Pharmacists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_54",
-     "type": "esriFieldTypeInteger",
-     "alias": "PhysiciansGP French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_55",
-     "type": "esriFieldTypeInteger",
-     "alias": "PhysiciansGP English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_56",
-     "type": "esriFieldTypeInteger",
-     "alias": "PhysiciansSpec French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_57",
-     "type": "esriFieldTypeInteger",
-     "alias": "PhysiciansSpec English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_58",
-     "type": "esriFieldTypeInteger",
-     "alias": "Physiotherapists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_59",
-     "type": "esriFieldTypeInteger",
-     "alias": "Physiotherapists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_60",
-     "type": "esriFieldTypeInteger",
-     "alias": "Physiotherapists Others",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_61",
-     "type": "esriFieldTypeInteger",
-     "alias": "Psychologists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_62",
-     "type": "esriFieldTypeInteger",
-     "alias": "Psychologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_63",
-     "type": "esriFieldTypeString",
-     "alias": "Psychologists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_64",
-     "type": "esriFieldTypeInteger",
-     "alias": "RegisteredNurses French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_65",
-     "type": "esriFieldTypeInteger",
-     "alias": "RegisteredNurses English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_66",
-     "type": "esriFieldTypeString",
-     "alias": "RegisteredNurses Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_67",
-     "type": "esriFieldTypeInteger",
-     "alias": "RegisteredPracticalNurses French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_68",
-     "type": "esriFieldTypeInteger",
-     "alias": "RegisteredPracticalNurses English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_69",
-     "type": "esriFieldTypeString",
-     "alias": "RegisteredPracticalNurses Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "LHINPro_70",
-     "type": "esriFieldTypeInteger",
-     "alias": "SpeechLanguagePathologists French",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_71",
-     "type": "esriFieldTypeInteger",
-     "alias": "SpeechLanguagePathologists English",
-     "domain": null
-    },
-    {
-     "name": "LHINPro_72",
-     "type": "esriFieldTypeString",
-     "alias": "SpeechLanguagePathologists Others",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "Shape_Leng",
-     "type": "esriFieldTypeDouble",
-     "alias": "Shape_Leng",
+     "alias": "Shape_Length",
      "domain": null
     },
     {
      "name": "Shape_Area",
      "type": "esriFieldTypeDouble",
      "alias": "Shape_Area",
-     "domain": null
-    },
-    {
-     "name": "MaxSimpTol",
-     "type": "esriFieldTypeDouble",
-     "alias": "MaxSimpTol",
-     "domain": null
-    },
-    {
-     "name": "MinSimpTol",
-     "type": "esriFieldTypeDouble",
-     "alias": "MinSimpTol",
-     "domain": null
-    },
-    {
-     "name": "lHIN_csv_L",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHINCODE2013",
-     "domain": null
-    },
-    {
-     "name": "lHIN_csv_1",
-     "type": "esriFieldTypeString",
-     "alias": "lHIN_csv_1",
-     "length": 254,
-     "domain": null
-    },
-    {
-     "name": "lHIN_csv_R",
-     "type": "esriFieldTypeInteger",
-     "alias": "RespiratoryTherapists French",
-     "domain": null
-    },
-    {
-     "name": "lHIN_csv_2",
-     "type": "esriFieldTypeInteger",
-     "alias": "RespiratoryTherapists English",
-     "domain": null
-    },
-    {
-     "name": "lHIN_csv_3",
-     "type": "esriFieldTypeString",
-     "alias": "RespiratoryTherapists Others",
-     "length": 254,
      "domain": null
     }
    ],
@@ -13191,8 +12612,8 @@
    "hasLabels": false,
    "capabilities": "Map,Query,Data",
    "maxRecordCount": 1000,
-   "supportsStatistics": false,
-   "supportsAdvancedQueries": false,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
    "supportedQueryFormats": "JSON, AMF",
    "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true}
   },
@@ -35370,55 +34791,49 @@
   {
    "currentVersion": 10.11,
    "id": 149,
-   "name": "MotherTongueLHIN.csv",
+   "name": "Knowledge of Official Lnaguage.csv",
    "type": "Table",
    "description": null,
    "definitionExpression": "",
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeNone",
-   "displayField": "Field1",
+   "displayField": "LHIN",
    "typeIdField": null,
    "fields": [
     {
-     "name": "Field1",
+     "name": "LHIN",
      "type": "esriFieldTypeInteger",
-     "alias": "Field1",
+     "alias": "LHIN",
      "domain": null
     },
     {
-     "name": "Field2",
+     "name": "Total",
      "type": "esriFieldTypeInteger",
-     "alias": "Field2",
+     "alias": "Total",
      "domain": null
     },
     {
-     "name": "Field3",
+     "name": "FrenchOnly",
      "type": "esriFieldTypeInteger",
-     "alias": "Field3",
+     "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "Field4",
+     "name": "English&French",
      "type": "esriFieldTypeInteger",
-     "alias": "Field4",
+     "alias": "English&French",
      "domain": null
     },
     {
-     "name": "Field5",
+     "name": "EnglishOnly",
      "type": "esriFieldTypeInteger",
-     "alias": "Field5",
+     "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "Field6",
+     "name": "Neither",
      "type": "esriFieldTypeInteger",
-     "alias": "Field6",
-     "domain": null
-    },
-    {
-     "name": "Field7",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field7",
+     "alias": "Neither",
      "domain": null
     }
    ],
@@ -35432,49 +34847,26 @@
   {
    "currentVersion": 10.11,
    "id": 150,
-   "name": "Knowledge of Official Lnaguage.csv",
+   "name": "lhin.csv",
    "type": "Table",
    "description": null,
    "definitionExpression": "",
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeNone",
-   "displayField": "Field1",
+   "displayField": "LHINNames",
    "typeIdField": null,
    "fields": [
     {
-     "name": "Field1",
+     "name": "LHINCode2013",
      "type": "esriFieldTypeInteger",
-     "alias": "Field1",
+     "alias": "LHINCode2013",
      "domain": null
     },
     {
-     "name": "Field2",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field2",
-     "domain": null
-    },
-    {
-     "name": "Field3",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field3",
-     "domain": null
-    },
-    {
-     "name": "Field4",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field4",
-     "domain": null
-    },
-    {
-     "name": "Field5",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field5",
-     "domain": null
-    },
-    {
-     "name": "Field6",
-     "type": "esriFieldTypeInteger",
-     "alias": "Field6",
+     "name": "LHINNames",
+     "type": "esriFieldTypeString",
+     "alias": "LHINNames",
+     "length": 255,
      "domain": null
     }
    ],
@@ -35544,55 +34936,55 @@
   {
    "currentVersion": 10.11,
    "id": 152,
-   "name": "Language Spoken Most Often at Home.csv",
+   "name": "MotherTongueLHIN.csv",
    "type": "Table",
    "description": null,
    "definitionExpression": "",
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeNone",
-   "displayField": "Field1",
+   "displayField": "LHIN",
    "typeIdField": null,
    "fields": [
     {
-     "name": "Field1",
+     "name": "LHIN",
      "type": "esriFieldTypeInteger",
-     "alias": "Field1",
+     "alias": "LHIN",
      "domain": null
     },
     {
-     "name": "Field2",
+     "name": "Total",
      "type": "esriFieldTypeInteger",
-     "alias": "Field2",
+     "alias": "Total",
      "domain": null
     },
     {
-     "name": "Field3",
+     "name": "FrenchOnly",
      "type": "esriFieldTypeInteger",
-     "alias": "Field3",
+     "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "Field4",
+     "name": "English&French",
      "type": "esriFieldTypeInteger",
-     "alias": "Field4",
+     "alias": "English&French",
      "domain": null
     },
     {
-     "name": "Field5",
+     "name": "EnglishOnly",
      "type": "esriFieldTypeInteger",
-     "alias": "Field5",
+     "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "Field6",
+     "name": "NonOffLanguage",
      "type": "esriFieldTypeInteger",
-     "alias": "Field6",
+     "alias": "NonOffLanguage",
      "domain": null
     },
     {
-     "name": "Field7",
+     "name": "Other",
      "type": "esriFieldTypeInteger",
-     "alias": "Field7",
+     "alias": "Other",
      "domain": null
     }
    ],
@@ -35606,7 +34998,69 @@
   {
    "currentVersion": 10.11,
    "id": 153,
-   "name": "lhin.csv",
+   "name": "Language Spoken Most Often at Home.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "LHIN",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    },
+    {
+     "name": "Total",
+     "type": "esriFieldTypeInteger",
+     "alias": "Total",
+     "domain": null
+    },
+    {
+     "name": "FrenchOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "FrenchOnly",
+     "domain": null
+    },
+    {
+     "name": "English&French",
+     "type": "esriFieldTypeInteger",
+     "alias": "English&French",
+     "domain": null
+    },
+    {
+     "name": "EnglishOnly",
+     "type": "esriFieldTypeInteger",
+     "alias": "EnglishOnly",
+     "domain": null
+    },
+    {
+     "name": "Neither",
+     "type": "esriFieldTypeInteger",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "Other",
+     "type": "esriFieldTypeInteger",
+     "alias": "Other",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 154,
+   "name": "LHINProfile2011.csv",
    "type": "Table",
    "description": null,
    "definitionExpression": "",
@@ -35626,6 +35080,539 @@
      "type": "esriFieldTypeString",
      "alias": "LHINNames",
      "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Pop2011",
+     "type": "esriFieldTypeInteger",
+     "alias": "Pop2011",
+     "domain": null
+    },
+    {
+     "name": "Audiologists_F",
+     "type": "esriFieldTypeString",
+     "alias": "Audiologists_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Audiologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Audiologists_E",
+     "domain": null
+    },
+    {
+     "name": "Audiologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Audiologists_O",
+     "domain": null
+    },
+    {
+     "name": "Chiropodists_F",
+     "type": "esriFieldTypeString",
+     "alias": "Chiropodists_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Chiropodists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Chiropodists_E",
+     "domain": null
+    },
+    {
+     "name": "Chiropodists_O",
+     "type": "esriFieldTypeString",
+     "alias": "Chiropodists_O",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Chiropractor_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Chiropractor_F",
+     "domain": null
+    },
+    {
+     "name": "Chiropractor_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Chiropractor_E",
+     "domain": null
+    },
+    {
+     "name": "Chiropractor_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Chiropractor_O",
+     "domain": null
+    },
+    {
+     "name": "DentalHygienists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "DentalHygienists_F",
+     "domain": null
+    },
+    {
+     "name": "DentalHygienists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "DentalHygienists_E",
+     "domain": null
+    },
+    {
+     "name": "DentalHygienists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "DentalHygienists_O",
+     "domain": null
+    },
+    {
+     "name": "DentalTechnologists_F",
+     "type": "esriFieldTypeString",
+     "alias": "DentalTechnologists_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "DentalTechnologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "DentalTechnologists_E",
+     "domain": null
+    },
+    {
+     "name": "DentalTechnologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "DentalTechnologists_O",
+     "domain": null
+    },
+    {
+     "name": "Dentists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dentists_F",
+     "domain": null
+    },
+    {
+     "name": "Dentists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dentists_E",
+     "domain": null
+    },
+    {
+     "name": "Dentists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dentists_O",
+     "domain": null
+    },
+    {
+     "name": "Denturists_F",
+     "type": "esriFieldTypeString",
+     "alias": "Denturists_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Denturists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Denturists_E",
+     "domain": null
+    },
+    {
+     "name": "Denturists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Denturists_O",
+     "domain": null
+    },
+    {
+     "name": "Dietitians_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dietitians_F",
+     "domain": null
+    },
+    {
+     "name": "Dietitians_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dietitians_E",
+     "domain": null
+    },
+    {
+     "name": "Dietitians_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Dietitians_O",
+     "domain": null
+    },
+    {
+     "name": "MassageTherapists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "MassageTherapists_F",
+     "domain": null
+    },
+    {
+     "name": "MassageTherapists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "MassageTherapists_E",
+     "domain": null
+    },
+    {
+     "name": "MassageTherapists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "MassageTherapists_O",
+     "domain": null
+    },
+    {
+     "name": "MedicalLaboratoryTechnologists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalLaboratoryTechnologists_F",
+     "domain": null
+    },
+    {
+     "name": "MedicalLaboratoryTechnologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalLaboratoryTechnologists_E",
+     "domain": null
+    },
+    {
+     "name": "MedicalLaboratoryTechnologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalLaboratoryTechnologists_O",
+     "domain": null
+    },
+    {
+     "name": "MedicalRadiationTechnologists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalRadiationTechnologists_F",
+     "domain": null
+    },
+    {
+     "name": "MedicalRadiationTechnologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalRadiationTechnologists_E",
+     "domain": null
+    },
+    {
+     "name": "MedicalRadiationTechnologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "MedicalRadiationTechnologists_O",
+     "domain": null
+    },
+    {
+     "name": "Midwives_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Midwives_F",
+     "domain": null
+    },
+    {
+     "name": "Midwives_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Midwives_E",
+     "domain": null
+    },
+    {
+     "name": "Midwives_O",
+     "type": "esriFieldTypeString",
+     "alias": "Midwives_O",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "NursePractitioners_F",
+     "type": "esriFieldTypeString",
+     "alias": "NursePractitioners_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "NursePractitioners_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "NursePractitioners_E",
+     "domain": null
+    },
+    {
+     "name": "NursePractitioners_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "NursePractitioners_O",
+     "domain": null
+    },
+    {
+     "name": "OccupationalTherapists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "OccupationalTherapists_F",
+     "domain": null
+    },
+    {
+     "name": "OccupationalTherapists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "OccupationalTherapists_E",
+     "domain": null
+    },
+    {
+     "name": "OccupationalTherapists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "OccupationalTherapists_O",
+     "domain": null
+    },
+    {
+     "name": "Opticians_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Opticians_F",
+     "domain": null
+    },
+    {
+     "name": "Opticians_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Opticians_E",
+     "domain": null
+    },
+    {
+     "name": "Opticians_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Opticians_O",
+     "domain": null
+    },
+    {
+     "name": "Optometrists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Optometrists_F",
+     "domain": null
+    },
+    {
+     "name": "Optometrists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Optometrists_E",
+     "domain": null
+    },
+    {
+     "name": "Optometrists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Optometrists_O",
+     "domain": null
+    },
+    {
+     "name": "Pharmacists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Pharmacists_F",
+     "domain": null
+    },
+    {
+     "name": "Pharmacists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Pharmacists_E",
+     "domain": null
+    },
+    {
+     "name": "Pharmacists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Pharmacists_O",
+     "domain": null
+    },
+    {
+     "name": "PhysiciansGP_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "PhysiciansGP_F",
+     "domain": null
+    },
+    {
+     "name": "PhysiciansGP_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "PhysiciansGP_E",
+     "domain": null
+    },
+    {
+     "name": "PhysiciansSpec_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "PhysiciansSpec_F",
+     "domain": null
+    },
+    {
+     "name": "PhysiciansSpec_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "PhysiciansSpec_E",
+     "domain": null
+    },
+    {
+     "name": "Physiotherapists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Physiotherapists_F",
+     "domain": null
+    },
+    {
+     "name": "Physiotherapists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Physiotherapists_E",
+     "domain": null
+    },
+    {
+     "name": "Physiotherapists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Physiotherapists_O",
+     "domain": null
+    },
+    {
+     "name": "Psychologists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "Psychologists_F",
+     "domain": null
+    },
+    {
+     "name": "Psychologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "Psychologists_E",
+     "domain": null
+    },
+    {
+     "name": "Psychologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "Psychologists_O",
+     "domain": null
+    },
+    {
+     "name": "RegisteredNurses_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredNurses_F",
+     "domain": null
+    },
+    {
+     "name": "RegisteredNurses_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredNurses_E",
+     "domain": null
+    },
+    {
+     "name": "RegisteredNurses_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredNurses_O",
+     "domain": null
+    },
+    {
+     "name": "RegisteredPracticalNurses_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredPracticalNurses_F",
+     "domain": null
+    },
+    {
+     "name": "RegisteredPracticalNurses_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredPracticalNurses_E",
+     "domain": null
+    },
+    {
+     "name": "RegisteredPracticalNurses_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "RegisteredPracticalNurses_O",
+     "domain": null
+    },
+    {
+     "name": "RespiratoryTherapists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "RespiratoryTherapists_F",
+     "domain": null
+    },
+    {
+     "name": "RespiratoryTherapists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "RespiratoryTherapists_E",
+     "domain": null
+    },
+    {
+     "name": "RespiratoryTherapists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "RespiratoryTherapists_O",
+     "domain": null
+    },
+    {
+     "name": "SpeechLanguagePathologists_F",
+     "type": "esriFieldTypeInteger",
+     "alias": "SpeechLanguagePathologists_F",
+     "domain": null
+    },
+    {
+     "name": "SpeechLanguagePathologists_E",
+     "type": "esriFieldTypeInteger",
+     "alias": "SpeechLanguagePathologists_E",
+     "domain": null
+    },
+    {
+     "name": "SpeechLanguagePathologists_O",
+     "type": "esriFieldTypeInteger",
+     "alias": "SpeechLanguagePathologists_O",
+     "domain": null
+    },
+    {
+     "name": "DiffAcF",
+     "type": "esriFieldTypeString",
+     "alias": "DiffAcF",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "Stress_F",
+     "type": "esriFieldTypeString",
+     "alias": "Stress_F",
+     "length": 255,
+     "domain": null
+    },
+    {
+     "name": "DiffAcF_D",
+     "type": "esriFieldTypeDouble",
+     "alias": "DiffAcF_D",
+     "domain": null
+    },
+    {
+     "name": "Stress_F_D",
+     "type": "esriFieldTypeDouble",
+     "alias": "Stress_F_D",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 155,
+   "name": "Designation.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "OBJECTID_1",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "OBJECTID_1",
+     "type": "esriFieldTypeInteger",
+     "alias": "OBJECTID_1",
+     "domain": null
+    },
+    {
+     "name": "OGF_ID",
+     "type": "esriFieldTypeInteger",
+     "alias": "OGF_ID",
+     "domain": null
+    },
+    {
+     "name": "No FLS Obligation",
+     "type": "esriFieldTypeInteger",
+     "alias": "No FLS Obligation",
+     "domain": null
+    },
+    {
+     "name": "FLS Identified",
+     "type": "esriFieldTypeInteger",
+     "alias": "FLS Identified",
+     "domain": null
+    },
+    {
+     "name": "FLS Designated Partial",
+     "type": "esriFieldTypeInteger",
+     "alias": "FLS Designated Partial",
+     "domain": null
+    },
+    {
+     "name": "FLS Designated All",
+     "type": "esriFieldTypeInteger",
+     "alias": "FLS Designated All",
      "domain": null
     }
    ],

@@ -100,11 +100,12 @@ function translateMap()
 	"<td>${MTFrench}</td>"+
 	"<td>${MTongueEng}</td>"+
 	"<td>${MTNonOFF}</td>"+
+	"<td>${POPIN2011}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[0]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
+	layerData[0]['outFields'] = new Array("POPIN2011","GeoKey20_2", "GeoKey20_1", "DAUID_1", "MTFrench", "MTongueEng", "MTNonOFF" );
 
 	layerData[1] = [];
 	layerData[1]['infoWindowTitle'] = "<b>" + translator.T("Knowledge of Official Language") + "</b>";
@@ -127,12 +128,13 @@ function translateMap()
 	"<td>${KnowlefEng}</td>"+
 	"<td>${KnowlEngFr}</td>"+
 	"<td>${KEngNorFre}</td>"+
+	"<td>${POPIN2011}</td>"+
 	"<td align='center'>${Knowledgeo}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[1]['outFields'] = new Array("KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
+	layerData[1]['outFields'] = new Array("POPIN2011","KnowlefEng","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "KnowledgFr", "KnowlEngFr", "KEngNorFre", "Knowledgeo");
 
 	layerData[2] = [];
 	layerData[2]['infoWindowTitle'] = "<b>" + translator.T("First Official Language Spoken") + "</b>";
@@ -156,11 +158,12 @@ function translateMap()
 	"<td>${FirstoEngF}</td>"+
 	"<td>${FOFENorF}</td>"+
 	"<td>${FirstoffTo}</td>"+
+	"<td>${POPIN2011}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[2]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
+	layerData[2]['outFields'] = new Array("POPIN2011","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "FirstofFre", "FirstofEng", "FirstoEngF", "FOFENorF", "FirstoffTo");
 
 	layerData[3] = [];
 	layerData[3]['infoWindowTitle'] = "<b>" + translator.T("Language Spoken Most Often at Home") + "</b>";
@@ -182,11 +185,12 @@ function translateMap()
 	"<td>${DLSHEn}</td>"+
 	"<td>${DLSHNON}</td>"+
 	"<td>${DLAthomeTo}</td>"+
+	"<td>${POPIN2011}</td>"+
 	"</tr>"+
 	"</table>" + "</p>" + "<p>" + 
 	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
 	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[3]['outFields'] = new Array("GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
+	layerData[3]['outFields'] = new Array("POPIN2011","GeoKey20_2", "GeoKey20_1", "POPIN2011", "DAUID_1", "DLSHFre", "DLSHEn", "DLSHNON", "DLAthomeTo");
 
 	layerData[4] = [];
 	layerData[4]['infoWindowTitle'] = "<b>" + translator.T("Health professions by LHIN") + "</b>";

@@ -176,27 +176,10 @@ function(
 		fadeOutSpinner();
 	});	
 	
-	function updateLayerWrapper(layerId, isServicePoint)
-	{		
-		if (isServicePoint)
-		{
-			return function()
-			{
-				updateServicePoints();
-			};
-		}
-		else
-		{
-			return function(){
-				updateLayer();
-			};
-		}
-	}
-
 	function updateLayer()
 	{
 		/**
-		 * 2. Remove old layers.
+		 * 2. Remove all layers.
 		 * 3. Get the clicked layerId.
 		 * 4. Draw the new layer accordingly. 
 		 *    4.1. If nothing is clicked draw layer 12.
@@ -208,7 +191,8 @@ function(
 		// 2.
 		map.graphics.clear();
 		map.infoWindow.hide();
-		for(var i = 0; i < numLayers; i++)
+		
+		for (var i in mapLayer)
 			map.removeLayer(mapLayer[i]);
 		
 		// 3. 
@@ -279,20 +263,7 @@ function(
 		
 		mapServicePointLabel = '';
 		mapServicePointLegendLabel = '';
-		/**
-		 * 1. Remove all service point layers.
-		 * 2. Add the clicked service point. 
-		 */	
-		for(var i = 0; i < numLayers; i++)
-		{
-			if (layerToRegion[i] != 2)
-				continue;
-			
-			map.removeLayer(mapLayer[i]);	
-			map.removeLayer(mapLayer[servicePointBuffers[i][1]]);					
-			map.removeLayer(mapLayer[servicePointBuffers[i][0]]);					
-		}
-		
+
 		var clickedServicePoint = mapModal.getCheckedServicePoint();
 		var clickedServicePointBufferSmall = mapModal.getCheckedServicePointBufferSmall();							
 		var clickedServicePointBufferLarge = mapModal.getCheckedServicePointBufferLarge();	
@@ -318,7 +289,7 @@ function(
 				numServicePointLayers++;	
 				map.reorderLayer(mapLayer[servicePointBuffers[clickedServicePoint][0]], numServicePointLayers);
 			}
-
+			
 			map.addLayer(mapLayer[clickedServicePoint]);
 			mapServicePointLegendLabel +=  legendLabel[clickedServicePoint];
 			numServicePointLayers++;				

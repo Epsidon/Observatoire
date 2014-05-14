@@ -14,7 +14,7 @@ Fr['Geomatic, Data and Analysis'] = 'Géomatique, données et analyses ';
 Fr['Érik Bourdon, Manager'] = 'Érik Bourdon, conseiller';
 Fr['Health Profile'] = 'Profil de la santé ';
 Fr['Publications'] = 'Recherche de l’Observatoire';
-Fr['Health Services Offered in a Minority Language'] = 'Services et professionnels de la  santé en langue officielle minoritaire';
+Fr['Health Services Offered in a Minority Language'] = 'Services de santé offerts en langue minoritaire';
 
 Fr['The Observatory of Minority Health team would like to acknowledge the support of its partners in setting up this project.'] = 'L’équipe de l’Observatoire de la santé des minorités remercie ses partenaires pour la mise en place de ce projet.';
 

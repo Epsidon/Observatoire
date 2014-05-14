@@ -195,7 +195,7 @@ Tabs.prototype.getResearch  = function ()
 					'<table width="100%" border="0" cellspacing="0" cellpadding="0" class="researchTable">' +
 						'<tr>' +
 							'<td>' +'<ol>' +
-							'<p class="titre1 Recherche">' + 'Recherche de  l&rsquo;Observatoire' + '</p>' +
+							'<p class="titre1 Recherche">' + translator.T('Publications') + '</p>' +
 							'</ol>' +
 							'</td>' +
 						'</tr>' +
@@ -205,13 +205,13 @@ Tabs.prototype.getResearch  = function ()
 						'<tr>' +
 							'<td colspan="1" align="left" valign="top">' +
 							'<ol>' +
-							'<p class="titre2">' + 'Profil de la santé ' + '</p>' +
+							'<p class="titre2">' + translator.T('Health Profile') + '</p>' +
 							'</ol>' +
 							'</td>' +
 							
 							'<td colspan="1" align="left" valign="top">' +
 							'<ol>' +
-							'<p class="titre2">' + 'Services et professionnels de la  santé en langue officielle minoritaire' + '</p>' +
+							'<p class="titre2">' + translator.T('Health Services Offered in a Minority Language') + '</p>' +
 							'</ol>' +
 							'</td>' +
 							
@@ -347,8 +347,8 @@ Tabs.prototype.getResearch  = function ()
 								'<ol>' +
 									'<ol>' +
 										'<p class="boldcolor">' + 'Gauthier AP, Timony PE, Wenghofer  EF (2012).'+ '</p>' +
-										'<p>' +'<strong>' + 'Examining the geographic distribution of French-speaking physicians in  Ontario. Canadian Family Physician.' +  '</strong>' + '<br />' +
-										'Le Médecin de famille canadien, 58&nbsp;: e717-724. ' + 
+										'<p>' + 'Examining the geographic distribution of French-speaking physicians in  Ontario.' + '</br>' + '<strong>' + 'Canadian Family Physician/' +
+										 'Le Médecin de famille canadien. ' + '</strong>' + ' 58&nbsp;: e717-724. ' +
 										'<a  href="Pdf/Gauthier CFP 2012.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +

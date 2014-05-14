@@ -27,7 +27,7 @@
         "color": [
          255,
          255,
-         227,
+         222,
          255
         ],
         "outline": {
@@ -52,23 +52,23 @@
         "style": "esriSFSSolid",
         "color": [
          0,
-         112,
-         255,
+         92,
+         230,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 51,
+       "classMaxValue": 50,
        "label": "1 - 50",
        "description": ""
       },
@@ -86,15 +86,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 201,
+       "classMaxValue": 200,
        "label": "51 - 200",
        "description": ""
       },
@@ -112,15 +112,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 401,
+       "classMaxValue": 400,
        "label": "201 - 400",
        "description": ""
       },
@@ -138,21 +138,21 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 1500,
+       "classMaxValue": 1295,
        "label": "401 - 1500",
        "description": ""
       }
      ]
     },
-    "transparency": 45,
+    "transparency": 40,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -529,7 +529,7 @@
    "copyrightText": "",
    "parentLayer": null,
    "subLayers": [],
-   "minScale": 5000000,
+   "minScale": 0,
    "maxScale": 0,
    "drawingInfo": {
     "renderer": {
@@ -544,8 +544,8 @@
         "style": "esriSFSSolid",
         "color": [
          255,
-         250,
-         250,
+         255,
+         235,
          255
         ],
         "outline": {
@@ -570,24 +570,24 @@
         "style": "esriSFSSolid",
         "color": [
          0,
-         112,
-         255,
+         92,
+         230,
          255
         ],
         "outline": {
          "type": "esriSLS",
-         "style": "esriSLSNull",
+         "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0
+         "width": 0.4
         }
        },
        "classMaxValue": 50,
-       "label": "1-50",
+       "label": "1 - 50",
        "description": ""
       },
       {
@@ -604,16 +604,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 200,
-       "label": "51-200",
+       "label": "51 - 200",
        "description": ""
       },
       {
@@ -630,16 +630,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 400,
-       "label": "201-400",
+       "label": "201 - 400",
        "description": ""
       },
       {
@@ -656,21 +656,21 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 1500,
-       "label": "401-1500",
+       "label": "401 - 1500",
        "description": ""
       }
      ]
     },
-    "transparency": 45,
+    "transparency": 40,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -1047,7 +1047,7 @@
    "copyrightText": "",
    "parentLayer": null,
    "subLayers": [],
-   "minScale": 5000000,
+   "minScale": 0,
    "maxScale": 0,
    "drawingInfo": {
     "renderer": {
@@ -1063,7 +1063,7 @@
         "color": [
          255,
          255,
-         255,
+         235,
          255
         ],
         "outline": {
@@ -1088,24 +1088,24 @@
         "style": "esriSFSSolid",
         "color": [
          0,
-         112,
-         255,
+         92,
+         230,
          255
         ],
         "outline": {
          "type": "esriSLS",
-         "style": "esriSLSNull",
+         "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
-         "width": 0
+         "width": 0.4
         }
        },
        "classMaxValue": 50,
-       "label": "1-50",
+       "label": "1 - 50",
        "description": ""
       },
       {
@@ -1122,16 +1122,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 200,
-       "label": "51-200",
+       "label": "51 - 200",
        "description": ""
       },
       {
@@ -1148,16 +1148,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 400,
-       "label": "201-400",
+       "label": "201 - 400",
        "description": ""
       },
       {
@@ -1174,21 +1174,21 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 1500,
-       "label": "401-1500",
+       "label": "401 - 1500",
        "description": ""
       }
      ]
     },
-    "transparency": 45,
+    "transparency": 40,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -1565,7 +1565,7 @@
    "copyrightText": "",
    "parentLayer": null,
    "subLayers": [],
-   "minScale": 5000000,
+   "minScale": 0,
    "maxScale": 0,
    "drawingInfo": {
     "renderer": {
@@ -1581,7 +1581,7 @@
         "color": [
          255,
          255,
-         250,
+         219,
          255
         ],
         "outline": {
@@ -1606,24 +1606,24 @@
         "style": "esriSFSSolid",
         "color": [
          0,
-         112,
-         255,
+         92,
+         230,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 50,
-       "label": "1-50",
+       "label": "1 - 50",
        "description": ""
       },
       {
@@ -1640,16 +1640,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 200,
-       "label": "51-200",
+       "label": "51 - 200",
        "description": ""
       },
       {
@@ -1666,16 +1666,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 400,
-       "label": "201-400",
+       "label": "201 - 400",
        "description": ""
       },
       {
@@ -1692,16 +1692,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 1500,
-       "label": "401-1500",
+       "label": "401 - 1500",
        "description": ""
       }
      ]
@@ -11376,33 +11376,33 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "lhrl035b06a_e_Oct2011.FrProp1",
+     "field": "FrPr",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 1,
+     "minValue": 0.8999999761581421,
      "classBreakInfos": [
       {
        "symbol": {
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         40,
-         146,
-         199,
+         115,
+         178,
+         255,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 1,
+       "classMaxValue": 0.9,
        "label": "< 1%",
        "description": ""
       },
@@ -11420,15 +11420,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 2,
+       "classMaxValue": 1.99,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -11446,15 +11446,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 3,
+       "classMaxValue": 2.99,
        "label": "2 - 2.9%",
        "description": ""
       },
@@ -11463,30 +11463,30 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         232,
-         21,
-         21,
+         230,
+         0,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 22,
+       "classMaxValue": 99.99,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 0,
+    "transparency": 25,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -11502,148 +11502,142 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "lhrl035b06a_e_Oct2011.HRUID2007",
+   "displayField": "HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "lhrl035b06a_e_Oct2011.FID",
+     "name": "FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.Shape",
+     "name": "Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.GEODB_OID",
+     "name": "GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.OBJECTID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.HRUID2007",
+     "name": "HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.ENG_LABEL",
+     "name": "ENG_LABEL",
      "type": "esriFieldTypeString",
      "alias": "ENG_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.FRE_LABEL",
+     "name": "FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.LENGTH",
+     "name": "LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.SHAPE_AREA",
+     "name": "SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.LHINCode",
+     "name": "LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.En",
+     "name": "En",
      "type": "esriFieldTypeSingle",
-     "alias": "lhrl035b06a_e_Oct2011.En",
+     "alias": "En",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.EnFr",
+     "name": "EnFr",
      "type": "esriFieldTypeSingle",
-     "alias": "lhrl035b06a_e_Oct2011.EnFr",
+     "alias": "EnFr",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.NonOff",
+     "name": "NonOff",
      "type": "esriFieldTypeSingle",
-     "alias": "lhrl035b06a_e_Oct2011.NonOff",
+     "alias": "NonOff",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.Other",
+     "name": "Other",
      "type": "esriFieldTypeSingle",
-     "alias": "lhrl035b06a_e_Oct2011.Other",
+     "alias": "Other",
      "domain": null
     },
     {
-     "name": "lhrl035b06a_e_Oct2011.FrProp",
-     "type": "esriFieldTypeSmallInteger",
-     "alias": "lhrl035b06a_e_Oct2011.FrProp",
-     "domain": null
-    },
-    {
-     "name": "lhrl035b06a_e_Oct2011.FrProp1",
-     "type": "esriFieldTypeSmallInteger",
-     "alias": "lhrl035b06a_e_Oct2011.FrProp1",
-     "domain": null
-    },
-    {
-     "name": "MotherTongueLHIN.csv.LHIN",
+     "name": "MotherTong",
      "type": "esriFieldTypeInteger",
-     "alias": "LHIN",
+     "alias": "MotherTong",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.Total",
+     "name": "MotherTo_1",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.FrenchOnly",
+     "name": "MotherTo_2",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.English&French",
+     "name": "MotherTo_3",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.EnglishOnly",
+     "name": "MotherTo_4",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.NonOffLanguage",
+     "name": "MotherTo_5",
      "type": "esriFieldTypeInteger",
      "alias": "NonOffLanguage",
      "domain": null
     },
     {
-     "name": "MotherTongueLHIN.csv.Other",
+     "name": "MotherTo_6",
      "type": "esriFieldTypeInteger",
      "alias": "Other",
+     "domain": null
+    },
+    {
+     "name": "FrPr",
+     "type": "esriFieldTypeSingle",
+     "alias": "FrPr",
      "domain": null
     }
    ],
@@ -11674,7 +11668,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "HR035b08.FrProp",
+     "field": "FrProp",
      "classificationMethod": "esriClassifyManual",
      "minValue": 0,
      "classBreakInfos": [
@@ -11683,8 +11677,8 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         0,
-         112,
+         115,
+         178,
          255,
          255
         ],
@@ -11692,16 +11686,16 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
        "classMaxValue": 0.9,
-       "label": "< 1%",
+       "label": "<1 %",
        "description": ""
       },
       {
@@ -11718,15 +11712,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 1.99,
+       "classMaxValue": 1.9,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -11735,24 +11729,24 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         252,
-         179,
-         68,
+         255,
+         170,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 2.99,
+       "classMaxValue": 2.9,
        "label": "2 - 2.9%",
        "description": ""
       },
@@ -11761,30 +11755,30 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         232,
-         21,
-         21,
+         230,
+         0,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 4,
+       "classMaxValue": 100,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 0,
+    "transparency": 25,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -11800,136 +11794,136 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "HR035b08.HRUID2007",
+   "displayField": "HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "HR035b08.FID",
+     "name": "FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "HR035b08.Shape",
+     "name": "Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "HR035b08.GEODB_OID",
+     "name": "GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "HR035b08.OBJECTID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "HR035b08.HRUID2007",
+     "name": "HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "HR035b08.ENG_LABEL",
+     "name": "ENG_LABEL",
      "type": "esriFieldTypeString",
      "alias": "ENG_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08.FRE_LABEL",
+     "name": "FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "HR035b08.LENGTH",
+     "name": "LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "HR035b08.SHAPE_AREA",
+     "name": "SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "HR035b08.LHINCode",
+     "name": "LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "HR035b08.En",
+     "name": "En",
      "type": "esriFieldTypeSingle",
-     "alias": "HR035b08.En",
+     "alias": "En",
      "domain": null
     },
     {
-     "name": "HR035b08.EnFr",
+     "name": "En_1",
      "type": "esriFieldTypeSingle",
-     "alias": "HR035b08.EnFr",
+     "alias": "En_1",
      "domain": null
     },
     {
-     "name": "HR035b08.Neither",
+     "name": "EnFr",
      "type": "esriFieldTypeSingle",
-     "alias": "HR035b08.Neither",
+     "alias": "EnFr",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.LHIN",
+     "name": "Neither",
+     "type": "esriFieldTypeSingle",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "FrProp",
+     "type": "esriFieldTypeSingle",
+     "alias": "FrProp",
+     "domain": null
+    },
+    {
+     "name": "Knowledge",
      "type": "esriFieldTypeInteger",
-     "alias": "LHIN",
+     "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.Total",
+     "name": "Knowledg_1",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.FrenchOnly",
+     "name": "Knowledg_2",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.English&French",
+     "name": "Knowledg_3",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.EnglishOnly",
+     "name": "Knowledg_4",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "Knowledge of Official Lnaguage.csv.Neither",
+     "name": "Knowledg_5",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
-     "domain": null
-    },
-    {
-     "name": "HR035b08.En_1",
-     "type": "esriFieldTypeSingle",
-     "alias": "HR035b08.En_1",
-     "domain": null
-    },
-    {
-     "name": "HR035b08.FrProp",
-     "type": "esriFieldTypeSingle",
-     "alias": "HR035b08.FrProp",
      "domain": null
     }
    ],
@@ -11960,7 +11954,7 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "FirstOfficial.FrP",
+     "field": "FrP",
      "classificationMethod": "esriClassifyManual",
      "minValue": 0.8999999761581421,
      "classBreakInfos": [
@@ -11969,24 +11963,24 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         40,
-         146,
-         199,
+         115,
+         178,
+         255,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 0.99,
+       "classMaxValue": 0.9,
        "label": "< 1%",
        "description": ""
       },
@@ -12004,15 +11998,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 1.99,
+       "classMaxValue": 1.9,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -12021,24 +12015,24 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         252,
-         179,
-         68,
+         255,
+         170,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 2.99,
+       "classMaxValue": 2.9,
        "label": "2 - 2.9%",
        "description": ""
       },
@@ -12047,18 +12041,18 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         232,
-         21,
-         21,
+         255,
+         0,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
@@ -12070,7 +12064,7 @@
       }
      ]
     },
-    "transparency": 0,
+    "transparency": 25,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -12086,130 +12080,130 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "FirstOfficial.HRUID2007",
+   "displayField": "HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "FirstOfficial.FID",
+     "name": "FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "FirstOfficial.Shape",
+     "name": "Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "FirstOfficial.GEODB_OID",
+     "name": "GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "FirstOfficial.OBJECTID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "FirstOfficial.HRUID2007",
+     "name": "HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "FirstOfficial.ENG_LABEL",
+     "name": "ENG_LABEL",
      "type": "esriFieldTypeString",
      "alias": "ENG_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "FirstOfficial.FRE_LABEL",
+     "name": "FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "FirstOfficial.LENGTH",
+     "name": "LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "FirstOfficial.SHAPE_AREA",
+     "name": "SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "FirstOfficial.LHINCode",
+     "name": "LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.LHIN",
-     "type": "esriFieldTypeInteger",
-     "alias": "LHIN",
+     "name": "En",
+     "type": "esriFieldTypeSingle",
+     "alias": "En",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.Total",
+     "name": "EnFr",
+     "type": "esriFieldTypeSingle",
+     "alias": "EnFr",
+     "domain": null
+    },
+    {
+     "name": "Neither",
+     "type": "esriFieldTypeSingle",
+     "alias": "Neither",
+     "domain": null
+    },
+    {
+     "name": "FrP",
+     "type": "esriFieldTypeSingle",
+     "alias": "FrP",
+     "domain": null
+    },
+    {
+     "name": "FirstOffic",
+     "type": "esriFieldTypeInteger",
+     "alias": "FirstOffic",
+     "domain": null
+    },
+    {
+     "name": "FirstOff_1",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.FrenchOnly",
+     "name": "FirstOff_2",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.English&French",
+     "name": "FirstOff_3",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.EnglishOnly",
+     "name": "FirstOff_4",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "FirstOfficialLanguage.csv.Neither",
+     "name": "FirstOff_5",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.En",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.En",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.EnFr",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.EnFr",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.Neither",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.Neither",
-     "domain": null
-    },
-    {
-     "name": "FirstOfficial.FrP",
-     "type": "esriFieldTypeSingle",
-     "alias": "FirstOfficial.FrP",
      "domain": null
     }
    ],
@@ -12240,33 +12234,33 @@
    "drawingInfo": {
     "renderer": {
      "type": "classBreaks",
-     "field": "LanguageSpoken.FrenchPr",
+     "field": "LangFrPr_1",
      "classificationMethod": "esriClassifyManual",
-     "minValue": 0,
+     "minValue": 0.1,
      "classBreakInfos": [
       {
        "symbol": {
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         40,
-         146,
-         199,
+         115,
+         178,
+         255,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 1,
+       "classMaxValue": 0.1,
        "label": "< 1%",
        "description": ""
       },
@@ -12284,15 +12278,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 2,
+       "classMaxValue": 1.9,
        "label": "1 - 1.9%",
        "description": ""
       },
@@ -12310,15 +12304,15 @@
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 3,
+       "classMaxValue": 2.999,
        "label": "2 - 2.9%",
        "description": ""
       },
@@ -12327,30 +12321,30 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-         232,
-         21,
-         21,
+         230,
+         0,
+         0,
          255
         ],
         "outline": {
          "type": "esriSLS",
          "style": "esriSLSSolid",
          "color": [
-          110,
-          110,
-          110,
+          0,
+          0,
+          0,
           255
          ],
          "width": 0.4
         }
        },
-       "classMaxValue": 13,
+       "classMaxValue": 99.9,
        "label": "> 3%",
        "description": ""
       }
      ]
     },
-    "transparency": 0,
+    "transparency": 25,
     "labelingInfo": null
    },
    "defaultVisibility": false,
@@ -12366,148 +12360,148 @@
    },
    "hasAttachments": false,
    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
-   "displayField": "LanguageSpoken.HRUID2007",
+   "displayField": "HRUID2007",
    "typeIdField": null,
    "fields": [
     {
-     "name": "LanguageSpoken.FID",
+     "name": "FID",
      "type": "esriFieldTypeOID",
      "alias": "FID",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.Shape",
+     "name": "Shape",
      "type": "esriFieldTypeGeometry",
      "alias": "Shape",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.GEODB_OID",
+     "name": "GEODB_OID",
      "type": "esriFieldTypeDouble",
      "alias": "GEODB_OID",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.OBJECTID",
+     "name": "OBJECTID",
      "type": "esriFieldTypeDouble",
      "alias": "OBJECTID",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.HRUID2007",
+     "name": "HRUID2007",
      "type": "esriFieldTypeString",
      "alias": "HRUID2007",
      "length": 4,
      "domain": null
     },
     {
-     "name": "LanguageSpoken.ENG_LABEL",
+     "name": "ENG_LABEL",
      "type": "esriFieldTypeString",
      "alias": "ENG_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "LanguageSpoken.FRE_LABEL",
+     "name": "FRE_LABEL",
      "type": "esriFieldTypeString",
      "alias": "FRE_LABEL",
      "length": 100,
      "domain": null
     },
     {
-     "name": "LanguageSpoken.LENGTH",
+     "name": "LENGTH",
      "type": "esriFieldTypeDouble",
      "alias": "LENGTH",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.SHAPE_AREA",
+     "name": "SHAPE_AREA",
      "type": "esriFieldTypeDouble",
      "alias": "SHAPE_AREA",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.LHINCode",
+     "name": "LHINCode",
      "type": "esriFieldTypeInteger",
      "alias": "LHINCode",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.En",
+     "name": "En",
      "type": "esriFieldTypeSingle",
-     "alias": "LanguageSpoken.En",
+     "alias": "En",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.EnFr",
+     "name": "EnFr",
      "type": "esriFieldTypeSingle",
-     "alias": "LanguageSpoken.EnFr",
+     "alias": "EnFr",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.Neither",
+     "name": "Neither",
      "type": "esriFieldTypeSingle",
-     "alias": "LanguageSpoken.Neither",
+     "alias": "Neither",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.Other",
+     "name": "Other",
      "type": "esriFieldTypeSingle",
-     "alias": "LanguageSpoken.Other",
+     "alias": "Other",
      "domain": null
     },
     {
-     "name": "LanguageSpoken.FrProp",
-     "type": "esriFieldTypeSmallInteger",
-     "alias": "LanguageSpoken.FrProp",
-     "domain": null
-    },
-    {
-     "name": "LanguageSpoken.FrenchPr",
-     "type": "esriFieldTypeSmallInteger",
-     "alias": "LanguageSpoken.FrenchPr",
-     "domain": null
-    },
-    {
-     "name": "Language Spoken Most Often at Home.csv.LHIN",
+     "name": "Language_S",
      "type": "esriFieldTypeInteger",
-     "alias": "LHIN",
+     "alias": "Language_S",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.Total",
+     "name": "Language_1",
      "type": "esriFieldTypeInteger",
      "alias": "Total",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.FrenchOnly",
+     "name": "Language_2",
      "type": "esriFieldTypeInteger",
      "alias": "FrenchOnly",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.English&French",
+     "name": "Language_3",
      "type": "esriFieldTypeInteger",
      "alias": "English&French",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.EnglishOnly",
+     "name": "Language_4",
      "type": "esriFieldTypeInteger",
      "alias": "EnglishOnly",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.Neither",
+     "name": "Language_5",
      "type": "esriFieldTypeInteger",
      "alias": "Neither",
      "domain": null
     },
     {
-     "name": "Language Spoken Most Often at Home.csv.Other",
+     "name": "Language_6",
      "type": "esriFieldTypeInteger",
      "alias": "Other",
+     "domain": null
+    },
+    {
+     "name": "FRPR",
+     "type": "esriFieldTypeSingle",
+     "alias": "FRPR",
+     "domain": null
+    },
+    {
+     "name": "LangFrPr_1",
+     "type": "esriFieldTypeDouble",
+     "alias": "Proportion",
      "domain": null
     }
    ],
@@ -17845,7 +17839,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001\u0099",
         "code": 4
        },
        {
@@ -18115,7 +18109,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001\u0099",
         "code": 4
        },
        {
@@ -20223,7 +20217,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001\u001a\u0002",
         "code": 4
        },
        {
@@ -20493,7 +20487,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001\u001a\u0002",
         "code": 4
        },
        {
@@ -22601,7 +22595,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001³",
         "code": 4
        },
        {
@@ -22871,7 +22865,7 @@
         "code": 3
        },
        {
-        "name": "Invalid field values",
+        "name": "Invalid field \u0001³",
         "code": 4
        },
        {
@@ -35613,6 +35607,102 @@
      "name": "FLS Designated All",
      "type": "esriFieldTypeInteger",
      "alias": "FLS Designated All",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 156,
+   "name": "mtFrProp.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "FrProportion",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "FrProportion",
+     "type": "esriFieldTypeDouble",
+     "alias": "FrProportion",
+     "domain": null
+    },
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 157,
+   "name": "FrProp.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "FrPropo1",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "FrPropo1",
+     "type": "esriFieldTypeDouble",
+     "alias": "FrPropo1",
+     "domain": null
+    },
+    {
+     "name": "LHIN",
+     "type": "esriFieldTypeInteger",
+     "alias": "LHIN",
+     "domain": null
+    }
+   ],
+   "relationships": [],
+   "capabilities": "Map,Query,Data",
+   "maxRecordCount": 1000,
+   "supportsStatistics": false,
+   "supportsAdvancedQueries": false,
+   "supportedQueryFormats": "JSON, AMF"
+  },
+  {
+   "currentVersion": 10.11,
+   "id": 158,
+   "name": "LangFrPr.csv",
+   "type": "Table",
+   "description": null,
+   "definitionExpression": "",
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeNone",
+   "displayField": "code",
+   "typeIdField": null,
+   "fields": [
+    {
+     "name": "code",
+     "type": "esriFieldTypeInteger",
+     "alias": "code",
+     "domain": null
+    },
+    {
+     "name": "FrProp",
+     "type": "esriFieldTypeDouble",
+     "alias": "FrProp",
      "domain": null
     }
    ],

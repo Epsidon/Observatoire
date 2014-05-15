@@ -917,7 +917,7 @@ function translateMap()
 	layerData[16]['outFields'] = new Array(
 	"LHINCode", "ENG_LABEL", "MotherTo_2", 
 	"MotherTo_4", "MotherTo_3", "MotherTo_5", 
-	"MotherTo_1", "FrPr ", "En", 
+	"MotherTo_1", "FrPr", "En", 
 	"NonOff", "EnFr" 
 	);
 
@@ -1052,13 +1052,8 @@ function translateMap()
 	
 	layerData[20] = [];
 	layerData[20]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[20]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
-	"&nbsp" + "(" + "${HR035b08_H}" + ")" + "</span>" +
-	"</table>" + 
-	"<p>" + 
-	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
-	translator.T("Methodological Notes") + "</a>" + "</p>";
-	layerData[20]['outFields'] = new Array("HR035b08_E", "HR035b08_H" );
+	layerData[20]['infoWindowBody'] = ;
+	layerData[20]['outFields'] = new Array();
 
 	layersLabels = [
 		translator.T('Mother Tongue'), translator.T('Knowledge of Official Language'), translator.T('First Official Language Spoken'),

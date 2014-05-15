@@ -1052,7 +1052,12 @@ function translateMap()
 	
 	layerData[20] = [];
 	layerData[20]['infoWindowTitle'] = "<b>" + translator.T("Ontario") + "</b>";
-	layerData[20]['infoWindowBody'] = ;
+	layerData[20]['infoWindowBody'] = "<span class='spanToTranslate hidden'>${HR035b08_E}</span>" +
+	"&nbsp" + "(Ontario)" + "</span>" +
+	"</table>" + 
+	"<p>" + 
+	"<a class=methodologicalNote href='docs/notes" + (router.getLanguage() == 'french'? 'Fr':'En') + ".html'" + "target='_blank'>" +
+	translator.T("Methodological Notes") + "</a>" + "</p>";
 	layerData[20]['outFields'] = new Array();
 
 	layersLabels = [

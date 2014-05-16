@@ -4421,7 +4421,7 @@
     "transparency": 25,
     "labelingInfo": null
    },
-   "defaultVisibility": false,
+   "defaultVisibility": true,
    "extent": {
     "xmin": -95.85382313606915,
     "ymin": 40.67822210102392,

@@ -39,8 +39,8 @@ Tabs.prototype.getHome = function ()
 								'<td width="75%"><p class="titre1">' + translator.T('Team') + '</p>'+
 									'<ol>'+
 										'<p><strong>' + translator.T('Scientific director') + '</strong><br />'+
-										
-										translator.T('Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</p>'+
+										'<a style="color: #000;" href="' + (router.getLanguage() == 'french'? 'http://sciencessociales.uottawa.ca/soc-ant/profil-professeur?id=274':'http://socialsciences.uottawa.ca/soc-ant/professor-profile?id=274') + '" target="_blank">'+ 
+										translator.T('Louise Bouchard, PhD, Sociology,  Institut de recherche de l’Hôpital Montfort, University of Ottawa') + '</a>' +'</p>'+
 										
 										'<p><strong>' + translator.T('Co-Investigator ') + '<br />'+
 										'</strong>' + translator.T('Guy-Vincent Jourdan, PhD, School of Electrical Engineering and Computer Science, Institut de recherche de l’Hôpital Montfort, University of Ottawa')+
@@ -226,13 +226,13 @@ Tabs.prototype.getResearch  = function ()
 										'</p>' +
 										
 										'<p>' +'<strong>' +'The health of the Francophone  Population Aged 65 and over in Ontario.' + '</strong>' +'<br />' +
-										'RRASFO, Université d&rsquo;Ottawa '+
+										'<em>' + 'RRASFO, Université d&rsquo;Ottawa '+
 										'<a  href="Pdf/Bouchard-Ontario_Franc_65_Report_March_28_2014_final_2.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a><br />' +
 										'Rapport  court en français ' +
 										'<a  href="Pdf/Bouchard-CFP-MFC2012-fr.full.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a><br />' +
-										'Rapport  court en anglais '+ 
+										'Rapport  court en anglais '+ '</em>' +
 										'<a  href="Pdf/Bouchard-CFP-MFC2012-en.full.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +
 										'</p>' +
@@ -284,7 +284,8 @@ Tabs.prototype.getResearch  = function ()
 								'<ol>' +
 									'<ol>' +
 										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Sedigh G, Batal M, Imbeault P, Makvandi E, Sylva de la Vega E (2013)' + '</p>' +
-										'<p>' +'<strong>' + 'Language  as an important determinant of poverty in the aging Francophone minority  population in Canada.' + '</strong>' +'<em>' + 'International Journal of Aging and  Society,' + '</em>' +'(2)  4&nbsp;: 61-76. ' + '<strong>' +'<br />' +
+										'<p>' +'<strong>' + 'Language  as an important determinant of poverty in the aging Francophone minority  population in Canada.' + '</strong>' + '</br>' +
+										'<em>' + 'International Journal of Aging and  Society,' + '</em>' +'(2)  4&nbsp;: 61-76. ' + '<strong>' +'<br />' +
 										'</strong>' +
 										'<a  href="Pdf/Aging-Bouchard_et_al_2013.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" />' +'</a></p>' +
@@ -310,7 +311,8 @@ Tabs.prototype.getResearch  = function ()
 								'<ol>' +
 									'<ol>' +
 										'<p class="boldcolor">' + 'Bouchard L, Desmeules M (2013)' + '</p>' +
-										'<p>' +'<strong>' + 'Les minorités  linguistiques du Canada et la santé.' + '</strong>' +'<em>' + 'Health  Care Policy/Politiques de santé' + '</em>' + ', Numéro spécial 9: 38-47. ' + '<br />' +
+										'<p>' +'<strong>' + 'Les minorités  linguistiques du Canada et la santé.' + '</strong>' + '</br>' +
+										'<em>' + 'Health  Care Policy/Politiques de santé' + '</em>' + ', Numéro spécial 9: 38-47. ' + '<br />' +
 										'<a  href="Pdf/Bouchard-Policy_vol9_SP-2013.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg"  width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -337,7 +339,7 @@ Tabs.prototype.getResearch  = function ()
 									'<ol>' +
 										'<p class="boldcolor">' + 'Bouchard L' + '<strong>' + ',' + '</strong>' + ' Gagnon-Arpin I, Makvandi E (2012)' + '</p>' +
 										'<p>' +'<strong>' + 'Rapport d’enquête d’évaluation  des besoins et de services de santé des francophones de la région du Sud-Est de  l&rsquo;Ontario.' + '</strong>' +'<br />' +
-										'Rapport préparé pour l’Association canadienne-française de  l’Ontario- Conseil régional des Mille-Îles. ' + '<br />' +
+										'<em>' + 'Rapport préparé pour l’Association canadienne-française de  l’Ontario- Conseil régional des Mille-Îles. ' + '</em>' +'<br />' +
 										'<a  href="Pdf/Bouchard-Enque¦éte Sud-est ON-acfo-2012.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -347,8 +349,9 @@ Tabs.prototype.getResearch  = function ()
 								'<ol>' +
 									'<ol>' +
 										'<p class="boldcolor">' + 'Gauthier AP, Timony PE, Wenghofer  EF (2012).'+ '</p>' +
-										'<p>' + 'Examining the geographic distribution of French-speaking physicians in  Ontario.' + '</br>' + '<strong>' + 'Canadian Family Physician/' +
-										 'Le Médecin de famille canadien. ' + '</strong>' + ' 58&nbsp;: e717-724. ' +
+										'<p>' + '<strong>' + 'Examining the geographic distribution of French-speaking physicians in  Ontario.' + '</strong>' + '</br>' + 
+										'<em>' + 'Canadian Family Physician/' +
+										 'Le Médecin de famille canadien. ' + '</em>' + ' 58&nbsp;: e717-724. ' +
 										'<a  href="Pdf/Gauthier CFP 2012.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -364,7 +367,8 @@ Tabs.prototype.getResearch  = function ()
 								'<ol>' +
 									'<ol>' +
 									'<p class="boldcolor">' + 'Bouchard L, Chomienne MH, Benoit  M, Boudreau F, Lemonde M, Dufour S (2012)' + '</p>' +
-									'<p>' +'<strong>' + 'Les personnes âgées francophones  souffrant de maladies chroniques se perçoivent-elles bien desservies par le  système de santé ontarien ?' +  '</strong>' +'<em>' + 'Canadian Family Physician/Le Médecin de  famille canadien, ' + '</em>' + '58&nbsp;:1325. ' + 
+									'<p>' +'<strong>' + 'Les personnes âgées francophones  souffrant de maladies chroniques se perçoivent-elles bien desservies par le  système de santé ontarien ?' +  '</strong>' + '</br >' +
+									'<em>' + 'Canadian Family Physician/Le Médecin de  famille canadien, ' + '</em>' + '58&nbsp;:1325. ' + 
 									'<a  href="Pdf/lespersonnes.pdf" target="_blank">' +
 									'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -381,7 +385,7 @@ Tabs.prototype.getResearch  = function ()
 									'<ol>' +
 										'<p class="boldcolor">' + 'Bouchard L,  Chomienne MH, Benoit M, Boudreau F, Lemonde M, Dufour S (2012).'+ '</p>' +
 										'<p>' +'<strong>' + 'Do chronically  ill, elderly Francophone patients believe they are adequately serve by  Ontario&rsquo;s health care system?'+ '</strong>' +'<em>' +'<br />' +
-										'Canadian Family Physician/Le Médecin  de famille canadien, '+ '</em>' + '58&nbsp;:  e686. '+ 
+										'<em>' + 'Canadian Family Physician/Le Médecin  de famille canadien, '+ '</em>' + '58&nbsp;:  e686. '+ 
 										'<a  href="Pdf/Gauthier CFP 2012.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -398,7 +402,7 @@ Tabs.prototype.getResearch  = function ()
 									'<ol>' +
 										'<p class="boldcolor">' +'Bouchard L ' + '<strong>' + ',' + '</strong>' + 'Beaulieu M, Desmeules M (2012)' + '</p>' +
 										'<p>' +'<strong>' + 'L’offre active des services de santé en français en Ontario: une mesure  d’équité. ' + '</strong>' +'<br />' + 
-										'<em>' + 'REFLETS' + '</em>' + '18 (2)&nbsp;; 38-65. ' + 
+										'<em>' + 'REFLETS' + '18 (2)&nbsp;; 38-65. ' + '</em>' +
 										'<a  href="Pdf/Bouchard-Reflets-LOffreActiveDeSEFenOntario.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" width="46" height="16" /></a>' +'</p>' +
 									'</ol>' +
@@ -415,7 +419,7 @@ Tabs.prototype.getResearch  = function ()
 								'<p class="boldcolor">' + 'Gagnon-Arpin  I, Bouchard L (2011)' +'</p>' +
 									
 										'<p>' +'<strong>' + 'Les services de santé en français en Ontario: Offre,  demande, utilisation.'+ '</strong>' +'<br />' +
-										'Rapport préparé pour le Bureau des services en français  du ministère de la Santé et des Soins de Longue Durée de l’Ontario. ' +
+										'<em>' + 'Rapport préparé pour le Bureau des services en français  du ministère de la Santé et des Soins de Longue Durée de l’Ontario. ' + '</em>' + 
 										'<a  href="Pdf/Gagnon-Arpin-Rapport Services-Ontario-final-2011.pdf" target="_blank">' +
 										'<img src="images/ico_pdf.jpg" alt="" width="46" height="16" /></a>' +'</p>' +
 									

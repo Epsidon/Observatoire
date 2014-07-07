@@ -1,5 +1,5 @@
 var Fr = {};
-Fr['Observatory of Minority Health'] = 'Observatoire de la santé des minorités';
+Fr['Observatory of Minority Health (Beta)'] = 'Observatoire de la santé des minorités (bêta)';
 Fr['Quality health information is essential for policy making and health policy planning. However, this information is missing or incomplete for minority populations.'] = 'L’information sanitaire de qualité est essentielle à la décision politique et à la planification de la santé. Toutefois, cette information est absente ou incomplète pour les populations minoritaires.';
 Fr['The Observatory of Minority Health aims to fill these gaps and improve knowledge about health and access to health professionals and services for the Francophone population of Ontario.'] = 'L’Observatoire de la santé des minorités vise à combler ces lacunes et à améliorer la connaissance sur la santé, l’accès aux services et aux professionnels de la santé de la population francophone de l’Ontario.';
 Fr['The activity of the Observatory is organized around two priorities: '] = 'L’activité de l’observatoire s’organise autour de deux pôles : ';

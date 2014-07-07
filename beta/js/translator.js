@@ -15,7 +15,7 @@ Translator.prototype.T = function(str)
 Translator.prototype.translatePage = function()
 {
 	$('#panel').html(this.T('Loading ...'));
-	$('#pageTitle').html(this.T('Observatory of Minority Health'));
+	$('#pageTitle').html(this.T('Observatory of Minority Health (Beta)'));
 	$('#notesTitle').html(this.T('Methodological Notes'));
 	$('#homeTab').html(this.T('HOME'));
 	$('#mapsTab').html(this.T('INTERACTIVE MAPS'));
